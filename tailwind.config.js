@@ -21,9 +21,13 @@ module.exports = {
     },
 
     extend: {
+      transitionProperty: {
+        height: "max-height",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "double-quotes": "url('../images/double-quote.svg')",
+        clip: "url('../images/form/clip.svg')",
       },
       fontFamily: {
         montserrat: ["Montserrat"],
@@ -39,6 +43,7 @@ module.exports = {
         darkGrey: "#474747",
         activeRed: "#dc2d45",
         gradientMain: "#FF304D",
+        link: "#6355FF",
       },
     },
   },

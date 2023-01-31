@@ -2,7 +2,13 @@
 // const navBtn = document.querySelector('.header');
 // const body = document.querySelector('body');
 // const main = document.querySelector('.main');
+const allServices = document.querySelector(".services__cards-wrapper");
 
+allServices.addEventListener("click", (e) => {
+  if (e.target.className === "services__card-title") {
+    e.target.parentNode.parentNode.lastElementChild.classList.toggle("open");
+  }
+});
 // btn.addEventListener('click', () => {
 //     btn.classList.toggle('is-active');
 //     navBtn.classList.toggle('header--active');

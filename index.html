@@ -312,7 +312,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero red-gradient">
         <div class="hero__wrapper container">
           <h1 class="hero__title">Your reliable digital marketing partner</h1>
           <p>
@@ -384,6 +384,7 @@
                 alt="some..."
               />
               <h3 class="cases__card-title">Secrets of Pharaoh</h3>
+
               <p class="cases__card-text">
                 Establishing a Next-Level Geosocial Networking App Establishing
                 a Next-Level Geosocial Networking AppEstablishing a Next-Level
@@ -431,19 +432,12 @@
 
           <button class="main-btn mb-20">
             <span class="main-btn__lable">all services</span
-            ><span class="main-btn__icon">
-              <svg width="16" height="16" viewBox="0 0 16 17" fill="none">
-                <path
-                  d="M15.9783 15.3279V1.32764V0.327637H14.9783H0.978315L0.978316 2.32764H12.5646L0.271484 14.6208L1.6857 16.035L13.9783 3.74237V15.3279H15.9783Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
+            ><span class="main-btn__icon"></span>
           </button>
           <div class="services-wrapper">
             <div class="services__intro-wrapper">
               <h2 class="heading2">Our Services</h2>
-              <p class="services__description">
+              <p class="services__description top-border">
                 Our advantage is not in one-time contact with the customer, but
                 in complex interaction with him. It allows for attracting
                 attention and forming a trusting relationship between the
@@ -454,19 +448,10 @@
               <div class="services__card">
                 <div class="services__card-title-wrapper">
                   <h3 class="services__card-title">Brandign</h3>
-                  <a href="#">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.8545 3.6H2.20003V0H22V19.8H18.4V6.14559L3.47283 21.0728L0.927246 18.5272L15.8545 3.6Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
+                  <a class="services__card-title-arrow" href="#"> </a>
                 </div>
                 <div class="services__card-content-wrapper">
-                  <p>
+                  <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
                     your brand through graphic design, the tone of voice of your
@@ -475,6 +460,7 @@
                     UWP.Digital.
                   </p>
                   <img
+                    class="services__card-image"
                     srcset="
                       ./src/images/services-mob-1@x.png,
                       ./src/images/services-mob-2@x.png 2x
@@ -493,19 +479,10 @@
               <div class="services__card">
                 <div class="services__card-title-wrapper">
                   <h3 class="services__card-title">Web design</h3>
-                  <a href="#">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.8545 3.6H2.20003V0H22V19.8H18.4V6.14559L3.47283 21.0728L0.927246 18.5272L15.8545 3.6Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
+                  <a class="services__card-title-arrow" href="#"> </a>
                 </div>
-                <div class="services__card-content-wrapper zero-height">
-                  <p>
+                <div class="services__card-content-wrapper">
+                  <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
                     your brand through graphic design, the tone of voice of your
@@ -514,6 +491,7 @@
                     UWP.Digital.
                   </p>
                   <img
+                    class="services__card-image"
                     srcset="
                       ./src/images/services-mob-1@x.png,
                       ./src/images/services-mob-2@x.png 2x
@@ -531,18 +509,9 @@
               <div class="services__card">
                 <div class="services__card-title-wrapper">
                   <h3 class="services__card-title">SEO</h3>
-                  <a href="#">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.8545 3.6H2.20003V0H22V19.8H18.4V6.14559L3.47283 21.0728L0.927246 18.5272L15.8545 3.6Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
+                  <a class="services__card-title-arrow" href="#"> </a>
                 </div>
-                <div class="services__card-content-wrapper auto-height">
+                <div class="services__card-content-wrapper">
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -571,17 +540,23 @@
           </div>
         </div>
       </section>
-      <section class="discuss text-white">
+      <section class="discuss text-light">
         <div class="container py-[60px]">
           <div class="heading2 heading2--white">Let's discuss the project</div>
-          <div class="person__wrapper">
+          <div class="person__wrapper top-border">
             <div class="person__thumb">
-              <img width="150" height="180" src="" alt="photo" />
+              <img
+                class="person__image"
+                srcset="
+                  ./src/images/person/person1-mob-1@x.jpg,./src/images/person/person1-mob-2@x.jpg 2x
+                "
+                src="./src/images/person/person1-mob-1@x.jpg"
+                alt="photo"
+              />
               <div class="person__info">
                 <div class="person__info-decor"></div>
-
-                <h3 class="person__name">Daniella</h3>
-                <p class="person__position">Copywriter</p>
+                <h3 class="person__info-name">Daniella</h3>
+                <p class="person__info-position">Copywriter</p>
               </div>
             </div>
             <p class="person__decription">
@@ -602,21 +577,375 @@
               </li>
             </ul>
           </div>
-          <p class="discuss__order-text"></p>
+          <p class="discuss__order-text top-border">
+            Marketing is often viewed as simply creating beautiful advertising.
+            We want to change this impression and turn it 180°. If you need an
+            SEO agency, an AdWords agency, a personal web programmer, or an
+            entire digital media agency - welcome to UWP.Digital.
+          </p>
           <button class="main-btn">
             <span class="main-btn__lable">Order a consultation</span
-            ><span class="main-btn__icon">
-              <svg width="16" height="16" viewBox="0 0 16 17" fill="none">
-                <path
-                  d="M15.9783 15.3279V1.32764V0.327637H14.9783H0.978315L0.978316 2.32764H12.5646L0.271484 14.6208L1.6857 16.035L13.9783 3.74237V15.3279H15.9783Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
+            ><span class="main-btn__icon"> </span>
           </button>
         </div>
       </section>
-      <section class="blog"></section>
+      <section class="blog text-light">
+        <div class="blog-wrapper container">
+          <div class="blog__heading-wrapper">
+            <div class="heading2 heading2--white">Our blog</div>
+            <div class="blog__decor"></div>
+          </div>
+
+          <div class="blog__card">
+            <img
+              width="270"
+              height="165"
+              class="blog__card-image"
+              srcset="
+                ./src/images/blog/blog1-mob-1@x.jpg,
+                ./src/images/blog/blog1-mob-2@x.jpg 2x
+              "
+              src="./src/images/blog/blog1-mob-1@x.jpg"
+              class="blog__card-image"
+            />
+            <div class="blog__card-info-wrapper">
+              <p class="blog__card-info-branch">Business</p>
+              <p class="blog__card-info-time">24.08.2022</p>
+            </div>
+            <p class="blog__card-title">Advertising for business</p>
+          </div>
+          <div class="blog__who-wrapper top-border">
+            <p class="blog__who-label">Why we are</p>
+            <p class="blog__who-text">
+              Our company is the quintessence of marketing talents and Ukrainian
+              diligence. Through our expertise, attention to detail, and deep
+              analytics, we find a solution for any business problem.
+            </p>
+          </div>
+          <div class="blog__who-card-list">
+            <div class="blog__who-card-item top-border">
+              <p class="blog__who-card-item-label">
+                We help companies speak the language of the customer.
+              </p>
+              <p class="blog__who-card-item-text">
+                Thus, we do not rely on a one-time purchase, but attract and
+                retain customers for a long time.
+              </p>
+            </div>
+            <div class="blog__who-card-item top-border">
+              <p class="blog__who-card-item-label">
+                We break the wall: transforming traditional marketing into
+                digital.
+              </p>
+              <p class="blog__who-card-item-text">
+                There are no boundaries in the digital world. And in your
+                ability too.
+              </p>
+            </div>
+            <div class="blog__who-card-item top-border">
+              <p class="blog__who-card-item-label">
+                We provide a full range of business promotion services:
+              </p>
+              <p class="blog__who-card-item-text">
+                from web development and conversion optimization to a/b testing
+                and developing marketing strategies. We know how to create a
+                website business or an entire web agency.
+              </p>
+            </div>
+            <div class="blog__who-card-item top-border">
+              <p class="blog__who-card-item-label">
+                We reveal the unique story of your brand.
+              </p>
+              <p class="blog__who-card-item-text">
+                We know how to make customers remember you and increase brand
+                recognition.
+              </p>
+            </div>
+          </div>
+          <button class="main-btn mrg-t-md">
+            <span class="main-btn__lable">Order a consultation</span
+            ><span class="main-btn__icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="faq bg-light">
+        <div class="faq__wrapper container">
+          <p class="pre-heading">VI SVARAR PÅ DE VANLIGASTE FRÅGOR</p>
+          <h2 class="heading2 mb-5">faq</h2>
+          <ul class="faq__list">
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper faq__question--active">
+                <p class="faq__question">
+                  What is a full-service marketing agency?
+                </p>
+                <button
+                  class="faq__question-button faq__question-button--active"
+                ></button>
+              </div>
+              <p class="faq__answer faq__answer--active">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper">
+                <p class="faq__question">Can I use the branding immediately?</p>
+                <button class="faq__question-button"></button>
+              </div>
+              <p class="faq__answer">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper">
+                <p class="faq__question">
+                  Can I update the content of my website? Such as images and
+                  text?
+                </p>
+                <button class="faq__question-button"></button>
+              </div>
+              <p class="faq__answer">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper">
+                <p class="faq__question">
+                  How fast can you deliver my branding?
+                </p>
+                <button class="faq__question-button"></button>
+              </div>
+              <p class="faq__answer">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper">
+                <p class="faq__question">
+                  What happens if I want to change the design of my website?
+                </p>
+                <button class="faq__question-button"></button>
+              </div>
+              <p class="faq__answer">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+            <li class="faq__item bottom-border">
+              <div class="faq__question-wrapper">
+                <p class="faq__question">
+                  When will I see the financial result of working on promoting
+                  my business?
+                </p>
+                <button class="faq__question-button"></button>
+              </div>
+              <p class="faq__answer">
+                All of our customers can change the content on their website at
+                any given time. However, for complex design changes we need to
+                get in touch with you. As the design of your website is tightly
+                coupled with your branding, changes to the design aren't that
+                easy. That being said, all of our customers get a free design
+                revision of their website every 3 years.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="form red-gradient text-middleGrey">
+        <div class="form__wrapper container">
+          <p class="pre-heading">
+            GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL
+          </p>
+
+          <h2 class="heading2 mrg-b-md">Let's promote your business</h2>
+          <form class="form__contact-form mrg-b-md">
+            <div class="form__inputGroup">
+              <input id="name" type="text" required="true" autocomplete="off" />
+              <label for="name">Your name?*</label>
+            </div>
+            <div class="form__inputGroup">
+              <input
+                id="email"
+                type="text"
+                required="true"
+                autocomplete="off"
+              />
+              <label for="email">Your e-mail?*</label>
+            </div>
+            <div class="form__inputGroup">
+              <input
+                id="phone"
+                type="text"
+                required="true"
+                autocomplete="off"
+              />
+              <label for="phone">Phone number*</label>
+            </div>
+            <div class="form__inputGroup">
+              <input
+                id="company"
+                type="text"
+                required="true"
+                autocomplete="off"
+              />
+              <label for="company">Company*</label>
+            </div>
+            <div class="form__inputGroup mrg-b-sm">
+              <input id="message" type="text" required="" autocomplete="off" />
+              <label for="message">Tell us about your project</label>
+            </div>
+            <button class="form__attach-button" type="button">
+              <span class="form__attach-icon"></span> &nbsp;&nbsp; Attach a file
+            </button>
+            <p class="form__details">
+              By clicking the "Send" button, you consent to the processing of
+              personal data.
+              <a
+                class="form__details-link"
+                href="/"
+                aria-label="More details"
+                rel="noreferrer noopener"
+                >More details</a
+              >
+            </p>
+            <button class="main-btn mrg-t-sm">
+              <span class="main-btn__lable">Send</span
+              ><span class="main-btn__icon"></span>
+            </button>
+          </form>
+          <div class="form__contact-wrapper">
+            <p class="form__contact-address">
+              Onnekop Per Bings vag 13B, 242 98 Horby, Sweden
+            </p>
+            <a class="form__contact-email" href="mailto:info@uwp.digital"
+              >info@uwp.digital</a
+            >
+            <p class="form__contact-text">Shoot us a message</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer bg-light">
+      <div class="footer__wrapper container">
+        <div class="footer__nav-wrapper">
+          <ul class="footer__nav-list">
+            <li class="">
+              <a href="" class="nav__link">About us</a>
+            </li>
+            <li class="w-max">
+              <a href="#" class="nav__link">Cases</a>
+            </li>
+            <li class="">
+              <a href="" class="nav__link">Services</a>
+            </li>
+            <li class="">
+              <a href="" class="nav__link">Blog</a>
+            </li>
+            <li class="">
+              <a href="" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="w-max">
+              <a href="#" class="social__link"
+                ><img
+                  width="40"
+                  height="40"
+                  src="./src/images/social/instagram.svg"
+                  alt="instagram icon"
+              /></a>
+            </li>
+            <li class="">
+              <a href="" class="social__link">
+                <img
+                  width="40"
+                  height="40"
+                  src="./src/images/social/facebook.svg"
+                  alt="facebook icon"
+                />
+              </a>
+            </li>
+            <li class="">
+              <a href="" class="social__link"
+                ><img
+                  width="40"
+                  height="40"
+                  src="./src/images/social/linkedin.svg"
+                  alt="linkedin icon"
+                />
+              </a>
+            </li>
+            <li class="">
+              <a href="" class="social__link"
+                ><img
+                  width="40"
+                  height="40"
+                  src="./src/images/social/upwork.svg"
+                  alt="upwork icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__services-list top-border bottom-border">
+          <li class="footer__services-item">
+            <a href="#" class="footer__services-link"> BRANDING </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="#" class="footer__services-link">DIGITAL MARKETING </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="#" class="footer__services-link"> WEB design </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="#" class="footer__services-link"> SMM </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="" class="footer__services-link">PPC </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="" class="footer__services-link">TIKTOK </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="" class="footer__services-link">VIDEO MOTION </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="" class="footer__services-link">SEO </a>
+          </li>
+          <li class="footer__services-item">
+            <a href="" class="footer__services-link"> MOBILE PROMOTION </a>
+          </li>
+        </ul>
+        <p class="footer__terms">
+          © 2022 Unity World Platform. All rights reserved.
+          <a href="/">Terms & Conditions</a>
+          <a class="footer__terms-policy" href="/">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+    <script src="./src/js/scripts.js"></script>
   </body>
 </html>
