@@ -1,0 +1,34 @@
+    <div class="person__wrapper top-border">
+            <div class="person__thumb">
+              <img
+                class="person__image"
+                srcset="
+                  ./src/images/person/person1-mob-1@x.jpg,./src/images/person/person1-mob-2@x.jpg 2x
+                "
+                src="./src/images/person/person1-mob-1@x.jpg"
+                alt="photo"
+              />
+              <div class="person__info">
+                <div class="person__info-decor"></div>
+                <h3 class="person__info-name">Daniella</h3>
+                <p class="person__info-position">Copywriter</p>
+              </div>
+            </div>
+            <p class="person__decription">
+              The digital world offers limitless possibilities for transforming
+              an idea into a successful business. We are a digital marketing
+              agency that opens these opportunities to you. With the help of
+              marketing tools and smart technologies, UWP connects customers
+              with their favorite brands.
+            </p>
+            <ul class="person__experience-list">
+              <li class="person__experience-list-item">
+                <p class="person__experience-value">6+&nbsp;</p>
+                <p class="person__experience-desc">years in the company</p>
+              </li>
+              <li class="person__experience-list-item">
+                <p class="person__experience-value">150+&nbsp;</p>
+                <p class="person__experience-desc">successful projects</p>
+              </li>
+            </ul>
+          </div>

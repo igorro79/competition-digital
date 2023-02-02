@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve">
-	<path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 19,56L 28,56L 28,31.5001L 19,31.5001M 23.6107,19.8444C 20.8233,19.8444 19,21.6731 19,24.0768C 19,26.429 20.7705,28.3121 23.5026,28.3121L 23.557,28.3121C 26.398,28.3121 28.1652,26.429 28.1652,24.0768C 28.1116,21.6731 26.398,19.8444 23.6107,19.8444 Z M 57,42.1074L 57,56L 49,56L 49,43C 49,39.7071 47.6773,37.5081 44.7292,37.5081C 42.4787,37.5081 41.1395,39.0226 40.5498,40.4873C 40.3354,41.0113 40,41.7667 40,42.5001L 40,56L 32,56C 32,56 32,35 32,31.5001L 40,31.5001L 40,35.25L 40,35.25L 40.2802,35.2074L 40.2802,35.128C 41.3621,33.4611 43.2951,31.0793 47.6213,31.0793C 52.9823,31.0793 57,34.5817 57,42.1074 Z "/>
-</svg>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 283.9 256 235.1" xml:space="preserve" width="64px" height="64px">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g> <rect x="-264.4" y="359.3" width="49.9" height="159.7"/> <path d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"/> <path d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"/> </g> </g>
+</svg>

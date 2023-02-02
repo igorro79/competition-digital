@@ -193,7 +193,9 @@
           </ul>
 
           <ul class="link__list">
-            <button class="link__list-btn">Back</button>
+            <li>
+              <button class="link__list-btn">Back</button>
+            </li>
             <li>
               <a href="#" class="nav__link"> All Services </a>
             </li>
@@ -233,8 +235,8 @@
               >
                 let's talk
               </span>
-              <div
-                class="btn__contact-wrap group-hover:border-lightDarkGrey lg:rounded-[60px] lg:w-full lg:p-[13px] lg:pr-[25px] group-hover:bg-white group-active:border-main md:p-[14px] md:pb-[15px]"
+              <span
+                class="btn__contact-wrap group-hover:border-lightDarkGrey lg:rounded-[60px] lg:w-full lg:p-[13px] lg:pr-[25px] inline-block group-hover:bg-white group-active:border-main md:p-[14px] md:pb-[15px]"
               >
                 <svg
                   class="h-[14.5px] md:h-[17px]"
@@ -252,7 +254,7 @@
                     fill="white"
                   />
                 </svg>
-              </div>
+              </span>
             </button>
             <button
               class="btn-language lg:flex z-10 hidden items-center gap-2.5 rounded-lg p-2.5 transition-all hover:bg-grey"
@@ -302,9 +304,9 @@
               <span class="btn__language-desc uppercase text-white"> en </span>
             </button>
             <button class="burger lg:hidden">
-              <div class="burger__box">
-                <div class="burger__inner"></div>
-              </div>
+              <span class="burger__box inline-block">
+                <span class="burger__inner inline-block"></span>
+              </span>
             </button>
           </div>
         </nav>
@@ -314,30 +316,35 @@
     <main>
       <section class="hero red-gradient">
         <div class="hero__wrapper container">
-          <h1 class="hero__title">Your reliable digital marketing partner</h1>
-          <p>
+          <h1 class="hero__title">
+            Your reliable digital<br />marketing partner
+          </h1>
+          <p class="hero__sub-title">
             We are a full-service digital marketing agency focused on your
             success. We do not sell ideas. We sell a solution for your business
             needs.
           </p>
         </div>
+        <button class="hero__btn">
+          discuss the<br />
+          project
+        </button>
       </section>
-
       <section class="cases">
         <img
           class="cases__intro-image"
           srcset="
-            ./src/images/case-mob-1@x.jpg,
-            ./src/images/case-mob-2@x.jpg 2x
+            ./src/images/cases/case-mob-1@x.jpg,
+            ./src/images/cases/case-mob-2@x.jpg 2x
           "
-          src="./src/images/case-mob-1@x.jpg"
+          src="./src/images/cases/case-mob-1@x.jpg"
           alt=""
         />
         <div class="container">
           <div class="cases__intro-wrapper">
-            <p class="cases__intro-title">
+            <h2 class="cases__intro-title">
               Limitless is your new rule in business development
-            </p>
+            </h2>
             <p class="cases__intro-text">
               The digital world offers limitless possibilities for turning an
               idea into a successful business. We are a digital marketing agency
@@ -347,7 +354,7 @@
             </p>
           </div>
 
-          <p class="heading2">Våra resultat</p>
+          <h2 class="heading2 cases__heading">Våra resultat</h2>
           <p class="cases__description">
             Whether you need to create a website, develop a UX UI design,
             conduct SEO optimization, develop a marketing strategy for your
@@ -365,13 +372,21 @@
                 src="./src/images/case-card-icon-mob-1@x.jpg"
                 alt="some..."
               />
-              <h3 class="cases__card-title">Secrets of Pharaoh</h3>
-              <p class="cases__card-text">
-                Establishing a Next-Level Geosocial Networking App Establishing
-                a Next-Level Geosocial Networking AppEstablishing a Next-Level
-                Geosocial Networking App
-              </p>
-              <p class="cases__card-copyright">marketing strategy, design</p>
+              <div class="cases__card-content">
+                <div class="cases__card-heading-wrapper">
+                  <h3 class="cases__card-title">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </h3>
+                  <a class="black-up-right-arrow" href="#"> </a>
+                </div>
+                <p class="cases__card-text">
+                  Establishing a Next-Level Geosocial Networking App
+                  Establishing a Next-Level Geosocial Networking AppEstablishing
+                  a Next-Level Geosocial Networking App
+                </p>
+                <p class="cases__card-copyright">marketing strategy, design</p>
+              </div>
             </div>
             <div class="cases__card">
               <img
@@ -383,14 +398,21 @@
                 src="./src/images/case-card-icon-mob-1@x.jpg"
                 alt="some..."
               />
-              <h3 class="cases__card-title">Secrets of Pharaoh</h3>
-
-              <p class="cases__card-text">
-                Establishing a Next-Level Geosocial Networking App Establishing
-                a Next-Level Geosocial Networking AppEstablishing a Next-Level
-                Geosocial Networking App
-              </p>
-              <p class="cases__card-copyright">marketing strategy, design</p>
+              <div class="cases__card-content">
+                <div class="cases__card-heading-wrapper">
+                  <h3 class="cases__card-title">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </h3>
+                  <a class="black-up-right-arrow" href="#"> </a>
+                </div>
+                <p class="cases__card-text">
+                  Establishing a Next-Level Geosocial Networking App
+                  Establishing a Next-Level Geosocial Networking AppEstablishing
+                  a Next-Level Geosocial Networking App
+                </p>
+                <p class="cases__card-copyright">marketing strategy, design</p>
+              </div>
             </div>
             <div class="cases__card">
               <img
@@ -402,13 +424,21 @@
                 src="./src/images/case-card-icon-mob-1@x.jpg"
                 alt="some..."
               />
-              <h3 class="cases__card-title">Secrets of Pharaoh</h3>
-              <p class="cases__card-text">
-                Establishing a Next-Level Geosocial Networking App Establishing
-                a Next-Level Geosocial Networking AppEstablishing a Next-Level
-                Geosocial Networking App
-              </p>
-              <p class="cases__card-copyright">marketing strategy, design</p>
+              <div class="cases__card-content">
+                <div class="cases__card-heading-wrapper">
+                  <h3 class="cases__card-title">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </h3>
+                  <a class="black-up-right-arrow" href="#"> </a>
+                </div>
+                <p class="cases__card-text">
+                  Establishing a Next-Level Geosocial Networking App
+                  Establishing a Next-Level Geosocial Networking AppEstablishing
+                  a Next-Level Geosocial Networking App
+                </p>
+                <p class="cases__card-copyright">marketing strategy, design</p>
+              </div>
             </div>
             <div class="cases__card">
               <img
@@ -420,106 +450,87 @@
                 src="./src/images/case-card-icon-mob-1@x.jpg"
                 alt="some..."
               />
-              <h3 class="cases__card-title">Secrets of Pharaoh</h3>
-              <p class="cases__card-text">
-                Establishing a Next-Level Geosocial Networking App Establishing
-                a Next-Level Geosocial Networking AppEstablishing a Next-Level
-                Geosocial Networking App
-              </p>
-              <p class="cases__card-copyright">marketing strategy, design</p>
+              <div class="cases__card-content">
+                <div class="cases__card-heading-wrapper">
+                  <h3 class="cases__card-title">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </h3>
+                  <a class="black-up-right-arrow" href="#"> </a>
+                </div>
+                <p class="cases__card-text">
+                  Establishing a Next-Level Geosocial Networking App
+                  Establishing a Next-Level Geosocial Networking AppEstablishing
+                  a Next-Level Geosocial Networking App
+                </p>
+                <p class="cases__card-copyright">marketing strategy, design</p>
+              </div>
             </div>
           </div>
-
-          <button class="main-btn mb-20">
+          <button class="main-btn cases__main-btn">
             <span class="main-btn__lable">all services</span
             ><span class="main-btn__icon"></span>
           </button>
-          <div class="services-wrapper">
-            <div class="services__intro-wrapper">
-              <h2 class="heading2">Our Services</h2>
-              <p class="services__description top-border">
-                Our advantage is not in one-time contact with the customer, but
-                in complex interaction with him. It allows for attracting
-                attention and forming a trusting relationship between the
-                company and customers for a long time.
-              </p>
+        </div>
+      </section>
+      <section class="services bg-light">
+        <div class="services-wrapper container">
+          <div class="services__heading-wrapper">
+            <h2 class="heading2 services__heading">Our Services</h2>
+            <p class="services__description top-border">
+              Our advantage is not in one-time contact with the customer, but in
+              complex interaction with him. It allows for attracting attention
+              and forming a trusting relationship between the company and
+              customers for a long time.
+            </p>
+          </div>
+          <div class="services__cards-wrapper">
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">Brandign</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
             </div>
-            <div class="services__cards-wrapper">
-              <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Brandign</h3>
-                  <a class="services__card-title-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
-                  <p class="services__card-text">
-                    UWP Digital knows how to combine creativity and
-                    effectiveness in one solution. We reveal the unique story of
-                    your brand through graphic design, the tone of voice of your
-                    brand, developing logos, corporate identity, and creating a
-                    brand book for companies. The brand stories start with
-                    UWP.Digital.
-                  </p>
-                  <img
-                    class="services__card-image"
-                    srcset="
-                      ./src/images/services-mob-1@x.png,
-                      ./src/images/services-mob-2@x.png 2x
-                    "
-                    src="./src/images/services-mob-1@x.png"
-                    alt="serv"
-                  />
-                  <button class="main-btn main-btn--reversed mt-10">
-                    <span class="main-btn__lable main-btn__lable--smaller">
-                      read more</span
-                    >
-                  </button>
-                </div>
-              </div>
 
-              <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Web design</h3>
-                  <a class="services__card-title-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
-                  <p class="services__card-text">
-                    UWP Digital knows how to combine creativity and
-                    effectiveness in one solution. We reveal the unique story of
-                    your brand through graphic design, the tone of voice of your
-                    brand, developing logos, corporate identity, and creating a
-                    brand book for companies. The brand stories start with
-                    UWP.Digital.
-                  </p>
-                  <img
-                    class="services__card-image"
-                    srcset="
-                      ./src/images/services-mob-1@x.png,
-                      ./src/images/services-mob-2@x.png 2x
-                    "
-                    src="./src/images/services-mob-1@x.png"
-                    alt="serv"
-                  />
-                  <button class="main-btn main-btn--reversed mt-10">
-                    <span class="main-btn__lable main-btn__lable--smaller">
-                      read more</span
-                    >
-                  </button>
-                </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">Web design</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
               </div>
-              <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">SEO</h3>
-                  <a class="services__card-title-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
-                  <p class="services__card-text">
-                    UWP Digital knows how to combine creativity and
-                    effectiveness in one solution. We reveal the unique story of
-                    your brand through graphic design, the tone of voice of your
-                    brand, developing logos, corporate identity, and creating a
-                    brand book for companies. The brand stories start with
-                    UWP.Digital.
-                  </p>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
                   <img
                     class="services__card-image"
                     srcset="
@@ -529,20 +540,241 @@
                     src="./src/images/services-mob-1@x.png"
                     alt="serv"
                   />
-                  <button class="main-btn main-btn--reversed mt-10">
-                    <span class="main-btn__lable main-btn__lable--smaller">
-                      read more</span
-                    >
-                  </button>
                 </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">SEO</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">DIGITAL MARKETING</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">PPC</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">TikTok</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">VIDEO MOTION</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">MOBILE PROMOTION</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-title-wrapper">
+                <h3 class="services__card-title">SMM</h3>
+                <a class="black-up-right-arrow" href="#"> </a>
+              </div>
+              <div class="services__card-content-wrapper">
+                <p class="services__card-text">
+                  UWP Digital knows how to combine creativity and effectiveness
+                  in one solution. We reveal the unique story of your brand
+                  through graphic design, the tone of voice of your brand,
+                  developing logos, corporate identity, and creating a brand
+                  book for companies. The brand stories start with UWP.Digital.
+                </p>
+                <div class="services__card-image-wrapper">
+                  <img
+                    class="services__card-image"
+                    srcset="
+                      ./src/images/services-mob-1@x.png,
+                      ./src/images/services-mob-2@x.png 2x
+                    "
+                    src="./src/images/services-mob-1@x.png"
+                    alt="serv"
+                  />
+                </div>
+                <button class="main-btn main-btn--reversed mt-10">
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
+                  >
+                </button>
               </div>
             </div>
           </div>
+          <button class="main-btn services__main-btn">
+            <span class="main-btn__lable">Order a consultation</span
+            ><span class="main-btn__icon"></span>
+          </button>
         </div>
       </section>
       <section class="discuss text-light">
         <div class="container py-[60px]">
-          <div class="heading2 heading2--white">Let's discuss the project</div>
+          <div class="heading2 mrg-b-sm">Let's discuss the project</div>
           <div class="person__wrapper top-border">
             <div class="person__thumb">
               <img
@@ -553,8 +785,10 @@
                 src="./src/images/person/person1-mob-1@x.jpg"
                 alt="photo"
               />
-              <div class="person__info">
-                <div class="person__info-decor"></div>
+            </div>
+            <div class="person__info">
+              <div class="person__info-decor"></div>
+              <div class="person__info-text-wrapper">
                 <h3 class="person__info-name">Daniella</h3>
                 <p class="person__info-position">Copywriter</p>
               </div>
@@ -565,6 +799,9 @@
               agency that opens these opportunities to you. With the help of
               marketing tools and smart technologies, UWP connects customers
               with their favorite brands.
+            </p>
+            <p class="person__clients">
+              Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
             </p>
             <ul class="person__experience-list">
               <li class="person__experience-list-item">
@@ -591,29 +828,66 @@
       </section>
       <section class="blog text-light">
         <div class="blog-wrapper container">
-          <div class="blog__heading-wrapper">
-            <div class="heading2 heading2--white">Our blog</div>
-            <div class="blog__decor"></div>
+          <div class="blog__heading-wrapper mrg-b-sm">
+            <h2 class="heading2 blog__title">Our blog</h2>
+            <a class="blog__all-btn" href="#" aria-label="read all">
+              <span class="blog__all-btn-text">Read all</span>
+              <span class="blog__all-btn-decor"></span
+            ></a>
           </div>
 
-          <div class="blog__card">
-            <img
-              width="270"
-              height="165"
-              class="blog__card-image"
-              srcset="
-                ./src/images/blog/blog1-mob-1@x.jpg,
-                ./src/images/blog/blog1-mob-2@x.jpg 2x
-              "
-              src="./src/images/blog/blog1-mob-1@x.jpg"
-              class="blog__card-image"
-            />
-            <div class="blog__card-info-wrapper">
-              <p class="blog__card-info-branch">Business</p>
-              <p class="blog__card-info-time">24.08.2022</p>
-            </div>
-            <p class="blog__card-title">Advertising for business</p>
-          </div>
+          <ul class="flex gap-5">
+            <li class="blog__card">
+              <img
+                class="blog__card-image"
+                srcset="
+                  ./src/images/blog/blog1-mob-1@x.jpg,
+                  ./src/images/blog/blog1-mob-2@x.jpg 2x
+                "
+                src="./src/images/blog/blog1-mob-1@x.jpg"
+                alt="blog"
+              />
+              <div class="blog__card-info-wrapper">
+                <p class="blog__card-info-branch">Business</p>
+                <p class="blog__card-info-time">24.08.2022</p>
+              </div>
+              <p class="blog__card-title">Advertising for business</p>
+            </li>
+            <li class="blog__card">
+              <img
+                class="blog__card-image"
+                srcset="
+                  ./src/images/blog/blog1-mob-1@x.jpg,
+                  ./src/images/blog/blog1-mob-2@x.jpg 2x
+                "
+                src="./src/images/blog/blog1-mob-1@x.jpg"
+                alt="blog"
+              />
+              <div class="blog__card-info-wrapper">
+                <p class="blog__card-info-branch">Business</p>
+                <p class="blog__card-info-time">24.08.2022</p>
+              </div>
+              <p class="blog__card-title">
+                Advertising for business Advertising for business
+              </p>
+            </li>
+            <li class="blog__card">
+              <img
+                class="blog__card-image"
+                srcset="
+                  ./src/images/blog/blog1-mob-1@x.jpg,
+                  ./src/images/blog/blog1-mob-2@x.jpg 2x
+                "
+                src="./src/images/blog/blog1-mob-1@x.jpg"
+                alt="blog"
+              />
+              <div class="blog__card-info-wrapper">
+                <p class="blog__card-info-branch">Business</p>
+                <p class="blog__card-info-time">24.08.2022</p>
+              </div>
+              <p class="blog__card-title">Advertising for business</p>
+            </li>
+          </ul>
           <div class="blog__who-wrapper top-border">
             <p class="blog__who-label">Why we are</p>
             <p class="blog__who-text">
@@ -780,61 +1054,56 @@
             GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL
           </p>
 
-          <h2 class="heading2 mrg-b-md">Let's promote your business</h2>
-          <form class="form__contact-form mrg-b-md">
-            <div class="form__inputGroup">
-              <input id="name" type="text" required="true" autocomplete="off" />
-              <label for="name">Your name?*</label>
+          <h2 class="form__title">Let's promote your business</h2>
+          <form class="form__contact-form">
+            <div class="form__grid">
+              <div class="form__inputGroup">
+                <input id="name" type="text" required autocomplete="off" />
+                <label for="name">Your name?*</label>
+              </div>
+              <div class="form__inputGroup">
+                <input id="email" type="text" required autocomplete="off" />
+                <label for="email">Your e-mail?*</label>
+              </div>
+              <div class="form__inputGroup">
+                <input id="phone" type="text" required autocomplete="off" />
+                <label for="phone">Phone number*</label>
+              </div>
+              <div class="form__inputGroup">
+                <input id="company" type="text" required autocomplete="off" />
+                <label for="company">Company*</label>
+              </div>
+              <div class="form__inputGroup form__item-full">
+                <input
+                  id="message"
+                  type="text"
+                  required=""
+                  autocomplete="off"
+                />
+                <label for="message">Tell us about your project</label>
+              </div>
             </div>
-            <div class="form__inputGroup">
-              <input
-                id="email"
-                type="text"
-                required="true"
-                autocomplete="off"
-              />
-              <label for="email">Your e-mail?*</label>
-            </div>
-            <div class="form__inputGroup">
-              <input
-                id="phone"
-                type="text"
-                required="true"
-                autocomplete="off"
-              />
-              <label for="phone">Phone number*</label>
-            </div>
-            <div class="form__inputGroup">
-              <input
-                id="company"
-                type="text"
-                required="true"
-                autocomplete="off"
-              />
-              <label for="company">Company*</label>
-            </div>
-            <div class="form__inputGroup mrg-b-sm">
-              <input id="message" type="text" required="" autocomplete="off" />
-              <label for="message">Tell us about your project</label>
-            </div>
+
             <button class="form__attach-button" type="button">
               <span class="form__attach-icon"></span> &nbsp;&nbsp; Attach a file
             </button>
-            <p class="form__details">
-              By clicking the "Send" button, you consent to the processing of
-              personal data.
-              <a
-                class="form__details-link"
-                href="/"
-                aria-label="More details"
-                rel="noreferrer noopener"
-                >More details</a
-              >
-            </p>
-            <button class="main-btn mrg-t-sm">
-              <span class="main-btn__lable">Send</span
-              ><span class="main-btn__icon"></span>
-            </button>
+            <div class="form__btn-wrapper">
+              <p class="form__details">
+                By clicking the "Send" button, you consent to the processing of
+                personal data.
+                <a
+                  class="form__details-link"
+                  href="/"
+                  aria-label="More details"
+                  rel="noreferrer noopener"
+                  >More details</a
+                >
+              </p>
+              <button type="submit" class="main-btn form__main-btn">
+                <span class="main-btn__lable">Send</span
+                ><span class="main-btn__icon"></span>
+              </button>
+            </div>
           </form>
           <div class="form__contact-wrapper">
             <p class="form__contact-address">
@@ -850,66 +1119,60 @@
     </main>
     <footer class="footer bg-light">
       <div class="footer__wrapper container">
-        <div class="footer__nav-wrapper">
-          <ul class="footer__nav-list">
-            <li class="">
-              <a href="" class="nav__link">About us</a>
-            </li>
-            <li class="w-max">
-              <a href="#" class="nav__link">Cases</a>
-            </li>
-            <li class="">
-              <a href="" class="nav__link">Services</a>
-            </li>
-            <li class="">
-              <a href="" class="nav__link">Blog</a>
-            </li>
-            <li class="">
-              <a href="" class="nav__link">Contact</a>
-            </li>
-          </ul>
-          <ul class="social">
-            <li class="w-max">
-              <a href="#" class="social__link"
-                ><img
-                  width="40"
-                  height="40"
-                  src="./src/images/social/instagram.svg"
-                  alt="instagram icon"
-              /></a>
-            </li>
-            <li class="">
-              <a href="" class="social__link">
-                <img
-                  width="40"
-                  height="40"
-                  src="./src/images/social/facebook.svg"
-                  alt="facebook icon"
-                />
-              </a>
-            </li>
-            <li class="">
-              <a href="" class="social__link"
-                ><img
-                  width="40"
-                  height="40"
-                  src="./src/images/social/linkedin.svg"
-                  alt="linkedin icon"
-                />
-              </a>
-            </li>
-            <li class="">
-              <a href="" class="social__link"
-                ><img
-                  width="40"
-                  height="40"
-                  src="./src/images/social/upwork.svg"
-                  alt="upwork icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer__nav-list">
+          <li class="">
+            <a href="" class="nav__link">About us</a>
+          </li>
+          <li class="w-max">
+            <a href="#" class="nav__link">Case studies</a>
+          </li>
+          <li class="">
+            <a href="" class="nav__link">Services</a>
+          </li>
+          <li class="">
+            <a href="" class="nav__link">Blog</a>
+          </li>
+          <li class="">
+            <a href="" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="#" class="social__link"
+              ><img
+                class="social__icons"
+                src="./src/images/social/instagram.svg"
+                alt="instagram icon"
+            /></a>
+          </li>
+          <li class="">
+            <a href="" class="social__link">
+              <img
+                class="social__icons"
+                src="./src/images/social/facebook.svg"
+                alt="facebook icon"
+              />
+            </a>
+          </li>
+          <li class="">
+            <a href="" class="social__link"
+              ><img
+                class="social__icons"
+                src="./src/images/social/linkedin.svg"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+          <li class="">
+            <a href="" class="social__link"
+              ><img
+                class="social__icons"
+                src="./src/images/social/upwork.svg"
+                alt="upwork icon"
+              />
+            </a>
+          </li>
+        </ul>
         <ul class="footer__services-list top-border bottom-border">
           <li class="footer__services-item">
             <a href="#" class="footer__services-link"> BRANDING </a>
@@ -941,8 +1204,8 @@
         </ul>
         <p class="footer__terms">
           © 2022 Unity World Platform. All rights reserved.
-          <a href="/">Terms & Conditions</a>
-          <a class="footer__terms-policy" href="/">Privacy Policy</a>
+          <a class="footer__terms" href="/">Terms & Conditions</a>
+          <a class="footer__policy" href="/">Privacy Policy</a>
         </p>
       </div>
     </footer>
