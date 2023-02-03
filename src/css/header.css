@@ -1,0 +1,129 @@
+@layer components {
+  /* .main.main--active {
+    @apply pt-[76px];
+  } */
+
+  .header {
+    @apply bg-dark;
+  }
+
+  .header.header--active {
+    @apply fixed right-0 z-10 h-screen w-full overflow-y-auto overflow-x-hidden transition-all sm:w-[465px];
+  }
+
+  .header--active .btn__contact-title {
+    @apply hidden;
+  }
+
+  .header--active .nav__link-services::before {
+    @apply rotate-0;
+  }
+
+  .header--active .nav__item {
+    @apply absolute top-[184px] left-0 mx-5 flex w-[92%] flex-col gap-[30px] border-t border-middleGrey px-0 pt-[30px] text-xl;
+  }
+
+  .header--active .nav-icon {
+    @apply right-[-40px] top-[9px] h-2 w-5 rotate-[-90deg];
+  }
+
+  .header--active .btn-language {
+    @apply absolute left-5 top-[128px] flex;
+  }
+
+  .nav {
+    @apply flex items-center justify-between py-3.5;
+  }
+
+  .logo {
+    @apply flex items-center gap-x-8;
+  }
+
+  .nav__item {
+    @apply absolute top-[-100%] px-2 font-montserrat text-base uppercase text-lightGrey transition-all md:static md:flex md:gap-6 xl:gap-[50px];
+  }
+
+  .nav__link {
+    @apply after:block after:h-px after:w-full after:scale-0 after:bg-middleGrey after:transition-all after:content-[''] hover:text-middleGrey hover:after:scale-100 active:text-main active:after:bg-main;
+  }
+
+  .nav__link-services::before {
+    @apply absolute right-[-20px] block rotate-90 font-mono text-[19px] content-['>'];
+  }
+
+  .link__list {
+    @apply absolute top-[184px] left-full mx-5 flex w-[92%] scale-0 flex-col gap-[30px] border-t border-middleGrey px-2 pt-[30px] font-montserrat text-base uppercase text-lightGrey transition-all;
+  }
+
+  .link__list-btn {
+    @apply flex max-w-min gap-[10px] font-montserrat text-xs   uppercase text-main before:font-mono before:text-[16px] before:content-['<'];
+  }
+
+  .nav__btn {
+    @apply flex items-center gap-[33px];
+  }
+
+  .btn__contact {
+    @apply flex items-center justify-end gap-[16px] transition-all;
+  }
+
+  .btn__contact-wrap {
+    @apply flex justify-end rounded-full border border-solid border-transparent bg-main p-[12px] transition-all;
+  }
+
+  .burger {
+    @apply relative flex bg-transparent transition-all;
+  }
+
+  .burger:hover .burger__inner {
+    @apply bg-middleGrey;
+  }
+
+  .burger:hover .burger__inner {
+    @apply before:bg-middleGrey;
+  }
+
+  .burger:hover .burger__inner {
+    @apply after:bg-middleGrey;
+  }
+
+  .burger__box {
+    @apply relative h-[28px] w-[31px];
+  }
+
+  .burger__inner {
+    @apply absolute top-0 h-[3px] w-[31px] bg-white transition-all;
+  }
+
+  .burger__inner {
+    @apply before:absolute before:top-3 before:block before:h-[3px] before:w-[31px] before:bg-white before:transition-all before:content-[''];
+  }
+
+  .burger__inner {
+    @apply after:absolute after:top-[25px] after:block after:h-[3px] after:w-[31px] after:bg-white after:transition-all after:content-[''];
+  }
+
+  .is-active {
+    @apply transition-all;
+  }
+
+  .is-active.nav {
+    @apply top-0 transition-all;
+  }
+
+  .is-active .burger__inner {
+    @apply !bg-transparent;
+  }
+
+  .is-active .burger__inner {
+    @apply before:top-0 before:translate-y-[13px] before:rotate-45 before:bg-lightGrey before:transition-all;
+  }
+
+  .is-active .burger__inner {
+    @apply after:top-0 after:translate-y-[13px] after:rotate-[-45deg] after:bg-lightGrey after:transition-all;
+  }
+
+  .round-btn {
+    @apply absolute right-5 bottom-[-67px] flex h-[133px] w-[133px] flex-col items-center justify-center gap-[10px] rounded-full bg-main font-montserrat text-base font-bold uppercase text-white md:right-[93px] md:bottom-[-74px] md:h-[142px] md:w-[142px] md:pt-5 xl:bottom-[-87px] xl:h-[177px] xl:w-[177px] xl:pt-1.5;
+  }
+}

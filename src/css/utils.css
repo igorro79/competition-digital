@@ -1,0 +1,82 @@
+@layer components {
+  /* =========== HEADING ============ */
+  .heading2 {
+    @apply text-4xl font-bold uppercase md:text-[45px] md:leading-[50px] xl:text-[90px] xl:leading-[100px];
+  }
+  .heading2--white {
+    @apply text-white;
+  }
+
+  /*=============== MAIN BUTTON ============= */
+
+  .main-btn {
+    @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px]
+    border-main bg-main fill-white px-1 py-1 text-white md:min-w-[357px];
+  }
+  .main-btn--reversed {
+    @apply border-2 border-main bg-white fill-dark text-dark md:hidden;
+  }
+  .main-btn__lable {
+    @apply font-bold uppercase;
+  }
+  .main-btn__lable--smaller {
+    @apply text-sm;
+  }
+  .main-btn__icon {
+    @apply ml-3 inline-block h-4 w-4 bg-white-arrow bg-contain  bg-center bg-no-repeat;
+  }
+  .main-btn.btn-mgn-r-50 {
+    @apply mdOnly:mt-[50px] xl:mr-[50px] xl:ml-0;
+  }
+}
+
+@layer utilities {
+  /* --------- servicec and cases desktop screen grid -------- */
+  .grid-container-xl {
+    @apply xl:grid xl:grid-cols-[410px_1fr]  xl:grid-rows-[240px_auto];
+  }
+  .grid-container-item-xl {
+    @apply border-middleGrey
+     xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:border-l-[1px] xl:border-t-[1px];
+  }
+  .white-circle {
+    @apply flex h-9 w-9 items-center justify-center rounded-full bg-white  bg-center
+    bg-no-repeat  smOnly:bg-16  md:h-16 md:w-16 xl:h-[72px] xl:w-[72px];
+  }
+  .black-up-right-arrow {
+    @apply inline-block h-[22px] min-w-[22px] bg-dark-arrow bg-contain bg-center bg-no-repeat;
+  }
+  .pre-heading {
+    @apply mb-7 text-[12px] font-bold uppercase leading-4 tracking-wider text-middleGrey md:mb-4;
+  }
+  .mrg-t-sm {
+    @apply mt-[30px];
+  }
+  .mrg-t-md {
+    @apply mt-[50px];
+  }
+  .mrg-b-sm {
+    @apply mb-[30px];
+  }
+  .mrg-b-md {
+    @apply mb-[60px];
+  }
+  .top-border {
+    @apply border-t-[1px] border-t-middleGrey;
+  }
+  .bottom-border {
+    @apply border-b-[1px] border-b-middleGrey;
+  }
+  .auto-height {
+    @apply h-auto;
+  }
+  /* =========== GRADIENT ============ */
+  .red-gradient {
+    @apply relative from-gradientMain to-transparent
+     before:absolute before:right-0 before:top-[135px] 
+   before:h-[215px] before:w-[215px] before:translate-x-[50%]
+    before:bg-gradient-radial before:blur-2xl before:content-[''] md:before:top-[75px] 
+    md:before:h-[322px] md:before:w-[322px] xl:before:top-0
+     xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+}
