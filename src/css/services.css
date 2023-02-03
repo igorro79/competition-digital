@@ -1,0 +1,69 @@
+@layer components {
+  /*=============== SERVICES ============= */
+
+  .services-wrapper {
+    @apply pt-20 pb-20  md:pt-[90px] md:pb-[110px];
+  }
+
+  .services__heading {
+    @apply mb-[30px];
+  }
+  .services__description {
+    @apply mb-10  pt-[30px] md:mb-[30px] md:pt-10 xl:pr-[50px];
+  }
+  .services__cards-list {
+    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5  xl:pt-[70px];
+  }
+  .services__card {
+    @apply text-black md:pt-[200px] xl:pt-[350px];
+  }
+  /* ---right border--- */
+  .services__card:nth-child(-n + 5) {
+    @apply md:border-r-[1px] md:border-middleGrey;
+  }
+  /* ---grid text padding--- */
+  .services__card:nth-child(-n + 5) .services__card-text,
+  .services__card:nth-child(-n + 5) .services__card-title-wrapper {
+    @apply md:pr-7 xl:pr-[50px] xl:pl-[50px];
+  }
+  .services__card:nth-child(n + 6) .services__card-text,
+  .services__card:nth-child(n + 6) .services__card-title-wrapper {
+    @apply md:pl-7 xl:pl-[50px];
+  }
+  .services__card:nth-child(n + 6) {
+    @apply md:pt-[270px] xl:pt-[440px];
+  }
+  /* ------------- */
+
+  .services__card-title-wrapper {
+    @apply flex items-center justify-between border-b-[1px]
+     border-b-middleGrey text-2xl font-bold leading-[26.4px];
+  }
+  .services__card-title {
+    @apply py-5 text-2xl font-bold leading-[26.4px] smOnly:cursor-pointer xl:py-10 xl:text-[42px];
+  }
+
+  .services__card-content-wrapper {
+    @apply flex flex-col transition-height duration-500 ease-in-out
+     smOnly:max-h-0 smOnly:overflow-hidden md:relative;
+  }
+  .services__card-content-wrapper.open {
+    @apply max-h-[580px];
+  }
+  .services__card-text {
+    @apply max-h-[190px] pt-5 smOnly:mb-10 xl:pt-10;
+  }
+  .services__card-image-wrapper {
+    @apply smOnly:mt-10 md:absolute md:left-7 md:top-[-280px]
+     md:h-[216px] md:w-[216px] md:rounded-full md:bg-lightGrey
+      xl:left-20 xl:top-[-430px]  xl:h-[355px] xl:w-[355px];
+  }
+  .services__card-image {
+    @apply h-[152px] w-[320px] md:absolute md:left-1/2 
+    md:top-1/2 md:w-[265px] md:max-w-none md:translate-x-[-50%] 
+    md:translate-y-[-50%] xl:h-[270px] xl:w-[460px];
+  }
+  .services__main-btn {
+    @apply smOnly:hidden mdOnly:mt-14;
+  }
+}

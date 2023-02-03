@@ -14,8 +14,8 @@
   "homepage": "https://github.com/igorro79/competition-digital#readme",
   "description": "",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/css/style.css --watch",
-    "minify": "npx tailwindcss -i ./src/input.css -o ./src/css/style.css --minify"
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/style.css --watch",
+    "minify": "npx tailwindcss -i ./src/css/input.css -o ./src/style.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

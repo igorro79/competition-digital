@@ -24,6 +24,7 @@ module.exports = {
       cover: "cover",
       contain: "contain",
       24: "24px",
+      20: "20px",
       16: "16px",
     },
     extend: {
@@ -32,9 +33,12 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "double-quotes": "url('../images/double-quote.svg')",
-        "white-arrow": "url('../images/up-right-white.svg')",
-        clip: "url('../images/form/clip.svg')",
+        "double-quotes": "url('./images/double-quote.svg')",
+        "white-arrow": "url('./images/up-right-white.svg')",
+        "dark-arrow": "url('./images/up-right-dark.svg')",
+        "minus-icon": "url('./images/faq/minus.svg')",
+        "plus-icon": "url('./images/faq/plus.svg')",
+        "clip-icon": "url('./images/form/clip.svg')",
       },
       fontFamily: {
         montserrat: ["Montserrat"],
