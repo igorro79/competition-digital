@@ -3,7 +3,7 @@
 
   .faq__wrapper {
     @apply border-middleGrey pt-10 pb-20 md:pt-[74px] md:pb-[142px] xl:grid
-    xl:grid-cols-4  xl:grid-rows-[155px_auto] xl:border-t-[1px] xl:pt-[96px] xl:pb-[120px];
+    xl:grid-cols-4  xl:grid-rows-[155px_auto]  xl:pt-[96px] xl:pb-[120px];
   }
   .faq__pre-heading {
     @apply dark:text-white xl:mb-0 xl:border-r-[1px]

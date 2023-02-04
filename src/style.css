@@ -995,21 +995,13 @@ html{
   }
 }
 
-.cases{
+.video{
   position: relative;
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
 }
 
-.dark .cases{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
-.cases__intro-video{
+.video__video-block{
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5rem;
   max-height: 281px;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -1019,15 +1011,40 @@ html{
 }
 
 @media (min-width: 820px){
-  .cases__intro-video{
+  .video__video-block{
     max-height: 454px;
   }
 }
 
 @media (min-width: 1920px){
-  .cases__intro-video{
-    margin-bottom: 105px;
+  .video__video-block{
     max-height: 875px;
+  }
+}
+
+.cases{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.dark .cases{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.cases__wrapper{
+  padding-top: 5rem;
+}
+
+@media (min-width: 820px){
+  .cases__wrapper{
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .cases__wrapper{
+    padding-top: 105px;
   }
 }
 
@@ -1570,7 +1587,7 @@ html{
 @media (min-width: 820px){
   .services__card-image-wrapper{
     position: absolute;
-    left: 1.75rem;
+    left: 2.5rem;
     top: -280px;
     margin-top: 0px;
     height: 216px;
@@ -1637,7 +1654,7 @@ html{
 
 .blog-wrapper{
   padding-top: 1.25rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
 }
 
 @media (min-width: 820px){
@@ -1821,35 +1838,46 @@ html{
   }
 }
 
-.blog__who-grid{
+.who__wrapper{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1920px){
+  .who__wrapper{
+    padding-bottom: 160px;
+  }
+}
+
+.who__who-grid{
   flex-direction: row-reverse;
 }
 
 @media (min-width: 1920px){
-  .blog__who-grid{
+  .who__who-grid{
     display: flex;
   }
 
-  .blog__who-content{
+  .who__who-content{
     border-left-width: 1px;
     --tw-border-opacity: 1;
     border-color: rgb(144 144 144 / var(--tw-border-opacity));
   }
 }
 
-.blog__who-wrapper{
+.who__who-wrapper{
   padding-top: 30px;
   padding-bottom: 2.5rem;
 }
 
 @media (min-width: 1920px){
-  .blog__who-wrapper{
+  .who__who-wrapper{
     display: flex;
     padding-left: 50px;
   }
 }
 
-.blog__who-label{
+.who__who-label{
   margin-bottom: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1860,20 +1888,20 @@ html{
 }
 
 @media (min-width: 820px){
-  .blog__who-label{
+  .who__who-label{
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 1920px){
-  .blog__who-label{
+  .who__who-label{
     margin-right: 50px;
     min-width: 200px;
   }
 }
 
-.blog__who-text{
+.who__who-text{
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -1881,22 +1909,22 @@ html{
 }
 
 @media (min-width: 820px){
-  .blog__who-text{
+  .who__who-text{
     text-indent: 4rem;
   }
 }
 
 @media (min-width: 1920px){
-  .blog__who-text{
+  .who__who-text{
     text-indent: 120px;
     font-size: 32px;
     line-height: 45px;
   }
 }
 
-/* -----------blog__who-cards------- */
+/* -----------who__who-cards------- */
 
-.blog__who-card-list{
+.who__who-card-list{
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -1904,7 +1932,7 @@ html{
 }
 
 @media (min-width: 820px){
-  .blog__who-card-list{
+  .who__who-card-list{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1913,7 +1941,7 @@ html{
 }
 
 @media (min-width: 1920px){
-  .blog__who-card-list .blog__who-card-item{
+  .who__who-card-list .who__who-card-item{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -1921,13 +1949,13 @@ html{
   }
 }
 
-.blog__who-card-item{
+.who__who-card-item{
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 820px){
-  .blog__who-card-item:nth-child(-n + 2){
+  .who__who-card-item:nth-child(-n + 2){
     border-right-width: 1px;
     --tw-border-opacity: 1;
     border-color: rgb(144 144 144 / var(--tw-border-opacity));
@@ -1936,24 +1964,24 @@ html{
 }
 
 @media (min-width: 1920px){
-  .blog__who-card-item:nth-child(-n + 2){
+  .who__who-card-item:nth-child(-n + 2){
     padding-right: 50px;
   }
 }
 
 @media (min-width: 820px){
-  .blog__who-card-item:nth-child(n + 3){
+  .who__who-card-item:nth-child(n + 3){
     padding-left: 1.25rem;
   }
 }
 
 @media (min-width: 1920px){
-  .blog__who-card-item:nth-child(n + 3){
+  .who__who-card-item:nth-child(n + 3){
     padding-left: 50px;
   }
 }
 
-.blog__who-card-item-label{
+.who__who-card-item-label{
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1961,7 +1989,7 @@ html{
 }
 
 @media (min-width: 820px){
-  .blog__who-card-item-label{
+  .who__who-card-item-label{
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5rem;
@@ -1969,30 +1997,30 @@ html{
 }
 
 @media (min-width: 1920px){
-  .blog__who-card-item-label{
+  .who__who-card-item-label{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-.blog__who-card-item-text{
+.who__who-card-item-text{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
 @media (min-width: 820px){
-  .blog__who-card-item-text{
+  .who__who-card-item-text{
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-.main-btn.blog__main-btn{
+.main-btn.who__main-btn{
   margin-top: 60px;
 }
 
 @media (min-width: 1920px){
-  .main-btn.blog__main-btn{
+  .main-btn.who__main-btn{
     margin-top: 50px;
     margin-right: 50px;
   }
@@ -2269,7 +2297,6 @@ html{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: 155px auto;
-    border-top-width: 1px;
     padding-top: 96px;
     padding-bottom: 120px;
   }
@@ -4907,30 +4934,34 @@ html{
 .red-gradient::before{
   position: absolute;
   right: 0px;
-  top: 135px;
-  height: 215px;
-  width: 215px;
   --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   background-image: radial-gradient(var(--tw-gradient-stops));
-  --tw-blur: blur(40px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   --tw-content: '';
   content: var(--tw-content);
 }
 
+.red-gradient-top::before{
+  top: 0px;
+  height: 212px;
+  width: 212px;
+  content: var(--tw-content);
+  --tw-blur: blur(45px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @media (min-width: 820px){
-  .red-gradient::before{
-    top: 75px;
+  .red-gradient-top::before{
     height: 322px;
-    content: var(--tw-content);
     width: 322px;
+    content: var(--tw-content);
+    --tw-blur: blur(60px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
 
 @media (min-width: 1920px){
-  .red-gradient::before{
-    top: 0px;
+  .red-gradient-top::before{
     height: 591px;
     width: 591px;
     content: var(--tw-content);
@@ -4938,6 +4969,39 @@ html{
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
+
+.red-gradient-bottom::before{
+  top: 5rem;
+  height: 187px;
+  width: 187px;
+  content: var(--tw-content);
+  --tw-blur: blur(45px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 820px){
+  .red-gradient-bottom::before{
+    top: 100px;
+    height: 295px;
+    width: 295px;
+    content: var(--tw-content);
+    --tw-blur: blur(80px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+}
+
+@media (min-width: 1920px){
+  .red-gradient-bottom::before{
+    top: 150px;
+    height: 435px;
+    width: 435px;
+    content: var(--tw-content);
+    --tw-blur: blur(90px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+}
+
+/* =========== BIG RED ROUND BUTTON ============ */
 
 .big-red-btn{
   position: absolute;
@@ -4970,7 +5034,6 @@ html{
 
 @media (min-width: 820px){
   .big-red-btn{
-    right: 93px;
     height: 142px;
     width: 142px;
     background-position: center 48px;
@@ -4979,7 +5042,8 @@ html{
 
 @media (min-width: 1920px){
   .big-red-btn{
-    right: 464px;
+    height: 177px;
+    width: 177px;
   }
 }
 

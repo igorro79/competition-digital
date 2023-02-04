@@ -1,11 +1,11 @@
 @layer components {
   .cases {
-    @apply relative bg-light dark:bg-dark;
-  }
-  .cases__intro-video {
-    @apply mx-auto  mb-20 max-h-[281px] w-full bg-dark object-cover  md:max-h-[454px] xl:mb-[105px] xl:max-h-[875px];
+    @apply bg-light dark:bg-dark;
   }
 
+  .cases__wrapper {
+    @apply pt-20 md:pt-12 xl:pt-[105px];
+  }
   .cases__intro-wrapper {
     @apply mb-[70px] md:mb-[98px] md:flex xl:mb-[122px];
   }
