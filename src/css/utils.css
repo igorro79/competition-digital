@@ -77,18 +77,27 @@
   /* =========== GRADIENT ============ */
   .red-gradient {
     @apply relative overflow-hidden from-gradientMain to-transparent
-     before:absolute before:right-0 before:top-[135px] 
-   before:h-[215px] before:w-[215px] before:translate-x-[50%]
-    before:bg-gradient-radial before:blur-2xl before:content-[''] md:before:top-[75px] 
-    md:before:h-[322px] md:before:w-[322px] xl:before:top-0
-     xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+    before:absolute before:right-0 
+    before:translate-x-[50%] before:bg-gradient-radial 
+     before:content-[''];
   }
+  .red-gradient-top {
+    @apply before:top-0 before:h-[212px] before:w-[212px]
+       before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
+     md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+  .red-gradient-bottom {
+    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
+     md:before:h-[295px] md:before:w-[295px] md:before:blur-[80px] 
+     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
+  }
+  /* =========== BIG RED ROUND BUTTON ============ */
 
   .big-red-btn {
     @apply absolute right-[15%] top-0 z-[2] flex h-[133px] w-[133px] 
     -translate-y-1/2 items-end justify-center rounded-full
     bg-main bg-white-arrow bg-16 bg-[center_40px] bg-no-repeat
     px-4 py-7 text-center font-bold text-light 
-     md:h-[142px] md:w-[142px] md:bg-[center_48px];
+     md:h-[142px] md:w-[142px] md:bg-[center_48px] xl:h-[177px] xl:w-[177px];
   }
 }

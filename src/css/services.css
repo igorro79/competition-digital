@@ -54,7 +54,7 @@
     @apply mb-10 max-h-[190px] pt-5 md:mb-0 md:max-h-[240px] xl:pt-10;
   }
   .services__card-image-wrapper {
-    @apply mt-10 md:absolute md:left-7 md:top-[-280px] md:mt-0
+    @apply mt-10 md:absolute md:left-10 md:top-[-280px] md:mt-0
      md:h-[216px] md:w-[216px] md:rounded-full md:bg-lightGrey
       xl:left-20 xl:top-[-460px]  xl:h-[355px] xl:w-[355px];
   }

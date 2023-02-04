@@ -2,9 +2,11 @@
 
 @import "./header.css";
 @import "./hero.css";
+@import "./video.css";
 @import "./cases.css";
 @import "./services.css";
 @import "./blog.css";
+@import "./who.css";
 @import "./person.css";
 @import "./faq.css";
 @import "./form.css";

@@ -334,7 +334,7 @@
     </header>
 
     <main>
-      <section class="hero red-gradient">
+      <section class="hero red-gradient red-gradient-top">
         <div class="hero__wrapper container">
           <h1 class="hero__title">
             Your reliable digital<br />marketing partner
@@ -346,7 +346,7 @@
           </p>
         </div>
       </section>
-      <section class="cases">
+      <section class="video">
         <button
           type="button"
           aria-label="discuss the project"
@@ -355,17 +355,19 @@
           discuss the<br />
           project
         </button>
+
         <video
           autoplay
           muted
           poster="./src/images/cases/case-2@x.jpg"
           loop
-          class="cases__intro-video"
+          class="video__video-block"
         >
           <source src="src/images/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
+      </section>
+      <section class="cases">
         <div class="cases__wrapper container">
           <div class="cases__intro-wrapper">
             <h2 class="cases__intro-title">
@@ -1206,7 +1208,6 @@
               <span class="blog__all-btn-decor"></span
             ></a>
           </div>
-
           <ul class="blog__card-list">
             <li class="blog__card">
               <img
@@ -1259,53 +1260,57 @@
               <p class="blog__card-title">Advertising for business</p>
             </li>
           </ul>
+        </div>
+      </section>
 
-          <div class="blog__who-grid top-border">
-            <div class="blog__who-content">
-              <div class="blog__who-wrapper">
-                <p class="blog__who-label">Why we are</p>
-                <p class="blog__who-text">
+      <section class="who">
+        <div class="who__wrapper container">
+          <div class="who__who-grid top-border">
+            <div class="who__who-content">
+              <div class="who__who-wrapper">
+                <p class="who__who-label">Why we are</p>
+                <p class="who__who-text">
                   Our company is the quintessence of marketing talents and
                   Ukrainian diligence. Through our expertise, attention to
                   detail, and deep analytics, we find a solution for any
                   business problem.
                 </p>
               </div>
-              <div class="blog__who-card-list">
-                <div class="blog__who-card-item top-border">
-                  <p class="blog__who-card-item-label">
+              <div class="who__who-card-list">
+                <div class="who__who-card-item top-border">
+                  <p class="who__who-card-item-label">
                     We help companies speak the language of the customer.
                   </p>
-                  <p class="blog__who-card-item-text">
+                  <p class="who__who-card-item-text">
                     Thus, we do not rely on a one-time purchase, but attract and
                     retain customers for a long time.
                   </p>
                 </div>
-                <div class="blog__who-card-item top-border">
-                  <p class="blog__who-card-item-label">
+                <div class="who__who-card-item top-border">
+                  <p class="who__who-card-item-label">
                     We break the wall: transforming traditional marketing into
                     digital.
                   </p>
-                  <p class="blog__who-card-item-text">
+                  <p class="who__who-card-item-text">
                     There are no boundaries in the digital world. And in your
                     ability too.
                   </p>
                 </div>
-                <div class="blog__who-card-item top-border">
-                  <p class="blog__who-card-item-label">
+                <div class="who__who-card-item top-border">
+                  <p class="who__who-card-item-label">
                     We provide a full range of business promotion services:
                   </p>
-                  <p class="blog__who-card-item-text">
+                  <p class="who__who-card-item-text">
                     from web development and conversion optimization to a/b
                     testing and developing marketing strategies. We know how to
                     create a website business or an entire web agency.
                   </p>
                 </div>
-                <div class="blog__who-card-item top-border">
-                  <p class="blog__who-card-item-label">
+                <div class="who__who-card-item top-border">
+                  <p class="who__who-card-item-label">
                     We reveal the unique story of your brand.
                   </p>
-                  <p class="blog__who-card-item-text">
+                  <p class="who__who-card-item-text">
                     We know how to make customers remember you and increase
                     brand recognition.
                   </p>
@@ -1316,7 +1321,7 @@
             <button
               type="button"
               aria-label="Order a consultation"
-              class="main-btn blog__main-btn"
+              class="main-btn who__main-btn"
             >
               <span class="main-btn__lable">Order a consultation</span
               ><span class="main-btn__icon"></span>
@@ -1454,7 +1459,7 @@
           </ul>
         </div>
       </section>
-      <section class="form red-gradient text-middleGrey">
+      <section class="form red-gradient red-gradient-bottom text-middleGrey">
         <div class="form__wrapper container">
           <p class="pre-heading form__pre-heading">
             GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL

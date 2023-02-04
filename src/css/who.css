@@ -1,0 +1,45 @@
+@layer components {
+  .who__wrapper {
+    @apply pt-[30px] pb-[60px]  xl:pb-[160px];
+  }
+  .who__who-grid {
+    @apply flex-row-reverse xl:flex;
+  }
+  .who__who-content {
+    @apply xl:border-l-[1px] xl:border-middleGrey;
+  }
+  .who__who-wrapper {
+    @apply pt-[30px] pb-10 xl:flex  xl:pl-[50px];
+  }
+  .who__who-label {
+    @apply mb-5 text-sm font-bold uppercase text-middleGrey md:text-base xl:mr-[50px] xl:min-w-[200px];
+  }
+  .who__who-text {
+    @apply text-xl text-white md:indent-16 xl:indent-[120px] xl:text-[32px] xl:leading-[45px];
+  }
+  /* -----------who__who-cards------- */
+  .who__who-card-list {
+    @apply text-xl text-white md:grid md:grid-flow-col md:grid-cols-2  md:grid-rows-2;
+  }
+  .who__who-card-list .who__who-card-item {
+    @apply xl:py-[50px] xl:px-[50px];
+  }
+  .who__who-card-item {
+    @apply py-[30px];
+  }
+  .who__who-card-item:nth-child(-n + 2) {
+    @apply md:border-r-[1px] md:border-middleGrey md:pr-5 xl:pr-[50px];
+  }
+  .who__who-card-item:nth-child(n + 3) {
+    @apply md:pl-5 xl:pl-[50px];
+  }
+  .who__who-card-item-label {
+    @apply mb-4 text-base font-bold md:text-[18px] md:font-medium md:leading-6 xl:text-2xl;
+  }
+  .who__who-card-item-text {
+    @apply text-sm md:text-base;
+  }
+  .main-btn.who__main-btn {
+    @apply mt-[60px] xl:mt-[50px] xl:mr-[50px];
+  }
+}
