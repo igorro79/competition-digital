@@ -40,7 +40,7 @@
   }
 
   .nav__item {
-    @apply absolute top-[-100%] px-2 font-montserrat text-base uppercase text-lightGrey transition-all md:static md:flex md:gap-6 xl:gap-[50px];
+    @apply absolute top-[-100%] px-2 font-montserrat text-base uppercase text-lightGrey transition-all md:flex md:gap-6 xl:static xl:gap-[50px];
   }
 
   .nav__link {

@@ -60,17 +60,17 @@
     @apply items-center justify-between md:flex;
   }
   .main-btn.form__main-btn {
-    @apply smOnly:mt-8 md:mx-0 xl:min-w-[290px];
+    @apply mt-8 md:mt-0 md:mx-0 xl:min-w-[290px];
   }
   .form__contact-wrapper {
     @apply border-middleGrey xl:border-t-[1px] xl:pl-[45px] xl:pt-[60px];
   }
   .form__contact-address {
-    @apply mb-5 text-[12px] text-white smOnly:leading-6 md:mb-6 md:text-base 
+    @apply mb-5 text-[12px] text-white leading-6 md:mb-6 md:text-base md:leading-normal
     xl:mb-10 xl:max-w-[280px];
   }
   .form__contact-email {
-    @apply mb-1 text-xl font-semibold text-white smOnly:leading-5 md:mb-3 md:text-2xl md:font-bold xl:mb-4 xl:text-[32px];
+    @apply mb-1 text-xl font-semibold leading-5 text-white md:mb-3 md:text-2xl md:font-bold md:leading-normal xl:mb-4 xl:text-[32px];
   }
   .form__contact-text {
     @apply text-[12px] leading-6 md:text-base;

@@ -5,31 +5,36 @@
     @apply pt-11 pb-4  md:pt-[32px] md:pb-6;
   }
   .footer__content-wrapper {
-    @apply grid  mdOnly:grid-rows-[56px_130px_1fr_16px]  xl:grid-cols-3;
+    @apply grid  md:grid-rows-[56px_130px_1fr_16px] xl:grid-cols-3  xl:grid-rows-none;
   }
 
   .footer__nav-list {
-    @apply uppercase smOnly:mb-14 smOnly:grid smOnly:grid-flow-col
-     smOnly:grid-rows-3 smOnly:gap-[30px]
-     md:flex md:grid-cols-5 md:justify-between md:text-xl 
-      xl:col-start-1 xl:col-end-3 xl:mb-8 xl:max-w-[880px];
+    @apply mb-14 grid grid-flow-col grid-rows-3 gap-[30px] uppercase 
+     md:mb-0 md:flex md:grid-flow-row md:grid-cols-5 md:grid-rows-none 
+      md:justify-between  md:text-xl xl:col-start-1
+      xl:col-end-3 xl:mb-8;
   }
   .social {
     @apply mb-10 flex justify-around md:mx-auto md:mb-7 md:w-[300px] xl:mb-8 xl:mr-0;
   }
-  .social__icons {
-    @apply h-10 w-10 md:mx-auto md:h-6 md:w-6;
+
+  .social__link {
+    @apply text-dark dark:text-white md:mx-auto;
+  }
+  .social__link svg {
+    @apply h-10 w-10  md:h-6 md:w-6;
   }
   .footer__services-list {
-    @apply flex flex-wrap pt-5 pb-8 smOnly:mb-5 smOnly:flex-col
-     mdOnly:row-start-2  md:mb-6 md:pt-3 md:pb-3 xl:col-start-1 xl:col-end-4 xl:justify-between;
+    @apply mb-5 flex flex-col flex-wrap pt-5 pb-8 
+     md:row-start-2 md:mb-6 md:flex-row md:pt-3 md:pb-3 xl:col-start-1
+     xl:col-end-4 xl:row-start-auto xl:justify-between;
   }
   .footer__services-item:not(:last-child) {
-    @apply smOnly:mb-5 mdOnly:mr-16;
+    @apply mb-5 md:mb-0 md:mr-16 xl:mr-0;
   }
 
   .footer__services-link {
-    @apply text-sm uppercase leading-4 md:leading-[40px];
+    @apply text-sm uppercase leading-4 dark:text-white md:leading-[40px];
   }
   .footer__terms {
     @apply text-center text-[12px] leading-6 text-middleGrey;

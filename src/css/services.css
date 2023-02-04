@@ -12,10 +12,10 @@
     @apply mb-10  pt-[30px] md:mb-[30px] md:pt-10 xl:pr-[50px];
   }
   .services__cards-list {
-    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5  xl:pt-[70px];
+    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 xl:border-t-[1px]  xl:pt-[70px];
   }
   .services__card {
-    @apply text-black md:pt-[200px] xl:pt-[350px];
+    @apply text-black dark:text-white md:pt-[200px] xl:pt-[350px];
   }
   /* ---right border--- */
   .services__card:nth-child(-n + 5) {
@@ -40,30 +40,30 @@
      border-b-middleGrey text-2xl font-bold leading-[26.4px];
   }
   .services__card-title {
-    @apply py-5 text-2xl font-bold leading-[26.4px] smOnly:cursor-pointer xl:py-10 xl:text-[42px];
+    @apply cursor-pointer py-5 text-2xl font-bold leading-[26.4px] md:cursor-auto xl:py-10 xl:text-[42px];
   }
 
   .services__card-content-wrapper {
-    @apply flex flex-col transition-height duration-500 ease-in-out
-     smOnly:max-h-0 smOnly:overflow-hidden md:relative;
+    @apply flex max-h-0 flex-col overflow-hidden transition-height
+     duration-500 ease-in-out md:relative md:max-h-full md:overflow-visible;
   }
   .services__card-content-wrapper.open {
     @apply max-h-[580px];
   }
   .services__card-text {
-    @apply max-h-[190px] pt-5 smOnly:mb-10 xl:pt-10;
+    @apply mb-10 max-h-[190px] pt-5 md:mb-0 md:max-h-[240px] xl:pt-10;
   }
   .services__card-image-wrapper {
-    @apply smOnly:mt-10 md:absolute md:left-7 md:top-[-280px]
+    @apply mt-10 md:absolute md:left-7 md:top-[-280px] md:mt-0
      md:h-[216px] md:w-[216px] md:rounded-full md:bg-lightGrey
-      xl:left-20 xl:top-[-430px]  xl:h-[355px] xl:w-[355px];
+      xl:left-20 xl:top-[-460px]  xl:h-[355px] xl:w-[355px];
   }
   .services__card-image {
     @apply h-[152px] w-[320px] md:absolute md:left-1/2 
     md:top-1/2 md:w-[265px] md:max-w-none md:translate-x-[-50%] 
     md:translate-y-[-50%] xl:h-[270px] xl:w-[460px];
   }
-  .services__main-btn {
-    @apply smOnly:hidden mdOnly:mt-14;
+  .main-btn.services__main-btn {
+    @apply hidden md:mt-14 md:flex xl:mr-[50px] xl:mt-0;
   }
 }

@@ -1,10 +1,7 @@
 @layer components {
   /* =========== HEADING ============ */
   .heading2 {
-    @apply text-4xl font-bold uppercase md:text-[45px] md:leading-[50px] xl:text-[90px] xl:leading-[100px];
-  }
-  .heading2--white {
-    @apply text-white;
+    @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[50px] xl:text-[90px] xl:leading-[100px];
   }
 
   /*=============== MAIN BUTTON ============= */
@@ -26,7 +23,7 @@
     @apply ml-3 inline-block h-4 w-4 bg-white-arrow bg-contain  bg-center bg-no-repeat;
   }
   .main-btn.btn-mgn-r-50 {
-    @apply mdOnly:mt-[50px] xl:mr-[50px] xl:ml-0;
+    @apply mt-[50px] xl:mr-[50px] xl:ml-0 xl:mt-0;
   }
 }
 
@@ -36,12 +33,19 @@
     @apply xl:grid xl:grid-cols-[410px_1fr]  xl:grid-rows-[240px_auto];
   }
   .grid-container-item-xl {
-    @apply border-middleGrey
-     xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:border-l-[1px] xl:border-t-[1px];
+    @apply border-middleGrey  xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:border-l-[1px];
   }
+  /* ------------------------- */
+
+  .theme-bg {
+    @apply bg-light dark:bg-dark;
+  }
+  .theme-color {
+    @apply text-dark dark:text-white;
+  }
+
   .white-circle {
-    @apply flex h-9 w-9 items-center justify-center rounded-full bg-white  bg-center
-    bg-no-repeat  smOnly:bg-16  md:h-16 md:w-16 xl:h-[72px] xl:w-[72px];
+    @apply flex h-9 w-9 items-center justify-center rounded-full bg-white  md:h-16 md:w-16 xl:h-[72px] xl:w-[72px];
   }
   .black-up-right-arrow {
     @apply inline-block h-[22px] min-w-[22px] bg-dark-arrow bg-contain bg-center bg-no-repeat;
@@ -72,11 +76,19 @@
   }
   /* =========== GRADIENT ============ */
   .red-gradient {
-    @apply relative from-gradientMain to-transparent
+    @apply relative overflow-hidden from-gradientMain to-transparent
      before:absolute before:right-0 before:top-[135px] 
    before:h-[215px] before:w-[215px] before:translate-x-[50%]
     before:bg-gradient-radial before:blur-2xl before:content-[''] md:before:top-[75px] 
     md:before:h-[322px] md:before:w-[322px] xl:before:top-0
      xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+
+  .big-red-btn {
+    @apply absolute right-[15%] top-0 z-[2] flex h-[133px] w-[133px] 
+    -translate-y-1/2 items-end justify-center rounded-full
+    bg-main bg-white-arrow bg-16 bg-[center_40px] bg-no-repeat
+    px-4 py-7 text-center font-bold text-light 
+     md:h-[142px] md:w-[142px] md:bg-[center_48px];
   }
 }

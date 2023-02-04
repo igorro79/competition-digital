@@ -4,17 +4,16 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      smOnly: { max: "819.98px" },
       sm: "360px",
-      mdOnly: { min: "820px", max: "1919.98px" },
       md: "820px",
       xl: "1920px",
-      notXl: { max: "1919.98px" },
     },
     container: {
       center: true,
+
       padding: {
         DEFAULT: "20px",
+        sm: "20px",
         md: "30px",
         xl: "135px",
       },

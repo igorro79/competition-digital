@@ -12,11 +12,10 @@
 @import "./utils.css";
 
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   html {
     @apply font-montserrat text-base font-medium text-dark;
   }
 }
+@tailwind components;
+@tailwind utilities;
