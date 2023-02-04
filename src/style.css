@@ -1036,12 +1036,15 @@ html{
   padding-top: 5rem;
 }
 
+<<<<<<< HEAD
 @media (min-width: 820px){
   .cases__wrapper{
     padding-top: 3rem;
   }
 }
 
+=======
+>>>>>>> 7b16e8b3444ad2c0b832ccc969bde0011588c5e9
 @media (min-width: 1920px){
   .cases__wrapper{
     padding-top: 105px;
