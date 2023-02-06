@@ -16,15 +16,13 @@
     @apply md:row-start-1  md:row-end-5;
   }
   .person__image {
-    @apply block h-[180px] w-[150px] overflow-hidden rounded-[20px]
-     md:h-[352px] md:w-[240px] md:overflow-auto md:rounded-none xl:h-[520px] xl:w-[390px];
+    @apply block h-[180px] w-[150px] md:h-[352px]
+     md:w-[240px] md:overflow-auto xl:h-[520px] xl:w-[390px];
   }
   .person__info {
     @apply md:flex md:items-center;
   }
-  .person__info-decor {
-    @apply mb-[10px] md:mb-0  md:mr-[30px];
-  }
+
   .person__info-name {
     @apply mb-[10px] text-xl  leading-[22px] xl:text-[32px];
   }
@@ -33,7 +31,7 @@
   }
   .person__about {
     @apply col-start-1 col-end-3 mt-9 min-h-[280px] overflow-y-auto  md:col-start-auto
-     md:col-end-auto md:mt-7 md:mb-2 md:max-h-[160px]  md:min-h-[160px]
+     md:col-end-auto md:mt-7 md:mb-2 md:max-h-[145px]  md:min-h-[145px]
       xl:max-h-[250px]  xl:min-h-[250px] xl:text-2xl;
   }
   .person__clients {

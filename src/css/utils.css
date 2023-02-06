@@ -25,6 +25,44 @@
   .main-btn.btn-mgn-r-50 {
     @apply mt-[50px] xl:mr-[50px] xl:ml-0 xl:mt-0;
   }
+
+  /*=============== CIRCLE WHITE BUTTON ============= */
+
+  .circle-white-btn {
+    @apply flex h-[38px] w-[38px] items-center justify-center rounded-full 
+    border-[1px] border-middleGrey bg-transparent text-4xl
+    hover:border-main hover:bg-main active:border-main active:bg-main;
+  }
+  .circle-white-btn svg {
+    @apply h-[11px] w-[11px] text-dark dark:text-white;
+  }
+  .circle-white-btn--white svg {
+    @apply text-white;
+  }
+  .circle-white-btn:hover svg {
+    @apply text-white;
+  }
+  /* -------- person-circle-double-quotes-btn ----- */
+  .person-circle-double-quotes-btn {
+    @apply mb-[10px] flex h-9 w-9 items-center justify-center
+     rounded-full  bg-white md:mb-0 md:mr-[30px]
+      md:h-16 md:w-16 xl:h-[64px]  xl:w-[64px];
+  }
+  .person-circle-double-quotes-btn svg {
+    @apply h-[14px] w-[14px] md:h-[22px] md:w-[22px];
+  }
+  /*----------- #Button V5 ---- Scroll Team ------- */
+  .circle-team-btn {
+    @apply absolute left-0 bottom-0 flex h-[37px] w-[37px] translate-y-[50%]
+     items-center justify-center rounded-full border-[2px]
+     border-light bg-light hover:border-main 
+    active:border-main md:h-[58px] md:w-[58px] 
+    xl:h-[72px]  xl:w-[72px];
+  }
+  .circle-team-btn svg {
+    @apply h-[14px] w-[14px] text-dark md:h-5 md:w-5;
+  }
+
   /* =============  breadcrumbs ========== */
 
   .breadcrumbs-wrapper {
@@ -63,15 +101,43 @@
   .big-red-btn.cases-page__big-red-btn {
     @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] md:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
   }
+  /* =========== COOKIES ============ */
+
+  #cookies {
+    @apply fixed bottom-10 right-10 flex max-w-[490px] items-center rounded-[60px] border-[1px] border-middleGrey bg-dark py-[17px] pr-[17px] pl-[38px] text-white;
+  }
+  .learn-more {
+    @apply font-bold uppercase transition-all hover:text-main;
+  }
+  #accept-btn {
+    @apply ml-5 rounded-[50px] bg-grey py-4 px-10 uppercase text-white transition-all
+     hover:bg-white hover:text-dark;
+  }
+
+  /* =========== LETS TALK BUTTON ============ */
+
+  .lets-talk-btn {
+    @apply flex min-h-[40px] min-w-[40px] items-center justify-center
+    rounded-[60px] border-[1px] border-main bg-main uppercase text-white
+    transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white
+   active:text-main md:gap-[16px] md:px-6 md:py-3;
+  }
+  .lets-talk-btn__text {
+    @apply hidden md:block;
+  }
+  .lets-talk-btn__text svg {
+    @apply h-4 w-4;
+  }
 }
 
 @layer utilities {
-  .theme-bg {
-    @apply bg-light dark:bg-dark;
+  .theme-white {
+    @apply bg-light text-dark  dark:bg-dark dark:text-white;
   }
-  .theme-color {
-    @apply text-dark dark:text-white;
+  .theme-black {
+    @apply bg-dark text-white dark:bg-dark dark:text-white;
   }
+
   /*========= animate link arrows ============  */
   .link-arrow-animation {
     @apply relative overflow-hidden;
@@ -107,11 +173,12 @@
   }
 
   .white-circle {
-    @apply flex h-9 w-9 items-center justify-center rounded-full bg-white  md:h-16 md:w-16 xl:h-[72px] xl:w-[72px];
+    @apply flex h-9 w-9 items-center justify-center rounded-full
+     bg-white  md:h-16 md:w-16 xl:h-[72px] xl:w-[72px];
   }
-  .black-up-right-arrow {
+  /* .black-up-right-arrow {
     @apply inline-block h-[22px] min-w-[22px] bg-dark-arrow bg-contain bg-center bg-no-repeat;
-  }
+  } */
   .pre-heading {
     @apply mb-7 text-[12px] font-bold uppercase leading-4 tracking-wider text-middleGrey md:mb-4;
   }

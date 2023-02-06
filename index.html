@@ -256,32 +256,24 @@
           </ul>
 
           <div class="nav__btn lg:gap-[41px] z-10 md:gap-[37px]">
-            <button class="btn__contact lg:relative lg:w-44 group">
-              <span
-                class="btn__contact-title lg:absolute lg:text-white lg:left-[26px] lg:group-hover:text-dark lg:group-active:text-main hidden transition-all md:flex md:font-montserrat md:text-base md:font-normal md:uppercase md:text-main"
+            <button class="lets-talk-btn">
+              <span class="lets-talk-btn__text"> let's talk</span>
+              <svg
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                let's talk
-              </span>
-              <span
-                class="btn__contact-wrap group-hover:border-lightDarkGrey lg:rounded-[60px] lg:w-full lg:p-[13px] lg:pr-[25px] inline-block group-hover:bg-white group-active:border-main md:p-[14px] md:pb-[15px]"
-              >
-                <svg
-                  class="h-[14.5px] md:h-[17px]"
-                  viewBox="0 0 16 15"
-                  fill="none"
-                >
-                  <path
-                    class="transition-all group-hover:fill-dark group-active:fill-main"
-                    d="M1.43416 9.93883L0.522806 13.5585C0.491368 13.6908 0.492445 13.8279 0.525961 13.9598C0.559476 14.0917 0.624582 14.215 0.716523 14.3208C0.808464 14.4265 0.924918 14.5121 1.05738 14.5711C1.18983 14.6302 1.33495 14.6612 1.48213 14.662C1.5507 14.6684 1.6198 14.6684 1.68838 14.662L5.64557 13.8233L13.2434 6.8577L9.00319 2.96436L1.43416 9.93883Z"
-                    fill="white"
-                  />
-                  <path
-                    class="transition-all group-hover:fill-dark group-active:fill-main"
-                    d="M15.632 3.37039L12.802 0.765995C12.616 0.595635 12.3642 0.5 12.1017 0.5C11.8393 0.5 11.5875 0.595635 11.4014 0.765995L9.82812 2.21386L14.0635 6.11162L15.6368 4.66375C15.7289 4.57859 15.8018 4.47756 15.8514 4.36644C15.901 4.25532 15.9263 4.13628 15.9258 4.01615C15.9254 3.89602 15.8992 3.77715 15.8488 3.66634C15.7984 3.55554 15.7247 3.45496 15.632 3.37039V3.37039Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
+                <path
+                  d="M0.98911 9.99387L0.0241479 13.8264C-0.00914004 13.9665 -0.0079989 14.1117 0.0274879 14.2514C0.0629746 14.391 0.131911 14.5216 0.22926 14.6336C0.326609 14.7456 0.449913 14.8361 0.590163 14.8986C0.730412 14.9612 0.884066 14.9941 1.0399 14.9949C1.11251 15.0017 1.18567 15.0017 1.25828 14.9949L5.44825 14.1069L13.493 6.73149L9.00338 2.60913L0.98911 9.99387Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M16.0227 3.03923L13.0263 0.281642C12.8293 0.101261 12.5627 0 12.2848 0C12.0069 0 11.7403 0.101261 11.5433 0.281642L9.87744 1.81468L14.362 5.94171L16.0278 4.40868C16.1253 4.31851 16.2025 4.21154 16.255 4.09388C16.3075 3.97622 16.3343 3.85018 16.3338 3.72299C16.3334 3.59579 16.3057 3.46993 16.2523 3.3526C16.1989 3.23527 16.1209 3.12879 16.0227 3.03923Z"
+                  fill="currentColor"
+                />
+              </svg>
             </button>
             <button
               class="btn-language lg:flex z-10 hidden items-center gap-2.5 rounded-lg p-2.5 transition-all hover:bg-grey"
@@ -612,7 +604,7 @@
           </div>
         </div>
       </section>
-      <section class="services theme-bg">
+      <section class="services theme-white">
         <div class="services-wrapper container">
           <h2 class="heading2 services__heading">Our Services</h2>
 
@@ -1138,7 +1130,25 @@
           <div class="heading2 person__title">Let's discuss the project</div>
           <div class="person__grid">
             <div class="person__wrapper top-border">
-              <div class="person__thumb">
+              <div class="person__thumb relative">
+                <button
+                  type="button"
+                  aria-label="next teammate"
+                  class="circle-team-btn"
+                >
+                  <svg
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                      fill="#171717"
+                    />
+                  </svg>
+                </button>
                 <picture class="person__image">
                   <source
                     media="(min-width: 1920px)"
@@ -1163,14 +1173,46 @@
                   />
 
                   <img
-                    class="smOnly:rounded-[20px]"
                     src="./src/images/person/person1-mob-1@x.jpg"
                     alt="person card"
                   />
                 </picture>
               </div>
               <div class="person__info">
-                <div class="person__info-decor white-circle"></div>
+                <div class="person-circle-double-quotes-btn">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32"
+                    xml:space="preserve"
+                    fill="#171717"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g id="right_x5F_quote">
+                          <g>
+                            <path
+                              style="fill: #171717"
+                              d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                            ></path>
+                            <path
+                              style="fill: #171717"
+                              d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
                 <div class="person__info-text-wrapper">
                   <h3 class="person__info-name">Daniella</h3>
                   <p class="person__info-position">Copywriter</p>
@@ -1224,7 +1266,20 @@
             <h2 class="heading2 blog__title">Our blog</h2>
             <a class="blog__all-btn" href="#" aria-label="read all">
               <span class="blog__all-btn-text">Read all</span>
-              <span class="blog__all-btn-decor"></span
+              <div class="circle-white-btn circle-white-btn--white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                    fill="currentColor"
+                  />
+                </svg></div
             ></a>
           </div>
           <ul class="blog__card-list">
@@ -1348,7 +1403,7 @@
           </div>
         </div>
       </section>
-      <section class="faq theme-bg">
+      <section class="faq theme-white">
         <div class="faq__wrapper container">
           <p class="pre-heading faq__pre-heading">
             VI SVARAR PÅ DE VANLIGASTE FRÅGOR
@@ -1487,22 +1542,35 @@
           <h2 class="form__title">Let's promote your business</h2>
           <form class="form__contact-form">
             <div class="form__grid">
-              <div class="form__inputGroup">
-                <input id="name" type="text" required autocomplete="off" />
-                <label for="name">Your name?*</label>
+              <div class="form__inputGroup-wrapper invalid">
+                <div class="form__inputGroup">
+                  <input id="name" type="text" required autocomplete="off" />
+                  <label for="name">Your name?*</label>
+                </div>
+                <p class="error">Please enter name</p>
               </div>
-              <div class="form__inputGroup">
-                <input id="email" type="text" required autocomplete="off" />
-                <label for="email">Your e-mail?*</label>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input id="email" type="text" required autocomplete="off" />
+                  <label for="email">Your e-mail?*</label>
+                </div>
+                <p class="error">The email is in the wrong format</p>
               </div>
-              <div class="form__inputGroup">
-                <input id="phone" type="text" required autocomplete="off" />
-                <label for="phone">Phone number*</label>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input id="phone" type="text" required autocomplete="off" />
+                  <label for="phone">Phone number*</label>
+                </div>
+                <p class="error">The phone is in the wrong format</p>
               </div>
-              <div class="form__inputGroup">
-                <input id="company" type="text" required autocomplete="off" />
-                <label for="company">Company*</label>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input id="company" type="text" required autocomplete="off" />
+                  <label for="company">Company*</label>
+                </div>
+                <p class="error">Please enter company name</p>
               </div>
+
               <div class="form__inputGroup form__item-full">
                 <input
                   id="message"
@@ -1519,7 +1587,24 @@
               class="form__attach-button"
               type="button"
             >
-              <span class="form__attach-icon"></span> &nbsp;&nbsp; Attach a file
+              <span class="form__attach-icon">
+                <svg
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  fill="#f8f8f8"
+                >
+                  <g>
+                    <path
+                      class="st0"
+                      d="M454.821,253.582L273.256,435.14c-11.697,11.697-25.124,20.411-39.484,26.235 c-21.529,8.729-45.165,10.928-67.755,6.55c-22.597-4.378-44.054-15.25-61.597-32.784c-11.69-11.69-20.396-25.118-26.227-39.484 c-8.729-21.529-10.929-45.165-6.55-67.748c4.386-22.597,15.25-44.055,32.778-61.596l203.13-203.13 c7.141-7.134,15.299-12.43,24.035-15.969c13.1-5.318,27.516-6.656,41.263-3.994c13.769,2.677,26.798,9.27,37.498,19.963 c7.133,7.134,12.423,15.292,15.968,24.035c5.318,13.092,6.657,27.502,3.987,41.264c-2.67,13.762-9.262,26.783-19.955,37.498 L213.261,363.064c-2.534,2.528-5.375,4.364-8.436,5.61c-4.571,1.851-9.661,2.335-14.495,1.396 c-4.848-0.954-9.355-3.225-13.15-7.006c-2.534-2.534-4.364-5.368-5.603-8.429c-1.865-4.571-2.342-9.668-1.402-14.495 c0.947-4.841,3.225-9.355,7.005-13.149l175.521-175.528l-29.616-29.617l-175.528,175.52c-6.536,6.536-11.505,14.182-14.801,22.313 c-4.941,12.195-6.166,25.473-3.702,38.202c2.449,12.73,8.686,24.989,18.503,34.799c6.543,6.55,14.182,11.519,22.305,14.809 c12.202,4.948,25.473,6.165,38.21,3.702c12.722-2.449,24.989-8.678,34.806-18.511L439.97,195.602 c11.142-11.149,19.571-24.113,25.167-37.917c8.394-20.717,10.48-43.314,6.294-64.971c-4.179-21.643-14.73-42.432-31.46-59.155 c-11.149-11.142-24.114-19.571-37.918-25.166c-20.717-8.401-43.314-10.48-64.971-6.301c-21.643,4.186-42.431,14.737-59.155,31.468 L74.803,236.695c-15.713,15.691-27.552,33.931-35.426,53.352c-11.817,29.154-14.765,60.97-8.863,91.462 c5.888,30.478,20.717,59.696,44.29,83.254c15.698,15.713,33.931,27.552,53.36,35.426c29.146,11.811,60.97,14.758,91.455,8.863 c30.478-5.895,59.696-20.717,83.254-44.29l181.566-181.564L454.821,253.582z"
+                    />
+                  </g>
+                </svg>
+              </span>
+
+              <span>Attach a file</span>
             </button>
             <div class="form__btn-wrapper">
               <p class="form__details">
@@ -1558,10 +1643,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer theme-bg">
+    <footer class="footer theme-white">
       <div class="footer__wrapper container">
         <div class="footer__content-wrapper">
-          <ul class="footer__nav-list theme-color">
+          <ul class="footer__nav-list">
             <li class="">
               <a href="" aria-label="link to About us page" class="nav__link"
                 >About us</a
@@ -1770,6 +1855,15 @@
         </p>
       </div>
     </footer>
-    <script src="./src/js/scripts.js"></script>
+    <div id="cookies">
+      <p>
+        THIS WEBSITE USES COOKIES. <a href="" class="learn-more">Learn more</a>
+      </p>
+      <button id="accept-btn">accept</button>
+    </div>
+    <script src="./src/js/faq.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/services.js"></script>
+    <script src="./src/js/home.js"></script>
   </body>
 </html>

@@ -24,6 +24,15 @@
     @apply md:col-start-1 md:col-end-3;
   }
 
+  .form__inputGroup-wrapper {
+    @apply relative mb-0;
+  }
+  .invalid.form__inputGroup-wrapper input {
+    @apply border-main;
+  }
+  .invalid.form__inputGroup-wrapper .error {
+    @apply block;
+  }
   .form__inputGroup {
     @apply relative  w-full;
   }
@@ -46,27 +55,33 @@
   .form__attach-button {
     @apply mb-6 flex items-center bg-transparent text-sm md:text-base xl:mb-[50px];
   }
+
+  .form__attach-button:hover {
+    @apply text-main;
+  }
   .form__attach-icon {
-    @apply inline-block h-10 w-10 rounded-full bg-darkGrey bg-clip-icon 
-    bg-[length:20px_20px] bg-center bg-no-repeat;
+    @apply mr-[18px] flex h-10 w-10 items-center justify-center rounded-full bg-darkGrey;
+  }
+  .form__attach-button:hover .form__attach-icon {
+    @apply bg-main;
   }
   .form__details {
     @apply text-[12px] md:max-w-[370px] md:text-sm;
   }
   .form__details-link {
-    @apply text-link decoration-solid;
+    @apply text-link decoration-solid hover:text-linkActive active:text-linkActive;
   }
   .form__btn-wrapper {
     @apply items-center justify-between md:flex;
   }
   .main-btn.form__main-btn {
-    @apply mt-8 md:mt-0 md:mx-0 xl:min-w-[290px];
+    @apply mt-8 md:mx-0 md:mt-0 xl:min-w-[290px];
   }
   .form__contact-wrapper {
     @apply border-middleGrey xl:border-t-[1px] xl:pl-[45px] xl:pt-[60px];
   }
   .form__contact-address {
-    @apply mb-5 text-[12px] text-white leading-6 md:mb-6 md:text-base md:leading-normal
+    @apply mb-5 text-[12px] leading-6 text-white md:mb-6 md:text-base md:leading-normal
     xl:mb-10 xl:max-w-[280px];
   }
   .form__contact-email {
@@ -74,5 +89,8 @@
   }
   .form__contact-text {
     @apply text-[12px] leading-6 md:text-base;
+  }
+  .error {
+    @apply absolute bottom-[-20px] left-8 hidden text-sm text-main;
   }
 }

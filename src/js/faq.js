@@ -1,21 +1,7 @@
-const html = document.querySelector("html");
-const theme = document.querySelector(".btn__theme");
-
-const servicesList = document.querySelector(".services__cards-list");
 const faqList = document.querySelector(".faq__list");
 const faqQuestionList = document.querySelectorAll(".faq__question");
 const faqButtonList = document.querySelectorAll(".faq__question-button");
 const faqAnsvers = document.querySelectorAll(".faq__answer");
-
-theme.addEventListener("click", () => {
-  html.classList.toggle("dark");
-});
-
-servicesList.addEventListener("click", (e) => {
-  if (e.target.className === "services__card-title") {
-    e.target.parentNode.parentNode.lastElementChild.classList.add("open");
-  }
-});
 
 faqList.addEventListener("click", (e) => {
   if (e.target.className === "faq__question-button") {

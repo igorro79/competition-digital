@@ -16,11 +16,7 @@
   .blog__all-btn-text {
     @apply mr-3 hidden font-bold md:block;
   }
-  .blog__all-btn-decor {
-    @apply flex h-9 w-9 items-center justify-center 
-     rounded-full border-[1px] border-light bg-dark
-       text-4xl hover:border-main hover:bg-main active:border-main  active:bg-main;
-  }
+
   .blog__card-list {
     @apply flex gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
   }

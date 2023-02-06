@@ -5,8 +5,10 @@
 @import "./video.css";
 @import "./cases.css";
 @import "./services.css";
+@import "./services-page.css";
 @import "./blog.css";
 @import "./who.css";
+@import "./about-page.css";
 @import "./person.css";
 @import "./faq.css";
 @import "./form.css";
@@ -17,6 +19,9 @@
 @layer base {
   html {
     @apply font-montserrat text-base font-medium text-dark;
+  }
+  body {
+    @apply relative;
   }
 }
 @tailwind components;
