@@ -38,6 +38,7 @@ module.exports = {
         "minus-icon": "url('./images/faq/minus.svg')",
         "plus-icon": "url('./images/faq/plus.svg')",
         "clip-icon": "url('./images/form/clip.svg')",
+        showreel: "url('./images/cases/showreel.jpg')",
       },
       fontFamily: {
         montserrat: ["Montserrat"],
@@ -48,7 +49,7 @@ module.exports = {
         dark: "#171717",
         grey: "#323232",
         lightGrey: "#e0e0e0",
-        middleGrey: "#909090",
+        middleGrey: "#919191",
         lightRed: "#ff445e",
         darkGrey: "#474747",
         activeRed: "#dc2d45",

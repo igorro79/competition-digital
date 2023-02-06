@@ -11,14 +11,15 @@
     @apply md:max-w-[550px];
   }
   .blog__all-btn {
-    @apply mb-[10px] flex items-center md:mb-0;
+    @apply mb-[10px] flex  items-center md:mb-0;
   }
   .blog__all-btn-text {
     @apply mr-3 hidden font-bold md:block;
   }
   .blog__all-btn-decor {
-    @apply flex h-9 w-9 items-center justify-center rounded-full border-[1px] border-light
-     bg-dark bg-white-arrow bg-[length:11px_11px] bg-center bg-no-repeat  text-4xl;
+    @apply flex h-9 w-9 items-center justify-center 
+     rounded-full border-[1px] border-light bg-dark
+       text-4xl hover:border-main hover:bg-main active:border-main  active:bg-main;
   }
   .blog__card-list {
     @apply flex gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
@@ -27,7 +28,7 @@
     @apply mb-[50px] flex flex-col xl:mb-0;
   }
   .blog__card-image {
-    @apply mb-6 h-[165px] w-[270px] max-w-none rounded-[20px]  md:h-[220px] md:w-[305px]  xl:h-[350px] xl:w-[530px];
+    @apply mb-6 h-[165px] w-[270px] max-w-none  md:h-[220px] md:w-[305px]  xl:h-[350px] xl:w-[530px];
   }
   .blog__card-info-wrapper {
     @apply mb-4 flex items-center rounded-[20px];

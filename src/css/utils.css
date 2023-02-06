@@ -8,10 +8,10 @@
 
   .main-btn {
     @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px]
-    border-main bg-main fill-white px-1 py-1 text-white md:min-w-[357px];
+    border-main bg-main fill-white px-1 py-1 text-white hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
   }
   .main-btn--reversed {
-    @apply border-2 border-main bg-white fill-dark text-dark md:hidden;
+    @apply border-2 border-main bg-white fill-dark text-dark hover:bg-main hover:text-white active:bg-main active:text-white md:hidden;
   }
   .main-btn__lable {
     @apply font-bold uppercase;
@@ -25,10 +25,74 @@
   .main-btn.btn-mgn-r-50 {
     @apply mt-[50px] xl:mr-[50px] xl:ml-0 xl:mt-0;
   }
+  /* =============  breadcrumbs ========== */
+
+  .breadcrumbs-wrapper {
+    @apply flex;
+  }
+  .breadcrumbs {
+    @apply text-[10px] font-normal text-middleGrey hover:font-semibold hover:text-white active:font-semibold;
+  }
+  /* =========== GRADIENT ============ */
+  .red-gradient {
+    @apply relative overflow-hidden from-gradientMain to-transparent
+    before:absolute before:right-0 
+    before:translate-x-[50%] before:bg-gradient-radial 
+     before:content-[''];
+  }
+  .red-gradient-top {
+    @apply before:top-0 before:h-[212px] before:w-[212px]
+       before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
+     md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+  .red-gradient-bottom {
+    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
+     md:before:h-[295px] md:before:w-[295px] md:before:blur-[80px] 
+     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
+  }
+  /* =========== BIG RED ROUND BUTTON ============ */
+
+  .video__big-red-btn {
+    @apply absolute right-[15%] top-0 z-[2] -translate-y-1/2;
+  }
+  .big-red-btn {
+    @apply flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center gap-3 rounded-full bg-main px-4
+    py-7 text-center text-sm font-bold uppercase text-light md:min-h-[142px]
+     md:w-[142px] md:min-w-[142px] md:bg-[center_48px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px] xl:text-base;
+  }
+  .big-red-btn.cases-page__big-red-btn {
+    @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] md:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
+  }
 }
 
 @layer utilities {
-  /* --------- servicec and cases desktop screen grid -------- */
+  .theme-bg {
+    @apply bg-light dark:bg-dark;
+  }
+  .theme-color {
+    @apply text-dark dark:text-white;
+  }
+  /*========= animate link arrows ============  */
+  .link-arrow-animation {
+    @apply relative overflow-hidden;
+  }
+  .link-arrow-animation svg {
+    @apply absolute transition-all duration-300 ease-in-out;
+  }
+  .link-arrow-animation svg:first-child {
+    @apply top-0 right-0;
+  }
+  .link-arrow-animation:hover svg:first-child {
+    @apply top-[-100%] right-[-100%];
+  }
+  .link-arrow-animation svg:last-child {
+    @apply top-[100%] right-[100%];
+  }
+  .link-arrow-animation:hover svg:last-child {
+    @apply top-0 right-0;
+  }
+
+  /* ---------main page 'services' and 'cases' desktop screen grid -------- */
   .grid-container-xl {
     @apply xl:grid xl:grid-cols-[410px_1fr]  xl:grid-rows-[240px_auto];
   }
@@ -37,11 +101,9 @@
   }
   /* ------------------------- */
 
-  .theme-bg {
-    @apply bg-light dark:bg-dark;
-  }
-  .theme-color {
-    @apply text-dark dark:text-white;
+  /* ============= CASES PAGE ========== */
+  .cases__btn {
+    @apply rounded-[40px] bg-lightGrey py-[10px] px-4 text-sm uppercase text-dark dark:bg-darkGrey dark:text-light xl:rounded-[50px] xl:py-3 xl:px-5;
   }
 
   .white-circle {
@@ -73,31 +135,5 @@
   }
   .auto-height {
     @apply h-auto;
-  }
-  /* =========== GRADIENT ============ */
-  .red-gradient {
-    @apply relative overflow-hidden from-gradientMain to-transparent
-    before:absolute before:right-0 
-    before:translate-x-[50%] before:bg-gradient-radial 
-     before:content-[''];
-  }
-  .red-gradient-top {
-    @apply before:top-0 before:h-[212px] before:w-[212px]
-       before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
-     md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
-  }
-  .red-gradient-bottom {
-    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
-     md:before:h-[295px] md:before:w-[295px] md:before:blur-[80px] 
-     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
-  }
-  /* =========== BIG RED ROUND BUTTON ============ */
-
-  .big-red-btn {
-    @apply absolute right-[15%] top-0 z-[2] flex h-[133px] w-[133px] 
-    -translate-y-1/2 items-end justify-center rounded-full
-    bg-main bg-white-arrow bg-16 bg-[center_40px] bg-no-repeat
-    px-4 py-7 text-center font-bold text-light 
-     md:h-[142px] md:w-[142px] md:bg-[center_48px] xl:h-[177px] xl:w-[177px];
   }
 }
