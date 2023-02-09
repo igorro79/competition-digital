@@ -56,6 +56,8 @@ module.exports = {
         gradientMain: "#FF304D",
         link: "#4B73FF",
         linkActive: "#86A1FF",
+        formBg: "#EEEEEE",
+        formBgDark: "#202020",
       },
     },
   },

@@ -3,12 +3,18 @@
   .heading2 {
     @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[50px] xl:text-[90px] xl:leading-[100px];
   }
+  /* -------- */
+
+  .pages__title {
+    @apply text-4xl font-bold uppercase md:text-[60px] md:leading-[66px] 
+     xl:text-[120px] xl:leading-[132px];
+  }
 
   /*=============== MAIN BUTTON ============= */
 
   .main-btn {
-    @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px]
-    border-main bg-main fill-white px-1 py-1 text-white hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
+    @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px] border-main
+    bg-main fill-white px-1 py-1 uppercase text-white hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark hover:bg-main hover:text-white active:bg-main active:text-white md:hidden;
@@ -19,8 +25,8 @@
   .main-btn__lable--smaller {
     @apply text-sm;
   }
-  .main-btn__icon {
-    @apply ml-3 inline-block h-4 w-4 bg-white-arrow bg-contain  bg-center bg-no-repeat;
+  .main-btn svg {
+    @apply ml-3 h-4 w-4;
   }
   .main-btn.btn-mgn-r-50 {
     @apply mt-[50px] xl:mr-[50px] xl:ml-0 xl:mt-0;
