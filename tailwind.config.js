@@ -58,6 +58,8 @@ module.exports = {
         linkActive: "#86A1FF",
         formBg: "#EEEEEE",
         formBgDark: "#202020",
+        dynamicBg: "#FF304DB2",
+        langBg: "#262626",
       },
     },
   },

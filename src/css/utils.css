@@ -14,7 +14,7 @@
 
   .main-btn {
     @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px] border-main
-    bg-main fill-white px-1 py-1 uppercase text-white hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
+    bg-main fill-white px-1 py-1 uppercase text-white transition-all hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark hover:bg-main hover:text-white active:bg-main active:text-white md:hidden;
@@ -37,10 +37,10 @@
   .circle-white-btn {
     @apply flex h-[38px] w-[38px] items-center justify-center rounded-full 
     border-[1px] border-middleGrey bg-transparent text-4xl
-    hover:border-main hover:bg-main active:border-main active:bg-main;
+    transition-all hover:border-main hover:bg-main active:border-main active:bg-main;
   }
   .circle-white-btn svg {
-    @apply h-[11px] w-[11px] text-dark dark:text-white;
+    @apply h-[11px] w-[11px] text-dark transition-all dark:text-white;
   }
   .circle-white-btn--white svg {
     @apply text-white;
@@ -61,7 +61,7 @@
   .circle-team-btn {
     @apply absolute left-0 bottom-0 flex h-[37px] w-[37px] translate-y-[50%]
      items-center justify-center rounded-full border-[2px]
-     border-light bg-light hover:border-main 
+     border-light bg-light transition-all hover:border-main 
     active:border-main md:h-[58px] md:w-[58px] 
     xl:h-[72px]  xl:w-[72px];
   }
@@ -75,7 +75,7 @@
     @apply flex;
   }
   .breadcrumbs {
-    @apply text-[10px] font-normal text-middleGrey hover:font-semibold hover:text-white active:font-semibold;
+    @apply text-[10px] font-normal text-middleGrey transition-all hover:font-semibold hover:text-white active:font-semibold;
   }
   /* =========== GRADIENT ============ */
   .red-gradient {
@@ -121,19 +121,6 @@
   }
 
   /* =========== LETS TALK BUTTON ============ */
-
-  .lets-talk-btn {
-    @apply flex min-h-[40px] min-w-[40px] items-center justify-center
-    rounded-[60px] border-[1px] border-main bg-main uppercase text-white
-    transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white
-   active:text-main md:gap-[16px] md:px-6 md:py-3;
-  }
-  .lets-talk-btn__text {
-    @apply hidden md:block;
-  }
-  .lets-talk-btn__text svg {
-    @apply h-4 w-4;
-  }
 }
 
 @layer utilities {

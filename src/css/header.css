@@ -1,50 +1,51 @@
 @layer components {
-  /* .main.main--active {
-    @apply pt-[76px];
-  } */
-
-  .header {
-    @apply bg-dark;
+  .header__container {
+    @apply py-[18px] px-5 md:py-[22px] md:px-[30px];
+  }
+  .header__wrapper {
+    @apply relative flex items-center;
+  }
+  /* ----------logo------------- */
+  .header__logo {
+    @apply mr-[34px] text-white md:mr-10;
+  }
+  .header__logo svg {
+    @apply h-10  md:h-[42px] xl:h-12;
+  }
+  /* --------------theme btn----------- */
+  .btn-theme-group {
+    @apply items-center gap-1 xl:flex xl:min-w-[60px];
+  }
+  .btn-theme {
+    @apply p-3;
   }
 
-  .header.header--active {
-    @apply fixed right-0 z-10 h-screen w-full overflow-y-auto overflow-x-hidden transition-all sm:w-[465px];
+  /* -------------navigation ------------- */
+  .dynamic-bg {
+    @apply fixed top-0 right-0 z-[5] h-full w-0 bg-dynamicBg blur-[25px] transition-all;
   }
-
-  .header--active .btn__contact-title {
-    @apply hidden;
+  .dynamic-bg.active {
+    @apply md:w-full;
   }
-
-  .header--active .nav__link-services::before {
-    @apply rotate-0;
-  }
-
-  .header--active .nav__item {
-    @apply absolute top-[184px] left-0 mx-5 flex w-[92%] flex-col gap-[30px] border-t border-middleGrey px-0 pt-[30px] text-xl;
-  }
-
-  .header--active .nav-icon {
-    @apply right-[-40px] top-[9px] h-2 w-5 rotate-[-90deg];
-  }
-
-  .header--active .btn-language {
-    @apply absolute left-5 top-[128px] flex;
-  }
-
   .nav {
-    @apply flex items-center justify-between py-3.5;
+    @apply fixed top-[76px] right-0 h-screen w-0 bg-dark 
+    transition-all md:top-[84px] xl:static xl:mx-auto
+     xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
+  }
+  .nav.active {
+    @apply z-[8] w-screen px-5 md:px-[30px];
   }
 
-  .logo {
-    @apply flex items-center gap-x-8;
-  }
-
-  .nav__item {
-    @apply absolute top-[-100%] px-2 font-montserrat text-base uppercase text-lightGrey transition-all md:flex md:gap-6 xl:static xl:gap-[50px];
+  .nav__list {
+    @apply flex flex-col gap-[30px] text-xl 
+    uppercase transition-all xl:static  xl:flex-row xl:gap-[50px] xl:text-base;
   }
 
   .nav__link {
-    @apply after:block after:h-px after:w-full after:scale-0 after:bg-middleGrey after:transition-all after:content-[''] hover:text-middleGrey hover:after:scale-100 active:text-main active:after:bg-main;
+    @apply after:block after:h-px after:w-full after:scale-0
+     after:bg-middleGrey after:transition-all after:content-['']
+      hover:text-middleGrey hover:after:scale-100 active:text-main
+       active:after:bg-main;
   }
 
   .nav__link-services::before {
@@ -52,78 +53,67 @@
   }
 
   .link__list {
-    @apply absolute top-[184px] left-full mx-5 flex w-[92%] scale-0 flex-col gap-[30px] border-t border-middleGrey px-2 pt-[30px] font-montserrat text-base uppercase text-lightGrey transition-all;
+    @apply absolute top-[184px] left-full mx-5 flex w-[92%] scale-0 flex-col
+     gap-[30px] border-t border-middleGrey px-2 pt-[30px] font-montserrat text-base 
+     uppercase text-lightGrey transition-all;
   }
 
   .link__list-btn {
-    @apply flex max-w-min gap-[10px] font-montserrat text-xs   uppercase text-main before:font-mono before:text-[16px] before:content-['<'];
+    @apply flex max-w-min gap-[10px] font-montserrat text-xs  
+     uppercase text-main before:font-mono before:text-[16px] before:content-['<'];
   }
 
-  .nav__btn {
-    @apply flex items-center gap-[33px];
+  /* -----------lets talk btn------------- */
+
+  .lets-talk-btn {
+    @apply mr-10 ml-auto flex min-h-[40px] min-w-[40px]
+    items-center justify-center rounded-[60px] border-[1px] border-main bg-main
+    uppercase text-white transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white
+   active:text-main md:gap-[16px] md:px-6 md:py-3 xl:ml-0;
+  }
+  .lets-talk-btn__text {
+    @apply hidden md:block;
+  }
+  .lets-talk-btn__text svg {
+    @apply h-4 w-4;
+  }
+  /* -----------language btn------------- */
+
+  .btn-language-group-mob {
+    @apply flex items-center gap-10 pt-[33px] pb-[30px] text-middleGrey md:pt-[50px] xl:hidden;
+  }
+  .btn-language-wrapper {
+    @apply rounded p-[10px];
+  }
+  .btn-language-wrapper.active-language {
+    @apply bg-langBg text-white;
+  }
+  .btn-language-group-full {
+    @apply xl:min-w-[80px];
+  }
+  .btn-language {
+    @apply flex items-center uppercase hover:text-main;
+  }
+  .btn-language-full {
+    @apply hidden xl:flex;
+  }
+  .btn-language svg {
+    @apply mr-[10px];
   }
 
-  .btn__contact {
-    @apply flex items-center justify-end gap-[16px] transition-all;
-  }
+  /* -----------burger------------- */
 
-  .btn__contact-wrap {
-    @apply flex justify-end rounded-full border border-solid border-transparent bg-main p-[12px] transition-all;
+  .burger-wrapper {
+    @apply min-w-[31px] xl:hidden;
   }
-
   .burger {
-    @apply relative flex bg-transparent transition-all;
+    @apply text-white transition-all hover:text-main xl:hidden;
   }
-
-  .burger:hover .burger__inner {
-    @apply bg-middleGrey;
-  }
-
-  .burger:hover .burger__inner {
-    @apply before:bg-middleGrey;
-  }
-
-  .burger:hover .burger__inner {
-    @apply after:bg-middleGrey;
-  }
-
-  .burger__box {
-    @apply relative h-[28px] w-[31px];
-  }
-
-  .burger__inner {
-    @apply absolute top-0 h-[3px] w-[31px] bg-white transition-all;
-  }
-
-  .burger__inner {
-    @apply before:absolute before:top-3 before:block before:h-[3px] before:w-[31px] before:bg-white before:transition-all before:content-[''];
-  }
-
-  .burger__inner {
-    @apply after:absolute after:top-[25px] after:block after:h-[3px] after:w-[31px] after:bg-white after:transition-all after:content-[''];
+  .burger-close {
+    @apply xl:hidden;
   }
 
   .is-active {
     @apply transition-all;
-  }
-
-  .is-active.nav {
-    @apply top-0 transition-all;
-  }
-
-  .is-active .burger__inner {
-    @apply !bg-transparent;
-  }
-
-  .is-active .burger__inner {
-    @apply before:top-0 before:translate-y-[13px] before:rotate-45 before:bg-lightGrey before:transition-all;
-  }
-
-  .is-active .burger__inner {
-    @apply after:top-0 after:translate-y-[13px] after:rotate-[-45deg] after:bg-lightGrey after:transition-all;
-  }
-
-  .round-btn {
-    @apply absolute right-5 bottom-[-67px] flex h-[133px] w-[133px] flex-col items-center justify-center gap-[10px] rounded-full bg-main font-montserrat text-base font-bold uppercase text-white md:right-[93px] md:bottom-[-74px] md:h-[142px] md:w-[142px] md:pt-5 xl:bottom-[-87px] xl:h-[177px] xl:w-[177px] xl:pt-1.5;
   }
 }

@@ -8,26 +8,30 @@
     @apply pt-3 pb-6 md:pb-[38px] xl:pb-[35px];
   }
   .blog-page__title-wrapper {
-    @apply mb-[50px] border-t-[4px] border-dark pt-5 md:mb-[70px] md:pt-[30px] xl:mb-[100px] xl:flex xl:justify-between xl:pt-[45px];
+    @apply mb-[50px] border-t-[4px] border-dark pt-5 md:mb-[70px] md:pt-[30px]
+     xl:mb-[100px] xl:flex xl:justify-between xl:pt-[45px];
   }
   .blog-page__title-sub-wrapper {
     @apply md:mb-[50px] md:flex;
   }
   .blog-page__title-text {
-    @apply mt-5 mb-10 md:ml-[60px] md:mt-0 md:mb-0 xl:ml-[64px] xl:max-w-[530px] xl:text-2xl;
+    @apply mt-5 mb-10 md:ml-[60px] md:mt-0 md:mb-0 xl:ml-[64px]
+     xl:max-w-[530px] xl:text-2xl;
   }
   .main-btn.blog-page__main-btn {
     @apply md:ml-0 xl:mr-0;
   }
   .blog-page__chapter-list {
-    @apply mb-[30px]  flex flex-col flex-wrap gap-[10px] md:mb-10 md:flex-row md:gap-5 xl:mb-[30px];
+    @apply mb-[30px]  flex flex-col flex-wrap gap-[10px] 
+    md:mb-10 md:flex-row md:gap-5 xl:mb-[30px];
   }
   .blog-page__chapter-btn {
-    @apply w-full rounded-[50px] bg-lightGrey px-5 py-3 uppercase md:w-auto md:gap-[10px];
+    @apply w-full rounded-[50px] bg-lightGrey px-5 py-3 uppercase dark:border-[1px] 
+    dark:border-lightGrey dark:bg-transparent md:w-auto md:gap-[10px];
   }
 
-  .main-btn.blog-page__chapter-btn--active {
-    @apply bg-dark text-light;
+  .blog-page__chapter-btn--active {
+    @apply bg-dark text-light dark:bg-lightGrey dark:text-dark;
   }
   .loader-line {
     @apply h-[5px] min-w-full bg-main;
@@ -69,7 +73,7 @@
   }
   .post-nav-btn {
     @apply flex h-[50px] w-[50px] items-center justify-center
-     rounded-full bg-lightGrey hover:bg-main hover:text-white;
+     rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent;
   }
 
   /* ---- main post info block ---------- */
@@ -122,10 +126,10 @@
     @apply mt-10 flex justify-center gap-4 md:mt-[64px] xl:mt-20;
   }
   .blog-page__posts-pagination-round-btn {
-    @apply flex h-[35px] w-[35px] items-center justify-center rounded-full hover:bg-main hover:text-white;
+    @apply flex h-[35px] w-[35px] items-center justify-center rounded-full transition-all hover:bg-main hover:text-white;
   }
   .blog-page__posts-pagination-round-btn svg {
-    @apply h-[10px] w-[10px];
+    @apply h-[10px] w-[10px] transition-all;
   }
   .blog-page__posts-pagination-round-btn:hover svg {
     @apply hover:bg-main hover:text-white;
