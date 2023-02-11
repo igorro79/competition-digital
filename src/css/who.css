@@ -9,7 +9,7 @@
     @apply xl:border-l xl:border-middleGrey;
   }
   .who__who-wrapper {
-    @apply border-t pt-[30px] pb-10 xl:flex  xl:border-middleGrey xl:pl-[50px];
+    @apply pt-[30px] pb-10 xl:flex   xl:pl-[50px];
   }
   .who__who-label {
     @apply mb-5 text-sm font-bold uppercase text-middleGrey md:text-base xl:mr-[50px] xl:min-w-[200px];

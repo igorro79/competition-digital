@@ -4306,7 +4306,6 @@ body{
 }
 
 .who__who-wrapper{
-  border-top-width: 1px;
   padding-top: 30px;
   padding-bottom: 2.5rem;
 }
@@ -4314,8 +4313,6 @@ body{
 @media (min-width: 1920px){
   .who__who-wrapper{
     display: flex;
-    --tw-border-opacity: 1;
-    border-color: rgb(145 145 145 / var(--tw-border-opacity));
     padding-left: 50px;
   }
 }
@@ -8043,11 +8040,6 @@ body{
 .stacked-fractions{
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
-}
-
-.text-middleGrey{
-  --tw-text-opacity: 1;
-  color: rgb(145 145 145 / var(--tw-text-opacity));
 }
 
 .text-white{

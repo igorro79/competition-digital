@@ -1678,15 +1678,36 @@
           </div>
           <ul class="blog__card-list">
             <li class="blog__card">
-              <img
-                class="blog__card-image"
-                srcset="
-                  ./src/images/blog/blog1-mob-1@x.jpg,
-                  ./src/images/blog/blog1-mob-2@x.jpg 2x
-                "
-                src="./src/images/blog/blog1-mob-1@x.jpg"
-                alt="blog"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    ./src/images/blog/blog1-full-1@x.jpg,
+                    ./src/images/blog/blog1-full-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 820px)"
+                  srcset="
+                    ./src/images/blog/blog1-tab-1@x.jpg,
+                    ./src/images/blog/blog1-tab-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="
+                    ./src/images/blog/blog1-mob-1@x.jpg,
+                    ./src/images/blog/blog1-mob-2@x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="blog__card-image"
+                  src="./src/images/blog/blog1-mob-1@x.jpg"
+                  alt="blog"
+                />
+              </picture>
+
               <div class="blog__card-info-wrapper">
                 <p class="blog__card-info-branch">Business</p>
                 <p class="blog__card-info-time">24.08.2022</p>
@@ -1694,15 +1715,35 @@
               <p class="blog__card-title">Advertising for business</p>
             </li>
             <li class="blog__card">
-              <img
-                class="blog__card-image"
-                srcset="
-                  ./src/images/blog/blog1-mob-1@x.jpg,
-                  ./src/images/blog/blog1-mob-2@x.jpg 2x
-                "
-                src="./src/images/blog/blog1-mob-1@x.jpg"
-                alt="blog"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    ./src/images/blog/blog1-full-1@x.jpg,
+                    ./src/images/blog/blog1-full-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 820px)"
+                  srcset="
+                    ./src/images/blog/blog1-tab-1@x.jpg,
+                    ./src/images/blog/blog1-tab-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="
+                    ./src/images/blog/blog1-mob-1@x.jpg,
+                    ./src/images/blog/blog1-mob-2@x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="blog__card-image"
+                  src="./src/images/blog/blog1-mob-1@x.jpg"
+                  alt="blog"
+                />
+              </picture>
               <div class="blog__card-info-wrapper">
                 <p class="blog__card-info-branch">Business</p>
                 <p class="blog__card-info-time">24.08.2022</p>
@@ -1712,15 +1753,35 @@
               </p>
             </li>
             <li class="blog__card">
-              <img
-                class="blog__card-image"
-                srcset="
-                  ./src/images/blog/blog1-mob-1@x.jpg,
-                  ./src/images/blog/blog1-mob-2@x.jpg 2x
-                "
-                src="./src/images/blog/blog1-mob-1@x.jpg"
-                alt="blog"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    ./src/images/blog/blog1-full-1@x.jpg,
+                    ./src/images/blog/blog1-full-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 820px)"
+                  srcset="
+                    ./src/images/blog/blog1-tab-1@x.jpg,
+                    ./src/images/blog/blog1-tab-2@x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="
+                    ./src/images/blog/blog1-mob-1@x.jpg,
+                    ./src/images/blog/blog1-mob-2@x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="blog__card-image"
+                  src="./src/images/blog/blog1-mob-1@x.jpg"
+                  alt="blog"
+                />
+              </picture>
               <div class="blog__card-info-wrapper">
                 <p class="blog__card-info-branch">Business</p>
                 <p class="blog__card-info-time">24.08.2022</p>
@@ -1733,7 +1794,7 @@
 
       <section class="who theme-black">
         <div class="who__wrapper container">
-          <div class="who__who-grid">
+          <div class="who__who-grid top-border">
             <div class="who__who-content">
               <div class="who__who-wrapper">
                 <p class="who__who-label">Why we are</p>
