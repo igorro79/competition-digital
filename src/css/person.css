@@ -52,7 +52,7 @@
   }
   .person__order-wrapper {
     @apply border-middleGrey pt-[30px] pb-[30px]
-     xl:w-[410px] xl:border-r-[1px] xl:pt-[50px] xl:pr-[50px];
+     xl:w-[410px] xl:border-r xl:pt-[50px] xl:pr-[50px];
   }
   .person__order-text {
     @apply mb-[30px] tracking-[0.4px] md:mb-10 xl:mb-[50px];

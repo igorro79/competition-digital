@@ -22,10 +22,10 @@
   }
 
   .about-page__content {
-    @apply border-t-[1px] border-middleGrey  xl:flex;
+    @apply border-t border-middleGrey  xl:flex;
   }
   .about-page__content-title {
-    @apply mb-7 border-middleGrey pt-5 font-bold uppercase md:pt-8 xl:mb-0 xl:min-w-[405px] xl:border-r-[1px] xl:pt-[50px] xl:pr-[60px] xl:text-2xl;
+    @apply mb-7 border-middleGrey pt-5 font-bold uppercase md:pt-8 xl:mb-0 xl:min-w-[405px] xl:border-r xl:pt-[50px] xl:pr-[60px] xl:text-2xl;
   }
   .about-page__content-wrapper {
     @apply xl:pl-[153px] xl:pb-[50px] xl:pt-[50px];
@@ -45,7 +45,7 @@
     @apply md:col-start-3 md:row-start-2;
   }
   .about-page__grid-card {
-    @apply border-t-[1px] border-middleGrey  pt-[30px]  xl:pt-[33px];
+    @apply border-t border-middleGrey  pt-[30px]  xl:pt-[33px];
   }
   .about-page__grid-label {
     @apply mb-4 text-sm xl:mb-6 xl:text-base;
@@ -60,7 +60,7 @@
     @apply pt-[46px] pb-[120px] md:pt-[80px] md:pb-[60px] xl:pt-[105px] xl:pb-[213px];
   }
   .about-team__content {
-    @apply xl:flex xl:border-t-[1px] xl:border-middleGrey;
+    @apply xl:flex xl:border-t xl:border-middleGrey;
   }
 
   .about-team__title {
@@ -78,7 +78,7 @@
     @apply md:ml-0;
   }
   .about-team__grid-wrapper {
-    @apply xl:border-l-[1px] xl:border-middleGrey xl:pl-[153px];
+    @apply xl:border-l xl:border-middleGrey xl:pl-[153px];
   }
   .about-team__results-grid {
     @apply mb-[70px] grid grid-cols-2 md:mb-[50px] md:grid-cols-[1fr_270px_1fr] xl:mb-[74px]
@@ -86,7 +86,7 @@
   }
 
   .about-team__grid-item {
-    @apply border-t-[1px] border-middleGrey pt-5 md:pt-6 xl:border-t-0
+    @apply border-t border-middleGrey pt-5 md:pt-6 xl:border-t-0
      xl:pt-[62px];
   }
   .about-team__grid-item:nth-child(n + 2) {
@@ -97,10 +97,10 @@
     @apply md:pt-6  xl:pt-[62px];
   }
   .about-team__grid-item:nth-child(n + 4) {
-    @apply xl:border-t-[1px];
+    @apply xl:border-t;
   }
   .about-team__grid-item:nth-child(odd) > div {
-    @apply border-r-[1px] border-middleGrey pr-[9px]  md:border-r-0 md:pr-0;
+    @apply border-r border-middleGrey pr-[9px]  md:border-r-0 md:pr-0;
   }
   .about-team__grid-item:nth-child(even) > div {
     @apply pl-[9px] md:pl-0;

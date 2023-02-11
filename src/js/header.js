@@ -1,56 +1,89 @@
 const html = document.querySelector("html");
+const body = document.querySelector("body");
 const theme = document.querySelector(".btn__theme");
 const themeBtnGroup = document.querySelector(".btn-theme-group");
-const langBtnGroup = document.querySelector(".btn-language-group-full");
-const burgerBtnGroup = document.querySelector(".burger-wrapper");
-
-theme.addEventListener("click", () => {
-  html.classList.toggle("dark");
-});
-
-langBtnGroup.addEventListener("click", (e) => {
-  langBtnGroup.childNodes.forEach((i) => {
-    if (i.tagName === "BUTTON") i.classList.toggle("hidden");
-  });
-});
-themeBtnGroup.addEventListener("click", (e) => {
-  themeBtnGroup.childNodes.forEach((i) => {
-    console.dir(i);
-    if (i.tagName === "BUTTON") i.classList.toggle("hidden");
-  });
-});
-burgerBtnGroup.addEventListener("click", (e) => {
-  burgerBtnGroup.childNodes.forEach((i) => {
-    console.dir(i);
-    if (i.tagName === "BUTTON") i.classList.toggle("hidden");
-  });
-});
-
-const btn = document.querySelector(".burger");
-const navBtn = document.querySelector(".header");
-const body = document.querySelector("body");
-const main = document.querySelector(".main");
-
-btn.addEventListener("click", () => {
-  btn.classList.toggle("is-active");
-  navBtn.classList.toggle("header--active");
-  body.classList.toggle("body-bg");
-  main.classList.toggle("main--active");
-  linkList.style.left = "0";
-});
-
-const linkServices = document.querySelector(".nav__link-services");
+const langBtnGroupFull = document.querySelector(".btn-language-group-full");
+const langBtnGroupMob = document.querySelector(".btn-language-group-mob");
+const burgerBtnOpen = document.querySelector(".burger-open");
+const burgerBtnClose = document.querySelector(".burger-close");
 const linkList = document.querySelector(".link__list");
-const navItem = document.querySelector(".nav__item");
+const navServices = document.querySelector(".nav__link-services-btn");
+const btn = document.querySelector(".burger");
+const navMenu = document.querySelector(".nav");
+const linkListBack = document.querySelector(".link__list-back-btn");
 
-linkServices.addEventListener("click", () => {
-  navItem.style.left = "100%";
-  linkList.setAttribute("style", "left: 0; transform: scale(1);");
+const letsTalkBtn = document.querySelector(".lets-talk-btn");
+const bigRedBtn = document.querySelector(".big-red-btn");
+const closeFormBtn = document.querySelector(".btn-colse-form");
+const dynamicForm = document.querySelector(".dynamic-form-wrapper");
+
+// ---------- mob menu service list  ----------
+const toggleServiceList = () => {
+  linkList.classList.toggle("show-links");
+};
+const hideServiceList = () => {
+  linkList.classList.remove("show-links");
+};
+navServices.addEventListener("click", toggleServiceList);
+linkListBack.addEventListener("click", hideServiceList);
+
+// ---------- change language ----------
+const changeLanguage = (e) => {
+  langBtnGroupFull.childNodes.forEach((i) => {
+    if (i.tagName === "BUTTON") {
+      i.classList.toggle("hidden");
+    }
+  });
+  langBtnGroupMob.childNodes.forEach((i) => {
+    if (i.tagName === "DIV") {
+      i.classList.toggle("active-language");
+    }
+  });
+};
+langBtnGroupFull.addEventListener("click", changeLanguage);
+langBtnGroupMob.addEventListener("click", changeLanguage);
+
+// -----change theme------
+themeBtnGroup.addEventListener("click", (e) => {
+  html.classList.toggle("dark");
+  themeBtnGroup.childNodes.forEach((i) => {
+    if (i.tagName === "BUTTON") {
+      i.classList.toggle("hidden");
+    }
+  });
 });
 
-const linkListBtn = document.querySelector(".link__list-btn");
+// -----dynamic form ------
 
-linkListBtn.addEventListener("click", () => {
-  navItem.style.left = "0";
-  linkList.setAttribute("style", "left: 100%; transform: scale(0);");
+const openForm = () => {
+  dynamicForm.classList.add("active-form");
+};
+const closeForm = () => {
+  dynamicForm.classList.remove("active-form");
+};
+letsTalkBtn.addEventListener("click", openForm);
+
+closeFormBtn.addEventListener("click", closeForm);
+
+// ----- burger ------
+const openBurger = () => {
+  navMenu.classList.add("active");
+  burgerBtnOpen.classList.add("hidden");
+  burgerBtnClose.classList.remove("hidden");
+};
+const closeBurger = () => {
+  hideServiceList();
+  navMenu.classList.remove("active");
+  burgerBtnClose.classList.add("hidden");
+  burgerBtnOpen.classList.remove("hidden");
+};
+
+burgerBtnOpen.addEventListener("click", openBurger);
+burgerBtnClose.addEventListener("click", closeBurger);
+// ----- on window resize ------
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1920) {
+    closeBurger();
+  }
 });

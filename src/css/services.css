@@ -12,14 +12,14 @@
     @apply mb-10  pt-[30px] md:mb-[30px] md:pt-10 xl:pr-[50px];
   }
   .services__cards-list {
-    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 xl:border-t-[1px]  xl:pt-[70px];
+    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 xl:border-t  xl:pt-[70px];
   }
   .services__card {
     @apply text-black dark:text-white md:pt-[200px] xl:pt-[350px];
   }
   /* ---right border--- */
   .services__card:nth-child(-n + 5) {
-    @apply md:border-r-[1px] md:border-middleGrey;
+    @apply md:border-r md:border-middleGrey;
   }
   /* ---grid text padding--- */
   .services__card:nth-child(-n + 5) .services__card-text,

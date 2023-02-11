@@ -30,14 +30,13 @@ module.exports = {
       transitionProperty: {
         height: "max-height",
       },
+      content: {
+        "arrow-content": "url('./images/up-right-dark.svg')",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "double-quotes": "url('./images/double-quote.svg')",
-        "white-arrow": "url('./images/up-right-white.svg')",
-        "dark-arrow": "url('./images/up-right-dark.svg')",
-        "minus-icon": "url('./images/faq/minus.svg')",
-        "plus-icon": "url('./images/faq/plus.svg')",
-        "clip-icon": "url('./images/form/clip.svg')",
+        "minus-icon": "url('./images/minus.svg')",
+        "plus-icon": "url('./images/plus.svg')",
         showreel: "url('./images/cases/showreel.jpg')",
       },
       fontFamily: {

@@ -1,4 +1,11 @@
 @layer components {
+  .header {
+    @apply fixed top-0 right-0 left-0 z-10 w-full xl:static;
+  }
+  .menu-open {
+    @apply h-screen overflow-y-hidden;
+  }
+
   .header__container {
     @apply py-[18px] px-5 md:py-[22px] md:px-[30px];
   }
@@ -14,7 +21,7 @@
   }
   /* --------------theme btn----------- */
   .btn-theme-group {
-    @apply items-center gap-1 xl:flex xl:min-w-[60px];
+    @apply flex items-center gap-1  xl:min-w-[60px];
   }
   .btn-theme {
     @apply p-3;
@@ -33,34 +40,67 @@
      xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
   }
   .nav.active {
-    @apply z-[8] w-screen px-5 md:px-[30px];
+    @apply w-screen px-5  md:px-[30px] xl:z-[8] xl:w-auto xl:px-0;
   }
 
   .nav__list {
-    @apply flex flex-col gap-[30px] text-xl 
-    uppercase transition-all xl:static  xl:flex-row xl:gap-[50px] xl:text-base;
+    @apply flex flex-col gap-[30px] border-t border-middleGrey pt-[30px] text-xl uppercase transition-all 
+    xl:static xl:flex-row xl:gap-[50px]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
 
-  .nav__link {
-    @apply after:block after:h-px after:w-full after:scale-0
-     after:bg-middleGrey after:transition-all after:content-['']
-      hover:text-middleGrey hover:after:scale-100 active:text-main
-       active:after:bg-main;
+  .nav__list-item {
+    @apply flex items-center;
+  }
+  .nav__list-item a {
+    @apply transition-all after:h-px
+      after:w-0 after:bg-middleGrey after:transition-all after:content-[''] 
+     hover:text-middleGrey hover:after:w-full
+      active:text-main  active:after:bg-main
+       xl:after:block;
+  }
+  .nav__list-item button {
+    @apply transition-all hover:text-middleGrey
+      active:text-main;
   }
 
-  .nav__link-services::before {
-    @apply absolute right-[-20px] block rotate-90 font-mono text-[19px] content-['>'];
+  .nav__link-services-btn {
+    @apply px-2 xl:ml-2 xl:rotate-90;
   }
 
   .link__list {
-    @apply absolute top-[184px] left-full mx-5 flex w-[92%] scale-0 flex-col
-     gap-[30px] border-t border-middleGrey px-2 pt-[30px] font-montserrat text-base 
-     uppercase text-lightGrey transition-all;
+    @apply absolute top-[140px] left-full flex w-full flex-col gap-5
+     bg-dark px-5 pt-5 text-base uppercase transition-all md:px-[32px]
+     md:pt-10;
+  }
+  .link__list-full {
+    @apply z-[3] transition-all xl:left-1/2 xl:top-[60px] xl:grid 
+    xl:w-[500px] xl:translate-x-[-40%] xl:scale-0 xl:grid-cols-2 xl:gap-[15px] 
+      xl:rounded-[10px]  xl:bg-white xl:px-5 xl:py-[30px] xl:text-dark;
+  }
+  .link__list.show-links {
+    @apply left-0 xl:left-1/2 xl:scale-100;
   }
 
-  .link__list-btn {
+  .link__list-back-btn {
     @apply flex max-w-min gap-[10px] font-montserrat text-xs  
-     uppercase text-main before:font-mono before:text-[16px] before:content-['<'];
+      text-main before:font-mono before:text-[16px] before:content-['<'];
+  }
+
+  .link__list a {
+    @apply relative hover:text-main active:text-main xl:flex;
+  }
+  .link__list a.pseudo {
+    @apply before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-middleGrey 
+     before:transition-all before:content-['']
+      hover:before:w-full  hover:before:bg-main   active:before:bg-main
+       xl:before:block;
+  }
+  .link__list a.pseudo {
+    @apply after:hidden  after:transition-all after:content-arrow-content hover:after:text-main group-hover:text-main
+     xl:after:ml-3 xl:after:block;
+  }
+  .link__list svg {
+    @apply h-4 w-4 text-main;
   }
 
   /* -----------lets talk btn------------- */
@@ -104,7 +144,7 @@
   /* -----------burger------------- */
 
   .burger-wrapper {
-    @apply min-w-[31px] xl:hidden;
+    @apply flex min-w-[31px] items-center xl:hidden;
   }
   .burger {
     @apply text-white transition-all hover:text-main xl:hidden;

@@ -6,3 +6,5 @@ accept.addEventListener("click", () => {
 
   cookies.style.display = "none";
 });
+
+bigRedBtn.addEventListener("click", openForm);

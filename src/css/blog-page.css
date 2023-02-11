@@ -109,7 +109,7 @@
     @apply mb-10 grid gap-10 md:mb-[64px] md:gap-[64px] xl:mb-20 xl:grid-cols-3 xl:gap-[130px_30px];
   }
   .blog-page__posts-item {
-    @apply border-t-[1px] border-middleGrey pt-[30px];
+    @apply border-t border-middleGrey pt-[30px];
   }
   .blog-page__post-title--margin {
     @apply mb-[50px] mt-10 text-2xl md:mb-10 xl:mt-[50px] xl:mb-[100px];
