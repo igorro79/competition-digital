@@ -43,8 +43,11 @@
   .cases__card:nth-child(odd) .cases__card-content {
     @apply md:pr-[34px] xl:border-r xl:border-middleGrey;
   }
+  .cases__card-image-wrap {
+    @apply mb-[30px] w-full md:mb-0 md:basis-1/2 xl:py-[50px];
+  }
   .cases__card-image {
-    @apply mb-[30px] block md:mb-0 md:basis-1/2 xl:py-[50px];
+    @apply block w-full object-cover;
   }
   .cases__card:nth-child(even) .cases__card-image {
     @apply xl:border-r xl:border-middleGrey xl:pr-[50px];

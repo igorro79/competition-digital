@@ -4,7 +4,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      sm: "360px",
       md: "820px",
       xl: "1920px",
     },
@@ -12,9 +11,6 @@ module.exports = {
       center: true,
 
       padding: {
-        DEFAULT: "20px",
-        sm: "20px",
-        md: "30px",
         xl: "135px",
       },
     },

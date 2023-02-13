@@ -1,6 +1,6 @@
     <div class="person__wrapper top-border">
             <div class="person__thumb">
-              <img
+              <img loading='lazy' 
                 class="person__image"
                 srcset="
                   ./src/images/person/person1-mob-1@x.jpg,./src/images/person/person1-mob-2@x.jpg 2x

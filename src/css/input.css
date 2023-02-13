@@ -25,6 +25,9 @@
   body {
     @apply relative;
   }
+  .custom-container {
+    @apply w-full px-5 md:px-[30px] xl:max-w-[1920px] xl:px-[135px];
+  }
 }
 @tailwind components;
 @tailwind utilities;

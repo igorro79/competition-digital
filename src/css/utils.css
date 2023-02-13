@@ -40,7 +40,10 @@
   .circle-white-btn {
     @apply flex h-[38px] w-[38px] items-center justify-center rounded-full 
     border-[1px] border-middleGrey bg-transparent text-4xl
-    transition-all hover:border-main hover:bg-main active:border-main active:bg-main;
+    transition-all;
+  }
+  .blog__all-btn:hover div {
+    @apply border-main bg-main;
   }
   .circle-white-btn svg {
     @apply h-[11px] w-[11px] text-dark transition-all dark:text-white;
@@ -113,7 +116,7 @@
   /* =========== COOKIES ============ */
 
   #cookies {
-    @apply fixed bottom-10 right-10 flex max-w-[490px] items-center rounded-[60px] border-[1px] border-middleGrey bg-dark py-[17px] pr-[17px] pl-[38px] text-white;
+    @apply fixed bottom-10 right-10 z-50 flex max-w-[490px] items-center rounded-[60px] border-[1px] border-middleGrey bg-dark py-[17px] pr-[17px] pl-[38px] text-white;
   }
   .learn-more {
     @apply font-bold uppercase transition-all hover:text-main;

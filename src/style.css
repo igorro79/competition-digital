@@ -532,23 +532,11 @@ body{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-@media (min-width: 360px){
-  .container{
-    max-width: 360px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 }
 
 @media (min-width: 820px){
   .container{
     max-width: 820px;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 }
 
@@ -1494,24 +1482,33 @@ body{
   }
 }
 
-.cases__card-image{
+.cases__card-image-wrap{
   margin-bottom: 30px;
-  display: block;
+  width: 100%;
 }
 
 @media (min-width: 820px){
-  .cases__card-image{
+  .cases__card-image-wrap{
     margin-bottom: 0px;
     flex-basis: 50%;
   }
 }
 
 @media (min-width: 1920px){
-  .cases__card-image{
+  .cases__card-image-wrap{
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
 
+.cases__card-image{
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1920px){
   .cases__card:nth-child(even) .cases__card-image{
     border-right-width: 1px;
     --tw-border-opacity: 1;
@@ -6295,14 +6292,7 @@ body{
   transition-duration: 150ms;
 }
 
-.circle-white-btn:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 48 77 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
-}
-
-.circle-white-btn:active{
+.blog__all-btn:hover div{
   --tw-border-opacity: 1;
   border-color: rgb(255 48 77 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -6630,6 +6620,7 @@ body{
   position: fixed;
   bottom: 2.5rem;
   right: 2.5rem;
+  z-index: 50;
   display: flex;
   max-width: 490px;
   align-items: center;
@@ -8611,45 +8602,27 @@ body{
   stroke: #ff304d;
 }
 
-@media (min-width: 360px){
-  .sm\:container{
+@media (min-width: 1920px){
+  .xl\:container{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  @media (min-width: 360px){
-    .sm\:container{
-      max-width: 360px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
   }
 
   @media (min-width: 820px){
-    .sm\:container{
+    .xl\:container{
       max-width: 820px;
-      padding-right: 30px;
-      padding-left: 30px;
     }
   }
 
   @media (min-width: 1920px){
-    .sm\:container{
+    .xl\:container{
       max-width: 1920px;
       padding-right: 135px;
       padding-left: 135px;
     }
   }
 
-  .sm\:underline{
-    text-decoration-line: underline;
-  }
-}
-
-@media (min-width: 1920px){
   .xl\:hidden{
     display: none;
   }
