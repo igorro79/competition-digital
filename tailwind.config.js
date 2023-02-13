@@ -7,13 +7,7 @@ module.exports = {
       md: "820px",
       xl: "1920px",
     },
-    container: {
-      center: true,
 
-      padding: {
-        xl: "135px",
-      },
-    },
     backgroundSize: {
       auto: "auto",
       cover: "cover",
