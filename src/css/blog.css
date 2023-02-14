@@ -18,13 +18,14 @@
   }
 
   .blog__card-list {
-    @apply flex gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
+    @apply grid grid-cols-3fr gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
   }
   .blog__card {
     @apply mb-[50px] flex flex-col xl:mb-0;
   }
   .blog__card-image {
-    @apply mb-6 h-[165px] w-[270px] max-w-none  md:h-[220px] md:w-[305px]  xl:h-[350px] xl:w-[530px];
+    @apply mb-6 block min-h-[165px] w-full min-w-[270px]
+    md:min-h-[220px] md:min-w-[305px]  xl:min-h-[350px] xl:min-w-[530px];
   }
   .blog__card-info-wrapper {
     @apply mb-4 flex items-center rounded-[20px];

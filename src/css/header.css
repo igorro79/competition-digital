@@ -1,6 +1,6 @@
 @layer components {
   .header {
-    @apply fixed top-0 right-0 left-0 z-10 w-full xl:static;
+    @apply fixed top-0 right-0 left-0 z-10 w-full transition-all;
   }
   .menu-open {
     @apply h-screen overflow-y-hidden;
@@ -44,27 +44,31 @@
   }
 
   .nav__list {
-    @apply flex flex-col gap-[30px] border-t border-middleGrey pt-[30px] text-xl uppercase transition-all 
+    @apply flex flex-col gap-[30px] border-t border-middleGrey pt-[30px]
+     text-xl  transition-all 
     xl:static xl:flex-row xl:gap-[50px]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
+  /* .nav__list button {
+    @apply uppercase;
+  } */
 
   .nav__list-item {
-    @apply flex items-center;
+    @apply inline-block max-w-max;
   }
-  .nav__list-item a {
-    @apply transition-all after:h-px
+
+  .nav__list-item a,
+  .nav__list-item button {
+    @apply uppercase transition-all after:h-px
       after:w-0 after:bg-middleGrey after:transition-all after:content-[''] 
      hover:text-middleGrey hover:after:w-full
       active:text-main  active:after:bg-main
-       xl:after:block;
-  }
-  .nav__list-item button {
-    @apply transition-all hover:text-middleGrey
-      active:text-main;
+       md:after:block;
   }
 
-  .nav__link-services-btn {
-    @apply px-2 xl:ml-2 xl:rotate-90;
+  .nav__link-services {
+    @apply inline-block pr-6 before:absolute before:top-0 before:right-0 
+     before:font-mono before:transition-all before:content-['>'] hover:text-middleGrey 
+      active:text-main   xl:before:rotate-90;
   }
 
   .link__list {
@@ -74,11 +78,11 @@
   }
   .link__list-full {
     @apply z-[3] transition-all xl:left-1/2 xl:top-[60px] xl:grid 
-    xl:w-[500px] xl:translate-x-[-40%] xl:scale-0 xl:grid-cols-2 xl:gap-[15px] 
-      xl:rounded-[10px]  xl:bg-white xl:px-5 xl:py-[30px] xl:text-dark;
+    xl:w-[500px] xl:origin-top-left xl:translate-x-[-40%] xl:scale-y-0 xl:grid-cols-2 
+      xl:gap-[15px] xl:rounded-[10px] xl:bg-white xl:px-5 xl:py-[30px] xl:text-dark;
   }
   .link__list.show-links {
-    @apply left-0 xl:left-1/2 xl:scale-100;
+    @apply left-0 xl:left-1/2 xl:scale-y-[1];
   }
 
   .link__list-back-btn {

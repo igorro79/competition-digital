@@ -7,25 +7,54 @@ const langBtnGroupMob = document.querySelector(".btn-language-group-mob");
 const burgerBtnOpen = document.querySelector(".burger-open");
 const burgerBtnClose = document.querySelector(".burger-close");
 const linkList = document.querySelector(".link__list");
+const navServicesFull = document.querySelector(".nav__link-services-btn");
 const navServices = document.querySelector(".nav__link-services-btn");
 const btn = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav");
+const header = document.querySelector(".header");
 const linkListBack = document.querySelector(".link__list-back-btn");
+// const linkList = document.querySelector(".link__list-full");
 
 const letsTalkBtn = document.querySelector(".lets-talk-btn");
 const bigRedBtn = document.querySelector(".big-red-btn");
 const closeFormBtn = document.querySelector(".btn-colse-form");
 const dynamicForm = document.querySelector(".dynamic-form-wrapper");
 
+// ---------- toggle header on scroll  ----------
+
+const toggleHeader = (e) => {
+  if (e.deltaY > 0 && window.scrollY > 300) {
+    header.style.visibility = 0;
+    header.style.opacity = 0;
+  }
+  if (e.deltaY < 0) {
+    header.style.visibility = 1;
+    header.style.opacity = 1;
+  }
+};
+
+window.addEventListener("wheel", toggleHeader);
+
 // ---------- mob menu service list  ----------
+
 const toggleServiceList = () => {
   linkList.classList.toggle("show-links");
+};
+const openServiceListHover = () => {
+  if (window.innerWidth >= 1920) linkList.classList.add("show-links");
 };
 const hideServiceList = () => {
   linkList.classList.remove("show-links");
 };
+navServices.addEventListener("mouseover", openServiceListHover);
 navServices.addEventListener("click", toggleServiceList);
 linkListBack.addEventListener("click", hideServiceList);
+
+document.documentElement.addEventListener("click", function () {
+  if (linkList.classList.contains("show-links") && window.innerWidth >= 1920) {
+    hideServiceList();
+  }
+});
 
 // ---------- change language ----------
 const changeLanguage = (e) => {

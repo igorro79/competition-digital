@@ -1,6 +1,6 @@
 @layer components {
   .fake-header {
-    @apply h-[76px] w-full bg-dark md:h-[94px]  xl:hidden;
+    @apply h-[76px] w-full bg-dark md:h-[94px];
   }
   /* =========== HEADING ============ */
   .heading2 {

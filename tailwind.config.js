@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     screens: {
       md: "820px",
-      xl: "1920px",
+      xl: "1280px",
     },
 
     backgroundSize: {
@@ -19,6 +19,10 @@ module.exports = {
     extend: {
       transitionProperty: {
         height: "max-height",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        "3fr": "repeat(3, minmax(min-content, 1fr))",
       },
       content: {
         "arrow-content": "url('./images/up-right-dark.svg')",

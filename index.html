@@ -272,14 +272,13 @@
                 </a>
               </li>
               <li class="nav__list-item">
-                <a
-                  href="./pages/services.html"
+                <button
+                  type="button"
                   aria-label="Services page"
-                  class="nav__link nav__link-services relative"
+                  class="nav__link nav__link-services nav__link-services-btn relative"
                 >
                   Services
-                </a>
-                <button type="button" class="nav__link-services-btn">></button>
+                </button>
               </li>
               <li class="nav__list-item">
                 <a
@@ -790,7 +789,7 @@
                 <div class="cases__card-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1920px)"
+                      media="(min-width: 1280px)"
                       srcset="
                         ./src/images/cases/case-full-1@x.jpg,
                         ./src/images/cases/case-full-2@x.jpg 2x
@@ -842,7 +841,7 @@
                 <div class="cases__card-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1920px)"
+                      media="(min-width: 1280px)"
                       srcset="
                         ./src/images/cases/case-full-1@x.jpg,
                         ./src/images/cases/case-full-2@x.jpg 2x
@@ -893,7 +892,7 @@
                 <div class="cases__card-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1920px)"
+                      media="(min-width: 1280px)"
                       srcset="
                         ./src/images/cases/case-full-1@x.jpg,
                         ./src/images/cases/case-full-2@x.jpg 2x
@@ -944,7 +943,7 @@
                 <div class="cases__card-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1920px)"
+                      media="(min-width: 1280px)"
                       srcset="
                         ./src/images/cases/case-full-1@x.jpg,
                         ./src/images/cases/case-full-2@x.jpg 2x
@@ -1028,11 +1027,10 @@
 
             <div class="services__cards-list grid-container-item-xl">
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Brandign</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <a class="services__link-grid" href="#">
+                  <div class="services__card-title-wrapper">
+                    <h3 class="services__card-title">Brandign</h3>
+                  </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1042,9 +1040,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1066,30 +1064,32 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
                       />
                     </picture>
                   </div>
-                  <button
-                    type="button"
-                    aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                </a>
+                <!-- </div> -->
+
+                <button
+                  type="button"
+                  aria-label="read more"
+                  class="main-btn main-btn--reversed mt-10"
+                >
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
                   >
-                    <span class="main-btn__lable main-btn__lable--smaller">
-                      read more</span
-                    >
-                  </button>
-                </div>
+                </button>
               </div>
 
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Web design</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <a class="" href="#">
+                  <div class="services__card-title-wrapper">
+                    <h3 class="services__card-title">Web design</h3>
+                  </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1099,9 +1099,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1123,24 +1123,28 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
                       />
                     </picture>
                   </div>
-                  <button
-                    type="button"
-                    aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                </a>
+                <!-- </div> -->
+                <!-- <div class="services__card-content-wrapper"> -->
+                <button
+                  type="button"
+                  aria-label="read more"
+                  class="main-btn main-btn--reversed mt-10"
+                >
+                  <span class="main-btn__lable main-btn__lable--smaller">
+                    read more</span
                   >
-                    <span class="main-btn__lable main-btn__lable--smaller">
-                      read more</span
-                    >
-                  </button>
-                </div>
+                </button>
+                <!-- </div> -->
               </div>
-              <div class="services__card">
+              <!-- <div class="services__card">
                 <div class="services__card-title-wrapper">
                   <h3 class="services__card-title">SEO</h3>
                   <a class="black-up-right-arrow" href="#"> </a>
@@ -1155,9 +1159,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1179,6 +1183,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1211,9 +1216,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1235,6 +1240,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1267,9 +1273,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1291,6 +1297,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1323,9 +1330,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1347,6 +1354,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1379,9 +1387,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1403,6 +1411,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1435,9 +1444,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1459,6 +1468,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1491,9 +1501,9 @@
                     UWP.Digital.
                   </p>
                   <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
+                    <picture>
                       <source
-                        media="(min-width: 1920px)"
+                        media="(min-width: 1280px)"
                         srcset="
                           ./src/images/services/services-full-1@x.png,
                           ./src/images/services/services-full-2@x.png 2x
@@ -1515,6 +1525,7 @@
                       />
 
                       <img
+                        class="services__card-image"
                         loading="lazy"
                         src="./src/images/services/services-full-1@x.png"
                         alt="some card"
@@ -1531,7 +1542,7 @@
                     >
                   </button>
                 </div>
-              </div>
+              </div> -->
             </div>
             <button
               type="button"
@@ -1570,7 +1581,7 @@
                 </button>
                 <picture class="person__image">
                   <source
-                    media="(min-width: 1920px)"
+                    media="(min-width: 1280px)"
                     srcset="
                       ./src/images/person/person1-full-1@x.jpg,
                       ./src/images/person/person1-full-2@x.jpg 2x
@@ -1706,7 +1717,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
@@ -1744,7 +1755,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
@@ -1783,7 +1794,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
