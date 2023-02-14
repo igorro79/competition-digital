@@ -12,10 +12,11 @@
     @apply mb-10  pt-[30px] md:mb-[30px] md:pt-10 xl:pr-[50px];
   }
   .services__cards-list {
-    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 xl:border-t  xl:pt-[70px];
+    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2
+     md:grid-rows-5 xl:border-t  xl:pt-[70px];
   }
   .services__card {
-    @apply text-black dark:text-white md:pt-[200px] xl:pt-[350px];
+    @apply text-black dark:text-white md:pb-[53px] xl:pb-[107px];
   }
 
   /* ------------new card------------ */
@@ -36,14 +37,23 @@
   .services__card:nth-child(n + 6) .services__card-title-wrapper {
     @apply md:pl-7 xl:pl-[50px];
   }
+  .services__card:nth-child(n + 6) .services__card-image-container {
+    @apply md:pl-[50px];
+  }
+  .services__card:nth-child(-n + 5) .services__card-image-container {
+    @apply md:pl-[20px] xl:pl-[50px];
+  }
   .services__card:nth-child(n + 6) {
-    @apply md:pt-[270px] xl:pt-[440px];
+    @apply md:pt-[60px] xl:pt-[84px];
   }
   /* ------------- */
 
   .services__card-title-wrapper {
     @apply flex items-center justify-between border-b-[1px]
      border-b-middleGrey text-2xl font-bold leading-[26.4px];
+  }
+  .services__card-title-wrapper svg {
+    @apply h-[21px] w-[21px];
   }
   .services__card-title {
     @apply py-5 text-2xl font-bold
@@ -60,14 +70,18 @@
   .services__card-text {
     @apply mb-10 max-h-[190px] pt-5 md:mb-0 md:max-h-[240px] xl:pt-10;
   }
+  .services__card-image-container {
+    @apply mt-10   md:row-start-1 md:mt-0;
+  }
   .services__card-image-wrapper {
-    @apply mt-10  md:relative md:row-start-1 md:mt-0
-     md:min-h-[216px] md:min-w-[216px] md:max-w-[216px] md:rounded-full
-      md:bg-lightGrey xl:row-start-auto
-      xl:min-h-[355px] xl:min-w-[355px] xl:max-w-[355px];
+    @apply aspect-square 
+     md:relative md:min-w-[216px] md:max-w-[216px]
+      md:rounded-full
+      md:bg-lightGrey  xl:max-w-[355px];
   }
   .services__card-image {
-    @apply mx-auto w-full  md:absolute  md:top-1/2 md:left-1/2 md:w-[265px] md:translate-y-[-50%] md:translate-x-[-50%];
+    @apply mx-auto w-full max-w-none md:absolute  md:top-1/2 md:left-1/2 
+    md:w-[110%] md:translate-y-[-50%] md:translate-x-[-50%];
   }
   .main-btn.services__main-btn {
     @apply hidden md:mt-14 md:flex xl:mr-[50px] xl:mt-0;

@@ -2153,13 +2153,13 @@ body{
 
 @media (min-width: 820px){
   .services__card{
-    padding-top: 200px;
+    padding-bottom: 53px;
   }
 }
 
 @media (min-width: 1280px){
   .services__card{
-    padding-top: 350px;
+    padding-bottom: 107px;
   }
 }
 
@@ -2211,14 +2211,30 @@ body{
 }
 
 @media (min-width: 820px){
+  .services__card:nth-child(n + 6) .services__card-image-container{
+    padding-left: 50px;
+  }
+
+  .services__card:nth-child(-n + 5) .services__card-image-container{
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1280px){
+  .services__card:nth-child(-n + 5) .services__card-image-container{
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 820px){
   .services__card:nth-child(n + 6){
-    padding-top: 270px;
+    padding-top: 60px;
   }
 }
 
 @media (min-width: 1280px){
   .services__card:nth-child(n + 6){
-    padding-top: 440px;
+    padding-top: 84px;
   }
 }
 
@@ -2235,6 +2251,11 @@ body{
   line-height: 2rem;
   font-weight: 700;
   line-height: 26.4px;
+}
+
+.services__card-title-wrapper svg{
+  height: 21px;
+  width: 21px;
 }
 
 .services__card-title{
@@ -2295,16 +2316,24 @@ body{
   }
 }
 
-.services__card-image-wrapper{
+.services__card-image-container{
   margin-top: 2.5rem;
+}
+
+@media (min-width: 820px){
+  .services__card-image-container{
+    grid-row-start: 1;
+    margin-top: 0px;
+  }
+}
+
+.services__card-image-wrapper{
+  aspect-ratio: 1 / 1;
 }
 
 @media (min-width: 820px){
   .services__card-image-wrapper{
     position: relative;
-    grid-row-start: 1;
-    margin-top: 0px;
-    min-height: 216px;
     min-width: 216px;
     max-width: 216px;
     border-radius: 9999px;
@@ -2315,9 +2344,6 @@ body{
 
 @media (min-width: 1280px){
   .services__card-image-wrapper{
-    grid-row-start: auto;
-    min-height: 355px;
-    min-width: 355px;
     max-width: 355px;
   }
 }
@@ -2326,6 +2352,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  max-width: none;
 }
 
 @media (min-width: 820px){
@@ -2333,7 +2360,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 265px;
+    width: 110%;
     --tw-translate-y: -50%;
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

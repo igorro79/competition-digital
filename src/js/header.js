@@ -24,11 +24,11 @@ const dynamicForm = document.querySelector(".dynamic-form-wrapper");
 
 const toggleHeader = (e) => {
   if (e.deltaY > 0 && window.scrollY > 300) {
-    header.style.visibility = 0;
     header.style.opacity = 0;
+    header.style.visibility = "hidden";
   }
   if (e.deltaY < 0) {
-    header.style.visibility = 1;
+    header.style.visibility = "visible";
     header.style.opacity = 1;
   }
 };
