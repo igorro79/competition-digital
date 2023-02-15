@@ -7,7 +7,7 @@
   }
 
   .header__container {
-    @apply py-[18px]  px-[7%] md:py-[22px];
+    @apply mx-auto max-w-[1920px] py-[18px] px-[7%] md:py-[22px];
   }
   .header__wrapper {
     @apply relative flex items-center;
