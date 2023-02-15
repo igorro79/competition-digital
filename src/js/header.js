@@ -1,6 +1,7 @@
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 const theme = document.querySelector(".btn__theme");
+
 const themeBtnGroup = document.querySelector(".btn-theme-group");
 const langBtnGroupFull = document.querySelector(".btn-language-group-full");
 const langBtnGroupMob = document.querySelector(".btn-language-group-mob");
@@ -13,21 +14,29 @@ const btn = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav");
 const header = document.querySelector(".header");
 const linkListBack = document.querySelector(".link__list-back-btn");
-// const linkList = document.querySelector(".link__list-full");
 
 const letsTalkBtn = document.querySelector(".lets-talk-btn");
 const bigRedBtn = document.querySelector(".big-red-btn");
 const closeFormBtn = document.querySelector(".btn-colse-form");
+
+const servicesOrderBtn = document.querySelector(".services__main-btn");
+const personOrderBtn = document.querySelector(".person__main-btn");
+const whoOrderBtn = document.querySelector(".who__main-btn");
+
 const dynamicForm = document.querySelector(".dynamic-form-wrapper");
 
 // ---------- toggle header on scroll  ----------
 
 const toggleHeader = (e) => {
-  if (e.deltaY > 0 && window.scrollY > 300) {
+  if (
+    e.deltaY > 0 &&
+    window.scrollY > 300 &&
+    !body.classList.contains("lock-body")
+  ) {
     header.style.opacity = 0;
     header.style.visibility = "hidden";
   }
-  if (e.deltaY < 0) {
+  if (e.deltaY < 0 && !body.classList.contains("lock-body")) {
     header.style.visibility = "visible";
     header.style.opacity = 1;
   }
@@ -86,11 +95,17 @@ themeBtnGroup.addEventListener("click", (e) => {
 
 const openForm = () => {
   dynamicForm.classList.add("active-form");
+  body.classList.add("lock-body");
 };
 const closeForm = () => {
   dynamicForm.classList.remove("active-form");
+  body.classList.remove("lock-body");
 };
 letsTalkBtn.addEventListener("click", openForm);
+bigRedBtn.addEventListener("click", openForm);
+servicesOrderBtn.addEventListener("click", openForm);
+personOrderBtn.addEventListener("click", openForm);
+whoOrderBtn.addEventListener("click", openForm);
 
 closeFormBtn.addEventListener("click", closeForm);
 
@@ -99,12 +114,14 @@ const openBurger = () => {
   navMenu.classList.add("active");
   burgerBtnOpen.classList.add("hidden");
   burgerBtnClose.classList.remove("hidden");
+  body.classList.add("lock-body");
 };
 const closeBurger = () => {
   hideServiceList();
   navMenu.classList.remove("active");
   burgerBtnClose.classList.add("hidden");
   burgerBtnOpen.classList.remove("hidden");
+  body.classList.remove("lock-body");
 };
 
 burgerBtnOpen.addEventListener("click", openBurger);

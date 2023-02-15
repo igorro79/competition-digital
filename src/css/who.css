@@ -2,24 +2,28 @@
   .who__wrapper {
     @apply pt-[30px] pb-[60px]  xl:pb-[160px];
   }
-  .who__who-grid {
+  /* .who__who-grid {
     @apply flex-row-reverse xl:flex;
-  }
+  } */
   .who__who-content {
-    @apply xl:border-l xl:border-middleGrey;
+    @apply xl:col-start-2 xl:col-end-3 xl:border-l
+     xl:border-middleGrey;
   }
   .who__who-wrapper {
     @apply pt-[30px] pb-10 xl:flex   xl:pl-[50px];
   }
   .who__who-label {
-    @apply mb-5 text-sm font-bold uppercase text-middleGrey md:text-base xl:mr-[50px] xl:min-w-[200px];
+    @apply mb-5 text-sm font-bold uppercase text-middleGrey
+     md:text-base xl:mr-[50px] xl:min-w-[150px];
   }
   .who__who-text {
-    @apply text-xl text-white md:indent-16 xl:indent-[120px] xl:text-[32px] xl:leading-[45px];
+    @apply text-xl text-white md:indent-16 xl:indent-[120px]
+     xl:text-[clamp(16px,2vw,2rem)] xl:leading-[45px];
   }
   /* -----------who__who-cards------- */
   .who__who-card-list {
-    @apply text-xl  text-white md:grid md:grid-flow-col md:grid-cols-2  md:grid-rows-2;
+    @apply text-xl  text-white md:grid md:grid-flow-col md:grid-cols-2 
+     md:grid-rows-2;
   }
   .who__who-card-list .who__who-card-item {
     @apply xl:py-[50px] xl:px-[50px];
@@ -40,6 +44,6 @@
     @apply text-sm md:text-base;
   }
   .main-btn.who__main-btn {
-    @apply mt-[60px] xl:mt-[50px] xl:mr-[50px];
+    @apply mt-[60px] xl:row-start-1 xl:mt-[50px] xl:ml-0;
   }
 }

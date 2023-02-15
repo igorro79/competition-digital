@@ -16,7 +16,7 @@
   /*=============== MAIN BUTTON ============= */
 
   .main-btn {
-    @apply mx-auto flex h-[60px] min-w-[320px] items-center justify-center rounded-[70px] border-[1px] border-main
+    @apply mx-auto flex h-[60px] min-w-[280px] items-center justify-center rounded-[70px] border-[1px] border-main
     bg-main fill-white px-1 py-1 uppercase text-white transition-all hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
   }
   .main-btn--reversed {
@@ -116,20 +116,28 @@
   /* =========== COOKIES ============ */
 
   #cookies {
-    @apply fixed bottom-10 right-10 z-50 flex max-w-[490px] items-center rounded-[60px] border-[1px] border-middleGrey bg-dark py-[17px] pr-[17px] pl-[38px] text-white;
+    @apply fixed bottom-10 right-0 z-50 flex max-w-[280px] items-center rounded-[60px]
+     border-[1px] border-middleGrey bg-dark py-3 pl-5 pr-3
+    text-[10px] text-white  md:right-[10%] md:max-w-[490px] md:py-[17px] md:pr-[17px] md:pl-[38px] md:text-base;
   }
   .learn-more {
     @apply font-bold uppercase transition-all hover:text-main;
   }
   #accept-btn {
-    @apply ml-5 rounded-[50px] bg-grey py-4 px-10 uppercase text-white transition-all
-     hover:bg-white hover:text-dark;
+    @apply ml-5 rounded-[50px] bg-grey py-2 px-5 uppercase text-white transition-all hover:bg-white hover:text-dark
+     md:py-4 md:px-10;
   }
 
   /* =========== LETS TALK BUTTON ============ */
 }
 
 @layer utilities {
+  .lock-body {
+    @apply h-screen overflow-hidden;
+  }
+
+  /*========= theme variants ============  */
+
   .theme-white {
     @apply bg-light text-dark  dark:bg-dark dark:text-white;
   }
@@ -158,8 +166,14 @@
   }
 
   /* ---------main page 'services' and 'cases' desktop screen grid -------- */
-  .grid-container-xl {
-    @apply xl:grid xl:grid-cols-[410px_1fr]  xl:grid-rows-[240px_auto];
+  .grid-container-md-cols {
+    @apply grid md:grid-cols-[max(30%,230px)_1fr] xl:grid-cols-[max(28%,370px)_1fr];
+  }
+  .grid-container-xl-cols {
+    @apply xl:grid xl:grid-cols-[max(28%,370px)_1fr];
+  }
+  .grid-container-xl-rows {
+    @apply xl:grid-rows-[auto_1fr];
   }
   .grid-container-item-xl {
     @apply border-middleGrey  xl:col-start-2 xl:row-start-1 xl:row-end-3

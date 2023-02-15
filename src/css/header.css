@@ -7,7 +7,7 @@
   }
 
   .header__container {
-    @apply py-[18px] px-5 md:py-[22px] md:px-[30px];
+    @apply py-[18px]  px-[7%] md:py-[22px];
   }
   .header__wrapper {
     @apply relative flex items-center;
@@ -110,10 +110,10 @@
   /* -----------lets talk btn------------- */
 
   .lets-talk-btn {
-    @apply mr-10 ml-auto flex min-h-[40px] min-w-[40px]
-    items-center justify-center rounded-[60px] border-[1px] border-main bg-main
-    uppercase text-white transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white
-   active:text-main md:gap-[16px] md:px-6 md:py-3 xl:ml-0;
+    @apply mr-6 ml-auto flex min-h-[40px] min-w-[40px] items-center
+    justify-center rounded-[60px] border-[1px] border-main bg-main uppercase
+    text-white transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white active:text-main
+   md:mr-10 md:gap-[16px] md:px-6 md:py-3 xl:ml-5;
   }
   .lets-talk-btn__text {
     @apply hidden md:block;

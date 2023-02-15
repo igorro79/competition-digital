@@ -3,24 +3,30 @@
   .person__title {
     @apply mb-[30px] xl:mb-[50px];
   }
-  .person__grid {
-    @apply xl:flex xl:flex-row-reverse;
-  }
+
   .person__wrapper {
-    @apply row-auto grid grid-cols-[48%_48%] gap-[0_4%] 
-    pt-8 pb-14 text-light 
-    md:grid-cols-[240px_1fr] md:gap-[0_64px] xl:flex-grow
-     xl:grid-cols-[390px_1fr] xl:pt-[50px] xl:pl-[200px];
+    @apply row-auto grid  grid-cols-[auto_1fr] 
+    gap-[0_4%] pt-8 pb-14 
+    text-light md:gap-[0_max(3%,20px)] xl:col-start-2
+     xl:col-end-3 xl:flex-grow xl:grid-cols-[auto_1fr] 
+     xl:grid-rows-[auto_1fr_auto_auto] xl:pt-[50px]
+      xl:pl-[max(3vw,20px)];
   }
   .person__thumb {
     @apply md:row-start-1  md:row-end-5;
   }
+  .person__image-wrapper {
+    @apply relative;
+  }
   .person__image {
-    @apply block h-[180px] w-[150px] md:h-[352px]
-     md:w-[240px] md:overflow-auto xl:h-[520px] xl:w-[390px];
+    @apply block h-auto w-full max-w-[150px]
+     md:max-w-[240px]  xl:max-w-[390px];
   }
   .person__info {
     @apply md:flex md:items-center;
+  }
+  .person__info-text-wrapper {
+    @apply md:flex md:flex-col md:justify-between;
   }
 
   .person__info-name {
@@ -30,9 +36,8 @@
     @apply text-sm leading-4  text-middleGrey xl:text-base xl:leading-5;
   }
   .person__about {
-    @apply col-start-1 col-end-3 mb-[95px] mt-9 overflow-y-auto   md:col-start-auto
-     md:col-end-auto md:mb-2 md:mt-7 
-       xl:text-2xl;
+    @apply col-start-1 col-end-3 mb-[95px] mt-9 overflow-y-auto  
+     md:col-start-auto  md:col-end-auto md:mb-2 md:mt-7  xl:text-2xl;
   }
   .person__clients {
     @apply hidden md:mb-5 md:block;
@@ -45,14 +50,14 @@
   }
   .person__experience-value {
     @apply text-4xl font-bold leading-[43px] tracking-wider
-     text-main xl:text-[64px] xl:leading-[76px];
+     text-main xl:text-[clamp(2.5rem,4rem,4rem)] xl:leading-normal;
   }
   .person__experience-desc {
     @apply max-w-[90px] text-[10px] leading-[14px] md:text-[12px] xl:text-base xl:leading-4;
   }
   .person__order-wrapper {
     @apply border-middleGrey pt-[30px] pb-[30px]
-     xl:w-[410px] xl:border-r xl:pt-[50px] xl:pr-[50px];
+      xl:row-start-1 xl:w-full xl:border-r xl:pt-[50px] xl:pr-[50px];
   }
   .person__order-text {
     @apply mb-[30px] tracking-[0.4px] md:mb-10 xl:mb-[50px];

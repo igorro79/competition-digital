@@ -12,7 +12,7 @@
     @apply xl:pt-[96px];
   }
   .form__wrapper--full {
-    @apply xl:grid xl:grid-cols-[320px_1fr_460px] xl:pt-[90px] xl:pb-[112px];
+    @apply xl:grid xl:grid-cols-[max(18%,240px)_1fr_auto] xl:pt-[90px] xl:pb-[112px];
   }
 
   .pre-heading.form__pre-heading--full {
@@ -36,7 +36,7 @@
     @apply mb-[60px] border-middleGrey;
   }
   .form__contact-form--full {
-    @apply xl:border-t  xl:border-r xl:px-[70px] xl:pt-[60px];
+    @apply xl:border-t  xl:border-r xl:px-[max(2vw,20px)] xl:pt-[60px];
   }
   .form__grid {
     @apply mb-7 grid gap-3  md:grid-cols-2 md:grid-rows-3 md:gap-5;
@@ -67,7 +67,7 @@
   }
 
   .form__inputGroup label {
-    @apply absolute left-8 top-1/2  -translate-y-1/2 py-1 text-sm leading-4 
+    @apply pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 py-1 text-sm leading-4 
      transition-all  md:text-base;
   }
 
@@ -100,7 +100,7 @@
     @apply text-link decoration-solid hover:text-linkActive active:text-linkActive;
   }
   .form__btn-wrapper {
-    @apply items-center justify-between md:flex;
+    @apply items-center justify-between md:flex md:gap-5;
   }
   .main-btn.form__main-btn {
     @apply mt-8 md:mx-0 md:mt-0;
@@ -109,20 +109,21 @@
     @apply xl:min-w-[290px];
   }
   .form__contact-wrapper {
-    @apply border-middleGrey xl:border-t xl:pl-[45px] xl:pt-[60px];
+    @apply border-middleGrey xl:border-t xl:pl-[max(2vw,20px)] xl:pt-[60px];
   }
   .form__contact-address {
-    @apply mb-5 text-[12px] leading-6 text-white md:mb-6 md:text-base md:leading-normal;
+    @apply mb-5 text-[12px] leading-6 text-white md:mb-6 md:text-base
+     md:leading-normal;
   }
   .form__contact-address--full {
-    @apply xl:mb-10 xl:max-w-[280px];
+    @apply xl:mb-10 xl:max-w-[250px];
   }
   .form__contact-email {
     @apply mb-1 text-xl font-semibold leading-5 text-white transition-all
      hover:text-main active:text-main md:mb-3 md:text-2xl md:font-bold md:leading-normal;
   }
   .form__contact-email--full {
-    @apply xl:mb-4 xl:text-[32px];
+    @apply xl:mb-4 xl:text-[clamp(24px,2vw,32px)];
   }
   .form__contact-text {
     @apply text-[12px] leading-6 md:text-base;
