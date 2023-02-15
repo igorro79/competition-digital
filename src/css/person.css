@@ -13,7 +13,7 @@
       xl:pl-[max(3vw,20px)];
   }
   .person__thumb {
-    @apply md:row-start-1  md:row-end-5;
+    @apply md:row-start-1 md:row-end-5 xl:w-[clamp(200px,21vw,390px)];
   }
   .person__image-wrapper {
     @apply relative;
@@ -46,11 +46,11 @@
     @apply col-start-1 col-end-3 flex md:col-start-auto  md:col-end-auto;
   }
   .person__experience-list-item {
-    @apply flex w-[45%] items-center;
+    @apply flex  flex-wrap items-center;
   }
   .person__experience-value {
-    @apply text-4xl font-bold leading-[43px] tracking-wider
-     text-main xl:text-[clamp(2.5rem,4rem,4rem)] xl:leading-normal;
+    @apply mr-2 text-4xl font-bold leading-[43px] tracking-wider
+     text-main xl:text-[clamp(2.5rem,4vw,4rem)] xl:leading-normal;
   }
   .person__experience-desc {
     @apply max-w-[90px] text-[10px] leading-[14px] md:text-[12px] xl:text-base xl:leading-4;

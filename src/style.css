@@ -733,7 +733,7 @@ body{
   .nav__list{
     position: static;
     flex-direction: row;
-    gap: 50px;
+    gap: 2rem;
     border-top-width: 0px;
     padding-top: 0px;
     font-size: 1rem;
@@ -5065,6 +5065,12 @@ body{
   }
 }
 
+@media (min-width: 1280px){
+  .person__thumb{
+    width: clamp(200px,21vw,390px);
+  }
+}
+
 .person__image-wrapper{
   position: relative;
 }
@@ -5178,11 +5184,12 @@ body{
 
 .person__experience-list-item{
   display: flex;
-  width: 45%;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .person__experience-value{
+  margin-right: 0.5rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -5194,7 +5201,7 @@ body{
 
 @media (min-width: 1280px){
   .person__experience-value{
-    font-size: clamp(2.5rem,4rem,4rem);
+    font-size: clamp(2.5rem,4vw,4rem);
     line-height: 1.5;
   }
 }

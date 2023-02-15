@@ -46,7 +46,7 @@
   .nav__list {
     @apply flex flex-col gap-[30px] border-t border-middleGrey pt-[30px]
      text-xl  transition-all 
-    xl:static xl:flex-row xl:gap-[50px]  xl:border-t-0 xl:pt-0 xl:text-base;
+    xl:static xl:flex-row xl:gap-[2rem]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
   /* .nav__list button {
     @apply uppercase;
