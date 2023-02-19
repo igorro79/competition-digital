@@ -604,12 +604,12 @@
                   <div class="form__inputGroup">
                     <input
                       class="input-full"
-                      id="name"
+                      id="name-mob"
                       type="text"
                       required
                       autocomplete="off"
                     />
-                    <label for="name">Your name?*</label>
+                    <label for="name-mob">Your name?*</label>
                   </div>
                   <p class="error">Please enter name</p>
                 </div>
@@ -617,12 +617,12 @@
                   <div class="form__inputGroup">
                     <input
                       class="input-full"
-                      id="email"
+                      id="email-mob"
                       type="text"
                       required
                       autocomplete="off"
                     />
-                    <label for="email">Your e-mail?*</label>
+                    <label for="email-mob">Your e-mail?*</label>
                   </div>
                   <p class="error">The email is in the wrong format</p>
                 </div>
@@ -630,36 +630,36 @@
                   <div class="form__inputGroup">
                     <input
                       class="input-full"
-                      id="phone"
+                      id="phone-mob"
                       type="text"
                       required
                       autocomplete="off"
                     />
-                    <label for="phone">Phone number*</label>
+                    <label for="phone-mob">Phone number*</label>
                   </div>
                   <p class="error">The phone is in the wrong format</p>
                 </div>
                 <div class="form__inputGroup-wrapper">
                   <div class="form__inputGroup">
                     <input
-                      id="company"
+                      id="company-mob"
                       type="text"
                       required
                       autocomplete="off"
                     />
-                    <label for="company">Company*</label>
+                    <label for="company-mob">Company*</label>
                   </div>
                   <p class="error">Please enter company name</p>
                 </div>
 
                 <div class="form__inputGroup form__item-full">
                   <input
-                    id="message"
+                    id="message-mob"
                     type="text"
                     required=""
                     autocomplete="off"
                   />
-                  <label for="message">Tell us about your project</label>
+                  <label for="message-mob">Tell us about your project</label>
                 </div>
               </div>
 
@@ -707,7 +707,6 @@
                   <span class="main-btn__lable">Send</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    version="1"
                     viewBox="0 0 24 24"
                     enable-background="new 0 0 24 24"
                   >
@@ -739,6 +738,7 @@
         </div>
       </section>
       <section class="video">
+        <h2 class="visually-hidden">video section</h2>
         <button
           type="button"
           aria-label="discuss the project"
@@ -748,7 +748,6 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            version="1"
             viewBox="0 0 24 24"
             enable-background="new 0 0 24 24"
           >
@@ -795,47 +794,95 @@
               followers on Instagram - welcome to UWP Digital.
             </p>
             <div class="cases__card-list grid-container-item-xl">
-              <div class="cases__card">
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div class="cases__card-image-overlay-block">
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
 
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -846,47 +893,96 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div class="cases__card-image-overlay-block">
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -897,47 +993,96 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div class="cases__card-image-overlay-block">
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -948,47 +1093,96 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div class="cases__card-image-overlay-block">
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -999,7 +1193,7 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
 
             <button
@@ -1010,7 +1204,6 @@
               <span class="main-btn__lable">all services</span
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                version="1"
                 viewBox="0 0 24 24"
                 enable-background="new 0 0 24 24"
               >
@@ -1037,20 +1230,35 @@
 
             <div class="services__cards-list grid-container-item-xl">
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div class="services__link-grid animated-hover-container">
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1094,35 +1302,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn mt-10"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
               </div>
 
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Web design</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1166,35 +1389,52 @@
                       </picture>
                     </div>
                   </div>
-                </a>
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
+                  >
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
                 <!-- </div> -->
                 <!-- <div class="services__card-content-wrapper"> -->
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
-                  >
-                </button>
                 <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1238,34 +1478,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1309,34 +1565,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1380,34 +1652,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1451,34 +1739,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1522,34 +1826,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1593,34 +1913,50 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <a class="services__link-grid" href="#">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
                   <div class="services__card-title-wrapper">
                     <h3 class="services__card-title">Brandign</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1"
-                      viewBox="0 0 24 24"
-                      enable-background="new 0 0 24 24"
+                    <a
+                      href=""
+                      aria-label="link to services"
+                      class="animated-arrow-wrapper"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enable-background="new 0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                        />
+                      </svg>
+                    </a>
                   </div>
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
@@ -1664,18 +2000,17 @@
                       </picture>
                     </div>
                   </div>
-                </a>
-                <!-- </div> -->
-
-                <button
-                  type="button"
-                  aria-label="read more"
-                  class="main-btn main-btn--reversed mt-10"
-                >
-                  <span class="main-btn__lable main-btn__lable--smaller">
-                    read more</span
+                  <a
+                    href=""
+                    aria-label="read more"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
-                </button>
+                    <span class="main-btn__lable main-btn__lable--smaller">
+                      read more</span
+                    >
+                  </a>
+                </div>
+                <!-- </div> -->
               </div>
             </div>
             <button
@@ -1686,7 +2021,6 @@
               <span class="main-btn__lable">Order a consultation</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                version="1"
                 viewBox="0 0 24 24"
                 enable-background="new 0 0 24 24"
               >
@@ -1767,13 +2101,9 @@
                     xml:space="preserve"
                     fill="#171717"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g>
                       <g>
                         <g id="right_x5F_quote">
                           <g>
@@ -1834,7 +2164,6 @@
                 <span class="main-btn__lable">Order a consultation</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  version="1"
                   viewBox="0 0 24 24"
                   enable-background="new 0 0 24 24"
                 >
@@ -1857,7 +2186,6 @@
               <div class="circle-white-btn circle-white-btn--white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  version="1"
                   viewBox="0 0 24 24"
                   enable-background="new 0 0 24 24"
                 >
@@ -1990,6 +2318,7 @@
       </section>
 
       <section class="who theme-black">
+        <h2 class="visually-hidden">who we are</h2>
         <div class="who__wrapper custom-container">
           <div class="grid-container-xl-cols top-border">
             <div class="who__who-content">
@@ -2052,7 +2381,6 @@
               <span class="main-btn__lable">Order a consultation</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                version="1"
                 viewBox="0 0 24 24"
                 enable-background="new 0 0 24 24"
               >
@@ -2314,7 +2642,6 @@
                 <span class="main-btn__lable">Send</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  version="1"
                   viewBox="0 0 24 24"
                   enable-background="new 0 0 24 24"
                 >
@@ -2326,10 +2653,13 @@
               </button>
             </div>
           </form>
-          <div class="form__contact-wrapper">
-            <p class="form__contact-address form__contact-address--full">
+          <address class="form__contact-wrapper">
+            <a
+              href=""
+              class="form__contact-address form__contact-address--full"
+            >
               Onnekop Per Bings vag 13B, 242 98 Horby, Sweden
-            </p>
+            </a>
             <a
               class="form__contact-email form__contact-email--full"
               aria-label="send email"
@@ -2337,7 +2667,7 @@
               >info@uwp.digital</a
             >
             <p class="form__contact-text">Shoot us a message</p>
-          </div>
+          </address>
         </div>
       </section>
     </main>
@@ -2345,7 +2675,7 @@
       <div class="footer__wrapper custom-container">
         <div class="footer__content-wrapper">
           <ul class="footer__nav-list">
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/about.html"
                 aria-label="link to About us page"
@@ -2353,7 +2683,7 @@
                 >About us</a
               >
             </li>
-            <li class="w-max">
+            <li class="nav__list-item">
               <a
                 href="./pages/cases.html"
                 aria-label="Case studies page"
@@ -2361,7 +2691,7 @@
                 >Case studies</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/services.html"
                 aria-label="Services page"
@@ -2369,7 +2699,7 @@
                 >Services</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/blog.html"
                 aria-label="blog page"
@@ -2377,7 +2707,7 @@
                 >Blog</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/contacts.html"
                 aria-label="Contact page"
@@ -2389,19 +2719,17 @@
           <ul class="social">
             <li>
               <a href="" aria-label="our instagram" class="social__link">
-                <svg
-                  fill="currentColor"
-                  height="64px"
-                  width="64px"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                >
-                  <g id="social-instagram">
-                    <path
-                      d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0
+                <div class="instagram-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <g id="social-instagram">
+                      <path
+                        d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0
 		S8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.4,0.6,4.1C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12
 		s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22s1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24
 		s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4s1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12
@@ -2410,87 +2738,84 @@
 		c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8s0-3.6,0.1-4.8C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4s0.8-0.7,1.4-0.9
 		C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2s3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9s0.7,0.8,0.9,1.4
 		c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8S21.8,15.6,21.8,16.8z"
-                    />
-                    <path
-                      d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9
+                      />
+                      <path
+                        d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9
 		S14.2,15.9,12,15.9z"
-                    />
-                    <circle cx="18.5" cy="6" r="1.5" />
-                  </g>
-                </svg>
+                      />
+                      <circle cx="18.5" cy="6" r="1.5" />
+                    </g>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
               <a href="" aria-label="our facebook" class="social__link">
-                <svg
-                  fill="currentColor"
-                  height="30px"
-                  width="30px"
-                  version="1.1"
-                  id="XMLID_5_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                >
-                  <g id="social-facebook">
-                    <path
-                      id="f"
-                      d="M13,23V13h3.4l0.5-4H13V6.6c0-1.1,0.3-1.9,1.9-1.9H17V1.2c-0.4,0-1.6-0.2-3-0.2c-3,0-5,1.8-5,5.2V9H5.6v4H9v10
+                <div class="facebook-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        id="f"
+                        d="M13,23V13h3.4l0.5-4H13V6.6c0-1.1,0.3-1.9,1.9-1.9H17V1.2c-0.4,0-1.6-0.2-3-0.2c-3,0-5,1.8-5,5.2V9H5.6v4H9v10
 		C9,23,13,23,13,23z"
-                    />
-                  </g>
-                </svg>
+                      />
+                    </g>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
               <a href="" aria-label="our linkedin" class="social__link">
-                <svg
-                  fill="currentColor"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="-271 283.9 256 235.1"
-                  xml:space="preserve"
-                  width="64px"
-                  height="64px"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <div class="linkedin-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-271 283.9 256 235.1"
+                    xml:space="preserve"
+                  >
+                    <g stroke-width="0" />
 
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
 
-                  <g id="SVGRepo_iconCarrier">
                     <g>
-                      <rect x="-264.4" y="359.3" width="49.9" height="159.7" />
-                      <path
-                        d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
-                      />
-                      <path
-                        d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
-                      />
+                      <g>
+                        <rect
+                          x="-264.4"
+                          y="359.3"
+                          width="49.9"
+                          height="159.7"
+                        />
+                        <path
+                          d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
+                        />
+                        <path
+                          d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
+                        />
+                      </g>
                     </g>
-                  </g>
-                </svg>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
-              <a href="" aria-label="our upwork" class="social__link"
-                ><svg
-                  fill="currentColor"
-                  width="800px"
-                  height="800px"
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
-                  />
-                </svg>
+              <a href="" aria-label="our upwork" class="social__link">
+                <div class="upwork-icon">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
+                    />
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>
@@ -2570,9 +2895,8 @@
       </div>
     </footer>
     <div id="cookies">
-      <p>
-        THIS WEBSITE USES COOKIES. <a href="" class="learn-more">Learn more</a>
-      </p>
+      <p class="cookies-text">THIS WEBSITE USES COOKIES.</p>
+      <a href="" class="learn-more">Learn more</a>
       <button id="accept-btn">accept</button>
     </div>
     <script src="./src/js/faq.js"></script>

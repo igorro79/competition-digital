@@ -86,8 +86,9 @@
   }
 
   .link__list-back-btn {
-    @apply flex max-w-min gap-[10px] font-montserrat text-xs  
-      text-main before:font-mono before:text-[16px] before:content-['<'];
+    @apply flex max-w-min gap-[10px] text-xs uppercase  
+      text-main before:font-mono before:text-[16px] 
+      before:content-['<'];
   }
 
   .link__list a {

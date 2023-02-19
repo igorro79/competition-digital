@@ -1,6 +1,8 @@
 @layer components {
   /*=============== FOOTER ============= */
-
+  .footer {
+    @apply fixed bottom-0 z-[-5] w-full;
+  }
   .footer__wrapper {
     @apply pt-11 pb-4  md:pt-[32px] md:pb-6;
   }
@@ -19,11 +21,25 @@
   }
 
   .social__link {
-    @apply text-dark dark:text-white md:mx-auto;
+    @apply overflow-hidden rounded-full text-dark dark:text-white md:mx-auto;
   }
   .social__link svg {
-    @apply h-10 w-10  md:h-6 md:w-6;
+    @apply h-[29px]  w-full  md:h-[22px] xl:h-[30px];
   }
+
+  .social__link:hover .instagram-icon {
+    @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
+  }
+  .social__link:hover .facebook-icon {
+    @apply bg-[#5B7FCB] text-white dark:text-white;
+  }
+  .social__link:hover .linkedin-icon {
+    @apply bg-[#27A0F8] text-white dark:text-white;
+  }
+  .social__link:hover .upwork-icon {
+    @apply bg-[#16AC37] text-white dark:text-white;
+  }
+
   .footer__services-list {
     @apply mb-5 flex flex-col flex-wrap border-t-[1px] border-b-[1px] border-middleGrey pt-5 pb-8
      md:row-start-2 md:mb-6 md:flex-row md:pt-3 md:pb-3 xl:col-start-1

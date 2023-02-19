@@ -16,11 +16,15 @@
   /*=============== MAIN BUTTON ============= */
 
   .main-btn {
-    @apply mx-auto flex h-[60px] min-w-[280px] items-center justify-center rounded-[70px] border-[1px] border-main
-    bg-main fill-white px-1 py-1 uppercase text-white transition-all hover:bg-activeRed active:bg-activeRed md:min-w-[357px];
+    @apply mx-auto flex h-[60px] min-w-[280px] items-center justify-center 
+    rounded-[70px] border-[1px] border-main bg-main fill-white 
+    px-1 py-1 uppercase  text-white transition-all hover:bg-activeRed
+     active:bg-activeRed  md:min-w-[357px];
   }
   .main-btn--reversed {
-    @apply border-2 border-main bg-white fill-dark text-dark hover:bg-main hover:text-white active:bg-main active:text-white md:hidden;
+    @apply border-2 border-main bg-white fill-dark text-dark
+     hover:bg-main hover:text-white active:bg-main active:text-white
+      md:hidden;
   }
   .main-btn__lable {
     @apply font-bold uppercase;
@@ -31,8 +35,8 @@
   .main-btn svg {
     @apply ml-3 h-4 w-4;
   }
-  .main-btn.btn-mgn-r-50 {
-    @apply mt-[50px] xl:mr-[50px] xl:ml-0 xl:mt-0;
+  .main-btn.btn-mrgn {
+    @apply mt-10 mb-5;
   }
 
   /*=============== CIRCLE WHITE BUTTON ============= */
@@ -83,17 +87,20 @@
   .breadcrumbs {
     @apply text-[10px] font-normal text-middleGrey transition-all hover:font-semibold hover:text-white active:font-semibold active:text-middleGrey;
   }
-  /* =========== GRADIENT ============ */
+  /* =========== RED ROUND GRADIENT  ============ */
   .red-gradient {
-    @apply relative overflow-hidden from-gradientMain to-transparent
-    before:absolute before:right-0 
+    @apply relative overflow-hidden before:absolute before:right-0
     before:translate-x-[50%] before:bg-gradient-radial 
+    before:from-main before:to-transparent 
      before:content-[''];
   }
   .red-gradient-top {
     @apply before:top-0 before:h-[212px] before:w-[212px]
        before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
      md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+  .red-gradient.red-gradient--nav {
+    @apply fixed before:top-[100px];
   }
   .red-gradient-bottom {
     @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
@@ -103,12 +110,15 @@
   /* =========== BIG RED ROUND BUTTON ============ */
 
   .video__big-red-btn {
-    @apply absolute right-[15%] top-0 z-[2] -translate-y-1/2;
+    @apply absolute right-[25vw] top-0 z-[2] -translate-y-1/2 translate-x-1/2;
   }
   .big-red-btn {
-    @apply flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center gap-3 rounded-full bg-main px-4
-    py-7 text-center text-sm font-bold uppercase text-light md:min-h-[142px]
-     md:w-[142px] md:min-w-[142px] md:bg-[center_48px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px] xl:text-base;
+    @apply flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center
+     justify-center gap-3 rounded-full bg-main text-center
+     text-sm font-bold uppercase text-light transition-all md:min-h-[142px]
+     md:w-[142px] md:min-w-[142px] xl:min-h-[177px] xl:w-[177px]
+      xl:min-w-[177px] xl:text-base xl:hover:min-h-[140px]
+       xl:hover:w-[140px] xl:hover:min-w-[140px];
   }
   .big-red-btn.cases-page__big-red-btn {
     @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] md:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
@@ -116,24 +126,40 @@
   /* =========== COOKIES ============ */
 
   #cookies {
-    @apply fixed bottom-10 right-0 z-50 flex max-w-[280px] items-center rounded-[60px]
-     border-[1px] border-middleGrey bg-dark py-3 pl-5 pr-3
-    text-[10px] text-white  md:right-[10%] md:max-w-[490px] md:py-[17px] md:pr-[17px] md:pl-[38px] md:text-base;
+    @apply fixed bottom-10 right-[3vw] z-50 grid w-[300px] grid-cols-[1fr_auto]
+     items-center   rounded-[20px] border-[1px] border-middleGrey bg-dark
+     py-5 px-5 text-sm text-white md:right-[10vw] md:w-fit 
+      md:rounded-[60px] md:py-[17px] md:pr-[17px] md:pl-[38px] md:text-base;
+  }
+  .cookies-text {
+    @apply col-start-1 col-end-3 mb-[15px] md:col-start-auto md:col-end-auto md:mb-0;
   }
   .learn-more {
     @apply font-bold uppercase transition-all hover:text-main;
   }
   #accept-btn {
-    @apply ml-5 rounded-[50px] bg-grey py-2 px-5 uppercase text-white transition-all hover:bg-white hover:text-dark
+    @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark md:col-start-2 md:row-start-1 md:row-end-3 md:ml-10
      md:py-4 md:px-10;
   }
-
-  /* =========== LETS TALK BUTTON ============ */
 }
 
 @layer utilities {
-  .lock-body {
+  .lock {
     @apply h-screen overflow-hidden;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   /*========= theme variants ============  */
@@ -145,24 +171,47 @@
     @apply bg-dark text-white dark:bg-dark dark:text-white;
   }
 
-  /*========= animate link arrows ============  */
-  .link-arrow-animation {
-    @apply relative overflow-hidden;
+  /*======  common link class - animated-hover-container =====  */
+  /*---------- animate link arrows ---------- */
+
+  .animated-arrow-circle {
+    @apply flex h-[82px] min-w-[82px] items-center 
+    justify-center rounded-full bg-transparent transition-all;
   }
-  .link-arrow-animation svg {
-    @apply absolute transition-all duration-300 ease-in-out;
+  .animated-hover-container:hover .animated-arrow-circle {
+    @apply bg-main text-white;
   }
-  .link-arrow-animation svg:first-child {
+  .animated-arrow-wrapper {
+    @apply relative h-[21px] min-w-[21px] overflow-hidden;
+  }
+  .animated-arrow-wrapper svg {
+    @apply absolute h-[21px] min-w-[21px] transition-all duration-300 ease-in-out;
+  }
+  .animated-arrow-wrapper svg:first-child {
     @apply top-0 right-0;
   }
-  .link-arrow-animation:hover svg:first-child {
+  .animated-hover-container:hover .animated-arrow-wrapper svg:first-child {
     @apply top-[-100%] right-[-100%];
   }
-  .link-arrow-animation svg:last-child {
+  .animated-arrow-wrapper svg:last-child {
     @apply top-[100%] right-[100%];
   }
-  .link-arrow-animation:hover svg:last-child {
+  .animated-hover-container:hover .animated-arrow-wrapper svg:last-child {
     @apply top-0 right-0;
+  }
+  /* ---------- animate title underline ----------  */
+  /* .animated-underline {
+    @apply relative after:absolute after:-bottom-3 after:left-0
+     after:h-1.5 after:w-0 after:bg-dark after:transition-all
+      after:content-[''];
+  } */
+  .animated-underline {
+    @apply relative after:absolute after:-bottom-3 after:left-0
+     after:h-[5px] after:w-0 after:bg-main after:transition-all
+      after:content-[''];
+  }
+  .animated-hover-container:hover .animated-underline {
+    @apply after:w-full;
   }
 
   /* ---------main page 'services' and 'cases' desktop screen grid -------- */
@@ -193,11 +242,11 @@
   }
   .filter__btn-form {
     @apply border-[1px] border-middleGrey bg-dark
-       text-light hover:bg-main hover:text-white
-        active:border-middleGrey active:bg-middleGrey active:text-white;
+       text-light  hover:border-white
+        active:border-white active:bg-white active:text-black;
   }
   .filter__btn.filter__btn-active {
-    @apply border-[1px] border-main bg-main text-white;
+    @apply border-[1px] border-white bg-white text-black;
   }
 
   .white-circle {

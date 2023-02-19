@@ -1,6 +1,8 @@
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 const theme = document.querySelector(".btn__theme");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 
 const themeBtnGroup = document.querySelector(".btn-theme-group");
 const langBtnGroupFull = document.querySelector(".btn-language-group-full");
@@ -19,30 +21,31 @@ const letsTalkBtn = document.querySelector(".lets-talk-btn");
 const bigRedBtn = document.querySelector(".big-red-btn");
 const closeFormBtn = document.querySelector(".btn-colse-form");
 
-const servicesOrderBtn = document.querySelector(".services__main-btn");
 const personOrderBtn = document.querySelector(".person__main-btn");
 const whoOrderBtn = document.querySelector(".who__main-btn");
 
 const dynamicForm = document.querySelector(".dynamic-form-wrapper");
 
 // ---------- toggle header on scroll  ----------
-
+let y = window.scrollY;
 const toggleHeader = (e) => {
   if (
-    e.deltaY > 0 &&
+    window.scrollY > y &&
     window.scrollY > 300 &&
-    !body.classList.contains("lock-body")
+    !body.classList.contains("lock")
   ) {
     header.style.opacity = 0;
     header.style.visibility = "hidden";
+    y = window.scrollY;
   }
-  if (e.deltaY < 0 && !body.classList.contains("lock-body")) {
+  if (window.scrollY < y && !body.classList.contains("lock")) {
     header.style.visibility = "visible";
     header.style.opacity = 1;
+    y = window.scrollY;
   }
 };
 
-window.addEventListener("wheel", toggleHeader);
+window.addEventListener("scroll", toggleHeader);
 
 // ---------- mob menu service list  ----------
 
@@ -95,17 +98,13 @@ themeBtnGroup.addEventListener("click", (e) => {
 
 const openForm = () => {
   dynamicForm.classList.add("active-form");
-  body.classList.add("lock-body");
+  body.classList.add("lock");
 };
 const closeForm = () => {
   dynamicForm.classList.remove("active-form");
-  body.classList.remove("lock-body");
+  body.classList.remove("lock");
 };
 letsTalkBtn.addEventListener("click", openForm);
-bigRedBtn.addEventListener("click", openForm);
-servicesOrderBtn.addEventListener("click", openForm);
-personOrderBtn.addEventListener("click", openForm);
-whoOrderBtn.addEventListener("click", openForm);
 
 closeFormBtn.addEventListener("click", closeForm);
 
@@ -114,21 +113,34 @@ const openBurger = () => {
   navMenu.classList.add("active");
   burgerBtnOpen.classList.add("hidden");
   burgerBtnClose.classList.remove("hidden");
-  body.classList.add("lock-body");
+  body.classList.add("lock");
+  navMenu.classList.add("red-gradient");
+  navMenu.classList.add("red-gradient-top");
+  navMenu.classList.add("red-gradient--nav");
 };
 const closeBurger = () => {
   hideServiceList();
   navMenu.classList.remove("active");
   burgerBtnClose.classList.add("hidden");
   burgerBtnOpen.classList.remove("hidden");
-  body.classList.remove("lock-body");
+  body.classList.remove("lock");
+  navMenu.classList.remove("red-gradient");
+  navMenu.classList.remove("red-gradient-top");
+  navMenu.classList.remove("red-gradient-nav");
 };
 
 burgerBtnOpen.addEventListener("click", openBurger);
 burgerBtnClose.addEventListener("click", closeBurger);
+
 // ----- on window resize ------
 
+(() => {
+  main.style.marginBottom = `${footer.offsetHeight}px`;
+})();
+
 window.addEventListener("resize", () => {
+  main.style.marginBottom = `${footer.offsetHeight}px`;
+
   if (window.innerWidth > 1920) {
     closeBurger();
   }

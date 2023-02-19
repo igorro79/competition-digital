@@ -9,7 +9,7 @@
     @apply pb-[50px] pt-8 md:pt-[50px];
   }
   .form__wrapper--dynamic {
-    @apply xl:pt-[96px];
+    @apply h-full overflow-y-scroll xl:pt-[96px];
   }
   .form__wrapper--full {
     @apply xl:grid xl:grid-cols-[max(18%,240px)_1fr_auto] xl:pt-[90px] xl:pb-[112px];
@@ -109,10 +109,11 @@
     @apply xl:min-w-[290px];
   }
   .form__contact-wrapper {
-    @apply border-middleGrey xl:border-t xl:pl-[max(2vw,20px)] xl:pt-[60px];
+    @apply border-middleGrey not-italic xl:border-t xl:pl-[max(2vw,20px)] xl:pt-[60px];
   }
   .form__contact-address {
-    @apply mb-5 text-[12px] leading-6 text-white md:mb-6 md:text-base
+    @apply mb-5 block text-[12px] leading-6 text-white
+     md:mb-6 md:text-base
      md:leading-normal;
   }
   .form__contact-address--full {
@@ -156,7 +157,7 @@
   /* --------- close contact form button -------- */
   .btn-colse-form {
     @apply ml-auto mb-[5px] block rounded-[50px] border-[1px] border-middleGrey bg-dark
-     px-7 py-[10px] hover:border-light hover:bg-light hover:text-dark
-      active:border-light active:bg-light active:text-dark;
+    px-4 py-[10px] hover:border-light hover:bg-light hover:text-dark active:border-light
+      active:bg-light active:text-dark xl:px-7;
   }
 }

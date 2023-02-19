@@ -28,7 +28,7 @@
     pt-[30px] dark:text-white xl:pr-[50px] xl:pt-[50px];
   }
   .cases__card {
-    @apply border-t border-t-middleGrey pt-[30px]
+    @apply block border-t border-t-middleGrey pt-[30px]
      md:flex  xl:pl-[max(3vw,1.75rem)] xl:pt-0;
   }
   .cases__card:not(:last-child) {
@@ -38,7 +38,7 @@
     @apply flex-row-reverse;
   }
   .cases__card:nth-child(even) .cases__card-content {
-    @apply md:pl-[max(3vw,1.75rem)] xl:border-l xl:border-middleGrey;
+    @apply md:pl-[max(3vw,1.75rem)];
   }
   .cases__card:nth-child(odd) .cases__card-content {
     @apply md:pr-[max(3vw,1.75rem)] xl:border-r xl:border-middleGrey;
@@ -47,22 +47,49 @@
   .cases__card-image-wrap {
     @apply mb-[30px] w-full md:mb-0 md:basis-1/2 xl:py-[50px];
   }
+
+  .cases__card-image-thumb {
+    @apply relative;
+  }
+  .cases__card-image-overlay {
+    @apply absolute top-0 left-0 h-full w-[70%]
+     bg-gradient-to-r from-[rgba(0,0,0,0.7)] px-5 py-[18px]
+      text-white md:px-[33px] md:py-[25px] xl:py-[23px] xl:px-[26px];
+  }
+  .cases__card-image-overlay-block {
+    @apply flex items-center;
+  }
+  .cases__card-image-overlay-block--mb {
+    @apply mb-4;
+  }
+  .cases__card-image-overlay-number {
+    @apply text-4xl font-bold uppercase xl:text-[64px] xl:leading-[70px];
+  }
+  .cases__card-image-overlay-number--mr {
+    @apply mr-[15px];
+  }
+  .cases__card-image-overlay-number--ml {
+    @apply ml-[7px];
+  }
+  .cases__card-image-overlay-text {
+    @apply max-w-[150px] text-[12px] leading-[13px] md:text-base md:leading-[17px] xl:text-xl xl:leading-[22px];
+  }
+
   .cases__card-image {
     @apply block w-full;
   }
-
   .cases__card:nth-child(even) .cases__card-image-wrap {
-    @apply xl:pr-[max(3vw,1.75rem)];
+    @apply xl:border-r xl:border-middleGrey xl:pr-[max(3vw,1.75rem)];
   }
   .cases__card:nth-child(odd) .cases__card-image-wrap {
     @apply xl:pl-[max(3vw,1.75rem)];
   }
   .cases__card-content {
-    @apply md:flex md:basis-1/2 md:flex-col md:justify-between 
+    @apply md:flex md:basis-1/2 md:flex-col md:justify-between md:pb-6 
     xl:py-[50px];
   }
   .cases__card-heading-wrapper {
-    @apply flex justify-between gap-5;
+    @apply flex justify-between gap-5 md:mb-5 xl:mb-[30px];
   }
   .cases__card-title {
     @apply mb-[25px] text-2xl font-bold leading-[26.4px]
@@ -70,7 +97,7 @@
      xl:max-w-[450px] xl:text-[32px] xl:leading-[38px];
   }
   .cases__card-text {
-    @apply text-sm dark:text-white  md:text-base
+    @apply mb-10 text-sm dark:text-white  md:text-base
      xl:py-3;
   }
   .cases__card-copyright {
@@ -150,10 +177,10 @@
      border-middleGrey py-[30px] xl:gap-[10px] xl:py-[35px];
   }
   .cases__card-list {
-    @apply pb-[105px] xl:pb-[112px];
+    @apply md:pb-[105px] xl:pb-[112px];
   }
   .cases-page__card-list {
-    @apply pb-[105px] xl:pb-[112px] xl:pl-[153px];
+    @apply md:pb-[105px] xl:pb-[112px] xl:pl-[153px];
   }
   .cases-page__card {
     @apply pt-[50px] md:pt-[70px];

@@ -21,7 +21,7 @@
     @apply xl:basis-1/2;
   }
   .services-page__list-item {
-    @apply flex items-center border-b-[1px] border-middleGrey py-7 md:py-10;
+    @apply border-b-[1px] border-middleGrey;
   }
   .services-page__list-item-number {
     @apply hidden text-middleGrey md:mr-[70px] md:block xl:text-2xl;
@@ -30,10 +30,10 @@
     @apply text-xl font-semibold uppercase md:text-4xl xl:text-[42px];
   }
   .services-page__list-item-link {
-    @apply ml-auto h-[18px] w-[18px] md:h-[21px] md:w-[21px];
+    @apply flex  items-center py-7  md:py-10;
   }
-  .services-page__arrow-size svg {
-    @apply h-[18px] w-[18px]  md:h-[21px] md:w-[21px];
+  .services-page__list-item-link .animated-arrow-wrapper {
+    @apply ml-auto;
   }
   /* =============== animate on services list (services page) ================  */
   .onhover-gradient-to-top {

@@ -6,7 +6,7 @@
 @import "./cases.css";
 @import "./services.css";
 @import "./services-page.css";
-@import "./contacts-page.css";
+
 @import "./blog-page.css";
 @import "./blog.css";
 @import "./who.css";
@@ -16,6 +16,7 @@
 @import "./form.css";
 @import "./footer.css";
 @import "./utils.css";
+@import "./contacts-page.css";
 
 @tailwind base;
 @layer base {

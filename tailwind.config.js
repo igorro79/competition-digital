@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [".src/**/*.{html,js}"],
+  content: [".pages/**/*.html"],
+  content: ["./index.html"],
   darkMode: "class",
   theme: {
     screens: {
@@ -37,7 +39,7 @@ module.exports = {
         montserrat: ["Montserrat"],
       },
       colors: {
-        main: "#ff304d",
+        main: "#FF304D",
         light: "#f8f8f8",
         dark: "#171717",
         grey: "#323232",
@@ -46,7 +48,6 @@ module.exports = {
         lightRed: "#ff445e",
         darkGrey: "#474747",
         activeRed: "#dc2d45",
-        gradientMain: "#FF304D",
         link: "#4B73FF",
         linkActive: "#86A1FF",
         formBg: "#EEEEEE",
