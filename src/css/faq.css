@@ -16,7 +16,7 @@
     @apply border-t border-middleGrey  xl:col-start-2  xl:col-end-5 xl:pb-[50px]  xl:pl-[152px];
   }
   .faq__item {
-    @apply flex flex-col border-b border-middleGrey;
+    @apply border-b border-middleGrey transition-all;
   }
 
   .faq__question-wrapper {
@@ -28,16 +28,26 @@
   .faq__question--active {
     @apply text-main;
   }
-  .faq__question-button {
-    @apply ml-5 h-6 w-6 bg-plus-icon bg-cover bg-center bg-no-repeat md:ml-16 md:h-9 md:w-9;
+  .faq__question-button svg {
+    @apply pointer-events-none h-6 w-6  md:h-9 md:w-9;
   }
-  .faq__question-button--active {
-    @apply bg-minus-icon;
+  .faq__question-button {
+    @apply ml-5  md:ml-16;
+  }
+  .faq__question-button .minus {
+    @apply hidden;
+  }
+  .faq__question-button--active.faq__question-button .minus {
+    @apply block;
+  }
+
+  .faq__question-button--active.faq__question-button .plus {
+    @apply hidden;
   }
   .faq__answer {
-    @apply max-h-0 overflow-hidden text-sm transition-all dark:text-white xl:max-w-[950px] xl:text-base;
+    @apply h-0 max-h-0 overflow-hidden text-sm transition-all duration-300 dark:text-white xl:max-w-[950px] xl:text-base;
   }
   .faq__answer.open {
-    @apply max-h-max overflow-y-auto pb-5;
+    @apply h-auto max-h-[1000px] overflow-y-auto pb-5;
   }
 }

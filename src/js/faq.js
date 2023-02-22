@@ -4,6 +4,7 @@ const faqButtonList = document.querySelectorAll(".faq__question-button");
 const faqAnsvers = document.querySelectorAll(".faq__answer");
 
 faqList.addEventListener("click", (e) => {
+  console.log(e);
   if (e.target.className === "faq__question-button") {
     faqQuestionList.forEach((i) => {
       if (i.classList.contains("faq__question--active"))
