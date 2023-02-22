@@ -1,3 +1,7 @@
+.lock-body {
+  @apply h-screen overflow-hidden;
+}
+
 @layer components {
   .fake-header {
     @apply h-[76px] w-full bg-dark md:h-[94px];
@@ -144,10 +148,6 @@
 }
 
 @layer utilities {
-  .lock {
-    @apply h-screen overflow-hidden;
-  }
-
   .visually-hidden {
     position: absolute;
     width: 1px;

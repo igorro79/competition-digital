@@ -39,7 +39,7 @@
     @apply xl:border-t  xl:border-r xl:px-[max(2vw,20px)] xl:pt-[60px];
   }
   .form__grid {
-    @apply mb-7 grid gap-3  md:grid-cols-2 md:grid-rows-3 md:gap-5;
+    @apply mb-7 grid gap-3  md:grid-cols-2 md:grid-rows-[3,auto] md:gap-5;
   }
   .form__item--full {
     @apply md:col-start-1 md:col-end-3;
@@ -130,7 +130,7 @@
     @apply text-[12px] leading-6 md:text-base;
   }
   .error {
-    @apply absolute bottom-[-20px] left-8 hidden text-sm text-main;
+    @apply ml-5 hidden text-sm text-main;
   }
 
   /* ========== dynamic-form =========== */

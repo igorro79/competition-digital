@@ -17,11 +17,17 @@
       xl:col-end-3 xl:mb-8;
   }
   .social {
-    @apply mb-10 flex justify-around md:mx-auto md:mb-7 md:w-[300px] xl:mb-8 xl:mr-0;
+    @apply mb-10 flex justify-around text-dark dark:text-white md:mx-auto md:mb-7 md:w-[300px] xl:mb-8 xl:mr-0;
+  }
+  .social.social-menu {
+    @apply w-full self-end text-white dark:text-white xl:hidden;
   }
 
   .social__link {
-    @apply overflow-hidden rounded-full text-dark dark:text-white md:mx-auto;
+    @apply block overflow-hidden rounded-full  md:mx-auto;
+  }
+  .social__link div {
+    @apply p-2;
   }
   .social__link svg {
     @apply h-[29px]  w-full  md:h-[22px] xl:h-[30px];

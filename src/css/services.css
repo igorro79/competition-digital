@@ -24,10 +24,12 @@
   .services__link-grid {
     @apply grid max-h-min transition-all;
   }
-
-  .services__link-grid.services__link-grid--hidden > *:not(:first-child) {
-    @apply invisible m-0 max-h-0 overflow-y-hidden p-0;
+  @media screen and (max-width: 820px) {
+    .services__link-grid.services__link-grid--hidden > *:not(:first-child) {
+      @apply invisible m-0 max-h-0 overflow-y-hidden p-0 transition-all;
+    }
   }
+
   /* ---right border--- */
   .services__card:nth-child(-n + 5) {
     @apply md:border-r md:border-middleGrey;
@@ -70,10 +72,10 @@
   }
 
   .services__card-text {
-    @apply mb-10 max-h-[190px] pt-5 md:mb-0 md:max-h-[240px] xl:pt-10;
+    @apply mb-10 max-h-min pt-5 md:mb-0 md:max-h-[240px] xl:pt-10;
   }
   .services__card-image-container {
-    @apply mt-10   md:row-start-1 md:mt-0;
+    @apply mt-10 max-h-min  md:row-start-1 md:mt-0;
   }
   .services__card-image-wrapper {
     @apply md:relative md:aspect-square md:min-w-[216px] md:max-w-[216px]
