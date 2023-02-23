@@ -4037,6 +4037,20 @@ video {
   }
 }
 
+.form__filter-list input{
+  display: none;
+}
+
+.form__filter-list input[type="radio"]:checked + label{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .form__filter-title{
   margin-bottom: 1.25rem;
   font-size: 0.875rem;
