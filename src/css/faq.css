@@ -45,9 +45,10 @@
     @apply hidden;
   }
   .faq__answer {
-    @apply h-0 max-h-0 overflow-hidden text-sm transition-all duration-300 dark:text-white xl:max-w-[950px] xl:text-base;
+    @apply max-h-0 overflow-hidden text-sm transition-all delay-100 
+    duration-300 ease-out dark:text-white xl:max-w-[950px] xl:text-base;
   }
   .faq__answer.open {
-    @apply h-auto max-h-[1000px] overflow-y-auto pb-5;
+    @apply max-h-[1000px] overflow-y-auto pb-5;
   }
 }

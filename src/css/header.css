@@ -1,6 +1,6 @@
 @layer components {
   .header {
-    @apply fixed top-0 right-0 left-0 z-10 w-full transition-all;
+    @apply fixed top-0 right-0 left-0 z-50 w-full transition-all;
   }
   .menu-open {
     @apply h-screen overflow-y-hidden;
@@ -94,20 +94,21 @@
   }
 
   .link__list a {
-    @apply relative hover:text-main active:text-main xl:flex;
+    @apply relative inline-flex items-center hover:text-main active:text-main xl:flex;
   }
-  .link__list a.pseudo {
-    @apply before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-middleGrey 
-     before:transition-all before:content-['']
-      hover:before:w-full  hover:before:bg-main   active:before:bg-main
-       xl:before:block;
+  .link__list a.pseudo span {
+    @apply after:h-px after:w-0 after:bg-main after:transition-all
+      after:content-['']  hover:after:w-full   active:after:bg-main
+       xl:after:block;
   }
-  .link__list a.pseudo {
-    @apply after:hidden  after:transition-all after:content-arrow-content hover:after:text-main group-hover:text-main
-     xl:after:ml-3 xl:after:block;
+  .link__list a.pseudo:hover span {
+    @apply after:w-full;
   }
-  .link__list svg {
-    @apply h-4 w-4 text-main;
+
+  .link__list a svg {
+    @apply hidden  h-[11px] 
+     w-[11px] transition-all hover:text-main
+     xl:ml-3 xl:block;
   }
 
   /* -----------lets talk btn------------- */

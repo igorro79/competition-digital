@@ -64,7 +64,4 @@
   .footer__policy {
     @apply ml-5;
   }
-  .footer__terms {
-    @apply ml-5;
-  }
 }

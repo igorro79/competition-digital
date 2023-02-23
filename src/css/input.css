@@ -19,16 +19,5 @@
 @import "./contacts-page.css";
 
 @tailwind base;
-@layer base {
-  html {
-    @apply font-montserrat text-base font-medium text-dark;
-  }
-  body {
-    @apply relative;
-  }
-  .custom-container {
-    @apply mx-auto w-full px-[7%]  xl:max-w-[1920px];
-  }
-}
 @tailwind components;
 @tailwind utilities;

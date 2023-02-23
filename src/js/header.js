@@ -26,6 +26,16 @@ const personOrderBtn = document.querySelector(".person__main-btn");
 const whoOrderBtn = document.querySelector(".who__main-btn");
 
 const dynamicForm = document.querySelector(".dynamic-form-wrapper");
+const dynamicFormBtn = document.querySelector(".submit-dynamic-js");
+const mainFormBtn = document.querySelector(".submit-js");
+const successSend = document.querySelector(".success-wrapper");
+
+function lockBody() {
+  setTimeout(() => {
+    console.log("timeout");
+    body.classList.add("lock-body");
+  });
+}
 
 // ---------- toggle header on scroll  ----------
 let y = window.scrollY;
@@ -51,12 +61,10 @@ window.addEventListener("scroll", toggleHeader);
 // ---------- mob menu service list  ----------
 
 const toggleServiceList = () => {
-  console.log("toggle");
-  linkList.classList.toggle("show-links");
+  if (window.innerWidth < 1280) linkList.classList.toggle("show-links");
   if (window.innerWidth < 1280) navList.classList.toggle("show-links");
 };
 const openServiceListHover = () => {
-  console.log("hov");
   if (window.innerWidth >= 1280) linkList.classList.add("show-links");
 };
 
@@ -66,19 +74,18 @@ const hideServiceList = () => {
 };
 
 navServices.addEventListener("mouseenter", openServiceListHover);
-navServices.addEventListener("click", toggleServiceList);
-linkListBack.addEventListener("click", hideServiceList);
-
-document.documentElement.addEventListener("click", (e) => {
-  if (linkList.classList.contains("show-links") && window.innerWidth >= 1280) {
-    hideServiceList();
-  }
+linkList.addEventListener("mouseleave", () => {
+  if (window.innerWidth >= 1280) hideServiceList();
 });
+navServices.addEventListener("click", () => {
+  toggleServiceList();
+});
+linkListBack.addEventListener("click", hideServiceList);
 
 // ---------- change language ----------
 const changeLanguage = (e) => {
   langBtnGroupFull.childNodes.forEach((i) => {
-    if (i.tagName === "BUTTON") {
+    if (i.tagName === "A") {
       i.classList.toggle("hidden");
     }
   });
@@ -103,29 +110,36 @@ themeBtnGroup.addEventListener("click", (e) => {
 
 // -----dynamic form ------
 
-const openForm = () => {
-  dynamicForm.classList.add("active-form");
-  body.classList.add("lock-body");
-};
-const closeForm = () => {
-  dynamicForm.classList.remove("active-form");
+function openForm() {
+  dynamicForm.classList.add("modal-container-active");
+  lockBody();
+}
+function closeForm() {
+  dynamicForm.classList.remove("modal-container-active");
   body.classList.remove("lock-body");
-};
-letsTalkBtn.addEventListener("click", openForm);
+}
+letsTalkBtn.addEventListener("click", () => {
+  closeBurger();
+  openForm();
+});
 
-closeFormBtn.addEventListener("click", closeForm);
+closeFormBtn.addEventListener("click", () => {
+  closeForm();
+});
 
 // ----- burger ------
-const openBurger = () => {
+function openBurger() {
   navMenu.classList.add("active");
   burgerBtnOpen.classList.add("hidden");
   burgerBtnClose.classList.remove("hidden");
-  body.classList.add("lock-body");
+
+  lockBody();
+
   navMenu.classList.add("red-gradient");
   navMenu.classList.add("red-gradient-top");
   navMenu.classList.add("red-gradient--nav");
-};
-const closeBurger = () => {
+}
+function closeBurger() {
   hideServiceList();
   navMenu.classList.remove("active");
   burgerBtnClose.classList.add("hidden");
@@ -134,10 +148,30 @@ const closeBurger = () => {
   navMenu.classList.remove("red-gradient");
   navMenu.classList.remove("red-gradient-top");
   navMenu.classList.remove("red-gradient--nav");
-};
+}
 
 burgerBtnOpen.addEventListener("click", openBurger);
 burgerBtnClose.addEventListener("click", closeBurger);
+
+// ----- on form submit ------
+mainFormBtn.addEventListener("click", onSubmit);
+dynamicFormBtn.addEventListener("click", onSubmit);
+
+function closeSuccess() {
+  console.log("close");
+  successSend.classList.remove("success-wrapper-active");
+  body.classList.remove("lock-body");
+  header.removeEventListener("click", closeSuccess);
+}
+function onSubmit() {
+  header.addEventListener("click", closeSuccess);
+  setTimeout(() => {
+    header.style.visibility = "visible";
+    header.style.opacity = 1;
+    successSend.classList.add("success-wrapper-active");
+    dynamicForm.classList.remove("modal-container-active");
+  }, 500);
+}
 
 // ----- on window resize ------
 
@@ -148,7 +182,7 @@ burgerBtnClose.addEventListener("click", closeBurger);
 window.addEventListener("resize", () => {
   main.style.marginBottom = `${footer.offsetHeight}px`;
 
-  if (window.innerWidth > 1280) {
+  if (window.innerWidth > 1280 && navMenu.classList.contains("active")) {
     closeBurger();
   }
 });

@@ -1,14 +1,33 @@
+html {
+  @apply font-montserrat text-base font-medium text-dark;
+}
+body {
+  @apply relative;
+}
+main {
+  @apply relative;
+}
+.custom-container {
+  @apply mx-auto w-full px-[7%]  xl:max-w-[1920px];
+}
+.modal-container {
+  @apply fixed  top-0 right-[100%] z-[55]  h-screen w-full transition-all xl:bg-main;
+}
+.modal-container.modal-container-active {
+  @apply right-0;
+}
+
 .lock-body {
   @apply h-screen overflow-hidden;
 }
 
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
   background-color: #919191;
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+  /* box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3); */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -16,7 +35,7 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 .blog__card-list::-webkit-scrollbar {
-  height: 5px;
+  height: 8px;
 }
 
 .blog__card-list::-webkit-scrollbar-track {
@@ -68,6 +87,9 @@ body::-webkit-scrollbar-thumb {
   }
   .main-btn.btn-mrgn {
     @apply mt-10 mb-5;
+  }
+  .sticky-btn {
+    @apply xl:sticky xl:top-[110px];
   }
 
   /*=============== CIRCLE WHITE BUTTON ============= */
@@ -144,8 +166,8 @@ body::-webkit-scrollbar-thumb {
     @apply absolute right-[25vw] top-0 z-[2] -translate-y-1/2 translate-x-1/2;
   }
   .big-red-btn {
-    @apply flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center
-     justify-center gap-3 rounded-full bg-main text-center
+    @apply flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center
+     gap-3 rounded-full bg-main px-3 text-center
      text-sm font-bold uppercase text-light transition-all md:min-h-[142px]
      md:w-[142px] md:min-w-[142px] xl:min-h-[177px] xl:w-[177px]
       xl:min-w-[177px] xl:text-base xl:hover:min-h-[140px]
@@ -173,6 +195,8 @@ body::-webkit-scrollbar-thumb {
      md:py-4 md:px-10;
   }
 }
+
+/* =========== visually hidden ============ */
 
 @layer utilities {
   .visually-hidden {

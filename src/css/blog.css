@@ -2,7 +2,7 @@
   /*=============== BLOG ============= */
 
   .blog-wrapper {
-    @apply pt-5 pb-5 md:pb-14;
+    @apply pt-5 pb-5;
   }
   .blog__heading-wrapper {
     @apply mb-[30px] flex justify-between xl:mb-[58px];
@@ -18,10 +18,11 @@
   }
 
   .blog__card-list {
-    @apply grid grid-cols-3fr gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
+    @apply grid grid-cols-3fr gap-5 overflow-auto pb-[30px]
+     xl:mb-[50px] xl:gap-[30px];
   }
   .blog__card {
-    @apply mb-[50px] flex flex-col xl:mb-0;
+    @apply flex flex-col xl:mb-0;
   }
   .blog__card-image {
     @apply mb-6 block min-h-[165px] w-full min-w-[270px]
@@ -37,6 +38,6 @@
     @apply ml-3 text-[12px] leading-[14px] text-middleGrey xl:text-sm  xl:leading-4;
   }
   .blog__card-title {
-    @apply min-h-[90px] overflow-hidden text-ellipsis text-[18px] font-bold leading-[22px] xl:text-2xl xl:leading-[28px];
+    @apply overflow-hidden text-ellipsis text-[18px] font-bold leading-[22px] xl:text-2xl xl:leading-[28px];
   }
 }

@@ -1,10 +1,8 @@
 @layer components {
   .who__wrapper {
-    @apply pt-[30px] pb-[60px]  xl:pb-[160px];
+    @apply pb-[60px]  xl:pb-[160px];
   }
-  /* .who__who-grid {
-    @apply flex-row-reverse xl:flex;
-  } */
+
   .who__who-content {
     @apply xl:col-start-2 xl:col-end-3 xl:border-l
      xl:border-middleGrey;
