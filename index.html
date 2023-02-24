@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Uwp digital</title>
   </head>
   <body>
@@ -277,7 +281,23 @@
                   aria-label="Services page"
                   class="nav__link nav__link-services nav__link-services-btn relative"
                 >
-                  Services
+                  <span>
+                    Services
+                    <svg
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.833008 0.5L5.83301 5.5L10.833 0.5"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
                 </button>
               </li>
               <li class="nav__list-item">
@@ -2041,116 +2061,514 @@
       <section class="person theme-black">
         <div class="custom-container py-[60px]">
           <div class="heading2 person__title">Let's discuss the project</div>
-          <div class="grid-container-xl-cols">
-            <div class="person__wrapper top-border">
-              <div class="person__thumb">
-                <div class="person__image-wrapper">
-                  <button
-                    type="button"
-                    aria-label="next teammate"
-                    class="circle-team-btn"
-                  >
-                    <svg
-                      viewBox="0 0 28 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </button>
-                  <picture>
-                    <source
-                      media="(min-width: 1280px)"
-                      srcset="
-                        ./src/images/person/person1-full-1@x.jpg,
-                        ./src/images/person/person1-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/person/person1-tab-1@x.jpg,
-                        ./src/images/person/person1-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./src/images/person/person1-mob-1@x.jpg,
-                        ./src/images/person/person1-mob-2@x.jpg 2x
-                      "
-                    />
 
-                    <img
-                      class="person__image"
-                      loading="lazy"
-                      src="./src/images/person/person1-mob-1@x.jpg"
-                      alt="person card"
-                    />
-                  </picture>
+          <div class="grid-container-xl-cols">
+            <div class="mySwiper-container">
+              <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              version="1.1"
+                              id="Capa_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g id="right_x5F_quote">
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies, UWP connects customers with
+                          their favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              version="1.1"
+                              id="Capa_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g id="right_x5F_quote">
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies, UWP connects customers with
+                          their favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              version="1.1"
+                              id="Capa_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g id="right_x5F_quote">
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies, UWP connects customers with
+                          their favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              version="1.1"
+                              id="Capa_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g id="right_x5F_quote">
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies, UWP connects customers with
+                          their favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="person__info">
-                <div class="person-circle-double-quotes-btn">
-                  <svg
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 32 32"
-                    xml:space="preserve"
-                    fill="currentColor"
-                  >
-                    <g stroke-width="0"></g>
-                    <g stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g>
-                      <g>
-                        <g id="right_x5F_quote">
-                          <g>
-                            <path
-                              style="fill: currentColor"
-                              d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
-                            ></path>
-                            <path
-                              style="fill: currentColor"
-                              d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div class="person__info-text-wrapper">
-                  <h3 class="person__info-name">Daniella</h3>
-                  <p class="person__info-position">Copywriter</p>
-                </div>
-              </div>
-              <p class="person__about">
-                The digital world offers limitless possibilities for
-                transforming an idea into a successful business. We are a
-                digital marketing agency that opens these opportunities to you.
-                With the help of marketing tools and smart technologies, UWP
-                connects customers with their favorite brands.
-              </p>
-              <p class="person__clients">
-                Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
-              </p>
-              <ul class="person__experience-list">
-                <li class="person__experience-list-item">
-                  <p class="person__experience-value">6+</p>
-                  <p class="person__experience-desc">years in the company</p>
-                </li>
-                <li class="person__experience-list-item">
-                  <p class="person__experience-value">150+</p>
-                  <p class="person__experience-desc">successful projects</p>
-                </li>
-              </ul>
             </div>
 
             <div class="person__order-wrapper top-border">
@@ -3353,5 +3771,29 @@
     <script src="./src/js/header.js"></script>
     <script src="./src/js/services.js"></script>
     <script src="./src/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        // Optional parameters
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".circle-team-btn",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -60,17 +60,22 @@
 
   .nav__list-item a,
   .nav__list-item button {
-    @apply uppercase transition-all after:h-px
-      after:w-0 after:bg-middleGrey after:transition-all after:content-[''] 
-     hover:text-middleGrey hover:after:w-full
-      active:text-main  active:after:bg-main
+    @apply bottom-0 uppercase transition-all
+       after:h-px after:w-0 after:bg-middleGrey 
+     after:transition-all  after:content-[''] hover:text-middleGrey
+      hover:after:w-full  active:text-main active:after:bg-main
        md:after:block;
   }
 
   .nav__link-services {
-    @apply inline-block pr-6 before:absolute before:top-0 before:right-0 
-     before:font-mono before:transition-all before:content-['>'] hover:text-middleGrey 
-      active:text-main   xl:before:rotate-90;
+    @apply hover:text-middleGrey     active:text-main;
+  }
+
+  .nav__link-services span {
+    @apply inline-flex items-center;
+  }
+  .nav__link-services svg {
+    @apply ml-[10px] rotate-90 xl:rotate-0;
   }
 
   .link__list {

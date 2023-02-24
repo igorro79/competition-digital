@@ -26,5 +26,8 @@
   },
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+  "dependencies": {
+    "swiper": "^9.0.5"
   }
 }

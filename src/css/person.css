@@ -6,8 +6,8 @@
 
   .person__wrapper {
     @apply row-auto grid  grid-cols-[auto_1fr] 
-    gap-[0_4%] pt-8 pb-14 
-    text-light md:gap-[0_max(3%,20px)] xl:col-start-2
+    gap-[0_4%] pt-8 pb-[60px] text-light
+    md:gap-[0_max(3%,20px)] md:pb-[84px] xl:col-start-2
      xl:col-end-3 xl:flex-grow xl:grid-cols-[auto_1fr] 
      xl:grid-rows-[auto_1fr_auto_auto] xl:pt-[50px]
       xl:pl-[max(3vw,20px)];
@@ -17,6 +17,11 @@
   }
   .person__image-wrapper {
     @apply relative;
+  }
+  .person__image-overlay {
+    @apply absolute bottom-0 left-0 h-[70%] w-full
+     bg-gradient-to-t from-[#FF304D8F]
+      text-white;
   }
   .person__image {
     @apply block h-auto w-full max-w-[150px]

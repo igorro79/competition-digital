@@ -15,9 +15,9 @@ body{
   position: relative;
 }
 
-main{
-  position: relative;
-}
+/* main {
+  @apply relative;
+} */
 
 .custom-container{
   margin-left: auto;
@@ -90,6 +90,60 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* =========== visually hidden ============ */
+
+.mySwiper-container{
+  width: 100%;
+  overflow: hidden;
+}
+
+.mySwiper .swiper-pagination{
+  bottom: 30px !important;
+}
+
+@media (min-width: 820px){
+  .mySwiper .swiper-pagination{
+    bottom: 40px !important;
+  }
+}
+
+@media (min-width: 1280px){
+  .mySwiper .swiper-pagination{
+    bottom: 10px !important;
+  }
+}
+
+.mySwiper .swiper-pagination-bullet{
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+  opacity: 1;
+}
+
+@media (min-width: 820px){
+  .mySwiper .swiper-pagination-bullet{
+    margin-left: 7px !important;
+    margin-right: 7px !important;
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (min-width: 1280px){
+  .mySwiper .swiper-pagination-bullet{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    height: 14px;
+    width: 14px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+}
+
+.mySwiper .swiper-pagination-bullet-active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
 
 /*=============== CONTACTS-PAGE ============= */
 
@@ -1413,6 +1467,7 @@ video {
 
 .nav__list-item a,
   .nav__list-item button{
+  bottom: 0px;
   text-transform: uppercase;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1465,23 +1520,6 @@ video {
   }
 }
 
-.nav__link-services{
-  display: inline-block;
-  padding-right: 1.5rem;
-}
-
-.nav__link-services::before{
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  --tw-content: '>';
-  content: var(--tw-content);
-}
-
 .nav__link-services:hover{
   --tw-text-opacity: 1;
   color: rgb(145 145 145 / var(--tw-text-opacity));
@@ -1492,10 +1530,20 @@ video {
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
+.nav__link-services span{
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__link-services svg{
+  margin-left: 10px;
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @media (min-width: 1280px){
-  .nav__link-services::before{
-    content: var(--tw-content);
-    --tw-rotate: 90deg;
+  .nav__link-services svg{
+    --tw-rotate: 0deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
@@ -3167,7 +3215,7 @@ video {
   grid-template-columns: auto 1fr;
   gap: 0 4%;
   padding-top: 2rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 60px;
   --tw-text-opacity: 1;
   color: rgb(248 248 248 / var(--tw-text-opacity));
 }
@@ -3175,6 +3223,7 @@ video {
 @media (min-width: 820px){
   .person__wrapper{
     gap: 0 max(3%,20px);
+    padding-bottom: 84px;
   }
 }
 
@@ -3205,6 +3254,20 @@ video {
 
 .person__image-wrapper{
   position: relative;
+}
+
+.person__image-overlay{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 70%;
+  width: 100%;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #FF304D8F;
+  --tw-gradient-to: rgb(255 48 77 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .person__image{
@@ -4025,14 +4088,21 @@ video {
 }
 
 .form__filter-list{
+  margin-bottom: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
+@media (min-width: 820px){
+  .form__filter-list{
+    margin-bottom: 46px;
+  }
+}
+
 @media (min-width: 1280px){
   .form__filter-list{
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     gap: 10px;
   }
 }
@@ -4040,6 +4110,10 @@ video {
 .form__filter-list input{
   display: none;
 }
+
+/* .form__filter-list input {
+    @apply hidden;
+  } */
 
 .form__filter-list input[type="radio"]:checked + label{
   border-width: 1px;
@@ -4710,6 +4784,8 @@ video {
 .person-circle-double-quotes-btn svg{
   height: 14px;
   width: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
 @media (min-width: 820px){
@@ -5275,33 +5351,29 @@ video {
 /* ============= CASES PAGE ========== */
 
 .filter__btn{
+  cursor: pointer;
   border-radius: 40px;
   border-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   text-transform: uppercase;
 }
 
 @media (min-width: 1280px){
   .filter__btn{
     border-radius: 50px;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 }
 
 .filter__btn-form{
-  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(145 145 145 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(248 248 248 / var(--tw-text-opacity));
 }
@@ -5318,6 +5390,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 820px){
+  .filter__btn-form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 .filter__btn.filter__btn-active{

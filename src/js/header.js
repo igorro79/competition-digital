@@ -32,7 +32,6 @@ const successSend = document.querySelector(".success-wrapper");
 
 function lockBody() {
   setTimeout(() => {
-    console.log("timeout");
     body.classList.add("lock-body");
   });
 }
@@ -158,7 +157,6 @@ mainFormBtn.addEventListener("click", onSubmit);
 dynamicFormBtn.addEventListener("click", onSubmit);
 
 function closeSuccess() {
-  console.log("close");
   successSend.classList.remove("success-wrapper-active");
   body.classList.remove("lock-body");
   header.removeEventListener("click", closeSuccess);

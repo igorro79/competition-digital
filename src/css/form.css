@@ -147,11 +147,14 @@
     @apply mb-[50px];
   }
   .form__filter-list {
-    @apply flex flex-wrap gap-3 xl:mb-[50px] xl:gap-[10px];
+    @apply mb-6 flex flex-wrap gap-3 md:mb-[46px] xl:mb-[52px] xl:gap-[10px];
   }
   .form__filter-list input {
     @apply hidden;
   }
+  /* .form__filter-list input {
+    @apply hidden;
+  } */
   .form__filter-list input[type="radio"]:checked + label {
     @apply border-[1px] border-white bg-white text-black;
   }

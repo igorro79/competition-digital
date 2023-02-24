@@ -4,9 +4,9 @@ html {
 body {
   @apply relative;
 }
-main {
+/* main {
   @apply relative;
-}
+} */
 .custom-container {
   @apply mx-auto w-full px-[7%]  xl:max-w-[1920px];
 }
@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
       md:h-16 md:w-16 xl:h-[64px]  xl:w-[64px];
   }
   .person-circle-double-quotes-btn svg {
-    @apply h-[14px] w-[14px] md:h-[22px] md:w-[22px];
+    @apply h-[14px] w-[14px] text-dark md:h-[22px] md:w-[22px];
   }
   /*----------- #Button V5 ---- Scroll Team ------- */
   .circle-team-btn {
@@ -283,18 +283,17 @@ body::-webkit-scrollbar-thumb {
 
   /* ============= CASES PAGE ========== */
   .filter__btn {
-    @apply rounded-[40px] border-[1px] py-[10px] px-4 text-sm
-     uppercase  
-     xl:rounded-[50px] xl:py-3 xl:px-5;
+    @apply cursor-pointer rounded-[40px] border-[1px] uppercase xl:rounded-[50px];
   }
   .filter__btn-light {
     @apply bg-lightGrey  text-dark hover:border-[1px] hover:border-middleGrey
       hover:bg-light active:border-main  active:bg-main active:text-white dark:bg-darkGrey dark:text-light;
   }
   .filter__btn-form {
-    @apply border-[1px] border-middleGrey bg-dark
-       text-light  hover:border-white
-        active:border-white active:bg-white active:text-black;
+    @apply border-middleGrey bg-dark px-[10px] py-[6px]
+     text-xs text-light hover:border-white active:border-white
+       active:bg-white  active:text-black
+        md:py-[10px] md:px-5 md:text-sm;
   }
   .filter__btn.filter__btn-active {
     @apply border-[1px] border-white bg-white text-black;
@@ -315,4 +314,17 @@ body::-webkit-scrollbar-thumb {
   .bottom-border {
     @apply border-b  border-middleGrey;
   }
+}
+.mySwiper-container {
+  @apply w-full overflow-hidden;
+}
+.mySwiper .swiper-pagination {
+  @apply !bottom-[30px] md:!bottom-[40px] xl:!bottom-[10px];
+}
+.mySwiper .swiper-pagination-bullet {
+  @apply !mx-[5px] bg-middleGrey opacity-100 md:!mx-[7px] md:h-[10px] 
+  md:w-[10px] xl:!mx-[10px] xl:h-[14px] xl:w-[14px] xl:bg-white;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  @apply bg-main;
 }

@@ -23,16 +23,12 @@ module.exports = {
         height: "max-height",
       },
       gridTemplateColumns: {
-        // Simple 16 column grid
         "3fr": "repeat(3, minmax(min-content, 1fr))",
       },
-      content: {
-        "arrow-content": "url('./images/up-right-dark.svg')",
-      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "minus-icon": "url('./images/minus.svg')",
-        "plus-icon": "url('./images/plus.svg')",
+
         showreel: "url('./images/cases/showreel.jpg')",
       },
       fontFamily: {
