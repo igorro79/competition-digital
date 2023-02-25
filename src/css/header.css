@@ -40,12 +40,12 @@
      xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
   }
   .nav.active {
-    @apply grid h-[calc(100vh-76px)] w-full grid-rows-[auto_auto_1fr] px-5 md:h-[calc(100vh-94px)]  md:px-[30px] xl:z-[8] xl:w-auto xl:px-0;
+    @apply grid h-[calc(100vh-76px)] w-full grid-rows-[auto_550px_1fr] overflow-y-auto px-5 md:h-[calc(100vh-94px)]  md:px-[30px] xl:z-[8] xl:w-auto xl:px-0;
   }
 
   .nav__list {
-    @apply flex flex-col gap-[30px]  pt-[30px]      text-xl  transition-all 
-    xl:static xl:flex-row xl:gap-[clamp(30px,2.6vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
+    @apply mb-8 flex flex-col  gap-[30px]  pt-[30px] text-xl    transition-all  xl:static 
+    xl:mb-0 xl:flex-row xl:gap-[clamp(30px,2.6vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
   .nav__list.show-links {
     @apply invisible opacity-0;
