@@ -72,7 +72,16 @@ const hideServiceList = () => {
   navList.classList.remove("show-links");
 };
 
-navServices.addEventListener("mouseenter", openServiceListHover);
+navServices.addEventListener("mouseenter", () => {
+  openServiceListHover();
+});
+navServices.addEventListener("mouseleave", () => {
+  setTimeout(() => {
+    if (!linkList.matches(":hover") && !navServices.matches(":hover"))
+      hideServiceList();
+  }, 1000);
+});
+
 linkList.addEventListener("mouseleave", () => {
   if (window.innerWidth >= 1280) hideServiceList();
 });

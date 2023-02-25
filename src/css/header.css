@@ -45,7 +45,7 @@
 
   .nav__list {
     @apply flex flex-col gap-[30px]  pt-[30px]      text-xl  transition-all 
-    xl:static xl:flex-row xl:gap-[2rem]  xl:border-t-0 xl:pt-0 xl:text-base;
+    xl:static xl:flex-row xl:gap-[clamp(30px,2.6vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
   .nav__list.show-links {
     @apply invisible opacity-0;
@@ -68,14 +68,14 @@
   }
 
   .nav__link-services {
-    @apply hover:text-middleGrey     active:text-main;
+    @apply hover:text-middleGrey  active:text-main;
   }
 
   .nav__link-services span {
     @apply inline-flex items-center;
   }
   .nav__link-services svg {
-    @apply ml-[10px] rotate-90 xl:rotate-0;
+    @apply ml-[10px] -rotate-90 xl:rotate-0;
   }
 
   .link__list {

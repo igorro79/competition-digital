@@ -62,8 +62,8 @@
     @apply h-[21px] w-[21px];
   }
   .services__card-title {
-    @apply cursor-pointer py-5 text-2xl font-bold leading-[26.4px] md:pointer-events-none
-     md:cursor-default xl:py-10 xl:text-[42px];
+    @apply cursor-pointer py-5 text-2xl font-bold leading-[1.1] md:pointer-events-none
+     md:cursor-default xl:py-10 xl:text-[42px] xl:leading-[45px];
   }
 
   .services__card-content-wrapper {

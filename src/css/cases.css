@@ -29,7 +29,7 @@
   }
   .cases__card {
     @apply block border-t border-t-middleGrey pt-[30px]
-     md:flex  xl:pl-[max(3vw,1.75rem)] xl:pt-0;
+     md:flex  xl:pl-[max(2.5vw,0.75rem)] xl:pt-0;
   }
   .cases__card:not(:last-child) {
     @apply pb-[30px] xl:pb-0;
@@ -38,10 +38,10 @@
     @apply flex-row-reverse;
   }
   .cases__card:nth-child(even) .cases__card-content {
-    @apply md:pl-[max(3vw,1.75rem)];
+    @apply md:pl-[max(2.5vw,0.75rem)];
   }
   .cases__card:nth-child(odd) .cases__card-content {
-    @apply md:pr-[max(3vw,1.75rem)] xl:border-r xl:border-middleGrey;
+    @apply md:pr-[max(2.5vw,0.75rem)] xl:border-r xl:border-middleGrey;
   }
 
   .cases__card-image-wrap {
@@ -52,7 +52,7 @@
     @apply relative;
   }
   .cases__card-image-overlay {
-    @apply absolute top-0 left-0 h-full w-[70%]
+    @apply absolute top-0 left-0 h-full w-[72%]
      bg-gradient-to-r from-[rgba(0,0,0,0.7)] px-5 py-[18px]
       text-white md:px-[33px] md:py-[25px] xl:py-[23px] xl:px-[26px];
   }
@@ -63,7 +63,7 @@
     @apply mb-4;
   }
   .cases__card-image-overlay-number {
-    @apply text-4xl font-bold uppercase xl:text-[64px] xl:leading-[70px];
+    @apply text-[clamp(36px,3.5vw,45px)] font-bold uppercase xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[clamp(40px,3.5vw,70px)];
   }
   .cases__card-image-overlay-number--mr {
     @apply mr-[15px];
@@ -72,24 +72,27 @@
     @apply ml-[7px];
   }
   .cases__card-image-overlay-text {
-    @apply max-w-[150px] text-[12px] leading-[13px] md:text-base md:leading-[17px] xl:text-xl xl:leading-[22px];
+    @apply max-w-[180px] text-[clamp(12px,2vw,16px)] leading-[clamp(13px,2vw,17px)]
+     md:text-[clamp(16px,1.8vw,20px)]    md:leading-[clamp(17px,1.8vw,22px)] 
+    xl:max-w-[170px] xl:text-[clamp(16px,1.2vw,20px)]
+     xl:leading-[clamp(17px,1.2vw,22px)];
   }
 
   .cases__card-image {
     @apply block w-full;
   }
   .cases__card:nth-child(even) .cases__card-image-wrap {
-    @apply xl:border-r xl:border-middleGrey xl:pr-[max(3vw,1.75rem)];
+    @apply xl:border-r xl:border-middleGrey xl:pr-[max(2.5vw,0.75rem)];
   }
   .cases__card:nth-child(odd) .cases__card-image-wrap {
-    @apply xl:pl-[max(3vw,1.75rem)];
+    @apply xl:pl-[max(2.5vw,0.75rem)];
   }
   .cases__card-content {
     @apply md:flex md:basis-1/2 md:flex-col md:justify-between md:pb-6 
     xl:py-[50px];
   }
   .cases__card-heading-wrapper {
-    @apply flex justify-between gap-5 md:mb-5 xl:mb-[30px];
+    @apply flex justify-between gap-2 md:mb-5 xl:mb-[30px];
   }
   .cases__card-title {
     @apply mb-[25px] text-2xl font-bold leading-[26.4px]

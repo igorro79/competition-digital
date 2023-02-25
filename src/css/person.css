@@ -1,6 +1,6 @@
 /*=============== DISCUSS ============= */
 @layer components {
-  .person__title {
+  .heading2.person__title {
     @apply mb-[30px] xl:mb-[50px];
   }
 
@@ -20,8 +20,8 @@
   }
   .person__image-overlay {
     @apply absolute bottom-0 left-0 h-[70%] w-full
-     bg-gradient-to-t from-[#FF304D8F]
-      text-white;
+     bg-gradient-to-t text-white
+      xl:from-[#FF304D8F];
   }
   .person__image {
     @apply block h-auto w-full max-w-[150px]
