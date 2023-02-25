@@ -9,7 +9,7 @@
     @apply mb-[70px]  md:mb-[98px]  xl:mb-[122px];
   }
   .cases__intro-title {
-    @apply mb-[30px] pt-7 text-xl font-bold uppercase leading-[22px] dark:text-white
+    @apply mb-[30px] pt-7 text-xl font-bold uppercase leading-[1.1] dark:text-white
      md:mb-0 md:w-full md:border-t md:border-r md:border-middleGrey md:pr-7 
       md:text-base xl:pt-[50px]  xl:text-2xl;
   }
@@ -63,7 +63,7 @@
     @apply mb-4;
   }
   .cases__card-image-overlay-number {
-    @apply text-[clamp(36px,3.5vw,45px)] font-bold uppercase xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[clamp(40px,3.5vw,70px)];
+    @apply text-[clamp(36px,3.5vw,45px)] font-bold uppercase xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[1.1];
   }
   .cases__card-image-overlay-number--mr {
     @apply mr-[15px];
@@ -72,10 +72,10 @@
     @apply ml-[7px];
   }
   .cases__card-image-overlay-text {
-    @apply max-w-[180px] text-[clamp(12px,2vw,16px)] leading-[clamp(13px,2vw,17px)]
-     md:text-[clamp(16px,1.8vw,20px)]    md:leading-[clamp(17px,1.8vw,22px)] 
+    @apply max-w-[180px] text-[clamp(12px,2vw,16px)] leading-[1.1]
+     md:text-[clamp(16px,1.8vw,20px)]    md:leading-[1.1] 
     xl:max-w-[170px] xl:text-[clamp(16px,1.2vw,20px)]
-     xl:leading-[clamp(17px,1.2vw,22px)];
+     xl:leading-[1.1];
   }
 
   .cases__card-image {
@@ -95,7 +95,7 @@
     @apply flex justify-between gap-2 md:mb-5 xl:mb-[30px];
   }
   .cases__card-title {
-    @apply mb-[25px] text-2xl font-bold leading-[26.4px]
+    @apply mb-[25px] text-2xl font-bold leading-[1.1]
      dark:text-white md:mb-0 md:text-xl md:leading-6 
      xl:max-w-[450px] xl:text-[32px] xl:leading-[38px];
   }

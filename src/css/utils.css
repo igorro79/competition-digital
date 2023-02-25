@@ -54,14 +54,14 @@ body::-webkit-scrollbar-thumb {
   }
   /* =========== HEADING ============ */
   .heading2 {
-    @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[50px] 
-    xl:text-[clamp(45px,5vw,90px)] xl:leading-[clamp(55px,5vw,100px)];
+    @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[1.1] 
+    xl:text-[clamp(45px,5vw,90px)] xl:leading-[1.1];
   }
   /* -------- */
 
   .pages__title {
-    @apply text-4xl font-bold uppercase md:text-[60px] md:leading-[66px] 
-     xl:text-[120px] xl:leading-[132px];
+    @apply text-4xl font-bold uppercase md:text-[60px] md:leading-[1.1] 
+     xl:text-[120px] xl:leading-[1.1];
   }
 
   /*=============== MAIN BUTTON ============= */

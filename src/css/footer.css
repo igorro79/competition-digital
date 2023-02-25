@@ -17,7 +17,11 @@
       xl:col-end-3 xl:mb-8;
   }
   .social {
-    @apply mb-10 flex justify-around text-dark dark:text-white md:mx-auto md:mb-7 md:w-[300px] xl:mb-8 xl:mr-0;
+    @apply mb-10 flex justify-around text-dark dark:text-white
+     md:mx-auto md:mb-7 md:w-[300px] xl:mb-8 xl:mr-0;
+  }
+  .nav .social {
+    @apply mb-20;
   }
   .social.social-menu {
     @apply w-full self-end text-white dark:text-white xl:hidden;

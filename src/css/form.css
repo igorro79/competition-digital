@@ -28,11 +28,11 @@
   }
 
   .form__title--dynamic {
-    @apply xl:mb-[52px] xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[clamp(36px,3.5vw,64px)];
+    @apply xl:mb-[52px] xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[1.1];
   }
   .form__title--full {
     @apply xl:col-start-1 xl:col-end-4 xl:row-start-1 xl:mb-[50px] 
-    xl:text-[64px] xl:leading-[64px];
+    xl:text-[64px] xl:leading-[1];
   }
   .form__contact-form {
     @apply mb-[60px] border-middleGrey;
@@ -174,7 +174,7 @@
   /* --------- success form modal -------- */
 
   .success-wrapper {
-    @apply fixed  top-0 right-[100%] z-40  h-screen w-screen  bg-light transition-all;
+    @apply fixed top-0 right-[100%] z-40 h-screen w-screen overflow-y-auto  bg-light pt-[76px]  transition-all md:pt-[94px];
   }
   .success-wrapper.success-wrapper-active {
     @apply right-0;
@@ -183,8 +183,8 @@
     @apply flex h-screen flex-col items-center justify-center;
   }
   .success-circle {
-    @apply mb-[27px] flex h-[66px] w-[66px] items-center justify-center rounded-full
-    border-[1px] border-main xl:mb-5 xl:h-[84px] xl:w-[84px];
+    @apply mb-[27px] flex h-[66px] min-h-[66px] w-[66px] items-center justify-center rounded-full border-[1px]
+    border-main xl:mb-5 xl:h-[84px] xl:min-h-[84px] xl:w-[84px];
   }
   /* .success-text {
     @apply text-middleGrey;

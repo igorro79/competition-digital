@@ -16,7 +16,7 @@
   }
   .who__who-text {
     @apply text-xl text-white md:indent-16 xl:indent-[120px]
-     xl:text-[clamp(16px,2vw,2rem)] xl:leading-[45px];
+     xl:text-[clamp(16px,2vw,2rem)] xl:leading-[1.1];
   }
   /* -----------who__who-cards------- */
   .who__who-card-list {

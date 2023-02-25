@@ -1937,7 +1937,7 @@ video {
   .hero__title{
     margin-bottom: 1.5rem;
     font-size: 60px;
-    line-height: 66px;
+    line-height: 1.1;
   }
 }
 
@@ -1945,7 +1945,7 @@ video {
   .hero__title{
     margin-bottom: 3.5rem;
     font-size: clamp(90px,6vw,120px);
-    line-height: clamp(90px,6vw,120px);
+    line-height: 1.1;
   }
 }
 
@@ -2046,7 +2046,7 @@ video {
   line-height: 1.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 22px;
+  line-height: 1.1;
 }
 
 .dark .cases__intro-title{
@@ -2275,7 +2275,7 @@ video {
 @media (min-width: 1280px){
   .cases__card-image-overlay-number{
     font-size: clamp(36px,3.5vw,64px);
-    line-height: clamp(40px,3.5vw,70px);
+    line-height: 1.1;
   }
 }
 
@@ -2290,13 +2290,13 @@ video {
 .cases__card-image-overlay-text{
   max-width: 180px;
   font-size: clamp(12px,2vw,16px);
-  line-height: clamp(13px,2vw,17px);
+  line-height: 1.1;
 }
 
 @media (min-width: 820px){
   .cases__card-image-overlay-text{
     font-size: clamp(16px,1.8vw,20px);
-    line-height: clamp(17px,1.8vw,22px);
+    line-height: 1.1;
   }
 }
 
@@ -2304,7 +2304,7 @@ video {
   .cases__card-image-overlay-text{
     max-width: 170px;
     font-size: clamp(16px,1.2vw,20px);
-    line-height: clamp(17px,1.2vw,22px);
+    line-height: 1.1;
   }
 }
 
@@ -2366,7 +2366,7 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  line-height: 26.4px;
+  line-height: 1.1;
 }
 
 .dark .cases__card-title{
@@ -3069,7 +3069,7 @@ video {
   .who__who-text{
     text-indent: 120px;
     font-size: clamp(16px,2vw,2rem);
-    line-height: 45px;
+    line-height: 1.1;
   }
 }
 
@@ -3725,7 +3725,7 @@ video {
   .form__title--dynamic{
     margin-bottom: 52px;
     font-size: clamp(36px,3.5vw,64px);
-    line-height: clamp(36px,3.5vw,64px);
+    line-height: 1.1;
   }
 
   .form__title--full{
@@ -3734,7 +3734,7 @@ video {
     grid-row-start: 1;
     margin-bottom: 50px;
     font-size: 64px;
-    line-height: 64px;
+    line-height: 1;
   }
 }
 
@@ -4179,11 +4179,19 @@ video {
   z-index: 40;
   height: 100vh;
   width: 100vw;
+  overflow-y: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  padding-top: 76px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 820px){
+  .success-wrapper{
+    padding-top: 94px;
+  }
 }
 
 .success-wrapper.success-wrapper-active{
@@ -4202,6 +4210,7 @@ video {
   margin-bottom: 27px;
   display: flex;
   height: 66px;
+  min-height: 66px;
   width: 66px;
   align-items: center;
   justify-content: center;
@@ -4215,6 +4224,7 @@ video {
   .success-circle{
     margin-bottom: 1.25rem;
     height: 84px;
+    min-height: 84px;
     width: 84px;
   }
 }
@@ -4348,6 +4358,10 @@ video {
     margin-bottom: 2rem;
     margin-right: 0px;
   }
+}
+
+.nav .social{
+  margin-bottom: 5rem;
 }
 
 .social.social-menu{
@@ -4557,14 +4571,14 @@ video {
 @media (min-width: 820px){
   .heading2{
     font-size: 45px;
-    line-height: 50px;
+    line-height: 1.1;
   }
 }
 
 @media (min-width: 1280px){
   .heading2{
     font-size: clamp(45px,5vw,90px);
-    line-height: clamp(55px,5vw,100px);
+    line-height: 1.1;
   }
 }
 
@@ -4580,14 +4594,14 @@ video {
 @media (min-width: 820px){
   .pages__title{
     font-size: 60px;
-    line-height: 66px;
+    line-height: 1.1;
   }
 }
 
 @media (min-width: 1280px){
   .pages__title{
     font-size: 120px;
-    line-height: 132px;
+    line-height: 1.1;
   }
 }
 
