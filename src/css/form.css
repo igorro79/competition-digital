@@ -174,21 +174,22 @@
   /* --------- success form modal -------- */
 
   .success-wrapper {
-    @apply fixed top-0 right-[100%] z-40 h-screen w-screen overflow-y-auto  bg-light pt-[76px]  transition-all md:pt-[94px];
+    @apply fixed top-[0] right-[100%] z-40 h-screen w-screen overflow-y-auto  bg-light  transition-all;
   }
   .success-wrapper.success-wrapper-active {
     @apply right-0;
   }
   .success-container {
-    @apply flex h-screen flex-col items-center justify-center;
+    @apply flex h-[max(100%,600px)] items-center justify-center overflow-y-auto;
+  }
+  .success-content {
+    @apply flex flex-col items-center justify-center;
   }
   .success-circle {
     @apply mb-[27px] flex h-[66px] min-h-[66px] w-[66px] items-center justify-center rounded-full border-[1px]
     border-main xl:mb-5 xl:h-[84px] xl:min-h-[84px] xl:w-[84px];
   }
-  /* .success-text {
-    @apply text-middleGrey;
-  } */
+
   .success-text {
     @apply mb-[47px] mt-[27px]  max-w-[80vw] text-center text-middleGrey md:mb-[51px] 
     xl:mt-[35px] xl:mb-[62px] xl:text-xl;

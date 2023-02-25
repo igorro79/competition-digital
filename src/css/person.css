@@ -41,14 +41,15 @@
     @apply text-sm leading-4  text-middleGrey xl:text-base xl:leading-5;
   }
   .person__about {
-    @apply col-start-1 col-end-3 mb-[95px] mt-9 overflow-y-auto  
-     md:col-start-auto  md:col-end-auto md:mb-2 md:mt-7  xl:text-2xl;
+    @apply col-start-1 col-end-3 mb-[95px] mt-9  
+     overflow-y-auto  md:col-start-auto md:col-end-auto md:mb-2  md:mt-7
+     xl:text-[clamp(18px,1.5vw,24px)] xl:leading-[1.4];
   }
   .person__clients {
     @apply hidden md:mb-5 md:block;
   }
   .person__experience-list {
-    @apply col-start-1 col-end-3 flex md:col-start-auto  md:col-end-auto;
+    @apply col-start-1 col-end-3 flex gap-[max(3vw,20px)] md:col-start-auto  md:col-end-auto;
   }
   .person__experience-list-item {
     @apply flex  flex-wrap items-center;

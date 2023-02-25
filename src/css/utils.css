@@ -47,30 +47,29 @@ body::-webkit-scrollbar-thumb {
   background-color: #171717;
   outline: 1px solid slategrey;
 }
-
-@layer components {
-  .fake-header {
-    @apply h-[76px] w-full bg-dark md:h-[94px];
-  }
-  /* =========== HEADING ============ */
-  .heading2 {
-    @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[1.1] 
+.fake-header {
+  @apply h-[76px] w-full bg-inherit md:h-[94px];
+}
+/* =========== HEADING ============ */
+.heading2 {
+  @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[1.1] 
     xl:text-[clamp(45px,5vw,90px)] xl:leading-[1.1];
-  }
-  /* -------- */
+}
+/* -------- */
 
-  .pages__title {
-    @apply text-4xl font-bold uppercase md:text-[60px] md:leading-[1.1] 
-     xl:text-[120px] xl:leading-[1.1];
-  }
-
+.pages__title {
+  @apply text-4xl font-bold uppercase md:text-[60px] md:leading-[1.1] 
+     xl:text-[clamp(60px,3.5vw,120px)] xl:leading-[1.1];
+}
+@layer components {
   /*=============== MAIN BUTTON ============= */
 
   .main-btn {
-    @apply mx-auto  flex h-[60px] min-w-[280px] items-center justify-center 
-    rounded-[70px] border-[1px] border-main bg-main fill-white 
-    px-1 py-1 uppercase  text-white transition-all hover:bg-activeRed
-     active:bg-activeRed  md:min-w-[357px];
+    @apply /*  md:min-w-[357px]; */ mx-auto flex h-[60px] 
+    min-w-[280px] items-center justify-center rounded-[70px] border-[1px] 
+    border-main bg-main fill-white  px-1 py-1 uppercase
+     text-white transition-all
+      hover:bg-activeRed active:bg-activeRed md:w-[clamp(320px,21vw,375px)];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark
