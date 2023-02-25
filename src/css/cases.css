@@ -92,16 +92,15 @@
     xl:py-[50px];
   }
   .cases__card-heading-wrapper {
-    @apply flex justify-between gap-2 md:mb-5 xl:mb-[30px];
+    @apply flex justify-between gap-2 md:mb-5 xl:mb-[clamp(16px,1.5vw,30px)];
   }
   .cases__card-title {
     @apply mb-[25px] text-2xl font-bold leading-[1.1]
      dark:text-white md:mb-0 md:text-xl md:leading-6 
-     xl:max-w-[450px] xl:text-[32px] xl:leading-[38px];
+     xl:max-w-[450px] xl:text-[clamp(24px,2vw,32px)] xl:leading-[1.2];
   }
   .cases__card-text {
-    @apply mb-10 text-sm dark:text-white  md:text-base
-     xl:py-3;
+    @apply mb-[clamp(16px,2vw,40px)] text-sm dark:text-white  md:text-base;
   }
   .cases__card-copyright {
     @apply text-[12px] uppercase leading-4 dark:text-white md:text-sm md:leading-5;

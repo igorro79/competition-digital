@@ -2423,7 +2423,7 @@ video {
 
 @media (min-width: 1280px){
   .cases__card-heading-wrapper{
-    margin-bottom: 30px;
+    margin-bottom: clamp(16px,1.5vw,30px);
   }
 }
 
@@ -2451,13 +2451,13 @@ video {
 @media (min-width: 1280px){
   .cases__card-title{
     max-width: 450px;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: clamp(24px,2vw,32px);
+    line-height: 1.2;
   }
 }
 
 .cases__card-text{
-  margin-bottom: 2.5rem;
+  margin-bottom: clamp(16px,2vw,40px);
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -2471,13 +2471,6 @@ video {
   .cases__card-text{
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px){
-  .cases__card-text{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }
 
@@ -2574,7 +2567,7 @@ video {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(5,auto);
   }
 }
 
@@ -2593,18 +2586,6 @@ video {
 .dark .services__card{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 820px){
-  .services__card{
-    padding-bottom: 53px;
-  }
-}
-
-@media (min-width: 1280px){
-  .services__card{
-    padding-bottom: 107px;
-  }
 }
 
 /* ------------new card------------ */
@@ -2743,8 +2724,8 @@ video {
   .services__card-title{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    font-size: 42px;
-    line-height: 45px;
+    font-size: clamp(24px,2vw,42px);
+    line-height: 1.2;
   }
 }
 
@@ -2776,12 +2757,13 @@ video {
 @media (min-width: 820px){
   .services__card-text{
     margin-bottom: 0px;
-    max-height: 240px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1280px){
   .services__card-text{
+    padding-bottom: 50px;
     padding-top: 2.5rem;
   }
 }
