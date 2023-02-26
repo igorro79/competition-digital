@@ -1,6 +1,6 @@
 @layer components {
   .who__wrapper {
-    @apply pb-[60px]  xl:pb-[160px];
+    @apply pb-[60px] md:pb-[56px]  xl:pb-[160px];
   }
 
   .who__who-content {
@@ -8,15 +8,15 @@
      xl:border-middleGrey;
   }
   .who__who-wrapper {
-    @apply pt-[30px] pb-10 xl:flex   xl:pl-[50px];
+    @apply pt-[30px] pb-10 xl:flex xl:pt-[50px]  xl:pl-[50px];
   }
   .who__who-label {
-    @apply mb-5 text-sm font-bold uppercase text-middleGrey
-     md:text-base xl:mr-[50px] xl:min-w-[150px];
+    @apply mb-5 text-sm font-bold uppercase text-middleGrey md:mb-[30px]
+     md:text-base xl:mr-[clamp(50px,5vw,90px)] xl:min-w-[150px];
   }
   .who__who-text {
-    @apply text-xl text-white md:indent-16 xl:indent-[120px]
-     xl:text-[clamp(16px,2vw,2rem)] xl:leading-[1.1];
+    @apply text-xl text-white md:indent-[5.5rem] xl:indent-[clamp(80px,7vw,130px)]
+     xl:text-[clamp(16px,2vw,2rem)] xl:leading-[1.4];
   }
   /* -----------who__who-cards------- */
   .who__who-card-list {
@@ -24,7 +24,7 @@
      md:grid-rows-2;
   }
   .who__who-card-list .who__who-card-item {
-    @apply xl:py-[50px] xl:px-[50px];
+    @apply xl:py-[clamp(20px,3vw,50px)] xl:px-[clamp(20px,3vw,50px)];
   }
   .who__who-card-item {
     @apply border-t border-middleGrey  py-[30px];
@@ -33,7 +33,7 @@
     @apply md:border-r md:border-middleGrey md:pr-5 xl:pr-[50px];
   }
   .who__who-card-item:nth-child(n + 3) {
-    @apply md:pl-5 xl:pl-[50px];
+    @apply md:pl-[30px] xl:pl-[50px];
   }
   .who__who-card-item-label {
     @apply mb-4 text-base font-bold md:text-[18px] md:font-medium md:leading-6 xl:text-2xl;

@@ -2,7 +2,7 @@
   /*=============== BLOG ============= */
 
   .blog-wrapper {
-    @apply pt-5 pb-5;
+    @apply pt-5 pb-5 md:pb-[90px] xl:pb-[138px];
   }
   .blog__heading-wrapper {
     @apply mb-[30px] flex justify-between xl:mb-[58px];
@@ -14,12 +14,12 @@
     @apply mb-[10px] flex  items-center md:mb-0;
   }
   .blog__all-btn-text {
-    @apply mr-3 hidden font-bold md:block;
+    @apply mr-3 hidden font-bold md:block xl:text-2xl;
   }
 
   .blog__card-list {
     @apply grid grid-cols-3fr gap-5 overflow-auto pb-[30px]
-     xl:mb-[50px] xl:gap-[30px];
+      xl:gap-[30px];
   }
   .blog__card {
     @apply flex flex-col xl:mb-0;
@@ -32,7 +32,9 @@
     @apply mb-4 flex items-center rounded-[20px];
   }
   .blog__card-info-branch {
-    @apply flex items-center justify-center rounded-[60px] bg-darkGrey py-2 px-4  text-[12px] uppercase  leading-[14px] xl:py-[10px]  xl:px-5 xl:text-sm;
+    @apply flex items-center justify-center rounded-[60px] bg-darkGrey
+     py-2 px-4  text-xs uppercase  leading-[14px] md:text-sm md:leading-[1.2]
+      xl:py-[10px]  xl:px-5 xl:text-sm;
   }
   .blog__card-info-time {
     @apply ml-3 text-[12px] leading-[14px] text-middleGrey xl:text-sm  xl:leading-4;

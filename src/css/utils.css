@@ -1,14 +1,20 @@
+:root {
+  --header-h: 76px;
+  --header-h-md: 82px;
+  --header-h-xl: 90px;
+}
+
 html {
   @apply font-montserrat text-base font-medium text-dark;
 }
 body {
-  @apply relative;
+  @apply relative font-montserrat;
 }
 /* main {
   @apply relative;
 } */
 .custom-container {
-  @apply mx-auto w-full px-[7%]  xl:max-w-[1920px];
+  @apply mx-auto w-full px-5 md:px-[30px] xl:max-w-[1920px] xl:px-[clamp(100px,8%,135px)];
 }
 .modal-container {
   @apply fixed  top-0 right-[100%] z-[55]  h-screen w-full transition-all xl:bg-main;
@@ -27,12 +33,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background-color: #919191;
-  /* box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3); */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #171717;
   outline: 1px solid slategrey;
+  @apply rounded-2xl bg-main;
 }
 .blog__card-list::-webkit-scrollbar {
   height: 8px;
@@ -44,15 +49,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blog__card-list::-webkit-scrollbar-thumb {
-  background-color: #171717;
   outline: 1px solid slategrey;
+  @apply rounded-2xl bg-main;
 }
 .fake-header {
-  @apply h-[76px] w-full bg-inherit md:h-[94px];
+  @apply h-[var(--header-h)] w-full  bg-inherit  md:h-[var(--header-h-md)]  xl:h-[var(--header-h-xl)];
 }
 /* =========== HEADING ============ */
 .heading2 {
-  @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[1.1] 
+  @apply text-4xl font-bold uppercase dark:text-white md:text-[45px] md:leading-[1.2] 
     xl:text-[clamp(45px,5vw,90px)] xl:leading-[1.1];
 }
 /* -------- */
@@ -69,7 +74,7 @@ body::-webkit-scrollbar-thumb {
     min-w-[280px] items-center justify-center rounded-[70px] border-[1px] 
     border-main bg-main fill-white  px-1 py-1 uppercase
      text-white transition-all
-      hover:bg-activeRed active:bg-activeRed md:w-[clamp(320px,21vw,375px)];
+      hover:bg-activeRed active:bg-activeRed md:w-[357px] xl:w-[clamp(320px,20vw,357px)];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark
@@ -163,26 +168,30 @@ body::-webkit-scrollbar-thumb {
   /* =========== BIG RED ROUND BUTTON ============ */
 
   .big-red-btn.video__big-red-btn {
-    @apply absolute right-[25vw] top-0 z-[2] -translate-y-1/2 translate-x-1/2;
+    @apply absolute top-0 z-[2] -translate-y-1/2 translate-x-1/2 md:right-[20vw]
+    xl:right-[27.5vw];
   }
   .big-red-btn {
     @apply relative flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center
      gap-3 rounded-full px-3 text-center text-sm font-bold 
      uppercase text-light before:absolute
-      before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full before:rounded-full
-      before:bg-main before:transition-all before:content-[''] hover:before:scale-[0.8] md:min-h-[142px]
+      before:top-0 before:left-0 before:z-[-1] before:h-full
+       before:w-full before:rounded-full
+      before:bg-main before:transition-all before:content-['']
+       hover:before:scale-[0.8] md:min-h-[142px]
      md:w-[142px] md:min-w-[142px] xl:min-h-[177px] xl:w-[177px]
       xl:min-w-[177px] xl:text-base;
   }
   .big-red-btn.cases-page__big-red-btn {
-    @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] md:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
+    @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] 
+    md:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
   }
   /* =========== COOKIES ============ */
 
   #cookies {
     @apply fixed bottom-10 right-[3vw] z-50 grid w-[300px] grid-cols-[1fr_auto]
      items-center   rounded-[20px] border-[1px] border-middleGrey bg-dark
-     py-5 px-5 text-sm text-white md:right-[10vw] md:w-fit 
+     py-5 px-5 text-sm text-white md:right-[7vw] md:w-fit 
       md:rounded-[60px] md:py-[17px] md:pr-[17px] md:pl-[38px] md:text-base;
   }
   .cookies-text {
@@ -268,10 +277,10 @@ body::-webkit-scrollbar-thumb {
 
   /* ---------main page 'services' and 'cases' desktop screen grid -------- */
   .grid-container-md-cols {
-    @apply grid md:grid-cols-[max(30%,230px)_1fr] xl:grid-cols-[max(28%,370px)_1fr];
+    @apply grid md:grid-cols-[max(33%,230px)_1fr];
   }
   .grid-container-xl-cols {
-    @apply xl:grid xl:grid-cols-[max(28%,370px)_1fr];
+    @apply xl:grid xl:grid-cols-[max(25%,350px)_1fr];
   }
   .grid-container-xl-rows {
     @apply xl:grid-rows-[auto_1fr];

@@ -6,13 +6,13 @@
   }
 
   .services__heading {
-    @apply mb-[30px];
+    @apply mb-[30px] md:mb-10 xl:mb-[50px];
   }
   .services__description {
-    @apply mb-10  pt-[30px] md:mb-[30px] md:pt-10 xl:pr-[50px];
+    @apply mb-10 pt-[30px]  md:mb-[50px] md:pt-10 md:leading-[1.4] xl:mb-[50px] xl:pt-[50px] xl:pr-[50px] xl:leading-[1.4];
   }
   .services__cards-list {
-    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-2
+    @apply border-middleGrey md:grid md:grid-flow-col md:grid-cols-[51%_49%]
      md:grid-rows-[repeat(5,auto)] xl:border-t  xl:pt-[70px];
   }
   .services__card {
@@ -41,16 +41,16 @@
   }
   .services__card:nth-child(n + 6) .services__card-text,
   .services__card:nth-child(n + 6) .services__card-title-wrapper {
-    @apply md:pl-7 xl:pl-[50px];
+    @apply md:pl-5 xl:pl-[clamp(28px,3vw,50px)];
   }
   .services__card:nth-child(n + 6) .services__card-image-container {
-    @apply md:pl-[50px];
+    @apply md:pl-[clamp(40px,4vw,80px)];
   }
   .services__card:nth-child(-n + 5) .services__card-image-container {
-    @apply md:pl-[20px] xl:pr-[40px] xl:pl-[50px];
+    @apply md:pl-[20px]  xl:pr-[clamp(10px,1vw,70px)] xl:pl-[clamp(40px,4vw,70px)];
   }
   .services__card:nth-child(n + 6) {
-    @apply md:pt-[60px] xl:pr-[40px] xl:pt-[84px];
+    @apply md:pt-[60px]  xl:pt-[clamp(80px,5vw,105px)];
   }
   /* ------------- */
 
@@ -59,11 +59,11 @@
      border-b-middleGrey text-2xl font-bold leading-[26.4px];
   }
   .services__card-title-wrapper svg {
-    @apply h-[21px] w-[21px];
+    @apply h-[22px] w-[22px];
   }
   .services__card-title {
     @apply cursor-pointer py-5 text-2xl font-bold leading-[1.1] md:pointer-events-none
-     md:cursor-default xl:py-10 xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
+     md:cursor-default xl:pb-10 xl:pt-[60px] xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
   }
 
   .services__card-content-wrapper {
@@ -72,7 +72,7 @@
   }
 
   .services__card-text {
-    @apply mb-10 max-h-min pt-5 md:mb-0  md:pb-[30px] xl:pb-[50px] xl:pt-10;
+    @apply mb-10 max-h-min pt-5 md:mb-0 md:pb-[30px]  xl:pb-[50px] xl:pt-10 xl:leading-[1.5];
   }
   .services__card-image-container {
     @apply mt-10 max-h-min  md:row-start-1 md:mt-0;

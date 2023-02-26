@@ -5,7 +5,7 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
 const themeBtnGroup = document.querySelector(".btn-theme-group");
-const langBtnGroupFull = document.querySelector(".btn-language-group-full");
+const langBtnGroupFull = document.querySelector(".btn-language-group-full-js");
 const langBtnGroupMob = document.querySelector(".btn-language-group-mob");
 const burgerBtnOpen = document.querySelector(".burger-open");
 const burgerBtnClose = document.querySelector(".burger-close");

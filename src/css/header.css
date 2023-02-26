@@ -7,17 +7,17 @@
   }
 
   .header__container {
-    @apply mx-auto max-h-[76px] max-w-[1920px] py-[18px] px-[7%] md:max-h-[94px] md:py-[22px];
+    @apply mx-auto flex h-[var(--header-h)] max-w-[1920px] items-center  md:h-[var(--header-h-md)]  xl:h-[var(--header-h-xl)];
   }
   .header__wrapper {
-    @apply relative flex items-center;
+    @apply relative flex w-full items-center;
   }
   /* ----------logo------------- */
   .header__logo {
-    @apply mr-[34px] text-white md:mr-10;
+    @apply mr-[34px] text-white md:mr-[53px];
   }
   .header__logo svg {
-    @apply h-10  md:h-[42px] xl:h-12;
+    @apply h-10   md:h-12 xl:h-[52px];
   }
   /* --------------theme btn----------- */
   .btn-theme-group {
@@ -35,17 +35,19 @@
     @apply md:w-full;
   }
   .nav {
-    @apply fixed top-[76px] right-0 h-screen  w-0 
-    bg-dark transition-all md:top-[94px]  xl:static xl:mx-auto
+    @apply fixed top-[var(--header-h)] right-0 h-screen  w-0 
+    bg-dark transition-all md:top-[var(--header-h-md)]  xl:static xl:top-[var(--header-h-xl)] xl:mx-auto
      xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
   }
   .nav.active {
-    @apply grid h-[calc(100vh-76px)] w-full grid-rows-[auto_550px_1fr] overflow-y-auto px-5 md:h-[calc(100vh-94px)]  md:px-[30px] xl:z-[8] xl:w-auto xl:px-0;
+    @apply grid h-[calc(100vh-var(--header-h))] w-full grid-rows-[auto_550px_1fr]
+     overflow-y-auto px-5 md:h-[calc(100vh-var(--header-h-md))]  md:px-[30px] 
+    xl:z-[8]  xl:h-[calc(100vh-var(--header-h-xl))] xl:w-auto xl:px-0;
   }
 
   .nav__list {
     @apply mb-8 flex flex-col  gap-[30px]  pt-[30px] text-xl    transition-all  xl:static 
-    xl:mb-0 xl:flex-row xl:gap-[clamp(30px,2.6vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
+    xl:mb-0 xl:flex-row xl:gap-[clamp(30px,3vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
   .nav__list.show-links {
     @apply invisible opacity-0;
@@ -121,8 +123,9 @@
   .lets-talk-btn {
     @apply mr-6 ml-auto flex min-h-[40px] min-w-[40px] items-center
     justify-center rounded-[60px] border-[1px] border-main bg-main uppercase
-    text-white transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white active:text-main
-   md:mr-10 md:gap-[16px] md:px-6 md:py-3 xl:ml-5;
+    text-white transition-all hover:border-white hover:bg-white
+    hover:text-dark active:border-main active:bg-white active:text-main
+   md:mr-10 md:gap-[16px] md:px-6 md:py-[10px] xl:mr-[32px] xl:ml-5 xl:gap-5 xl:rounded-[60px] xl:py-3 xl:px-[25px];
   }
   .lets-talk-btn__text {
     @apply hidden md:block;
@@ -141,9 +144,7 @@
   .btn-language-wrapper.active-language {
     @apply bg-langBg text-white;
   }
-  .btn-language-group-full {
-    @apply xl:min-w-[80px];
-  }
+
   .btn-language {
     @apply flex items-center uppercase hover:text-main;
   }

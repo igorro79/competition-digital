@@ -4,7 +4,12 @@
   .form {
     @apply bg-dark text-middleGrey;
   }
-
+  .form__contact-form {
+    @apply mb-[55px] border-middleGrey;
+  }
+  .form__contact-form--full {
+    @apply xl:border-t  xl:border-r xl:px-[max(2vw,20px)] xl:pt-[60px];
+  }
   .form__wrapper {
     @apply pb-[50px] pt-8 md:pt-[50px];
   }
@@ -12,7 +17,7 @@
     @apply h-full overflow-y-scroll xl:pt-[96px];
   }
   .form__wrapper--full {
-    @apply xl:grid xl:grid-cols-[max(18%,240px)_1fr_auto]
+    @apply xl:grid xl:grid-cols-[max(18vw,248px)_clamp(420px,43vw,815px)_auto]
      xl:pt-[90px] xl:pb-[112px];
   }
 
@@ -28,18 +33,13 @@
   }
 
   .form__title--dynamic {
-    @apply xl:mb-[52px] xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[1.1];
+    @apply xl:mb-[52px]  xl:text-[clamp(36px,3.5vw,64px)] xl:leading-[1.1];
   }
   .form__title--full {
-    @apply xl:col-start-1 xl:col-end-4 xl:row-start-1 xl:mb-[50px] 
+    @apply md:text-4xl md:leading-[1.2] md:tracking-[1px] xl:col-start-1  xl:col-end-4 xl:row-start-1 xl:mb-[50px] 
     xl:text-[64px] xl:leading-[1];
   }
-  .form__contact-form {
-    @apply mb-[60px] border-middleGrey;
-  }
-  .form__contact-form--full {
-    @apply xl:border-t  xl:border-r xl:px-[max(2vw,20px)] xl:pt-[60px];
-  }
+
   .form__grid {
     @apply mb-7 grid gap-3  md:grid-cols-2 md:grid-rows-[repeat(3,auto)] md:gap-5;
   }
@@ -64,9 +64,9 @@
     @apply h-[60px] w-full rounded-[70px] border-[1px] border-middleGrey 
     bg-transparent  py-2 pl-5 text-light outline-none;
   }
-  .form__inputGroup input.input--full {
-    @apply xl:h-[70px];
-  }
+  /* .form__inputGroup input.input--full {
+    @apply xl:h-[60px];
+  } */
 
   .form__inputGroup label {
     @apply pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 py-1 text-sm leading-4 
@@ -108,10 +108,11 @@
     @apply mt-8 md:mx-0 md:mt-0;
   }
   .main-btn.form__main-btn--full {
-    @apply xl:min-w-[290px];
+    @apply md:w-[clamp(220px,15vw,290px)];
   }
   .form__contact-wrapper {
-    @apply border-middleGrey not-italic xl:border-t xl:pl-[max(2vw,20px)] xl:pt-[60px];
+    @apply border-middleGrey not-italic md:border-t 
+    md:pt-[30px] xl:pl-[max(2vw,20px)] xl:pt-[60px];
   }
   .form__contact-address {
     @apply mb-5 block text-[12px] leading-6 text-white
@@ -126,10 +127,10 @@
      hover:text-main active:text-main md:mb-3 md:text-2xl md:font-bold md:leading-normal;
   }
   .form__contact-email--full {
-    @apply xl:mb-4 xl:text-[clamp(24px,2vw,32px)];
+    @apply inline-block md:mb-[11px] md:leading-[1.1] xl:mb-4 xl:text-[clamp(24px,2vw,32px)];
   }
   .form__contact-text {
-    @apply text-[12px] leading-6 md:text-base;
+    @apply text-xs md:text-base md:leading-[1.5];
   }
   .error {
     @apply ml-5 hidden text-sm text-main;
