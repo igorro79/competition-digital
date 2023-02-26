@@ -174,13 +174,13 @@ body::-webkit-scrollbar-thumb {
   .big-red-btn {
     @apply relative flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center
      gap-3 rounded-full px-3 text-center text-sm font-bold 
-     uppercase text-light before:absolute
-      before:top-0 before:left-0 before:z-[-1] before:h-full
-       before:w-full before:rounded-full
-      before:bg-main before:transition-all before:content-['']
-       hover:before:scale-[0.8] md:min-h-[142px]
-     md:w-[142px] md:min-w-[142px] xl:min-h-[177px] xl:w-[177px]
-      xl:min-w-[177px] xl:text-base;
+     uppercase text-light before:absolute before:top-0
+      before:left-0 before:z-[-1] before:h-full before:w-full
+       before:rounded-full before:bg-main
+      before:transition-all before:content-[''] md:min-h-[142px]
+       md:w-[142px] md:min-w-[142px]
+     xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px] xl:px-[18px]
+      xl:text-base xl:hover:before:scale-[0.8];
   }
   .big-red-btn.cases-page__big-red-btn {
     @apply min-h-[125px] w-[125px] min-w-[125px] md:min-h-[125px] md:w-[125px] 
