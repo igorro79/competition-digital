@@ -94,7 +94,10 @@
     xl:py-[50px];
   }
   .cases__card-heading-wrapper {
-    @apply flex justify-between gap-2 md:mb-5 xl:mb-[clamp(16px,1.5vw,30px)];
+    @apply relative flex justify-between gap-2 md:mb-5 xl:mb-[clamp(16px,1.5vw,30px)];
+  }
+  .cases__card-heading-wrapper .animated-arrow-circle {
+    @apply relative top-[-20px] xl:top-[-30px] xl:right-[-20px];
   }
   .cases__card-title {
     @apply mb-[25px] text-2xl font-bold leading-[1.1]

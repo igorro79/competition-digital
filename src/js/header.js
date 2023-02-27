@@ -182,13 +182,7 @@ function onSubmit() {
 
 // ----- on window resize ------
 
-(() => {
-  main.style.marginBottom = `${footer.offsetHeight}px`;
-})();
-
 window.addEventListener("resize", () => {
-  main.style.marginBottom = `${footer.offsetHeight}px`;
-
   if (window.innerWidth > 1280 && navMenu.classList.contains("active")) {
     closeBurger();
   }

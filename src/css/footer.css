@@ -1,7 +1,7 @@
 @layer components {
   /*=============== FOOTER ============= */
   .footer {
-    @apply fixed bottom-0 z-[-5] w-full;
+    @apply sticky bottom-0 z-[-5] w-full;
   }
   .footer__wrapper {
     @apply pt-11 pb-4  md:pt-[32px] md:pb-6;

@@ -71,6 +71,6 @@
     @apply mb-[30px] tracking-[0.4px] md:mb-10 md:leading-[1.4] xl:mb-[50px] xl:text-base xl:leading-[1.4];
   }
   .main-btn.person__main-btn {
-    @apply gap-2.5 font-normal leading-[1.3] tracking-[0.16px];
+    @apply font-normal leading-[1.3] tracking-[0.16px];
   }
 }

@@ -32,12 +32,12 @@
 
   /* ---right border--- */
   .services__card:nth-child(-n + 5) {
-    @apply md:border-r md:border-middleGrey;
+    @apply md:border-r md:border-middleGrey xl:pl-[50px];
   }
   /* ---grid text padding--- */
   .services__card:nth-child(-n + 5) .services__card-text,
   .services__card:nth-child(-n + 5) .services__card-title-wrapper {
-    @apply md:pr-7 xl:pr-[50px] xl:pl-[50px];
+    @apply md:pr-7 xl:pr-[50px];
   }
   .services__card:nth-child(n + 6) .services__card-text,
   .services__card:nth-child(n + 6) .services__card-title-wrapper {
@@ -47,23 +47,22 @@
     @apply md:pl-[clamp(40px,4vw,80px)];
   }
   .services__card:nth-child(-n + 5) .services__card-image-container {
-    @apply md:pl-[20px]  xl:pr-[clamp(10px,1vw,70px)] xl:pl-[clamp(40px,4vw,70px)];
+    @apply md:pl-[20px]  xl:pr-[clamp(10px,1vw,70px)] xl:pl-[clamp(0px,1vw,20px)];
   }
   .services__card:nth-child(n + 6) {
     @apply md:pt-[60px]  xl:pt-[clamp(80px,5vw,105px)];
   }
-  /* ------------- */
 
   .services__card-title-wrapper {
     @apply flex items-center justify-between border-b-[1px]
-     border-b-middleGrey text-2xl font-bold leading-[26.4px];
-  }
-  .services__card-title-wrapper svg {
-    @apply h-[22px] w-[22px];
+     border-b-middleGrey text-2xl font-bold leading-[26.4px] xl:pt-[60px] xl:pb-10;
   }
   .services__card-title {
-    @apply cursor-pointer py-5 text-2xl font-bold leading-[1.1] md:pointer-events-none
-     md:cursor-default xl:pb-10 xl:pt-[60px] xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
+    @apply cursor-pointer py-5 text-2xl font-bold leading-[1.1] transition-all md:pointer-events-none
+     md:cursor-default xl:py-0 xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
+  }
+  .animated-hover-container:hover .services__card-title {
+    @apply text-main;
   }
 
   .services__card-content-wrapper {
@@ -79,7 +78,7 @@
   }
   .services__card-image-wrapper {
     @apply md:relative md:aspect-square md:min-w-[216px] md:max-w-[216px]
-      md:rounded-full md:bg-lightGrey  xl:max-w-[355px];
+      md:rounded-full md:bg-lightGrey  xl:max-w-[clamp(216px,15vw,355px)];
   }
   .services__card-image {
     @apply mx-auto w-full max-w-none md:absolute  md:top-1/2 md:left-1/2 

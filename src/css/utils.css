@@ -71,10 +71,11 @@ body::-webkit-scrollbar-thumb {
 
   .main-btn {
     @apply /*  md:min-w-[357px]; */ mx-auto flex h-[60px] 
-    min-w-[280px] items-center justify-center rounded-[70px] border-[1px] 
-    border-main bg-main fill-white  px-1 py-1 uppercase
-     text-white transition-all
-      hover:bg-activeRed active:bg-activeRed md:w-[357px] xl:w-[clamp(320px,20vw,357px)];
+    min-w-[280px] items-center justify-center gap-2.5 rounded-[70px] 
+    border-[1px] border-main bg-main  fill-white px-1 py-1
+     uppercase text-white
+      transition-all hover:bg-activeRed active:bg-activeRed  md:w-[357px]
+      xl:w-[clamp(260px,90%,357px)] xl:min-w-[260px];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark
@@ -82,13 +83,13 @@ body::-webkit-scrollbar-thumb {
       md:hidden;
   }
   .main-btn__lable {
-    @apply font-bold uppercase;
+    @apply font-bold uppercase xl:text-[clamp(14px,1vw,16px)];
   }
   .main-btn__lable--smaller {
     @apply text-sm;
   }
   .main-btn svg {
-    @apply ml-3 h-4 w-4;
+    @apply h-4 w-4;
   }
   .main-btn.btn-mrgn {
     @apply mt-10 mb-5;
@@ -240,8 +241,9 @@ body::-webkit-scrollbar-thumb {
     justify-center rounded-full bg-transparent transition-all;
   }
   .animated-hover-container:hover .animated-arrow-circle {
-    @apply bg-main text-white;
+    @apply text-main md:bg-main md:text-white;
   }
+
   .animated-arrow-wrapper {
     @apply relative h-[21px] min-w-[21px] overflow-hidden;
   }
@@ -280,7 +282,7 @@ body::-webkit-scrollbar-thumb {
     @apply grid md:grid-cols-[max(33%,230px)_1fr];
   }
   .grid-container-xl-cols {
-    @apply xl:grid xl:grid-cols-[max(25%,350px)_1fr];
+    @apply xl:grid xl:grid-cols-[clamp(285px,25%,410px)_1fr];
   }
   .grid-container-xl-rows {
     @apply xl:grid-rows-[auto_1fr];
