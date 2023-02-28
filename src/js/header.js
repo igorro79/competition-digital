@@ -76,10 +76,12 @@ navServices.addEventListener("mouseenter", () => {
   openServiceListHover();
 });
 navServices.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    if (!linkList.matches(":hover") && !navServices.matches(":hover"))
-      hideServiceList();
-  }, 1000);
+  if (!navMenu.classList.contains("active")) {
+    setTimeout(() => {
+      if (!linkList.matches(":hover") && !navServices.matches(":hover"))
+        hideServiceList();
+    }, 1000);
+  }
 });
 
 linkList.addEventListener("mouseleave", () => {
@@ -140,7 +142,6 @@ function openBurger() {
   navMenu.classList.add("active");
   burgerBtnOpen.classList.add("hidden");
   burgerBtnClose.classList.remove("hidden");
-
   lockBody();
 
   navMenu.classList.add("red-gradient");
@@ -176,6 +177,7 @@ function onSubmit() {
     header.style.visibility = "visible";
     header.style.opacity = 1;
     successSend.classList.add("success-wrapper-active");
+    if (!body.classList.contains("lock-body")) body.classList.add("lock-body");
     dynamicForm.classList.remove("modal-container-active");
   }, 500);
 }
