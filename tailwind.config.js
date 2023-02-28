@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  content: ["./pages/**/*.html"],
-  content: ["./index.html", './**/*.html',],
+  content: [
+    "./src/**/*.{html,js}",
+    "./pages/**/*.html",
+    "./index.html",
+    "./**/*.html",
+  ],
   darkMode: "class",
   theme: {
     // container: {
@@ -57,10 +60,12 @@ module.exports = {
       // },
       backgroundSize: {
         "size-200": "200% 200%",
+        "size-300": "300% 300%",
       },
       backgroundPosition: {
         "pos-0": "0% 100%",
         "pos-100": "100% 200%",
+        "pos-200": "200% 300%",
       },
       transitionProperty: {
         height: "max-height",

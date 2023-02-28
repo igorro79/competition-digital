@@ -1,7 +1,3 @@
-/* wrapper {
-  @apply relative;
-} */
-
 @layer components {
   /*=============== MAIN BUTTON ============= */
 
@@ -9,14 +5,14 @@
     @apply mx-auto flex h-[60px] 
     w-[clamp(280px,85vw,357px)] min-w-[280px] items-center justify-center gap-2.5 
     rounded-[70px] border-[1px]  border-main  bg-gradient-to-t from-main 
-    to-main bg-size-200 bg-pos-0 fill-white px-1 py-1
+    via-main bg-size-200  bg-pos-0  px-1 py-1
     uppercase text-white transition-all duration-300
-    hover:to-activeRed  hover:bg-pos-100 active:bg-activeRed lg:w-[357px]
-    xl:w-[clamp(260px,90%,357px)] xl:min-w-[260px];
+    hover:from-activeRed hover:bg-pos-200   active:bg-activeRed lg:w-[357px]
+    xl:w-[clamp(270px,90%,357px)] xl:min-w-[270px];
   }
   .main-btn--reversed {
-    @apply border-2 border-main bg-white fill-dark text-dark
-     hover:bg-main hover:text-white active:bg-main active:text-white
+    @apply border-2 border-main from-transparent to-transparent text-dark 
+     hover:text-white active:bg-main  active:text-white dark:text-white
       lg:hidden;
   }
   .main-btn__lable {
@@ -54,6 +50,7 @@
   .circle-white-btn:hover svg {
     @apply text-white;
   }
+
   /* -------- person-circle-double-quotes-btn ----- */
   .person-circle-double-quotes-btn {
     @apply mb-[10px] flex h-9 w-9 items-center justify-center
@@ -63,6 +60,7 @@
   .person-circle-double-quotes-btn svg {
     @apply h-[14px] w-[14px] text-dark lg:h-[22px] lg:w-[22px];
   }
+
   /*----------- #Button V5 ---- Scroll Team ------- */
   .circle-team-btn {
     @apply absolute left-0 bottom-0 flex h-[37px] w-[37px] translate-y-[50%]
@@ -83,6 +81,7 @@
   .breadcrumbs {
     @apply text-[10px] font-normal text-middleGrey transition-all hover:font-semibold hover:text-white active:font-semibold active:text-middleGrey;
   }
+
   /* =========== RED ROUND GRADIENT  ============ */
   .red-gradient {
     @apply relative overflow-hidden before:absolute before:right-0
@@ -103,6 +102,7 @@
      lg:before:h-[295px] lg:before:w-[295px] lg:before:blur-[80px] 
      xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
   }
+
   /* =========== BIG RED ROUND BUTTON ============ */
 
   .big-red-btn.video__big-red-btn {
@@ -124,6 +124,7 @@
     @apply min-h-[125px] w-[125px] min-w-[125px] lg:min-h-[125px] lg:w-[125px] 
     lg:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
   }
+
   /* =========== COOKIES ============ */
 
   #cookies {
@@ -141,33 +142,6 @@
   #accept-btn {
     @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
      lg:py-4 lg:px-10;
-  }
-}
-
-/* =========== visually hidden ============ */
-
-@layer utilities {
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  /*========= theme variants ============  */
-
-  .theme-white {
-    @apply bg-light text-dark  dark:bg-dark dark:text-white;
-  }
-  .theme-black {
-    @apply bg-dark text-white dark:bg-dark dark:text-white;
   }
 
   /*======  common link class - animated-hover-container =====  */
@@ -189,7 +163,7 @@
     @apply relative  overflow-hidden;
   }
   .animated-arrow-wrapper svg {
-    @apply absolute  transition-all duration-300 ease-in-out;
+    @apply absolute transition-all  duration-300 ease-in-out dark:text-white;
   }
   .animated-arrow-wrapper svg:first-child {
     @apply top-0 right-0;
@@ -204,11 +178,7 @@
     @apply top-0 right-0;
   }
   /* ---------- animate title underline ----------  */
-  /* .animated-underline {
-    @apply relative after:absolute after:-bottom-3 after:left-0
-     after:h-1.5 after:w-0 after:bg-dark after:transition-all
-      after:content-[''];
-  } */
+
   .animated-underline {
     @apply relative after:absolute after:-bottom-3 after:left-0
      after:h-[5px] after:w-0 after:bg-main after:transition-all
@@ -267,17 +237,4 @@
   .bottom-border {
     @apply border-b  border-middleGrey;
   }
-}
-.mySwiper-container {
-  @apply w-full overflow-hidden;
-}
-.mySwiper .swiper-pagination {
-  @apply !bottom-[30px] lg:!bottom-[40px] xl:!bottom-[10px];
-}
-.mySwiper .swiper-pagination-bullet {
-  @apply !mx-[5px] bg-middleGrey opacity-100 lg:!mx-[7px] lg:h-[10px] 
-  lg:w-[10px] xl:!mx-[10px] xl:h-[14px] xl:w-[14px] xl:bg-white;
-}
-.mySwiper .swiper-pagination-bullet-active {
-  @apply bg-main;
 }
