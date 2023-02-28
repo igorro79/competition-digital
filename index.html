@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Uwp digital</title>
   </head>
   <body>
     <header class="header theme-black">
-      <div class="header__container">
+      <div class="header__container custom-container">
         <div class="header__wrapper">
           <a href="./index.html" aria-label="home page" class="header__logo">
             <svg viewBox="0 0 123 48" fill="none">
@@ -186,7 +190,7 @@
           <nav class="nav">
             <div class="btn-language-group-mob">
               <div class="btn-language-wrapper">
-                <button type="button" class="btn-language">
+                <a href="" aria-label="english language" class="btn-language">
                   <svg width="34" height="25" viewBox="0 0 34 25" fill="none">
                     <path
                       d="M0 3.46471C0 1.82734 1.3293 0.5 2.96907 0.5H30.6804C32.3202 0.5 33.6495 1.82734 33.6495 3.46471V21.5353C33.6495 23.1727 32.3202 24.5 30.6804 24.5H2.96907C1.3293 24.5 0 23.1727 0 21.5353V3.46471Z"
@@ -230,10 +234,10 @@
                     ></path>
                   </svg>
                   <span> en </span>
-                </button>
+                </a>
               </div>
               <div class="btn-language-wrapper active-language">
-                <button type="button" class="btn-language">
+                <a href="" aria-label="sv language" class="btn-language">
                   <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <rect
                       y="6"
@@ -258,150 +262,338 @@
                     />
                   </svg>
                   <span>sv</span>
-                </button>
+                </a>
               </div>
             </div>
             <ul class="nav__list">
               <li class="nav__list-item">
-                <a
-                  href="./pages/cases.html"
-                  aria-label="cese page"
-                  class="nav__link"
-                >
-                  Case
-                </a>
+                <a href="" aria-label="cese page" class="nav__link">Cases</a>
               </li>
               <li class="nav__list-item">
-                <a
-                  href="./pages/services.html"
+                <button
+                  type="button"
                   aria-label="Services page"
-                  class="nav__link nav__link-services relative"
+                  class="nav__link nav__link-services nav__link-services-btn relative"
                 >
-                  Services
-                </a>
-                <button type="button" class="nav__link-services-btn">></button>
+                  <span>
+                    Services
+                    <svg
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.833008 0.5L5.83301 5.5L10.833 0.5"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
               </li>
               <li class="nav__list-item">
-                <a
-                  href="./pages/about.html"
-                  aria-label="About us page"
-                  class="nav__link"
-                >
+                <a href="" aria-label="About us page" class="nav__link">
                   About us
                 </a>
               </li>
               <li class="nav__list-item">
-                <a
-                  href="./pages/blog.html"
-                  aria-label="blog page"
-                  class="nav__link"
-                >
-                  Blog
-                </a>
+                <a href="" aria-label="blog page" class="nav__link"> Blog </a>
               </li>
               <li class="nav__list-item">
-                <a
-                  href="./pages/contacts.html"
-                  aria-label="contact page"
-                  class="nav__link"
-                >
+                <a href="" aria-label="contact page" class="nav__link">
                   Contact
                 </a>
               </li>
             </ul>
+            <ul class="social social-menu">
+              <li>
+                <a href="" aria-label="our instagram" class="social__link">
+                  <div class="instagram-icon">
+                    <svg
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0
+		S8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.4,0.6,4.1C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12
+		s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22s1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24
+		s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4s1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12
+		S24,8.3,23.9,7.1z M21.8,16.8c-0.1,1.2-0.2,1.8-0.4,2.2c-0.2,0.6-0.5,1-0.9,1.4s-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.4
+		c-1.3,0.1-1.6,0.1-4.8,0.1s-3.6,0-4.8-0.1c-1.2-0.1-1.8-0.2-2.2-0.4c-0.6-0.2-1-0.5-1.4-0.9s-0.7-0.8-0.9-1.4
+		c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8s0-3.6,0.1-4.8C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4s0.8-0.7,1.4-0.9
+		C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2s3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9s0.7,0.8,0.9,1.4
+		c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8S21.8,15.6,21.8,16.8z"
+                        />
+                        <path
+                          d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9
+		S14.2,15.9,12,15.9z"
+                        />
+                        <circle cx="18.5" cy="6" r="1.5" />
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="">
+                <a href="" aria-label="our facebook" class="social__link">
+                  <div class="facebook-icon">
+                    <svg
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M13,23V13h3.4l0.5-4H13V6.6c0-1.1,0.3-1.9,1.9-1.9H17V1.2c-0.4,0-1.6-0.2-3-0.2c-3,0-5,1.8-5,5.2V9H5.6v4H9v10
+		C9,23,13,23,13,23z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="">
+                <a href="" aria-label="our linkedin" class="social__link">
+                  <div class="linkedin-icon">
+                    <svg
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="-271 283.9 256 235.1"
+                      xml:space="preserve"
+                    >
+                      <g stroke-width="0" />
 
+                      <g stroke-linecap="round" stroke-linejoin="round" />
+
+                      <g>
+                        <g>
+                          <rect
+                            x="-264.4"
+                            y="359.3"
+                            width="49.9"
+                            height="159.7"
+                          />
+                          <path
+                            d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
+                          />
+                          <path
+                            d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="">
+                <a href="" aria-label="our upwork" class="social__link">
+                  <div class="upwork-icon">
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
             <ul class="link__list link__list-full">
               <li class="xl:hidden">
                 <button class="link__list-back-btn">Back</button>
               </li>
               <li>
-                <a
-                  href="#"
-                  aria-label="All Services"
-                  class="pseudo pseudo-arrow nav__link group"
-                >
-                  All Services
+                <a href="#" aria-label="All Services" class="pseudo nav__link">
+                  <span>All Services</span>
+                  <svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  aria-label="BRANDING "
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  BRANDING
+                <a href="#" aria-label="BRANDING " class="pseudo nav__link">
+                  <span>BRANDING</span>
+                  <svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  aria-label="  WEB design"
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  WEB design
+                <a href="#" aria-label="  WEB design" class="pseudo nav__link">
+                  <span> WEB design </span>
+                  <svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  aria-label="seo "
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  SEO
+                <a href="#" aria-label="seo " class="pseudo nav__link">
+                  <span> SEO </span>
+                  <svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   aria-label="  DIGITAL MARKETING"
-                  class="pseudo pseudo-arrow nav__link"
+                  class="pseudo nav__link"
                 >
-                  DIGITAL MARKETING
+                  <span> DIGITAL MARKETING </span
+                  ><svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
                 <a
                   href=""
                   aria-label=" MOBILE PROMOTION "
-                  class="pseudo pseudo-arrow nav__link"
+                  class="pseudo nav__link"
                 >
-                  MOBILE PROMOTION
+                  <span> MOBILE PROMOTION </span
+                  ><svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  aria-label="smm "
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  SMM
+                <a href="" aria-label="smm " class="pseudo nav__link">
+                  <span> SMM </span
+                  ><svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  aria-label="ppc "
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  PPC
+                <a href="" aria-label="ppc " class="pseudo nav__link">
+                  <span> PPC </span>
+                  <svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  aria-label="TIKTOK "
-                  class="pseudo pseudo-arrow nav__link"
-                >
-                  TIKTOK
+                <a href="" aria-label="TIKTOK " class="pseudo nav__link">
+                  <span> TIKTOK </span
+                  ><svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
                 <a
                   href=""
                   aria-label="  VIDEO MOTION "
-                  class="pseudo pseudo-arrow nav__link"
+                  class="pseudo nav__link"
                 >
-                  VIDEO MOTION
+                  <span> VIDEO MOTION </span
+                  ><svg
+                    viewBox="0 0 11 11"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -426,8 +618,8 @@
             </svg>
           </button>
 
-          <div class="btn-language-group-full">
-            <button class="btn-language-full btn-language hidden">
+          <div class="btn-language-group-full-js">
+            <a href="" class="btn-language-full btn-language hidden">
               <svg width="34" height="25" viewBox="0 0 34 25" fill="none">
                 <path
                   d="M0 3.46471C0 1.82734 1.3293 0.5 2.96907 0.5H30.6804C32.3202 0.5 33.6495 1.82734 33.6495 3.46471V21.5353C33.6495 23.1727 32.3202 24.5 30.6804 24.5H2.96907C1.3293 24.5 0 23.1727 0 21.5353V3.46471Z"
@@ -471,8 +663,8 @@
                 ></path>
               </svg>
               <span> en </span>
-            </button>
-            <button type="button" class="btn-language btn-language-full">
+            </a>
+            <a href="" class="btn-language btn-language-full">
               <svg
                 width="35"
                 height="35"
@@ -497,7 +689,7 @@
                 />
               </svg>
               <span>sv</span>
-            </button>
+            </a>
           </div>
           <div class="burger-wrapper">
             <button class="burger burger-open">
@@ -531,190 +723,7 @@
           </div>
         </div>
       </div>
-      <div class="dynamic-form-wrapper">
-        <div class="form dynamic-form">
-          <div class="form__wrapper form__wrapper--dynamic custom-container">
-            <button
-              class="btn-colse-form"
-              type="button"
-              aria-label="close form"
-            >
-              <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
-                <path
-                  d="M2.45459 0.5L27.0001 25.0455L24.5455 27.5L4.12164e-05 2.95455L2.45459 0.5Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M0 25.0454L24.5455 0.499922L27 2.95447L2.45455 27.5L0 25.0454Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </button>
-            <h2 class="form__title form__title--dynamic">
-              Let's promote your business
-            </h2>
-            <p class="pre-heading form__pre-heading--dynamic">
-              GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL
-            </p>
-            <div class="form__filter-wrapper">
-              <p class="form__filter-title">I am interested in</p>
-              <ul class="form__filter-list">
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">Brandign</button>
-                </li>
-                <li class="cases__filter-item">
-                  <button
-                    class="filter__btn filter__btn-active filter__btn-form"
-                  >
-                    Web design
-                  </button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">seo</button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">
-                    DIGITAL MARKETING
-                  </button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">ppc</button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">TikTok</button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">
-                    VIDEO MOTION
-                  </button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">
-                    MOBILE PROMOTION
-                  </button>
-                </li>
-                <li class="cases__filter-item">
-                  <button class="filter__btn filter__btn-form">smm</button>
-                </li>
-              </ul>
-            </div>
-
-            <form class="form__contact-form">
-              <div class="form__grid">
-                <div class="form__inputGroup-wrapper invalid">
-                  <div class="form__inputGroup">
-                    <input
-                      class="input-full"
-                      id="name"
-                      type="text"
-                      required
-                      autocomplete="off"
-                    />
-                    <label for="name">Your name?*</label>
-                  </div>
-                  <p class="error">Please enter name</p>
-                </div>
-                <div class="form__inputGroup-wrapper">
-                  <div class="form__inputGroup">
-                    <input
-                      class="input-full"
-                      id="email"
-                      type="text"
-                      required
-                      autocomplete="off"
-                    />
-                    <label for="email">Your e-mail?*</label>
-                  </div>
-                  <p class="error">The email is in the wrong format</p>
-                </div>
-                <div class="form__inputGroup-wrapper">
-                  <div class="form__inputGroup">
-                    <input
-                      class="input-full"
-                      id="phone"
-                      type="text"
-                      required
-                      autocomplete="off"
-                    />
-                    <label for="phone">Phone number*</label>
-                  </div>
-                  <p class="error">The phone is in the wrong format</p>
-                </div>
-                <div class="form__inputGroup-wrapper">
-                  <div class="form__inputGroup">
-                    <input
-                      id="company"
-                      type="text"
-                      required
-                      autocomplete="off"
-                    />
-                    <label for="company">Company*</label>
-                  </div>
-                  <p class="error">Please enter company name</p>
-                </div>
-
-                <div class="form__inputGroup form__item-full">
-                  <input
-                    id="message"
-                    type="text"
-                    required=""
-                    autocomplete="off"
-                  />
-                  <label for="message">Tell us about your project</label>
-                </div>
-              </div>
-
-              <button
-                aria-label="attach file"
-                class="form__attach-button form__attach-button-full"
-                type="button"
-              >
-                <span class="form__attach-icon">
-                  <svg
-                    width="18px"
-                    height="18px"
-                    viewBox="0 0 512 512"
-                    xml:space="preserve"
-                    fill="#f8f8f8"
-                  >
-                    <g>
-                      <path
-                        class="st0"
-                        d="M454.821,253.582L273.256,435.14c-11.697,11.697-25.124,20.411-39.484,26.235 c-21.529,8.729-45.165,10.928-67.755,6.55c-22.597-4.378-44.054-15.25-61.597-32.784c-11.69-11.69-20.396-25.118-26.227-39.484 c-8.729-21.529-10.929-45.165-6.55-67.748c4.386-22.597,15.25-44.055,32.778-61.596l203.13-203.13 c7.141-7.134,15.299-12.43,24.035-15.969c13.1-5.318,27.516-6.656,41.263-3.994c13.769,2.677,26.798,9.27,37.498,19.963 c7.133,7.134,12.423,15.292,15.968,24.035c5.318,13.092,6.657,27.502,3.987,41.264c-2.67,13.762-9.262,26.783-19.955,37.498 L213.261,363.064c-2.534,2.528-5.375,4.364-8.436,5.61c-4.571,1.851-9.661,2.335-14.495,1.396 c-4.848-0.954-9.355-3.225-13.15-7.006c-2.534-2.534-4.364-5.368-5.603-8.429c-1.865-4.571-2.342-9.668-1.402-14.495 c0.947-4.841,3.225-9.355,7.005-13.149l175.521-175.528l-29.616-29.617l-175.528,175.52c-6.536,6.536-11.505,14.182-14.801,22.313 c-4.941,12.195-6.166,25.473-3.702,38.202c2.449,12.73,8.686,24.989,18.503,34.799c6.543,6.55,14.182,11.519,22.305,14.809 c12.202,4.948,25.473,6.165,38.21,3.702c12.722-2.449,24.989-8.678,34.806-18.511L439.97,195.602 c11.142-11.149,19.571-24.113,25.167-37.917c8.394-20.717,10.48-43.314,6.294-64.971c-4.179-21.643-14.73-42.432-31.46-59.155 c-11.149-11.142-24.114-19.571-37.918-25.166c-20.717-8.401-43.314-10.48-64.971-6.301c-21.643,4.186-42.431,14.737-59.155,31.468 L74.803,236.695c-15.713,15.691-27.552,33.931-35.426,53.352c-11.817,29.154-14.765,60.97-8.863,91.462 c5.888,30.478,20.717,59.696,44.29,83.254c15.698,15.713,33.931,27.552,53.36,35.426c29.146,11.811,60.97,14.758,91.455,8.863 c30.478-5.895,59.696-20.717,83.254-44.29l181.566-181.564L454.821,253.582z"
-                      />
-                    </g>
-                  </svg>
-                </span>
-
-                <span>Attach a file</span>
-              </button>
-              <div class="form__btn-wrapper">
-                <p class="form__details">
-                  By clicking the "Send" button, you consent to the processing
-                  of personal data.
-                  <a
-                    class="form__details-link"
-                    href="/"
-                    aria-label="More details"
-                    rel="noreferrer noopener"
-                    >More details</a
-                  >
-                </p>
-                <button
-                  aria-label="submit form"
-                  type="submit"
-                  class="main-btn form__main-btn form__main-btn-full"
-                >
-                  <span class="main-btn__lable">Send</span
-                  ><span class="main-btn__icon"></span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </header>
-
     <main>
       <div class="fake-header"></div>
       <section class="hero theme-black red-gradient red-gradient-top">
@@ -730,6 +739,7 @@
         </div>
       </section>
       <section class="video">
+        <h2 class="visually-hidden">video section</h2>
         <button
           type="button"
           aria-label="discuss the project"
@@ -739,7 +749,6 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            version="1"
             viewBox="0 0 24 24"
             enable-background="new 0 0 24 24"
           >
@@ -764,7 +773,9 @@
       </section>
       <section class="cases">
         <div class="cases__wrapper custom-container">
-          <div class="cases__intro-wrapper">
+          <div
+            class="cases__intro-wrapper grid-container-md-cols grid-container-xl-cols"
+          >
             <h2 class="cases__intro-title">
               Limitless is your new rule in business development
             </h2>
@@ -778,7 +789,7 @@
           </div>
 
           <h2 class="heading2 cases__heading">Våra resultat</h2>
-          <div class="grid-container-xl">
+          <div class="grid-container-xl-cols grid-container-xl-rows">
             <p class="cases__description">
               Whether you need to create a website, develop a UX UI design,
               conduct SEO optimization, develop a marketing strategy for your
@@ -786,47 +797,97 @@
               followers on Instagram - welcome to UWP Digital.
             </p>
             <div class="cases__card-list grid-container-item-xl">
-              <div class="cases__card">
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1920px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 360px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb-half"
+                      >
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
 
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -837,47 +898,98 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1920px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 360px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb-half"
+                      >
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -888,47 +1000,98 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1920px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 360px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb-half"
+                      >
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -939,47 +1102,98 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
-              <div class="cases__card">
+              </a>
+              <a href="" class="cases__card animated-hover-container">
                 <div class="cases__card-image-wrap">
-                  <picture>
-                    <source
-                      media="(min-width: 1920px)"
-                      srcset="
-                        ./src/images/cases/case-full-1@x.jpg,
-                        ./src/images/cases/case-full-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 820px)"
-                      srcset="
-                        ./src/images/cases/case-tab-1@x.jpg,
-                        ./src/images/cases/case-tab-2@x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 360px)"
-                      srcset="
-                        ./src/images/cases/case-mob-1@x.jpg,
-                        ./src/images/cases/case-mob-2@x.jpg 2x
-                      "
-                    />
+                  <div class="cases__card-image-thumb">
+                    <div class="cases__card-image-overlay">
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb"
+                      >
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--mr"
+                        >
+                          7X
+                        </p>
+                        <p class="cases__card-image-overlay-text">
+                          cost of attracting a customer
+                        </p>
+                      </div>
+                      <div
+                        class="cases__card-image-overlay-block cases__card-image-overlay-block--mb-half"
+                      >
+                        <p class="cases__card-image-overlay-text">CR</p>
+                        <p
+                          class="cases__card-image-overlay-number cases__card-image-overlay-number--ml"
+                        >
+                          30%
+                        </p>
+                      </div>
+                      <p class="cases__card-image-overlay-text">audience</p>
+                    </div>
+                    <picture>
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./src/images/cases/case-full-1@x.jpg,
+                          ./src/images/cases/case-full-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 820px)"
+                        srcset="
+                          ./src/images/cases/case-tab-1@x.jpg,
+                          ./src/images/cases/case-tab-2@x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./src/images/cases/case-mob-1@x.jpg,
+                          ./src/images/cases/case-mob-2@x.jpg 2x
+                        "
+                      />
 
-                    <img
-                      class="cases__card-image"
-                      loading="lazy"
-                      src="./src/images/cases/case-full-1@x.jpg"
-                      alt="some card"
-                    />
-                  </picture>
+                      <img
+                        class="cases__card-image"
+                        loading="lazy"
+                        src="./src/images/cases/case-full-1@x.jpg"
+                        alt="some card"
+                      />
+                    </picture>
+                  </div>
                 </div>
+
                 <div class="cases__card-content">
                   <div class="cases__card-heading-wrapper">
-                    <h3 class="cases__card-title">
+                    <h3 class="cases__card-title animated-underline">
                       Gambling vs. Marketing: when advertising boosts betting
                       revenue
                     </h3>
-                    <a class="black-up-right-arrow" href="#"> </a>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   <p class="cases__card-text">
                     Establishing a Next-Level Geosocial Networking App
@@ -990,23 +1204,22 @@
                     marketing strategy, design
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
 
             <button
               type="button"
               aria-label="all services"
-              class="main-btn cases__main-btn"
+              class="main-btn sticky-btn cases__main-btn"
             >
               <span class="main-btn__lable">all services</span
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                version="1"
                 viewBox="0 0 24 24"
                 enable-background="new 0 0 24 24"
               >
                 <path
-                  fill="#fff"
+                  fill="currentColor"
                   d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
                 />
               </svg>
@@ -1018,7 +1231,7 @@
         <div class="services-wrapper custom-container">
           <h2 class="heading2 services__heading">Our Services</h2>
 
-          <div class="grid-container-xl">
+          <div class="grid-container-xl-cols grid-container-xl-rows">
             <p class="services__description top-border">
               Our advantage is not in one-time contact with the customer, but in
               complex interaction with him. It allows for attracting attention
@@ -1028,11 +1241,40 @@
 
             <div class="services__cards-list grid-container-item-xl">
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Brandign</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div class="services__link-grid animated-hover-container">
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1041,55 +1283,88 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn mt-10"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
 
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">Web design</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Web design</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1098,54 +1373,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">SEO</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1154,54 +1462,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">DIGITAL MARKETING</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1210,54 +1551,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">PPC</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1266,54 +1640,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">TikTok</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1322,54 +1729,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">VIDEO MOTION</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1378,54 +1818,87 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">MOBILE PROMOTION</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1434,54 +1907,88 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
+                <!-- </div> -->
               </div>
               <div class="services__card">
-                <div class="services__card-title-wrapper">
-                  <h3 class="services__card-title">SMM</h3>
-                  <a class="black-up-right-arrow" href="#"> </a>
-                </div>
-                <div class="services__card-content-wrapper">
+                <div
+                  class="services__link-grid animated-hover-container services__link-grid--hidden"
+                >
+                  <a
+                    href=""
+                    class="services__card-title-wrapper"
+                    aria-label="link to services"
+                  >
+                    <h3 class="services__card-title">Brandign</h3>
+                    <div class="animated-arrow-circle">
+                      <div class="animated-arrow-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          enable-background="new 0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+
                   <p class="services__card-text">
                     UWP Digital knows how to combine creativity and
                     effectiveness in one solution. We reveal the unique story of
@@ -1490,174 +1997,572 @@
                     brand book for companies. The brand stories start with
                     UWP.Digital.
                   </p>
-                  <div class="services__card-image-wrapper">
-                    <picture class="services__card-image">
-                      <source
-                        media="(min-width: 1920px)"
-                        srcset="
-                          ./src/images/services/services-full-1@x.png,
-                          ./src/images/services/services-full-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 820px)"
-                        srcset="
-                          ./src/images/services/services-tab-1@x.png,
-                          ./src/images/services/services-tab-2@x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 360px)"
-                        srcset="
-                          ./src/images/services/services-mob-1@x.png,
-                          ./src/images/services/services-mob-2@x.png 2x
-                        "
-                      />
+                  <div class="services__card-image-container">
+                    <div class="services__card-image-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ./src/images/services/services-full-1@x.png,
+                            ./src/images/services/services-full-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 820px)"
+                          srcset="
+                            ./src/images/services/services-tab-1@x.png,
+                            ./src/images/services/services-tab-2@x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ./src/images/services/services-mob-1@x.png,
+                            ./src/images/services/services-mob-2@x.png 2x
+                          "
+                        />
 
-                      <img
-                        loading="lazy"
-                        src="./src/images/services/services-full-1@x.png"
-                        alt="some card"
-                      />
-                    </picture>
+                        <img
+                          class="services__card-image"
+                          loading="lazy"
+                          src="./src/images/services/services-full-1@x.png"
+                          alt="some card"
+                        />
+                      </picture>
+                    </div>
                   </div>
-                  <button
-                    type="button"
+                  <a
+                    href=""
                     aria-label="read more"
-                    class="main-btn main-btn--reversed mt-10"
+                    class="main-btn main-btn--reversed btn-mrgn"
                   >
                     <span class="main-btn__lable main-btn__lable--smaller">
                       read more</span
                     >
-                  </button>
+                  </a>
                 </div>
+                <!-- </div> -->
               </div>
             </div>
+
             <button
               type="button"
               aria-label="order consultation"
-              class="main-btn services__main-btn"
+              class="main-btn sticky-btn services__main-btn"
             >
-              <span class="main-btn__lable">Order a consultation</span
-              ><span class="main-btn__icon"></span>
+              <span class="main-btn__lable">Order a consultation</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                />
+              </svg>
             </button>
           </div>
         </div>
       </section>
       <section class="person theme-black">
-        <div class="custom-container py-[60px]">
+        <div class="custom-container person__container">
           <div class="heading2 person__title">Let's discuss the project</div>
-          <div class="person__grid">
-            <div class="person__wrapper top-border">
-              <div class="person__thumb relative">
-                <button
-                  type="button"
-                  aria-label="next teammate"
-                  class="circle-team-btn"
-                >
-                  <svg
-                    viewBox="0 0 28 28"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
-                      fill="#171717"
-                    />
-                  </svg>
-                </button>
-                <picture class="person__image">
-                  <source
-                    media="(min-width: 1920px)"
-                    srcset="
-                      ./src/images/person/person1-full-1@x.jpg,
-                      ./src/images/person/person1-full-2@x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 820px)"
-                    srcset="
-                      ./src/images/person/person1-tab-1@x.jpg,
-                      ./src/images/person/person1-tab-2@x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 360px)"
-                    srcset="
-                      ./src/images/person/person1-mob-1@x.jpg,
-                      ./src/images/person/person1-mob-2@x.jpg 2x
-                    "
-                  />
 
-                  <img
-                    loading="lazy"
-                    src="./src/images/person/person1-mob-1@x.jpg"
-                    alt="person card"
-                  />
-                </picture>
-              </div>
-              <div class="person__info">
-                <div class="person-circle-double-quotes-btn">
-                  <svg
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 32 32"
-                    xml:space="preserve"
-                    fill="#171717"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <g id="right_x5F_quote">
-                          <g>
-                            <path
-                              style="fill: #171717"
-                              d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
-                            ></path>
-                            <path
-                              style="fill: #171717"
-                              d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
+          <div class="grid-container-xl-cols">
+            <div class="mySwiper-container">
+              <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies,
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital, UWP connects customers with their
+                          favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                      <div class="person__wrapper top-border">
+                        <div class="person__thumb">
+                          <div class="person__image-wrapper">
+                            <div class="person__image-overlay"></div>
+                            <button
+                              type="button"
+                              aria-label="next teammate"
+                              class="circle-team-btn"
+                            >
+                              <svg
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M20.821 12.4633L11.3931 3.03538L13.8788 0.549712L27.55 14.2209L13.8788 27.892L11.3931 25.4064L20.821 15.9785L0.207667 15.9785L0.207648 12.4633L20.821 12.4633Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </button>
+                            <picture>
+                              <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                  ./src/images/person/person1-full-1@x.jpg,
+                                  ./src/images/person/person1-full-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 820px)"
+                                srcset="
+                                  ./src/images/person/person1-tab-1@x.jpg,
+                                  ./src/images/person/person1-tab-2@x.jpg 2x
+                                "
+                              />
+                              <source
+                                media="(min-width: 320px)"
+                                srcset="
+                                  ./src/images/person/person1-mob-1@x.jpg,
+                                  ./src/images/person/person1-mob-2@x.jpg 2x
+                                "
+                              />
+
+                              <img
+                                class="person__image"
+                                loading="lazy"
+                                src="./src/images/person/person1-mob-1@x.jpg"
+                                alt="person card"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="person__info">
+                          <div class="person-circle-double-quotes-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              xml:space="preserve"
+                              fill="currentColor"
+                            >
+                              <g stroke-width="0"></g>
+                              <g
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <g>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
+                                      ></path>
+                                      <path
+                                        style="fill: currentColor"
+                                        d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="person__info-text-wrapper">
+                            <h3 class="person__info-name">Daniella</h3>
+                            <p class="person__info-position">Copywriter</p>
+                          </div>
+                        </div>
+                        <p class="person__about">
+                          The digital world offers limitless possibilities for
+                          transforming an idea into a successful business. We
+                          are a digital marketing agency that opens these
+                          opportunities to you. With the help of marketing tools
+                          and smart technologies, UWP connects customers with
+                          their favorite brands.
+                        </p>
+                        <p class="person__clients">
+                          Працює з John Deere, STVOL, Anabel Arto, Є-Гроші,
+                          Kimito
+                        </p>
+                        <ul class="person__experience-list">
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">6+</p>
+                            <p class="person__experience-desc">
+                              years in the company
+                            </p>
+                          </li>
+                          <li class="person__experience-list-item">
+                            <p class="person__experience-value">150+</p>
+                            <p class="person__experience-desc">
+                              successful projects
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="person__info-text-wrapper">
-                  <h3 class="person__info-name">Daniella</h3>
-                  <p class="person__info-position">Copywriter</p>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
               </div>
-              <p class="person__about">
-                The digital world offers limitless possibilities for
-                transforming an idea into a successful business. We are a
-                digital marketing agency that opens these opportunities to you.
-                With the help of marketing tools and smart technologies, UWP
-                connects customers with their favorite brands.
-              </p>
-              <p class="person__clients">
-                Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
-              </p>
-              <ul class="person__experience-list">
-                <li class="person__experience-list-item">
-                  <p class="person__experience-value">6+&nbsp;</p>
-                  <p class="person__experience-desc">years in the company</p>
-                </li>
-                <li class="person__experience-list-item">
-                  <p class="person__experience-value">150+&nbsp;</p>
-                  <p class="person__experience-desc">successful projects</p>
-                </li>
-              </ul>
             </div>
 
             <div class="person__order-wrapper top-border">
@@ -1671,10 +2576,19 @@
               <button
                 type="button"
                 aria-label="Order a consultation"
-                class="main-btn"
+                class="main-btn person__main-btn"
               >
-                <span class="main-btn__lable">Order a consultation</span
-                ><span class="main-btn__icon"> </span>
+                <span class="main-btn__lable">Order a consultation</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -1689,7 +2603,6 @@
               <div class="circle-white-btn circle-white-btn--white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  version="1"
                   viewBox="0 0 24 24"
                   enable-background="new 0 0 24 24"
                 >
@@ -1706,7 +2619,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
@@ -1720,7 +2633,7 @@
                   "
                 />
                 <source
-                  media="(min-width: 360px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./src/images/blog/blog1-mob-1@x.jpg,
                     ./src/images/blog/blog1-mob-2@x.jpg 2x
@@ -1744,7 +2657,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
@@ -1758,7 +2671,7 @@
                   "
                 />
                 <source
-                  media="(min-width: 360px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./src/images/blog/blog1-mob-1@x.jpg,
                     ./src/images/blog/blog1-mob-2@x.jpg 2x
@@ -1783,7 +2696,7 @@
             <li class="blog__card">
               <picture>
                 <source
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1280px)"
                   srcset="
                     ./src/images/blog/blog1-full-1@x.jpg,
                     ./src/images/blog/blog1-full-2@x.jpg 2x
@@ -1797,7 +2710,7 @@
                   "
                 />
                 <source
-                  media="(min-width: 360px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./src/images/blog/blog1-mob-1@x.jpg,
                     ./src/images/blog/blog1-mob-2@x.jpg 2x
@@ -1822,8 +2735,9 @@
       </section>
 
       <section class="who theme-black">
+        <h2 class="visually-hidden">who we are</h2>
         <div class="who__wrapper custom-container">
-          <div class="who__who-grid top-border">
+          <div class="grid-container-xl-cols top-border">
             <div class="who__who-content">
               <div class="who__who-wrapper">
                 <p class="who__who-label">Why we are</p>
@@ -1881,8 +2795,17 @@
               aria-label="Order a consultation"
               class="main-btn who__main-btn"
             >
-              <span class="main-btn__lable">Order a consultation</span
-              ><span class="main-btn__icon"></span>
+              <span class="main-btn__lable">Order a consultation</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -1903,7 +2826,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button faq__question-button--active"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer open">
                 All of our customers can change the content on their website at
@@ -1921,7 +2878,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer">
                 All of our customers can change the content on their website at
@@ -1942,7 +2933,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer">
                 All of our customers can change the content on their website at
@@ -1962,7 +2987,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer">
                 All of our customers can change the content on their website at
@@ -1982,7 +3041,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer">
                 All of our customers can change the content on their website at
@@ -2003,7 +3096,41 @@
                   type="button"
                   aria-label="open answer"
                   class="faq__question-button"
-                ></button>
+                >
+                  <svg
+                    class="minus"
+                    viewBox="0 0 36 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 3H0V0H36V3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <svg
+                    class="plus"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36 20H0V17H36V20Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 -1.31134e-07L20 36L17 36L17 0L20 -1.31134e-07Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
               <p class="faq__answer">
                 All of our customers can change the content on their website at
@@ -2023,7 +3150,7 @@
             GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL
           </p>
 
-          <h2 class="form__title form__title--full">
+          <h2 class="heading2 form__title form__title--full">
             Let's promote your business
           </h2>
           <form class="form__contact-form form__contact-form--full">
@@ -2131,17 +3258,29 @@
               <button
                 aria-label="submit form"
                 type="submit"
-                class="main-btn form__main-btn form__main-btn--full"
+                class="main-btn form__main-btn submit-js form__main-btn--full"
               >
-                <span class="main-btn__lable">Send</span
-                ><span class="main-btn__icon"></span>
+                <span class="main-btn__lable">Send</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                  />
+                </svg>
               </button>
             </div>
           </form>
-          <div class="form__contact-wrapper">
-            <p class="form__contact-address form__contact-address--full">
+          <address class="form__contact-wrapper">
+            <a
+              href=""
+              class="form__contact-address form__contact-address--full"
+            >
               Onnekop Per Bings vag 13B, 242 98 Horby, Sweden
-            </p>
+            </a>
             <a
               class="form__contact-email form__contact-email--full"
               aria-label="send email"
@@ -2149,7 +3288,7 @@
               >info@uwp.digital</a
             >
             <p class="form__contact-text">Shoot us a message</p>
-          </div>
+          </address>
         </div>
       </section>
     </main>
@@ -2157,7 +3296,7 @@
       <div class="footer__wrapper custom-container">
         <div class="footer__content-wrapper">
           <ul class="footer__nav-list">
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/about.html"
                 aria-label="link to About us page"
@@ -2165,7 +3304,7 @@
                 >About us</a
               >
             </li>
-            <li class="w-max">
+            <li class="nav__list-item">
               <a
                 href="./pages/cases.html"
                 aria-label="Case studies page"
@@ -2173,7 +3312,7 @@
                 >Case studies</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/services.html"
                 aria-label="Services page"
@@ -2181,7 +3320,7 @@
                 >Services</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/blog.html"
                 aria-label="blog page"
@@ -2189,7 +3328,7 @@
                 >Blog</a
               >
             </li>
-            <li class="">
+            <li class="nav__list-item">
               <a
                 href="/pages/contacts.html"
                 aria-label="Contact page"
@@ -2201,19 +3340,17 @@
           <ul class="social">
             <li>
               <a href="" aria-label="our instagram" class="social__link">
-                <svg
-                  fill="currentColor"
-                  height="64px"
-                  width="64px"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                >
-                  <g id="social-instagram">
-                    <path
-                      d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0
+                <div class="instagram-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0
 		S8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.4,0.6,4.1C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12
 		s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22s1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24
 		s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4s1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12
@@ -2222,87 +3359,83 @@
 		c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8s0-3.6,0.1-4.8C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4s0.8-0.7,1.4-0.9
 		C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2s3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9s0.7,0.8,0.9,1.4
 		c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8S21.8,15.6,21.8,16.8z"
-                    />
-                    <path
-                      d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9
+                      />
+                      <path
+                        d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9
 		S14.2,15.9,12,15.9z"
-                    />
-                    <circle cx="18.5" cy="6" r="1.5" />
-                  </g>
-                </svg>
+                      />
+                      <circle cx="18.5" cy="6" r="1.5" />
+                    </g>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
               <a href="" aria-label="our facebook" class="social__link">
-                <svg
-                  fill="currentColor"
-                  height="30px"
-                  width="30px"
-                  version="1.1"
-                  id="XMLID_5_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                >
-                  <g id="social-facebook">
-                    <path
-                      id="f"
-                      d="M13,23V13h3.4l0.5-4H13V6.6c0-1.1,0.3-1.9,1.9-1.9H17V1.2c-0.4,0-1.6-0.2-3-0.2c-3,0-5,1.8-5,5.2V9H5.6v4H9v10
+                <div class="facebook-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M13,23V13h3.4l0.5-4H13V6.6c0-1.1,0.3-1.9,1.9-1.9H17V1.2c-0.4,0-1.6-0.2-3-0.2c-3,0-5,1.8-5,5.2V9H5.6v4H9v10
 		C9,23,13,23,13,23z"
-                    />
-                  </g>
-                </svg>
+                      />
+                    </g>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
               <a href="" aria-label="our linkedin" class="social__link">
-                <svg
-                  fill="currentColor"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="-271 283.9 256 235.1"
-                  xml:space="preserve"
-                  width="64px"
-                  height="64px"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <div class="linkedin-icon">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-271 283.9 256 235.1"
+                    xml:space="preserve"
+                  >
+                    <g stroke-width="0" />
 
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
 
-                  <g id="SVGRepo_iconCarrier">
                     <g>
-                      <rect x="-264.4" y="359.3" width="49.9" height="159.7" />
-                      <path
-                        d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
-                      />
-                      <path
-                        d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
-                      />
+                      <g>
+                        <rect
+                          x="-264.4"
+                          y="359.3"
+                          width="49.9"
+                          height="159.7"
+                        />
+                        <path
+                          d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
+                        />
+                        <path
+                          d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
+                        />
+                      </g>
                     </g>
-                  </g>
-                </svg>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="">
-              <a href="" aria-label="our upwork" class="social__link"
-                ><svg
-                  fill="currentColor"
-                  width="800px"
-                  height="800px"
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
-                  />
-                </svg>
+              <a href="" aria-label="our upwork" class="social__link">
+                <div class="upwork-icon">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
+                    />
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>
@@ -2381,15 +3514,286 @@
         </p>
       </div>
     </footer>
+    <div class="success-wrapper">
+      <div class="custom-container success-container">
+        <div class="success-content">
+          <div class="fake-header"></div>
+          <div class="success-circle">
+            <svg
+              width="35"
+              height="25"
+              viewBox="0 0 35 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.64258 12.6875L12.0203 23L33.8569 1"
+                stroke="#FF304D"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+
+          <h2 class="pages__title">sent</h2>
+          <p class="success-text">
+            In the near future, our manager will contact you to discuss all the
+            details
+          </p>
+
+          <div class="success-btn-container">
+            <button class="big-red-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                />
+              </svg>
+              watch cases
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container dynamic-form-wrapper">
+      <div class="form dynamic-form">
+        <div class="form__wrapper form__wrapper--dynamic custom-container">
+          <button class="btn-colse-form" type="button" aria-label="close form">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M2.45459 0.5L27.0001 25.0455L24.5455 27.5L4.12164e-05 2.95455L2.45459 0.5Z"
+                fill="currentColor"
+              />
+              <path
+                d="M0 25.0454L24.5455 0.499922L27 2.95447L2.45455 27.5L0 25.0454Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <h2 class="form__title form__title--dynamic">
+            Let's promote your business
+          </h2>
+          <p class="pre-heading form__pre-heading--dynamic">
+            GET A DETAILED AND COMPREHENSIVE COMMERCIAL PROPOSAL
+          </p>
+          <div class="form__filter-wrapper"></div>
+          <p class="form__filter-title">I am interested in</p>
+          <form class="form__contact-form">
+            <fieldset class="form__filter-list">
+              <input
+                value="branding"
+                type="radio"
+                id="radio1"
+                name="radios"
+                checked
+              />
+              <label for="radio1" class="filter__btn filter__btn-form">
+                Brandign</label
+              >
+              <input value="branding" type="radio" id="radio2" name="radios" />
+              <label for="radio2" class="filter__btn filter__btn-form">
+                Web design
+              </label>
+
+              <input value="branding" type="radio" id="radio3" name="radios" />
+              <label for="radio3" class="filter__btn filter__btn-form"
+                >seo</label
+              >
+
+              <input value="branding" type="radio" id="radio4" name="radios" />
+              <label for="radio4" class="filter__btn filter__btn-form">
+                DIGITAL MARKETING
+              </label>
+
+              <input value="branding" type="radio" id="radio5" name="radios" />
+              <label for="radio5" class="filter__btn filter__btn-form"
+                >ppc</label
+              >
+
+              <input value="branding" type="radio" id="radio6" name="radios" />
+              <label for="radio6" class="filter__btn filter__btn-form"
+                >TikTok</label
+              >
+
+              <input value="branding" type="radio" id="radio7" name="radios" />
+              <label for="radio7" class="filter__btn filter__btn-form">
+                VIDEO MOTION
+              </label>
+
+              <input value="branding" type="radio" id="radio8" name="radios" />
+              <label for="radio8" class="filter__btn filter__btn-form">
+                MOBILE PROMOTION
+              </label>
+
+              <input value="branding" type="radio" id="radio9" name="radios" />
+              <label for="radio9" class="filter__btn filter__btn-form"
+                >smm</label
+              >
+            </fieldset>
+            <div class="form__grid">
+              <div class="form__inputGroup-wrapper invalid">
+                <div class="form__inputGroup">
+                  <input
+                    class="input-full"
+                    id="name-mob"
+                    type="text"
+                    required
+                    autocomplete="off"
+                  />
+                  <label for="name-mob">Your name?*</label>
+                </div>
+                <p class="error">Please enter name</p>
+              </div>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input
+                    class="input-full"
+                    id="email-mob"
+                    type="text"
+                    required
+                    autocomplete="off"
+                  />
+                  <label for="email-mob">Your e-mail?*</label>
+                </div>
+                <p class="error">The email is in the wrong format</p>
+              </div>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input
+                    class="input-full"
+                    id="phone-mob"
+                    type="text"
+                    required
+                    autocomplete="off"
+                  />
+                  <label for="phone-mob">Phone number*</label>
+                </div>
+                <p class="error">The phone is in the wrong format</p>
+              </div>
+              <div class="form__inputGroup-wrapper">
+                <div class="form__inputGroup">
+                  <input
+                    id="company-mob"
+                    type="text"
+                    required
+                    autocomplete="off"
+                  />
+                  <label for="company-mob">Company*</label>
+                </div>
+                <p class="error">Please enter company name</p>
+              </div>
+
+              <div class="form__inputGroup form__item--full">
+                <input
+                  id="message-mob"
+                  type="text"
+                  required=""
+                  autocomplete="off"
+                />
+                <label for="message-mob">Tell us about your project</label>
+              </div>
+            </div>
+
+            <button
+              aria-label="attach file"
+              class="form__attach-button form__attach-button-full"
+              type="button"
+            >
+              <span class="form__attach-icon">
+                <svg
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  fill="#f8f8f8"
+                >
+                  <g>
+                    <path
+                      class="st0"
+                      d="M454.821,253.582L273.256,435.14c-11.697,11.697-25.124,20.411-39.484,26.235 c-21.529,8.729-45.165,10.928-67.755,6.55c-22.597-4.378-44.054-15.25-61.597-32.784c-11.69-11.69-20.396-25.118-26.227-39.484 c-8.729-21.529-10.929-45.165-6.55-67.748c4.386-22.597,15.25-44.055,32.778-61.596l203.13-203.13 c7.141-7.134,15.299-12.43,24.035-15.969c13.1-5.318,27.516-6.656,41.263-3.994c13.769,2.677,26.798,9.27,37.498,19.963 c7.133,7.134,12.423,15.292,15.968,24.035c5.318,13.092,6.657,27.502,3.987,41.264c-2.67,13.762-9.262,26.783-19.955,37.498 L213.261,363.064c-2.534,2.528-5.375,4.364-8.436,5.61c-4.571,1.851-9.661,2.335-14.495,1.396 c-4.848-0.954-9.355-3.225-13.15-7.006c-2.534-2.534-4.364-5.368-5.603-8.429c-1.865-4.571-2.342-9.668-1.402-14.495 c0.947-4.841,3.225-9.355,7.005-13.149l175.521-175.528l-29.616-29.617l-175.528,175.52c-6.536,6.536-11.505,14.182-14.801,22.313 c-4.941,12.195-6.166,25.473-3.702,38.202c2.449,12.73,8.686,24.989,18.503,34.799c6.543,6.55,14.182,11.519,22.305,14.809 c12.202,4.948,25.473,6.165,38.21,3.702c12.722-2.449,24.989-8.678,34.806-18.511L439.97,195.602 c11.142-11.149,19.571-24.113,25.167-37.917c8.394-20.717,10.48-43.314,6.294-64.971c-4.179-21.643-14.73-42.432-31.46-59.155 c-11.149-11.142-24.114-19.571-37.918-25.166c-20.717-8.401-43.314-10.48-64.971-6.301c-21.643,4.186-42.431,14.737-59.155,31.468 L74.803,236.695c-15.713,15.691-27.552,33.931-35.426,53.352c-11.817,29.154-14.765,60.97-8.863,91.462 c5.888,30.478,20.717,59.696,44.29,83.254c15.698,15.713,33.931,27.552,53.36,35.426c29.146,11.811,60.97,14.758,91.455,8.863 c30.478-5.895,59.696-20.717,83.254-44.29l181.566-181.564L454.821,253.582z"
+                    />
+                  </g>
+                </svg>
+              </span>
+
+              <span>Attach a file</span>
+            </button>
+            <div class="form__btn-wrapper">
+              <p class="form__details">
+                By clicking the "Send" button, you consent to the processing of
+                personal data.
+                <a
+                  class="form__details-link"
+                  href="/"
+                  aria-label="More details"
+                  rel="noreferrer noopener"
+                  >More details</a
+                >
+              </p>
+              <button
+                aria-label="submit form"
+                type="submit"
+                class="main-btn form__main-btn submit-dynamic-js form__main-btn-full"
+              >
+                <span class="main-btn__lable">Send</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div id="cookies">
-      <p>
-        THIS WEBSITE USES COOKIES. <a href="" class="learn-more">Learn more</a>
-      </p>
+      <p class="cookies-text">THIS WEBSITE USES COOKIES.</p>
+      <a href="" class="learn-more">Learn more</a>
       <button id="accept-btn">accept</button>
     </div>
+
     <script src="./src/js/faq.js"></script>
     <script src="./src/js/header.js"></script>
     <script src="./src/js/services.js"></script>
     <script src="./src/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        // Optional parameters
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".circle-team-btn",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>

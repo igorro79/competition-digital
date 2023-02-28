@@ -1,23 +1,23 @@
 @layer components {
   .header {
-    @apply fixed top-0 right-0 left-0 z-10 w-full xl:static;
+    @apply fixed top-0 right-0 left-0 z-50 w-full transition-all;
   }
   .menu-open {
     @apply h-screen overflow-y-hidden;
   }
 
   .header__container {
-    @apply py-[18px] px-5 md:py-[22px] md:px-[30px];
+    @apply lg:h-[var(--header-h-md)] mx-auto flex h-[var(--header-h)] max-w-[1920px]  items-center  xl:h-[var(--header-h-xl)];
   }
   .header__wrapper {
-    @apply relative flex items-center;
+    @apply relative flex w-full items-center;
   }
   /* ----------logo------------- */
   .header__logo {
-    @apply mr-[34px] text-white md:mr-10;
+    @apply lg:mr-[53px] mr-[44px] text-white;
   }
   .header__logo svg {
-    @apply h-10  md:h-[42px] xl:h-12;
+    @apply lg:h-12   h-10 xl:h-[52px];
   }
   /* --------------theme btn----------- */
   .btn-theme-group {
@@ -32,87 +32,103 @@
     @apply fixed top-0 right-0 z-[5] h-full w-0 bg-dynamicBg blur-[25px] transition-all;
   }
   .dynamic-bg.active {
-    @apply md:w-full;
+    @apply lg:w-full;
   }
   .nav {
-    @apply fixed top-[76px] right-0 h-screen w-0 bg-dark 
-    transition-all md:top-[84px] xl:static xl:mx-auto
+    @apply lg:top-[var(--header-h-md)] fixed top-[var(--header-h)] right-0  h-screen 
+    w-0 bg-dark transition-all  xl:static xl:top-[var(--header-h-xl)] xl:mx-auto
      xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
   }
   .nav.active {
-    @apply w-screen px-5  md:px-[30px] xl:z-[8] xl:w-auto xl:px-0;
+    @apply lg:h-[calc(100vh-var(--header-h-md))] lg:px-[30px] grid h-[calc(100vh-var(--header-h))]
+     w-full grid-rows-[auto_550px_1fr] overflow-y-auto  px-5 
+    xl:z-[8]  xl:h-[calc(100vh-var(--header-h-xl))] xl:w-auto xl:px-0;
   }
 
   .nav__list {
-    @apply flex flex-col gap-[30px] border-t border-middleGrey pt-[30px] text-xl uppercase transition-all 
-    xl:static xl:flex-row xl:gap-[50px]  xl:border-t-0 xl:pt-0 xl:text-base;
+    @apply mb-8 flex flex-col  gap-[30px]  pt-[30px] text-xl    transition-all  xl:static 
+    xl:mb-0 xl:flex-row xl:gap-[clamp(30px,3vw,50px)]  xl:border-t-0 xl:pt-0 xl:text-base;
   }
+  .nav__list.show-links {
+    @apply invisible opacity-0;
+  }
+  /* .nav__list button {
+    @apply uppercase;
+  } */
 
   .nav__list-item {
-    @apply flex items-center;
-  }
-  .nav__list-item a {
-    @apply transition-all after:h-px
-      after:w-0 after:bg-middleGrey after:transition-all after:content-[''] 
-     hover:text-middleGrey hover:after:w-full
-      active:text-main  active:after:bg-main
-       xl:after:block;
-  }
-  .nav__list-item button {
-    @apply transition-all hover:text-middleGrey
-      active:text-main;
+    @apply inline-block max-w-max;
   }
 
-  .nav__link-services-btn {
-    @apply px-2 xl:ml-2 xl:rotate-90;
+  .nav__list-item a,
+  .nav__list-item button {
+    @apply lg:after:block bottom-0 uppercase
+       transition-all after:h-px after:w-0 
+     after:bg-middleGrey  after:transition-all after:content-['']
+      hover:text-middleGrey  hover:after:w-full active:text-main
+       active:after:bg-main;
+  }
+
+  .nav__link-services {
+    @apply hover:text-middleGrey  active:text-main;
+  }
+
+  .nav__link-services span {
+    @apply inline-flex items-center;
+  }
+  .nav__link-services svg {
+    @apply ml-[10px] -rotate-90 xl:rotate-0;
   }
 
   .link__list {
-    @apply absolute top-[140px] left-full flex w-full flex-col gap-5
-     bg-dark px-5 pt-5 text-base uppercase transition-all md:px-[32px]
-     md:pt-10;
+    @apply lg:px-[32px] lg:pt-10 absolute top-[140px] left-full flex w-full
+     flex-col gap-5 bg-transparent px-5 pt-5 text-base uppercase
+     transition-all;
   }
   .link__list-full {
     @apply z-[3] transition-all xl:left-1/2 xl:top-[60px] xl:grid 
-    xl:w-[500px] xl:translate-x-[-40%] xl:scale-0 xl:grid-cols-2 xl:gap-[15px] 
-      xl:rounded-[10px]  xl:bg-white xl:px-5 xl:py-[30px] xl:text-dark;
+    xl:w-[500px] xl:origin-top-left xl:translate-x-[-40%] xl:scale-y-0 xl:grid-cols-2 
+      xl:gap-[15px] xl:rounded-[10px] xl:bg-white xl:px-5 xl:py-[30px] xl:text-dark;
   }
   .link__list.show-links {
-    @apply left-0 xl:left-1/2 xl:scale-100;
+    @apply left-0 xl:left-1/2 xl:scale-y-[1];
   }
 
   .link__list-back-btn {
-    @apply flex max-w-min gap-[10px] font-montserrat text-xs  
-      text-main before:font-mono before:text-[16px] before:content-['<'];
+    @apply flex max-w-min gap-[10px] text-xs uppercase  
+      text-main before:font-mono before:text-[16px] 
+      before:content-['<'];
   }
 
   .link__list a {
-    @apply relative hover:text-main active:text-main xl:flex;
+    @apply relative inline-flex items-center hover:text-main active:text-main xl:flex;
   }
-  .link__list a.pseudo {
-    @apply before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-middleGrey 
-     before:transition-all before:content-['']
-      hover:before:w-full  hover:before:bg-main   active:before:bg-main
-       xl:before:block;
+  .link__list a.pseudo span {
+    @apply after:h-px after:w-0 after:bg-main after:transition-all
+      after:content-['']  hover:after:w-full   active:after:bg-main
+       xl:after:block;
   }
-  .link__list a.pseudo {
-    @apply after:hidden  after:transition-all after:content-arrow-content hover:after:text-main group-hover:text-main
-     xl:after:ml-3 xl:after:block;
+  .link__list a.pseudo:hover span {
+    @apply after:w-full;
   }
-  .link__list svg {
-    @apply h-4 w-4 text-main;
+
+  .link__list a svg {
+    @apply hidden  h-[11px] 
+     w-[11px] transition-all hover:text-main
+     xl:ml-3 xl:block;
   }
 
   /* -----------lets talk btn------------- */
 
   .lets-talk-btn {
-    @apply mr-10 ml-auto flex min-h-[40px] min-w-[40px]
-    items-center justify-center rounded-[60px] border-[1px] border-main bg-main
-    uppercase text-white transition-all hover:border-white hover:bg-white hover:text-dark active:border-main active:bg-white
-   active:text-main md:gap-[16px] md:px-6 md:py-3 xl:ml-0;
+    @apply lg:mr-10 lg:gap-[16px] lg:px-6 lg:py-[10px] mr-[34px] ml-auto
+    flex min-h-[40px] min-w-[40px] items-center justify-center rounded-[60px]
+    border-[1px] border-main bg-main uppercase
+    text-white transition-all hover:border-white hover:bg-white
+   hover:text-dark active:border-main active:bg-white active:text-main xl:mr-[32px] xl:ml-5 xl:gap-5 xl:rounded-[60px] xl:py-3 xl:px-[25px];
   }
   .lets-talk-btn__text {
-    @apply hidden md:block;
+    @apply lg:block hidden;
   }
   .lets-talk-btn__text svg {
     @apply h-4 w-4;
@@ -120,7 +136,7 @@
   /* -----------language btn------------- */
 
   .btn-language-group-mob {
-    @apply flex items-center gap-10 pt-[33px] pb-[30px] text-middleGrey md:pt-[50px] xl:hidden;
+    @apply lg:pt-[50px] flex items-center gap-10 border-b border-middleGrey pt-[33px] pb-[30px] text-middleGrey xl:hidden;
   }
   .btn-language-wrapper {
     @apply rounded p-[10px];
@@ -128,9 +144,7 @@
   .btn-language-wrapper.active-language {
     @apply bg-langBg text-white;
   }
-  .btn-language-group-full {
-    @apply xl:min-w-[80px];
-  }
+
   .btn-language {
     @apply flex items-center uppercase hover:text-main;
   }

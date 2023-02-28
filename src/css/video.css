@@ -3,7 +3,7 @@
     @apply relative;
   }
   .video__video-block {
-    @apply mx-auto  max-h-[281px] w-full bg-dark object-cover
-      md:max-h-[454px]  xl:max-h-[875px];
+    @apply lg:max-h-[454px]  mx-auto max-h-[281px] w-full bg-dark
+      object-cover  xl:max-h-[875px];
   }
 }

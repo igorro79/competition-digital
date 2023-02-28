@@ -2,7 +2,7 @@
   /*=============== FAQ ============= */
 
   .faq__wrapper {
-    @apply border-middleGrey pt-10 pb-20 md:pt-[74px] md:pb-[142px] xl:grid
+    @apply lg:pt-[74px] lg:pb-[142px] border-middleGrey pt-10 pb-20 xl:grid
     xl:grid-cols-4  xl:grid-rows-[155px_auto]  xl:pt-[96px] xl:pb-[120px];
   }
   .faq__pre-heading {
@@ -10,34 +10,46 @@
     xl:border-t xl:border-middleGrey xl:pt-[50px] xl:pr-[100px] xl:text-base;
   }
   .faq__title {
-    @apply mb-5 dark:text-white xl:col-start-1 xl:col-end-5 xl:row-start-1 xl:mb-0;
+    @apply lg:mb-[15px] mb-5 dark:text-white xl:col-start-1 xl:col-end-5 xl:row-start-1 xl:mb-0;
   }
   .faq__list {
     @apply border-t border-middleGrey  xl:col-start-2  xl:col-end-5 xl:pb-[50px]  xl:pl-[152px];
   }
   .faq__item {
-    @apply flex flex-col border-b border-middleGrey;
+    @apply border-b border-middleGrey transition-all;
   }
 
   .faq__question-wrapper {
-    @apply flex items-center justify-between py-5 md:py-[30px] xl:col-start-2  xl:col-end-5 xl:py-[25px];
+    @apply lg:py-[33px] flex items-center justify-between
+      py-5 xl:col-start-2  xl:col-end-5 xl:py-[40px];
   }
   .faq__question {
-    @apply font-semibold dark:text-white md:text-2xl;
+    @apply lg:text-2xl lg:leading-[1.3] font-semibold dark:text-white;
   }
   .faq__question--active {
     @apply text-main;
   }
-  .faq__question-button {
-    @apply ml-5 h-6 w-6 bg-plus-icon bg-cover bg-center bg-no-repeat md:ml-16 md:h-9 md:w-9;
+  .faq__question-button svg {
+    @apply lg:h-9 lg:w-9 pointer-events-none  h-6 w-6;
   }
-  .faq__question-button--active {
-    @apply bg-minus-icon;
+  .faq__question-button {
+    @apply lg:ml-16  ml-5;
+  }
+  .faq__question-button .minus {
+    @apply hidden;
+  }
+  .faq__question-button--active.faq__question-button .minus {
+    @apply block;
+  }
+
+  .faq__question-button--active.faq__question-button .plus {
+    @apply hidden;
   }
   .faq__answer {
-    @apply max-h-0 overflow-hidden text-sm transition-all dark:text-white xl:max-w-[950px] xl:text-base;
+    @apply lg:text-base lg:leading-[1.4] max-h-0 overflow-hidden text-sm transition-all delay-100
+    duration-300 ease-out dark:text-white xl:max-w-[950px] xl:text-base;
   }
   .faq__answer.open {
-    @apply max-h-max overflow-y-auto pb-5;
+    @apply lg:pb-[30px] max-h-[1000px] overflow-y-auto pb-5;
   }
 }

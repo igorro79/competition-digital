@@ -1,10 +1,45 @@
 const cookies = document.getElementById("cookies");
 const accept = document.getElementById("accept-btn");
+const servicesOrderBtn = document.querySelector(".services__main-btn");
+
+const servicesItemList = document.querySelector(".services__cards-list");
+
+servicesOrderBtn.addEventListener("click", openForm);
+bigRedBtn.addEventListener("click", openForm);
+personOrderBtn.addEventListener("click", openForm);
+whoOrderBtn.addEventListener("click", openForm);
 
 accept.addEventListener("click", () => {
-  console.dir(cookies);
-
   cookies.style.display = "none";
 });
 
-bigRedBtn.addEventListener("click", openForm);
+servicesItemList.addEventListener("click", (e) => {
+  if (
+    e.target.className === "services__card-title" &&
+    window.innerWidth < 820
+  ) {
+    e.preventDefault();
+
+    if (
+      e.target.parentNode.parentNode.classList.contains(
+        "services__link-grid--hidden"
+      )
+    ) {
+      servicesItemList.childNodes.forEach((i) => {
+        if (i.nodeName === "DIV") {
+          i.childNodes.forEach((j) => {
+            if (j.nodeName === "DIV") {
+              if (!j.classList.contains("services__link-grid--hidden")) {
+                j.classList.add("services__link-grid--hidden");
+              }
+            }
+          });
+        }
+      });
+
+      e.target.parentNode.parentNode.classList.remove(
+        "services__link-grid--hidden"
+      );
+    }
+  }
+});
