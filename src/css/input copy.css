@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 @import "./header.css";
-/*@import "./hero.css";
+@import "./hero.css";
 @import "./video.css";
 @import "./cases.css";
 @import "./case-page.css";
@@ -19,7 +19,7 @@
 @import "./form.css";
 @import "./footer.css";
 @import "./utils.css";
-@import "./contacts-page.css";*/
+@import "./contacts-page.css";
 
 @tailwind base;
 
