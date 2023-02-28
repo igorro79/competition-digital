@@ -14,7 +14,7 @@
   }
   /* ----------logo------------- */
   .header__logo {
-    @apply mr-[34px] text-white md:mr-[53px];
+    @apply mr-[44px] text-white md:mr-[53px];
   }
   .header__logo svg {
     @apply h-10   md:h-12 xl:h-[52px];
@@ -121,7 +121,7 @@
   /* -----------lets talk btn------------- */
 
   .lets-talk-btn {
-    @apply mr-6 ml-auto flex min-h-[40px] min-w-[40px] items-center
+    @apply mr-[34px] ml-auto flex min-h-[40px] min-w-[40px] items-center
     justify-center rounded-[60px] border-[1px] border-main bg-main uppercase
     text-white transition-all hover:border-white hover:bg-white
     hover:text-dark active:border-main active:bg-white active:text-main

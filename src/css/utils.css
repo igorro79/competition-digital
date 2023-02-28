@@ -5,12 +5,12 @@
 }
 
 html {
-  @apply font-montserrat text-base font-medium text-dark;
+  @apply text-base font-medium text-dark;
 }
 body {
-  @apply relative font-montserrat;
+  @apply font-montserrat;
 }
-/* main {
+/* wrapper {
   @apply relative;
 } */
 .custom-container {
@@ -70,12 +70,13 @@ body::-webkit-scrollbar-thumb {
   /*=============== MAIN BUTTON ============= */
 
   .main-btn {
-    @apply /*  md:min-w-[357px]; */ mx-auto flex h-[60px] 
-    min-w-[280px] items-center justify-center gap-2.5 rounded-[70px] 
-    border-[1px] border-main bg-main  fill-white px-1 py-1
-     uppercase text-white
-      transition-all hover:bg-activeRed active:bg-activeRed  md:w-[357px]
-      xl:w-[clamp(260px,90%,357px)] xl:min-w-[260px];
+    @apply mx-auto flex h-[60px] 
+    w-[clamp(280px,85vw,357px)] min-w-[280px] items-center justify-center gap-2.5 
+    rounded-[70px] border-[1px]  border-main  bg-gradient-to-t from-main 
+    to-main bg-size-200 bg-pos-0 fill-white px-1 py-1
+    uppercase text-white transition-all duration-300
+    hover:to-activeRed  hover:bg-pos-100 active:bg-activeRed md:w-[357px]
+    xl:w-[clamp(260px,90%,357px)] xl:min-w-[260px];
   }
   .main-btn--reversed {
     @apply border-2 border-main bg-white fill-dark text-dark
@@ -169,7 +170,7 @@ body::-webkit-scrollbar-thumb {
   /* =========== BIG RED ROUND BUTTON ============ */
 
   .big-red-btn.video__big-red-btn {
-    @apply absolute top-0 z-[2] -translate-y-1/2 translate-x-1/2 md:right-[20vw]
+    @apply absolute top-0 right-[24%] z-[2] -translate-y-1/2 translate-x-1/2 md:right-[20vw]
     xl:right-[27.5vw];
   }
   .big-red-btn {
@@ -237,18 +238,22 @@ body::-webkit-scrollbar-thumb {
   /*---------- animate link arrows ---------- */
 
   .animated-arrow-circle {
-    @apply flex h-[82px] min-w-[82px] items-center 
-    justify-center rounded-full bg-transparent transition-all;
+    @apply pointer-events-none flex h-[45px] min-w-[45px]  items-center justify-center rounded-full bg-transparent transition-all 
+    md:h-[62px] md:min-w-[62px] xl:h-[82px] xl:min-w-[82px];
   }
   .animated-hover-container:hover .animated-arrow-circle {
-    @apply text-main md:bg-main md:text-white;
+    @apply bg-main text-white;
   }
 
+  .animated-arrow-wrapper,
+  .animated-arrow-wrapper svg {
+    @apply h-[15px] min-w-[15px]  md:h-[21px] md:min-w-[21px];
+  }
   .animated-arrow-wrapper {
-    @apply relative h-[21px] min-w-[21px] overflow-hidden;
+    @apply relative  overflow-hidden;
   }
   .animated-arrow-wrapper svg {
-    @apply absolute h-[21px] min-w-[21px] transition-all duration-300 ease-in-out;
+    @apply absolute  transition-all duration-300 ease-in-out;
   }
   .animated-arrow-wrapper svg:first-child {
     @apply top-0 right-0;

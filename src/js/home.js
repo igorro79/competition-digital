@@ -14,20 +14,32 @@ accept.addEventListener("click", () => {
 });
 
 servicesItemList.addEventListener("click", (e) => {
-  if (e.target.className === "services__card-title") {
-    servicesItemList.childNodes.forEach((i) => {
-      if (i.nodeName === "DIV") {
-        i.childNodes.forEach((j) => {
-          if (j.nodeName === "DIV") {
-            if (!j.classList.contains("services__link-grid--hidden")) {
-              j.classList.add("services__link-grid--hidden");
+  if (
+    e.target.className === "services__card-title" &&
+    window.innerWidth < 820
+  ) {
+    e.preventDefault();
+
+    if (
+      e.target.parentNode.parentNode.classList.contains(
+        "services__link-grid--hidden"
+      )
+    ) {
+      servicesItemList.childNodes.forEach((i) => {
+        if (i.nodeName === "DIV") {
+          i.childNodes.forEach((j) => {
+            if (j.nodeName === "DIV") {
+              if (!j.classList.contains("services__link-grid--hidden")) {
+                j.classList.add("services__link-grid--hidden");
+              }
             }
-          }
-        });
-      }
-    });
-    e.target.parentNode.parentNode.classList.toggle(
-      "services__link-grid--hidden"
-    );
+          });
+        }
+      });
+
+      e.target.parentNode.parentNode.classList.remove(
+        "services__link-grid--hidden"
+      );
+    }
   }
 });

@@ -18,6 +18,7 @@
     "minify": "npx tailwindcss -i ./src/css/input.css -o ./src/style.css --minify"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
@@ -28,6 +29,7 @@
     "*.css": "tailwindcss"
   },
   "dependencies": {
-    "swiper": "^9.0.5"
+    "swiper": "^9.0.5",
+    "tw-elements": "^1.0.0-beta1"
   }
 }

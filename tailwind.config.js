@@ -19,6 +19,13 @@ module.exports = {
       16: "16px",
     },
     extend: {
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
+      backgroundPosition: {
+        "pos-0": "0% 100%",
+        "pos-100": "100% 200%",
+      },
       transitionProperty: {
         height: "max-height",
       },
@@ -53,5 +60,11 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("tw-elements/dist/plugin"),
+  ],
 };

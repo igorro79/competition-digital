@@ -2,7 +2,7 @@
   /*=============== BLOG ============= */
 
   .blog-wrapper {
-    @apply pt-5 pb-5 md:pb-[90px] xl:pb-[138px];
+    @apply pt-12 pb-5 md:pt-5 md:pb-[90px] xl:pb-[138px];
   }
   .blog__heading-wrapper {
     @apply mb-[30px] flex justify-between xl:mb-[58px];

@@ -26,11 +26,11 @@
       xl:from-[#FF304D8F];
   }
   .person__image {
-    @apply block h-auto w-full max-w-[150px]
-     md:max-w-[240px]  xl:max-w-[390px];
+    @apply block h-auto w-full max-w-[150px]  md:max-w-[240px]
+      xl:max-w-[390px];
   }
   .person__info {
-    @apply md:flex;
+    @apply pl-[5px] pt-[10px] md:flex md:p-0;
   }
   .person__info-text-wrapper {
     @apply self-center  md:flex  md:flex-col;
@@ -44,8 +44,8 @@
   }
   .person__about {
     @apply col-start-1 col-end-3 mb-[95px] mt-9  
-     overflow-y-auto  md:col-start-auto md:col-end-auto md:mb-2 
-     md:mt-[30px] md:leading-[1.4] xl:text-[clamp(18px,1.5vw,24px)];
+     overflow-y-auto  leading-[1.4] md:col-start-auto md:col-end-auto 
+     md:mb-2 md:mt-[30px] xl:text-[clamp(18px,1.5vw,24px)];
   }
   .person__clients {
     @apply hidden leading-[1.3] md:mb-5 md:block;
@@ -68,7 +68,7 @@
       xl:row-start-1 xl:w-full xl:border-r xl:pt-[50px] xl:pr-[50px];
   }
   .person__order-text {
-    @apply mb-[30px] tracking-[0.4px] md:mb-10 md:leading-[1.4] xl:mb-[50px] xl:text-base xl:leading-[1.4];
+    @apply mb-[30px] leading-[1.4] tracking-[0.4px] md:mb-10 xl:mb-[50px] xl:text-base xl:leading-[1.4];
   }
   .main-btn.person__main-btn {
     @apply font-normal leading-[1.3] tracking-[0.16px];
