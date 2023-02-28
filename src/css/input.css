@@ -4,6 +4,9 @@
 @import "./hero.css";
 @import "./video.css";
 @import "./cases.css";
+@import "./case-page.css";
+
+
 @import "./services.css";
 @import "./services-page.css";
 
@@ -19,7 +22,11 @@
 @import "./contacts-page.css";
 
 @tailwind base;
+
+
 @tailwind components;
+
+
 @tailwind utilities;
 
 :root {
