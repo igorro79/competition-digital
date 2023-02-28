@@ -1,0 +1,13 @@
+/*
+.case{
+    @apply   relative overflow-hidden bg-dark pt-[9px] pb-[25px] text-white lg:pt-[8px] lg:pb-[100px] xl:pb-[73px]  ;
+} 
+*/
+
+/*@layer components {
+.website-cookies{
+    @apply  hidden xl:block  ;
+}
+
+}
+*/
