@@ -20,12 +20,14 @@ const linkListBack = document.querySelector(".link__list-back-btn");
 
 const letsTalkBtn = document.querySelector(".lets-talk-btn");
 const bigRedBtn = document.querySelector(".big-red-btn");
-const closeFormBtn = document.querySelector(".btn-colse-form");
+const closeFormBtn = document.querySelector(".btn-close-form");
 
 const personOrderBtn = document.querySelector(".person__main-btn");
 const whoOrderBtn = document.querySelector(".who__main-btn");
 
-const dynamicForm = document.querySelector(".dynamic-form-wrapper");
+const mainForm = document.getElementById("main-form");
+const dynForm = document.getElementById("dynamic-form");
+const dynamicFormWrapper = document.querySelector(".dynamic-form-wrapper");
 const dynamicFormBtn = document.querySelector(".submit-dynamic-js");
 const mainFormBtn = document.querySelector(".submit-js");
 const successSend = document.querySelector(".success-wrapper");
@@ -76,10 +78,12 @@ navServices.addEventListener("mouseenter", () => {
   openServiceListHover();
 });
 navServices.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    if (!linkList.matches(":hover") && !navServices.matches(":hover"))
-      hideServiceList();
-  }, 1000);
+  if (!navMenu.classList.contains("active")) {
+    setTimeout(() => {
+      if (!linkList.matches(":hover") && !navServices.matches(":hover"))
+        hideServiceList();
+    }, 1000);
+  }
 });
 
 linkList.addEventListener("mouseleave", () => {
@@ -119,11 +123,16 @@ themeBtnGroup.addEventListener("click", (e) => {
 // -----dynamic form ------
 
 function openForm() {
-  dynamicForm.classList.add("modal-container-active");
+  dynamicFormWrapper.classList.add("modal-container-active");
   lockBody();
+  // dynForm.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   console.log(e);
+  //   // console.log(data);
+  // });
 }
 function closeForm() {
-  dynamicForm.classList.remove("modal-container-active");
+  dynamicFormWrapper.classList.remove("modal-container-active");
   body.classList.remove("lock-body");
 }
 letsTalkBtn.addEventListener("click", () => {
@@ -140,7 +149,6 @@ function openBurger() {
   navMenu.classList.add("active");
   burgerBtnOpen.classList.add("hidden");
   burgerBtnClose.classList.remove("hidden");
-
   lockBody();
 
   navMenu.classList.add("red-gradient");
@@ -162,24 +170,69 @@ burgerBtnOpen.addEventListener("click", openBurger);
 burgerBtnClose.addEventListener("click", closeBurger);
 
 // ----- on form submit ------
-mainFormBtn.addEventListener("click", onSubmit);
-dynamicFormBtn.addEventListener("click", onSubmit);
+
+mainForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(document.getElementById("main-name").value);
+  console.log(document.getElementById("main-email").value);
+  console.log(document.getElementById("main-phone").value);
+  console.log(document.getElementById("main-message").value);
+  console.log(document.getElementById("main-company").value);
+
+  header.addEventListener("click", closeSuccess);
+  setTimeout(() => {
+    header.style.visibility = "visible";
+    header.style.opacity = 1;
+    if (!body.classList.contains("lock-body")) body.classList.add("lock-body");
+    successSend.classList.add("success-wrapper-active");
+
+    dynamicFormWrapper.classList.remove("modal-container-active");
+  }, 500);
+});
+
+dynForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const checked = new Array(
+    ...document.querySelectorAll(`[type='checkbox']:checked`)
+  );
+  const interests = checked.map((i) => i.value);
+
+  const formData = new FormData();
+
+  formData.append("interests", interests);
+  formData.append("name", document.getElementById("dynamic-form-name").value);
+  formData.append("email", document.getElementById("dynamic-form-email").value);
+  formData.append("phone", document.getElementById("dynamic-form-phone").value);
+  formData.append(
+    "message",
+    document.getElementById("dynamic-form-message").value
+  );
+  formData.append(
+    "company",
+    document.getElementById("dynamic-form-company").value
+  );
+
+  for (var key of formData.entries()) {
+    console.log(key[0] + ", " + key[1]);
+  }
+  header.addEventListener("click", closeSuccess);
+  setTimeout(() => {
+    header.style.visibility = "visible";
+    header.style.opacity = 1;
+    if (!body.classList.contains("lock-body")) body.classList.add("lock-body");
+    successSend.classList.add("success-wrapper-active");
+
+    dynamicFormWrapper.classList.remove("modal-container-active");
+  }, 500);
+});
 
 function closeSuccess() {
   successSend.classList.remove("success-wrapper-active");
   body.classList.remove("lock-body");
   header.removeEventListener("click", closeSuccess);
+  mainForm.reset();
+  dynForm.reset();
 }
-function onSubmit() {
-  header.addEventListener("click", closeSuccess);
-  setTimeout(() => {
-    header.style.visibility = "visible";
-    header.style.opacity = 1;
-    successSend.classList.add("success-wrapper-active");
-    dynamicForm.classList.remove("modal-container-active");
-  }, 500);
-}
-
 // ----- on window resize ------
 
 window.addEventListener("resize", () => {

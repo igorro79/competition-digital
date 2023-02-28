@@ -2,18 +2,18 @@
   /*=============== SERVICES ============= */
 
   .services-wrapper {
-    @apply lg:pt-[90px] lg:pb-[110px]  pt-[6.5rem] pb-10;
+    @apply pt-[6.5rem] pb-10  lg:pt-[90px] lg:pb-[110px];
   }
 
   .services__heading {
-    @apply lg:mb-10 mb-[30px] xl:mb-[50px];
+    @apply mb-[30px] lg:mb-10 xl:mb-[50px];
   }
   .services__description {
-    @apply lg:mb-[50px] lg:pt-10 lg:leading-[1.4]  mb-10 pt-[30px] leading-[1.4] xl:mb-[50px] xl:pt-[50px] xl:pr-[50px] xl:leading-[1.4];
+    @apply mb-10 pt-[30px] leading-[1.4]  lg:mb-[50px] lg:pt-10 lg:leading-[1.4] xl:mb-[50px] xl:pt-[50px] xl:pr-[50px] xl:leading-[1.4];
   }
   .services__cards-list {
-    @apply lg:grid lg:grid-flow-col lg:grid-cols-[51%_49%] lg:grid-rows-[repeat(5,auto)]
-     border-middleGrey xl:border-t  xl:pt-[70px];
+    @apply border-middleGrey lg:grid lg:grid-flow-col lg:grid-cols-[51%_49%]
+     lg:grid-rows-[repeat(5,auto)] xl:border-t  xl:pt-[70px];
   }
   .services__card {
     @apply text-black dark:text-white;
@@ -58,33 +58,33 @@
      border-b-middleGrey text-2xl font-bold leading-[26.4px] xl:pt-[60px] xl:pb-10;
   }
   .services__card-title {
-    @apply lg:pointer-events-none lg:cursor-default  lg:py-[30px] cursor-pointer  py-5 text-2xl font-bold
-     leading-[1.1] transition-all xl:py-0 xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
+    @apply cursor-pointer py-5  text-2xl font-bold  leading-[1.1] transition-all lg:pointer-events-none
+     lg:cursor-default lg:py-[30px] xl:py-0 xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
   }
   .animated-hover-container:hover .services__card-title {
     @apply text-main;
   }
 
   .services__card-content-wrapper {
-    @apply lg:relative lg:max-h-full lg:overflow-visible flex max-h-0
-     flex-col overflow-hidden transition-height duration-500 ease-in-out;
+    @apply flex max-h-0 flex-col overflow-hidden transition-height
+     duration-500 ease-in-out lg:relative lg:max-h-full lg:overflow-visible;
   }
 
   .services__card-text {
-    @apply lg:mb-0 lg:pb-[30px] mb-10 max-h-min pt-5  xl:pb-[50px] xl:pt-10 xl:leading-[1.5];
+    @apply mb-10 max-h-min pt-5 lg:mb-0 lg:pb-[30px]  xl:pb-[50px] xl:pt-10 xl:leading-[1.5];
   }
   .services__card-image-container {
-    @apply lg:row-start-1 lg:mt-0  mt-10 max-h-min;
+    @apply mt-10 max-h-min  lg:row-start-1 lg:mt-0;
   }
   .services__card-image-wrapper {
-    @apply lg:mx-0 relative mx-auto min-w-[216px] max-w-[216px]
-      rounded-full bg-lightGrey  xl:max-w-[clamp(216px,15vw,355px)];
+    @apply relative mx-auto h-[216px] min-w-[216px] max-w-[216px] rounded-full
+      bg-lightGrey lg:mx-0 xl:h-[clamp(216px,15vw,355px)] xl:max-w-[clamp(216px,15vw,355px)];
   }
   .services__card-image {
     @apply absolute  top-1/2 left-1/2  mx-auto w-[130%] 
     max-w-none translate-y-[-50%] translate-x-[-50%];
   }
   .main-btn.services__main-btn {
-    @apply lg:mt-14 lg:flex hidden xl:ml-0 xl:mt-0;
+    @apply hidden lg:mt-14 lg:flex xl:ml-0 xl:mt-0;
   }
 }

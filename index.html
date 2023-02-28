@@ -3153,18 +3153,21 @@
           <h2 class="heading2 form__title form__title--full">
             Let's promote your business
           </h2>
-          <form class="form__contact-form form__contact-form--full">
+          <form
+            id="main-form"
+            class="form__contact-form form__contact-form--full"
+          >
             <div class="form__grid">
-              <div class="form__inputGroup-wrapper invalid">
+              <div class="form__inputGroup-wrapper">
                 <div class="form__inputGroup">
                   <input
                     class="input--full"
-                    id="name"
+                    id="main-name"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="name">Your name?*</label>
+                  <label for="main-name">Your name?*</label>
                 </div>
                 <p class="error">Please enter name</p>
               </div>
@@ -3172,12 +3175,12 @@
                 <div class="form__inputGroup">
                   <input
                     class="input--full"
-                    id="email"
+                    id="main-email"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="email">Your e-mail?*</label>
+                  <label for="main-email">Your e-mail?*</label>
                 </div>
                 <p class="error">The email is in the wrong format</p>
               </div>
@@ -3185,12 +3188,12 @@
                 <div class="form__inputGroup">
                   <input
                     class="input--full"
-                    id="phone"
+                    id="main-phone"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="phone">Phone number*</label>
+                  <label for="main-phone">Phone number*</label>
                 </div>
                 <p class="error">The phone is in the wrong format</p>
               </div>
@@ -3198,24 +3201,24 @@
                 <div class="form__inputGroup">
                   <input
                     class="input--full"
-                    id="company"
+                    id="main-company"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="company">Company*</label>
+                  <label for="main-company">Company*</label>
                 </div>
                 <p class="error">Please enter company name</p>
               </div>
 
               <div class="form__inputGroup form__item--full">
                 <input
-                  id="message"
+                  id="main-message"
                   type="text"
                   required=""
                   autocomplete="off"
                 />
-                <label for="message">Tell us about your project</label>
+                <label for="main-message">Tell us about your project</label>
               </div>
             </div>
 
@@ -3563,7 +3566,7 @@
     <div class="modal-container dynamic-form-wrapper">
       <div class="form dynamic-form">
         <div class="form__wrapper form__wrapper--dynamic custom-container">
-          <button class="btn-colse-form" type="button" aria-label="close form">
+          <button class="btn-close-form" type="button" aria-label="close form">
             <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
               <path
                 d="M2.45459 0.5L27.0001 25.0455L24.5455 27.5L4.12164e-05 2.95455L2.45459 0.5Z"
@@ -3583,54 +3586,93 @@
           </p>
           <div class="form__filter-wrapper"></div>
           <p class="form__filter-title">I am interested in</p>
-          <form class="form__contact-form">
-            <fieldset class="form__filter-list">
+          <form id="dynamic-form" class="form__contact-form">
+            <fieldset id="dynamic-form-fieldset" class="form__filter-list">
               <input
                 value="branding"
-                type="radio"
+                type="checkbox"
                 id="radio1"
-                name="radios"
-                checked
+                name="interested"
               />
               <label for="radio1" class="filter__btn filter__btn-form">
                 Brandign</label
               >
-              <input value="branding" type="radio" id="radio2" name="radios" />
+              <input
+                value="Web design"
+                type="checkbox"
+                id="radio2"
+                name="interested"
+              />
               <label for="radio2" class="filter__btn filter__btn-form">
                 Web design
               </label>
 
-              <input value="branding" type="radio" id="radio3" name="radios" />
+              <input
+                value="seo"
+                type="checkbox"
+                id="radio3"
+                name="interested"
+              />
               <label for="radio3" class="filter__btn filter__btn-form"
                 >seo</label
               >
 
-              <input value="branding" type="radio" id="radio4" name="radios" />
+              <input
+                value="DIGITAL MARKETING"
+                type="checkbox"
+                id="radio4"
+                name="interested"
+              />
               <label for="radio4" class="filter__btn filter__btn-form">
                 DIGITAL MARKETING
               </label>
 
-              <input value="branding" type="radio" id="radio5" name="radios" />
+              <input
+                value="ppc"
+                type="checkbox"
+                id="radio5"
+                name="interested"
+              />
               <label for="radio5" class="filter__btn filter__btn-form"
                 >ppc</label
               >
 
-              <input value="branding" type="radio" id="radio6" name="radios" />
+              <input
+                value="TikTok"
+                type="checkbox"
+                id="radio6"
+                name="interested"
+              />
               <label for="radio6" class="filter__btn filter__btn-form"
                 >TikTok</label
               >
 
-              <input value="branding" type="radio" id="radio7" name="radios" />
+              <input
+                value="VIDEO MOTION"
+                type="checkbox"
+                id="radio7"
+                name="interested"
+              />
               <label for="radio7" class="filter__btn filter__btn-form">
                 VIDEO MOTION
               </label>
 
-              <input value="branding" type="radio" id="radio8" name="radios" />
+              <input
+                value="MOBILE PROMOTION"
+                type="checkbox"
+                id="radio8"
+                name="interested"
+              />
               <label for="radio8" class="filter__btn filter__btn-form">
                 MOBILE PROMOTION
               </label>
 
-              <input value="branding" type="radio" id="radio9" name="radios" />
+              <input
+                value="smm"
+                type="checkbox"
+                id="radio9"
+                name="interested"
+              />
               <label for="radio9" class="filter__btn filter__btn-form"
                 >smm</label
               >
@@ -3640,12 +3682,12 @@
                 <div class="form__inputGroup">
                   <input
                     class="input-full"
-                    id="name-mob"
+                    id="dynamic-form-name"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="name-mob">Your name?*</label>
+                  <label for="dynamic-form-name">Your name?*</label>
                 </div>
                 <p class="error">Please enter name</p>
               </div>
@@ -3653,12 +3695,12 @@
                 <div class="form__inputGroup">
                   <input
                     class="input-full"
-                    id="email-mob"
+                    id="dynamic-form-email"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="email-mob">Your e-mail?*</label>
+                  <label for="dynamic-form-email">Your e-mail?*</label>
                 </div>
                 <p class="error">The email is in the wrong format</p>
               </div>
@@ -3666,31 +3708,31 @@
                 <div class="form__inputGroup">
                   <input
                     class="input-full"
-                    id="phone-mob"
+                    id="dynamic-form-phone"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="phone-mob">Phone number*</label>
+                  <label for="dynamic-form-phone">Phone number*</label>
                 </div>
                 <p class="error">The phone is in the wrong format</p>
               </div>
               <div class="form__inputGroup-wrapper">
                 <div class="form__inputGroup">
                   <input
-                    id="company-mob"
+                    id="dynamic-form-company"
                     type="text"
                     required
                     autocomplete="off"
                   />
-                  <label for="company-mob">Company*</label>
+                  <label for="dynamic-form-company">Company*</label>
                 </div>
                 <p class="error">Please enter company name</p>
               </div>
 
               <div class="form__inputGroup form__item--full">
                 <input
-                  id="message-mob"
+                  id="dynamic-form-message"
                   type="text"
                   required=""
                   autocomplete="off"
