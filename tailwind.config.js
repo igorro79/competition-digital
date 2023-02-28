@@ -8,10 +8,10 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    // container: {
-    //   center: true,
-    //   padding: "20px",
-    // },
+    container: {
+      center: true,
+      padding: "20px",
+    },
     screens: {
       sm: "360px",
       //=> @media (min-width: 360px) { ... }
