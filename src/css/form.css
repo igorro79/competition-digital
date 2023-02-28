@@ -164,7 +164,7 @@
   }
 
   /* --------- close contact form button -------- */
-  .btn-colse-form {
+  .btn-close-form {
     @apply ml-auto mb-[5px] block rounded-[50px] border-[1px] border-middleGrey bg-dark
     px-4 py-[10px] hover:border-light hover:bg-light hover:text-dark active:border-light
       active:bg-light active:text-dark xl:px-7;
