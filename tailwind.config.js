@@ -5,9 +5,31 @@ module.exports = {
   content: ["./index.html"],
   darkMode: "class",
   theme: {
+    // container: {
+    //   center: true,
+    //   padding: "20px",
+    // },
     screens: {
-      md: "820px",
+      sm: "360px",
+      //=> @media (min-width: 360px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "820px",
+      // => @media (min-width: 820px) { ... }
+
       xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "1xl": "1366px",
+      // => @media (min-width: 1366px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+
+      "3xl": "1920px",
+      // => @media (min-width: 1920px) { ... }
     },
 
     backgroundSize: {
@@ -19,6 +41,20 @@ module.exports = {
       16: "16px",
     },
     extend: {
+      scale: {
+        79: ".79",
+        121: "1.21",
+        126: "1.26",
+        130: "1.30",
+        175: "1.75",
+      },
+      padding: {
+        "1/3": "33.33333%",
+        "2/3": "66.66666%",
+      },
+      // aspectRatio: {
+      //   '4/3': '4 / 3',
+      // },
       backgroundSize: {
         "size-200": "200% 200%",
       },
@@ -32,7 +68,17 @@ module.exports = {
       gridTemplateColumns: {
         "3fr": "repeat(3, minmax(min-content, 1fr))",
       },
+      // backgroundImage: (theme) => ({
+      //   "ellipse-mobile": "url('/img/gradient/Ellipse-hero-mobile.png')",
+      //   "ellipse-tablet": "url('/img/gradient/Ellipse-hero-tablet.png')",
+      //   "ellipse-desctop": "url('/img/gradient/Ellipse-hero-desktop.png')",
+      //   "gradient-mobile": "url('/img/content/gradient-mobile.png')",
+      //   "ellipse-form-mobile": "url('/img/gradient/Ellipse-form-mobile.png')",
+      //   "ellipse-form-tablet": "url('/img/gradient/Ellipse-form-tablet.png')",
+      //   "ellipse-form-desktop": "url('/img/gradient/Ellipse-form-desktop.png')",
 
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      // }),
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 
@@ -47,16 +93,52 @@ module.exports = {
         dark: "#171717",
         grey: "#323232",
         lightGrey: "#e0e0e0",
+        lightDarkGrey: "#909090",
         middleGrey: "#919191",
         lightRed: "#ff445e",
         darkGrey: "#474747",
         activeRed: "#dc2d45",
+        gradientMain: "#FF304D",
+
         link: "#4B73FF",
         linkActive: "#86A1FF",
         formBg: "#EEEEEE",
         formBgDark: "#202020",
         dynamicBg: "#FF304DB2",
         langBg: "#262626",
+
+        // ===colors-02=====
+        bgColor: "#171717",
+        bgColorGrey: "#f8f8f8",
+        bgColorMenuTablet: "#ff304d",
+        bgColorMain: "#ff304d",
+        bgColorBtnForm: "#535353",
+        // bgDarkMode: '#3E3E3E',
+
+        // ====== text ======
+        mainTextWhite: "#ffffff",
+        mainTextLight: "#f8f8f8",
+        mainTextLightGrey: "#919191",
+        mainTextBlack: "#000000",
+        mainTextDark: "#171717",
+        mainTextRed: "#ff304d",
+        mainTextBlue: "#6355ff",
+        mainTextBlueHeader: "#4B73FF",
+        mainTextBlueHover: "#86A1FF",
+
+        // // ====== btn ======
+        bgButtonMain: "#ff304d",
+        bgButtonDarkGrey: "#474747",
+        bgButtonGrey: "#f8f8f8",
+
+        // ====== slider btn ======
+        sliderButtonGrey: "#919191",
+        sliderButtonActive: "#FF304D",
+
+        // ====== border ======
+        borderBottom: "#919191",
+        borderBtn: "#ff304d",
+        underlineRed: "#ff304d",
       },
     },
   },

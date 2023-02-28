@@ -7,17 +7,17 @@
   }
 
   .header__container {
-    @apply mx-auto flex h-[var(--header-h)] max-w-[1920px] items-center  md:h-[var(--header-h-md)]  xl:h-[var(--header-h-xl)];
+    @apply lg:h-[var(--header-h-md)] mx-auto flex h-[var(--header-h)] max-w-[1920px]  items-center  xl:h-[var(--header-h-xl)];
   }
   .header__wrapper {
     @apply relative flex w-full items-center;
   }
   /* ----------logo------------- */
   .header__logo {
-    @apply mr-[44px] text-white md:mr-[53px];
+    @apply lg:mr-[53px] mr-[44px] text-white;
   }
   .header__logo svg {
-    @apply h-10   md:h-12 xl:h-[52px];
+    @apply lg:h-12   h-10 xl:h-[52px];
   }
   /* --------------theme btn----------- */
   .btn-theme-group {
@@ -32,16 +32,16 @@
     @apply fixed top-0 right-0 z-[5] h-full w-0 bg-dynamicBg blur-[25px] transition-all;
   }
   .dynamic-bg.active {
-    @apply md:w-full;
+    @apply lg:w-full;
   }
   .nav {
-    @apply fixed top-[var(--header-h)] right-0 h-screen  w-0 
-    bg-dark transition-all md:top-[var(--header-h-md)]  xl:static xl:top-[var(--header-h-xl)] xl:mx-auto
+    @apply lg:top-[var(--header-h-md)] fixed top-[var(--header-h)] right-0  h-screen 
+    w-0 bg-dark transition-all  xl:static xl:top-[var(--header-h-xl)] xl:mx-auto
      xl:flex xl:h-auto xl:w-auto xl:items-center xl:justify-between;
   }
   .nav.active {
-    @apply grid h-[calc(100vh-var(--header-h))] w-full grid-rows-[auto_550px_1fr]
-     overflow-y-auto px-5 md:h-[calc(100vh-var(--header-h-md))]  md:px-[30px] 
+    @apply lg:h-[calc(100vh-var(--header-h-md))] lg:px-[30px] grid h-[calc(100vh-var(--header-h))]
+     w-full grid-rows-[auto_550px_1fr] overflow-y-auto  px-5 
     xl:z-[8]  xl:h-[calc(100vh-var(--header-h-xl))] xl:w-auto xl:px-0;
   }
 
@@ -62,11 +62,11 @@
 
   .nav__list-item a,
   .nav__list-item button {
-    @apply bottom-0 uppercase transition-all
-       after:h-px after:w-0 after:bg-middleGrey 
-     after:transition-all  after:content-[''] hover:text-middleGrey
-      hover:after:w-full  active:text-main active:after:bg-main
-       md:after:block;
+    @apply lg:after:block bottom-0 uppercase
+       transition-all after:h-px after:w-0 
+     after:bg-middleGrey  after:transition-all after:content-['']
+      hover:text-middleGrey  hover:after:w-full active:text-main
+       active:after:bg-main;
   }
 
   .nav__link-services {
@@ -81,9 +81,9 @@
   }
 
   .link__list {
-    @apply absolute top-[140px] left-full flex w-full flex-col gap-5
-     bg-transparent px-5 pt-5 text-base uppercase transition-all md:px-[32px]
-     md:pt-10;
+    @apply lg:px-[32px] lg:pt-10 absolute top-[140px] left-full flex w-full
+     flex-col gap-5 bg-transparent px-5 pt-5 text-base uppercase
+     transition-all;
   }
   .link__list-full {
     @apply z-[3] transition-all xl:left-1/2 xl:top-[60px] xl:grid 
@@ -121,14 +121,14 @@
   /* -----------lets talk btn------------- */
 
   .lets-talk-btn {
-    @apply mr-[34px] ml-auto flex min-h-[40px] min-w-[40px] items-center
-    justify-center rounded-[60px] border-[1px] border-main bg-main uppercase
+    @apply lg:mr-10 lg:gap-[16px] lg:px-6 lg:py-[10px] mr-[34px] ml-auto
+    flex min-h-[40px] min-w-[40px] items-center justify-center rounded-[60px]
+    border-[1px] border-main bg-main uppercase
     text-white transition-all hover:border-white hover:bg-white
-    hover:text-dark active:border-main active:bg-white active:text-main
-   md:mr-10 md:gap-[16px] md:px-6 md:py-[10px] xl:mr-[32px] xl:ml-5 xl:gap-5 xl:rounded-[60px] xl:py-3 xl:px-[25px];
+   hover:text-dark active:border-main active:bg-white active:text-main xl:mr-[32px] xl:ml-5 xl:gap-5 xl:rounded-[60px] xl:py-3 xl:px-[25px];
   }
   .lets-talk-btn__text {
-    @apply hidden md:block;
+    @apply lg:block hidden;
   }
   .lets-talk-btn__text svg {
     @apply h-4 w-4;
@@ -136,7 +136,7 @@
   /* -----------language btn------------- */
 
   .btn-language-group-mob {
-    @apply flex items-center gap-10 border-b border-middleGrey pt-[33px] pb-[30px] text-middleGrey md:pt-[50px] xl:hidden;
+    @apply lg:pt-[50px] flex items-center gap-10 border-b border-middleGrey pt-[33px] pb-[30px] text-middleGrey xl:hidden;
   }
   .btn-language-wrapper {
     @apply rounded p-[10px];

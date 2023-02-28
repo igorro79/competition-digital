@@ -1,6 +1,6 @@
 @layer components {
   .who__wrapper {
-    @apply pb-[60px] md:pb-[56px]  xl:pb-[160px];
+    @apply lg:pb-[56px] pb-[60px]  xl:pb-[160px];
   }
 
   .who__who-content {
@@ -11,17 +11,17 @@
     @apply pt-[30px] pb-10 xl:flex xl:pt-[50px]  xl:pl-[50px];
   }
   .who__who-label {
-    @apply mb-5 text-sm font-bold uppercase text-middleGrey md:mb-[30px]
-     md:text-base xl:mr-[clamp(50px,5vw,90px)] xl:min-w-[150px];
+    @apply lg:mb-[30px] lg:text-base mb-5 text-sm font-bold uppercase
+     text-middleGrey xl:mr-[clamp(50px,5vw,90px)] xl:min-w-[150px];
   }
   .who__who-text {
-    @apply text-xl text-white md:indent-[5.5rem] xl:indent-[clamp(80px,7vw,130px)]
+    @apply lg:indent-[5.5rem] text-xl text-white xl:indent-[clamp(80px,7vw,130px)]
      xl:text-[clamp(16px,2vw,2rem)] xl:leading-[1.4];
   }
   /* -----------who__who-cards------- */
   .who__who-card-list {
-    @apply text-xl  text-white md:grid md:grid-flow-col md:grid-cols-2 
-     md:grid-rows-2;
+    @apply lg:grid  lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-2 text-xl 
+     text-white;
   }
   .who__who-card-list .who__who-card-item {
     @apply xl:py-[clamp(20px,3vw,50px)] xl:px-[clamp(20px,3vw,50px)];
@@ -30,18 +30,18 @@
     @apply border-t border-middleGrey  py-[30px];
   }
   .who__who-card-item:nth-child(-n + 2) {
-    @apply md:border-r md:border-middleGrey md:pr-5 xl:pr-[50px];
+    @apply lg:border-r lg:border-middleGrey lg:pr-5 xl:pr-[50px];
   }
   .who__who-card-item:nth-child(n + 3) {
-    @apply md:pl-[30px] xl:pl-[50px];
+    @apply lg:pl-[30px] xl:pl-[50px];
   }
   .who__who-card-item-label {
-    @apply mb-4 text-base font-bold leading-[1.3] md:text-[18px] md:font-medium md:leading-6 xl:text-2xl;
+    @apply lg:text-[18px] lg:font-medium lg:leading-6 mb-4 text-base font-bold leading-[1.3] xl:text-2xl;
   }
   .who__who-card-item-text {
-    @apply text-sm md:text-base;
+    @apply lg:text-base text-sm;
   }
   .main-btn.who__main-btn {
-    @apply mt-5 md:mt-[60px] xl:row-start-1 xl:mt-[50px] xl:ml-0;
+    @apply lg:mt-[60px] mt-5 xl:row-start-1 xl:mt-[50px] xl:ml-0;
   }
 }
