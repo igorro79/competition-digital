@@ -1,4 +1,4 @@
-@layer components {
+
   /*=========== ABOUT PAGE ========= */
 
   .about-page__title-wrapper {
@@ -128,4 +128,4 @@
   .about-team__plus-text {
     @apply text-xl uppercase xl:text-[32px] xl:leading-[1.5];
   }
-}
+
