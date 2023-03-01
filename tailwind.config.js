@@ -112,6 +112,14 @@ module.exports = {
         dynamicBg: "#FF304DB2",
         langBg: "#262626",
 
+        bgColorBtnForm: "#535353",
+        mainTextBlue: "#6355ff",
+        mainTextBlueHover: "#86A1FF",
+
+
+
+
+
         // ===colors-02=====
         bgColor: "#171717",
         bgColorGrey: "#f8f8f8",
