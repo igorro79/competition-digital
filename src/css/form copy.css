@@ -9,11 +9,24 @@ Form menu header
     @apply relative;
   }
 
-  /*  p-[16px] 01.03.2023*/
   /*.form-floating > label {
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+  }*/
+
+  /*  p-[16px] 01.03.2023*/
+  .form-floating > label {
     @apply pointer-events-none absolute
     top-0 left-0 h-full origin-top 
    pl-[30px]  pt-[19px] transition ease-in;
+  }
+
+  /*.form-floating > label {
+    @apply pl-[24px] pt-[19px];
+  }*/
+
+  /*.form-floating > .form-control {
+    @apply pl-[24px];
   }*/
 
   .form-floating > .form-control::placeholder {
@@ -23,7 +36,7 @@ Form menu header
   /*translateX(0.15rem)*/
   .form-floating > .form-control:focus ~ label {
     opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.4rem);
+    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
   }
 
   /*=============*/
@@ -42,14 +55,87 @@ Form menu header
     top: 0;
     left: 0;
     height: 100%;
-    padding: 21px 0 24px 29px;
-
+    padding: 1rem 0.75rem;
     pointer-events: none;
     border: 1px solid transparent;
     transform-origin: 0 0;
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   }
   /*=============*/
+
+  /*.form-floating > .form-control:focus ~ label {
+    @apply origin-top   opacity-60;
+  }*/
+
+  /*.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
+  }*/
+
+  /*.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
+  }*/
+
+  /*.form-floating > .form-select ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
+  }*/
+
+  /*.form-floating > .form-select ~ label {
+    @apply origin-top   opacity-60;
+  }*/
+
+  /*.form-floating {
+    position: relative;
+  }*/
+
+  /*.form-floating > .form-control {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    padding: 1rem 0.75rem;
+  }*/
+
+  /*.form-floating > .form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+  }*/
+
+  /* .form-floating > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }*/
+
+  /*.form-floating > .form-control::-moz-placeholder {
+    color: transparent;
+  }*/
+
+  /*.form-floating > .form-control:focus {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }*/
+
+  /*.form-floating > .form-control:not(:-moz-placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }*/
+
+  /*.form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }*/
+
+  /*.form-floating > .form-control:-webkit-autofill {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }*/
 
   /*==============================
     form-end 
