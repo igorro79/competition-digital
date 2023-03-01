@@ -7,9 +7,9 @@ const wrapper = document.querySelector(".wrapper");
 const mode = document.querySelector("#mode");
 const darkBtn = document.querySelector("#darkBtn");
 const lightBtn = document.querySelector("#lightBtn");
-const mode_02 = document.querySelector("#mode_02");
-const darkBtn_02 = document.querySelector("#darkBtn_02");
-const lightBtn_02 = document.querySelector("#lightBtn_02");
+// const mode_02 = document.querySelector("#mode_02");
+// const darkBtn_02 = document.querySelector("#darkBtn_02");
+// const lightBtn_02 = document.querySelector("#lightBtn_02");
 
 const bgWrapper = document.querySelector(".wrapper");
 
@@ -29,7 +29,7 @@ const btnServices = document.querySelector("#btnServices");
 const backMenuServices = document.querySelector("#backMenuServices");
 
 const backdrop_01 = document.getElementById("backdrop_01");
-// const btnContact = document.getElementById('btnContact');
+
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
 
@@ -118,7 +118,7 @@ window.addEventListener("scroll", toggleHeader);
 /**
  * Toggle dark mode.
  */
-console.log(document);
+
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 
 if (
@@ -177,31 +177,31 @@ if (
   document.documentElement.classList.remove("dark");
 }
 
-const modeBtn_02 = document.querySelector("#mode_02");
+// const modeBtn_02 = document.querySelector("#mode_02");
 
-modeBtn_02.addEventListener("click", () => {
-  document.querySelector("html").classList.toggle("dark");
+// modeBtn_02.addEventListener("click", () => {
+//   document.querySelector("html").classList.toggle("dark");
 
-  if (document.querySelector("html").classList.contains("dark")) {
-    localStorage.theme = "dark";
-  } else {
-    localStorage.theme = "light";
-  }
-});
+//   if (document.querySelector("html").classList.contains("dark")) {
+//     localStorage.theme = "dark";
+//   } else {
+//     localStorage.theme = "light";
+//   }
+// });
 
 /**
  * Replaces button dark mode to light mode.
  */
 
-function darkModeMobile() {
-  mode_02.addEventListener("click", () => {
-    darkBtn_02.classList.toggle("hidden");
+// function darkModeMobile() {
+//   mode_02.addEventListener("click", () => {
+//     darkBtn_02.classList.toggle("hidden");
 
-    lightBtn_02.classList.toggle("hidden");
-    // menu.classList.toggle('flex');
-  });
-}
-darkModeMobile();
+//     lightBtn_02.classList.toggle("hidden");
+//     // menu.classList.toggle('flex');
+//   });
+// }
+// darkModeMobile();
 
 /**
  * Added overflow-hidden to the wrapper.
@@ -211,203 +211,195 @@ darkModeMobile();
  * Opens a menu.
  */
 
-function burgerMenu() {
-  //  logo to the open menu
-  // const logoOpacity = document.querySelector('#logo-opacity');
+//  logo to the open menu
+// const logoOpacity = document.querySelector('#logo-opacity');
 
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("is-active");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("is-active");
+  wrapper.classList.toggle("h-screen");
+  menu.classList.toggle("hidden");
 
-    menu.classList.toggle("hidden");
-
-    // if(bgWrapper.classList.contains('overflow')){
-    //   return ;
-    // }
-
-    if (burger.classList.contains("is-active")) {
-      bgWrapper.classList.add("overflow");
-    } else if (!burger.classList.contains("is-active")) {
-      bgWrapper.classList.remove("overflow");
-    }
-
-    /**
-     * Added overflow-hidden to the wrapper
-     */
-
-    //  bgWrapper.classList.toggle('overflow');
-
-    //  console.log('is-active');
-    // bgWrapper.classList.add('overflow');
-    // if(!'is-active') {
-    //   // return
-    //   bgWrapper.classList.remove('overflow');
-    // }else{
-    //   bgWrapper.classList.toggle('overflow');
-    // }
-
-    /**
-     * Remove overflow-hidden to the wrapper
-     */
-    //  bgWrapper.classList.remove('overflow');
-
-    /**
-     * Closes back menu services.
-     */
-    // Якщо відкрите меню сервісів,
-    //потрібно додати клас хіден
-
-    if (servicesModal.classList !== "hidden") {
-      servicesModal.classList.add("hidden");
-
-      servicesMenu.classList.remove("hidden");
-    }
-    /**
-     * Close a popup -sent- form header.
-     */
-
-    if (popupForms.classList !== "hidden") {
-      popupForms.classList.add("hidden");
-    }
-
-    /**
-     * Opacity logo to the open menu.
-     */
-    //  if(burger.classList === 'is-active'){
-    //   logoOpacity.classList.add('opacity');
-    // }
-  });
-
+  // if(bgWrapper.classList.contains('overflow')){
+  //   return ;
+  // }
+  // ------------------------------------------------------------ igor >
+  // if (burger.classList.contains("is-active")) {
+  //   bgWrapper.classList.add("overflow");
+  // } else if (!burger.classList.contains("is-active")) {
+  //   bgWrapper.classList.remove("overflow");
+  // }
+  // ------------------------------------------------------------ igor <
   /**
-   * Close a menu tablet.
+   * Added overflow-hidden to the wrapper
    */
 
-  closeMenuTablet.addEventListener("click", () => {
-    burger.classList.toggle("is-active");
+  //  bgWrapper.classList.toggle('overflow');
 
-    menu.classList.toggle("hidden");
+  //  console.log('is-active');
+  // bgWrapper.classList.add('overflow');
+  // if(!'is-active') {
+  //   // return
+  //   bgWrapper.classList.remove('overflow');
+  // }else{
+  //   bgWrapper.classList.toggle('overflow');
+  // }
 
-    /**
-     * Remove overflow-hidden to the wrapper
-     */
-    bgWrapper.classList.remove("overflow");
-  });
-}
-burgerMenu();
+  /**
+   * Remove overflow-hidden to the wrapper
+   */
+  //  bgWrapper.classList.remove('overflow');
+
+  /**
+   * Closes back menu services.
+   */
+  // Якщо відкрите меню сервісів,
+  //потрібно додати клас хіден
+  // ------------------------------------------------------------ igor >
+  // if (servicesModal.classList !== "hidden") {
+  //   servicesModal.classList.add("hidden");
+
+  //   servicesMenu.classList.remove("hidden");
+  // }
+  // ------------------------------------------------------------ igor <
+  /**
+   * Close a popup -sent- form header.
+   */
+  // ------------------------------------------------------------ igor>
+  // if (popupForms.classList !== "hidden") {
+  //   popupForms.classList.add("hidden");
+  // }
+  // ------------------------------------------------------------ igor<
+  /**
+   * Opacity logo to the open menu.
+   */
+  //  if(burger.classList === 'is-active'){
+  //   logoOpacity.classList.add('opacity');
+  // }
+});
+
+/**
+ * Close a menu tablet.
+ */
+
+closeMenuTablet.addEventListener("click", () => {
+  burger.classList.toggle("is-active");
+  wrapper.classList.remove("h-screen");
+  menu.classList.toggle("hidden");
+
+  /**
+   * Remove overflow-hidden to the wrapper
+   */
+  bgWrapper.classList.remove("overflow");
+});
 
 /**
  * Opens a menu services.
  */
 
-function servicesMenuFn() {
-  btnServices.addEventListener("click", () => {
-    servicesMenu.classList.toggle("hidden");
+btnServices.addEventListener("click", () => {
+  servicesMenu.classList.toggle("hidden");
 
-    servicesModal.classList.toggle("hidden");
-    // menu.classList.toggle('flex');
-  });
-}
-servicesMenuFn();
+  servicesModal.classList.toggle("hidden");
+  // menu.classList.toggle('flex');
+});
 
 /**
  * Back a menu services.
  */
 
-function backMenuServicesFn() {
-  backMenuServices.addEventListener("click", () => {
-    servicesMenu.classList.toggle("hidden");
+backMenuServices.addEventListener("click", () => {
+  servicesMenu.classList.toggle("hidden");
 
-    servicesModal.classList.toggle("hidden");
-  });
-}
-backMenuServicesFn();
+  servicesModal.classList.toggle("hidden");
+});
 
 /**
  * Opens a menu form mobile.
  */
 
-function formMenuFn() {
-  // btnContact.addEventListener('click', () => {
-  //   formMenu.classList.toggle('hidden');
+// function formMenuFn() { -------------------------------------kill fn()
+// btnContact.addEventListener('click', () => {
+//   formMenu.classList.toggle('hidden');
 
-  //   burger.classList.toggle('is-active');
-  //   menu.classList.toggle('hidden');
-  // });
+//   burger.classList.toggle('is-active');
+//   menu.classList.toggle('hidden');
+// });
 
-  //  02
-  btnContact.addEventListener("click", (e) => {
-    formMenu.classList.toggle("hidden");
+//  02
+btnContact.addEventListener("click", (e) => {
+  formMenu.classList.toggle("hidden");
 
-    // console.log(burger.classList);
-    // console.log(e.view.parent.document.body);
-    // console.log(body.classList);
+  // console.log(burger.classList);
+  // console.log(e.view.parent.document.body);
+  // console.log(body.classList);
 
-    // html.classList.add('overflow-hidden');
+  // html.classList.add('overflow-hidden');
 
-    // if(burger.classList === 'is-active') {
-    //   // burger.classList.add('is-active');
-    //   burger.classList.remove('is-active');
+  // if(burger.classList === 'is-active') {
+  //   // burger.classList.add('is-active');
+  //   burger.classList.remove('is-active');
 
-    //   menu.classList.add('hidden');
-    // }
-
-    burger.classList.remove("is-active");
-    menu.classList.add("hidden");
-
-    /**
-     * Closed the popup-form SENT.
-     */
-    // console.log(popupForms.classList);
-
-    if (popupForms.classList !== "hidden") {
-      popupForms.classList.add("hidden");
-      // popupForms.classList.remove('is-open');
-    }
-
-    /**
-     * Added overflow-hidden to the wrapper
-     */
-    bgWrapper.classList.add("overflow");
-  });
-
-  //============ 28.02.2023
-
-  // btnDiscuss.addEventListener('click', () =>{
-  //   formMenu.classList.toggle('hidden');
-
-  //    /**
-  //    * Added overflow-hidden to the wrapper
-  //    */
-  //     bgWrapper.classList.toggle('overflow');
-  // });
-
-  btnFormMenu.addEventListener("click", () => {
-    formMenu.classList.toggle("hidden");
-
-    // if(burger.classList === 'is-active') {
-    //   burger.classList.add('is-active');
-    //   menu.classList.remove('hidden');
-    // }
-
-    /**
-     * Remove overflow-hidden to the wrapper
-     */
-    bgWrapper.classList.remove("overflow");
-  });
+  //   menu.classList.add('hidden');
+  // }
+  wrapper.classList.add("h-screen");
+  burger.classList.remove("is-active");
+  menu.classList.add("hidden");
 
   /**
-   * Opens a menu form-tablet.
+   * Closed the popup-form SENT.
    */
+  // console.log(popupForms.classList);
 
-  btnContactTablet.addEventListener("click", () => {
-    formMenu.classList.toggle("hidden");
+  if (popupForms.classList !== "hidden") {
+    popupForms.classList.add("hidden");
+    // popupForms.classList.remove('is-open');
+  }
 
-    burger.classList.toggle("is-active");
-    menu.classList.toggle("hidden");
+  /**
+   * Added overflow-hidden to the wrapper
+   */
+  bgWrapper.classList.add("overflow");
+});
 
-    // burgerMenu()
-  });
-}
-formMenuFn();
+//============ 28.02.2023
+
+// btnDiscuss.addEventListener('click', () =>{
+//   formMenu.classList.toggle('hidden');
+
+//    /**
+//    * Added overflow-hidden to the wrapper
+//    */
+//     bgWrapper.classList.toggle('overflow');
+// });
+
+btnFormMenu.addEventListener("click", () => {
+  formMenu.classList.toggle("hidden");
+  wrapper.classList.remove("h-screen");
+  // if(burger.classList === 'is-active') {
+  //   burger.classList.add('is-active');
+  //   menu.classList.remove('hidden');
+  // }
+
+  /**
+   * Remove overflow-hidden to the wrapper
+   */
+  bgWrapper.classList.remove("overflow");
+});
+
+/**
+ * Opens a menu form-tablet.
+ */
+
+btnContactTablet.addEventListener("click", () => {
+  formMenu.classList.toggle("hidden");
+  wrapper.classList.add("h-screen");
+  burger.classList.toggle("is-active");
+  menu.classList.toggle("hidden");
+
+  // burgerMenu()
+});
+// }
+// formMenuFn(); --------------------------
 
 /**
  * Opens a dropdown-header.
@@ -552,37 +544,34 @@ accordeonOpen();
  * Close a popup-forms.
  */
 
-function closePopupForm() {
-  // const btnFormSkicka = document.querySelector('#btn-form-skicka');
+// const btnFormSkicka = document.querySelector('#btn-form-skicka');
 
-  // const formMenu = document.querySelector('#formMenu');
+// const formMenu = document.querySelector('#formMenu');
 
-  // btnFormSkicka.addEventListener
+// btnFormSkicka.addEventListener
 
-  submit.addEventListener("click", () => {
-    logoOpacity.classList.remove("opacity-0");
-  });
+submit.addEventListener("click", () => {
+  logoOpacity.classList.remove("opacity-0");
+});
 
-  // submit.addEventListener('click', () =>{
-  //   popupForms.classList.toggle('hidden');
-  //   formMenu.classList.add('hidden');
-  // })
+// submit.addEventListener('click', () =>{
+//   popupForms.classList.toggle('hidden');
+//   formMenu.classList.add('hidden');
+// })
 
-  btnClosePopupForms.addEventListener("click", () => {
-    popupForms.classList.toggle("hidden");
+btnClosePopupForms.addEventListener("click", () => {
+  popupForms.classList.toggle("hidden");
+  wrapper.classList.remove("h-screen");
+  /**
+   * Remove atribute disabled for the wrapper element.
+   */
+  //  burger.removeAttribute('disabled', 'disabled');
 
-    /**
-     * Remove atribute disabled for the wrapper element.
-     */
-    //  burger.removeAttribute('disabled', 'disabled');
-
-    /**
-     * Remove overflow-hidden to the wrapper
-     */
-    bgWrapper.classList.remove("overflow");
-  });
-}
-closePopupForm();
+  /**
+   * Remove overflow-hidden to the wrapper
+   */
+  bgWrapper.classList.remove("overflow");
+});
 
 /**
  * Send Mail.
@@ -824,36 +813,31 @@ document.addEventListener("DOMContentLoaded", function () {
  * Added class hidden at open backdrop to the logo header
  */
 
-function logoHidden() {
-  // console.log(backdrop_01.classList);
-
-  if (backdrop_01.classList !== "") {
-    burger.addEventListener("click", (e) => {
-      // console.log(e);
-      logoOpacity.classList.add("opacity-0");
-    });
-  }
-
-  btnContact.addEventListener("click", () => {
-    // console.log(logoOpacity.classList);
-    logoOpacity.classList.add("opacity-0");
-  });
-
-  btnFormMenu.addEventListener("click", () => {
-    logoOpacity.classList.remove("opacity-0");
-  });
-
-  closeMenuTablet.addEventListener("click", () => {
-    logoOpacity.classList.remove("opacity-0");
-  });
-
-  // =========28.02.2023
-
-  // btnDiscuss.addEventListener('click', () =>{
-  //   logoOpacity.classList.add('opacity-0')
-  // });
-}
-logoHidden();
+// function logoHidden() {
+// console.log(backdrop_01.classList);
+// --------------------------------------------------------------- kill
+// if (backdrop_01.classList !== "") {
+//   burger.addEventListener("click", (e) => {
+//     // console.log(e);
+//     logoOpacity.classList.add("opacity-0");
+//   });
+// }
+// btnContact.addEventListener("click", () => {
+//   // console.log(logoOpacity.classList);
+//   logoOpacity.classList.add("opacity-0");
+// });
+// btnFormMenu.addEventListener("click", () => {
+//   logoOpacity.classList.remove("opacity-0");
+// });
+// closeMenuTablet.addEventListener("click", () => {
+//   logoOpacity.classList.remove("opacity-0");
+// });
+// =========28.02.2023
+// btnDiscuss.addEventListener('click', () =>{
+//   logoOpacity.classList.add('opacity-0')
+// });
+// }
+// logoHidden();
 
 /**
  * Send mail-02

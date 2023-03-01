@@ -27,10 +27,11 @@
 
 @tailwind utilities;
 
+/* header height */
 :root {
-  --header-h: 76px;
-  --header-h-lg: 82px;
-  --header-h-xl: 90px;
+  --header-h: 77px;
+  --header-h-md: 87px;
+  --header-h-lg: 90px;
 }
 
 html {
