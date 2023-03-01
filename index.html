@@ -13,7 +13,7 @@
     <title>Uwp digital</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper overflow-hidden">
       <!-- BEGIN: 01-section-header -->
       <header id="mainNav" class="header bg-dark">
         <!-- container -->
@@ -860,6 +860,7 @@
           <button
             type="button"
             aria-label="discuss the project"
+            id="btnDiscuss"
             class="big-red-btn video__big-red-btn"
           >
             <svg
@@ -5537,9 +5538,7 @@
                         id="name_02"
                         name="username"
                         type="text"
-                        class="_req border__rounded form-control m-0 block w-[100%] 
-                        rounded-[70px] bg-transparent bg-clip-padding 
-                        pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                        class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your name?*"
                         minlength="3"
                         required=""
@@ -5553,17 +5552,13 @@
                     </div>
                     <!-- name_02 -->
 
-                    
-
                     <!-- email_02 -->
                     <div class="form-floating mb-[15px]">
                       <input
                         id="email_02"
                         name="email"
                         type="email"
-                        class="_req border__rounded form-control m-0 block w-[100%] 
-                        rounded-[70px] bg-transparent bg-clip-padding
-                        pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                        class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your e-mail?*"
                         title="Please provide only a Best Startup Ever corporate email address  valid@email.com"
                         pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
@@ -5578,17 +5573,13 @@
                     </div>
                     <!-- email_02 -->
 
-                    
-
                     <!-- phone_02 -->
                     <div class="form-floating mb-[15px]">
                       <input
                         id="phone_02"
                         name="phone"
                         type="tel"
-                        class="_req border__rounded form-control m-0 block w-[100%]
-                         rounded-[70px] bg-transparent bg-clip-padding
-                          pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                        class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Phone number*"
                         required=""
                       />
@@ -5600,8 +5591,6 @@
                       </label>
                     </div>
                     <!-- phone_02 -->
-
-                    
 
                     <!-- popup-phone-02 -->
                     <div class="lg:order-5 lg:flex">
@@ -5617,9 +5606,7 @@
                         id="company_02"
                         name="company"
                         type="text"
-                        class="_req border__rounded form-control m-0 block w-[100%]
-                         rounded-[70px] bg-transparent bg-clip-padding
-                          pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                        class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Company*"
                         required=""
                       />
@@ -5631,8 +5618,6 @@
                       </label>
                     </div>
                     <!-- company_02 -->
-
-                    
                   </div>
 
                   <!-- message_02 -->
@@ -5641,9 +5626,7 @@
                       id="message_02"
                       name="message"
                       type="text"
-                      class="_req border__rounded form-control m-0 block w-[100%]
-                       rounded-[70px] bg-transparent bg-clip-padding
-                        pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                      class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Tell us about your project"
                       required=""
                     />
@@ -5655,8 +5638,6 @@
                     </label>
                   </div>
                   <!-- message_02 -->
-
-                  
 
                   <!-- btn-add-file-form-02-menu-360px -->
                   <!-- input-02 -->
@@ -6763,43 +6744,42 @@
                 <div class="flex gap-[11px]">
                   <!-- 01-BRANDING -->
 
-                  
                   <div class=" ">
-                    <input class="peer sr-only" type="checkbox" id="branding" name="branding" value="newsletter" />
-                    <label class="text-xs font-medium 
-                        btn-hover__white relative cursor-pointer
-                      border__rounded btn-hover__white overflow-hidden  
-                    pt-[6px]   pb-[6px]   pl-[15px]  pr-[15px] text-mainTextWhite 
-                        peer-checked:border-white peer-checked:bg-white
-                            peer-checked:text-mainTextBlack
-                            lg:text-[14px] lg:leading-[18px]
-                        " for="branding">BRANDING</label>
+                    <input
+                      class="peer sr-only"
+                      type="checkbox"
+                      id="branding"
+                      name="branding"
+                      value="newsletter"
+                    />
+                    <label
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-mainTextWhite peer-checked:border-white peer-checked:bg-white peer-checked:text-mainTextBlack lg:text-[14px] lg:leading-[18px]"
+                      for="branding"
+                      >BRANDING</label
+                    >
                   </div>
-                  
 
                   <!-- checkbox-01-BRANDING -->
-
-                 
-
-                 
 
                   <!-- checked -->
 
                   <!-- 02-DIGITAL MARKETING -->
 
                   <div class=" ">
-                    <input class="peer sr-only" type="checkbox" id="digital-marketing" name="digital-marketing" value="newsletter" />
-                    <label class="text-xs font-medium lg:text-[14px] lg:leading-[18px]
-                        btn-hover__white relative cursor-pointer
-                      border__rounded btn-hover__white overflow-hidden 
-                       pt-[6px]   pb-[6px]   pl-[11px]  pr-[11px] text-mainTextWhite 
-                        peer-checked:border-white peer-checked:bg-white
-                            peer-checked:text-mainTextBlack
-                        " for="digital-marketing">DIGITAL MARKETING</label>
+                    <input
+                      class="peer sr-only"
+                      type="checkbox"
+                      id="digital-marketing"
+                      name="digital-marketing"
+                      value="newsletter"
+                    />
+                    <label
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[11px] pr-[11px] text-xs font-medium text-mainTextWhite peer-checked:border-white peer-checked:bg-white peer-checked:text-mainTextBlack lg:text-[14px] lg:leading-[18px]"
+                      for="digital-marketing"
+                      >DIGITAL MARKETING</label
+                    >
                   </div>
                   <!-- checkbox-02-DIGITAL MARKETING -->
-
-                 
 
                   <!-- checked -->
                 </div>
@@ -6808,65 +6788,57 @@
                   <!-- 03-WEB design -->
 
                   <div class=" ">
-                    <input 
-                    class="peer sr-only"
-                     type="checkbox" 
-                     id="web-design"
+                    <input
+                      class="peer sr-only"
+                      type="checkbox"
+                      id="web-design"
                       name="web-design"
-                       value="newsletter" />
-                    <label class="text-xs font-medium lg:text-[14px] lg:leading-[18px]
-                        btn-hover__white relative cursor-pointer
-                      border__rounded btn-hover__white overflow-hidden 
-                       pt-[6px]   pb-[6px]   pl-[8px]  pr-[8px] text-mainTextWhite 
-                        peer-checked:border-white peer-checked:bg-white
-                            peer-checked:text-mainTextBlack uppercase
-                        " for="web-design">WEB design</label>
+                      value="newsletter"
+                    />
+                    <label
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[8px] pr-[8px] text-xs font-medium uppercase text-mainTextWhite peer-checked:border-white peer-checked:bg-white peer-checked:text-mainTextBlack lg:text-[14px] lg:leading-[18px]"
+                      for="web-design"
+                      >WEB design</label
+                    >
                   </div>
 
                   <!-- checkbox-03-WEB design -->
-
-                 
 
                   <!-- checked -->
 
                   <!-- 04-SMM -->
                   <div class=" ">
-                    <input 
-                    class="peer sr-only"
-                     type="checkbox"
+                    <input
+                      class="peer sr-only"
+                      type="checkbox"
                       id="smm"
-                       name="smm"
-                        value="newsletter" />
-                    <label 
-                    class="text-xs font-medium lg:text-[14px] lg:leading-[18px]
-                      btn-hover__white relative cursor-pointer
-                    border__rounded btn-hover__white overflow-hidden 
-                     pt-[6px]   pb-[6px]   pl-[13px]  pr-[13px] text-mainTextWhite 
-                      peer-checked:border-white peer-checked:bg-white
-                          peer-checked:text-mainTextBlack
-                      " for="smm">SMM</label>
+                      name="smm"
+                      value="newsletter"
+                    />
+                    <label
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[13px] pr-[13px] text-xs font-medium text-mainTextWhite peer-checked:border-white peer-checked:bg-white peer-checked:text-mainTextBlack lg:text-[14px] lg:leading-[18px]"
+                      for="smm"
+                      >SMM</label
+                    >
                   </div>
 
                   <!-- checkbox-04-SMM -->
 
-                  
-
                   <!-- checked -->
-                  
+
                   <div class=" ">
-                    <input 
-                    class="peer sr-only" 
-                    type="checkbox" 
-                    id="seo"
-                     name="seo"
-                      value="newsletter" />
-                    <label class="text-xs font-medium lg:text-[14px] lg:leading-[18px]
-                        btn-hover__white relative cursor-pointer
-                      border__rounded btn-hover__white overflow-hidden 
-                       pt-[6px]   pb-[6px]   pl-[15px]  pr-[15px] text-mainTextWhite 
-                        peer-checked:border-white peer-checked:bg-white
-                            peer-checked:text-mainTextBlack
-                        " for="seo">SEO</label>
+                    <input
+                      class="peer sr-only"
+                      type="checkbox"
+                      id="seo"
+                      name="seo"
+                      value="newsletter"
+                    />
+                    <label
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-mainTextWhite peer-checked:border-white peer-checked:bg-white peer-checked:text-mainTextBlack lg:text-[14px] lg:leading-[18px]"
+                      for="seo"
+                      >SEO</label
+                    >
                   </div>
                   <!-- 05-SEO -->
 
@@ -6884,14 +6856,7 @@
                       id="name"
                       name="username"
                       type="text"
-                      class="_req border__rounded form-control m-0
-                       block w-[100%] rounded-[70px] 
-                       bg-transparent bg-clip-padding
-                      pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px]
-                         tracking-[1px] text-middleGrey transition 
-                         ease-in-out focus:border-white
-                          focus:text-white focus:shadow-none 
-                          focus:outline-none focus:outline-0"
+                      class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your name?*"
                       minlength="3"
                       required=""
@@ -6911,10 +6876,7 @@
                       id="email"
                       name="email"
                       type="email"
-                      class="_req border__rounded form-control m-0 block w-[100%]
-                       rounded-[70px] bg-transparent bg-clip-padding
-                       pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px]
-                         tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                      class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your e-mail?*"
                       title="Please provide only a Best Startup Ever corporate email address  valid@email.com"
                       pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
@@ -6937,10 +6899,7 @@
                       id="phone"
                       name="phone"
                       type="tel"
-                      class="_req border__rounded form-control m-0 block w-[100%]
-                       rounded-[70px] bg-transparent bg-clip-padding
-                       pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] 
-                        tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                      class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Phone number*"
                       required=""
                     />
@@ -6970,10 +6929,7 @@
                       id="company"
                       name="company"
                       type="text"
-                      class="_req border__rounded form-control m-0 block w-[100%] 
-                      rounded-[70px] bg-transparent bg-clip-padding
-                       pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px]
-                        tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                      class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Company*"
                       required=""
                     />
@@ -6995,10 +6951,7 @@
                     id="message"
                     name="message"
                     type="text"
-                    class="_req border__rounded form-control m-0 block w-[100%]
-                     rounded-[70px] bg-transparent bg-clip-padding 
-                    pt-[28px]  pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px]
-                      tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
+                    class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                     placeholder="Tell us about your project"
                     required=""
                   />
@@ -7017,9 +6970,7 @@
                   class="add__file group flex w-[150px] flex-row items-center gap-[10px]"
                 >
                   <label
-                    class="label-file flex h-[38px] w-[38px] cursor-pointer 
-                    items-center justify-center rounded-full bg-bgColorBtnForm
-                     transition-all group-hover:bg-main"
+                    class="label-file flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-full bg-bgColorBtnForm transition-all group-hover:bg-main"
                     for="choise"
                   >
                     <span>

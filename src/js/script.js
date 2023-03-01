@@ -33,13 +33,12 @@ const backdrop_01 = document.getElementById("backdrop_01");
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
 
-// const btnDiscuss = document.getElementById('btnDiscuss');  //======28.02.2023
+const btnDiscuss = document.getElementById("btnDiscuss"); //======28.02.2023
 const logoOpacity = document.getElementById("logo-opacity");
 const submit = document.querySelector("#submit");
 const btnClosePopupForms = document.querySelector("#btn-close-popup-forms");
 
 // const btnContact_02 = document.querySelector('#btnContact_02');
-// const btnDiscuss = document.querySelector('#btnDiscuss');  //======28.02.2023
 
 const formMenu = document.querySelector("#formMenu");
 const btnContactTablet = document.querySelector("#btnContactTablet");
@@ -361,16 +360,14 @@ btnContact.addEventListener("click", (e) => {
   bgWrapper.classList.add("overflow");
 });
 
-//============ 28.02.2023
-
-// btnDiscuss.addEventListener('click', () =>{
-//   formMenu.classList.toggle('hidden');
-
-//    /**
-//    * Added overflow-hidden to the wrapper
-//    */
-//     bgWrapper.classList.toggle('overflow');
-// });
+btnDiscuss.addEventListener("click", () => {
+  formMenu.classList.toggle("hidden");
+  console.log("object");
+  /**
+   * Added overflow-hidden to the wrapper
+   */
+  wrapper.classList.add("h-screen");
+});
 
 btnFormMenu.addEventListener("click", () => {
   formMenu.classList.toggle("hidden");
