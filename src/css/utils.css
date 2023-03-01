@@ -1,240 +1,40 @@
-@layer components {
-  /*=============== MAIN BUTTON ============= */
+/* =========== BIG RED ROUND BUTTON ============ */
 
-  .main-btn {
-    @apply mx-auto flex h-[60px] 
-    w-[clamp(280px,85vw,357px)] min-w-[280px] items-center justify-center gap-2.5 
-    rounded-[70px] border-[1px]  border-main  bg-gradient-to-t from-main 
-    via-main bg-size-200  bg-pos-0  px-1 py-1
-    uppercase text-white transition-all duration-300
-    hover:from-activeRed hover:bg-pos-200   active:bg-activeRed lg:w-[357px]
-    xl:w-[clamp(270px,90%,357px)] xl:min-w-[270px];
-  }
-  .main-btn--reversed {
-    @apply border-2 border-main from-transparent to-transparent text-dark 
-     hover:text-white active:bg-main  active:text-white dark:text-white
-      lg:hidden;
-  }
-  .main-btn__lable {
-    @apply font-bold uppercase xl:text-[clamp(14px,1vw,16px)];
-  }
-  .main-btn__lable--smaller {
-    @apply text-sm;
-  }
-  .main-btn svg {
-    @apply h-4 w-4;
-  }
-  .main-btn.btn-mrgn {
-    @apply mt-10 mb-5;
-  }
-  .sticky-btn {
-    @apply xl:sticky xl:top-[110px];
-  }
-
-  /*=============== CIRCLE WHITE BUTTON ============= */
-
-  .circle-white-btn {
-    @apply flex h-[38px] w-[38px] items-center justify-center rounded-full 
-    border-[1px] border-middleGrey bg-transparent text-4xl
-    transition-all;
-  }
-  .blog__all-btn:hover div {
-    @apply border-main bg-main;
-  }
-  .circle-white-btn svg {
-    @apply h-[11px] w-[11px] text-dark transition-all dark:text-white;
-  }
-  .circle-white-btn--white svg {
-    @apply text-white;
-  }
-  .circle-white-btn:hover svg {
-    @apply text-white;
-  }
-
-  /* -------- person-circle-double-quotes-btn ----- */
-  .person-circle-double-quotes-btn {
-    @apply mb-[10px] flex h-9 w-9 items-center justify-center
-     rounded-full  bg-white lg:mb-0 lg:mr-[30px]
-      lg:h-16 lg:w-16 xl:h-[64px]  xl:w-[64px];
-  }
-  .person-circle-double-quotes-btn svg {
-    @apply h-[14px] w-[14px] text-dark lg:h-[22px] lg:w-[22px];
-  }
-
-  /*----------- #Button V5 ---- Scroll Team ------- */
-  .circle-team-btn {
-    @apply absolute left-0 bottom-0 flex h-[37px] w-[37px] translate-y-[50%]
-     items-center justify-center rounded-full border-[2px]
-     border-light bg-light transition-all hover:border-main 
-    active:border-main lg:h-[58px] lg:w-[58px] 
-    xl:h-[72px]  xl:w-[72px];
-  }
-  .circle-team-btn svg {
-    @apply h-[14px] w-[14px] text-dark lg:h-5 lg:w-5;
-  }
-
-  /* =============  breadcrumbs ========== */
-
-  .breadcrumbs-wrapper {
-    @apply flex;
-  }
-  .breadcrumbs {
-    @apply text-[10px] font-normal text-middleGrey transition-all hover:font-semibold hover:text-white active:font-semibold active:text-middleGrey;
-  }
-
-  /* =========== RED ROUND GRADIENT  ============ */
-  .red-gradient {
-    @apply relative overflow-hidden before:absolute before:right-0
-    before:translate-x-[50%] before:bg-gradient-radial 
-    before:from-main before:to-transparent 
-     before:content-[''];
-  }
-  .red-gradient-top {
-    @apply before:top-0 before:h-[212px] before:w-[212px]
-       before:blur-[45px] lg:before:h-[322px] lg:before:w-[322px]
-     lg:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
-  }
-  .red-gradient.red-gradient--nav {
-    @apply fixed before:top-[100px];
-  }
-  .red-gradient-bottom {
-    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] lg:before:top-[100px]
-     lg:before:h-[295px] lg:before:w-[295px] lg:before:blur-[80px] 
-     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
-  }
-
-  /* =========== BIG RED ROUND BUTTON ============ */
-
-  .big-red-btn.video__big-red-btn {
-    @apply absolute top-0 right-[24%] z-[2] -translate-y-1/2 translate-x-1/2 lg:right-[20vw]
-    xl:right-[27.5vw];
-  }
-  .big-red-btn {
-    @apply relative flex min-h-[133px] w-[133px] min-w-[133px] flex-col items-center justify-center
-     gap-3 rounded-full px-3 text-center text-sm font-bold 
-     uppercase text-light before:absolute before:top-0
-      before:left-0 before:z-[-1] before:h-full before:w-full
-       before:rounded-full before:bg-main
-      before:transition-all before:content-[''] lg:min-h-[142px]
-       lg:w-[142px] lg:min-w-[142px]
-     xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px] xl:px-[18px]
-      xl:text-base xl:hover:before:scale-[0.8];
-  }
-  .big-red-btn.cases-page__big-red-btn {
-    @apply min-h-[125px] w-[125px] min-w-[125px] lg:min-h-[125px] lg:w-[125px] 
+.big-red-btn.video__big-red-btn {
+  @apply top-[-66px] right-[5.5%] lg:top-[-92px] lg:right-[11.3%]
+   xl:top-[-71px] xl:right-[18%] 
+     1xl:top-[-72px] 1xl:right-[18%]   2xl:top-[-90px] 2xl:right-[23.4%];
+}
+.big-red-btn {
+  @apply absolute z-[1] flex h-[133px] w-[133px] flex-col items-center justify-center gap-3
+   rounded-full px-3 text-center text-sm font-bold uppercase text-light
+     before:absolute before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full 
+     before:rounded-full before:bg-main before:transition-all before:content-['']
+      lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]
+       xl:px-[18px] xl:text-base
+      xl:hover:before:scale-[0.8] 1xl:h-[158px]  1xl:w-[158px]
+      2xl:h-[177px] 2xl:w-[177px];
+}
+.big-red-btn.cases-page__big-red-btn {
+  @apply min-h-[125px] w-[125px] min-w-[125px] lg:min-h-[125px] lg:w-[125px] 
     lg:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
-  }
+}
 
-  /* =========== COOKIES ============ */
+/* =========== COOKIES ============ */
 
-  #cookies {
-    @apply fixed bottom-10 right-[3vw] z-50 grid w-[300px] grid-cols-[1fr_auto]
+#cookies {
+  @apply fixed bottom-10 right-[3vw] z-50 grid w-[300px] grid-cols-[1fr_auto]
      items-center   rounded-[20px] border-[1px] border-middleGrey bg-dark
      py-5 px-5 text-sm text-white lg:right-[7vw] lg:w-fit 
       lg:rounded-[60px] lg:py-[17px] lg:pr-[17px] lg:pl-[38px] lg:text-base;
-  }
-  .cookies-text {
-    @apply col-start-1 col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto lg:mb-0;
-  }
-  .learn-more {
-    @apply font-bold uppercase transition-all hover:text-main;
-  }
-  #accept-btn {
-    @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
+}
+.cookies-text {
+  @apply col-start-1 col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto lg:mb-0;
+}
+.learn-more {
+  @apply font-bold uppercase transition-all hover:text-main;
+}
+#accept-btn {
+  @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
      lg:py-4 lg:px-10;
-  }
-
-  /*======  common link class - animated-hover-container =====  */
-  /*---------- animate link arrows ---------- */
-
-  .animated-arrow-circle {
-    @apply pointer-events-none flex h-[45px] min-w-[45px]  items-center justify-center rounded-full bg-transparent transition-all 
-    lg:h-[62px] lg:min-w-[62px] xl:h-[82px] xl:min-w-[82px];
-  }
-  .animated-hover-container:hover .animated-arrow-circle {
-    @apply bg-main text-white;
-  }
-
-  .animated-arrow-wrapper,
-  .animated-arrow-wrapper svg {
-    @apply h-[15px] min-w-[15px]  lg:h-[21px] lg:min-w-[21px];
-  }
-  .animated-arrow-wrapper {
-    @apply relative  overflow-hidden;
-  }
-  .animated-arrow-wrapper svg {
-    @apply absolute transition-all  duration-300 ease-in-out dark:text-white;
-  }
-  .animated-arrow-wrapper svg:first-child {
-    @apply top-0 right-0;
-  }
-  .animated-hover-container:hover .animated-arrow-wrapper svg:first-child {
-    @apply top-[-100%] right-[-100%];
-  }
-  .animated-arrow-wrapper svg:last-child {
-    @apply top-[100%] right-[100%];
-  }
-  .animated-hover-container:hover .animated-arrow-wrapper svg:last-child {
-    @apply top-0 right-0;
-  }
-  /* ---------- animate title underline ----------  */
-
-  .animated-underline {
-    @apply relative after:absolute after:-bottom-3 after:left-0
-     after:h-[5px] after:w-0 after:bg-main after:transition-all
-      after:content-[''];
-  }
-  .animated-hover-container:hover .animated-underline {
-    @apply after:w-full;
-  }
-
-  /* ---------main page 'services' and 'cases' desktop screen grid -------- */
-  .grid-container-md-cols {
-    @apply grid lg:grid-cols-[max(33%,230px)_1fr];
-  }
-  .grid-container-xl-cols {
-    @apply xl:grid xl:grid-cols-[clamp(285px,25%,410px)_1fr];
-  }
-  .grid-container-xl-rows {
-    @apply xl:grid-rows-[auto_1fr];
-  }
-  .grid-container-item-xl {
-    @apply border-middleGrey  xl:col-start-2 xl:row-start-1 xl:row-end-3
-     xl:border-l;
-  }
-  /* ------------------------- */
-
-  /* ============= CASES PAGE ========== */
-  .filter__btn {
-    @apply cursor-pointer rounded-[40px] border-[1px] uppercase xl:rounded-[50px];
-  }
-  .filter__btn-light {
-    @apply bg-lightGrey  text-dark hover:border-[1px] hover:border-middleGrey
-      hover:bg-light active:border-main  active:bg-main active:text-white dark:bg-darkGrey dark:text-light;
-  }
-  .filter__btn-form {
-    @apply border-middleGrey bg-dark px-[10px] py-[6px]
-     text-xs text-light hover:border-white active:border-white
-       active:bg-white  active:text-black
-        lg:py-[10px] lg:px-5 lg:text-sm;
-  }
-  .filter__btn.filter__btn-active {
-    @apply border-[1px] border-white bg-white text-black;
-  }
-
-  .white-circle {
-    @apply flex h-9 w-9 items-center justify-center rounded-full
-     bg-white  lg:h-16 lg:w-16 xl:h-[72px] xl:w-[72px];
-  }
-  .pre-heading {
-    @apply mb-7 text-[12px] font-bold uppercase leading-4 tracking-wider
-     text-middleGrey lg:mb-4;
-  }
-
-  .top-border {
-    @apply border-t  border-middleGrey;
-  }
-  .bottom-border {
-    @apply border-b  border-middleGrey;
-  }
 }

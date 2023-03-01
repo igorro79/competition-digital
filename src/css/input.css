@@ -18,8 +18,8 @@
 @import "./faq.css";
 @import "./form.css";
 @import "./footer.css";
-@import "./utils.css";
 @import "./contacts-page.css";*/
+@import "./utils.css";
 
 @tailwind base;
 
