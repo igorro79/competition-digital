@@ -1,18 +1,106 @@
 @layer components {
-  /* .hero {
-    @apply relative;
+  /*================================================ 
+BEGIN: 02-section-hero
+=================================================*/
+  /*background-image: url('img/gradient/Ellipse 13.png')*/
+
+  /* .hero-gradient {
+  @media (min-width: 820px) { 
+    background-image: url(./img/gradient/Ellipse-hero-mobile.png)
+   }
+} */
+
+  /* .hero-gradient{
+  @apply sm:hover:active:disabled:opacity-75 ;
+} */
+
+  /* before:absolute before:bg-blue-500 after:flex after:bg-blue-300 */
+
+  /* bg-[url(./img/gradient/Ellipse-hero-tablet.png)] */
+  /* style="background-image: url(./img/gradient/Ellipse-hero-mobile.png) " */
+  /* style="background-image: url(./img/gradient/Ellipse-hero-tablet.png)" */
+  /* style="background-image: url(./img/gradient/Ellipse-hero-desktop.png)" */
+  /* .hero-gradient{
+  @apply bg-no-repeat
+           bg-ellipse-mobile bg-right
+          lg:bg-ellipse-tablet lg:bg-right 
+          xl:bg-ellipse-desctop xl:bg-right ;
+} */
+
+  /* .hero-gradient{
+  @apply bg-no-repeat
+  bg-[url(./img/gradient/Ellipse-hero-mobile.png)]
+  
+  bg-right
+          lg:bg-ellipse-tablet lg:bg-right 
+          xl:bg-ellipse-desctop xl:bg-right ;
+} */
+
+  /* @media screen and (min-width: 820px){
+
+  .hero-gradient{
+  background-image: url(./img/gradient/Ellipse-hero-tablet.png);
+      
+    background-position: right;
+    background-repeat: no-repeat;
+}
+} */
+
+  /* .hero-gradient{
+  @media screen and (min-width: 820px){
+background-image: url(./img/gradient/Ellipse-hero-tablet.png);
+
+  background-position: right;
+  background-repeat: no-repeat;
+}
+} */
+
+  /*===================
+BEGIN: gradient-hero  
+===================*/
+
+  .red-gradient-hero {
+    @apply relative overflow-hidden 
+  to-transparent
+  before:absolute before:right-0 before:h-[212px]
+  before:w-[212px] before:translate-x-[50%]
+  before:bg-gradient-radial
+  before:from-gradientMain before:blur-[45px] before:content-['']
+
+  lg:before:top-[50px]
+  lg:before:h-[322px] lg:before:w-[322px]
+  lg:before:blur-[60px]
+     
+  xl:before:top-[0px]  xl:before:h-[591px] xl:before:w-[591px]
+  xl:before:blur-[90px];
+  }
+
+  /* .red-gradient {
+    @apply relative overflow-hidden  from-gradientMain to-transparent
+    before:absolute before:right-0 
+    before:translate-x-[50%] before:bg-gradient-radial 
+     before:content-[''];
+  }
+
+  .red-gradient-top {
+    @apply before:top-0 before:h-[212px] before:w-[212px]
+       before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
+     md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
+  }
+
+
+
+  .red-gradient-bottom {
+    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
+     md:before:h-[295px] md:before:w-[295px] md:before:blur-[80px] 
+     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
   } */
-  .hero__wrapper {
-    @apply lg:pb-20 lg:pt-12 relative z-0 pb-[70px] pt-[47px] text-center 
-     text-white xl:pt-[115px] xl:pb-[115px];
-  }
-  .hero__title {
-    @apply lg:mb-6 lg:text-[60px] lg:leading-[1.1] mb-5 text-center 
-    text-4xl  font-bold  uppercase leading-[1.2]
-    xl:mb-[55px]  xl:text-[clamp(90px,7vw,120px)] xl:leading-[1];
-  }
-  .hero__text {
-    @apply lg:font-medium mx-auto max-w-[420px] font-normal
-     leading-[1.3] xl:max-w-[660px] xl:text-2xl xl:leading-[1.3];
-  }
+
+  /*================== 
+END: gradient-hero
+===================*/
+
+  /*================================================ 
+END: 02-section-hero
+=================================================*/
 }
