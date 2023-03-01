@@ -1,71 +1,18 @@
 @layer components {
   /*=============== FOOTER ============= */
+
+  /*================================================
+ BEGIN: footer
+ =============================================== */
+
+  /* shrink-0 h-[100vh]  */
+  /* bottom-0 */
   .footer {
-    @apply sticky bottom-[-320px] z-[-5] w-full  md:bottom-0;
-  }
-  .footer__wrapper {
-    @apply pt-11 pb-4  lg:pt-[32px] lg:pb-6;
-  }
-  .footer__content-wrapper {
-    @apply grid  lg:grid-rows-[56px_130px_1fr_16px] xl:grid-cols-3  xl:grid-rows-none;
+    @apply sticky bottom-[-320px] -z-10 shrink-0
+  lg:bottom-0;
   }
 
-  .footer__nav-list {
-    @apply mb-14 grid grid-flow-col grid-rows-3 gap-[30px] uppercase 
-     lg:mb-0 lg:flex lg:grid-flow-row lg:grid-cols-5 lg:grid-rows-none 
-      lg:justify-between  lg:text-xl xl:col-start-1
-      xl:col-end-3 xl:mb-8;
-  }
-  .social {
-    @apply mb-10 flex justify-around text-dark dark:text-white
-     lg:mx-auto lg:mb-7 lg:w-[300px] xl:mb-8 xl:mr-0;
-  }
-  .nav .social {
-    @apply mb-20;
-  }
-  .social.social-menu {
-    @apply w-full self-end text-white dark:text-white xl:hidden;
-  }
-
-  .social__link {
-    @apply block overflow-hidden rounded-full  lg:mx-auto;
-  }
-  .social__link div {
-    @apply p-2;
-  }
-  .social__link svg {
-    @apply h-[29px]  w-full  lg:h-[22px] xl:h-[30px];
-  }
-
-  .social__link:hover .instagram-icon {
-    @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
-  }
-  .social__link:hover .facebook-icon {
-    @apply bg-[#5B7FCB] text-white dark:text-white;
-  }
-  .social__link:hover .linkedin-icon {
-    @apply bg-[#27A0F8] text-white dark:text-white;
-  }
-  .social__link:hover .upwork-icon {
-    @apply bg-[#16AC37] text-white dark:text-white;
-  }
-
-  .footer__services-list {
-    @apply mb-5 flex flex-col flex-wrap border-t-[1px] border-b-[1px] border-middleGrey pt-5 pb-8
-     lg:row-start-2 lg:mb-6 lg:flex-row lg:pt-3 lg:pb-3 xl:col-start-1
-     xl:col-end-4 xl:row-start-auto xl:justify-between;
-  }
-  .footer__services-item:not(:last-child) {
-    @apply mb-[14px] lg:mb-0 lg:mr-16 xl:mr-0;
-  }
-
-  .footer__services-link {
-    @apply text-sm uppercase leading-4 dark:text-white lg:leading-[40px];
-  }
-  .footer__terms {
-    @apply text-center text-[12px] leading-6 text-middleGrey;
-  }
-  .footer__policy {
-    @apply ml-5;
-  }
+  /*================================================
+END: footer 
+================================================ */
 }
