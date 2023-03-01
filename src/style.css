@@ -2541,36 +2541,12 @@ Form menu header
   position: relative;
 }
 
-/*.form-floating > label {
-    border: 1px solid transparent;
-    transform-origin: 0 0;
-  }*/
-
 /*  p-[16px] 01.03.2023*/
 
-.form-floating > label{
-  pointer-events: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  transform-origin: top;
-  padding-left: 30px;
-  padding-top: 19px;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 /*.form-floating > label {
-    @apply pl-[24px] pt-[19px];
-  }*/
-
-/*.form-floating > .form-control {
-    @apply pl-[24px];
+    @apply pointer-events-none absolute
+    top-0 left-0 h-full origin-top 
+   pl-[30px]  pt-[19px] transition ease-in;
   }*/
 
 .form-floating > .form-control::-moz-placeholder{
@@ -2585,82 +2561,36 @@ Form menu header
 
 .form-floating > .form-control:focus ~ label {
   opacity: 0.65;
-  transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.4rem);
 }
 
-/*.form-floating > .form-control:focus ~ label {
-    @apply origin-top   opacity-60;
-  }*/
+/*=============*/
 
-/*.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
-  }*/
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
 
-/*.form-floating > .form-control:not(:placeholder-shown) ~ label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
-  }*/
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
 
-/*.form-floating > .form-select ~ label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(-0.4rem);
-  }*/
+.form-floating > label {
+  padding-left: 24px;
+  padding-top: 19px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 21px 0 24px 29px;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
 
-/*.form-floating > .form-select ~ label {
-    @apply origin-top   opacity-60;
-  }*/
-
-/*.form-floating {
-    position: relative;
-  }*/
-
-/*.form-floating > .form-control {
-    height: calc(3.5rem + 2px);
-    line-height: 1.25;
-    padding: 1rem 0.75rem;
-  }*/
-
-/*.form-floating > .form-select {
-    height: calc(3.5rem + 2px);
-    line-height: 1.25;
-  }*/
-
-/* .form-floating > label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 1rem 0.75rem;
-    pointer-events: none;
-    border: 1px solid transparent;
-    transform-origin: 0 0;
-    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-  }*/
-
-/*.form-floating > .form-control::-moz-placeholder {
-    color: transparent;
-  }*/
-
-/*.form-floating > .form-control:focus {
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-  }*/
-
-/*.form-floating > .form-control:not(:-moz-placeholder-shown) {
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-  }*/
-
-/*.form-floating > .form-control:not(:placeholder-shown) {
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-  }*/
-
-/*.form-floating > .form-control:-webkit-autofill {
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-  }*/
+/*=============*/
 
 /*==============================
     form-end 
@@ -4421,6 +4351,22 @@ Form menu header
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pt-\[28px\]{
+  padding-top: 28px;
+}
+
+.pb-\[11px\]{
+  padding-bottom: 11px;
+}
+
+.pl-\[30px\]{
+  padding-left: 30px;
+}
+
+.pr-\[30px\]{
+  padding-right: 30px;
 }
 
 .text-center{
