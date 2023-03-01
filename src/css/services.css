@@ -1,90 +1,29 @@
 @layer components {
-  /*=============== SERVICES ============= */
-
-  .services-wrapper {
-    @apply pt-[6.5rem] pb-10  lg:pt-[90px] lg:pb-[110px];
+  /*================================================
+BEGIN: 06-section-services
+ =============================================== */
+  .text__hover-red {
+    @apply transition ease-in group-hover/card:text-bgColorMain;
   }
 
-  .services__heading {
-    @apply mb-[30px] lg:mb-10 xl:mb-[50px];
-  }
-  .services__description {
-    @apply mb-10 pt-[30px] leading-[1.4]  lg:mb-[50px] lg:pt-10 lg:leading-[1.4] xl:mb-[50px] xl:pt-[50px] xl:pr-[50px] xl:leading-[1.4];
-  }
-  .services__cards-list {
-    @apply border-middleGrey lg:grid lg:grid-flow-col lg:grid-cols-[51%_49%]
-     lg:grid-rows-[repeat(5,auto)] xl:border-t  xl:pt-[70px];
-  }
-  .services__card {
-    @apply text-black dark:text-white;
+  /* cards__btn */
+  /* top-[32px] right-[23px] */
+  /*  xl:relative xl:top-[-25px] xl:right-[-2px] 2xl:right-[-32px]  */
+  .wrap-svg__hover-red {
+    @apply rounded-full transition-all ease-in
+  xl:p-[26px]
+                                
+  xl:group-hover/card:bg-bgColorMain 2xl:p-8;
   }
 
-  /* ------------new card------------ */
-
-  .services__link-grid {
-    @apply grid max-h-min transition-all;
-  }
-  @media screen and (max-width: 820px) {
-    .services__link-grid.services__link-grid--hidden > *:not(:first-child) {
-      @apply invisible m-0 max-h-0 overflow-y-hidden p-0 transition-all;
-    }
+  .svg__hover-red {
+    @apply transition-all ease-in 
+  group-hover/card:fill-bgColorMain 
+  
+  xl:group-hover/card:fill-white;
   }
 
-  /* ---right border--- */
-  .services__card:nth-child(-n + 5) {
-    @apply lg:border-r lg:border-middleGrey xl:pl-[50px];
-  }
-  /* ---grid text padding--- */
-  .services__card:nth-child(-n + 5) .services__card-text,
-  .services__card:nth-child(-n + 5) .services__card-title-wrapper {
-    @apply lg:pr-7 xl:pr-[50px];
-  }
-  .services__card:nth-child(n + 6) .services__card-text,
-  .services__card:nth-child(n + 6) .services__card-title-wrapper {
-    @apply lg:pl-5 xl:pl-[clamp(28px,3vw,50px)];
-  }
-  .services__card:nth-child(n + 6) .services__card-image-container {
-    @apply lg:pl-[clamp(40px,4vw,80px)];
-  }
-  .services__card:nth-child(-n + 5) .services__card-image-container {
-    @apply lg:pl-[20px]  xl:pr-[clamp(10px,1vw,70px)] xl:pl-[clamp(0px,1vw,20px)];
-  }
-  .services__card:nth-child(n + 6) {
-    @apply lg:pt-[60px]  xl:pt-[clamp(80px,5vw,105px)];
-  }
-
-  .services__card-title-wrapper {
-    @apply flex items-center justify-between border-b-[1px]
-     border-b-middleGrey text-2xl font-bold leading-[26.4px] xl:pt-[60px] xl:pb-10;
-  }
-  .services__card-title {
-    @apply cursor-pointer py-5  text-2xl font-bold  leading-[1.1] transition-all lg:pointer-events-none
-     lg:cursor-default lg:py-[30px] xl:py-0 xl:text-[clamp(24px,2vw,42px)] xl:leading-[1.2];
-  }
-  .animated-hover-container:hover .services__card-title {
-    @apply text-main;
-  }
-
-  .services__card-content-wrapper {
-    @apply flex max-h-0 flex-col overflow-hidden transition-height
-     duration-500 ease-in-out lg:relative lg:max-h-full lg:overflow-visible;
-  }
-
-  .services__card-text {
-    @apply mb-10 max-h-min pt-5 lg:mb-0 lg:pb-[30px]  xl:pb-[50px] xl:pt-10 xl:leading-[1.5];
-  }
-  .services__card-image-container {
-    @apply mt-10 max-h-min  lg:row-start-1 lg:mt-0;
-  }
-  .services__card-image-wrapper {
-    @apply relative mx-auto h-[216px] min-w-[216px] max-w-[216px] rounded-full
-      bg-lightGrey lg:mx-0 xl:h-[clamp(216px,15vw,355px)] xl:max-w-[clamp(216px,15vw,355px)];
-  }
-  .services__card-image {
-    @apply absolute  top-1/2 left-1/2  mx-auto w-[130%] 
-    max-w-none translate-y-[-50%] translate-x-[-50%];
-  }
-  .main-btn.services__main-btn {
-    @apply hidden lg:mt-14 lg:flex xl:ml-0 xl:mt-0;
-  }
+  /*================================================
+END: 06-section-services
+ =============================================== */
 }
