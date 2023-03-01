@@ -94,9 +94,9 @@ BEGIN: wrapper
 =================================================*/
 
   /* max-w-[1000px] */
-  /* h-screen */
+  /* h-screen   igor remove*/
   .wrapper {
-    @apply relative m-auto flex h-screen max-w-full flex-col
+    @apply relative m-auto flex  max-w-full flex-col
   
   pt-[77px] lg:pt-[87px] xl:pt-[90px];
   }
@@ -114,7 +114,7 @@ BEGIN: 01-section-header
  ===================== */
 
   header {
-    @apply fixed top-0 right-0 left-0 z-20;
+    @apply fixed top-0 right-0 left-0 z-30;
   }
 
   .isFixed {
@@ -186,7 +186,7 @@ BEGIN: burger
   }
 
   .burger__box {
-    @apply relative h-[28px] w-[31px];
+    @apply relative h-[28px] w-[31px] cursor-pointer;
   }
 
   .burger__inner {
