@@ -121,23 +121,23 @@ module.exports = {
 
 
         // ===colors-02=====
-        bgColor: "#171717",
-        bgColorGrey: "#f8f8f8",
-        bgColorMenuTablet: "#ff304d",
-        bgColorMain: "#ff304d",
-        bgColorBtnForm: "#535353",
+        bgColor: "#171717",   //?
+        // bgColorGrey: "#f8f8f8",
+        // bgColorMenuTablet: "#ff304d",
+        bgColorMain: "#ff304d",  //?
+        // bgColorBtnForm: "#535353",
         // bgDarkMode: '#3E3E3E',
 
         // ====== text ======
         mainTextWhite: "#ffffff",
-        mainTextLight: "#f8f8f8",
+        // mainTextLight: "#f8f8f8",
         mainTextLightGrey: "#919191",
         mainTextBlack: "#000000",
-        mainTextDark: "#171717",
+        mainTextDark: "#171717", //?
         mainTextRed: "#ff304d",
-        mainTextBlue: "#6355ff",
+        // mainTextBlue: "#6355ff",
         mainTextBlueHeader: "#4B73FF",
-        mainTextBlueHover: "#86A1FF",
+        // mainTextBlueHover: "#86A1FF",
 
         // // ====== btn ======
         bgButtonMain: "#ff304d",
