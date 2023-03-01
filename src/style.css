@@ -7626,6 +7626,10 @@ google-review
     height: 100vh;
   }
 
+  .xl\:h-full{
+    height: 100%;
+  }
+
   .xl\:max-h-\[369\.5px\]{
     max-height: 369.5px;
   }

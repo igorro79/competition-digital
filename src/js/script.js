@@ -3,6 +3,8 @@ const body = document.getElementsByTagName("body");
 const modeBtn = document.querySelector("#mode");
 const html = document.querySelector("html");
 const wrapper = document.querySelector(".wrapper");
+const cookies = document.getElementById("cookies");
+const accept = document.getElementById("accept-btn");
 
 const mode = document.querySelector("#mode");
 const darkBtn = document.querySelector("#darkBtn");
@@ -948,3 +950,7 @@ function toggleBtn() {
 
 // }
 // closedConsentPopup ()
+
+accept.addEventListener("click", () => {
+  cookies.style.display = "none";
+});

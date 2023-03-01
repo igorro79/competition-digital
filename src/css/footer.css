@@ -16,3 +16,18 @@
 END: footer 
 ================================================ */
 }
+.social__link span {
+  @apply flex h-20 w-20 items-center justify-center rounded-full bg-transparent transition-all;
+}
+.social__link:hover .instagram-icon {
+  @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
+}
+.social__link:hover .facebook-icon {
+  @apply bg-[#5B7FCB] text-white dark:text-white;
+}
+.social__link:hover .linkedin-icon {
+  @apply bg-[#27A0F8] text-white dark:text-white;
+}
+.social__link:hover .upwork-icon {
+  @apply bg-[#16AC37] text-white dark:text-white;
+}
