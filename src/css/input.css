@@ -119,23 +119,7 @@ body::-webkit-scrollbar-thumb {
 .fake-header {
   @apply h-[var(--header-h)] w-full  bg-inherit  lg:h-[var(--header-h-lg)]  xl:h-[var(--header-h-xl)];
 }
-/* =========== visually hidden ============ */
 
-@layer utilities {
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
 /* =========== HEADING ============ */
 .heading2 {
   @apply text-4xl font-bold uppercase dark:text-white lg:text-[45px] lg:leading-[1.2] 
@@ -153,7 +137,7 @@ STYLES
 ======================================*/
 
 ._nav-item-activ {
-  @apply text-mainTextRed;
+  @apply text-main;
 }
 
 /*================================================

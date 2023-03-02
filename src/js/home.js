@@ -1,5 +1,5 @@
 const cookies = document.getElementById("cookies");
-const accept = document.getElementById("accept-btn");
+const accept = document.getElementById("acceptBtn");
 const servicesOrderBtn = document.querySelector(".services__main-btn");
 
 const servicesItemList = document.querySelector(".services__cards-list");

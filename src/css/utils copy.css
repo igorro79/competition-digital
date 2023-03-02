@@ -139,7 +139,7 @@
   .learn-more {
     @apply font-bold uppercase transition-all hover:text-main;
   }
-  #accept-btn {
+  #acceptBtn {
     @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
      lg:py-4 lg:px-10;
   }
