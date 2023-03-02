@@ -845,7 +845,7 @@
       <!--  END: 01-section-header -->
 
       <!--  BEGIN: Main -->
-      <main class="z-10">
+      <main class="z-10 xl:pt-[var(--header-h-xl)]">
         <!--  BEGIN: 02-section-hero -->
         <section
           class="hero red-gradient-hero flex bg-dark pt-[46px] pb-[66px] lg:pt-[44px] lg:pb-[88px] xl:pt-[36px] xl:pb-[92px] 1xl:pt-[74px] 1xl:pb-[92px] 2xl:py-[115px] 3xl:py-[115px]"
@@ -3401,7 +3401,9 @@
             </h2>
             <!-- BEGIN: wrapper-discuss-desctop-3-col -->
             <!-- xl:gap-[48px] -->
-            <div class="xl:flex xl:flex-row-reverse xl:justify-between">
+            <div
+              class="xl:flex xl:flex-row-reverse xl:justify-between xl:border-t-[1px] xl:border-middleGrey"
+            >
               <!-- BEGIN: carousel  wrapper-discuss-tablet-2-col -->
               <!-- class="carousel" -->
               <div
@@ -5799,7 +5801,7 @@
             <!-- BEGIN: nav-footer -->
 
             <ul
-              class="lg:border__bottom grid max-w-[84%] grid-flow-col grid-rows-3 gap-x-[28px] gap-y-[30px] pb-[50px] lg:max-w-full lg:grid-rows-1 lg:gap-x-[8px] lg:pb-[22px] xl:max-w-[71%] xl:gap-x-[0px] xl:border-b-0 xl:pb-0"
+              class="lg:border__bottom grid max-w-[84%] grid-flow-col grid-rows-3 items-center gap-x-[28px] gap-y-[30px] pb-[50px] lg:max-w-full lg:grid-rows-1 lg:gap-x-[8px] lg:pb-[22px] xl:max-w-[90%] xl:gap-x-[0px] xl:border-b-0 xl:pb-[27px]"
             >
               <li
                 class="text-lg font-medium uppercase leading-6 text-dark transition-all hover:text-main dark:text-mainTextWhite dark:hover:text-main lg:text-xl xl:text-[20px] 2xl:text-2xl"
@@ -5852,7 +5854,8 @@
                 >
                   <span class="instagram-icon">
                     <svg
-                      class="h-[39px] w-[38px] fill-dark transition-all hover:fill-main dark:fill-white dark:hover:fill-main lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
+                      fill="currentColor"
+                      class="h-[39px] w-[38px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
                       viewBox="0 0 38 39"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -5885,9 +5888,10 @@
                 >
                   <span class="facebook-icon">
                     <svg
-                      class="h-[29px] w-[29px] fill-dark transition-all hover:fill-main dark:fill-white dark:hover:fill-main lg:h-[22px] lg:w-[23px] xl:h-[30px] xl:w-[30px]"
+                      class="h-[29px] w-[29px] lg:h-[22px] lg:w-[23px] xl:h-[30px] xl:w-[30px]"
                       viewBox="0 0 29 29"
                       xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
                     >
                       <g clip-path="url(#clip0_2965_1426)">
                         <path
@@ -5896,7 +5900,7 @@
                       </g>
                       <defs>
                         <clipPath id="clip0_2965_1426">
-                          <rect width="29" height="29" fill="white" />
+                          <rect width="29" height="29" fill="currentColor" />
                         </clipPath>
                       </defs>
                     </svg>
@@ -5915,9 +5919,10 @@
                 >
                   <span class="linkedin-icon">
                     <svg
-                      class="h-[39px] w-[38px] fill-dark transition-all hover:fill-main dark:fill-white dark:hover:fill-main lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
+                      class="h-[39px] w-[38px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
                       viewBox="0 0 38 39"
                       xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
                     >
                       <path
                         d="M7.51616 11.1386C9.33834 11.1386 10.8155 9.62253 10.8155 7.7524C10.8155 5.88226 9.33834 4.36621 7.51616 4.36621C5.69397 4.36621 4.2168 5.88226 4.2168 7.7524C4.2168 9.62253 5.69397 11.1386 7.51616 11.1386Z"
@@ -5940,10 +5945,11 @@
                   rel="noopener noreferrer"
                   aria-label="upwork"
                   class="social__link"
+                  fill="currentColor"
                 >
                   <span class="upwork-icon">
                     <svg
-                      class="h-[39px] w-[38px] fill-dark transition-all hover:fill-main dark:fill-white dark:hover:fill-main lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
+                      class="h-[39px] w-[38px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px]"
                       viewBox="0 0 38 39"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -5954,7 +5960,7 @@
                       </g>
                       <defs>
                         <clipPath id="clip0_2965_1431">
-                          <rect width="38" height="39" fill="white" />
+                          <rect width="38" height="39" fill="currentColor" />
                         </clipPath>
                       </defs>
                     </svg>
@@ -6597,7 +6603,7 @@
                   >
                     <span class="instagram-icon">
                       <svg
-                        class="fill-white transition-all hover:fill-darkGrey"
+                        class="fill-white"
                         width="32"
                         height="33"
                         viewBox="0 0 32 33"
@@ -6632,7 +6638,7 @@
                   >
                     <span class="facebook-icon">
                       <svg
-                        class="fill-white transition-all hover:fill-darkGrey"
+                        class="fill-white"
                         width="24"
                         height="25"
                         viewBox="0 0 24 25"
@@ -6669,7 +6675,7 @@
                   >
                     <span class="linkedin-icon">
                       <svg
-                        class="fill-white transition-all hover:fill-darkGrey"
+                        class="fill-white"
                         width="32"
                         height="33"
                         viewBox="0 0 32 33"
@@ -6700,7 +6706,7 @@
                   >
                     <span class="upwork-icon">
                       <svg
-                        class="fill-white transition-all hover:fill-darkGrey"
+                        class="fill-white"
                         width="32"
                         height="33"
                         viewBox="0 0 32 33"
@@ -7131,7 +7137,7 @@
         // Optional parameters
 
         loop: true,
-        autoplay: true,
+        autoplay: { delay: 10000 },
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
@@ -7148,4 +7154,4 @@
       });
     </script>
   </body>
-</html>
+</html

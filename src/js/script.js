@@ -154,8 +154,8 @@ if (
   darkBtn.classList.add("hidden");
   lightBtn.classList.remove("hidden");
 
-  darkBtn_02.classList.add("hidden");
-  lightBtn_02.classList.remove("hidden");
+  // darkBtn_02.classList.add("hidden");
+  // lightBtn_02.classList.remove("hidden");
 } else {
   document.documentElement.classList.remove("dark");
 }

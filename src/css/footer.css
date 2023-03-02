@@ -11,7 +11,7 @@
   }
 }
 .social__link span {
-  @apply flex h-20 w-20 items-center justify-center rounded-full bg-transparent transition-all;
+  @apply flex h-12 w-12 items-center justify-center rounded-full bg-transparent text-dark transition-all hover:text-white dark:text-white  xl:h-14 xl:w-14;
 }
 .social__link:hover .instagram-icon {
   @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
