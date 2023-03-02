@@ -11,19 +11,23 @@
   }
 }
 .social__link span {
-  @apply flex h-12 w-12 items-center justify-center rounded-full bg-transparent text-dark transition-all hover:text-white dark:text-white  xl:h-14 xl:w-14;
+  @apply flex h-12 w-12 items-center justify-center rounded-full 
+  bg-transparent text-dark transition-all 
+  ease-in hover:text-white dark:text-white 
+   xl:h-14 xl:w-14;
 }
 .social__link:hover .instagram-icon {
-  @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
+  @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)]
+   text-white transition ease-in dark:text-white;
 }
 .social__link:hover .facebook-icon {
-  @apply bg-[#5B7FCB] text-white dark:text-white;
+  @apply bg-[#5B7FCB] text-white transition ease-in dark:text-white;
 }
 .social__link:hover .linkedin-icon {
-  @apply bg-[#27A0F8] text-white dark:text-white;
+  @apply bg-[#27A0F8] text-white transition ease-in dark:text-white;
 }
 .social__link:hover .upwork-icon {
-  @apply bg-[#16AC37] text-white dark:text-white;
+  @apply bg-[#16AC37] text-white transition ease-in dark:text-white;
 }
 /*================================================
 END: footer 

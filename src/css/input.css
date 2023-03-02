@@ -161,8 +161,17 @@ Styles borders  btn
 ================================================ */
 /* border-lightDarkGrey xl:border-t */
 
+/**/
 .btn {
-  @apply m-auto  flex w-full
+  @apply m-auto flex  w-full
+         items-center justify-center gap-[10px] rounded-full bg-bgButtonMain py-[16px] 
+         text-base font-bold uppercase text-white transition-all
+        sm:max-w-[357px];
+}
+
+/*flex*/
+.btn__services {
+  @apply m-auto   w-full
          items-center justify-center gap-[10px] rounded-full bg-bgButtonMain py-[16px] 
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
