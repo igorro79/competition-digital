@@ -74,7 +74,7 @@ Form menu header
   before:w-[130px] before:translate-x-[24%]
   before:bg-gradient-radial
      
-  before:from-gradientMain
+  before:from-main
   before:blur-[45px]
   before:content-[''] lg:before:top-[25px]
   lg:before:h-[200px]

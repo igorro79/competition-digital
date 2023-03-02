@@ -96,7 +96,7 @@ btn-card
   /*  xl:max-w-[452px] */
   .cards__title {
     @apply mb-[25px] text-xl font-bold
-     leading-[120%] text-dark dark:text-mainTextWhite
+     leading-[120%] text-dark dark:text-white
      lg:mb-[66px] 
     
      2xl:mb-[30px] 2xl:text-[32px]  2xl:leading-[120%];
@@ -125,13 +125,13 @@ cards__wrap
   .cards__text {
     @apply mb-[40px] text-sm
     font-medium
-    text-dark dark:text-mainTextWhite
+    text-dark dark:text-white
     lg:text-base lg:leading-[140%];
   }
 
   .cards__desc {
     @apply text-xs font-medium uppercase leading-[140%]
-     text-dark dark:text-mainTextWhite
+     text-dark dark:text-white
      lg:text-[14px] 
      xl:text-base;
   }

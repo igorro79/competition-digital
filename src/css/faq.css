@@ -26,15 +26,15 @@ spoller-decor-02
   /* .c_active */
   /* | */
   .spoller-decor::before {
-    @apply absolute left-[50%]  top-0 h-full
-  w-[3px] bg-bgColor content-[''] dark:bg-white;
+    @apply absolute  left-[50%] top-0
+  h-full w-[3px] content-[''] dark:bg-white;
   }
 
   /* translate-x-[-50%] */
   /* -- */
   .spoller-decor::after {
-    @apply absolute left-0 top-[50%] h-[3px]
-  w-full bg-bgColor content-[''] dark:bg-white;
+    @apply absolute left-0 top-[50%]
+  h-[3px] w-full content-[''] dark:bg-white;
   }
 
   .t_active .spoller-decor {
@@ -42,14 +42,14 @@ spoller-decor-02
   }
 
   .t_active .spoller-decor::before {
-    @apply absolute left-[50%] top-0 h-full
-  w-[3px] translate-x-[-50%] bg-bgColor content-[''] dark:bg-white;
+    @apply absolute left-[50%] top-0
+  h-full w-[3px] translate-x-[-50%] content-[''] dark:bg-white;
   }
 
   /* -- */
   .t_active .spoller-decor::after {
-    @apply absolute left-0 top-[50%] h-[3px]
-  w-full translate-y-[-50%] bg-bgColor opacity-0 content-[''] 
+    @apply absolute left-0 top-[50%]
+  h-[3px] w-full translate-y-[-50%] opacity-0 content-[''] 
   dark:bg-white;
   }
 
