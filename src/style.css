@@ -16,8 +16,67 @@
 @import "./person.css";
 
 
-@import "./footer.css";
 @import "./contacts-page.css";*/
+
+.social__link span{
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.social__link:hover .instagram-icon{
+  background-image: linear-gradient( 225.47deg,#7b3aae 13.11%,#d81e4d 49.74%,#f9cc01 88.74% );
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .social__link:hover .instagram-icon{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.social__link:hover .facebook-icon{
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 127 203 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .social__link:hover .facebook-icon{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.social__link:hover .linkedin-icon{
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 160 248 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .social__link:hover .linkedin-icon{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.social__link:hover .upwork-icon{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 172 55 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .social__link:hover .upwork-icon{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
 /* =========== BIG RED ROUND BUTTON ============ */
 
@@ -980,18 +1039,18 @@ BEGIN: wrapper
   display: flex;
   max-width: 100%;
   flex-direction: column;
-  padding-top: 77px;
+  padding-top: var(--header-h);
 }
 
 @media (min-width: 820px){
   .wrapper{
-    padding-top: 87px;
+    padding-top: var(--header-h-lg);
   }
 }
 
 @media (min-width: 1280px){
   .wrapper{
-    padding-top: 90px;
+    padding-top: var(--header-h-xl);
   }
 }
 
@@ -2671,6 +2730,25 @@ Form menu header
  BEGIN: form
  =============================================== */
 
+/*=============== FOOTER ============= */
+
+/*================================================
+ BEGIN: footer
+ =============================================== */
+
+/* shrink-0 h-[100vh]  */
+
+/* bottom-0 */
+
+/* .footer {
+    @apply sticky bottom-[-320px] -z-10 shrink-0
+  lg:bottom-0;
+  } */
+
+/*================================================
+END: footer 
+================================================ */
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -2786,6 +2864,10 @@ Form menu header
   z-index: 10;
 }
 
+.z-\[5\]{
+  z-index: 5;
+}
+
 .z-30{
   z-index: 30;
 }
@@ -2796,10 +2878,6 @@ Form menu header
 
 .z-40{
   z-index: 40;
-}
-
-.z-\[5\]{
-  z-index: 5;
 }
 
 .order-2{
@@ -3637,10 +3715,6 @@ Form menu header
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-\[20px\]{
-  border-radius: 20px;
 }
 
 .rounded-\[60px\]{

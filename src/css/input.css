@@ -25,8 +25,8 @@
 @import "./person.css";
 
 
-@import "./footer.css";
 @import "./contacts-page.css";*/
+@import "./footer.css";
 @import "./utils.css";
 
 @tailwind base;

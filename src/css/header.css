@@ -98,7 +98,7 @@ BEGIN: wrapper
   .wrapper {
     @apply relative m-auto flex  max-w-full flex-col
   
-  pt-[77px] lg:pt-[87px] xl:pt-[90px];
+  pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
   }
 
   .overflow {

@@ -7,10 +7,11 @@
 
   /* shrink-0 h-[100vh]  */
   /* bottom-0 */
-  .footer {
+
+  /* .footer {
     @apply sticky bottom-[-320px] -z-10 shrink-0
   lg:bottom-0;
-  }
+  } */
 
   /*================================================
 END: footer 
