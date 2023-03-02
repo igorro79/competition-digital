@@ -29,6 +29,7 @@
 
 
 @import "./contacts-page.css";*/
+@import "./footer.css";
 @import "./utils.css";
 
 @tailwind base;
@@ -63,7 +64,7 @@ body {
   @apply right-0;
 } */
 
-.lock-body {
+.lock-wrapper {
   @apply h-screen overflow-hidden;
 }
 

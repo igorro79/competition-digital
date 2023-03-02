@@ -3,6 +3,9 @@ const body = document.getElementsByTagName("body");
 const modeBtn = document.querySelector("#mode");
 const html = document.querySelector("html");
 const wrapper = document.querySelector(".wrapper");
+const cookies = document.getElementById("cookies");
+const accept = document.getElementById("accept-btn");
+const headerContainer = document.getElementById("header-container");
 
 const mode = document.querySelector("#mode");
 const darkBtn = document.querySelector("#darkBtn");
@@ -10,8 +13,6 @@ const lightBtn = document.querySelector("#lightBtn");
 // const mode_02 = document.querySelector("#mode_02");
 // const darkBtn_02 = document.querySelector("#darkBtn_02");
 // const lightBtn_02 = document.querySelector("#lightBtn_02");
-
-const bgWrapper = document.querySelector(".wrapper");
 
 const menu = document.querySelector("#menu");
 const burger = document.querySelector(".burger");
@@ -33,24 +34,46 @@ const backdrop_01 = document.getElementById("backdrop_01");
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
 
-// const btnDiscuss = document.getElementById('btnDiscuss');  //======28.02.2023
+const btnDiscuss = document.getElementById("btnDiscuss"); //======28.02.2023
 const logoOpacity = document.getElementById("logo-opacity");
 const submit = document.querySelector("#submit");
 const btnClosePopupForms = document.querySelector("#btn-close-popup-forms");
 
 // const btnContact_02 = document.querySelector('#btnContact_02');
-// const btnDiscuss = document.querySelector('#btnDiscuss');  //======28.02.2023
 
 const formMenu = document.querySelector("#formMenu");
 const btnContactTablet = document.querySelector("#btnContactTablet");
 
+function lockWrapper() {
+  wrapper.classList.add("lock-wrapper");
+}
+function unlockWrapper() {
+  wrapper.classList.remove("lock-wrapper");
+}
+function hideMainHeader() {
+  headerContainer.classList.add("hidden");
+  headerContainer.classList.remove("flex");
+}
+function showMainHeader() {
+  headerContainer.classList.add("flex");
+  headerContainer.classList.remove("hidden");
+}
+
+// ----- on window resize ------
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1280 && !menu.classList.contains("hidden")) {
+    burgerClose();
+  }
+  if (window.innerWidth < 820 && !menu.classList.contains("hidden")) {
+    showMainHeader();
+  }
+  if (window.innerWidth >= 820 && !menu.classList.contains("hidden")) {
+    hideMainHeader();
+  }
+});
 /**
  * Hiddens header to the scroll.
 ======================================= */
-function lockBody() {
-  wrapper.classList.add("lock-body");
-}
-
 // ==========================================
 
 // (function () {
@@ -131,8 +154,8 @@ if (
   darkBtn.classList.add("hidden");
   lightBtn.classList.remove("hidden");
 
-  darkBtn_02.classList.add("hidden");
-  lightBtn_02.classList.remove("hidden");
+  // darkBtn_02.classList.add("hidden");
+  // lightBtn_02.classList.remove("hidden");
 } else {
   document.documentElement.classList.remove("dark");
 }
@@ -213,84 +236,83 @@ if (
 
 //  logo to the open menu
 // const logoOpacity = document.querySelector('#logo-opacity');
-
-burger.addEventListener("click", () => {
+function burgerOpen() {
   burger.classList.toggle("is-active");
-  wrapper.classList.toggle("h-screen");
+  if (window.innerWidth >= 820) hideMainHeader();
+  lockWrapper();
   menu.classList.toggle("hidden");
+}
 
-  // if(bgWrapper.classList.contains('overflow')){
-  //   return ;
-  // }
-  // ------------------------------------------------------------ igor >
-  // if (burger.classList.contains("is-active")) {
-  //   bgWrapper.classList.add("overflow");
-  // } else if (!burger.classList.contains("is-active")) {
-  //   bgWrapper.classList.remove("overflow");
-  // }
-  // ------------------------------------------------------------ igor <
-  /**
-   * Added overflow-hidden to the wrapper
-   */
+burger.addEventListener("click", burgerOpen);
 
-  //  bgWrapper.classList.toggle('overflow');
+// if(wrapper.classList.contains('overflow')){
+//   return ;
+// }
+// ------------------------------------------------------------ igor >
+// if (burger.classList.contains("is-active")) {
+//   wrapper.classList.add("overflow");
+// } else if (!burger.classList.contains("is-active")) {
+//   wrapper.classList.remove("overflow");
+// }
+// ------------------------------------------------------------ igor <
+/**
+ * Added overflow-hidden to the wrapper
+ */
 
-  //  console.log('is-active');
-  // bgWrapper.classList.add('overflow');
-  // if(!'is-active') {
-  //   // return
-  //   bgWrapper.classList.remove('overflow');
-  // }else{
-  //   bgWrapper.classList.toggle('overflow');
-  // }
+//  wrapper.classList.toggle('overflow');
 
-  /**
-   * Remove overflow-hidden to the wrapper
-   */
-  //  bgWrapper.classList.remove('overflow');
+//  console.log('is-active');
+// wrapper.classList.add('overflow');
+// if(!'is-active') {
+//   // return
+//   wrapper.classList.remove('overflow');
+// }else{
+//   wrapper.classList.toggle('overflow');
+// }
 
-  /**
-   * Closes back menu services.
-   */
-  // Якщо відкрите меню сервісів,
-  //потрібно додати клас хіден
-  // ------------------------------------------------------------ igor >
-  // if (servicesModal.classList !== "hidden") {
-  //   servicesModal.classList.add("hidden");
+/**
+ * Remove overflow-hidden to the wrapper
+ */
+//  wrapper.classList.remove('overflow');
 
-  //   servicesMenu.classList.remove("hidden");
-  // }
-  // ------------------------------------------------------------ igor <
-  /**
-   * Close a popup -sent- form header.
-   */
-  // ------------------------------------------------------------ igor>
-  // if (popupForms.classList !== "hidden") {
-  //   popupForms.classList.add("hidden");
-  // }
-  // ------------------------------------------------------------ igor<
-  /**
-   * Opacity logo to the open menu.
-   */
-  //  if(burger.classList === 'is-active'){
-  //   logoOpacity.classList.add('opacity');
-  // }
-});
+/**
+ * Closes back menu services.
+ */
+// Якщо відкрите меню сервісів,
+//потрібно додати клас хіден
+// ------------------------------------------------------------ igor >
+// if (servicesModal.classList !== "hidden") {
+//   servicesModal.classList.add("hidden");
+
+//   servicesMenu.classList.remove("hidden");
+// }
+// ------------------------------------------------------------ igor <
+/**
+ * Close a popup -sent- form header.
+ */
+// ------------------------------------------------------------ igor>
+// if (popupForms.classList !== "hidden") {
+//   popupForms.classList.add("hidden");
+// }
+// ------------------------------------------------------------ igor<
+/**
+ * Opacity logo to the open menu.
+ */
+//  if(burger.classList === 'is-active'){
+//   logoOpacity.classList.add('opacity');
+// }
 
 /**
  * Close a menu tablet.
  */
-
-closeMenuTablet.addEventListener("click", () => {
+function burgerClose() {
   burger.classList.toggle("is-active");
-  wrapper.classList.remove("h-screen");
-  menu.classList.toggle("hidden");
 
-  /**
-   * Remove overflow-hidden to the wrapper
-   */
-  bgWrapper.classList.remove("overflow");
-});
+  showMainHeader();
+  unlockWrapper();
+  menu.classList.toggle("hidden");
+}
+closeMenuTablet.addEventListener("click", burgerClose);
 
 /**
  * Opens a menu services.
@@ -341,7 +363,7 @@ btnContact.addEventListener("click", (e) => {
 
   //   menu.classList.add('hidden');
   // }
-  wrapper.classList.add("h-screen");
+  lockWrapper();
   burger.classList.remove("is-active");
   menu.classList.add("hidden");
 
@@ -350,40 +372,24 @@ btnContact.addEventListener("click", (e) => {
    */
   // console.log(popupForms.classList);
 
-  if (popupForms.classList !== "hidden") {
+  if (!popupForms.classList.contains("hidden")) {
     popupForms.classList.add("hidden");
     // popupForms.classList.remove('is-open');
   }
-
-  /**
-   * Added overflow-hidden to the wrapper
-   */
-  bgWrapper.classList.add("overflow");
 });
 
-//============ 28.02.2023
-
-// btnDiscuss.addEventListener('click', () =>{
-//   formMenu.classList.toggle('hidden');
-
-//    /**
-//    * Added overflow-hidden to the wrapper
-//    */
-//     bgWrapper.classList.toggle('overflow');
-// });
+btnDiscuss.addEventListener("click", () => {
+  formMenu.classList.toggle("hidden");
+  lockWrapper();
+});
 
 btnFormMenu.addEventListener("click", () => {
   formMenu.classList.toggle("hidden");
-  wrapper.classList.remove("h-screen");
+  unlockWrapper();
   // if(burger.classList === 'is-active') {
   //   burger.classList.add('is-active');
   //   menu.classList.remove('hidden');
   // }
-
-  /**
-   * Remove overflow-hidden to the wrapper
-   */
-  bgWrapper.classList.remove("overflow");
 });
 
 /**
@@ -392,7 +398,8 @@ btnFormMenu.addEventListener("click", () => {
 
 btnContactTablet.addEventListener("click", () => {
   formMenu.classList.toggle("hidden");
-  wrapper.classList.add("h-screen");
+  lockWrapper();
+  showMainHeader();
   burger.classList.toggle("is-active");
   menu.classList.toggle("hidden");
 
@@ -560,17 +567,14 @@ submit.addEventListener("click", () => {
 // })
 
 btnClosePopupForms.addEventListener("click", () => {
-  popupForms.classList.toggle("hidden");
-  wrapper.classList.remove("h-screen");
+  popupForms.classList.add("hidden");
+  popupForms.classList.remove("flex");
+
+  unlockWrapper();
   /**
    * Remove atribute disabled for the wrapper element.
    */
   //  burger.removeAttribute('disabled', 'disabled');
-
-  /**
-   * Remove overflow-hidden to the wrapper
-   */
-  bgWrapper.classList.remove("overflow");
 });
 
 /**
@@ -584,7 +588,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupForms = document.querySelector("#popup-forms");
   const formMenu = document.querySelector("#formMenu");
 
-  const burger = document.querySelector(".burger");
+  // const burger = document.querySelector(".burger");
 
   /**
    * Validation input phone add popup.
@@ -719,7 +723,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // sendMail();
       // closePopupForm();
 
-      popupForms.classList.toggle("hidden");
+      popupForms.classList.remove("hidden");
+      popupForms.classList.add("flex");
       // popupForms.classList.add('is-open');
 
       formMenu.classList.add("hidden");
@@ -951,3 +956,7 @@ function toggleBtn() {
 
 // }
 // closedConsentPopup ()
+
+accept.addEventListener("click", () => {
+  cookies.style.display = "none";
+});

@@ -5,16 +5,26 @@
  BEGIN: footer
  =============================================== */
 
-  /* shrink-0 h-[100vh]  */
-  /* bottom-0 */
-
-  /*-z-10   02.03.2023*/
   .footer {
     @apply sticky bottom-[-320px]  shrink-0
   lg:bottom-0;
   }
-
-  /*================================================
+}
+.social__link span {
+  @apply flex h-12 w-12 items-center justify-center rounded-full bg-transparent text-dark transition-all hover:text-white dark:text-white  xl:h-14 xl:w-14;
+}
+.social__link:hover .instagram-icon {
+  @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)] text-white dark:text-white;
+}
+.social__link:hover .facebook-icon {
+  @apply bg-[#5B7FCB] text-white dark:text-white;
+}
+.social__link:hover .linkedin-icon {
+  @apply bg-[#27A0F8] text-white dark:text-white;
+}
+.social__link:hover .upwork-icon {
+  @apply bg-[#16AC37] text-white dark:text-white;
+}
+/*================================================
 END: footer 
 ================================================ */
-}
