@@ -54,18 +54,17 @@ html::-webkit-scrollbar-thumb {
   }
 
   .header__contact-body {
-    @apply absolute  right-[100%] top-0 z-20 h-[calc(100vh+82px)] w-full overflow-y-scroll
- bg-dark transition ease-in;
+    @apply absolute  top-0 z-20 h-[calc(100vh+82px)]
+     w-full overflow-y-scroll bg-dark transition ease-in;
   }
 
   .header__contact-body::-webkit-scrollbar-thumb {
     @apply h-[5px]  rounded-[20px] bg-main;
   }
 
-  /*._body-contact-active {
-  @apply right-0  !important
-}
-*/
+  ._body-contact-active {
+    @apply right-0  !important;
+  }
 
   /*.header__contact-body {
     -webkit-transition: .3s;

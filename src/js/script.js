@@ -61,16 +61,46 @@ function showMainHeader() {
 
 // ----- on window resize ------
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 1280 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth > 1280 && menu.classList.contains("left-0")) {
     burgerClose();
   }
-  if (window.innerWidth < 820 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth < 820 && menu.classList.contains("left-0")) {
     showMainHeader();
   }
-  if (window.innerWidth >= 820 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth >= 820 && menu.classList.contains("left-0")) {
     hideMainHeader();
   }
 });
+
+/*
+ * Close a menu tablet.
+ */
+function burgerClose() {
+  burger.classList.toggle("is-active");
+  showMainHeader();
+  unlockWrapper();
+  menu.classList.toggle("left-full");
+  menu.classList.toggle("left-0");
+  menu.classList.add("w-0");
+  menu.classList.remove("w-full");
+}
+
+//  logo to the open menu
+function burgerOpen() {
+  burger.classList.toggle("is-active");
+  if (window.innerWidth >= 820) hideMainHeader();
+  lockWrapper();
+  menu.classList.toggle("left-0");
+  menu.classList.toggle("left-full");
+  menu.classList.add("w-full");
+  menu.classList.remove("w-0");
+}
+
+closeMenuTablet.addEventListener("click", burgerClose);
+burger.addEventListener("click", burgerOpen);
+
+/**
+
 /**
  * Hiddens header to the scroll.
 ======================================= */
@@ -234,16 +264,6 @@ if (
  * Opens a menu.
  */
 
-//  logo to the open menu
-function burgerOpen() {
-  burger.classList.toggle("is-active");
-  if (window.innerWidth >= 820) hideMainHeader();
-  lockWrapper();
-  menu.classList.toggle("hidden");
-}
-
-burger.addEventListener("click", burgerOpen);
-
 // if(wrapper.classList.contains('overflow')){
 //   return ;
 // }
@@ -301,22 +321,6 @@ burger.addEventListener("click", burgerOpen);
 //   logoOpacity.classList.add('opacity');
 // }
 
-/**
- * Close a menu tablet.
- */
-function burgerClose() {
-  burger.classList.toggle("is-active");
-
-  showMainHeader();
-  unlockWrapper();
-  menu.classList.toggle("hidden");
-}
-closeMenuTablet.addEventListener("click", burgerClose);
-
-/**
- * Opens a menu services.
- */
-
 btnServices.addEventListener("click", () => {
   servicesMenu.classList.toggle("hidden");
 
@@ -348,7 +352,8 @@ backMenuServices.addEventListener("click", () => {
 
 //  02
 btnContact.addEventListener("click", (e) => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
 
   // console.log(burger.classList);
   // console.log(e.view.parent.document.body);
@@ -364,7 +369,10 @@ btnContact.addEventListener("click", (e) => {
   // }
   lockWrapper();
   burger.classList.remove("is-active");
-  menu.classList.add("hidden");
+  menu.classList.remove("left-0");
+  menu.classList.add("left-full");
+  menu.classList.remove("w-full");
+  menu.classList.add("w-0");
 
   /**
    * Closed the popup-form SENT.
@@ -373,17 +381,18 @@ btnContact.addEventListener("click", (e) => {
 
   if (!popupForms.classList.contains("hidden")) {
     popupForms.classList.add("hidden");
-    // popupForms.classList.remove('is-open');
   }
 });
 
 btnDiscuss.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
   lockWrapper();
 });
 
 btnFormMenu.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-full");
+  formMenu.classList.toggle("right-0");
   unlockWrapper();
   // if(burger.classList === 'is-active') {
   //   burger.classList.add('is-active');
@@ -396,11 +405,15 @@ btnFormMenu.addEventListener("click", () => {
  */
 
 btnContactTablet.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
   lockWrapper();
   showMainHeader();
   burger.classList.toggle("is-active");
-  menu.classList.toggle("hidden");
+  menu.classList.add("left-full");
+  menu.classList.remove("left-0");
+  menu.classList.remove("w-full");
+  menu.classList.add("w-0");
 
   // burgerMenu()
 });
@@ -717,9 +730,10 @@ document.addEventListener("DOMContentLoaded", function () {
       popupForms.classList.add("flex");
       // popupForms.classList.add('is-open');
 
-      formMenu.classList.add("hidden");
+      formMenu.classList.toggle("right-full");
+      formMenu.classList.toggle("right-0");
 
-      document.getElementById("name").value = "";
+      document.getElementById("username").value = "";
       document.getElementById("email").value = "";
       document.getElementById("phone").value = "";
       document.getElementById("company").value = "";
