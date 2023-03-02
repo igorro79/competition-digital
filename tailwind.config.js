@@ -13,7 +13,10 @@ module.exports = {
       padding: "20px",
     },
     screens: {
-      sm: "360px",
+      // sm: "360px",
+      // //=> @media (min-width: 360px) { ... }
+
+      sm: "570px",
       //=> @media (min-width: 360px) { ... }
 
       md: "768px",
