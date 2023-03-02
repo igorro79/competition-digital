@@ -61,7 +61,7 @@ body {
   @apply right-0;
 } */
 
-.lock-body {
+.lock-wrapper {
   @apply h-screen overflow-hidden;
 }
 

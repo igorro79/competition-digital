@@ -1,12 +1,12 @@
 /* =========== BIG RED ROUND BUTTON ============ */
 
 .big-red-btn.video__big-red-btn {
-  @apply top-[-66px] right-[5.5%] lg:top-[-92px] lg:right-[11.3%]
-   xl:top-[-71px] xl:right-[18%] 
-     1xl:top-[-72px] 1xl:right-[18%]   2xl:top-[-90px] 2xl:right-[23.4%];
+  @apply absolute top-[-66px] right-[5.5%] z-[1]
+   lg:top-[-92px] lg:right-[11.3%] 
+     xl:top-[-71px] xl:right-[18%] 1xl:top-[-72px] 1xl:right-[18%]  2xl:top-[-90px] 2xl:right-[23.4%];
 }
 .big-red-btn {
-  @apply absolute z-[1] flex h-[133px] w-[133px] flex-col items-center justify-center gap-3
+  @apply flex h-[133px] w-[133px] flex-col items-center justify-center gap-3
    rounded-full px-3 text-center text-sm font-bold uppercase text-light
      before:absolute before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full 
      before:rounded-full before:bg-main before:transition-all before:content-['']
@@ -18,6 +18,9 @@
 .big-red-btn.cases-page__big-red-btn {
   @apply min-h-[125px] w-[125px] min-w-[125px] lg:min-h-[125px] lg:w-[125px] 
     lg:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
+}
+.big-red-btn#btn-close-popup-forms {
+  @apply relative mx-auto;
 }
 
 /* =========== COOKIES ============ */

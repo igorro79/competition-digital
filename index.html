@@ -13,11 +13,12 @@
     <title>Uwp digital</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper bg-dark">
       <!-- BEGIN: 01-section-header -->
       <header id="mainNav" class="header bg-dark">
         <!-- container -->
         <div
+          id="header-container"
           class="container mx-auto flex min-h-[var(--header-h)] sm:max-w-full md:min-h-[var(--header-h-md)] lg:min-h-[var(--header-h-lg)] lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
         >
           <!--  BEGIN: wrap-header -->
@@ -718,8 +719,9 @@
               <!-- -->
               <div
                 id="popup-forms"
-                class="header-scroll-form absolute right-0 left-0 top-[var(--header-h)] z-40 hidden w-full bg-white px-5 pt-[56px] pb-[240px] text-center dark:bg-dark md:top-[var(--header-h-md)] lg:top-[var(--header-h-lg)] lg:pt-[125px] lg:pb-[399px] xl:pt-[175px] xl:pb-[405px]"
+                class="header-scroll-form absolute right-0 left-0 top-[var(--header-h)] z-[5] hidden h-screen w-full flex-col bg-white px-5 text-center dark:bg-dark md:top-[var(--header-h-md)] lg:top-[var(--header-h-lg)]"
               >
+                <div class="grow"></div>
                 <!-- popup-forms -->
                 <div class="mb-[27px] flex flex-col items-center xl:mb-5">
                   <!-- width="68" -->
@@ -764,44 +766,25 @@
                 <a
                   id="btn-close-popup-forms"
                   href="#cases"
-                  class="group/item relative flex flex-col items-center justify-center"
+                  class="big-red-btn"
+                  aria-label="watch cases"
                 >
-                  <!-- flex h-[177px] w-[177px] flex-col items-center gap-[10px] 
-                      rounded-full bg-main pt-[66px] transition-all 
-                      hover:scale-[.79] -->
-
-                  <!-- button type="button"   27.02.2023 -->
-                  <div
-                    class="flex h-[177px] w-[177px] flex-col items-center rounded-full bg-main transition-all ease-in group-hover/item:scale-[.79]"
-                  ></div>
-
-                  <!-- BEGIN: wrap-svg-text -->
-                  <div
-                    class="group/scale absolute z-10 flex cursor-pointer flex-col items-center gap-[11px] rounded-full pt-[36px] pr-[19px] pl-[20px] pb-[35px]"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    enable-background="new 0 0 24 24"
                   >
-                    <!-- svg -->
-                    <svg
-                      class="fill-white"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                    >
-                      <path
-                        d="M15.9783 15.3279V1.32764V0.327637H14.9783H0.978315L0.978316 2.32764H12.5646L0.271484 14.6208L1.6857 16.035L13.9783 3.74237V15.3279H15.9783Z"
-                      ></path>
-                    </svg>
-
-                    <!-- group-hover/item:scale-[1.26] -->
-                    <p
-                      class="group/scale text-center text-[16px] font-bold uppercase leading-[130%] text-mainTextWhite"
-                    >
-                      Watch Cases
-                    </p>
-                  </div>
-                  <!-- END: wrap-svg-text -->
+                    <path
+                      fill="currentColor"
+                      d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
+                    />
+                  </svg>
+                  watch cases
                 </a>
                 <!-- END:   02 btn-close-popup-forms -->
+                <div class="grow"></div>
               </div>
               <!--  END: popup forms -->
 
@@ -856,7 +839,6 @@
         <!--  END: 02-section-hero -->
 
         <section class="video relative">
-          <h2 class="visually-hidden">video section</h2>
           <button
             type="button"
             aria-label="discuss the project"
@@ -3663,15 +3645,13 @@
                             </div>
 
                             <!-- 01 -->
-                            <div class="2xl:grid 2xl:gap-[115px]">
+                            <div class="lg:grow 2xl:grid 2xl:gap-[115px]">
                               <p
                                 class="mb-[99px] text-base font-medium leading-[139%] text-light lg:mb-[53px] lg:max-w-[456px] 2xl:max-w-[637px] 2xl:text-2xl 2xl:leading-[34px]"
                               >
-                                The digital world offers limitless possibilities
-                                for transforming an idea into a successful
-                                business. We are a digital marketing agency that
-                                opens these opportunities to you. With the help
-                                of marketing tools and smart technologies, UWP
+                                We are a digital marketing agency that opens
+                                these opportunities to you. With the help of
+                                marketing tools and smart technologies, UWP
                                 connects customers with their favorite brands.
                               </p>
                               <!-- hidden-mobile lg:w-[456px]-->
@@ -3735,32 +3715,39 @@
                             <div class="relative">
                               <picture class="">
                                 <source
-                                  media="(max-width: 819px)"
+                                  media="(max-width:819px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/daniella-03-151x180.jpg,
-                                    ./src/images/07-section-discuss/daniella-03-302x360@2x.jpg 2x
+                                    ./src/images/team/foto-m-02-151x180.jpg    1x,
+                                    ./src/images/team/foto-m-02-302x360@2x.jpg 2x
                                   "
                                 />
                                 <source
-                                  media="(min-width: 820px)"
+                                  media="(min-width:820px) and (max-width:1279px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/daniella-240x352.jpg,
-                                    ./src/images/07-section-discuss/daniella-240x352@2x.jpg 2x
+                                    ./src/images/team/foto-t-02-240x352.jpg    1x,
+                                    ./src/images/team/foto-t-02-480x704@2x.jpg 2x
                                   "
                                 />
-                                <!-- sizes="(min-width: 1280px) 1280px, 100vw" -->
+
                                 <source
-                                  media="(min-width: 1280px)"
+                                  media="(min-width:1280px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/foto-390x520.jpg,
-                                    ./src/images/07-section-discuss/foto-390x520@2x.jpg 2x
+                                    ./src/images/team/foto-t-02-240x352.jpg    1x,
+                                    ./src/images/team/foto-t-02-480x704@2x.jpg 2x
                                   "
                                 />
-                                <!-- rounded-[20px] lg:rounded-none-->
+
                                 <img
                                   class="border-dark xl:max-w-[390px] 2xl:w-[390px]"
-                                  src="./src/images/07-section-discuss/daniella-03-151x180.jpg"
-                                  alt="Girl's photo"
+                                  srcset="
+                                    ./src/images/team/foto-m-02-151x180.jpg    1x,
+                                    ./src/images/team/foto-m-02-302x360@2x.jpg 2x
+                                  "
+                                  src="./src/images/team/foto-m-02-151x180.jpg"
+                                  alt="Man"
                                   loading="lazy"
                                 />
                               </picture>
@@ -3919,7 +3906,9 @@
                             </div>
 
                             <!-- 02 -->
-                            <div class="2xl:grid 2xl:gap-[115px]">
+                            <div
+                              class="lg:grow lg:grow 2xl:grid 2xl:gap-[115px]"
+                            >
                               <p
                                 class="mb-[99px] text-base font-medium leading-[139%] text-light lg:mb-[53px] lg:max-w-[456px] 2xl:max-w-[637px] 2xl:text-2xl 2xl:leading-[34px]"
                               >
@@ -3988,32 +3977,39 @@
                             <div class="relative">
                               <picture class="">
                                 <source
-                                  media="(max-width: 819px)"
+                                  media="(max-width:819px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/daniella-03-151x180.jpg,
-                                    ./src/images/07-section-discuss/daniella-03-302x360@2x.jpg 2x
+                                    ./src/images/team/foto-m-02-151x180.jpg    1x,
+                                    ./src/images/team/foto-m-02-302x360@2x.jpg 2x
                                   "
                                 />
                                 <source
-                                  media="(min-width: 820px)"
+                                  media="(min-width:820px) and (max-width:1279px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/daniella-240x352.jpg,
-                                    ./src/images/07-section-discuss/daniella-240x352@2x.jpg 2x
+                                    ./src/images/team/foto-t-02-240x352.jpg    1x,
+                                    ./src/images/team/foto-t-02-480x704@2x.jpg 2x
                                   "
                                 />
-                                <!-- sizes="(min-width: 1280px) 1280px, 100vw" -->
+
                                 <source
-                                  media="(min-width: 1280px)"
+                                  media="(min-width:1280px)"
+                                  type="image/jpg"
                                   srcset="
-                                    ./src/images/07-section-discuss/foto-390x520.jpg,
-                                    ./src/images/07-section-discuss/foto-390x520@2x.jpg 2x
+                                    ./src/images/team/foto-t-02-240x352.jpg    1x,
+                                    ./src/images/team/foto-t-02-480x704@2x.jpg 2x
                                   "
                                 />
-                                <!-- rounded-[20px] lg:rounded-none-->
+
                                 <img
                                   class="border-dark xl:max-w-[390px] 2xl:w-[390px]"
-                                  src="./src/images/07-section-discuss/daniella-03-151x180.jpg"
-                                  alt="Girl's photo"
+                                  srcset="
+                                    ./src/images/team/foto-m-02-151x180.jpg    1x,
+                                    ./src/images/team/foto-m-02-302x360@2x.jpg 2x
+                                  "
+                                  src="./src/images/team/foto-m-02-151x180.jpg"
+                                  alt="Man"
                                   loading="lazy"
                                 />
                               </picture>
@@ -4174,7 +4170,7 @@
                             </div>
 
                             <!-- 03 -->
-                            <div class="2xl:grid 2xl:gap-[115px]">
+                            <div class="lg:grow 2xl:grid 2xl:gap-[115px]">
                               <p
                                 class="mb-[99px] text-base font-medium leading-[139%] text-light lg:mb-[53px] lg:max-w-[456px] 2xl:max-w-[637px] 2xl:text-2xl 2xl:leading-[34px]"
                               >
@@ -4182,8 +4178,6 @@
                                 for transforming an idea into a successful
                                 business. We are a digital marketing agency that
                                 opens these opportunities to you. With the help
-                                of marketing tools and smart technologies, UWP
-                                connects customers with their favorite brands.
                               </p>
                               <!-- hidden-mobile lg:w-[456px]-->
                               <p
@@ -6187,7 +6181,7 @@
                   </div>
                   <!-- wrapper-buttons -->
                   <div class="flex items-center">
-                    <div
+                    <button
                       id="btnContactTablet"
                       class="group flex cursor-pointer items-center"
                     >
@@ -6222,7 +6216,7 @@
                           ></path>
                         </svg>
                       </div>
-                    </div>
+                    </button>
 
                     <!--  BEGIN: close-menu-button -->
                     <div class="ml-[33px] cursor-pointer">
@@ -7085,7 +7079,7 @@
         // Optional parameters
 
         loop: true,
-
+        autoplay: true,
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
