@@ -73,17 +73,7 @@ module.exports = {
       gridTemplateColumns: {
         "3fr": "repeat(3, minmax(min-content, 1fr))",
       },
-      // backgroundImage: (theme) => ({
-      //   "ellipse-mobile": "url('/img/gradient/Ellipse-hero-mobile.png')",
-      //   "ellipse-tablet": "url('/img/gradient/Ellipse-hero-tablet.png')",
-      //   "ellipse-desctop": "url('/img/gradient/Ellipse-hero-desktop.png')",
-      //   "gradient-mobile": "url('/img/content/gradient-mobile.png')",
-      //   "ellipse-form-mobile": "url('/img/gradient/Ellipse-form-mobile.png')",
-      //   "ellipse-form-tablet": "url('/img/gradient/Ellipse-form-tablet.png')",
-      //   "ellipse-form-desktop": "url('/img/gradient/Ellipse-form-desktop.png')",
 
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      // }),
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 
@@ -116,15 +106,11 @@ module.exports = {
         mainTextBlue: "#6355ff",
         mainTextBlueHover: "#86A1FF",
 
-
-
-
-
         // ===colors-02=====
-        bgColor: "#171717",   //?
+        bgColor: "#171717", //?
         // bgColorGrey: "#f8f8f8",
         // bgColorMenuTablet: "#ff304d",
-        bgColorMain: "#ff304d",  //?
+        bgColorMain: "#ff304d", //?
         // bgColorBtnForm: "#535353",
         // bgDarkMode: '#3E3E3E',
 
@@ -158,8 +144,5 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-    require("tw-elements/dist/plugin"),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

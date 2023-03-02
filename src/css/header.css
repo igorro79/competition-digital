@@ -101,9 +101,9 @@ BEGIN: wrapper
   pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
   }
 
-  .overflow {
+  /*.overflow {
     @apply overflow-y-hidden;
-  }
+  }*/
 
   /*================================================ 
 BEGIN: 01-section-header 
@@ -289,19 +289,9 @@ Menu header gradient
     ease-in;
   }
 
-  ._nav-item-activ {
-    @apply text-mainTextRed;
-  }
-
   /* =============================
 translate-underline-header-menu
 ==============================*/
-
-  /*
-  .translate-underline__hover-line{
-    @apply after:block after:h-px after:w-full after:scale-0 after:bg-lightDarkGrey after:transition-all after:content-[''] hover:text-lightDarkGrey hover:after:scale-100 active:text-main active:after:bg-main
-}
-*/
 
   /* active:text-mainTextRed  */
 
@@ -317,19 +307,6 @@ translate-underline-header-menu
       active:before:text-mainTextRed;
   }
 
-  /* .translate-underline__hover-line__dark{
-  @apply relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute
-   before:-bottom-1 before:right-0 before:w-0 before:h-px before:opacity-0
-   before:transition-all before:duration-700 before:bg-lightDarkGrey
-   hover:before:w-full hover:before:opacity-100 
-   hover:before:left-0 hover:before:right-auto hover:before:duration-700
-    hover:text-lightDarkGrey hover:after:scale-100 
-    active:before:bg-underlineRed
-    
-    active:text-mainTextRed
-    ;
-} */
-
   /*==============================
 translate-underline__hover-line
 ================================*/
@@ -339,19 +316,6 @@ translate-underline__hover-line
     hover:underline hover:underline-offset-8 hover:transition-all;
   }
 
-  /* .translate-underline__hover{
-     @apply hover:transition-all hover:text-mainTextRed hover:underline hover:underline-offset-8 hover:translate-x-6;
-  } */
-
-  /* .translate-underline__hover-line{
-     @apply  relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute
-     before:-bottom-0 before:left-0 before:w-0 before:h-px before:opacity-0
-     before:transition-all before:duration-300 before:bg-bgColorMain
-     hover:before:w-full hover:before:opacity-100 
-     ;
-  }
-  */
-
   .translate-underline__hover-line {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-0
      before:right-0 before:h-px before:w-0 before:bg-bgColorMain before:opacity-0
@@ -360,13 +324,13 @@ translate-underline__hover-line
      hover:before:w-full hover:before:opacity-100 hover:before:duration-500;
   }
 
-  .translate-underline__hover-line__cases {
+  /*.translate-underline__hover-line__cases {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-[13px]
     before:right-0 before:h-[5px] before:w-0 before:bg-bgColorMain before:opacity-0
     before:transition-all before:duration-1000 before:content-[''] 
     hover:before:left-0 hover:before:right-auto 
     hover:before:w-full hover:before:opacity-100 hover:before:duration-500;
-  }
+  }*/
 
   .translate-underline__hover-line-back {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-0
@@ -436,9 +400,10 @@ Styles borders  btn
 ================================================ */
   /* border-lightDarkGrey xl:border-t */
 
-  .btn {
+  /*.btn {
     @apply m-auto  flex w-full
-         items-center justify-center gap-[10px] rounded-full bg-bgButtonMain py-[16px] 
+         items-center justify-center gap-[10px]
+          rounded-full bg-bgButtonMain py-[16px] 
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
   }
@@ -457,7 +422,7 @@ Styles borders  btn
     @apply flex flex-row items-center justify-center
         gap-[10px] rounded-[70px] border-[1px] border-borderBtn bg-bgButtonMain py-4 px-9
         text-base font-bold uppercase  leading-5 text-mainTextWhite;
-  }
+  }*/
 
   /* ================================
   Border position
