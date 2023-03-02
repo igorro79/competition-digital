@@ -3,7 +3,7 @@
 BEGIN: 06-section-services
  =============================================== */
   .text__hover-red {
-    @apply transition ease-in group-hover/card:text-bgColorMain;
+    @apply transition ease-in group-hover/card:text-main;
   }
 
   /* cards__btn */
@@ -13,12 +13,12 @@ BEGIN: 06-section-services
     @apply rounded-full transition-all ease-in
   xl:p-[26px]
                                 
-  xl:group-hover/card:bg-bgColorMain 2xl:p-8;
+  xl:group-hover/card:bg-main 2xl:p-8;
   }
 
   .svg__hover-red {
     @apply transition-all ease-in 
-  group-hover/card:fill-bgColorMain 
+  group-hover/card:fill-main 
   
   xl:group-hover/card:fill-white;
   }

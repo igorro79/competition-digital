@@ -65,7 +65,7 @@ BEGIN: gradient-hero
   before:absolute before:right-0 before:h-[212px]
   before:w-[212px] before:translate-x-[50%]
   before:bg-gradient-radial
-  before:from-gradientMain before:blur-[45px] before:content-['']
+  before:from-main before:blur-[45px] before:content-['']
 
   lg:before:top-[50px]
   lg:before:h-[322px] lg:before:w-[322px]
@@ -76,7 +76,7 @@ BEGIN: gradient-hero
   }
 
   /* .red-gradient {
-    @apply relative overflow-hidden  from-gradientMain to-transparent
+    @apply relative overflow-hidden  from-main to-transparent
     before:absolute before:right-0 
     before:translate-x-[50%] before:bg-gradient-radial 
      before:content-[''];

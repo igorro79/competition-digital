@@ -1,15 +1,15 @@
 @layer components {
   /*=============== MAIN BUTTON ============= */
 
-  .main-btn {
+  /* .main-btn {
     @apply mx-auto flex h-[60px] 
     w-[clamp(280px,85vw,357px)] min-w-[280px] items-center justify-center gap-2.5 
     rounded-[70px] border-[1px]  border-main  bg-gradient-to-t from-main 
-    via-main bg-size-200  bg-pos-0  px-1 py-1
+    via-main   bg-pos-0  px-1 py-1
     uppercase text-white transition-all duration-300
-    hover:from-activeRed hover:bg-pos-200   active:bg-activeRed lg:w-[357px]
+    hover:from-activeRed   active:bg-activeRed lg:w-[357px]
     xl:w-[clamp(270px,90%,357px)] xl:min-w-[270px];
-  }
+  } */
   .main-btn--reversed {
     @apply border-2 border-main from-transparent to-transparent text-dark 
      hover:text-white active:bg-main  active:text-white dark:text-white
@@ -139,7 +139,7 @@
   .learn-more {
     @apply font-bold uppercase transition-all hover:text-main;
   }
-  #accept-btn {
+  #acceptBtn {
     @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
      lg:py-4 lg:px-10;
   }

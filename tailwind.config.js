@@ -61,21 +61,6 @@ module.exports = {
       // aspectRatio: {
       //   '4/3': '4 / 3',
       // },
-      backgroundSize: {
-        "size-200": "200% 200%",
-        "size-300": "300% 300%",
-      },
-      backgroundPosition: {
-        "pos-0": "0% 100%",
-        "pos-100": "100% 200%",
-        "pos-200": "200% 300%",
-      },
-      transitionProperty: {
-        height: "max-height",
-      },
-      gridTemplateColumns: {
-        "3fr": "repeat(3, minmax(min-content, 1fr))",
-      },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -87,16 +72,15 @@ module.exports = {
       },
       colors: {
         main: "#FF304D",
-        light: "#f8f8f8",
+        light: "#F8F8F8",
         dark: "#171717",
         grey: "#323232",
-        lightGrey: "#e0e0e0",
+        lightGrey: "#E0E0E0",
         lightDarkGrey: "#909090",
         middleGrey: "#919191",
-        lightRed: "#ff445e",
+        lightRed: "#FF445E",
         darkGrey: "#474747",
-        activeRed: "#dc2d45",
-        gradientMain: "#FF304D",
+        activeRed: "#DC2D45",
 
         link: "#4B73FF",
         linkActive: "#86A1FF",
@@ -107,40 +91,6 @@ module.exports = {
 
         bgColorBtnForm: "#535353",
         mainTextBlue: "#6355ff",
-        mainTextBlueHover: "#86A1FF",
-
-        // ===colors-02=====
-        bgColor: "#171717", //?
-        // bgColorGrey: "#f8f8f8",
-        // bgColorMenuTablet: "#ff304d",
-        bgColorMain: "#ff304d", //?
-        // bgColorBtnForm: "#535353",
-        // bgDarkMode: '#3E3E3E',
-
-        // ====== text ======
-        mainTextWhite: "#ffffff",
-        // mainTextLight: "#f8f8f8",
-        mainTextLightGrey: "#919191",
-        mainTextBlack: "#000000",
-        mainTextDark: "#171717", //?
-        mainTextRed: "#ff304d",
-        // mainTextBlue: "#6355ff",
-        mainTextBlueHeader: "#4B73FF",
-        // mainTextBlueHover: "#86A1FF",
-
-        // // ====== btn ======
-        bgButtonMain: "#ff304d",
-        bgButtonDarkGrey: "#474747",
-        bgButtonGrey: "#f8f8f8",
-
-        // ====== slider btn ======
-        sliderButtonGrey: "#919191",
-        sliderButtonActive: "#FF304D",
-
-        // ====== border ======
-        borderBottom: "#919191",
-        borderBtn: "#ff304d",
-        underlineRed: "#ff304d",
       },
     },
   },

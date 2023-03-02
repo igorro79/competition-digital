@@ -4,7 +4,7 @@ const modeBtn = document.querySelector("#mode");
 const html = document.querySelector("html");
 const wrapper = document.querySelector(".wrapper");
 const cookies = document.getElementById("cookies");
-const accept = document.getElementById("accept-btn");
+const accept = document.getElementById("acceptBtn");
 const headerContainer = document.getElementById("header-container");
 
 const mode = document.querySelector("#mode");
@@ -24,7 +24,7 @@ const servicesModal = document.querySelector("#servicesModal");
 const servicesMenu = document.querySelector("#servicesMenu");
 
 //  popup -sent- form header.
-const popupForms = document.querySelector("#popup-forms");
+const popupForms = document.querySelector("#popupForms");
 const btnServices = document.querySelector("#btnServices");
 
 const backMenuServices = document.querySelector("#backMenuServices");
@@ -35,9 +35,9 @@ const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
 
 const btnDiscuss = document.getElementById("btnDiscuss"); //======28.02.2023
-const logoOpacity = document.getElementById("logo-opacity");
+const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.querySelector("#submit");
-const btnClosePopupForms = document.querySelector("#btn-close-popup-forms");
+const btnClosePopupForms = document.querySelector("#btnClosePopupForms");
 
 // const btnContact_02 = document.querySelector('#btnContact_02');
 
@@ -235,7 +235,6 @@ if (
  */
 
 //  logo to the open menu
-// const logoOpacity = document.querySelector('#logo-opacity');
 function burgerOpen() {
   burger.classList.toggle("is-active");
   if (window.innerWidth >= 820) hideMainHeader();
@@ -435,7 +434,7 @@ btnContactTablet.addEventListener("click", () => {
  */
 
 function opensBlockServices() {
-  let tl = document.querySelectorAll("#wrp-02 .title ");
+  let tl = document.querySelectorAll("#servicesCardsWrp .title ");
   // console.log(tl);
 
   for (let i = 0; i < tl.length; i++) {
@@ -472,18 +471,19 @@ opensBlockServices();
 // textRed.classList.replace('text-mainTextRed' ,'text-mainTextDark' )
 
 function accordeonOpen() {
-  let tl = document.querySelectorAll("#wrp .title ");
+  let tl = document.querySelectorAll("#faqWrp .title ");
 
   for (let i = 0; i < tl.length; i++) {
     tl[i].addEventListener("click", function (e) {
-      // console.log(e);
-      // // console.log(e.target.firstElementChild.classList);
-      // console.log(e.target.firstElementChild);
-      // // console.log(e.target.nextElementSibling.classList);
-
       if (this.classList.contains("t_active")) {
         this.classList.remove("t_active");
         this.nextElementSibling.classList.remove("c_active");
+
+        this.classList.remove("text-main");
+        this.classList.add("text-dark");
+
+        this.classList.add("dark:text-white");
+        this.classList.remove("dark:text-main");
         /**
          * Button
          */
@@ -502,11 +502,11 @@ function accordeonOpen() {
              * Title text color red
              */
 
-            item.classList.remove("text-mainTextRed");
-            item.classList.add("text-mainTextDark");
+            item.classList.remove("text-main");
+            item.classList.add("text-dark");
 
-            item.classList.remove("dark:text-mainTextRed");
-            item.classList.add("dark:text-mainTextDark");
+            item.classList.remove("dark:text-main");
+            item.classList.add("dark:text-white");
 
             /**
              * Button
@@ -527,11 +527,11 @@ function accordeonOpen() {
          * Title text color red
          */
 
-        this.classList.remove("text-mainTextDark");
-        this.classList.add("text-mainTextRed");
+        this.classList.remove("text-dark");
+        this.classList.add("text-main");
 
-        this.classList.remove("dark:text-mainTextDark");
-        this.classList.add("dark:text-mainTextRed");
+        this.classList.remove("dark:text-dark");
+        this.classList.add("dark:text-main");
 
         /**
          * Button
@@ -551,20 +551,9 @@ accordeonOpen();
  * Close a popup-forms.
  */
 
-// const btnFormSkicka = document.querySelector('#btn-form-skicka');
-
-// const formMenu = document.querySelector('#formMenu');
-
-// btnFormSkicka.addEventListener
-
 submit.addEventListener("click", () => {
   logoOpacity.classList.remove("opacity-0");
 });
-
-// submit.addEventListener('click', () =>{
-//   popupForms.classList.toggle('hidden');
-//   formMenu.classList.add('hidden');
-// })
 
 btnClosePopupForms.addEventListener("click", () => {
   popupForms.classList.add("hidden");
@@ -585,7 +574,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submit = document.getElementById("submit");
   const submit_02 = document.getElementById("submit_02");
   // popup-forms
-  const popupForms = document.querySelector("#popup-forms");
+  const popupForms = document.querySelector("#popupForms");
   const formMenu = document.querySelector("#formMenu");
 
   // const burger = document.querySelector(".burger");
@@ -594,10 +583,12 @@ document.addEventListener("DOMContentLoaded", function () {
    * Validation input phone add popup.
    */
 
+  const username = document.querySelector("#username");
+  const username_02 = document.querySelector("#username");
   const phone = document.querySelector("#phone");
   const popup = document.querySelector(".search");
-  // const phone_02 = document.querySelector('#phone_02');  //=========28.02.2023
-  // const popup_02 = document.querySelector('.search_02');
+  const phone_02 = document.querySelector("#phone_02"); //=========28.02.2023
+  const popup_02 = document.querySelector(".search_02");
 
   phone.addEventListener("input", (e) => {
     let inputValue = phone.value;
@@ -654,44 +645,43 @@ document.addEventListener("DOMContentLoaded", function () {
    * Validation input phone add popup_02.
    */
 
-  // phone_02.addEventListener('input', () => {    //===========28.02.2023
-  //   let inputValue_02 = phone_02.value;
-  //   //   popup phone_02
+  phone_02.addEventListener("input", () => {
+    //===========28.02.2023
+    let inputValue_02 = phone_02.value;
+    //   popup phone_02
 
-  //   if (isNaN(inputValue_02)) {
+    if (isNaN(inputValue_02)) {
+      /**
+       * Added red border input phone
+       */
 
-  //     /**
-  //      * Added red border input phone
-  //      */
+      phone_02.classList.add("border__error");
+      // phone.classList.replace('border__rounded','border__error');
 
-  //      phone_02.classList.add('border__error');
-  //     // phone.classList.replace('border__rounded','border__error');
+      // phone.classList.replace('focus:border-white','focus:border-borderBtn');
+      phone_02.classList.add("focus:border-borderBtn");
+      phone_02.classList.add("_error");
 
-  //      // phone.classList.replace('focus:border-white','focus:border-borderBtn');
-  //     phone_02.classList.add('focus:border-borderBtn');
-  //     phone_02.classList.add('_error');
+      popup_02.classList.replace("hidden", "block");
+      popup_02.textContent = "The phone is in the wrong format";
 
-  //     popup_02.classList.replace('hidden', 'block');
-  //     popup_02.textContent = 'The phone is in the wrong format';
+      return;
+    } else {
+      popup_02.textContent = "";
+      popup_02.classList.remove("block");
+      popup_02.classList.add("hidden");
 
-  //     return;
-  //   }else {
-  //       popup_02.textContent = '';
-  //       popup_02.classList.remove('block');
-  //       popup_02.classList.add('hidden');
+      /**
+       * Delete red border input phone
+       */
+      phone_02.classList.remove("border__error");
 
-  //       /**
-  //        * Delete red border input phone
-  //        */
-  //        phone_02.classList.remove('border__error');
+      phone_02.classList.remove("focus:border-borderBtn");
+      phone_02.classList.remove("border-borderBtn");
 
-  //       phone_02.classList.remove('focus:border-borderBtn');
-  //       phone_02.classList.remove('border-borderBtn');
-
-  //     phone_02.classList.remove('_error');
-  //   }
-  // });
-  // ===
+      phone_02.classList.remove("_error");
+    }
+  });
 
   submit.addEventListener("click", (e) => {
     e.preventDefault();
@@ -711,11 +701,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(phone.value);
 
     if (
-      name.value == "" ||
-      email.value == "" ||
-      phone.value == "" ||
-      company.value == "" ||
-      message.value == ""
+      username.value.trim() == "" ||
+      email.value.trim() == "" ||
+      phone.value.trim() == "" ||
+      company.value.trim() == "" ||
+      message.value.trim() == ""
     ) {
       alert("Please fill in all fields");
       return false;
@@ -743,47 +733,48 @@ document.addEventListener("DOMContentLoaded", function () {
   /**
    * Submit form -02.
    */
-  //  submit_02.addEventListener('click', (e) => {   //=======28.02.2023
-  //   e.preventDefault();
+  submit_02.addEventListener("click", (e) => {
+    //=======28.02.2023
+    e.preventDefault();
 
-  //   /**
-  //    * Delete popup form_02.
-  //    */
-  //    popup_02.textContent = '';
-  //    popup_02.classList.remove('block');
-  //    popup_02.classList.add('hidden');
+    /**
+     * Delete popup form_02.
+     */
+    popup_02.textContent = "";
+    popup_02.classList.remove("block");
+    popup_02.classList.add("hidden");
 
-  //   // console.log(phone.value);
+    // console.log(phone.value);
 
-  //   if (
-  //     name_02.value == '' ||
-  //     email_02.value == '' ||
-  //     phone_02.value == '' ||
-  //     company_02.value == '' ||
-  //     message_02.value == ''
-  //   ) {
-  //     alert('Please fill in all fields');
-  //     return false;
-  //   } else {
-  //     // sendMail();
-  //     // closePopupForm();
+    if (
+      name_02.value == "" ||
+      email_02.value == "" ||
+      phone_02.value == "" ||
+      company_02.value == "" ||
+      message_02.value == ""
+    ) {
+      alert("Please fill in all fields");
+      return false;
+    } else {
+      // sendMail();
+      // closePopupForm();
 
-  //     popupForms.classList.toggle('hidden');
-  //     // popupForms.classList.add('is-open');
+      popupForms.classList.toggle("hidden");
+      // popupForms.classList.add('is-open');
 
-  //     // disabled 27.02.2023
-  //     // formMenu.classList.add('hidden');
+      // disabled 27.02.2023
+      // formMenu.classList.add('hidden');
 
-  //     document.getElementById('name_02').value = '';
-  //       document.getElementById('email_02').value = '';
-  //       document.getElementById('phone_02').value = '';
-  //       document.getElementById('company_02').value = '';
-  //       document.getElementById('message_02').value = '';
-  //       document.getElementById('choise_02').value = '';
+      document.getElementById("name_02").value = "";
+      document.getElementById("email_02").value = "";
+      document.getElementById("phone_02").value = "";
+      document.getElementById("company_02").value = "";
+      document.getElementById("message_02").value = "";
+      document.getElementById("choise_02").value = "";
 
-  //     // alert('Yuor message sent successfully');
-  //   }
-  // });
+      // alert('Yuor message sent successfully');
+    }
+  });
 });
 
 // function sendMail() {

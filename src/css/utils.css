@@ -1,23 +1,20 @@
 /* =========== BIG RED ROUND BUTTON ============ */
 
-.big-red-btn.video__big-red-btn {
-  @apply absolute top-[-66px] right-[5.5%] z-[1]
-   lg:top-[-92px] lg:right-[11.3%] 
-     xl:top-[-71px] xl:right-[18%] 1xl:top-[-72px] 1xl:right-[18%]  2xl:top-[-90px] 2xl:right-[23.4%];
-}
+/* .big-red-btn.video__big-red-btn {
+  @apply
+} */
 .big-red-btn {
   @apply flex h-[133px] w-[133px] flex-col items-center justify-center gap-3
-   rounded-full px-3 text-center text-sm font-bold uppercase text-light
-     before:absolute before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full 
-     before:rounded-full before:bg-main before:transition-all before:content-['']
-      lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]
-       xl:px-[18px] xl:text-base
+   rounded-full text-center text-sm font-bold uppercase text-light before:absolute
+     before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full before:rounded-full 
+     before:bg-main before:transition-all before:content-[''] lg:h-[142px]
+      lg:w-[142px] xl:h-[145px] xl:w-[145px] xl:px-3
+        xl:text-base
       xl:hover:before:scale-[0.8] 1xl:h-[158px]  1xl:w-[158px]
       2xl:h-[177px] 2xl:w-[177px];
 }
 .big-red-btn.cases-page__big-red-btn {
-  @apply min-h-[125px] w-[125px] min-w-[125px] lg:min-h-[125px] lg:w-[125px] 
-    lg:min-w-[125px] xl:min-h-[177px] xl:w-[177px] xl:min-w-[177px];
+  @apply h-[125px] w-[125px]  lg:h-[125px] lg:w-[125px] xl:h-[177px] xl:w-[177px];
 }
 .big-red-btn#btn-close-popup-forms {
   @apply relative mx-auto;
@@ -37,7 +34,7 @@
 .learn-more {
   @apply font-bold uppercase transition-all hover:text-main;
 }
-#accept-btn {
+#acceptBtn {
   @apply rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10
      lg:py-4 lg:px-10;
 }

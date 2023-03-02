@@ -17,12 +17,12 @@ BEGIN: html  scroll
 
   .header__contact-body::-webkit-scrollbar,
   html::-webkit-scrollbar {
-    @apply w-[10px] bg-bgColor;
+    @apply w-[10px]  bg-dark;
   }
 
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar-thumb {
-    @apply h-[80px]  rounded-[20px]  bg-bgColorMain;
+    @apply h-[80px]  rounded-[20px]  bg-main;
   }
 
   /*html {
@@ -52,12 +52,12 @@ html::-webkit-scrollbar-thumb {
   }
 
   .header__contact-body {
-    @apply absolute right-[100%] top-0 z-20 h-[calc(100vh+82px)] w-full overflow-y-scroll
- bg-bgColor transition ease-in;
+    @apply absolute  right-[100%] top-0 z-20 h-[calc(100vh+82px)] w-full overflow-y-scroll
+ bg-dark transition ease-in;
   }
 
   .header__contact-body::-webkit-scrollbar-thumb {
-    @apply h-[5px]  rounded-[20px] bg-bgColorMain;
+    @apply h-[5px]  rounded-[20px] bg-main;
   }
 
   /*._body-contact-active {
@@ -234,7 +234,7 @@ Menu header gradient
   before:h-[190px]
   before:w-[190px] before:translate-x-[28%] before:bg-gradient-radial
 
-  before:from-gradientMain
+  before:from-main
   before:blur-[60px] before:content-['']
   lg:before:top-[240px]
   lg:before:h-[220px]
@@ -244,7 +244,7 @@ Menu header gradient
   }
 
   /* .red-gradient {
-    @apply relative overflow-hidden  from-gradientMain to-transparent
+    @apply relative overflow-hidden  from-main to-transparent
     before:absolute before:right-0 
     before:translate-x-[50%] before:bg-gradient-radial 
      before:content-[''];
@@ -280,7 +280,7 @@ Menu header gradient
   }
 
   .header__contact-body::-webkit-scrollbar-thumb {
-    @apply h-[5px] rounded-full bg-bgColorMain;
+    @apply h-[5px] rounded-full bg-main;
   }
 
   .header-scroll-menu {
@@ -293,7 +293,7 @@ Menu header gradient
 translate-underline-header-menu
 ==============================*/
 
-  /* active:text-mainTextRed  */
+  /* active:text-main  */
 
   .translate-underline__hover-line__dark {
     @apply /* */ relative cursor-pointer transition-all duration-100
@@ -303,8 +303,8 @@ translate-underline-header-menu
      hover:text-lightDarkGrey hover:before:left-0 hover:before:right-auto
       hover:before:w-full hover:before:opacity-100 
       hover:before:duration-300
-      hover:after:scale-100 active:text-mainTextRed active:before:bg-underlineRed
-      active:before:text-mainTextRed;
+      hover:after:scale-100 active:text-main active:before:bg-main
+      active:before:text-main;
   }
 
   /*==============================
@@ -312,13 +312,13 @@ translate-underline__hover-line
 ================================*/
 
   .translate-underline__hover {
-    @apply hover:translate-x-6 hover:text-mainTextRed
+    @apply hover:translate-x-6 hover:text-main
     hover:underline hover:underline-offset-8 hover:transition-all;
   }
 
   .translate-underline__hover-line {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-0
-     before:right-0 before:h-px before:w-0 before:bg-bgColorMain before:opacity-0
+     before:right-0 before:h-px before:w-0 before:bg-main before:opacity-0
      before:transition-all before:duration-1000 before:content-[''] 
      hover:before:left-0 hover:before:right-auto 
      hover:before:w-full hover:before:opacity-100 hover:before:duration-500;
@@ -326,7 +326,7 @@ translate-underline__hover-line
 
   /*.translate-underline__hover-line__cases {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-[13px]
-    before:right-0 before:h-[5px] before:w-0 before:bg-bgColorMain before:opacity-0
+    before:right-0 before:h-[5px] before:w-0 before:bg-main before:opacity-0
     before:transition-all before:duration-1000 before:content-[''] 
     hover:before:left-0 hover:before:right-auto 
     hover:before:w-full hover:before:opacity-100 hover:before:duration-500;
@@ -334,7 +334,7 @@ translate-underline__hover-line
 
   .translate-underline__hover-line-back {
     @apply relative cursor-pointer transition-all duration-500 before:absolute before:-bottom-0
-     before:left-0 before:h-px before:w-0 before:bg-bgColorMain before:opacity-0
+     before:left-0 before:h-px before:w-0 before:bg-main before:opacity-0
      before:transition-all before:duration-1000 before:content-['']
      hover:before:right-0 hover:before:left-auto 
      hover:before:w-full  hover:before:opacity-100 hover:before:duration-500;
@@ -349,11 +349,11 @@ translate-underline__hover-line
   }
 
   .hover-text__grey {
-    @apply hover:text-mainTextLightGrey active:text-mainTextRed;
+    @apply hover:text-middleGrey active:text-main;
   }
 
   .hover-icons__grey {
-    @apply hover:fill-mainTextLightGrey;
+    @apply hover:fill-middtext-middleGrey;
   }
 
   /* .btn-hover__white{
@@ -373,7 +373,7 @@ translate-underline__hover-line
  ========== */
 
   .btn__contact-wrap {
-    @apply flex items-center  rounded-full  bg-bgButtonMain
+    @apply flex items-center  rounded-full  bg-main
     p-[12px]   transition-all;
   }
 
@@ -383,7 +383,7 @@ translate-underline__hover-line
 
   .link-oside__red::after {
     @apply absolute left-0 top-full h-full
-    w-full rounded-[70px] bg-bgColorMain transition-all content-[''];
+    w-full rounded-[70px] bg-main transition-all content-[''];
   }
 
   .link-oside__red:hover {
@@ -392,7 +392,7 @@ translate-underline__hover-line
 
   .link-oside__red:hover::after {
     @apply absolute left-0 top-0 -z-10
-    h-full w-full rounded-[70px] bg-bgColorMain transition-all content-[''];
+    h-full w-full rounded-[70px] bg-main transition-all content-[''];
   }
 
   /*================================================
@@ -403,7 +403,7 @@ Styles borders  btn
   /*.btn {
     @apply m-auto  flex w-full
          items-center justify-center gap-[10px]
-          rounded-full bg-bgButtonMain py-[16px] 
+          rounded-full bg-main py-[16px] 
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
   }
@@ -411,7 +411,7 @@ Styles borders  btn
   .btn__transparent {
     @apply m-auto  flex 
         w-full items-center justify-center gap-[10px] 
-        rounded-full border-[2px] border-borderBtn p-[12px] 
+        rounded-full border-[2px] border-main p-[12px] 
         text-sm font-bold uppercase leading-[24px]
         text-mainTextDark 
         transition-all
@@ -420,7 +420,7 @@ Styles borders  btn
 
   .btn__red {
     @apply flex flex-row items-center justify-center
-        gap-[10px] rounded-[70px] border-[1px] border-borderBtn bg-bgButtonMain py-4 px-9
+        gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-4 px-9
         text-base font-bold uppercase  leading-5 text-mainTextWhite;
   }*/
 
@@ -429,28 +429,28 @@ Styles borders  btn
   ==================================*/
 
   .border__top {
-    @apply border-t-[1px] border-t-borderBottom;
+    @apply border-t-[1px] border-t-middleGrey;
   }
 
   .border__left {
-    @apply border-l-[1px] border-l-borderBottom;
+    @apply border-l-[1px] border-l-middleGrey;
   }
 
   .border__right {
-    @apply border-r-[1px] border-r-borderBottom;
+    @apply border-r-[1px] border-r-middleGrey;
   }
 
   .border__bottom {
-    @apply border-b-[1px] border-b-borderBottom;
+    @apply border-b-[1px] border-b-middleGrey;
   }
 
   .border__rounded {
-    @apply rounded-full border-[1px] border-borderBottom
+    @apply rounded-full border-[1px] border-middleGrey
     hover:border-white;
   }
 
   .border__error {
-    @apply rounded-full border-[1px] border-borderBtn
-    hover:border-borderBtn;
+    @apply rounded-full border-[1px] border-main
+    hover:border-main;
   }
 }

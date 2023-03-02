@@ -119,23 +119,7 @@ body::-webkit-scrollbar-thumb {
 .fake-header {
   @apply h-[var(--header-h)] w-full  bg-inherit  lg:h-[var(--header-h-lg)]  xl:h-[var(--header-h-xl)];
 }
-/* =========== visually hidden ============ */
 
-@layer utilities {
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
 /* =========== HEADING ============ */
 .heading2 {
   @apply text-4xl font-bold uppercase dark:text-white lg:text-[45px] lg:leading-[1.2] 
@@ -153,7 +137,7 @@ STYLES
 ======================================*/
 
 ._nav-item-activ {
-  @apply text-mainTextRed;
+  @apply text-main;
 }
 
 /*================================================
@@ -164,7 +148,7 @@ Styles borders  btn
 /**/
 .btn {
   @apply m-auto flex  w-full
-         items-center justify-center gap-[10px] rounded-full bg-bgButtonMain py-[16px] 
+         items-center justify-center gap-[10px] rounded-full bg-main py-[16px] 
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
 }
@@ -172,7 +156,8 @@ Styles borders  btn
 /*flex*/
 .btn__services {
   @apply m-auto   w-full
-         items-center justify-center gap-[10px] rounded-full bg-bgButtonMain py-[16px] 
+         items-center justify-center gap-[10px] rounded-full bg-main py-[16px] 
+
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
 }
@@ -180,17 +165,17 @@ Styles borders  btn
 .btn__transparent {
   @apply m-auto  flex 
         w-full items-center justify-center gap-[10px] 
-        rounded-full border-[2px] border-borderBtn p-[12px] 
+        rounded-full border-[2px] border-main p-[12px] 
         text-sm font-bold uppercase leading-[24px]
-        text-mainTextDark 
+        text-dark 
         transition-all
         sm:max-w-[357px];
 }
 
 .btn__red {
   @apply flex flex-row items-center justify-center
-        gap-[10px] rounded-[70px] border-[1px] border-borderBtn bg-bgButtonMain py-4 px-9
-        text-base font-bold uppercase  leading-5 text-mainTextWhite;
+        gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-4 px-9
+        text-base font-bold uppercase  leading-5 text-white;
 }
 
 /*================================================
@@ -206,7 +191,7 @@ liner-gradient-img
 
 .link-oside::after {
   @apply absolute left-0 top-full h-full w-full
-    rounded-[70px] bg-[#DC2D45] transition-all ease-in content-[''];
+    rounded-[70px] bg-activeRed transition-all ease-in content-[''];
 }
 
 .link-oside:hover {
@@ -215,7 +200,7 @@ liner-gradient-img
 
 .link-oside:hover::after {
   @apply absolute left-0 top-0 -z-10 h-full w-full 
-    rounded-[70px] bg-[#DC2D45] content-[''];
+    rounded-[70px] bg-activeRed content-[''];
 }
 
 /*================================================
@@ -227,7 +212,7 @@ btn-hover-overlay-red
  ========== */
 
 .btn__contact-wrap {
-  @apply flex items-center  rounded-full  bg-bgButtonMain
+  @apply flex items-center  rounded-full  bg-main
     p-[12px]   transition-all;
 }
 
@@ -237,7 +222,7 @@ btn-hover-overlay-red
 
 .link-oside__red::after {
   @apply absolute left-0 top-full h-full
-    w-full rounded-[70px] bg-bgColorMain transition-all content-[''];
+    w-full rounded-[70px] bg-main transition-all content-[''];
 }
 
 .link-oside__red:hover {
@@ -246,7 +231,7 @@ btn-hover-overlay-red
 
 .link-oside__red:hover::after {
   @apply absolute left-0 top-0 -z-10
-    h-full w-full rounded-[70px] bg-bgColorMain transition-all content-[''];
+    h-full w-full rounded-[70px] bg-main transition-all content-[''];
 }
 
 /* ================================
@@ -254,29 +239,29 @@ btn-hover-overlay-red
   ==================================*/
 
 .border__top {
-  @apply border-t-[1px] border-t-borderBottom;
+  @apply border-t-[1px] border-t-middleGrey;
 }
 
 .border__left {
-  @apply border-l-[1px] border-l-borderBottom;
+  @apply border-l-[1px] border-l-middleGrey;
 }
 
 .border__right {
-  @apply border-r-[1px] border-r-borderBottom;
+  @apply border-r-[1px] border-r-middleGrey;
 }
 
 .border__bottom {
-  @apply border-b-[1px] border-b-borderBottom;
+  @apply border-b-[1px] border-b-middleGrey;
 }
 
 .border__rounded {
-  @apply rounded-full border-[1px] border-borderBottom
+  @apply rounded-full border-[1px] border-middleGrey
     hover:border-white;
 }
 
 .border__error {
-  @apply rounded-full border-[1px] border-borderBtn
-    hover:border-borderBtn;
+  @apply rounded-full border-[1px] border-main
+    hover:border-main;
 }
 
 /* ====================================
@@ -308,39 +293,39 @@ google-review
 
 .contextual__item::after {
   @apply absolute bottom-0 left-0 h-[1px]
-  w-full bg-[#919191] transition ease-in content-[''];
+  w-full bg-middleGrey transition ease-in content-[''];
 }
 
 .count__item::after {
   @apply absolute  top-[-10px]
-  right-0 h-[118px] w-[1px]  bg-[#919191] content-[''];
+  right-0 h-[118px] w-[1px]  bg-middleGrey content-[''];
 }
 
 /* .cyberbet  .content__block::after{
   @apply content-['']  absolute
-  w-[1px]  h-[100%] bg-[#919191] top-0 left-[-60px] ;
+  w-[1px]  h-[100%] bg-middleGrey top-0 left-[-60px] ;
 } */
 
 .cyberbet .content__block::after {
   @apply xl:absolute  xl:top-0
-  xl:left-[-152px] xl:h-[100%] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  xl:left-[-152px] xl:h-[100%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
 }
 
 /* 14-section-contextual*/
 
 .content__block::after {
   @apply xl:absolute  xl:top-[-70px]
-  xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
 }
 
 /*  14-section-contextual */
 
 .next-case__title::after {
   @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
 }
 
 .next-case__title-right::after {
   @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
 }
