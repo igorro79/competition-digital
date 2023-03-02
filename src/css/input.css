@@ -11,6 +11,8 @@
 
 @import "./form.css";
 
+@import "./footer.css";
+
 /*@import "./cases.css";*/
 
 /*@import "./case-page.css";*/
@@ -25,7 +27,7 @@
 @import "./person.css";
 
 
-@import "./footer.css";
+
 @import "./contacts-page.css";*/
 @import "./utils.css";
 
@@ -148,6 +150,10 @@ body::-webkit-scrollbar-thumb {
 /*=====================================
 STYLES 
 ======================================*/
+
+._nav-item-activ {
+  @apply text-mainTextRed;
+}
 
 /*================================================
 Styles borders  btn 

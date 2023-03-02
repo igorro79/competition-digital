@@ -160,6 +160,6 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
-    require("tw-elements/dist/plugin"),
+    
   ],
 };

@@ -7,8 +7,10 @@
 
   /* shrink-0 h-[100vh]  */
   /* bottom-0 */
+
+  /*-z-10   02.03.2023*/
   .footer {
-    @apply sticky bottom-[-320px] -z-10 shrink-0
+    @apply sticky bottom-[-320px]  shrink-0
   lg:bottom-0;
   }
 
