@@ -14,7 +14,8 @@ const lightBtn = document.querySelector("#lightBtn");
 // const darkBtn_02 = document.querySelector("#darkBtn_02");
 // const lightBtn_02 = document.querySelector("#lightBtn_02");
 
-const menu = document.querySelector("#menu");
+const menu = document.getElementById("menu");
+const dynamicMenu = document.getElementById("dynamicMenu");
 const burger = document.querySelector(".burger");
 
 const closeMenuTablet = document.querySelector("#closeMenuTablet");
@@ -29,12 +30,13 @@ const btnServices = document.querySelector("#btnServices");
 
 const backMenuServices = document.querySelector("#backMenuServices");
 
-const backdrop_01 = document.getElementById("backdrop_01");
+// const backdrop_01 = document.getElementById("backdrop_01");
 
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
+const dynamicForm = document.getElementById("dynamicForm");
 
-const btnDiscuss = document.getElementById("btnDiscuss"); //======28.02.2023
+const btnDiscuss = document.getElementById("btnDiscuss");
 const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.querySelector("#submit");
 const btnClosePopupForms = document.querySelector("#btnClosePopupForms");
@@ -50,6 +52,7 @@ function lockWrapper() {
 function unlockWrapper() {
   wrapper.classList.remove("lock-wrapper");
 }
+//-------------------------------
 function hideMainHeader() {
   headerContainer.classList.add("hidden");
   headerContainer.classList.remove("flex");
@@ -58,16 +61,67 @@ function showMainHeader() {
   headerContainer.classList.add("flex");
   headerContainer.classList.remove("hidden");
 }
+//-------------------------------
+const menuServicesToggle = () => {
+  servicesMenu.classList.toggle("hidden");
+  servicesModal.classList.toggle("hidden");
+};
+const menuServicesClose = () => {
+  servicesMenu.classList.remove("hidden");
+  servicesModal.classList.add("hidden");
+};
+//-------------------------------
+const openPopupSentMsg = () => {
+  console.log("open");
+  popupForms.classList.add("flex");
+  popupForms.classList.remove("hidden");
+};
+const closePopupSentMsg = () => {
+  console.log("close1");
+  if (!popupForms.classList.contains("hidden")) {
+    console.log("close2");
+
+    popupForms.classList.add("hidden");
+    popupForms.classList.remove("flex");
+  }
+};
+//-------------------------------
+const openDynamicForm = () => {
+  formMenu.classList.remove("invisible");
+  formMenu.classList.remove("opacity-0");
+  dynamicForm.classList.remove("translate-x-full");
+};
+const closeDynamicForm = () => {
+  formMenu.classList.add("invisible");
+  formMenu.classList.add("opacity-0");
+  dynamicForm.classList.add("translate-x-full");
+};
+//-------------------------------
+const openDynamicMenu = () => {
+  menu.classList.remove("invisible");
+  menu.classList.remove("opacity-0");
+  dynamicMenu.classList.remove("translate-x-full");
+};
+const closeDynamicMenu = () => {
+  menu.classList.add("invisible");
+  menu.classList.add("opacity-0");
+  dynamicMenu.classList.add("translate-x-full");
+};
+const toggleDynamicMenu = () => {
+  menu.classList.toggle("invisible");
+  menu.classList.toggle("opacity-0");
+  dynamicMenu.classList.toggle("translate-x-full");
+};
 
 // ----- on window resize ------
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 1280 && menu.classList.contains("left-0")) {
+  if (window.innerWidth > 1280 && !menu.classList.contains("invisible")) {
     burgerClose();
   }
-  if (window.innerWidth < 820 && menu.classList.contains("left-0")) {
+  if (window.innerWidth < 820 && !menu.classList.contains("invisible")) {
     showMainHeader();
   }
-  if (window.innerWidth >= 820 && menu.classList.contains("left-0")) {
+  if (window.innerWidth >= 820 && !menu.classList.contains("invisible")) {
     hideMainHeader();
   }
 });
@@ -77,29 +131,26 @@ window.addEventListener("resize", () => {
  */
 function burgerClose() {
   burger.classList.toggle("is-active");
+  menuServicesClose();
   showMainHeader();
   unlockWrapper();
-  menu.classList.toggle("left-full");
-  menu.classList.toggle("left-0");
-  menu.classList.add("w-0");
-  menu.classList.remove("w-full");
+  closeDynamicMenu();
 }
 
-//  logo to the open menu
 function burgerOpen() {
   burger.classList.toggle("is-active");
   if (window.innerWidth >= 820) hideMainHeader();
   lockWrapper();
-  menu.classList.toggle("left-0");
-  menu.classList.toggle("left-full");
-  menu.classList.add("w-full");
-  menu.classList.remove("w-0");
+  closePopupSentMsg();
+  openDynamicMenu();
 }
 
 closeMenuTablet.addEventListener("click", burgerClose);
-burger.addEventListener("click", burgerOpen);
+burger.addEventListener("click", () => {
+  menu.classList.contains("invisible") ? burgerOpen() : burgerClose();
+});
 
-// ---------- toggle header on scroll  ----------
+// ---------- toggle header visibility on scroll  ----------
 let y = window.pageYOffset;
 const toggleHeader = (e) => {
   if (window.pageYOffset > y && window.pageYOffset > 300) {
@@ -152,19 +203,10 @@ modeBtn.addEventListener("click", () => {
 /**
  * Replaces button dark mode to light mode.
  */
-
-function darkMode() {
-  mode.addEventListener("click", () => {
-    darkBtn.classList.toggle("hidden");
-
-    lightBtn.classList.toggle("hidden");
-  });
-}
-darkMode();
-
-/**
- * Toggle dark mode-mobile.
- */
+mode.addEventListener("click", () => {
+  darkBtn.classList.toggle("hidden");
+  lightBtn.classList.toggle("hidden");
+});
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (
@@ -177,55 +219,41 @@ if (
   document.documentElement.classList.remove("dark");
 }
 
-btnServices.addEventListener("click", () => {
-  servicesMenu.classList.toggle("hidden");
-
-  servicesModal.classList.toggle("hidden");
-  // menu.classList.toggle('flex');
-});
+btnServices.addEventListener("click", menuServicesToggle);
 
 /**
  * Back a menu services.
  */
 
-backMenuServices.addEventListener("click", () => {
-  servicesMenu.classList.toggle("hidden");
-  servicesModal.classList.toggle("hidden");
-});
+backMenuServices.addEventListener("click", menuServicesToggle);
 
 /**
  * Opens a menu form mobile.
  */
 
 //  02
-btnContact.addEventListener("click", (e) => {
+btnContact.addEventListener("click", () => {
+  if (burger.classList.contains("is-active")) burgerClose();
   lockWrapper();
-  formMenu.classList.toggle("right-0");
-  formMenu.classList.toggle("right-full");
+  openDynamicForm();
   burger.classList.remove("is-active");
-  menu.classList.remove("left-0");
-  menu.classList.add("left-full");
-  menu.classList.remove("w-full");
-  menu.classList.add("w-0");
 
   /**
    * Closed the popup-form SENT.
    */
 
-  if (!popupForms.classList.contains("hidden")) {
-    popupForms.classList.add("hidden");
-  }
+  closePopupSentMsg();
 });
 
 btnDiscuss.addEventListener("click", () => {
-  formMenu.classList.toggle("right-0");
-  formMenu.classList.toggle("right-full");
+  openDynamicForm();
+
   lockWrapper();
 });
 
 btnFormMenu.addEventListener("click", () => {
-  formMenu.classList.toggle("right-full");
-  formMenu.classList.toggle("right-0");
+  closeDynamicForm();
+
   unlockWrapper();
 });
 
@@ -234,15 +262,13 @@ btnFormMenu.addEventListener("click", () => {
  */
 
 btnContactTablet.addEventListener("click", () => {
-  formMenu.classList.toggle("right-0");
-  formMenu.classList.toggle("right-full");
+  openDynamicForm();
+  menuServicesClose();
   lockWrapper();
   showMainHeader();
+  closePopupSentMsg();
   burger.classList.toggle("is-active");
-  menu.classList.add("left-full");
-  menu.classList.remove("left-0");
-  menu.classList.remove("w-full");
-  menu.classList.add("w-0");
+  closeDynamicMenu();
 });
 // }
 
@@ -356,15 +382,14 @@ accordeonOpen();
  * Close a popup-forms.
  */
 
-submit.addEventListener("click", () => {
-  logoOpacity.classList.remove("opacity-0");
-});
+// submit.addEventListener("click", () => {
+//   logoOpacity.classList.remove("opacity-0");
+// });
 
 btnClosePopupForms.addEventListener("click", () => {
-  popupForms.classList.add("hidden");
-  popupForms.classList.remove("flex");
-
+  closePopupSentMsg();
   unlockWrapper();
+  //------------------------------------------------------------------
 });
 
 /**
@@ -504,14 +529,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return false;
     } else {
       // sendMail();
-      // closePopupForm();
+      // closePopupSentMsg();
 
-      popupForms.classList.remove("hidden");
-      popupForms.classList.add("flex");
-      // popupForms.classList.add('is-open');
-
-      formMenu.classList.toggle("right-full");
-      formMenu.classList.toggle("right-0");
+      openPopupSentMsg();
+      closeDynamicForm();
 
       document.getElementById("username").value = "";
       document.getElementById("email").value = "";
@@ -551,13 +572,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return false;
     } else {
       // sendMail();
-      // closePopupForm();
 
-      popupForms.classList.toggle("hidden");
-      // popupForms.classList.add('is-open');
-
-      // disabled 27.02.2023
-      // formMenu.classList.add('hidden');
+      openPopupSentMsg();
 
       document.getElementById("name_02").value = "";
       document.getElementById("email_02").value = "";
@@ -598,36 +614,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     })
 //     .catch((err) => console.log(err));
 // }
-
-/**
- * Added class hidden at open backdrop to the logo header
- */
-
-// function logoHidden() {
-// console.log(backdrop_01.classList);
-// --------------------------------------------------------------- kill
-// if (backdrop_01.classList !== "") {
-//   burger.addEventListener("click", (e) => {
-//     // console.log(e);
-//     logoOpacity.classList.add("opacity-0");
-//   });
-// }
-// btnContact.addEventListener("click", () => {
-//   // console.log(logoOpacity.classList);
-//   logoOpacity.classList.add("opacity-0");
-// });
-// btnFormMenu.addEventListener("click", () => {
-//   logoOpacity.classList.remove("opacity-0");
-// });
-// closeMenuTablet.addEventListener("click", () => {
-//   logoOpacity.classList.remove("opacity-0");
-// });
-// =========28.02.2023
-// btnDiscuss.addEventListener('click', () =>{
-//   logoOpacity.classList.add('opacity-0')
-// });
-// }
-// logoHidden();
 
 /**
  * Send mail-02
