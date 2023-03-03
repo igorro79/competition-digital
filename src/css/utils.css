@@ -1,3 +1,26 @@
+@layer base {
+  /*================================================ 
+BEGIN: html  scroll
+=================================================*/
+
+  html {
+    @apply scroll-smooth;
+  }
+  .blog-scroll::-webkit-scrollbar {
+    @apply w-0  bg-dark;
+  }
+  .header__contact-body::-webkit-scrollbar,
+  html::-webkit-scrollbar {
+    @apply w-[10px]  bg-dark;
+  }
+
+  .form__header::-webkit-scrollbar-thumb,
+  /* .blog-scroll::-webkit-scrollbar-thumb, */
+  html::-webkit-scrollbar-thumb {
+    @apply h-[80px]  rounded-[20px]  bg-main;
+  }
+}
+
 /* =========== BIG RED ROUND BUTTON ============ */
 
 .big-red-btn {

@@ -1,23 +1,5 @@
 @layer components {
-  /*================================================ 
-BEGIN: html  scroll
-=================================================*/
-
-  html {
-    @apply scroll-smooth;
-  }
-
-  .header__contact-body::-webkit-scrollbar,
-  .blog-scroll::-webkit-scrollbar,
-  html::-webkit-scrollbar {
-    @apply w-[10px]  bg-dark;
-  }
-
-  .form__header::-webkit-scrollbar-thumb,
-  .blog-scroll::-webkit-scrollbar-thumb,
-  html::-webkit-scrollbar-thumb {
-    @apply h-[80px]  rounded-[20px]  bg-main;
-  }
+ 
 
   /* form */
 
