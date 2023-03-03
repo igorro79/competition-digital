@@ -1,4 +1,4 @@
-var mainNav = document.querySelector("#mainNav");
+const mainNav = document.getElementById("mainNav");
 const body = document.getElementsByTagName("body");
 const modeBtn = document.querySelector("#mode");
 const html = document.querySelector("html");
@@ -7,9 +7,9 @@ const cookies = document.getElementById("cookies");
 const accept = document.getElementById("acceptBtn");
 const headerContainer = document.getElementById("header-container");
 
-const mode = document.querySelector("#mode");
-const darkBtn = document.querySelector("#darkBtn");
-const lightBtn = document.querySelector("#lightBtn");
+const mode = document.getElementById("mode");
+const darkBtn = document.getElementById("darkBtn");
+const lightBtn = document.getElementById("lightBtn");
 // const mode_02 = document.querySelector("#mode_02");
 // const darkBtn_02 = document.querySelector("#darkBtn_02");
 // const lightBtn_02 = document.querySelector("#lightBtn_02");
@@ -18,19 +18,16 @@ const menu = document.getElementById("menu");
 const dynamicMenu = document.getElementById("dynamicMenu");
 const burger = document.querySelector(".burger");
 
-const closeMenuTablet = document.querySelector("#closeMenuTablet");
-// Closes back-menu
-// const backMenuServices = document.querySelector('#backMenuServices');
-const servicesModal = document.querySelector("#servicesModal");
-const servicesMenu = document.querySelector("#servicesMenu");
+const closeMenuTablet = document.getElementById("closeMenuTablet");
+
+const servicesModal = document.getElementById("servicesModal");
+const servicesMenu = document.getElementById("servicesMenu");
 
 //  popup -sent- form header.
-const popupForms = document.querySelector("#popupForms");
-const btnServices = document.querySelector("#btnServices");
+const popupForms = document.getElementById("popupForms");
+const btnServices = document.getElementById("btnServices");
 
-const backMenuServices = document.querySelector("#backMenuServices");
-
-// const backdrop_01 = document.getElementById("backdrop_01");
+const backMenuServices = document.getElementById("backMenuServices");
 
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
@@ -38,13 +35,14 @@ const dynamicForm = document.getElementById("dynamicForm");
 
 const btnDiscuss = document.getElementById("btnDiscuss");
 const logoOpacity = document.getElementById("logoOpacity");
-const submit = document.querySelector("#submit");
-const btnClosePopupForms = document.querySelector("#btnClosePopupForms");
+const submit = document.getElementById("submit");
+const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-// const btnContact_02 = document.querySelector('#btnContact_02');
+const formMenu = document.getElementById("formMenu");
+const btnContactTablet = document.getElementById("btnContactTablet");
+const upButton = document.getElementById("upButton");
 
-const formMenu = document.querySelector("#formMenu");
-const btnContactTablet = document.querySelector("#btnContactTablet");
+//=============== functions ===============
 
 function lockWrapper() {
   wrapper.classList.add("lock-wrapper");
@@ -112,20 +110,7 @@ const toggleDynamicMenu = () => {
   menu.classList.toggle("opacity-0");
   dynamicMenu.classList.toggle("translate-x-full");
 };
-
-// ----- on window resize ------
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 1280 && !menu.classList.contains("invisible")) {
-    burgerClose();
-  }
-  if (window.innerWidth < 820 && !menu.classList.contains("invisible")) {
-    showMainHeader();
-  }
-  if (window.innerWidth >= 820 && !menu.classList.contains("invisible")) {
-    hideMainHeader();
-  }
-});
-
+//---------------------------------------
 /*
  * Close a menu tablet.
  */
@@ -144,6 +129,26 @@ function burgerOpen() {
   closePopupSentMsg();
   openDynamicMenu();
 }
+
+//=============== ! functions ===============
+
+// ----- on window resize ------
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1280 && !menu.classList.contains("invisible")) {
+    burgerClose();
+  }
+  if (window.innerWidth < 820 && !menu.classList.contains("invisible")) {
+    showMainHeader();
+  }
+  if (window.innerWidth >= 820 && !menu.classList.contains("invisible")) {
+    hideMainHeader();
+  }
+});
+// -------- btn to top ----------
+upButton.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
 
 closeMenuTablet.addEventListener("click", burgerClose);
 burger.addEventListener("click", () => {

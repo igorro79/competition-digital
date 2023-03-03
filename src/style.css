@@ -667,6 +667,36 @@ video {
   display: none;
 }
 
+/*================================================ 
+BEGIN: html  scroll
+=================================================*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.blog-scroll::-webkit-scrollbar{
+  width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.header__contact-body::-webkit-scrollbar,
+  html::-webkit-scrollbar{
+  width: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.form__header::-webkit-scrollbar-thumb,
+  
+  html::-webkit-scrollbar-thumb{
+  height: 80px;
+  border-radius: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -829,31 +859,6 @@ video {
 
 .aspect-h-10{
   --tw-aspect-h: 10;
-}
-
-/*================================================ 
-BEGIN: html  scroll
-=================================================*/
-
-html{
-  scroll-behavior: smooth;
-}
-
-.header__contact-body::-webkit-scrollbar,
-  .blog-scroll::-webkit-scrollbar,
-  html::-webkit-scrollbar{
-  width: 10px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
-.form__header::-webkit-scrollbar-thumb,
-  .blog-scroll::-webkit-scrollbar-thumb,
-  html::-webkit-scrollbar-thumb{
-  height: 80px;
-  border-radius: 20px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
 }
 
 /* form */
@@ -7403,14 +7408,6 @@ google-review
     border-bottom-color: rgb(145 145 145 / var(--tw-border-opacity));
   }
 
-  .xl\:flex-row-reverse{
-    flex-direction: row-reverse;
-  }
-
-  .xl\:flex-col{
-    flex-direction: column;
-  }
-
   .xl\:translate-underline__hover-line__white{
     position: relative;
     cursor: pointer;
@@ -7449,6 +7446,14 @@ google-review
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .xl\:flex-col{
+    flex-direction: column;
   }
 
   .xl\:flex-nowrap{
