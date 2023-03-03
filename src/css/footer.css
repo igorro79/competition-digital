@@ -5,9 +5,10 @@
  BEGIN: footer
  =============================================== */
 
+  /*lg:bottom-0*/
   .footer {
     @apply sticky bottom-[-320px]  shrink-0
-  lg:bottom-0;
+    sm:bottom-[-0px];
   }
 }
 /*.social__link span {
@@ -21,10 +22,10 @@
 BEGIN: icons-menu
 =========================================*/
 .social__link-menu span {
-  @apply flex h-12 w-12 items-center justify-center rounded-full 
+  @apply flex h-[46.24px] w-[46.24px] items-center justify-center rounded-full 
   bg-grey  transition-all 
   ease-in hover:text-white 
-   xl:h-14 xl:w-14;
+   xl:h-[50px] xl:w-[50px];
 }
 
 .social__link-menu:hover .icon-menu {
@@ -36,10 +37,10 @@ END: icons-menu
 =========================================*/
 /*dark:text-white */
 .social__link span {
-  @apply flex h-12 w-12 items-center justify-center rounded-full 
+  @apply flex h-[46.24px] w-[46.24px] items-center justify-center rounded-full 
   bg-lightGrey text-dark transition-all 
   ease-in hover:text-white 
-   xl:h-14 xl:w-14;
+   xl:h-[50px] xl:w-[50px];
 }
 
 .social__link:hover .icon {

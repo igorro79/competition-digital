@@ -297,7 +297,7 @@ translate-underline-header-menu
   /* active:text-main  */
 
   .translate-underline__hover-line__dark {
-    @apply /* */ relative cursor-pointer transition-all duration-100
+    @apply relative cursor-pointer transition-all duration-100
      before:absolute before:-bottom-1 before:right-0 before:h-px before:w-0
      before:bg-lightDarkGrey before:opacity-0 before:transition-all
      before:duration-1000 before:content-[''] 
