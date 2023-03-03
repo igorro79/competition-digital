@@ -612,7 +612,7 @@
               <button
                 id="btnContact"
                 type="button"
-                aria-labelledby="Let's talk"
+                aria-label="Let's talk"
                 class="btn__contact-wrap active:ring-main group relative cursor-pointer gap-5 transition-all ease-in hover:bg-white hover:ring-1 hover:ring-inset lg:pr-[25px] xl:pr-[20px] 2xl:pr-[25px]"
               >
                 <span
@@ -814,7 +814,7 @@
                       d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
                     />
                   </svg>
-                  watch cases
+                  <span class="mb-5"> watch cases </span>
                 </a>
                 <!-- END:   02 btn-close-popup-forms -->
                 <div class="grow"></div>
@@ -2736,7 +2736,7 @@
                     <!-- hidden-m-06 -->
 
                     <div
-                      class="content mb-[19px] lg:mb-0 hidden lg:block lg:pl-[29px] xl:flex xl:flex-col xl:justify-center xl:pl-[50px]"
+                      class="content mb-[19px] hidden lg:mb-0 lg:block lg:pl-[29px] xl:flex xl:flex-col xl:justify-center xl:pl-[50px]"
                     >
                       <p
                         class="pt-5 pb-10 text-base font-medium leading-[22px] text-dark dark:text-white lg:pt-[31px] xl:pt-[40px] xl:leading-[150%]"
@@ -4253,8 +4253,7 @@
                   <!-- svg -->
                   <!-- p-2 -->
                   <div
-                    class="cards__btn border__rounded-red rounded-full transition-all ease-in 
-                    group-hover:bg-main "
+                    class="cards__btn border__rounded-red rounded-full transition-all ease-in group-hover:bg-main"
                   >
                     <!-- class="transition-all ease-out  group-hover:fill-main " -->
                     <svg
@@ -4325,7 +4324,7 @@
                     />
 
                     <img
-                      class="duration-250 w-full  object-cover transition ease-out hover:scale-105 hover:ease-in"
+                      class="duration-250 w-full object-cover transition ease-out hover:scale-105 hover:ease-in"
                       srcset="
                         ./src/images/blog/Rectangle-01-270x180.jpg,
                         ./src/images/blog/Rectangle-01-270x180@2x.jpg 2x
@@ -4344,7 +4343,7 @@
                 >
                   <a
                     href="#"
-                    class="bg-darkGrey rounded-[60px] py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
+                    class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
                   >
                     Business
                   </a>
@@ -4415,7 +4414,7 @@
                 >
                   <a
                     href="#"
-                    class="bg-darkGrey rounded-[60px] py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
+                    class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
                   >
                     Business
                   </a>
@@ -4486,7 +4485,7 @@
                 >
                   <a
                     href="#"
-                    class="bg-darkGrey rounded-[60px] py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
+                    class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
                   >
                     Business
                   </a>
@@ -5635,18 +5634,19 @@
 
       <div
         id="menu"
-        class="absolute top-[76px] left-full z-30 h-full overflow-hidden transition-all lg:top-0 xl:hidden"
+        class="invisible absolute left-0 top-[76px] right-0 z-30 h-full overflow-hidden opacity-0 transition-all lg:top-0 xl:hidden"
       >
         <!--  BEGIN: backdrop-block-menu-tadlet-01   flex flex-row -->
         <div class="wrapper-menu-tablet absolute inset-0 lg:flex">
           <div
             id="backdrop_01"
-            class="bg-main/70 backdrop-blur-xl lg:basis-[43.3%]"
+            class="absolute inset-0 bg-main/70 backdrop-blur-xl"
           ></div>
 
           <!-- header-scroll-menu  26.02.2023 -->
           <div
-            class="red-gradient-menu header__contact-body _body-contact-active relative flex w-[100%] flex-col justify-between bg-dark px-5 pt-[33px] pb-[110px] lg:basis-[56.7%] lg:px-[32px] lg:pb-[47px] lg:pt-[22px]"
+            id="dynamicMenu"
+            class="red-gradient-menu header__contact-body absolute right-0 flex w-full translate-x-full flex-col justify-between bg-dark px-5 pt-[33px] pb-[110px] lg:w-[56.7%] lg:px-[32px] lg:pb-[47px] lg:pt-[22px]"
           >
             <!-- wrapper-services-socials-03 -->
             <div class="z-10 mb-9">
@@ -6320,7 +6320,7 @@
       <!--  END: menu-current -->
       <div
         id="formMenu"
-        class="header__contact-body absolute right-full top-0 z-40 overflow-hidden"
+        class="header__contact-body invisible right-0 z-40 opacity-0"
       >
         <!-- backdrop-block   -->
         <div
@@ -6328,12 +6328,13 @@
         >
           <div
             id="backdrop_02"
-            class="is-open w-full bg-main/70 backdrop-blur-xl xl:basis-[43.3%]"
+            class="absolute inset-0 bg-main/70 backdrop-blur-xl"
           ></div>
 
           <!-- wrapper-form -->
           <div
-            class="header-scroll-form bg-dark pl-[20px] pr-[10px] pt-[31px] pb-[38px] lg:px-[30px] lg:pt-[24px] lg:pb-[312px] xl:flex-auto xl:basis-[56.7%] xl:pl-[30px] xl:pr-[60px] xl:pt-[44px] 2xl:pl-[140px] 2xl:pr-[60px] 2xl:pt-[44px]"
+            id="dynamicForm"
+            class="header-scroll-form absolute right-0 h-full w-full translate-x-full bg-dark pl-[20px] pr-[10px] pt-[31px] pb-[38px] transition-all lg:px-[30px] lg:pt-[24px] lg:pb-[312px] xl:w-[56.7%] xl:flex-auto xl:pl-[30px] xl:pr-[60px] xl:pt-[44px] 2xl:pl-[140px] 2xl:pr-[60px] 2xl:pt-[44px]"
           >
             <!-- BEGIN:  btn-form-menu -->
 
@@ -6381,7 +6382,7 @@
 
             <!-- wrapper-form -->
 
-            <form class="2xl:mr-[78px]">
+            <form class="2xl:mr-[78px] pb-20">
               <!--  BEGIN: checkbox-form-menu -->
               <div class="lg:flex lg:gap-[11px]">
                 <div class="flex gap-[11px]">
@@ -6396,8 +6397,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white 
-                      peer-checked:text-black relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="branding"
                       >BRANDING</label
                     >
@@ -6418,8 +6418,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white 
-                      peer-checked:text-black relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[11px] pr-[11px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[11px] pr-[11px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="digitalMarketing"
                       >DIGITAL MARKETING</label
                     >
@@ -6441,7 +6440,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white peer-checked:text-black relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[8px] pr-[8px] text-xs font-medium uppercase text-white peer-checked:border-white peer-checked:bg-white lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[8px] pr-[8px] text-xs font-medium uppercase text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="webDesign"
                       >WEB design</label
                     >
@@ -6461,7 +6460,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white peer-checked:text-black relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[13px] pr-[13px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[13px] pr-[13px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="smm"
                       >SMM</label
                     >
@@ -6480,7 +6479,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white peer-checked:text-black relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="seo"
                       >SEO</label
                     >
