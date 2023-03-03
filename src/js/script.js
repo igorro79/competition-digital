@@ -61,62 +61,44 @@ function showMainHeader() {
 
 // ----- on window resize ------
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 1280 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth > 1280 && menu.classList.contains("left-0")) {
     burgerClose();
   }
-  if (window.innerWidth < 820 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth < 820 && menu.classList.contains("left-0")) {
     showMainHeader();
   }
-  if (window.innerWidth >= 820 && !menu.classList.contains("hidden")) {
+  if (window.innerWidth >= 820 && menu.classList.contains("left-0")) {
     hideMainHeader();
   }
 });
-/**
- * Hiddens header to the scroll.
-======================================= */
-// ==========================================
 
-// (function () {
-//   "use strict"; // Start of use strict
+/*
+ * Close a menu tablet.
+ */
+function burgerClose() {
+  burger.classList.toggle("is-active");
+  showMainHeader();
+  unlockWrapper();
+  menu.classList.toggle("left-full");
+  menu.classList.toggle("left-0");
+  menu.classList.add("w-0");
+  menu.classList.remove("w-full");
+}
 
-//   // Show the navbar when the page is scrolled up
-//   var MQL = 992;
-//   var vw = Math.max(
-//     document.documentElement.clientWidth || 0,
-//     window.innerWidth || 0
-//   );
+//  logo to the open menu
+function burgerOpen() {
+  burger.classList.toggle("is-active");
+  if (window.innerWidth >= 820) hideMainHeader();
+  lockWrapper();
+  menu.classList.toggle("left-0");
+  menu.classList.toggle("left-full");
+  menu.classList.add("w-full");
+  menu.classList.remove("w-0");
+}
 
-//   //primary navigation slide-in effect
-//   if (mainNav && vw > MQL) {
-//     var headerHeight = mainNav.offsetHeight;
-//     var previousTop = window.pageYOffset;
+closeMenuTablet.addEventListener("click", burgerClose);
+burger.addEventListener("click", burgerOpen);
 
-//     window.addEventListener("scroll", function (e) {
-//       var currentTop = window.pageYOffset;
-
-//       //check if user is scrolling up
-//       if (currentTop < previousTop) {
-//         //if scrolling up...
-//         if (currentTop > 0 && mainNav.classList.contains("isFixed")) {
-//           mainNav.classList.add("isVisible"); //navbar-shrink
-//         } else {
-//           mainNav.classList.remove("isVisible", "isFixed"); //navbar-shrink
-//         }
-//       } else if (currentTop > previousTop) {
-//         //if scrolling down...
-//         mainNav.classList.remove("isVisible"); //navbar-shrink
-
-//         if (
-//           currentTop > headerHeight &&
-//           !mainNav.classList.contains("isFixed")
-//         ) {
-//           mainNav.classList.add("isFixed");
-//         }
-//       }
-//       previousTop = currentTop;
-//     });
-//   }
-// })();
 // ---------- toggle header on scroll  ----------
 let y = window.pageYOffset;
 const toggleHeader = (e) => {
@@ -153,9 +135,6 @@ if (
 
   darkBtn.classList.add("hidden");
   lightBtn.classList.remove("hidden");
-
-  // darkBtn_02.classList.add("hidden");
-  // lightBtn_02.classList.remove("hidden");
 } else {
   document.documentElement.classList.remove("dark");
 }
@@ -165,7 +144,6 @@ modeBtn.addEventListener("click", () => {
 
   if (html.classList.contains("dark")) {
     localStorage.theme = "dark";
-    // localStorage.mode_02.darkBtn.classList = 'hidden';
   } else {
     localStorage.theme = "light";
   }
@@ -180,7 +158,6 @@ function darkMode() {
     darkBtn.classList.toggle("hidden");
 
     lightBtn.classList.toggle("hidden");
-    // menu.classList.toggle('flex');
   });
 }
 darkMode();
@@ -200,123 +177,6 @@ if (
   document.documentElement.classList.remove("dark");
 }
 
-// const modeBtn_02 = document.querySelector("#mode_02");
-
-// modeBtn_02.addEventListener("click", () => {
-//   document.querySelector("html").classList.toggle("dark");
-
-//   if (document.querySelector("html").classList.contains("dark")) {
-//     localStorage.theme = "dark";
-//   } else {
-//     localStorage.theme = "light";
-//   }
-// });
-
-/**
- * Replaces button dark mode to light mode.
- */
-
-// function darkModeMobile() {
-//   mode_02.addEventListener("click", () => {
-//     darkBtn_02.classList.toggle("hidden");
-
-//     lightBtn_02.classList.toggle("hidden");
-//     // menu.classList.toggle('flex');
-//   });
-// }
-// darkModeMobile();
-
-/**
- * Added overflow-hidden to the wrapper.
- */
-
-/**
- * Opens a menu.
- */
-
-//  logo to the open menu
-function burgerOpen() {
-  burger.classList.toggle("is-active");
-  if (window.innerWidth >= 820) hideMainHeader();
-  lockWrapper();
-  menu.classList.toggle("hidden");
-}
-
-burger.addEventListener("click", burgerOpen);
-
-// if(wrapper.classList.contains('overflow')){
-//   return ;
-// }
-// ------------------------------------------------------------ igor >
-// if (burger.classList.contains("is-active")) {
-//   wrapper.classList.add("overflow");
-// } else if (!burger.classList.contains("is-active")) {
-//   wrapper.classList.remove("overflow");
-// }
-// ------------------------------------------------------------ igor <
-/**
- * Added overflow-hidden to the wrapper
- */
-
-//  wrapper.classList.toggle('overflow');
-
-//  console.log('is-active');
-// wrapper.classList.add('overflow');
-// if(!'is-active') {
-//   // return
-//   wrapper.classList.remove('overflow');
-// }else{
-//   wrapper.classList.toggle('overflow');
-// }
-
-/**
- * Remove overflow-hidden to the wrapper
- */
-//  wrapper.classList.remove('overflow');
-
-/**
- * Closes back menu services.
- */
-// Якщо відкрите меню сервісів,
-//потрібно додати клас хіден
-// ------------------------------------------------------------ igor >
-// if (servicesModal.classList !== "hidden") {
-//   servicesModal.classList.add("hidden");
-
-//   servicesMenu.classList.remove("hidden");
-// }
-// ------------------------------------------------------------ igor <
-/**
- * Close a popup -sent- form header.
- */
-// ------------------------------------------------------------ igor>
-// if (popupForms.classList !== "hidden") {
-//   popupForms.classList.add("hidden");
-// }
-// ------------------------------------------------------------ igor<
-/**
- * Opacity logo to the open menu.
- */
-//  if(burger.classList === 'is-active'){
-//   logoOpacity.classList.add('opacity');
-// }
-
-/**
- * Close a menu tablet.
- */
-function burgerClose() {
-  burger.classList.toggle("is-active");
-
-  showMainHeader();
-  unlockWrapper();
-  menu.classList.toggle("hidden");
-}
-closeMenuTablet.addEventListener("click", burgerClose);
-
-/**
- * Opens a menu services.
- */
-
 btnServices.addEventListener("click", () => {
   servicesMenu.classList.toggle("hidden");
 
@@ -330,7 +190,6 @@ btnServices.addEventListener("click", () => {
 
 backMenuServices.addEventListener("click", () => {
   servicesMenu.classList.toggle("hidden");
-
   servicesModal.classList.toggle("hidden");
 });
 
@@ -338,57 +197,36 @@ backMenuServices.addEventListener("click", () => {
  * Opens a menu form mobile.
  */
 
-// function formMenuFn() { -------------------------------------kill fn()
-// btnContact.addEventListener('click', () => {
-//   formMenu.classList.toggle('hidden');
-
-//   burger.classList.toggle('is-active');
-//   menu.classList.toggle('hidden');
-// });
-
 //  02
 btnContact.addEventListener("click", (e) => {
-  formMenu.classList.toggle("hidden");
-
-  // console.log(burger.classList);
-  // console.log(e.view.parent.document.body);
-  // console.log(body.classList);
-
-  // html.classList.add('overflow-hidden');
-
-  // if(burger.classList === 'is-active') {
-  //   // burger.classList.add('is-active');
-  //   burger.classList.remove('is-active');
-
-  //   menu.classList.add('hidden');
-  // }
   lockWrapper();
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
   burger.classList.remove("is-active");
-  menu.classList.add("hidden");
+  menu.classList.remove("left-0");
+  menu.classList.add("left-full");
+  menu.classList.remove("w-full");
+  menu.classList.add("w-0");
 
   /**
    * Closed the popup-form SENT.
    */
-  // console.log(popupForms.classList);
 
   if (!popupForms.classList.contains("hidden")) {
     popupForms.classList.add("hidden");
-    // popupForms.classList.remove('is-open');
   }
 });
 
 btnDiscuss.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
   lockWrapper();
 });
 
 btnFormMenu.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-full");
+  formMenu.classList.toggle("right-0");
   unlockWrapper();
-  // if(burger.classList === 'is-active') {
-  //   burger.classList.add('is-active');
-  //   menu.classList.remove('hidden');
-  // }
 });
 
 /**
@@ -396,38 +234,17 @@ btnFormMenu.addEventListener("click", () => {
  */
 
 btnContactTablet.addEventListener("click", () => {
-  formMenu.classList.toggle("hidden");
+  formMenu.classList.toggle("right-0");
+  formMenu.classList.toggle("right-full");
   lockWrapper();
   showMainHeader();
   burger.classList.toggle("is-active");
-  menu.classList.toggle("hidden");
-
-  // burgerMenu()
+  menu.classList.add("left-full");
+  menu.classList.remove("left-0");
+  menu.classList.remove("w-full");
+  menu.classList.add("w-0");
 });
 // }
-// formMenuFn(); --------------------------
-
-/**
- * Opens a dropdown-header.
- */
-
-// function openDropdown() {
-//   const openDropdown = document.querySelector('#open-dropdown');
-//   const dropdownHeader = document.querySelector('#dropdown-header');
-
-//   openDropdown.addEventListener('click', () => {
-//     dropdownHeader.classList.toggle('hidden');
-//   });
-
-//   /**
-//    * Close a dropdown-header.
-//    */
-
-//   dropdownHeader.addEventListener('click', () => {
-//     dropdownHeader.classList.toggle('hidden');
-//   });
-// }
-// openDropdown();
 
 /**
  * Opens a block services-06.
@@ -448,10 +265,6 @@ function opensBlockServices() {
       } else {
         tl.forEach((item) => {
           if (item.classList.contains("t_active")) {
-            //  item.classList.remove("t_active");
-            //  item.lastElementChild.classList.remove("c_active");
-            // item.lastElementChild.classList.toggle("hidden")
-
             return;
           }
         });
@@ -467,8 +280,6 @@ opensBlockServices();
 /**
  * Opens a support.
  */
-
-// textRed.classList.replace('text-mainTextRed' ,'text-mainTextDark' )
 
 function accordeonOpen() {
   let tl = document.querySelectorAll("#faqWrp .title ");
@@ -514,9 +325,6 @@ function accordeonOpen() {
             item.firstElementChild.classList.toggle("hidden");
             item.lastElementChild.classList.toggle("hidden");
 
-            // .spoller-decor
-            // item.firstElementChild.classList.toggle('c_active');
-
             return;
           }
         });
@@ -538,9 +346,6 @@ function accordeonOpen() {
          */
         this.firstElementChild.classList.toggle("hidden");
         this.lastElementChild.classList.toggle("hidden");
-
-        // .spoller-decor
-        // this.firstElementChild.classList.add('c_active');
       }
     });
   }
@@ -560,10 +365,6 @@ btnClosePopupForms.addEventListener("click", () => {
   popupForms.classList.remove("flex");
 
   unlockWrapper();
-  /**
-   * Remove atribute disabled for the wrapper element.
-   */
-  //  burger.removeAttribute('disabled', 'disabled');
 });
 
 /**
@@ -587,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const username_02 = document.querySelector("#username");
   const phone = document.querySelector("#phone");
   const popup = document.querySelector(".search");
-  const phone_02 = document.querySelector("#phone_02"); //=========28.02.2023
+  const phone_02 = document.querySelector("#phone_02");
   const popup_02 = document.querySelector(".search_02");
 
   phone.addEventListener("input", (e) => {
@@ -595,11 +396,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //   popup phone
 
     if (isNaN(inputValue)) {
-      // console.log(e);
-      // console.log(e.target.offsetParent.firstElementChild);
-      // console.log(inputValue);
-      // console.log(phone.classList.contains);
-
       /**
        * Added red border input phone
        */
@@ -696,9 +492,6 @@ document.addEventListener("DOMContentLoaded", function () {
     /**
      * Added atribute disabled for the wrapper element.
      */
-    // burger.setAttribute('disabled', 'disabled');
-
-    // console.log(phone.value);
 
     if (
       username.value.trim() == "" ||
@@ -717,9 +510,10 @@ document.addEventListener("DOMContentLoaded", function () {
       popupForms.classList.add("flex");
       // popupForms.classList.add('is-open');
 
-      formMenu.classList.add("hidden");
+      formMenu.classList.toggle("right-full");
+      formMenu.classList.toggle("right-0");
 
-      document.getElementById("name").value = "";
+      document.getElementById("username").value = "";
       document.getElementById("email").value = "";
       document.getElementById("phone").value = "";
       document.getElementById("company").value = "";

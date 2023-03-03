@@ -16,11 +16,13 @@ BEGIN: html  scroll
   }
 
   .header__contact-body::-webkit-scrollbar,
+  .blog-scroll::-webkit-scrollbar,
   html::-webkit-scrollbar {
     @apply w-[10px]  bg-dark;
   }
 
   .form__header::-webkit-scrollbar-thumb,
+  .blog-scroll::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar-thumb {
     @apply h-[80px]  rounded-[20px]  bg-main;
   }
@@ -52,18 +54,17 @@ html::-webkit-scrollbar-thumb {
   }
 
   .header__contact-body {
-    @apply absolute  right-[100%] top-0 z-20 h-[calc(100vh+82px)] w-full overflow-y-scroll
- bg-dark transition ease-in;
+    @apply absolute  top-0 z-20 h-[calc(100vh+82px)]
+     w-full overflow-y-scroll bg-dark transition ease-in;
   }
 
   .header__contact-body::-webkit-scrollbar-thumb {
     @apply h-[5px]  rounded-[20px] bg-main;
   }
 
-  /*._body-contact-active {
-  @apply right-0  !important
-}
-*/
+  ._body-contact-active {
+    @apply right-0  !important;
+  }
 
   /*.header__contact-body {
     -webkit-transition: .3s;
@@ -186,11 +187,11 @@ BEGIN: burger
   }
 
   .burger__box {
-    @apply relative h-[28px] w-[31px] cursor-pointer;
+    @apply relative h-[28px] w-[31px];
   }
 
   .burger__inner {
-    @apply absolute top-0 h-[3px] w-[31px] bg-white transition-all;
+    @apply absolute top-0 left-0 h-[3px] w-[31px] bg-white transition-all;
   }
 
   .burger__inner {
