@@ -2,6 +2,63 @@
 
 /*@import "./video.css";*/
 
+/*.social__link span {
+  @apply flex h-12 w-12 items-center justify-center rounded-full 
+  bg-transparent text-dark transition-all 
+  ease-in hover:text-white dark:text-white 
+   xl:h-14 xl:w-14;
+}*/
+
+/*=========================================
+BEGIN: icons-menu
+=========================================*/
+
+.social__link-menu span{
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.social__link-menu span:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px){
+  .social__link-menu span{
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+.social__link-menu:hover .icon-menu{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+/*=========================================
+END: icons-menu
+=========================================*/
+
+/*dark:text-white */
+
 .social__link span{
   display: flex;
   height: 3rem;
@@ -9,7 +66,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  background-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
   transition-property: all;
@@ -23,11 +81,6 @@
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .social__link span{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 1280px){
   .social__link span{
     height: 3.5rem;
@@ -35,26 +88,9 @@
   }
 }
 
-.social__link:hover .instagram-icon{
-  background-image: linear-gradient( 225.47deg,#7b3aae 13.11%,#d81e4d 49.74%,#f9cc01 88.74% );
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
-.dark .social__link:hover .instagram-icon{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.social__link:hover .facebook-icon{
+.social__link:hover .icon{
   --tw-bg-opacity: 1;
-  background-color: rgb(91 127 203 / var(--tw-bg-opacity));
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -65,46 +101,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.dark .social__link:hover .facebook-icon{
+.dark .social__link:hover .icon{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.social__link:hover .linkedin-icon{
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 160 248 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+/*.social__link:hover .instagram-icon {
+  @apply bg-[linear-gradient(_225.47deg,#7b3aae_13.11%,#d81e4d_49.74%,#f9cc01_88.74%_)]
+   text-white transition ease-in dark:text-white;
 }
-
-.dark .social__link:hover .linkedin-icon{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.social__link:hover .facebook-icon {
+  @apply bg-[#5B7FCB] text-white transition ease-in dark:text-white;
 }
-
-.social__link:hover .upwork-icon{
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 172 55 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+.social__link:hover .linkedin-icon {
+  @apply bg-[#27A0F8] text-white transition ease-in dark:text-white;
 }
-
-.dark .social__link:hover .upwork-icon{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+.social__link:hover .upwork-icon {
+  @apply bg-[#16AC37] text-white transition ease-in dark:text-white;
+}*/
 
 /*================================================
 END: footer 
@@ -2873,6 +2887,10 @@ Form menu header
   margin-bottom: 1.5rem;
 }
 
+.mb-\[53px\]{
+  margin-bottom: 53px;
+}
+
 .mt-\[56px\]{
   margin-top: 56px;
 }
@@ -3105,6 +3123,18 @@ Form menu header
   height: 29px;
 }
 
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[32px\]{
+  height: 32px;
+}
+
+.h-\[27px\]{
+  height: 27px;
+}
+
 .h-\[233px\]{
   height: 233px;
 }
@@ -3219,6 +3249,22 @@ Form menu header
 
 .w-\[29px\]{
   width: 29px;
+}
+
+.w-\[20px\]{
+  width: 20px;
+}
+
+.w-\[31px\]{
+  width: 31px;
+}
+
+.w-\[26px\]{
+  width: 26px;
+}
+
+.w-\[27px\]{
+  width: 27px;
 }
 
 .w-\[120px\]{
@@ -3421,6 +3467,10 @@ Form menu header
   gap: 50px;
 }
 
+.gap-\[20px\]{
+  gap: 20px;
+}
+
 .gap-\[5px\]{
   gap: 5px;
 }
@@ -3441,8 +3491,8 @@ Form menu header
   gap: 30px;
 }
 
-.gap-\[48px\]{
-  gap: 48px;
+.gap-\[19px\]{
+  gap: 19px;
 }
 
 .gap-\[11px\]{
@@ -3463,10 +3513,6 @@ Form menu header
 
 .gap-\[29px\]{
   gap: 29px;
-}
-
-.gap-\[20px\]{
-  gap: 20px;
 }
 
 .gap-\[79px\]{
@@ -3680,6 +3726,16 @@ Form menu header
   padding-right: 1rem;
 }
 
+.px-\[40px\]{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .px-\[20px\]{
   padding-left: 20px;
   padding-right: 20px;
@@ -3880,16 +3936,16 @@ Form menu header
   padding-bottom: 1rem;
 }
 
-.pb-\[45px\]{
-  padding-bottom: 45px;
+.pb-\[53px\]{
+  padding-bottom: 53px;
 }
 
 .pr-\[10px\]{
   padding-right: 10px;
 }
 
-.pb-\[29px\]{
-  padding-bottom: 29px;
+.pb-\[19px\]{
+  padding-bottom: 19px;
 }
 
 .pt-\[22px\]{
@@ -3990,6 +4046,10 @@ Form menu header
 
 .pl-\[54px\]{
   padding-left: 54px;
+}
+
+.pb-\[29px\]{
+  padding-bottom: 29px;
 }
 
 .pt-\[50px\]{
@@ -7533,8 +7593,8 @@ google-review
     gap: 17px;
   }
 
-  .xl\:gap-\[59px\]{
-    gap: 59px;
+  .xl\:gap-\[24px\]{
+    gap: 24px;
   }
 
   .xl\:gap-\[6px\]{
@@ -8564,6 +8624,10 @@ google-review
 
   .\32xl\:max-w-\[407px\]{
     max-width: 407px;
+  }
+
+  .\32xl\:max-w-full{
+    max-width: 100%;
   }
 
   .\32xl\:max-w-\[950px\]{
