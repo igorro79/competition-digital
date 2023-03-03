@@ -23,6 +23,19 @@ BEGIN: 06-section-services
   xl:group-hover/card:fill-white;
   }
 
+  /* hover:text-white active:text-main active:before:bg-main
+      active:before:text-main*/
+  .translate-underline__hover-line__white {
+    @apply relative cursor-pointer transition-all duration-100
+     before:absolute before:-bottom-[1px] before:right-0 before:h-[2px] before:w-0
+     before:bg-white before:opacity-0 before:transition-all
+     before:duration-1000 before:content-[''] 
+     group-hover/card:before:left-0 group-hover/card:before:right-auto
+      group-hover/card:before:w-full group-hover/card:before:opacity-100 
+      group-hover/card:before:duration-300
+      group-hover/card:after:scale-100;
+  }
+
   /*================================================
 END: 06-section-services
  =============================================== */
