@@ -2983,6 +2983,10 @@ Form menu header
   height: 27px;
 }
 
+.h-\[calc\(100\%-76px\)\]{
+  height: calc(100% - 76px);
+}
+
 .h-\[233px\]{
   height: 233px;
 }
@@ -5678,6 +5682,10 @@ google-review
 
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:h-full{
+    height: 100%;
   }
 
   .lg\:max-h-\[212px\]{
