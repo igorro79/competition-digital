@@ -216,6 +216,11 @@ btn-hover-overlay-red
     hover:border-white;
 }
 
+.border__rounded-red {
+  @apply rounded-full border-[1px] border-middleGrey
+    hover:border-main;
+}
+
 .border__error {
   @apply rounded-full border-[1px] border-main
     hover:border-main;
