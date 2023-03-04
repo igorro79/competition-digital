@@ -4058,6 +4058,10 @@ Form menu header
   padding-bottom: 0.5rem;
 }
 
+.pr-\[20px\]{
+  padding-right: 20px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -5093,6 +5097,11 @@ google-review
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.group\/text:hover .group-hover\/text\:bg-main{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
 .group\/card:hover .group-hover\/card\:bg-main{
   --tw-bg-opacity: 1;
   background-color: rgb(255 48 77 / var(--tw-bg-opacity));
@@ -5118,6 +5127,10 @@ google-review
 
 .group:hover .group-hover\:fill-dark{
   fill: #171717;
+}
+
+.group\/text:hover .group-hover\/text\:fill-white{
+  fill: #fff;
 }
 
 .group\/card:hover .group-hover\/card\:fill-white{
@@ -5155,6 +5168,11 @@ google-review
 }
 
 .group:hover .group-hover\:text-main{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
+.group\/text:hover .group-hover\/text\:text-main{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
@@ -7364,12 +7382,12 @@ google-review
     flex: 1 1 auto;
   }
 
-  .xl\:basis-\[52\%\]{
-    flex-basis: 52%;
-  }
-
   .xl\:basis-\[48\%\]{
     flex-basis: 48%;
+  }
+
+  .xl\:basis-\[52\%\]{
+    flex-basis: 52%;
   }
 
   .xl\:basis-\[100\%\]{
