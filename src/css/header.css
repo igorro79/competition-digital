@@ -1,12 +1,13 @@
 @layer components {
- 
-
   /* form */
-
   .header__contact-body {
-    @apply absolute  top-0 z-20 h-[calc(100vh+82px)]
-     w-full overflow-y-scroll bg-dark transition ease-in;
+    @apply absolute top-0  z-20 h-full w-full bg-dark
+    transition-all ease-in;
   }
+  /* .header__contact-body {
+    @apply    h-[calc(100vh+82px)]
+     
+  } */
 
   .header__contact-body::-webkit-scrollbar-thumb {
     @apply h-[5px]  rounded-[20px] bg-main;
@@ -195,11 +196,6 @@ Menu header gradient
     overflow-y-scroll;
   }
   */
-
-  .header__contact-body {
-    @apply z-20 h-full overflow-y-scroll 
-    transition-all ease-in;
-  }
 
   .header__contact-body::-webkit-scrollbar-thumb {
     @apply h-[5px] rounded-full bg-main;

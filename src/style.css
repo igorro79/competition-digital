@@ -248,6 +248,15 @@ END: footer
   margin-right: auto;
 }
 
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+.blogSwiper .swiper-slide{
+  width: auto;
+}
+
 /*! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com*/
 
 /*
@@ -675,12 +684,6 @@ html{
   scroll-behavior: smooth;
 }
 
-.blog-scroll::-webkit-scrollbar{
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
 .header__contact-body::-webkit-scrollbar,
   html::-webkit-scrollbar{
   width: 10px;
@@ -867,18 +870,20 @@ html{
   position: absolute;
   top: 0px;
   z-index: 20;
-  height: calc(100vh + 82px);
+  height: 100%;
   width: 100%;
-  overflow-y: scroll;
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
+
+/* .header__contact-body {
+    @apply    h-[calc(100vh+82px)]
+     
+  } */
 
 .header__contact-body::-webkit-scrollbar-thumb{
   height: 5px;
@@ -1227,16 +1232,6 @@ Menu header gradient
     overflow-y-scroll;
   }
   */
-
-.header__contact-body{
-  z-index: 20;
-  height: 100%;
-  overflow-y: scroll;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
 
 .header__contact-body::-webkit-scrollbar-thumb{
   height: 5px;
@@ -3015,6 +3010,10 @@ Form menu header
   min-height: 24px;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-\[103px\]{
   width: 103px;
 }
@@ -3085,6 +3084,11 @@ Form menu header
 
 .w-\[36px\]{
   width: 36px;
+}
+
+.w-min{
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .w-\[270px\]{
@@ -3170,10 +3174,6 @@ Form menu header
 
 .min-w-\[24px\]{
   min-width: 24px;
-}
-
-.max-w-none{
-  max-width: none;
 }
 
 .max-w-\[357px\]{
@@ -3276,10 +3276,6 @@ Form menu header
   flex-wrap: wrap;
 }
 
-.flex-nowrap{
-  flex-wrap: nowrap;
-}
-
 .items-start{
   align-items: flex-start;
 }
@@ -3326,10 +3322,6 @@ Form menu header
 
 .gap-\[35px\]{
   gap: 35px;
-}
-
-.gap-\[31px\]{
-  gap: 31px;
 }
 
 .gap-\[50px\]{
@@ -3392,6 +3384,10 @@ Form menu header
   gap: 18px;
 }
 
+.gap-\[31px\]{
+  gap: 31px;
+}
+
 .gap-\[19\.7px\]{
   gap: 19.7px;
 }
@@ -3438,8 +3434,12 @@ Form menu header
   overflow: hidden;
 }
 
-.overflow-x-auto{
-  overflow-x: auto;
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .rounded-\[10px\]{
@@ -6123,10 +6123,6 @@ google-review
     gap: 13px;
   }
 
-  .lg\:gap-5{
-    gap: 1.25rem;
-  }
-
   .lg\:gap-\[50px\]{
     gap: 50px;
   }
@@ -7147,10 +7143,6 @@ google-review
     height: 40px;
   }
 
-  .xl\:h-full{
-    height: 100%;
-  }
-
   .xl\:max-h-\[369\.5px\]{
     max-height: 369.5px;
   }
@@ -7249,10 +7241,6 @@ google-review
 
   .xl\:max-w-\[555px\]{
     max-width: 555px;
-  }
-
-  .xl\:max-w-\[1244px\]{
-    max-width: 1244px;
   }
 
   .xl\:max-w-\[390px\]{
@@ -7376,12 +7364,12 @@ google-review
     flex: 1 1 auto;
   }
 
-  .xl\:basis-\[48\.067\%\]{
-    flex-basis: 48.067%;
+  .xl\:basis-\[52\%\]{
+    flex-basis: 52%;
   }
 
-  .xl\:basis-\[52\.013\%\]{
-    flex-basis: 52.013%;
+  .xl\:basis-\[48\%\]{
+    flex-basis: 48%;
   }
 
   .xl\:basis-\[100\%\]{
@@ -7398,6 +7386,10 @@ google-review
 
   .xl\:basis-\[829px\]{
     flex-basis: 829px;
+  }
+
+  .xl\:basis-\[48\.067\%\]{
+    flex-basis: 48.067%;
   }
 
   .xl\:border__top{
@@ -7532,10 +7524,6 @@ google-review
     gap: 40px;
   }
 
-  .xl\:gap-\[30px\]{
-    gap: 30px;
-  }
-
   .xl\:gap-\[17px\]{
     gap: 17px;
   }
@@ -7570,6 +7558,10 @@ google-review
 
   .xl\:gap-\[20px\]{
     gap: 20px;
+  }
+
+  .xl\:gap-\[30px\]{
+    gap: 30px;
   }
 
   .xl\:gap-\[255px\]{
