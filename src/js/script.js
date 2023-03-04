@@ -17,21 +17,24 @@ const lightBtn = document.getElementById("lightBtn");
 const menu = document.getElementById("menu");
 const dynamicMenu = document.getElementById("dynamicMenu");
 const burger = document.querySelector(".burger");
-
 const closeMenuTablet = document.getElementById("closeMenuTablet");
 
 const servicesModal = document.getElementById("servicesModal");
 const servicesMenu = document.getElementById("servicesMenu");
+const backMenuServices = document.getElementById("backMenuServices");
+const btnServices = document.getElementById("btnServices");
 
 //  popup -sent- form header.
 const popupForms = document.getElementById("popupForms");
-const btnServices = document.getElementById("btnServices");
-
-const backMenuServices = document.getElementById("backMenuServices");
 
 const btnContact = document.getElementById("btnContact");
-const btnFormMenu = document.getElementById("btnFormMenu");
+const btnContactTablet = document.getElementById("btnContactTablet");
+
 const dynamicForm = document.getElementById("dynamicForm");
+const mainForm = document.getElementById("mainForm");
+
+const btnFormMenu = document.getElementById("btnFormMenu");
+const formMenu = document.getElementById("formMenu");
 const dynamicMenuContainer = document.querySelector(".dynamicMenuContainer");
 
 const btnDiscuss = document.getElementById("btnDiscuss");
@@ -39,8 +42,7 @@ const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.getElementById("submit");
 const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-const formMenu = document.getElementById("formMenu");
-const btnContactTablet = document.getElementById("btnContactTablet");
+// const formMenu = document.getElementById("formMenu");
 const upButton = document.getElementById("upButton");
 
 //=============== functions ===============
@@ -64,12 +66,15 @@ function showMainHeader() {
 const menuServicesToggle = () => {
   servicesMenu.classList.toggle("-translate-x-full");
   servicesModal.classList.toggle("translate-x-[100vw]");
-  dynamicMenuContainer.classList.toggle("min-h-[710px]");
+  window.innerWidth < 820
+    ? dynamicMenuContainer.classList.toggle("min-h-[590px]")
+    : dynamicMenuContainer.classList.toggle("min-h-[710px]");
 };
 const menuServicesClose = () => {
   servicesMenu.classList.remove("-translate-x-full");
   servicesModal.classList.add("translate-x-[100vw]");
   dynamicMenuContainer.classList.remove("min-h-[710px]");
+  dynamicMenuContainer.classList.remove("min-h-[590px]");
 };
 //-------------------------------
 const openPopupSentMsg = () => {
@@ -90,12 +95,12 @@ const closePopupSentMsg = () => {
 const openDynamicForm = () => {
   formMenu.classList.remove("invisible");
   formMenu.classList.remove("opacity-0");
-  dynamicForm.classList.remove("translate-x-full");
+  dynamicFormWrapper.classList.remove("translate-x-full");
 };
 const closeDynamicForm = () => {
   formMenu.classList.add("invisible");
   formMenu.classList.add("opacity-0");
-  dynamicForm.classList.add("translate-x-full");
+  dynamicFormWrapper.classList.add("translate-x-full");
 };
 //-------------------------------
 const openDynamicMenu = () => {
@@ -133,10 +138,24 @@ function burgerOpen() {
   openDynamicMenu();
 }
 
+function toggleMobileMenuContainerHeigh() {
+  dynamicMenuContainer.classList.toggle("min-h-[710px]");
+  dynamicMenuContainer.classList.toggle("min-h-[590px]");
+}
+
 //=============== ! functions ===============
 
 // ----- on window resize ------
 window.addEventListener("resize", () => {
+  if (
+    (dynamicMenuContainer.classList.contains("min-h-[710px]") &&
+      window.innerWidth < 820) ||
+    (dynamicMenuContainer.classList.contains("min-h-[590px]") &&
+      window.innerWidth >= 820)
+  ) {
+    toggleMobileMenuContainerHeigh();
+  }
+
   if (window.innerWidth > 1280 && !menu.classList.contains("invisible")) {
     burgerClose();
   }
@@ -286,25 +305,24 @@ btnContactTablet.addEventListener("click", () => {
 
 function opensBlockServices() {
   let tl = document.querySelectorAll("#servicesCardsWrp .title ");
-  // console.log(tl);
 
   for (let i = 0; i < tl.length; i++) {
     tl[i].addEventListener("click", function (e) {
-      // console.log(e.target.parentElement.nextElementSibling.className);
-
-      if (this.classList.contains("t_active")) {
+      if (window.innerWidth < 820 && e.target.nodeName === "H3") {
+        e.preventDefault();
+      }
+      console.log(e.target);
+      if (this.classList.contains("t_active") && e.target.nodeName === "H3") {
         this.classList.remove("t_active");
         this.lastElementChild.classList.remove("c_active");
         this.lastElementChild.classList.toggle("hidden");
-      } else {
-        tl.forEach((item) => {
-          if (item.classList.contains("t_active")) {
-            return;
-          }
-        });
+        return;
+      }
+      if (!this.classList.contains("t_active")) {
         this.classList.add("t_active");
         this.lastElementChild.classList.add("c_active");
         this.lastElementChild.classList.toggle("hidden");
+        return;
       }
     });
   }
@@ -407,181 +425,175 @@ btnClosePopupForms.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const submit = document.getElementById("submit");
   const submit_02 = document.getElementById("submit_02");
-  // popup-forms
-  const popupForms = document.querySelector("#popupForms");
-  const formMenu = document.querySelector("#formMenu");
+  //---------------------------------------------
+  const username = document.getElementById("username");
+  const username_02 = document.getElementById("username_02");
 
-  // const burger = document.querySelector(".burger");
+  const email = document.getElementById("email");
+  const email_02 = document.getElementById("email_02");
 
-  /**
-   * Validation input phone add popup.
-   */
+  const phone = document.getElementById("phone");
+  const phone_02 = document.getElementById("phone_02");
 
-  const username = document.querySelector("#username");
-  const username_02 = document.querySelector("#username");
-  const phone = document.querySelector("#phone");
-  const popup = document.querySelector(".search");
-  const phone_02 = document.querySelector("#phone_02");
-  const popup_02 = document.querySelector(".search_02");
+  const company = document.getElementById("company");
+  const company_02 = document.getElementById("company_02");
 
   /**
-   * Added popup to dynamicForm in header
+   * Added popup
    */
-
-  const username_01 = document.querySelector("#username");
   const popup_username = document.querySelector(".username");
+  const popup_username_02 = document.querySelector(".username_02");
 
-  const email = document.querySelector("#email");
-  const popup_email = document.querySelector(".email");
-
-  const company = document.querySelector("#company");
-  const popup_company = document.querySelector(".company");
-
-  /**
-   * Added popup to form_02
-   */
-
-  const name_02 = document.querySelector("#name_02");
-  const popup_name_02 = document.querySelector(".popup-name_02");
-
-  const email_02 = document.querySelector("#email_02");
+  const popup_email = document.querySelector(".popup_email");
   const popup_email_02 = document.querySelector(".popup_email_02");
 
-  const company_02 = document.querySelector("#company_02");
-  const popup_company_02 = document.querySelector(".popup-company_02");
+  const popup_phone = document.querySelector(".popup_phone");
+  const popup_phone_02 = document.querySelector(".popup_phone_02");
 
-  phone.addEventListener("input", (e) => {
+  const popup_company = document.querySelector(".popup_company");
+  const popup_company_02 = document.querySelector(".popup_company_02");
+
+  // function validatePhone() {
+  //   let inputValue = phone_02.value;
+
+  //   if (inputValue.length < 3) {
+  //     /**
+  //      * Added red border input phone_02
+  //      */
+  //     phone_02.classList.add("border__error");
+  //     phone_02.classList.add("focus:border-borderBtn");
+  //     phone_02.classList.add("_error");
+  //     popup_phone.classList.replace("hidden", "block");
+  //     popup_phone.textContent = "The phone is in the wrong format";
+  //     return;
+  //   } else {
+  //     popup_phone.textContent = "";
+  //     popup_phone.classList.remove("block");
+  //     popup_phone.classList.add("hidden");
+  //     /**
+  //      * Delete red border input phone
+  //      */
+  //     phone_02.classList.remove("border__error");
+  //     phone_02.classList.remove("focus:border-borderBtn");
+  //     phone_02.classList.remove("border-borderBtn");
+  //     phone_02.classList.remove("_error");
+  //   }
+  // }
+
+  phone.addEventListener("blur", () => {
     let inputValue = phone.value;
-    //   popup phone
 
-    if (isNaN(inputValue)) {
+    if (inputValue.length < 3) {
       /**
        * Added red border input phone
        */
-
       phone.classList.add("border__error");
-      // phone.classList.replace('border__rounded','border__error');
-
-      // phone.classList.replace('focus:border-white','focus:border-borderBtn');
       phone.classList.add("focus:border-borderBtn");
       phone.classList.add("_error");
-
-      popup.classList.replace("hidden", "block");
-      // popup.classList.toggle('hidden');
-
-      // popup.classList.add('block');
-      popup.textContent = "The phone is in the wrong format";
-      // setTimeout(() => {
-      //   popup.textContent = '';
-      //   popup.classList.remove('block');
-      //   popup.classList.add('hidden');
-      // }, 2000);
-
+      popup_phone.classList.replace("hidden", "block");
+      popup_phone.textContent = "The phone is in the wrong format";
       return;
     } else {
-      popup.textContent = "";
-      popup.classList.remove("block");
-      popup.classList.add("hidden");
-
+      popup_phone.textContent = "";
+      popup_phone.classList.remove("block");
+      popup_phone.classList.add("hidden");
       /**
        * Delete red border input phone
        */
-
       phone.classList.remove("border__error");
-
       phone.classList.remove("focus:border-borderBtn");
       phone.classList.remove("border-borderBtn");
-
       phone.classList.remove("_error");
     }
   });
 
-  /*===============================
-  BEGIN: form-02  before footer
-  ===============================*/
+  phone_02.addEventListener("blur", () => {
+    let inputValue = phone_02.value;
 
-  /**
-   * Validation input name-02 add popup_name_02.
-   */
-
-  /**
-   * Validation input phone add popup_02.
-   */
-
-  phone_02.addEventListener("input", () => {
-    //===========28.02.2023
-    let inputValue_02 = phone_02.value;
-    //   popup phone_02
-
-    if (isNaN(inputValue_02)) {
+    if (inputValue.length < 3) {
       /**
-       * Added red border input phone
+       * Added red border input phone_02
        */
-
       phone_02.classList.add("border__error");
-      // phone.classList.replace('border__rounded','border__error');
-
-      // phone.classList.replace('focus:border-white','focus:border-borderBtn');
       phone_02.classList.add("focus:border-borderBtn");
       phone_02.classList.add("_error");
-
-      popup_02.classList.replace("hidden", "block");
-      popup_02.textContent = "The phone is in the wrong format";
-
+      popup_phone_02.classList.replace("hidden", "block");
+      popup_phone_02.textContent = "The phone is in the wrong format";
       return;
     } else {
-      popup_02.textContent = "";
-      popup_02.classList.remove("block");
-      popup_02.classList.add("hidden");
-
+      popup_phone_02.textContent = "";
+      popup_phone_02.classList.remove("block");
+      popup_phone_02.classList.add("hidden");
       /**
        * Delete red border input phone
        */
       phone_02.classList.remove("border__error");
-
       phone_02.classList.remove("focus:border-borderBtn");
       phone_02.classList.remove("border-borderBtn");
-
       phone_02.classList.remove("_error");
     }
   });
+  // phone_02.addEventListener("blur", validatePhone);
 
-  submit.addEventListener("click", (e) => {
+  /*===============================
+  BEGIN: form-02  before footer
+  ===============================*/
+  dynamicForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    /**
-     * Delete popup form.
-     */
-    popup.textContent = "";
-    popup.classList.remove("block");
-    popup.classList.add("hidden");
-
-    /**
-     * Added atribute disabled for the wrapper element.
-     */
 
     if (
       username.value.trim() == "" ||
       email.value.trim() == "" ||
       phone.value.trim() == "" ||
-      company.value.trim() == "" ||
-      message.value.trim() == ""
+      company.value.trim() == ""
     ) {
-      // alert("Please fill in all fields");
-      return false;
+      return;
     } else {
       // sendMail();
-      // closePopupSentMsg();
 
       openPopupSentMsg();
       closeDynamicForm();
 
-      document.getElementById("username").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("phone").value = "";
-      document.getElementById("company").value = "";
-      document.getElementById("message").value = "";
-      document.getElementById("choise").value = "";
+      const formData = new FormData(dynamicForm);
+      console.log(Object.fromEntries(formData));
+
+      dynamicForm.reset();
+      // document.getElementById("username").value = "";
+      // document.getElementById("email").value = "";
+      // document.getElementById("phone").value = "";
+      // document.getElementById("company").value = "";
+      // document.getElementById("message").value = "";
+      // document.getElementById("choise").value = "";
+
+      // alert('Yuor message sent successfully');
+    }
+  });
+  mainForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (
+      username_02.value.trim() == "" ||
+      email_02.value.trim() == "" ||
+      phone_02.value.trim() == "" ||
+      company_02.value.trim() == ""
+    ) {
+      return;
+    } else {
+      // sendMail();
+
+      openPopupSentMsg();
+      closeDynamicForm();
+
+      const formData = new FormData(mainForm);
+      console.log(Object.fromEntries(formData));
+
+      mainForm.reset();
+      // document.getElementById("username").value = "";
+      // document.getElementById("email").value = "";
+      // document.getElementById("phone").value = "";
+      // document.getElementById("company").value = "";
+      // document.getElementById("message").value = "";
+      // document.getElementById("choise").value = "";
 
       // alert('Yuor message sent successfully');
     }
@@ -592,50 +604,50 @@ document.addEventListener("DOMContentLoaded", function () {
    * Submit form -02.
    */
   /*===========================================*/
-  submit_02.addEventListener("click", (e) => {
-    //=======28.02.2023
-    e.preventDefault();
+  // submit_02.addEventListener("click", (e) => {
+  //   //=======28.02.2023
+  //   e.preventDefault();
 
-    /**
-     * Delete popup form_02.
-     */
-    popup_name_02.textContent = "";
-    popup_name_02.classList.remove("block");
-    popup_name_02.classList.add("hidden");
+  //   /**
+  //    * Delete popup form_02.
+  //    */
+  //   popup_name_02.textContent = "";
+  //   popup_name_02.classList.remove("block");
+  //   popup_name_02.classList.add("hidden");
 
-    /**
-     * Delete popup form_02.
-     */
-    popup_02.textContent = "";
-    popup_02.classList.remove("block");
-    popup_02.classList.add("hidden");
+  //   /**
+  //    * Delete popup form_02.
+  //    */
+  //   popup_02.textContent = "";
+  //   popup_02.classList.remove("block");
+  //   popup_02.classList.add("hidden");
 
-    // console.log(phone.value);
+  //   // console.log(phone.value);
 
-    if (
-      name_02.value == "" ||
-      email_02.value == "" ||
-      phone_02.value == "" ||
-      company_02.value == "" ||
-      message_02.value == ""
-    ) {
-      // alert("Please fill in all fields");
-      return false;
-    } else {
-      // sendMail();
+  //   if (
+  //     name_02.value == "" ||
+  //     email_02.value == "" ||
+  //     phone_02.value == "" ||
+  //     company_02.value == "" ||
+  //     message_02.value == ""
+  //   ) {
+  //     // alert("Please fill in all fields");
+  //     return false;
+  //   } else {
+  //     // sendMail();
 
-      openPopupSentMsg();
+  //     openPopupSentMsg();
 
-      document.getElementById("name_02").value = "";
-      document.getElementById("email_02").value = "";
-      document.getElementById("phone_02").value = "";
-      document.getElementById("company_02").value = "";
-      document.getElementById("message_02").value = "";
-      document.getElementById("choise_02").value = "";
+  //     document.getElementById("name_02").value = "";
+  //     document.getElementById("email_02").value = "";
+  //     document.getElementById("phone_02").value = "";
+  //     document.getElementById("company_02").value = "";
+  //     document.getElementById("message_02").value = "";
+  //     document.getElementById("choise_02").value = "";
 
-      // alert('Yuor message sent successfully');
-    }
-  });
+  //     // alert('Yuor message sent successfully');
+  //   }
+  // });
 });
 
 // function sendMail() {
