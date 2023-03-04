@@ -32,6 +32,7 @@ const backMenuServices = document.getElementById("backMenuServices");
 const btnContact = document.getElementById("btnContact");
 const btnFormMenu = document.getElementById("btnFormMenu");
 const dynamicForm = document.getElementById("dynamicForm");
+const dynamicMenuContainer = document.querySelector(".dynamicMenuContainer");
 
 const btnDiscuss = document.getElementById("btnDiscuss");
 const logoOpacity = document.getElementById("logoOpacity");
@@ -61,12 +62,14 @@ function showMainHeader() {
 }
 //-------------------------------
 const menuServicesToggle = () => {
-  servicesMenu.classList.toggle("hidden");
-  servicesModal.classList.toggle("hidden");
+  servicesMenu.classList.toggle("-translate-x-full");
+  servicesModal.classList.toggle("translate-x-[100vw]");
+  dynamicMenuContainer.classList.toggle("min-h-[710px]");
 };
 const menuServicesClose = () => {
-  servicesMenu.classList.remove("hidden");
-  servicesModal.classList.add("hidden");
+  servicesMenu.classList.remove("-translate-x-full");
+  servicesModal.classList.add("translate-x-[100vw]");
+  dynamicMenuContainer.classList.remove("min-h-[710px]");
 };
 //-------------------------------
 const openPopupSentMsg = () => {
@@ -427,15 +430,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const username_01 = document.querySelector("#username");
   const popup_username = document.querySelector(".username");
-  
+
   const email = document.querySelector("#email");
   const popup_email = document.querySelector(".email");
 
   const company = document.querySelector("#company");
   const popup_company = document.querySelector(".company");
-
- 
-
 
   /**
    * Added popup to form_02
@@ -444,12 +444,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const name_02 = document.querySelector("#name_02");
   const popup_name_02 = document.querySelector(".popup-name_02");
 
- const email_02 = document.querySelector("#email_02");
+  const email_02 = document.querySelector("#email_02");
   const popup_email_02 = document.querySelector(".popup_email_02");
 
   const company_02 = document.querySelector("#company_02");
   const popup_company_02 = document.querySelector(".popup-company_02");
-
 
   phone.addEventListener("input", (e) => {
     let inputValue = phone.value;
@@ -497,7 +496,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-
   /*===============================
   BEGIN: form-02  before footer
   ===============================*/
@@ -505,8 +503,6 @@ document.addEventListener("DOMContentLoaded", function () {
   /**
    * Validation input name-02 add popup_name_02.
    */
-
-  
 
   /**
    * Validation input phone add popup_02.
