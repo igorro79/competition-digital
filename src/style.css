@@ -2555,6 +2555,14 @@ Form menu header
   bottom: 10px;
 }
 
+.top-\[calc\(50\%-17px\)\]{
+  top: calc(50% - 17px);
+}
+
+.-top-\[0px\]{
+  top: -0px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2888,6 +2896,10 @@ Form menu header
 
 .mt-\[150px\]{
   margin-top: 150px;
+}
+
+.mt-\[-14px\]{
+  margin-top: -14px;
 }
 
 .block{
@@ -3894,6 +3906,10 @@ Form menu header
   padding-right: 2rem;
 }
 
+.pr-\[20px\]{
+  padding-right: 20px;
+}
+
 .pb-\[38px\]{
   padding-bottom: 38px;
 }
@@ -4058,8 +4074,12 @@ Form menu header
   padding-bottom: 0.5rem;
 }
 
-.pr-\[20px\]{
-  padding-right: 20px;
+.pr-\[42px\]{
+  padding-right: 42px;
+}
+
+.pr-\[50px\]{
+  padding-right: 50px;
 }
 
 .text-center{
@@ -5173,11 +5193,6 @@ google-review
 }
 
 .group\/text:hover .group-hover\/text\:text-main{
-  --tw-text-opacity: 1;
-  color: rgb(255 48 77 / var(--tw-text-opacity));
-}
-
-.group\/card:hover .group-hover\/card\:text-main{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
