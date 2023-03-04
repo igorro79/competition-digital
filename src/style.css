@@ -684,12 +684,6 @@ html{
   scroll-behavior: smooth;
 }
 
-.blog-scroll::-webkit-scrollbar{
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
 .header__contact-body::-webkit-scrollbar,
   html::-webkit-scrollbar{
   width: 10px;
@@ -3088,6 +3082,11 @@ Form menu header
   width: 36px;
 }
 
+.w-min{
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .w-\[270px\]{
   width: 270px;
 }
@@ -3162,11 +3161,6 @@ Form menu header
 
 .w-\[250px\]{
   width: 250px;
-}
-
-.w-min{
-  width: -moz-min-content;
-  width: min-content;
 }
 
 .min-w-max{
@@ -3278,10 +3272,6 @@ Form menu header
   flex-wrap: wrap;
 }
 
-.flex-nowrap{
-  flex-wrap: nowrap;
-}
-
 .items-start{
   align-items: flex-start;
 }
@@ -3366,10 +3356,6 @@ Form menu header
   gap: 11px;
 }
 
-.gap-\[31px\]{
-  gap: 31px;
-}
-
 .gap-\[4px\]{
   gap: 4px;
 }
@@ -3392,6 +3378,10 @@ Form menu header
 
 .gap-\[18px\]{
   gap: 18px;
+}
+
+.gap-\[31px\]{
+  gap: 31px;
 }
 
 .gap-\[19\.7px\]{
@@ -3438,10 +3428,6 @@ Form menu header
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-x-auto{
-  overflow-x: auto;
 }
 
 .overflow-y-auto{
@@ -5283,10 +5269,6 @@ google-review
     display: flex;
   }
 
-  .sm\:w-full{
-    width: 100%;
-  }
-
   .sm\:max-w-full{
     max-width: 100%;
   }
@@ -6143,10 +6125,6 @@ google-review
 
   .lg\:gap-\[11px\]{
     gap: 11px;
-  }
-
-  .lg\:gap-5{
-    gap: 1.25rem;
   }
 
   .lg\:gap-0{
@@ -7157,10 +7135,6 @@ google-review
     height: 40px;
   }
 
-  .xl\:h-full{
-    height: 100%;
-  }
-
   .xl\:max-h-\[369\.5px\]{
     max-height: 369.5px;
   }
@@ -7382,14 +7356,6 @@ google-review
     flex: 1 1 auto;
   }
 
-  .xl\:basis-\[48\.067\%\]{
-    flex-basis: 48.067%;
-  }
-
-  .xl\:basis-\[52\.013\%\]{
-    flex-basis: 52.013%;
-  }
-
   .xl\:basis-\[100\%\]{
     flex-basis: 100%;
   }
@@ -7406,12 +7372,8 @@ google-review
     flex-basis: 829px;
   }
 
-  .xl\:basis-\[48\%\]{
-    flex-basis: 48%;
-  }
-
-  .xl\:basis-\[50\%\]{
-    flex-basis: 50%;
+  .xl\:basis-\[48\.067\%\]{
+    flex-basis: 48.067%;
   }
 
   .xl\:border__top{
@@ -7554,10 +7516,6 @@ google-review
     gap: 24px;
   }
 
-  .xl\:gap-\[30px\]{
-    gap: 30px;
-  }
-
   .xl\:gap-\[6px\]{
     gap: 6px;
   }
@@ -7584,6 +7542,10 @@ google-review
 
   .xl\:gap-\[20px\]{
     gap: 20px;
+  }
+
+  .xl\:gap-\[30px\]{
+    gap: 30px;
   }
 
   .xl\:gap-\[255px\]{
