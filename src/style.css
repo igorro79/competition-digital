@@ -2555,6 +2555,14 @@ Form menu header
   bottom: 10px;
 }
 
+.top-\[calc\(50\%-17px\)\]{
+  top: calc(50% - 17px);
+}
+
+.-top-\[0px\]{
+  top: -0px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2888,6 +2896,10 @@ Form menu header
 
 .mt-\[150px\]{
   margin-top: 150px;
+}
+
+.mt-\[-14px\]{
+  margin-top: -14px;
 }
 
 .block{
@@ -3908,6 +3920,10 @@ Form menu header
   padding-right: 2rem;
 }
 
+.pr-\[20px\]{
+  padding-right: 20px;
+}
+
 .pb-\[38px\]{
   padding-bottom: 38px;
 }
@@ -4070,6 +4086,14 @@ Form menu header
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pr-\[42px\]{
+  padding-right: 42px;
+}
+
+.pr-\[50px\]{
+  padding-right: 50px;
 }
 
 .text-center{
@@ -5107,6 +5131,11 @@ google-review
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.group\/text:hover .group-hover\/text\:bg-main{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
 .group\/card:hover .group-hover\/card\:bg-main{
   --tw-bg-opacity: 1;
   background-color: rgb(255 48 77 / var(--tw-bg-opacity));
@@ -5132,6 +5161,10 @@ google-review
 
 .group:hover .group-hover\:fill-dark{
   fill: #171717;
+}
+
+.group\/text:hover .group-hover\/text\:fill-white{
+  fill: #fff;
 }
 
 .group\/card:hover .group-hover\/card\:fill-white{
@@ -5173,7 +5206,7 @@ google-review
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
-.group\/card:hover .group-hover\/card\:text-main{
+.group\/text:hover .group-hover\/text\:text-main{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
