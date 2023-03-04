@@ -421,6 +421,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const phone_02 = document.querySelector("#phone_02");
   const popup_02 = document.querySelector(".search_02");
 
+  /**
+   * Added popup to dynamicForm in header
+   */
+
+  const username_01 = document.querySelector("#username");
+  const popup_username = document.querySelector(".username");
+  
+  const email = document.querySelector("#email");
+  const popup_email = document.querySelector(".email");
+
+  const company = document.querySelector("#company");
+  const popup_company = document.querySelector(".company");
+
+ 
+
+
+  /**
+   * Added popup to form_02
+   */
+
+  const name_02 = document.querySelector("#name_02");
+  const popup_name_02 = document.querySelector(".popup-name_02");
+
+ const email_02 = document.querySelector("#email_02");
+  const popup_email_02 = document.querySelector(".popup_email_02");
+
+  const company_02 = document.querySelector("#company_02");
+  const popup_company_02 = document.querySelector(".popup-company_02");
+
+
   phone.addEventListener("input", (e) => {
     let inputValue = phone.value;
     //   popup phone
@@ -466,6 +496,17 @@ document.addEventListener("DOMContentLoaded", function () {
       phone.classList.remove("_error");
     }
   });
+
+
+  /*===============================
+  BEGIN: form-02  before footer
+  ===============================*/
+
+  /**
+   * Validation input name-02 add popup_name_02.
+   */
+
+  
 
   /**
    * Validation input phone add popup_02.
@@ -530,7 +571,7 @@ document.addEventListener("DOMContentLoaded", function () {
       company.value.trim() == "" ||
       message.value.trim() == ""
     ) {
-      alert("Please fill in all fields");
+      // alert("Please fill in all fields");
       return false;
     } else {
       // sendMail();
@@ -550,12 +591,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  /*===========================================*/
   /**
    * Submit form -02.
    */
+  /*===========================================*/
   submit_02.addEventListener("click", (e) => {
     //=======28.02.2023
     e.preventDefault();
+
+    /**
+     * Delete popup form_02.
+     */
+    popup_name_02.textContent = "";
+    popup_name_02.classList.remove("block");
+    popup_name_02.classList.add("hidden");
 
     /**
      * Delete popup form_02.
@@ -573,7 +623,7 @@ document.addEventListener("DOMContentLoaded", function () {
       company_02.value == "" ||
       message_02.value == ""
     ) {
-      alert("Please fill in all fields");
+      // alert("Please fill in all fields");
       return false;
     } else {
       // sendMail();
