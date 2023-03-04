@@ -5879,11 +5879,11 @@
           <!-- pb-[110px] px-5 -->
           <div
             id="dynamicMenu"
-            class="red-gradient-menu header__contact-body absolute right-0 flex w-full translate-x-full flex-col justify-between bg-dark pl-[20px] pr-[10px] pt-[33px] pb-[24px] lg:w-[56.7%] lg:px-[32px] lg:pb-[47px] lg:pt-[22px]"
+            class="red-gradient-menu header__contact-body absolute right-0 flex w-full translate-x-full flex-col justify-between overflow-y-auto bg-dark pl-[20px] pr-[10px] pt-[33px] pb-[24px] lg:w-[56.7%] lg:px-[32px] lg:pb-[47px] lg:pt-[22px]"
           >
             <!-- wrapper-services-socials-03 -->
             <!--  mb-9 -->
-            <div class="z-10">
+            <div class="dynamicMenuContainer z-10">
               <!--  BEGIN: menu-tablet -->
 
               <div class="hidden lg:mb-[66px] lg:block">
@@ -6204,11 +6204,11 @@
               </div>
 
               <!-- wrapper-services-02 -->
-              <div class="">
+              <div class="relative">
                 <!--  BEGIN: services-menu -->
                 <ul
                   id="servicesMenu"
-                  class="hiddens mt-[30px] mb-[37px] gap-[30px] text-xl font-medium uppercase leading-[24px]"
+                  class="mt-[30px] mb-[37px] gap-[30px] text-xl font-medium uppercase leading-[24px] transition-all"
                 >
                   <li class="mb-[30px]">
                     <a
@@ -6272,7 +6272,7 @@
                 <!--  BEGIN: services-modal -->
                 <ul
                   id="servicesModal"
-                  class="text-mainTextLight mt-[21px] mb-[37px] ml-[7px] hidden text-base font-medium uppercase"
+                  class="text-mainTextLight absolute top-0 mt-[21px] mb-[37px] ml-[7px] h-full translate-x-[100vw] text-base font-medium uppercase transition-all"
                 >
                   <li id="backMenuServices">
                     <a
