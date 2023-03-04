@@ -39,3 +39,11 @@ BEGIN: html  scroll
 .big-red-btn#btn-close-popup-forms {
   @apply relative mx-auto;
 }
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+.blogSwiper .swiper-slide {
+  @apply w-auto;
+}
