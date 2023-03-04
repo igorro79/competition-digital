@@ -975,7 +975,7 @@
           class="achievements bg-light pt-1 pb-[82px] dark:bg-dark lg:pb-[90px] xl:pb-[172px] xl:pt-10"
         >
           <div
-            class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
+            class="container sm:w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
             <h2 class="achievements__title dark:text-white">
               Our achievements
@@ -5690,11 +5690,10 @@
         </div>
       </footer>
       <!--  END: 12-section-footer -->
-<!-- top-[76px] h-full -->
+      <!-- top-[76px] h-full -->
       <div
         id="menu"
-        class="invisible absolute left-0  right-0 z-30  h-[calc(100%-76px)] lg:h-full
-        overflow-hidden opacity-0 transition-all lg:top-0 xl:hidden"
+        class="invisible absolute left-0 right-0 z-30 h-[calc(100%-76px)] overflow-hidden opacity-0 transition-all lg:top-0 lg:h-full xl:hidden"
       >
         <!--  BEGIN: backdrop-block-menu-tadlet-01   flex flex-row -->
         <div class="wrapper-menu-tablet absolute inset-0 lg:flex">
@@ -6378,21 +6377,21 @@
       <!--  END: menu-current -->
       <div
         id="formMenu"
-        class="header__contact-body invisible right-0 z-40 opacity-0"
+        class="header__contact-body invisible right-0 z-40 h-full overflow-y-auto overflow-x-hidden opacity-0"
       >
         <!-- backdrop-block   -->
         <div
-          class="wrapper-form-tablet absolute top-0 right-0 w-full xl:flex xl:h-full"
+          class="wrapper-form-tablet absolute top-0 right-0 w-full xl:h-full"
         >
           <div
             id="backdrop_02"
-            class="absolute inset-0 bg-main/70 backdrop-blur-xl"
+            class="absolute top-0 left-0 right-0 h-full w-full bg-main/70 backdrop-blur-xl"
           ></div>
 
           <!-- wrapper-form -->
           <div
             id="dynamicForm"
-            class="header-scroll-form absolute right-0 h-full w-full translate-x-full bg-dark pl-[20px] pr-[10px] pt-[31px] pb-[38px] transition-all lg:px-[30px] lg:pt-[24px] lg:pb-[312px] xl:w-[56.7%] xl:flex-auto xl:pl-[30px] xl:pr-[60px] xl:pt-[44px] 2xl:pl-[140px] 2xl:pr-[60px] 2xl:pt-[44px]"
+            class="absolute right-0 h-full w-full translate-x-full bg-dark pl-[20px] pr-[10px] pt-[31px] pb-[38px] transition-all lg:px-[30px] lg:pt-[24px] lg:pb-[312px] xl:w-[56.7%] xl:flex-auto xl:pl-[30px] xl:pr-[60px] xl:pt-[44px] 2xl:pl-[140px] 2xl:pr-[60px] 2xl:pt-[44px]"
           >
             <!-- BEGIN:  btn-form-menu -->
 
@@ -6791,6 +6790,12 @@
         },
         navigation: {
           nextEl: ".swiper-next-slide",
+        },
+      });
+      const swiperBlog = new Swiper(".blogSwiper", {
+        scrollbar: {
+          el: ".blog-scrollbar",
+          hide: true,
         },
       });
     </script>

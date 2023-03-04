@@ -867,18 +867,20 @@ html{
   position: absolute;
   top: 0px;
   z-index: 20;
-  height: calc(100vh + 82px);
+  height: 100%;
   width: 100%;
-  overflow-y: scroll;
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
+
+/* .header__contact-body {
+    @apply    h-[calc(100vh+82px)]
+     
+  } */
 
 .header__contact-body::-webkit-scrollbar-thumb{
   height: 5px;
@@ -1227,16 +1229,6 @@ Menu header gradient
     overflow-y-scroll;
   }
   */
-
-.header__contact-body{
-  z-index: 20;
-  height: 100%;
-  overflow-y: scroll;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
 
 .header__contact-body::-webkit-scrollbar-thumb{
   height: 5px;
@@ -3438,6 +3430,14 @@ Form menu header
   overflow-x: auto;
 }
 
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .rounded-\[10px\]{
   border-radius: 10px;
 }
@@ -5269,6 +5269,10 @@ google-review
     display: flex;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:max-w-full{
     max-width: 100%;
   }
@@ -5680,12 +5684,12 @@ google-review
     height: 22px;
   }
 
-  .lg\:h-auto{
-    height: auto;
-  }
-
   .lg\:h-full{
     height: 100%;
+  }
+
+  .lg\:h-auto{
+    height: auto;
   }
 
   .lg\:max-h-\[212px\]{
