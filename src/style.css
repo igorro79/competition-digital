@@ -4458,6 +4458,18 @@ Form menu header
   --header-h: 77px;
   --header-h-md: 87px;
   --header-h-lg: 90px;
+  /* scrollbar*/
+  --primary: #171717;
+  --secondary: #ff304d;
+}
+
+/* Scrollbar styles */
+
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
 }
 
 html{
