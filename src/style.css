@@ -5257,11 +5257,6 @@ google-review
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.group\/arrow:hover .group-hover\/arrow\:text-lightDarkGrey{
-  --tw-text-opacity: 1;
-  color: rgb(144 144 144 / var(--tw-text-opacity));
-}
-
 .group\/item:hover .group-hover\/item\:opacity-100{
   opacity: 1;
 }
