@@ -10,6 +10,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
     <title>Uwp digital</title>
   </head>
   <body class="bg-light dark:bg-dark">
@@ -31,7 +44,7 @@
             <div class="lg:block">
               <div
                 id="logoOpacity"
-                class="flex gap-[40px] lg:gap-[51px] xl:gap-[38px] 2xl:gap-[51px]"
+                class="flex items-center gap-[40px] lg:gap-[51px] xl:gap-[38px] 2xl:gap-[51px]"
               >
                 <!--  BEGIN: logo-company-mobile-tablet -->
                 <div
@@ -193,7 +206,7 @@
                   id="mode"
                   type="button"
                   aria-label="thema dark"
-                  class=""
+                  class="h-fit"
                 >
                   <!--  BEGIN: dark -->
                   <svg
@@ -300,8 +313,7 @@
                               aria-label="All SERVICES"
                             >
                               <p
-                                class="text-base font-medium
-                                 group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
+                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
                               >
                                 All SERVICES
                               </p>
@@ -309,8 +321,7 @@
                               <span class="pt-[6px] pl-[10px]">
                                 <!-- group-hover/arrow:fill-lightDarkGrey -->
                                 <svg
-                                  class="fill-dark transition-all ease-in
-                                  group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  class="fill-dark transition-all ease-in group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -1881,7 +1892,7 @@
 
                   <!-- lg:pointer-events-auto 05.03.2023 -->
                   <div
-                    class="title t_active group/card pointer-events-none pt-[38px] pb-[18px]  lg:pt-[30px] lg:pb-[30px] xl:mt-[68px] xl:pt-0 xl:pb-[64px]"
+                    class="title t_active group/card pointer-events-none pt-[38px] pb-[18px] lg:pt-[30px] lg:pb-[30px] xl:mt-[68px] xl:pt-0 xl:pb-[64px]"
                   >
                     <!-- wrapper-img-t-d-01 -->
                     <!-- gradient -->
@@ -1957,10 +1968,7 @@
                       <!-- TEST: svg-02 -->
                       <!--top-[0px] mt-[-7px] -->
                       <div
-                        class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px]
-                         rounded-full p-[13.5px] transition-all ease-in
-                          group-hover/card:bg-main 
-                          lg:top-0 lg:right-[10px] lg:mt-[-16px] lg:p-[23px] xl:top-[-6px] xl:right-[10px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8"
+                        class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] transition-all ease-in group-hover/card:bg-main lg:top-0 lg:right-[10px] lg:mt-[-16px] lg:p-[23px] xl:top-[-6px] xl:right-[10px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8"
                       >
                         <svg
                           class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/card:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -1988,7 +1996,7 @@
                       class="content c_active xl:border__top pointer-events-none lg:block lg:pr-[30px] xl:flex xl:flex-col xl:justify-center xl:pr-[50px]"
                     >
                       <p
-                        class="  pt-5 pb-10 text-base font-medium leading-[22px] text-dark dark:text-white lg:pt-[32px] xl:pt-[40px] xl:leading-[150%]"
+                        class="pt-5 pb-10 text-base font-medium leading-[22px] text-dark dark:text-white lg:pt-[32px] xl:pt-[40px] xl:leading-[150%]"
                       >
                         UWP Digital knows how to combine creativity and
                         effectiveness in one solution. We reveal the unique
@@ -2007,7 +2015,7 @@
                       <!-- aspect-w-16 aspect-h-10 -->
                       <!-- fon-gray-m-01 -->
                       <div
-                        class="relative  pointer-events-auto  mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en/services/branding"
@@ -2060,7 +2068,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en/services/branding"
-                        class="btn__transparent  pointer-events-auto link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more
                       </a>
                     </div>
@@ -2077,7 +2085,6 @@
                       href="https://dev.uwp.digital/en/services/web-development"
                       aria-label="service web-development"
                       class="lg:pointer-events-auto"
-                      
                     >
                       <!-- wrapper-img-02-t-d -->
                       <!-- href="https://dev.uwp.digital/en/services/web-development"
@@ -2183,7 +2190,7 @@
                       <!-- img-ratio-03 -->
                       <!-- fon-gray-03-m-->
                       <div
-                        class=" pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en/services/web-development"
@@ -2232,7 +2239,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en/services/web-development"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -2243,7 +2250,7 @@
                   <!-- lg:border__right -->
                   <!-- lg:pointer-events-auto -->
                   <div
-                    class="title group/card pointer-events-none pt-[19px]  lg:pt-[30px] lg:pb-[30px] xl:pt-[61px] xl:pb-[30px]"
+                    class="title group/card pointer-events-none pt-[19px] lg:pt-[30px] lg:pb-[30px] xl:pt-[61px] xl:pb-[30px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en"
@@ -2358,7 +2365,7 @@
                       <!-- img-ratio-03 -->
                       <!-- fon-gray-03-m -->
                       <div
-                        class=" pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en"
@@ -2407,7 +2414,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -2417,7 +2424,7 @@
                   <!-- BEGIN: Mobile Promotion__04 -->
                   <!-- lg:border__right -->
                   <div
-                    class="title group/card pointer-events-none pt-[19px]  lg:py-[30px] xl:pt-[16px]"
+                    class="title group/card pointer-events-none pt-[19px] lg:py-[30px] xl:pt-[16px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en/services/mobile-marketing"
@@ -2530,7 +2537,7 @@
                       <!-- img-ratio-03 -->
                       <!-- fon-gray-04-m -->
                       <div
-                        class="pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en/services/mobile-marketing"
@@ -2579,7 +2586,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en/services/mobile-marketing"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -2589,7 +2596,7 @@
                   <!-- BEGIN: PPC__05 -->
                   <!-- lg:border__right -->
                   <div
-                    class="title group/card pointer-events-none pt-[19px]  lg:pt-[30px] lg:pb-0"
+                    class="title group/card pointer-events-none pt-[19px] lg:pt-[30px] lg:pb-0"
                   >
                     <a
                       href="https://dev.uwp.digital/en"
@@ -2702,7 +2709,7 @@
 
                       <!-- fon-gray-05-m -->
                       <div
-                        class="pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en"
@@ -2751,7 +2758,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -2763,7 +2770,7 @@
                   <!-- BEGIN: Digital Marketing__06 -->
                   <!--  lg:border__left  -->
                   <div
-                    class="title group/card lg:border__left pointer-events-none pt-[19px]  lg:mt-[71px] lg:pt-[42px] xl:pt-[170px]"
+                    class="title group/card lg:border__left pointer-events-none pt-[19px] lg:mt-[71px] lg:pt-[42px] xl:pt-[170px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en/services/digital-marketing"
@@ -2882,7 +2889,7 @@
 
                       <!-- fon-gray-06-m -->
                       <div
-                        class="pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en/services/digital-marketing"
@@ -2932,7 +2939,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en/services/digital-marketing"
-                        class="btn__transparent  pointer-events-auto link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -2941,7 +2948,7 @@
 
                   <!-- BEGIN: Video motion__07 -->
                   <div
-                    class="title group/card lg:border__left pointer-events-none pt-[19px]  lg:py-[30px] xl:pt-[24px]"
+                    class="title group/card lg:border__left pointer-events-none pt-[19px] lg:py-[30px] xl:pt-[24px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en"
@@ -3058,7 +3065,7 @@
 
                       <!-- fon-gray-07-m -->
                       <div
-                        class="pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en"
@@ -3108,7 +3115,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -3117,7 +3124,7 @@
 
                   <!-- BEGIN: SMM__08 -->
                   <div
-                    class="title group/card lg:border__left pointer-events-none pt-[19px]  lg:py-[30px]"
+                    class="title group/card lg:border__left pointer-events-none pt-[19px] lg:py-[30px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en"
@@ -3235,7 +3242,7 @@
 
                       <!-- fon-gray-08-m -->
                       <div
-                        class=" pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en"
@@ -3285,7 +3292,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -3294,7 +3301,7 @@
 
                   <!-- BEGIN: TikTok__09 -->
                   <div
-                    class="title group/card lg:border__left pointer-events-none pt-[19px]  lg:pt-[30px] lg:pb-[513px] xl:pt-[69px]"
+                    class="title group/card lg:border__left pointer-events-none pt-[19px] lg:pt-[30px] lg:pb-[513px] xl:pt-[69px]"
                   >
                     <a
                       href="https://dev.uwp.digital/en"
@@ -3411,7 +3418,7 @@
 
                       <!-- fon-gray-09-m -->
                       <div
-                        class="pointer-events-auto  relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
+                        class="pointer-events-auto relative mx-auto mb-[39px] h-[216px] w-[216px] rounded-full bg-[#E0E0E0] dark:bg-[#474747] lg:hidden"
                       >
                         <a
                           href="https://dev.uwp.digital/en"
@@ -3461,7 +3468,7 @@
                       <!-- button -->
                       <a
                         href="https://dev.uwp.digital/en"
-                        class="btn__transparent  pointer-events-auto  link-oside__red mt-5 dark:text-white lg:hidden xl:mt-10"
+                        class="btn__transparent link-oside__red pointer-events-auto mt-5 dark:text-white lg:hidden xl:mt-10"
                         >Read more</a
                       >
                     </div>
@@ -5254,14 +5261,13 @@
                     class="z-10 flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-[20px] xl:gap-x-[20px] 2xl:gap-x-[32px]"
                   >
                     <!-- name_02 -->
-                    <div class="form-floating mb-[15px]">
+                    <div class="formControl mb-[15px]">
                       <input
                         id="username_02"
                         name="username_02"
                         type="text"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your name?*"
-                        minlength="3"
                         required
                       />
                       <label
@@ -5270,27 +5276,27 @@
                       >
                         Your name?*
                       </label>
+                      <p
+                        class="_error popup_username_02 ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                      ></p>
                     </div>
                     <!-- name_02 -->
 
                     <!-- popup-name-02 -->
-                    <div class="lg:order-5 lg:flex">
-                      <p
-                        class="_error popup_username_02 ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                      ></p>
-                    </div>
+                    <!-- <div class="lg:order-5 lg:flex">
+                      
+                    </div> -->
                     <!--  -->
 
                     <!-- email_02 -->
-                    <div class="form-floating mb-[15px]">
+                    <div class="formControl mb-[15px]">
                       <input
                         id="email_02"
                         name="email"
                         type="email"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your e-mail?*"
-                        title="Please provide only a Best Startup Ever corporate email address  valid@email.com"
-                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+                        title="Please provide valid email address  valid@email.com"
                         required
                       />
                       <label
@@ -5299,22 +5305,24 @@
                       >
                         Your e-mail?*
                       </label>
+                      <p
+                        class="_error popup_email_02 ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                      ></p>
                     </div>
                     <!-- email_02 -->
 
                     <!-- popup-email-02 -->
-                    <div class="lg:order-5 lg:flex">
-                      <p
-                        class="_error popup_email_02 ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                      ></p>
-                    </div>
+                    <!-- <div class="lg:order-5 lg:flex">
+                     
+                    </div> -->
                     <!--  -->
 
                     <!-- phone_02 -->
-                    <div class="form-floating mb-[15px]">
+                    <div class="formControl mb-[15px]">
                       <input
                         id="phone_02"
                         name="phone"
+                        title="541 - 754 - 3010"
                         type="tel"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Phone number*"
@@ -5326,19 +5334,20 @@
                       >
                         Phone number*
                       </label>
+                      <p
+                        class="_error popup_phone_02 ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                      ></p>
                     </div>
                     <!-- phone_02 -->
 
                     <!-- popup-phone-02 -->
-                    <div class="lg:order-5 lg:flex">
-                      <p
-                        class="_error popup_phone_02 ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                      ></p>
-                    </div>
+                    <!-- <div class="lg:order-5 lg:flex">
+                    
+                    </div> -->
                     <!--  -->
 
                     <!-- company_02 -->
-                    <div class="form-floating mb-[15px]">
+                    <div class="formControl mb-[15px]">
                       <input
                         id="company_02"
                         name="company"
@@ -5353,20 +5362,21 @@
                       >
                         Company*
                       </label>
+                      <p
+                        class="_error popup_company_02 ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                      ></p>
                     </div>
                     <!-- company_02 -->
 
                     <!-- popup-company_02 -->
-                    <div class="lg:order-5 lg:flex">
-                      <p
-                        class="_error popup_company_02 ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                      ></p>
-                    </div>
+                    <!-- <div class="lg:order-5 lg:flex">
+               
+                    </div> -->
                     <!-- end-company_02 -->
                   </div>
 
                   <!-- message_02 -->
-                  <div class="form-floating mb-[15px]">
+                  <div class="formControl mb-[15px]">
                     <input
                       id="message_02"
                       name="message"
@@ -6707,14 +6717,13 @@
               <div class="flex flex-col lg:mt-[46px]">
                 <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-4">
                   <!-- name -->
-                  <div class="form-floating mb-[15px]">
+                  <div class="formControl mb-[15px]">
                     <input
                       id="username"
                       name="username"
                       type="text"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your name?*"
-                      minlength="3"
                       required
                     />
                     <label
@@ -6723,27 +6732,27 @@
                     >
                       Your name?*
                     </label>
+                    <p
+                      class="_error popup_username ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                    ></p>
                   </div>
                   <!-- name -->
 
                   <!-- popup-name -->
-                  <div class="lg:order-5 lg:flex">
-                    <p
-                      class="_error popup_username ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                    ></p>
-                  </div>
+                  <!-- <div class="lg:order-5 lg:flex">
+               
+                  </div> -->
                   <!-- end-name -->
 
                   <!-- email -->
-                  <div class="form-floating mb-[15px]">
+                  <div class="formControl mb-[15px]">
                     <input
                       id="email"
                       name="email"
                       type="email"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your e-mail?*"
-                      title="Please provide only a Best Startup Ever corporate email address  valid@email.com"
-                      pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+                      title="Please provide valid email address  valid@email.com"
                       required
                     />
                     <label
@@ -6752,29 +6761,29 @@
                     >
                       Your e-mail?*
                     </label>
+                    <p
+                      class="_error popup_email ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                    ></p>
                   </div>
                   <!-- email -->
 
                   <!-- popup-email -->
-                  <div class="lg:order-5 lg:flex">
-                    <p
-                      class="_error popup_email ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                    ></p>
-                  </div>
+                  <!-- <div class="lg:order-5 lg:flex">
+                  
+                  </div> -->
                   <!-- end-email -->
 
                   <!-- phone -->
 
-                  <div class="form-floating mb-[15px]">
+                  <div class="formControl mb-[15px]">
                     <input
                       id="phone"
                       name="phone"
                       type="tel"
-                      title="000-000-0000"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      title="541 - 754 - 3010"
+                      required
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Phone number*"
-                      required
                     />
                     <label
                       for="phone"
@@ -6782,21 +6791,18 @@
                     >
                       Phone number*
                     </label>
+                    <p
+                      class="_error popup_phone ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                    ></p>
                   </div>
                   <!-- phone -->
 
                   <!-- popup-phone -->
 
-                  <div class="lg:order-5 lg:flex">
-                    <p
-                      class="_error popup_phone ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                    ></p>
-                  </div>
-
                   <!-- end popup -->
 
                   <!-- company -->
-                  <div class="form-floating mb-[15px]">
+                  <div class="formControl mb-[15px]">
                     <input
                       id="company"
                       name="company"
@@ -6811,21 +6817,22 @@
                     >
                       Company*
                     </label>
+                    <p
+                      class="_error popup_company ml-[25px] mt-3 hidden text-sm font-medium text-main"
+                    ></p>
                   </div>
                   <!-- company -->
 
                   <!-- popup-company -->
-                  <div class="lg:order-5 lg:flex">
-                    <p
-                      class="_error popup_company ml-[25px] -mt-2 mb-5 hidden text-sm font-medium text-main"
-                    ></p>
-                  </div>
+                  <!-- <div class="lg:order-5 lg:flex">
+                
+                  </div> -->
                   <!-- end-company -->
                 </div>
                 <!-- popup-phone -->
 
                 <!-- message -->
-                <div class="form-floating mb-[15px]">
+                <div class="formControl mb-[15px]">
                   <input
                     id="message"
                     name="message"

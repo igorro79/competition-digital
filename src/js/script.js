@@ -1,6 +1,6 @@
 const mainNav = document.getElementById("mainNav");
 const body = document.getElementsByTagName("body");
-const modeBtn = document.querySelector("#mode");
+
 const html = document.querySelector("html");
 const wrapper = document.querySelector(".wrapper");
 const cookies = document.getElementById("cookies");
@@ -30,8 +30,8 @@ const popupForms = document.getElementById("popupForms");
 const btnContact = document.getElementById("btnContact");
 const btnContactTablet = document.getElementById("btnContactTablet");
 
-const dynamicForm = document.getElementById("dynamicForm");
-const mainForm = document.getElementById("mainForm");
+// const dynamicForm = document.getElementById("dynamicForm");
+// const mainForm = document.getElementById("mainForm");
 
 const btnFormMenu = document.getElementById("btnFormMenu");
 const formMenu = document.getElementById("formMenu");
@@ -76,21 +76,19 @@ const menuServicesClose = () => {
   dynamicMenuContainer.classList.remove("min-h-[770px]");
   dynamicMenuContainer.classList.remove("min-h-[650px]");
 };
+
 //-------------------------------
 const openPopupSentMsg = () => {
-  console.log("open");
   popupForms.classList.add("flex");
   popupForms.classList.remove("hidden");
 };
 const closePopupSentMsg = () => {
-  console.log("close1");
   if (!popupForms.classList.contains("hidden")) {
-    console.log("close2");
-
     popupForms.classList.add("hidden");
     popupForms.classList.remove("flex");
   }
 };
+
 //-------------------------------
 const openDynamicForm = () => {
   formMenu.classList.remove("invisible");
@@ -102,6 +100,7 @@ const closeDynamicForm = () => {
   formMenu.classList.add("opacity-0");
   dynamicFormWrapper.classList.add("translate-x-full");
 };
+
 //-------------------------------
 const openDynamicMenu = () => {
   menu.classList.remove("invisible");
@@ -119,9 +118,8 @@ const toggleDynamicMenu = () => {
   dynamicMenu.classList.toggle("translate-x-full");
 };
 //---------------------------------------
-/*
- * Close a menu tablet.
- */
+
+// ----  Close a menu tablet. ---
 function burgerClose() {
   burger.classList.toggle("is-active");
   menuServicesClose();
@@ -130,6 +128,7 @@ function burgerClose() {
   closeDynamicMenu();
 }
 
+// ----  Open a menu tablet. ---
 function burgerOpen() {
   burger.classList.toggle("is-active");
   if (window.innerWidth >= 820) hideMainHeader();
@@ -138,6 +137,7 @@ function burgerOpen() {
   openDynamicMenu();
 }
 
+//--- change mob/tablet menu social margin on resize ------
 function toggleMobileMenuContainerHeigh() {
   dynamicMenuContainer.classList.toggle("min-h-[770px]");
   dynamicMenuContainer.classList.toggle("min-h-[650px]");
@@ -210,41 +210,24 @@ if (
     window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
   document.documentElement.classList.add("dark");
-
   darkBtn.classList.add("hidden");
   lightBtn.classList.remove("hidden");
 } else {
   document.documentElement.classList.remove("dark");
 }
-
-modeBtn.addEventListener("click", () => {
+/**
+ * Replaces button dark mode to light mode.
+ */
+mode.addEventListener("click", () => {
   html.classList.toggle("dark");
-
+  darkBtn.classList.toggle("hidden");
+  lightBtn.classList.toggle("hidden");
   if (html.classList.contains("dark")) {
     localStorage.theme = "dark";
   } else {
     localStorage.theme = "light";
   }
 });
-
-/**
- * Replaces button dark mode to light mode.
- */
-mode.addEventListener("click", () => {
-  darkBtn.classList.toggle("hidden");
-  lightBtn.classList.toggle("hidden");
-});
-
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
 
 btnServices.addEventListener("click", menuServicesToggle);
 
@@ -257,30 +240,21 @@ backMenuServices.addEventListener("click", menuServicesToggle);
 /**
  * Opens a menu form mobile.
  */
-
-//  02
 btnContact.addEventListener("click", () => {
   if (burger.classList.contains("is-active")) burgerClose();
   lockWrapper();
   openDynamicForm();
   burger.classList.remove("is-active");
-
-  /**
-   * Closed the popup-form SENT.
-   */
-
   closePopupSentMsg();
 });
 
 btnDiscuss.addEventListener("click", () => {
   openDynamicForm();
-
   lockWrapper();
 });
 
 btnFormMenu.addEventListener("click", () => {
   closeDynamicForm();
-
   unlockWrapper();
 });
 
@@ -300,7 +274,7 @@ btnContactTablet.addEventListener("click", () => {
 // }
 
 /**
- * Opens a block services-06.
+ * Opens a block services-06  on mobile.
  */
 
 function opensBlockServices() {
@@ -311,7 +285,7 @@ function opensBlockServices() {
       if (window.innerWidth < 820 && e.target.nodeName === "H3") {
         e.preventDefault();
       }
-      console.log(e.target);
+
       if (this.classList.contains("t_active") && e.target.nodeName === "H3") {
         this.classList.remove("t_active");
         this.lastElementChild.classList.remove("c_active");
@@ -330,7 +304,7 @@ function opensBlockServices() {
 opensBlockServices();
 
 /**
- * Opens a support.
+ * Opens a support  (FAQ).
  */
 
 function accordeonOpen() {
@@ -352,18 +326,11 @@ function accordeonOpen() {
          */
         this.firstElementChild.classList.toggle("hidden");
         this.lastElementChild.classList.toggle("hidden");
-
-        // .spoller-decor
-        //  this.firstElementChild.classList.add('c_active');
       } else {
         tl.forEach((item) => {
           if (item.classList.contains("t_active")) {
             item.classList.remove("t_active");
             item.nextElementSibling.classList.remove("c_active");
-
-            /**
-             * Title text color red
-             */
 
             item.classList.remove("text-main");
             item.classList.add("text-dark");
@@ -371,12 +338,8 @@ function accordeonOpen() {
             item.classList.remove("dark:text-main");
             item.classList.add("dark:text-white");
 
-            /**
-             * Button
-             */
             item.firstElementChild.classList.toggle("hidden");
             item.lastElementChild.classList.toggle("hidden");
-
             return;
           }
         });
@@ -404,65 +367,202 @@ function accordeonOpen() {
 }
 accordeonOpen();
 
-/**
- * Close a popup-forms.
- */
-
-// submit.addEventListener("click", () => {
-//   logoOpacity.classList.remove("opacity-0");
-// });
-
 btnClosePopupForms.addEventListener("click", () => {
   closePopupSentMsg();
   unlockWrapper();
   //------------------------------------------------------------------
 });
 
+//================FORM =================
+const dynamicForm = document.getElementById("dynamicForm");
+const mainForm = document.getElementById("mainForm");
+
+const username = document.getElementById("username");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const company = document.getElementById("company");
+
+const username_02 = document.getElementById("username_02");
+const email_02 = document.getElementById("email_02");
+const phone_02 = document.getElementById("phone_02");
+const company_02 = document.getElementById("company_02");
+
+//Show input error messages
+function showError(input, message) {
+  const formControl = input.parentElement;
+  formControl.classList.add("error");
+  const p = formControl.querySelector("p");
+  p.innerText = message;
+}
+
+//show success colour
+function showSucces(input) {
+  const formControl = input.parentElement;
+  formControl.classList.remove("error");
+}
+
+//check email is valid
+function checkEmail(input) {
+  const re =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+  if (re.test(input.value.trim())) {
+    showSucces(input);
+    return true;
+  } else {
+    showError(input, "Phone is not valid");
+    return false;
+  }
+}
+function checkPhone(input) {
+  const re =
+    /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+  //  expression tries to match with a phone number like this (541) 754-3010
+  //  or like this 541 - 754 - 3010 or with spaces
+  if (re.test(input.value.trim())) {
+    showSucces(input);
+    return true;
+  } else {
+    showError(input, "Email is not valid");
+    return false;
+  }
+}
+
+//checkRequired fields
+function checkRequired(inputArr) {
+  inputArr.forEach(function (input) {
+    if (input.value.trim() === "") {
+      showError(input, `${getFieldName(input)} is required`);
+    } else {
+      showSucces(input);
+    }
+  });
+}
+
+//check input Length
+function checkLength(input, min, max) {
+  if (input.value.length < min) {
+    showError(
+      input,
+      `${getFieldName(input)} must be at least ${min} characters`
+    );
+  } else if (input.value.length > max) {
+    showError(
+      input,
+      `${getFieldName(input)} must be les than ${max} characters`
+    );
+    return false;
+  } else {
+    showSucces(input);
+    return true;
+  }
+}
+
+//get FieldName
+function getFieldName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
+function checkEmptyOnBlur(e) {
+  if (e.target.value === "") {
+    showError(e.target, `This field is required`);
+  } else {
+    showSucces(e.target);
+  }
+}
+
+//check on empty string on blur
+username.addEventListener("blur", checkEmptyOnBlur);
+username_02.addEventListener("blur", checkEmptyOnBlur);
+email.addEventListener("blur", checkEmptyOnBlur);
+email_02.addEventListener("blur", checkEmptyOnBlur);
+phone.addEventListener("blur", checkEmptyOnBlur);
+phone_02.addEventListener("blur", checkEmptyOnBlur);
+company.addEventListener("blur", checkEmptyOnBlur);
+company_02.addEventListener("blur", checkEmptyOnBlur);
+
+//Event Listeners dynamicForm
+dynamicForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const requiredValid = checkRequired([username, email, phone, company]);
+  const userLengthValid = checkLength(username, 3, 30);
+  const companyLengthValid = checkLength(company, 3, 30);
+  const emailValid = checkEmail(email);
+  const phoneValid = checkPhone(phone);
+
+  const formData = new FormData(e.target);
+  console.log(Object.fromEntries(formData));
+
+  if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
+    setTimeout(() => {
+      openPopupSentMsg();
+      closeDynamicForm();
+      e.target.reset();
+    }, 2000);
+  }
+});
+
+//Event Listeners mainForm
+mainForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const requiredValid = checkRequired([
+    username_02,
+    email_02,
+    phone_02,
+    company_02,
+  ]);
+  const userLengthValid = checkLength(username_02, 3, 30);
+  const companyLengthValid = checkLength(company_02, 3, 30);
+  const emailValid = checkEmail(email_02);
+  const phoneValid = checkPhone(phone_02);
+
+  const formData = new FormData(e.target);
+  console.log(Object.fromEntries(formData));
+
+  if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
+    setTimeout(() => {
+      openPopupSentMsg();
+      lockWrapper();
+      e.target.reset();
+    }, 2000);
+  }
+});
+
+// ======== below NOT using===============
+// ======== below NOT using===============
+// ======== below NOT using===============
+// ======== below NOT using===============
+
 /**
  * Send Mail.
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-  const submit = document.getElementById("submit");
-  const submit_02 = document.getElementById("submit_02");
+  // const submit = document.getElementById("submit");
+  // const submit_02 = document.getElementById("submit_02");
   //---------------------------------------------
-  const username = document.getElementById("username");
-  const username_02 = document.getElementById("username_02");
-
-  const email = document.getElementById("email");
-  const email_02 = document.getElementById("email_02");
-
-  const phone = document.getElementById("phone");
-  const phone_02 = document.getElementById("phone_02");
-
-  const company = document.getElementById("company");
-  const company_02 = document.getElementById("company_02");
-
   /**
    * Added popup
    */
-  const popup_username = document.querySelector(".username");
-  const popup_username_02 = document.querySelector(".username_02");
-
-  const popup_email = document.querySelector(".popup_email");
-  const popup_email_02 = document.querySelector(".popup_email_02");
-
-  const popup_phone = document.querySelector(".popup_phone");
-  const popup_phone_02 = document.querySelector(".popup_phone_02");
-
-  const popup_company = document.querySelector(".popup_company");
-  const popup_company_02 = document.querySelector(".popup_company_02");
-
-  // function validatePhone() {
-  //   let inputValue = phone_02.value;
-
+  // const popup_username = document.querySelector(".username");
+  // const popup_username_02 = document.querySelector(".username_02");
+  // const popup_email = document.querySelector(".popup_email");
+  // const popup_email_02 = document.querySelector(".popup_email_02");
+  // const popup_phone = document.querySelector(".popup_phone");
+  // const popup_phone_02 = document.querySelector(".popup_phone_02");
+  // const popup_company = document.querySelector(".popup_company");
+  // const popup_company_02 = document.querySelector(".popup_company_02");
+  // phone.addEventListener("blur", () => {
+  //   let inputValue = phone.value;
   //   if (inputValue.length < 3) {
   //     /**
-  //      * Added red border input phone_02
+  //      * Added red border input phone
   //      */
-  //     phone_02.classList.add("border__error");
-  //     phone_02.classList.add("focus:border-borderBtn");
-  //     phone_02.classList.add("_error");
+  //     phone.classList.add("border__error");
+  //     phone.classList.add("focus:border-borderBtn");
+  //     phone.classList.add("_error");
   //     popup_phone.classList.replace("hidden", "block");
   //     popup_phone.textContent = "The phone is in the wrong format";
   //     return;
@@ -473,132 +573,91 @@ document.addEventListener("DOMContentLoaded", function () {
   //     /**
   //      * Delete red border input phone
   //      */
+  //     phone.classList.remove("border__error");
+  //     phone.classList.remove("focus:border-borderBtn");
+  //     phone.classList.remove("border-borderBtn");
+  //     phone.classList.remove("_error");
+  //   }
+  // });
+  // phone_02.addEventListener("blur", () => {
+  //   let inputValue = phone_02.value;
+  //   if (inputValue.length < 3) {
+  //     /**
+  //      * Added red border input phone_02
+  //      */
+  //     phone_02.classList.add("border__error");
+  //     phone_02.classList.add("focus:border-borderBtn");
+  //     phone_02.classList.add("_error");
+  //     popup_phone_02.classList.replace("hidden", "block");
+  //     popup_phone_02.textContent = "The phone is in the wrong format";
+  //     return;
+  //   } else {
+  //     popup_phone_02.textContent = "";
+  //     popup_phone_02.classList.remove("block");
+  //     popup_phone_02.classList.add("hidden");
+  //     /**
+  //      * Delete red border input phone
+  //      */
   //     phone_02.classList.remove("border__error");
   //     phone_02.classList.remove("focus:border-borderBtn");
   //     phone_02.classList.remove("border-borderBtn");
   //     phone_02.classList.remove("_error");
   //   }
-  // }
-
-  phone.addEventListener("blur", () => {
-    let inputValue = phone.value;
-
-    if (inputValue.length < 3) {
-      /**
-       * Added red border input phone
-       */
-      phone.classList.add("border__error");
-      phone.classList.add("focus:border-borderBtn");
-      phone.classList.add("_error");
-      popup_phone.classList.replace("hidden", "block");
-      popup_phone.textContent = "The phone is in the wrong format";
-      return;
-    } else {
-      popup_phone.textContent = "";
-      popup_phone.classList.remove("block");
-      popup_phone.classList.add("hidden");
-      /**
-       * Delete red border input phone
-       */
-      phone.classList.remove("border__error");
-      phone.classList.remove("focus:border-borderBtn");
-      phone.classList.remove("border-borderBtn");
-      phone.classList.remove("_error");
-    }
-  });
-
-  phone_02.addEventListener("blur", () => {
-    let inputValue = phone_02.value;
-
-    if (inputValue.length < 3) {
-      /**
-       * Added red border input phone_02
-       */
-      phone_02.classList.add("border__error");
-      phone_02.classList.add("focus:border-borderBtn");
-      phone_02.classList.add("_error");
-      popup_phone_02.classList.replace("hidden", "block");
-      popup_phone_02.textContent = "The phone is in the wrong format";
-      return;
-    } else {
-      popup_phone_02.textContent = "";
-      popup_phone_02.classList.remove("block");
-      popup_phone_02.classList.add("hidden");
-      /**
-       * Delete red border input phone
-       */
-      phone_02.classList.remove("border__error");
-      phone_02.classList.remove("focus:border-borderBtn");
-      phone_02.classList.remove("border-borderBtn");
-      phone_02.classList.remove("_error");
-    }
-  });
+  // });
   // phone_02.addEventListener("blur", validatePhone);
-
   /*===============================
   BEGIN: form-02  before footer
   ===============================*/
-  dynamicForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    if (
-      username.value.trim() == "" ||
-      email.value.trim() == "" ||
-      phone.value.trim() == "" ||
-      company.value.trim() == ""
-    ) {
-      return;
-    } else {
-      // sendMail();
-
-      openPopupSentMsg();
-      closeDynamicForm();
-
-      const formData = new FormData(dynamicForm);
-      console.log(Object.fromEntries(formData));
-
-      dynamicForm.reset();
-      // document.getElementById("username").value = "";
-      // document.getElementById("email").value = "";
-      // document.getElementById("phone").value = "";
-      // document.getElementById("company").value = "";
-      // document.getElementById("message").value = "";
-      // document.getElementById("choise").value = "";
-
-      // alert('Yuor message sent successfully');
-    }
-  });
-  mainForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    if (
-      username_02.value.trim() == "" ||
-      email_02.value.trim() == "" ||
-      phone_02.value.trim() == "" ||
-      company_02.value.trim() == ""
-    ) {
-      return;
-    } else {
-      // sendMail();
-
-      openPopupSentMsg();
-      closeDynamicForm();
-
-      const formData = new FormData(mainForm);
-      console.log(Object.fromEntries(formData));
-
-      mainForm.reset();
-      // document.getElementById("username").value = "";
-      // document.getElementById("email").value = "";
-      // document.getElementById("phone").value = "";
-      // document.getElementById("company").value = "";
-      // document.getElementById("message").value = "";
-      // document.getElementById("choise").value = "";
-
-      // alert('Yuor message sent successfully');
-    }
-  });
-
+  // dynamicForm.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   if (
+  //     username.value.trim() == "" ||
+  //     email.value.trim() == "" ||
+  //     phone.value.trim() == "" ||
+  //     company.value.trim() == ""
+  //   ) {
+  //     return;
+  //   } else {
+  //     // sendMail();
+  //     openPopupSentMsg();
+  //     closeDynamicForm();
+  //     const formData = new FormData(dynamicForm);
+  //     console.log(Object.fromEntries(formData));
+  //     dynamicForm.reset();
+  //     // document.getElementById("username").value = "";
+  //     // document.getElementById("email").value = "";
+  //     // document.getElementById("phone").value = "";
+  //     // document.getElementById("company").value = "";
+  //     // document.getElementById("message").value = "";
+  //     // document.getElementById("choise").value = "";
+  //     // alert('Yuor message sent successfully');
+  //   }
+  // });
+  // mainForm.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   if (
+  //     username_02.value.trim() == "" ||
+  //     email_02.value.trim() == "" ||
+  //     phone_02.value.trim() == "" ||
+  //     company_02.value.trim() == ""
+  //   ) {
+  //     return;
+  //   } else {
+  //     // sendMail();
+  //     openPopupSentMsg();
+  //     closeDynamicForm();
+  //     const formData = new FormData(mainForm);
+  //     console.log(Object.fromEntries(formData));
+  //     mainForm.reset();
+  //     // document.getElementById("username").value = "";
+  //     // document.getElementById("email").value = "";
+  //     // document.getElementById("phone").value = "";
+  //     // document.getElementById("company").value = "";
+  //     // document.getElementById("message").value = "";
+  //     // document.getElementById("choise").value = "";
+  //     // alert('Yuor message sent successfully');
+  //   }
+  // });
   /*===========================================*/
   /**
    * Submit form -02.
@@ -607,23 +666,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // submit_02.addEventListener("click", (e) => {
   //   //=======28.02.2023
   //   e.preventDefault();
-
   //   /**
   //    * Delete popup form_02.
   //    */
   //   popup_name_02.textContent = "";
   //   popup_name_02.classList.remove("block");
   //   popup_name_02.classList.add("hidden");
-
   //   /**
   //    * Delete popup form_02.
   //    */
   //   popup_02.textContent = "";
   //   popup_02.classList.remove("block");
   //   popup_02.classList.add("hidden");
-
   //   // console.log(phone.value);
-
   //   if (
   //     name_02.value == "" ||
   //     email_02.value == "" ||
@@ -635,16 +690,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //     return false;
   //   } else {
   //     // sendMail();
-
   //     openPopupSentMsg();
-
   //     document.getElementById("name_02").value = "";
   //     document.getElementById("email_02").value = "";
   //     document.getElementById("phone_02").value = "";
   //     document.getElementById("company_02").value = "";
   //     document.getElementById("message_02").value = "";
   //     document.getElementById("choise_02").value = "";
-
   //     // alert('Yuor message sent successfully');
   //   }
   // });

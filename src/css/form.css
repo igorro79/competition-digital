@@ -5,39 +5,45 @@
 Form menu header
 ================= */
 
-  .form-floating {
+  .formControl {
     @apply relative;
   }
 
   /*  p-[16px] 01.03.2023*/
-  /*.form-floating > label {
+  /*.formControl > label {
     @apply pointer-events-none absolute
     top-0 left-0 h-full origin-top 
    pl-[30px]  pt-[19px] transition ease-in;
   }*/
 
-  .form-floating > .form-control::placeholder {
+  .formControl > .form-control::placeholder {
     @apply text-transparent;
+  }
+  .formControl.error > p {
+    @apply block;
+  }
+  .formControl.error > input {
+    @apply border-main;
   }
 
   /*translateX(0.15rem)*/
-  .form-floating > .form-control:focus ~ label {
+  .formControl > .form-control:focus ~ label {
     opacity: 0.65;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.4rem);
   }
 
   /*=============*/
-  .form-floating > .form-control:not(:placeholder-shown) ~ label {
+  .formControl > .form-control:not(:placeholder-shown) ~ label {
     opacity: 0.65;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
   }
 
-  .form-floating > label {
+  .formControl > label {
     padding-left: 24px;
     padding-top: 19px;
   }
 
-  .form-floating > label {
+  .formControl > label {
     position: absolute;
     top: 0;
     left: 0;
