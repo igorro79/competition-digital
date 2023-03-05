@@ -2905,6 +2905,10 @@ Form menu header
   margin-top: 150px;
 }
 
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
+
 .block{
   display: block;
 }
@@ -3035,6 +3039,14 @@ Form menu header
 
 .min-h-\[710px\]{
   min-height: 710px;
+}
+
+.min-h-\[650px\]{
+  min-height: 650px;
+}
+
+.min-h-\[770px\]{
+  min-height: 770px;
 }
 
 .w-\[103px\]{

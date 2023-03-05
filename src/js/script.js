@@ -67,14 +67,14 @@ const menuServicesToggle = () => {
   servicesMenu.classList.toggle("-translate-x-full");
   servicesModal.classList.toggle("translate-x-[100vw]");
   window.innerWidth < 820
-    ? dynamicMenuContainer.classList.toggle("min-h-[590px]")
-    : dynamicMenuContainer.classList.toggle("min-h-[710px]");
+    ? dynamicMenuContainer.classList.toggle("min-h-[650px]")
+    : dynamicMenuContainer.classList.toggle("min-h-[770px]");
 };
 const menuServicesClose = () => {
   servicesMenu.classList.remove("-translate-x-full");
   servicesModal.classList.add("translate-x-[100vw]");
-  dynamicMenuContainer.classList.remove("min-h-[710px]");
-  dynamicMenuContainer.classList.remove("min-h-[590px]");
+  dynamicMenuContainer.classList.remove("min-h-[770px]");
+  dynamicMenuContainer.classList.remove("min-h-[650px]");
 };
 //-------------------------------
 const openPopupSentMsg = () => {
@@ -139,8 +139,8 @@ function burgerOpen() {
 }
 
 function toggleMobileMenuContainerHeigh() {
-  dynamicMenuContainer.classList.toggle("min-h-[710px]");
-  dynamicMenuContainer.classList.toggle("min-h-[590px]");
+  dynamicMenuContainer.classList.toggle("min-h-[770px]");
+  dynamicMenuContainer.classList.toggle("min-h-[650px]");
 }
 
 //=============== ! functions ===============
@@ -148,9 +148,9 @@ function toggleMobileMenuContainerHeigh() {
 // ----- on window resize ------
 window.addEventListener("resize", () => {
   if (
-    (dynamicMenuContainer.classList.contains("min-h-[710px]") &&
+    (dynamicMenuContainer.classList.contains("min-h-[770px]") &&
       window.innerWidth < 820) ||
-    (dynamicMenuContainer.classList.contains("min-h-[590px]") &&
+    (dynamicMenuContainer.classList.contains("min-h-[650px]") &&
       window.innerWidth >= 820)
   ) {
     toggleMobileMenuContainerHeigh();
