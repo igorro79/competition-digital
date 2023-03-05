@@ -52,33 +52,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary) var(--secondary);
-}
-
-/* Chrome, Edge, and Safari */
-/*width: 10px;*/
-*::-webkit-scrollbar {
-  @apply w-[10px];
-}
-
-/*background: var(--primary);*/
-*::-webkit-scrollbar-track {
-  @apply bg-[var(--primary)];
-}
-
-/* background-color: var(--secondary);*/
-/*border-radius:10px ;   border: 0px solid var(--primary);*/
-*::-webkit-scrollbar-thumb {
-  @apply /*
-
- background:   repeating-linear-gradient( 45deg,
-    var(--secondary),
-    var(--secondary)
-    5px, var(--primary)
-    5px, var(--primary)
-    10px );
-  */ 
- rounded-[10px] border-0 border-[var(--primary)] bg-[var(--secondary)];
+  scrollbar-color: var(--secondary) var(--primary);
 }
 
 html {

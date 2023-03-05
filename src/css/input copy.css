@@ -6,7 +6,6 @@
 @import "./cases.css";
 @import "./case-page.css";
 
-
 @import "./services.css";
 @import "./services-page.css";
 
@@ -23,9 +22,7 @@
 
 @tailwind base;
 
-
 @tailwind components;
-
 
 @tailwind utilities;
 
@@ -82,7 +79,7 @@ body {
 }
 /* ---------------scrollbar--------------- */
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 body::-webkit-scrollbar-track {
   background-color: #919191;
@@ -92,19 +89,7 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
   @apply rounded-2xl bg-main;
 }
-.blog__card-list::-webkit-scrollbar {
-  height: 8px;
-}
 
-.blog__card-list::-webkit-scrollbar-track {
-  background-color: #919191;
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.blog__card-list::-webkit-scrollbar-thumb {
-  outline: 1px solid slategrey;
-  @apply rounded-2xl bg-main;
-}
 /* -----------fake header-------------- */
 .fake-header {
   @apply h-[var(--header-h)] w-full  bg-inherit  lg:h-[var(--header-h-lg)]  xl:h-[var(--header-h-xl)];

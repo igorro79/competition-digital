@@ -4,14 +4,10 @@
     @apply absolute top-0  z-20 h-full w-full bg-dark
     transition-all ease-in;
   }
-  /* .header__contact-body {
-    @apply    h-[calc(100vh+82px)]
-     
-  } */
 
-  .header__contact-body::-webkit-scrollbar-thumb {
+  /* .header__contact-body::-webkit-scrollbar-thumb {
     @apply h-[5px]  rounded-[20px] bg-main;
-  }
+  } */
 
   /*================================================ 
 BEGIN: wrapper 
@@ -20,9 +16,8 @@ BEGIN: wrapper
   /* max-w-[1000px] */
   /* h-screen   igor remove*/
   .wrapper {
-    @apply relative m-auto flex  max-w-full flex-col
-  
-  pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
+    @apply relative m-auto flex  max-w-full flex-col 
+      pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
   }
 
   /*.overflow {
@@ -196,10 +191,6 @@ Menu header gradient
     overflow-y-scroll;
   }
   */
-
-  .header__contact-body::-webkit-scrollbar-thumb {
-    @apply h-[5px] rounded-full bg-main;
-  }
 
   .header-scroll-menu {
     @apply z-20 h-[calc(100vh)] overflow-y-scroll 
