@@ -3029,12 +3029,12 @@ Form menu header
   min-height: 100vh;
 }
 
-.min-h-\[710px\]{
-  min-height: 710px;
-}
-
 .min-h-\[590px\]{
   min-height: 590px;
+}
+
+.min-h-\[710px\]{
+  min-height: 710px;
 }
 
 .w-\[103px\]{
@@ -5163,10 +5163,6 @@ google-review
   fill: #909090;
 }
 
-.group\/arrow:hover .group-hover\/arrow\:fill-dark{
-  fill: #171717;
-}
-
 .group:hover .group-hover\:fill-dark{
   fill: #171717;
 }
@@ -5199,9 +5195,9 @@ google-review
   stroke: #000;
 }
 
-.group\/arrow:hover .group-hover\/arrow\:text-dark{
+.group\/arrow:hover .group-hover\/arrow\:text-lightDarkGrey{
   --tw-text-opacity: 1;
-  color: rgb(23 23 23 / var(--tw-text-opacity));
+  color: rgb(144 144 144 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-dark{
@@ -7449,10 +7445,6 @@ google-review
 
   .xl\:basis-\[48\.067\%\]{
     flex-basis: 48.067%;
-  }
-
-  .xl\:basis-\[47\%\]{
-    flex-basis: 47%;
   }
 
   .xl\:border__top{
