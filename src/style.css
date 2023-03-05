@@ -3029,12 +3029,12 @@ Form menu header
   min-height: 100vh;
 }
 
-.min-h-\[710px\]{
-  min-height: 710px;
-}
-
 .min-h-\[590px\]{
   min-height: 590px;
+}
+
+.min-h-\[710px\]{
+  min-height: 710px;
 }
 
 .w-\[103px\]{
@@ -7449,10 +7449,6 @@ google-review
 
   .xl\:basis-\[48\.067\%\]{
     flex-basis: 48.067%;
-  }
-
-  .xl\:basis-\[47\%\]{
-    flex-basis: 47%;
   }
 
   .xl\:border__top{
