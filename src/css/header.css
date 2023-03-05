@@ -20,10 +20,6 @@ BEGIN: wrapper
       pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
   }
 
-  /*.overflow {
-    @apply overflow-y-hidden;
-  }*/
-
   /*================================================ 
 BEGIN: 01-section-header 
 =================================================*/
@@ -145,9 +141,7 @@ Menu header gradient
 ==================== */
 
   .red-gradient-menu {
-    @apply /* xl:before:blur-[90px]; 
-  */
-  relative overflow-hidden
+    @apply relative overflow-hidden
   to-transparent before:absolute
   before:top-[135px] before:right-0
   before:h-[190px]
@@ -161,36 +155,6 @@ Menu header gradient
   lg:before:w-[220px] lg:before:translate-x-[50%]  lg:before:blur-[75px] xl:before:top-[0px]
   xl:before:h-[591px] xl:before:w-[591px];
   }
-
-  /* .red-gradient {
-    @apply relative overflow-hidden  from-main to-transparent
-    before:absolute before:right-0 
-    before:translate-x-[50%] before:bg-gradient-radial 
-     before:content-[''];
-  }
-
-  .red-gradient-top {
-    @apply before:top-0 before:h-[212px] before:w-[212px]
-       before:blur-[45px] md:before:h-[322px] md:before:w-[322px]
-     md:before:blur-[60px] xl:before:h-[591px] xl:before:w-[591px] xl:before:blur-[90px];
-  }
-
-
-
-  .red-gradient-bottom {
-    @apply before:top-20 before:h-[187px] before:w-[187px] before:blur-[45px] md:before:top-[100px]
-     md:before:h-[295px] md:before:w-[295px] md:before:blur-[80px] 
-     xl:before:top-[150px] xl:before:h-[435px] xl:before:w-[435px] xl:before:blur-[90px];
-  } */
-
-  /* h-screen */
-  /*  h-[calc(100vh+78px)] */
-  /*  .header-scroll-form{
-    @apply transition-all ease-in z-20 
-    h-[calc(100vh)]
-    overflow-y-scroll;
-  }
-  */
 
   .header-scroll-menu {
     @apply z-20 h-[calc(100vh)] overflow-y-scroll 
@@ -305,33 +269,6 @@ translate-underline__hover-line
   }
 
   /*================================================
-Styles borders  btn 
-================================================ */
-  /* border-lightDarkGrey xl:border-t */
-
-  /*.btn {
-    @apply m-auto  flex w-full
-         items-center justify-center gap-[10px]
-          rounded-full bg-main py-[16px] 
-         text-base font-bold uppercase text-white transition-all
-        sm:max-w-[357px];
-  }
-
-  .btn__transparent {
-    @apply m-auto  flex 
-        w-full items-center justify-center gap-[10px] 
-        rounded-full border-[2px] border-main p-[12px] 
-        text-sm font-bold uppercase leading-[24px]
-        text-mainTextDark 
-        transition-all
-        sm:max-w-[357px];
-  }
-
-  .btn__red {
-    @apply flex flex-row items-center justify-center
-        gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-4 px-9
-        text-base font-bold uppercase  leading-5 text-mainTextWhite;
-  }*/
 
   /* ================================
   Border position
@@ -357,9 +294,8 @@ Styles borders  btn
     @apply rounded-full border-[1px] border-middleGrey
     hover:border-white;
   }
-
-  .border__error {
-    @apply rounded-full border-[1px] border-main
+  .border__rounded-red {
+    @apply rounded-full border-[1px] border-middleGrey
     hover:border-main;
   }
 }

@@ -66,14 +66,6 @@ body {
   @apply h-screen overflow-hidden;
 }
 
-/*========= theme variants ============  */
-
-/* .theme-white {
-  @apply bg-light text-dark  dark:bg-dark dark:text-white;
-}
-.theme-black {
-  @apply bg-dark text-white dark:bg-dark dark:text-white;
-} */
 /* -----------swiper---------- */
 .mySwiper-container {
   @apply w-full overflow-hidden;
@@ -88,18 +80,6 @@ body {
 .mySwiper .swiper-pagination-bullet-active {
   @apply bg-main;
 }
-
-/* =========== HEADING ============
-.heading2 {
-  @apply text-4xl font-bold uppercase dark:text-white lg:text-[45px] lg:leading-[1.2] 
-    xl:text-[clamp(45px,5vw,90px)] xl:leading-[1.1];
-} */
-/* -------- */
-
-/* .pages__title {
-  @apply text-4xl font-bold uppercase lg:text-[60px] lg:leading-[1.1] 
-     xl:text-[clamp(60px,3.5vw,120px)] xl:leading-[1.1];
-} */
 
 /*=====================================
 STYLES 
@@ -154,7 +134,7 @@ btn-hover:after cases-05
 liner-gradient-img
 =================== */
 
-.link-oside {
+/* .link-oside {
   @apply relative overflow-hidden;
 }
 
@@ -170,7 +150,7 @@ liner-gradient-img
 .link-oside:hover::after {
   @apply absolute left-0 top-0 -z-10 h-full w-full 
     rounded-[70px] bg-activeRed content-[''];
-}
+} */
 
 /*================================================
 btn-hover-overlay-red
@@ -180,7 +160,7 @@ btn-hover-overlay-red
  btn header
  ========== */
 
-.btn__contact-wrap {
+/* .btn__contact-wrap {
   @apply flex items-center  rounded-full  bg-main
     p-[12px]   transition-all;
 }
@@ -201,13 +181,13 @@ btn-hover-overlay-red
 .link-oside__red:hover::after {
   @apply absolute left-0 top-0 -z-10
     h-full w-full rounded-[70px] bg-main transition-all content-[''];
-}
+} */
 
 /* ================================
   Border position
   ==================================*/
 
-.border__top {
+/* .border__top {
   @apply border-t-[1px] border-t-middleGrey;
 }
 
@@ -226,28 +206,19 @@ btn-hover-overlay-red
 .border__rounded {
   @apply rounded-full border-[1px] border-middleGrey
     hover:border-white;
-}
+} */
 
-.border__rounded-red {
-  @apply rounded-full border-[1px] border-middleGrey
-    hover:border-main;
-}
-
-.border__error {
+/* .border__error {
   @apply rounded-full border-[1px] border-main
     hover:border-main;
-}
+} */
 
 /* ====================================
 google-review
 ====================================== */
 /*bg-bgColor*/
 
-#consent-popup {
-  @apply fixed  bottom-0 left-0 z-50 m-[24px] 
-  max-w-[491px] rounded-full pt-[18px] pb-[17px]   pl-[38px]
-  pr-[17px]  shadow-2xl;
-}
+
 
 /* ====================================
     |

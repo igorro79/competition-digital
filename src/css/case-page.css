@@ -154,7 +154,7 @@ img-desc-
     hover:border-white;
 }
 
-.border__error {
+/* .border__error {
   @apply border-borderBtn hover:border-borderBtn rounded-full
     border-[1px];
-}
+} */
