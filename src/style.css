@@ -4947,7 +4947,7 @@ Styles borders  btn
   .cyberbet .content__block::after{
     position: absolute;
     top: 0px;
-    left: -152px;
+    left: -102px;
     height: 100%;
     width: 1px;
     --tw-bg-opacity: 1;
@@ -4957,19 +4957,34 @@ Styles borders  btn
   }
 }
 
+@media (min-width: 1536px){
+  .cyberbet .content__block::after{
+    top: 0px;
+    left: -152px;
+    height: 100%;
+  }
+}
+
 /* 14-section-contextual*/
 
 @media (min-width: 1280px){
   .content__block::after{
     position: absolute;
-    top: -70px;
-    left: -140px;
+    top: -45px;
+    left: -93px;
     height: 111%;
     width: 1px;
     --tw-bg-opacity: 1;
     background-color: rgb(145 145 145 / var(--tw-bg-opacity));
     --tw-content: '';
     content: var(--tw-content);
+  }
+}
+
+@media (min-width: 1536px){
+  .content__block::after{
+    top: -70px;
+    left: -140px;
   }
 }
 
@@ -7135,6 +7150,10 @@ Styles borders  btn
     margin-bottom: 14px;
   }
 
+  .xl\:mb-\[20px\]{
+    margin-bottom: 20px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -7652,6 +7671,26 @@ Styles borders  btn
     gap: 0px;
   }
 
+  .xl\:gap-\[9px\]{
+    gap: 9px;
+  }
+
+  .xl\:gap-\[273px\]{
+    gap: 273px;
+  }
+
+  .xl\:gap-\[51px\]{
+    gap: 51px;
+  }
+
+  .xl\:gap-\[52px\]{
+    gap: 52px;
+  }
+
+  .xl\:gap-\[99px\]{
+    gap: 99px;
+  }
+
   .xl\:gap-x-\[20px\]{
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -8140,6 +8179,18 @@ Styles borders  btn
     padding-left: 22px;
   }
 
+  .xl\:pt-\[55px\]{
+    padding-top: 55px;
+  }
+
+  .xl\:pt-\[18px\]{
+    padding-top: 18px;
+  }
+
+  .xl\:pb-\[139px\]{
+    padding-bottom: 139px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -8546,6 +8597,10 @@ Styles borders  btn
     margin-bottom: 41px;
   }
 
+  .\32xl\:mb-\[29px\]{
+    margin-bottom: 29px;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -8671,6 +8726,10 @@ Styles borders  btn
     max-width: 1400px;
   }
 
+  .\32xl\:max-w-\[60\%\]{
+    max-width: 60%;
+  }
+
   .\32xl\:basis-\[754px\]{
     flex-basis: 754px;
   }
@@ -8733,6 +8792,26 @@ Styles borders  btn
 
   .\32xl\:gap-\[19\.7px\]{
     gap: 19.7px;
+  }
+
+  .\32xl\:gap-\[13px\]{
+    gap: 13px;
+  }
+
+  .\32xl\:gap-\[319px\]{
+    gap: 319px;
+  }
+
+  .\32xl\:gap-\[77px\]{
+    gap: 77px;
+  }
+
+  .\32xl\:gap-\[88px\]{
+    gap: 88px;
+  }
+
+  .\32xl\:gap-\[156px\]{
+    gap: 156px;
   }
 
   .\32xl\:gap-x-\[32px\]{
@@ -8981,6 +9060,34 @@ Styles borders  btn
 
   .\32xl\:pb-\[268px\]{
     padding-bottom: 268px;
+  }
+
+  .\32xl\:pb-\[30px\]{
+    padding-bottom: 30px;
+  }
+
+  .\32xl\:pt-\[30px\]{
+    padding-top: 30px;
+  }
+
+  .\32xl\:pt-\[26px\]{
+    padding-top: 26px;
+  }
+
+  .\32xl\:pt-\[15px\]{
+    padding-top: 15px;
+  }
+
+  .\32xl\:pt-\[55px\]{
+    padding-top: 55px;
+  }
+
+  .\32xl\:pt-\[135px\]{
+    padding-top: 135px;
+  }
+
+  .\32xl\:indent-\[23px\]{
+    text-indent: 23px;
   }
 
   .\32xl\:text-\[90px\]{

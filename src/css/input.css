@@ -204,15 +204,28 @@ Styles borders  btn
 } */
 
 .cyberbet .content__block::after {
-  @apply xl:absolute  xl:top-0
-  xl:left-[-152px] xl:h-[100%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
+  @apply xl:absolute  
+  xl:top-0
+  xl:left-[-102px] 
+  xl:h-[100%] 
+  xl:w-[1px]  xl:bg-middleGrey xl:content-['']
+  
+  2xl:top-0
+  2xl:left-[-152px]
+   2xl:h-[100%];
 }
 
 /* 14-section-contextual*/
 
 .content__block::after {
-  @apply xl:absolute  xl:top-[-70px]
-  xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
+  @apply xl:absolute  
+  xl:top-[-45px]
+  xl:left-[-93px] 
+  xl:h-[111%] 
+  xl:w-[1px]  xl:bg-middleGrey xl:content-['']
+  
+  2xl:top-[-70px]
+  2xl:left-[-140px];
 }
 
 /*  14-section-contextual */
