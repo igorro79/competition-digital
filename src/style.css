@@ -131,117 +131,6 @@ END: footer
 @import "./about-page.css";
 @import "./contacts-page.css";*/
 
-/* =========== BIG RED ROUND BUTTON ============ */
-
-.big-red-btn{
-  position: relative;
-  display: flex;
-  height: 133px;
-  width: 133px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  border-radius: 9999px;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(248 248 248 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.big-red-btn::before{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-@media (min-width: 820px){
-  .big-red-btn{
-    height: 142px;
-    width: 142px;
-  }
-}
-
-@media (min-width: 1280px){
-  .big-red-btn{
-    height: 145px;
-    width: 145px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .big-red-btn:hover::before{
-    content: var(--tw-content);
-    --tw-scale-x: 0.8;
-    --tw-scale-y: 0.8;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-}
-
-@media (min-width: 1366px){
-  .big-red-btn{
-    height: 158px;
-    width: 158px;
-  }
-}
-
-@media (min-width: 1536px){
-  .big-red-btn{
-    height: 177px;
-    width: 177px;
-  }
-}
-
-.big-red-btn.cases-page__big-red-btn{
-  height: 125px;
-  width: 125px;
-}
-
-@media (min-width: 820px){
-  .big-red-btn.cases-page__big-red-btn{
-    height: 125px;
-    width: 125px;
-  }
-}
-
-@media (min-width: 1280px){
-  .big-red-btn.cases-page__big-red-btn{
-    height: 177px;
-    width: 177px;
-  }
-}
-
-.big-red-btn#btn-close-popup-forms{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* =================  SWIPER ================*/
-
-.blogSwiper .swiper-slide{
-  width: auto;
-}
-
 /*! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com*/
 
 /*
@@ -659,14 +548,6 @@ video {
 
 [hidden] {
   display: none;
-}
-
-/*================================================ 
-BEGIN: html  scroll
-=================================================*/
-
-html{
-  scroll-behavior: smooth;
 }
 
 *::-moz-selection{
@@ -4346,18 +4227,20 @@ Form menu header
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*================================================ 
+BEGIN: html  scroll
+=================================================*/
+
 /* header height */
 
 :root {
   --header-h: 77px;
   --header-h-md: 87px;
   --header-h-lg: 90px;
-  /* scrollbar*/
+  /* scrollbar colors firefox */
   --primary: #171717;
   --secondary: #ff304d;
 }
-
-/* Scrollbar styles */
 
 /* Firefox */
 
@@ -4379,12 +4262,138 @@ body{
   font-family: Montserrat;
 }
 
+.wrapper{
+  position: relative;
+  margin: auto;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  padding-top: var(--header-h);
+}
+
+@media (min-width: 820px){
+  .wrapper{
+    padding-top: var(--header-h-lg);
+  }
+}
+
+@media (min-width: 1280px){
+  .wrapper{
+    padding-top: var(--header-h-xl);
+  }
+}
+
 .lock-wrapper{
   height: 100vh;
   overflow: hidden;
 }
 
-/* -----------swiper---------- */
+/* =========== BIG RED ROUND BUTTON ============ */
+
+.big-red-btn{
+  position: relative;
+  display: flex;
+  height: 133px;
+  width: 133px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 9999px;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(248 248 248 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.big-red-btn::before{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+@media (min-width: 820px){
+  .big-red-btn{
+    height: 142px;
+    width: 142px;
+  }
+}
+
+@media (min-width: 1280px){
+  .big-red-btn{
+    height: 145px;
+    width: 145px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .big-red-btn:hover::before{
+    content: var(--tw-content);
+    --tw-scale-x: 0.8;
+    --tw-scale-y: 0.8;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1366px){
+  .big-red-btn{
+    height: 158px;
+    width: 158px;
+  }
+}
+
+@media (min-width: 1536px){
+  .big-red-btn{
+    height: 177px;
+    width: 177px;
+  }
+}
+
+.big-red-btn.cases-page__big-red-btn{
+  height: 125px;
+  width: 125px;
+}
+
+@media (min-width: 820px){
+  .big-red-btn.cases-page__big-red-btn{
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media (min-width: 1280px){
+  .big-red-btn.cases-page__big-red-btn{
+    height: 177px;
+    width: 177px;
+  }
+}
+
+.big-red-btn#btn-close-popup-forms{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================  SWIPER ================*/
 
 .mySwiper-container{
   width: 100%;
@@ -4438,6 +4447,12 @@ body{
 .mySwiper .swiper-pagination-bullet-active{
   --tw-bg-opacity: 1;
   background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
+/* -----------blog swiper main page---------- */
+
+.blogSwiper .swiper-slide{
+  width: auto;
 }
 
 /*=====================================
@@ -4569,99 +4584,6 @@ Styles borders  btn
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-/*================================================
-btn-hover:after cases-05
-================================================ */
-
-/* ==================
-liner-gradient-img
-=================== */
-
-/* .link-oside {
-  @apply relative overflow-hidden;
-}
-
-.link-oside::after {
-  @apply absolute left-0 top-full h-full w-full
-    rounded-[70px] bg-activeRed transition-all ease-in content-[''];
-}
-
-.link-oside:hover {
-  @apply scale-105;
-}
-
-.link-oside:hover::after {
-  @apply absolute left-0 top-0 -z-10 h-full w-full 
-    rounded-[70px] bg-activeRed content-[''];
-} */
-
-/*================================================
-btn-hover-overlay-red
-================================================ */
-
-/* =========
- btn header
- ========== */
-
-/* .btn__contact-wrap {
-  @apply flex items-center  rounded-full  bg-main
-    p-[12px]   transition-all;
-}
-
-.link-oside__red {
-  @apply relative overflow-hidden;
-}
-
-.link-oside__red::after {
-  @apply absolute left-0 top-full h-full
-    w-full rounded-[70px] bg-main transition-all content-[''];
-}
-
-.link-oside__red:hover {
-  @apply scale-105 text-white;
-}
-
-.link-oside__red:hover::after {
-  @apply absolute left-0 top-0 -z-10
-    h-full w-full rounded-[70px] bg-main transition-all content-[''];
-} */
-
-/* ================================
-  Border position
-  ==================================*/
-
-/* .border__top {
-  @apply border-t-[1px] border-t-middleGrey;
-}
-
-.border__left {
-  @apply border-l-[1px] border-l-middleGrey;
-}
-
-.border__right {
-  @apply border-r-[1px] border-r-middleGrey;
-}
-
-.border__bottom {
-  @apply border-b-[1px] border-b-middleGrey;
-}
-
-.border__rounded {
-  @apply rounded-full border-[1px] border-middleGrey
-    hover:border-white;
-} */
-
-/* .border__error {
-  @apply rounded-full border-[1px] border-main
-    hover:border-main;
-} */
-
-/* ====================================
-google-review
-====================================== */
-
-/*bg-bgColor*/
 
 /* ====================================
     |

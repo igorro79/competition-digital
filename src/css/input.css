@@ -7,6 +7,7 @@
 @import "./faq.css";
 @import "./form.css";
 @import "./footer.css";
+@import "./footer.css";
 
 /*@import "./cases.css";*/
 /*@import "./case-page.css";*/
@@ -15,27 +16,40 @@
 @import "./about-page.css";
 @import "./contacts-page.css";*/
 
-@import "./footer.css";
-@import "./utils.css";
-
 @tailwind base;
+@layer base {
+  *::selection {
+    @apply bg-main;
+  }
 
+  .header__contact-body::-webkit-scrollbar,
+  .form__header::-webkit-scrollbar-thumb,
+  html::-webkit-scrollbar {
+    @apply w-[10px]  bg-dark;
+  }
+
+  .form__header::-webkit-scrollbar-thumb,
+  html::-webkit-scrollbar-thumb,
+  .header__contact-body::-webkit-scrollbar-thumb {
+    @apply h-[5px] rounded-full bg-main;
+  }
+}
 @tailwind components;
 
 @tailwind utilities;
-
+/*================================================ 
+BEGIN: html  scroll
+=================================================*/
 /* header height */
 :root {
   --header-h: 77px;
   --header-h-md: 87px;
   --header-h-lg: 90px;
 
-  /* scrollbar*/
+  /* scrollbar colors firefox */
   --primary: #171717;
   --secondary: #ff304d;
 }
-
-/* Scrollbar styles */
 
 /* Firefox */
 * {
@@ -50,11 +64,35 @@ body {
   @apply font-montserrat;
 }
 
+.wrapper {
+  @apply relative m-auto flex  max-w-full flex-col  pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
+}
+
 .lock-wrapper {
   @apply h-screen overflow-hidden;
 }
 
-/* -----------swiper---------- */
+/* =========== BIG RED ROUND BUTTON ============ */
+
+.big-red-btn {
+  @apply relative flex h-[133px] w-[133px] flex-col items-center justify-center gap-3
+   rounded-full text-center text-sm font-bold uppercase text-light transition-all
+     before:absolute before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full 
+     before:rounded-full before:bg-main before:transition-all before:content-['']
+      lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px] xl:px-2 xl:text-base
+       
+      xl:hover:before:scale-[0.8] 1xl:h-[158px]  1xl:w-[158px]
+      2xl:h-[177px] 2xl:w-[177px];
+}
+.big-red-btn.cases-page__big-red-btn {
+  @apply h-[125px] w-[125px]  lg:h-[125px] lg:w-[125px] xl:h-[177px] xl:w-[177px];
+}
+.big-red-btn#btn-close-popup-forms {
+  @apply relative mx-auto;
+}
+
+/* =================  SWIPER ================*/
+
 .mySwiper-container {
   @apply w-full overflow-hidden;
 }
@@ -67,6 +105,11 @@ body {
 }
 .mySwiper .swiper-pagination-bullet-active {
   @apply bg-main;
+}
+/* -----------blog swiper main page---------- */
+
+.blogSwiper .swiper-slide {
+  @apply w-auto;
 }
 
 /*=====================================
@@ -114,97 +157,6 @@ Styles borders  btn
         gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-4 px-9
         text-base font-bold uppercase  leading-5 text-white;
 }
-
-/*================================================
-btn-hover:after cases-05
-================================================ */
-/* ==================
-liner-gradient-img
-=================== */
-
-/* .link-oside {
-  @apply relative overflow-hidden;
-}
-
-.link-oside::after {
-  @apply absolute left-0 top-full h-full w-full
-    rounded-[70px] bg-activeRed transition-all ease-in content-[''];
-}
-
-.link-oside:hover {
-  @apply scale-105;
-}
-
-.link-oside:hover::after {
-  @apply absolute left-0 top-0 -z-10 h-full w-full 
-    rounded-[70px] bg-activeRed content-[''];
-} */
-
-/*================================================
-btn-hover-overlay-red
-================================================ */
-
-/* =========
- btn header
- ========== */
-
-/* .btn__contact-wrap {
-  @apply flex items-center  rounded-full  bg-main
-    p-[12px]   transition-all;
-}
-
-.link-oside__red {
-  @apply relative overflow-hidden;
-}
-
-.link-oside__red::after {
-  @apply absolute left-0 top-full h-full
-    w-full rounded-[70px] bg-main transition-all content-[''];
-}
-
-.link-oside__red:hover {
-  @apply scale-105 text-white;
-}
-
-.link-oside__red:hover::after {
-  @apply absolute left-0 top-0 -z-10
-    h-full w-full rounded-[70px] bg-main transition-all content-[''];
-} */
-
-/* ================================
-  Border position
-  ==================================*/
-
-/* .border__top {
-  @apply border-t-[1px] border-t-middleGrey;
-}
-
-.border__left {
-  @apply border-l-[1px] border-l-middleGrey;
-}
-
-.border__right {
-  @apply border-r-[1px] border-r-middleGrey;
-}
-
-.border__bottom {
-  @apply border-b-[1px] border-b-middleGrey;
-}
-
-.border__rounded {
-  @apply rounded-full border-[1px] border-middleGrey
-    hover:border-white;
-} */
-
-/* .border__error {
-  @apply rounded-full border-[1px] border-main
-    hover:border-main;
-} */
-
-/* ====================================
-google-review
-====================================== */
-/*bg-bgColor*/
 
 /* ====================================
     |
