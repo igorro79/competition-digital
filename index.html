@@ -1229,7 +1229,6 @@
 
                   <!-- wrapper-text-02 -->
                   <div
-                    aria-label="cases card"
                     class="cards-text__right lg:flex lg:basis-1/2 lg:flex-col lg:justify-between xl:basis-[48%] xl:py-[50px] xl:pl-[50px]"
                   >
                     <div>
@@ -5266,9 +5265,9 @@
                         id="username_02"
                         name="username_02"
                         type="text"
+                        autocomplete="off"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your name?*"
-                        required
                       />
                       <label
                         for="username_02"
@@ -5293,11 +5292,11 @@
                       <input
                         id="email_02"
                         name="email"
-                        type="email"
+                        type="text"
+                        autocomplete="off"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Your e-mail?*"
                         title="Please provide valid email address  valid@email.com"
-                        required
                       />
                       <label
                         for="email_02"
@@ -5311,22 +5310,16 @@
                     </div>
                     <!-- email_02 -->
 
-                    <!-- popup-email-02 -->
-                    <!-- <div class="lg:order-5 lg:flex">
-                     
-                    </div> -->
-                    <!--  -->
-
                     <!-- phone_02 -->
                     <div class="formControl mb-[15px]">
                       <input
                         id="phone_02"
                         name="phone"
-                        title="541 - 754 - 3010"
+                        title="111 111 1111"
                         type="tel"
+                        autocomplete="off"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Phone number*"
-                        required
                       />
                       <label
                         for="phone_02"
@@ -5352,9 +5345,9 @@
                         id="company_02"
                         name="company"
                         type="text"
+                        autocomplete="off"
                         class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                         placeholder="Company*"
-                        required
                       />
                       <label
                         for="company_02"
@@ -5419,7 +5412,7 @@
                     <!-- choise -->
 
                     <input
-                      id="choise_02"
+                      id="upload_02"
                       class="font-0 absolute w-0 cursor-pointer opacity-0"
                       type="file"
                     />
@@ -5474,6 +5467,33 @@
                             clip-rule="evenodd"
                             d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
                           ></path>
+                        </svg>
+                        <svg
+                          width="24"
+                          class="hidden fill-white transition-all group-hover:fill-black group-active:fill-main"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <style>
+                            .spinner_ajPY {
+                              transform-origin: center;
+                              animation: spinner_AtaB 0.75s infinite linear;
+                            }
+                            @keyframes spinner_AtaB {
+                              100% {
+                                transform: rotate(360deg);
+                              }
+                            }
+                          </style>
+                          <path
+                            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+                            opacity=".25"
+                          />
+                          <path
+                            d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+                            class="spinner_ajPY"
+                          />
                         </svg>
                       </button>
                     </div>
@@ -5766,7 +5786,6 @@
                   rel="noopener noreferrer"
                   aria-label="upwork"
                   class="social__link"
-                  fill="currentColor"
                 >
                   <span class="icon">
                     <svg
@@ -5799,7 +5818,6 @@
                   rel="noopener noreferrer"
                   aria-label="youtube"
                   class="social__link"
-                  fill="currentColor"
                 >
                   <span class="icon">
                     <svg
@@ -6721,10 +6739,10 @@
                     <input
                       id="username"
                       name="username"
+                      autocomplete="off"
                       type="text"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your name?*"
-                      required
                     />
                     <label
                       for="username"
@@ -6749,11 +6767,11 @@
                     <input
                       id="email"
                       name="email"
-                      type="email"
+                      autocomplete="off"
+                      type="text"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Your e-mail?*"
-                      title="Please provide valid email address  valid@email.com"
-                      required
+                      title="Please provide valid email address valid@email.com"
                     />
                     <label
                       for="email"
@@ -6780,8 +6798,8 @@
                       id="phone"
                       name="phone"
                       type="tel"
-                      title="541 - 754 - 3010"
-                      required
+                      autocomplete="off"
+                      title="111 111 1111"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Phone number*"
                     />
@@ -6805,11 +6823,11 @@
                   <div class="formControl mb-[15px]">
                     <input
                       id="company"
+                      autocomplete="off"
                       name="company"
                       type="text"
                       class="_req border__rounded form-control m-0 block w-[100%] rounded-[70px] bg-transparent bg-clip-padding pt-[28px] pb-[11px] pl-[30px] pr-[30px] text-sm font-medium leading-[18px] tracking-[1px] text-middleGrey transition ease-in-out focus:border-white focus:text-white focus:shadow-none focus:outline-none focus:outline-0"
                       placeholder="Company*"
-                      required
                     />
                     <label
                       for="company"
@@ -6874,7 +6892,7 @@
                   <!-- choise -->
 
                   <input
-                    id="choise"
+                    id="upload"
                     class="font-0 absolute w-0 cursor-pointer opacity-0"
                     type="file"
                   />
@@ -6927,7 +6945,34 @@
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
-                          d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                          d=" M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        class="hidden fill-white transition-all group-hover:fill-black group-active:fill-main"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <style>
+                          .spinner_ajPY {
+                            transform-origin: center;
+                            animation: spinner_AtaB 0.75s infinite linear;
+                          }
+                          @keyframes spinner_AtaB {
+                            100% {
+                              transform: rotate(360deg);
+                            }
+                          }
+                        </style>
+                        <path
+                          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+                          opacity=".25"
+                        />
+                        <path
+                          d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+                          class="spinner_ajPY"
                         />
                       </svg>
                     </button>
@@ -6964,7 +7009,9 @@
       </div>
     </div>
 
-    <script src="./src/js/script.js"></script>
+    <script src="./src/js/main-script.js"></script>
+    <script src="./src/js/main-page.js"></script>
+    <script src="./src/js/main-page-form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {

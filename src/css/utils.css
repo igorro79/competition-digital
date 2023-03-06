@@ -6,7 +6,9 @@ BEGIN: html  scroll
   html {
     @apply scroll-smooth;
   }
-
+  *::selection {
+    @apply bg-main;
+  }
   .header__contact-body::-webkit-scrollbar,
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar {

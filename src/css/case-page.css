@@ -158,7 +158,7 @@ img-desc-
     hover:border-white;
 }
 
-.border__error {
-  @apply rounded-full border-[1px] border-main
-    hover:border-main;
-}
+/* .border__error {
+  @apply border-borderBtn hover:border-borderBtn rounded-full
+    border-[1px];
+} */

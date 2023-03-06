@@ -10,9 +10,6 @@ const headerContainer = document.getElementById("header-container");
 const mode = document.getElementById("mode");
 const darkBtn = document.getElementById("darkBtn");
 const lightBtn = document.getElementById("lightBtn");
-// const mode_02 = document.querySelector("#mode_02");
-// const darkBtn_02 = document.querySelector("#darkBtn_02");
-// const lightBtn_02 = document.querySelector("#lightBtn_02");
 
 const menu = document.getElementById("menu");
 const dynamicMenu = document.getElementById("dynamicMenu");
@@ -24,25 +21,20 @@ const servicesMenu = document.getElementById("servicesMenu");
 const backMenuServices = document.getElementById("backMenuServices");
 const btnServices = document.getElementById("btnServices");
 
-//  popup -sent- form header.
+//  popup -sent- form
 const popupForms = document.getElementById("popupForms");
 
 const btnContact = document.getElementById("btnContact");
 const btnContactTablet = document.getElementById("btnContactTablet");
 
-// const dynamicForm = document.getElementById("dynamicForm");
-// const mainForm = document.getElementById("mainForm");
-
 const btnFormMenu = document.getElementById("btnFormMenu");
 const formMenu = document.getElementById("formMenu");
 const dynamicMenuContainer = document.querySelector(".dynamicMenuContainer");
 
-const btnDiscuss = document.getElementById("btnDiscuss");
 const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.getElementById("submit");
 const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-// const formMenu = document.getElementById("formMenu");
 const upButton = document.getElementById("upButton");
 
 //=============== functions ===============
@@ -248,11 +240,6 @@ btnContact.addEventListener("click", () => {
   closePopupSentMsg();
 });
 
-btnDiscuss.addEventListener("click", () => {
-  openDynamicForm();
-  lockWrapper();
-});
-
 btnFormMenu.addEventListener("click", () => {
   closeDynamicForm();
   unlockWrapper();
@@ -273,100 +260,6 @@ btnContactTablet.addEventListener("click", () => {
 });
 // }
 
-/**
- * Opens a block services-06  on mobile.
- */
-
-function opensBlockServices() {
-  let tl = document.querySelectorAll("#servicesCardsWrp .title ");
-
-  for (let i = 0; i < tl.length; i++) {
-    tl[i].addEventListener("click", function (e) {
-      if (window.innerWidth < 820 && e.target.nodeName === "H3") {
-        e.preventDefault();
-      }
-
-      if (this.classList.contains("t_active") && e.target.nodeName === "H3") {
-        this.classList.remove("t_active");
-        this.lastElementChild.classList.remove("c_active");
-        this.lastElementChild.classList.toggle("hidden");
-        return;
-      }
-      if (!this.classList.contains("t_active")) {
-        this.classList.add("t_active");
-        this.lastElementChild.classList.add("c_active");
-        this.lastElementChild.classList.toggle("hidden");
-        return;
-      }
-    });
-  }
-}
-opensBlockServices();
-
-/**
- * Opens a support  (FAQ).
- */
-
-function accordeonOpen() {
-  let tl = document.querySelectorAll("#faqWrp .title ");
-
-  for (let i = 0; i < tl.length; i++) {
-    tl[i].addEventListener("click", function (e) {
-      if (this.classList.contains("t_active")) {
-        this.classList.remove("t_active");
-        this.nextElementSibling.classList.remove("c_active");
-
-        this.classList.remove("text-main");
-        this.classList.add("text-dark");
-
-        this.classList.add("dark:text-white");
-        this.classList.remove("dark:text-main");
-        /**
-         * Button
-         */
-        this.firstElementChild.classList.toggle("hidden");
-        this.lastElementChild.classList.toggle("hidden");
-      } else {
-        tl.forEach((item) => {
-          if (item.classList.contains("t_active")) {
-            item.classList.remove("t_active");
-            item.nextElementSibling.classList.remove("c_active");
-
-            item.classList.remove("text-main");
-            item.classList.add("text-dark");
-
-            item.classList.remove("dark:text-main");
-            item.classList.add("dark:text-white");
-
-            item.firstElementChild.classList.toggle("hidden");
-            item.lastElementChild.classList.toggle("hidden");
-            return;
-          }
-        });
-        this.classList.add("t_active");
-        this.nextElementSibling.classList.add("c_active");
-
-        /**
-         * Title text color red
-         */
-
-        this.classList.remove("text-dark");
-        this.classList.add("text-main");
-
-        this.classList.remove("dark:text-dark");
-        this.classList.add("dark:text-main");
-
-        /**
-         * Button
-         */
-        this.firstElementChild.classList.toggle("hidden");
-        this.lastElementChild.classList.toggle("hidden");
-      }
-    });
-  }
-}
-accordeonOpen();
-
 btnClosePopupForms.addEventListener("click", () => {
   closePopupSentMsg();
   unlockWrapper();
@@ -375,17 +268,12 @@ btnClosePopupForms.addEventListener("click", () => {
 
 //================FORM =================
 const dynamicForm = document.getElementById("dynamicForm");
-const mainForm = document.getElementById("mainForm");
 
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const company = document.getElementById("company");
-
-const username_02 = document.getElementById("username_02");
-const email_02 = document.getElementById("email_02");
-const phone_02 = document.getElementById("phone_02");
-const company_02 = document.getElementById("company_02");
+// const upload = document.getElementById("upload");
 
 //Show input error messages
 function showError(input, message) {
@@ -401,56 +289,99 @@ function showSucces(input) {
   formControl.classList.remove("error");
 }
 
+function checkUsernameBlur(e) {
+  if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
+    showSucces(e.target);
+    return;
+  }
+  if (e.target.value === "") {
+    showError(e.target, `Name is required`);
+  } else {
+    showError(e.target, "Name length from 3 to 50 charackters");
+  }
+}
 //check email is valid
 function checkEmail(input) {
   const re =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (re.test(input.value.trim())) {
     showSucces(input);
     return true;
+  }
+  if (input.value === "") {
+    showError(input, `Email field is required`);
+    return false;
   } else {
     showError(input, "Phone is not valid");
     return false;
   }
 }
-function checkPhone(input) {
+//check email is valid on blur
+
+function checkEmailBlur(e) {
   const re =
-    /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-  //  expression tries to match with a phone number like this (541) 754-3010
-  //  or like this 541 - 754 - 3010 or with spaces
-  if (re.test(input.value.trim())) {
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (re.test(e.target.value.trim())) {
+    showSucces(e.target);
+    return;
+  }
+  if (e.target.value === "") {
+    showError(e.target, `Email field is required`);
+    return;
+  } else {
+    showError(e.target, "Email is not valid");
+  }
+}
+
+function checkPhone(input) {
+  if (input.value.trim().length >= 10 && input.value.trim().length < 15) {
     showSucces(input);
     return true;
-  } else {
-    showError(input, "Email is not valid");
+  }
+  if (input.value.trim() === "") {
+    showError(input, `Phone is required`);
+    return false;
+  }
+  if (input.value.trim().length < 10 && input.value.trim().length > 15) {
+    showError(input, "Phone number should be from 10 to 15 digits");
     return false;
   }
 }
 
-//checkRequired fields
-function checkRequired(inputArr) {
-  inputArr.forEach(function (input) {
-    if (input.value.trim() === "") {
-      showError(input, `${getFieldName(input)} is required`);
-    } else {
-      showSucces(input);
-    }
-  });
+function checkPhoneBlur(e) {
+  if (e.target.value.trim().length >= 10 && e.target.value.trim().length < 15) {
+    showSucces(e.target);
+    return;
+  }
+  if (e.target.value === "") {
+    showError(e.target, `Phone is required`);
+  } else {
+    showError(e.target, "Phone number should be from 10 to 15 digits");
+  }
+}
+
+function checkCompanyBlur(e) {
+  if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
+    showSucces(e.target);
+    return;
+  }
+  if (e.target.value === "") {
+    showError(e.target, `Company name is required`);
+  } else {
+    showError(e.target, "Company name length from 2 to 50 charackters");
+  }
 }
 
 //check input Length
 function checkLength(input, min, max) {
   if (input.value.length < min) {
-    showError(
-      input,
-      `${getFieldName(input)} must be at least ${min} characters`
-    );
-  } else if (input.value.length > max) {
-    showError(
-      input,
-      `${getFieldName(input)} must be les than ${max} characters`
-    );
+    showError(input, `Value must be at least ${min} characters`);
+    return false;
+  }
+  if (input.value.length > max) {
+    showError(input, `Value must be les than ${max} characters`);
     return false;
   } else {
     showSucces(input);
@@ -459,33 +390,31 @@ function checkLength(input, min, max) {
 }
 
 //get FieldName
-function getFieldName(input) {
-  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+// function getFieldName(input) {
+//   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+// }
+
+function toggleSpinner(button) {
+  button.toggleAttribute("disabled", "true");
+  button.firstElementChild.classList.toggle("hidden");
+  button.lastElementChild.classList.toggle("hidden");
 }
 
-function checkEmptyOnBlur(e) {
-  if (e.target.value === "") {
-    showError(e.target, `This field is required`);
-  } else {
-    showSucces(e.target);
-  }
-}
-
-//check on empty string on blur
-username.addEventListener("blur", checkEmptyOnBlur);
-username_02.addEventListener("blur", checkEmptyOnBlur);
-email.addEventListener("blur", checkEmptyOnBlur);
-email_02.addEventListener("blur", checkEmptyOnBlur);
-phone.addEventListener("blur", checkEmptyOnBlur);
-phone_02.addEventListener("blur", checkEmptyOnBlur);
-company.addEventListener("blur", checkEmptyOnBlur);
-company_02.addEventListener("blur", checkEmptyOnBlur);
+//check on blur
+username.addEventListener("blur", checkUsernameBlur);
+// username_02.addEventListener("blur", checkUsernameBlur);
+email.addEventListener("blur", checkEmailBlur);
+// email_02.addEventListener("blur", checkEmailBlur);
+phone.addEventListener("blur", checkPhoneBlur);
+// phone_02.addEventListener("blur", checkPhoneBlur);
+company.addEventListener("blur", checkCompanyBlur);
+// company_02.addEventListener("blur", checkCompanyBlur);
 
 //Event Listeners dynamicForm
 dynamicForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  const submitBtn = e.target.querySelector("button[type=submit]");
 
-  const requiredValid = checkRequired([username, email, phone, company]);
   const userLengthValid = checkLength(username, 3, 30);
   const companyLengthValid = checkLength(company, 3, 30);
   const emailValid = checkEmail(email);
@@ -495,38 +424,14 @@ dynamicForm.addEventListener("submit", function (e) {
   console.log(Object.fromEntries(formData));
 
   if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
+    toggleSpinner(submitBtn);
     setTimeout(() => {
+      // if AJAX response OK run below
+      toggleSpinner(submitBtn);
       openPopupSentMsg();
       closeDynamicForm();
       e.target.reset();
-    }, 2000);
-  }
-});
-
-//Event Listeners mainForm
-mainForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const requiredValid = checkRequired([
-    username_02,
-    email_02,
-    phone_02,
-    company_02,
-  ]);
-  const userLengthValid = checkLength(username_02, 3, 30);
-  const companyLengthValid = checkLength(company_02, 3, 30);
-  const emailValid = checkEmail(email_02);
-  const phoneValid = checkPhone(phone_02);
-
-  const formData = new FormData(e.target);
-  console.log(Object.fromEntries(formData));
-
-  if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
-    setTimeout(() => {
-      openPopupSentMsg();
-      lockWrapper();
-      e.target.reset();
-    }, 2000);
+    }, 3000);
   }
 });
 
@@ -539,168 +444,9 @@ mainForm.addEventListener("submit", function (e) {
  * Send Mail.
  */
 
-document.addEventListener("DOMContentLoaded", function () {
-  // const submit = document.getElementById("submit");
-  // const submit_02 = document.getElementById("submit_02");
-  //---------------------------------------------
-  /**
-   * Added popup
-   */
-  // const popup_username = document.querySelector(".username");
-  // const popup_username_02 = document.querySelector(".username_02");
-  // const popup_email = document.querySelector(".popup_email");
-  // const popup_email_02 = document.querySelector(".popup_email_02");
-  // const popup_phone = document.querySelector(".popup_phone");
-  // const popup_phone_02 = document.querySelector(".popup_phone_02");
-  // const popup_company = document.querySelector(".popup_company");
-  // const popup_company_02 = document.querySelector(".popup_company_02");
-  // phone.addEventListener("blur", () => {
-  //   let inputValue = phone.value;
-  //   if (inputValue.length < 3) {
-  //     /**
-  //      * Added red border input phone
-  //      */
-  //     phone.classList.add("border__error");
-  //     phone.classList.add("focus:border-borderBtn");
-  //     phone.classList.add("_error");
-  //     popup_phone.classList.replace("hidden", "block");
-  //     popup_phone.textContent = "The phone is in the wrong format";
-  //     return;
-  //   } else {
-  //     popup_phone.textContent = "";
-  //     popup_phone.classList.remove("block");
-  //     popup_phone.classList.add("hidden");
-  //     /**
-  //      * Delete red border input phone
-  //      */
-  //     phone.classList.remove("border__error");
-  //     phone.classList.remove("focus:border-borderBtn");
-  //     phone.classList.remove("border-borderBtn");
-  //     phone.classList.remove("_error");
-  //   }
-  // });
-  // phone_02.addEventListener("blur", () => {
-  //   let inputValue = phone_02.value;
-  //   if (inputValue.length < 3) {
-  //     /**
-  //      * Added red border input phone_02
-  //      */
-  //     phone_02.classList.add("border__error");
-  //     phone_02.classList.add("focus:border-borderBtn");
-  //     phone_02.classList.add("_error");
-  //     popup_phone_02.classList.replace("hidden", "block");
-  //     popup_phone_02.textContent = "The phone is in the wrong format";
-  //     return;
-  //   } else {
-  //     popup_phone_02.textContent = "";
-  //     popup_phone_02.classList.remove("block");
-  //     popup_phone_02.classList.add("hidden");
-  //     /**
-  //      * Delete red border input phone
-  //      */
-  //     phone_02.classList.remove("border__error");
-  //     phone_02.classList.remove("focus:border-borderBtn");
-  //     phone_02.classList.remove("border-borderBtn");
-  //     phone_02.classList.remove("_error");
-  //   }
-  // });
-  // phone_02.addEventListener("blur", validatePhone);
-  /*===============================
-  BEGIN: form-02  before footer
-  ===============================*/
-  // dynamicForm.addEventListener("submit", (e) => {
-  //   e.preventDefault();
-  //   if (
-  //     username.value.trim() == "" ||
-  //     email.value.trim() == "" ||
-  //     phone.value.trim() == "" ||
-  //     company.value.trim() == ""
-  //   ) {
-  //     return;
-  //   } else {
-  //     // sendMail();
-  //     openPopupSentMsg();
-  //     closeDynamicForm();
-  //     const formData = new FormData(dynamicForm);
-  //     console.log(Object.fromEntries(formData));
-  //     dynamicForm.reset();
-  //     // document.getElementById("username").value = "";
-  //     // document.getElementById("email").value = "";
-  //     // document.getElementById("phone").value = "";
-  //     // document.getElementById("company").value = "";
-  //     // document.getElementById("message").value = "";
-  //     // document.getElementById("choise").value = "";
-  //     // alert('Yuor message sent successfully');
-  //   }
-  // });
-  // mainForm.addEventListener("submit", (e) => {
-  //   e.preventDefault();
-  //   if (
-  //     username_02.value.trim() == "" ||
-  //     email_02.value.trim() == "" ||
-  //     phone_02.value.trim() == "" ||
-  //     company_02.value.trim() == ""
-  //   ) {
-  //     return;
-  //   } else {
-  //     // sendMail();
-  //     openPopupSentMsg();
-  //     closeDynamicForm();
-  //     const formData = new FormData(mainForm);
-  //     console.log(Object.fromEntries(formData));
-  //     mainForm.reset();
-  //     // document.getElementById("username").value = "";
-  //     // document.getElementById("email").value = "";
-  //     // document.getElementById("phone").value = "";
-  //     // document.getElementById("company").value = "";
-  //     // document.getElementById("message").value = "";
-  //     // document.getElementById("choise").value = "";
-  //     // alert('Yuor message sent successfully');
-  //   }
-  // });
-  /*===========================================*/
-  /**
-   * Submit form -02.
-   */
-  /*===========================================*/
-  // submit_02.addEventListener("click", (e) => {
-  //   //=======28.02.2023
-  //   e.preventDefault();
-  //   /**
-  //    * Delete popup form_02.
-  //    */
-  //   popup_name_02.textContent = "";
-  //   popup_name_02.classList.remove("block");
-  //   popup_name_02.classList.add("hidden");
-  //   /**
-  //    * Delete popup form_02.
-  //    */
-  //   popup_02.textContent = "";
-  //   popup_02.classList.remove("block");
-  //   popup_02.classList.add("hidden");
-  //   // console.log(phone.value);
-  //   if (
-  //     name_02.value == "" ||
-  //     email_02.value == "" ||
-  //     phone_02.value == "" ||
-  //     company_02.value == "" ||
-  //     message_02.value == ""
-  //   ) {
-  //     // alert("Please fill in all fields");
-  //     return false;
-  //   } else {
-  //     // sendMail();
-  //     openPopupSentMsg();
-  //     document.getElementById("name_02").value = "";
-  //     document.getElementById("email_02").value = "";
-  //     document.getElementById("phone_02").value = "";
-  //     document.getElementById("company_02").value = "";
-  //     document.getElementById("message_02").value = "";
-  //     document.getElementById("choise_02").value = "";
-  //     // alert('Yuor message sent successfully');
-  //   }
-  // });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+
+// });
 
 // function sendMail() {
 //   var params = {
@@ -815,34 +561,9 @@ function toggleBtn() {
     modalBtn.classList.add("_open");
   }
 }
-// const modalBtn = document.getElementById("btn-modal-form");
-// modalBtn.addEventListener("click", toggleBtn);
-// const closeBtn = document.getElementById("close-modal-form");
-// closeBtn.addEventListener("click", toggleBtn);
-// const modalForm = document.getElementById("modalForm");
-// modalForm.addEventListener("submit", handleFormSubmit);
-// if (window.location.href.split("#")[1] === "modal-form") {
-//   toggleBtn();
-// }
 
-// _req викорисовуєтьс для обов'язкових полів
-// _error використовується для підсвічування помилок
-
-/**
- * Closed consent-popup cookies.
- */
-
-// function closedConsentPopup (){
-//   const consentPopup = document.getElementById('consent-popup');        //=====28.02.2023
-//   const accept = document.getElementById('accept');
-
-//   accept.addEventListener('click', (e) =>{
-//       consentPopup.classList.add('opacity-0')
-//      })
-
-// }
-// closedConsentPopup ()
-
-accept.addEventListener("click", () => {
+///--------- TODO logic
+function handleCookie() {
   cookies.style.display = "none";
-});
+}
+accept.addEventListener("click", handleCookie);
