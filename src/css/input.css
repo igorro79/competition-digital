@@ -90,6 +90,9 @@ body {
 .big-red-btn#btn-close-popup-forms {
   @apply relative mx-auto;
 }
+.big-red-btn#btnDiscuss {
+  @apply absolute;
+}
 
 /* =================  SWIPER ================*/
 
