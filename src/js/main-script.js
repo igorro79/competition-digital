@@ -35,7 +35,7 @@ const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.getElementById("submit");
 const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-const upButton = document.getElementById("upButton");
+
 
 //=============== functions ===============
 
@@ -158,11 +158,7 @@ window.addEventListener("resize", () => {
     hideMainHeader();
   }
 });
-// -------- btn to top ----------
-upButton.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+
 
 closeMenuTablet.addEventListener("click", burgerClose);
 burger.addEventListener("click", () => {
