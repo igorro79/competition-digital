@@ -156,11 +156,6 @@ window.addEventListener("resize", () => {
     hideMainHeader();
   }
 });
-// -------- btn to top ----------
-// upButton.addEventListener("click", () => {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// });
 
 closeMenuTablet.addEventListener("click", burgerClose);
 burger.addEventListener("click", () => {
