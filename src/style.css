@@ -7154,6 +7154,18 @@ Styles borders  btn
     margin-bottom: 14px;
   }
 
+  .xl\:ml-\[431px\]{
+    margin-left: 431px;
+  }
+
+  .xl\:mb-\[81px\]{
+    margin-bottom: 81px;
+  }
+
+  .xl\:mb-\[44px\]{
+    margin-bottom: 44px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -7435,6 +7447,10 @@ Styles borders  btn
     max-width: 100%;
   }
 
+  .xl\:max-w-\[330px\]{
+    max-width: 330px;
+  }
+
   .xl\:flex-auto{
     flex: 1 1 auto;
   }
@@ -7685,6 +7701,14 @@ Styles borders  btn
 
   .xl\:gap-0{
     gap: 0px;
+  }
+
+  .xl\:gap-\[173px\]{
+    gap: 173px;
+  }
+
+  .xl\:gap-\[21px\]{
+    gap: 21px;
   }
 
   .xl\:gap-x-\[20px\]{
@@ -8179,6 +8203,10 @@ Styles borders  btn
     padding-bottom: 72px;
   }
 
+  .xl\:pb-\[90px\]{
+    padding-bottom: 90px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -8305,6 +8333,10 @@ Styles borders  btn
 
   .xl\:text-\[15px\]{
     font-size: 15px;
+  }
+
+  .xl\:text-\[21px\]{
+    font-size: 21px;
   }
 
   .xl\:font-semibold{
@@ -8589,6 +8621,18 @@ Styles borders  btn
     margin-bottom: 28px;
   }
 
+  .\32xl\:mb-\[123px\]{
+    margin-bottom: 123px;
+  }
+
+  .\32xl\:ml-auto{
+    margin-left: auto;
+  }
+
+  .\32xl\:mb-\[61px\]{
+    margin-bottom: 61px;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -8730,6 +8774,10 @@ Styles borders  btn
     max-width: 90%;
   }
 
+  .\32xl\:max-w-\[350px\]{
+    max-width: 350px;
+  }
+
   .\32xl\:basis-\[754px\]{
     flex-basis: 754px;
   }
@@ -8812,6 +8860,22 @@ Styles borders  btn
 
   .\32xl\:gap-\[156px\]{
     gap: 156px;
+  }
+
+  .\32xl\:gap-0{
+    gap: 0px;
+  }
+
+  .\32xl\:gap-\[31px\]{
+    gap: 31px;
+  }
+
+  .\32xl\:gap-\[0px\]{
+    gap: 0px;
+  }
+
+  .\32xl\:gap-\[46px\]{
+    gap: 46px;
   }
 
   .\32xl\:gap-x-\[32px\]{
@@ -9105,6 +9169,22 @@ Styles borders  btn
 
   .\32xl\:pb-\[133px\]{
     padding-bottom: 133px;
+  }
+
+  .\32xl\:pb-\[102px\]{
+    padding-bottom: 102px;
+  }
+
+  .\32xl\:pt-\[81px\]{
+    padding-top: 81px;
+  }
+
+  .\32xl\:pb-0{
+    padding-bottom: 0px;
+  }
+
+  .\32xl\:pb-\[150px\]{
+    padding-bottom: 150px;
   }
 
   .\32xl\:indent-\[23px\]{
