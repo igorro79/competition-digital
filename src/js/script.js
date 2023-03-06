@@ -381,11 +381,13 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const company = document.getElementById("company");
+// const upload = document.getElementById("upload");
 
 const username_02 = document.getElementById("username_02");
 const email_02 = document.getElementById("email_02");
 const phone_02 = document.getElementById("phone_02");
 const company_02 = document.getElementById("company_02");
+// const upload_02 = document.getElementById("upload_02");
 
 //Show input error messages
 function showError(input, message) {
@@ -402,7 +404,7 @@ function showSucces(input) {
 }
 
 function checkUsernameBlur(e) {
-  if (e.target.value.trim().length >= 2 && e.target.value.trim().length < 50) {
+  if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
     showSucces(e.target);
     return;
   }
@@ -421,14 +423,16 @@ function checkEmail(input) {
     showSucces(input);
     return true;
   }
-  if (e.target.value === "") {
-    showError(e.target, `Email field is required`);
+  if (input.value === "") {
+    showError(input, `Email field is required`);
     return false;
   } else {
     showError(input, "Phone is not valid");
     return false;
   }
 }
+//check email is valid on blur
+
 function checkEmailBlur(e) {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -447,13 +451,6 @@ function checkEmailBlur(e) {
 
 function checkPhone(input) {
   if (input.value.trim().length >= 10 && input.value.trim().length < 15) {
-    console.log(
-      "🚀 ~ file: script.js:450 ~ checkPhone ~ input.value.trim().length:",
-      input.value.trim().length
-    );
-    console.log(
-      input.value.trim().length >= 10 && input.value.trim().length < 15
-    );
     showSucces(input);
     return true;
   }
@@ -480,7 +477,7 @@ function checkPhoneBlur(e) {
 }
 
 function checkCompanyBlur(e) {
-  if (e.target.value.trim().length >= 2 && e.target.value.trim().length < 50) {
+  if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
     showSucces(e.target);
     return;
   }
@@ -532,7 +529,7 @@ dynamicForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const submitBtn = e.target.querySelector("button[type=submit]");
 
-  const userLengthValid = checkLength(username, 2, 30);
+  const userLengthValid = checkLength(username, 3, 30);
   const companyLengthValid = checkLength(company, 3, 30);
   const emailValid = checkEmail(email);
   const phoneValid = checkPhone(phone);
@@ -543,8 +540,8 @@ dynamicForm.addEventListener("submit", function (e) {
   if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
     toggleSpinner(submitBtn);
     setTimeout(() => {
+      // if AJAX response OK run below
       toggleSpinner(submitBtn);
-
       openPopupSentMsg();
       closeDynamicForm();
       e.target.reset();
@@ -570,8 +567,8 @@ mainForm.addEventListener("submit", function (e) {
     toggleSpinner(submitBtn);
 
     setTimeout(() => {
+      // if AJAX response OK run below
       toggleSpinner(submitBtn);
-
       openPopupSentMsg();
       lockWrapper();
       e.target.reset();
