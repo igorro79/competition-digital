@@ -4888,6 +4888,10 @@ Styles borders  btn
   stroke: #000;
 }
 
+.group:hover .group-hover\:stroke-middleGrey{
+  stroke: #919191;
+}
+
 .group\/arrow:hover .group-hover\/arrow\:text-lightDarkGrey{
   --tw-text-opacity: 1;
   color: rgb(144 144 144 / var(--tw-text-opacity));
