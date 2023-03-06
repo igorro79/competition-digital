@@ -35,8 +35,6 @@ const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.getElementById("submit");
 const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-const upButton = document.getElementById("upButton");
-
 //=============== functions ===============
 
 function lockWrapper() {
@@ -159,10 +157,10 @@ window.addEventListener("resize", () => {
   }
 });
 // -------- btn to top ----------
-upButton.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+// upButton.addEventListener("click", () => {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// });
 
 closeMenuTablet.addEventListener("click", burgerClose);
 burger.addEventListener("click", () => {

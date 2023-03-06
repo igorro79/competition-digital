@@ -4884,12 +4884,12 @@ Styles borders  btn
   stroke: #FF304D;
 }
 
-.group:hover .group-hover\:stroke-black{
-  stroke: #000;
-}
-
 .group:hover .group-hover\:stroke-middleGrey{
   stroke: #919191;
+}
+
+.group:hover .group-hover\:stroke-black{
+  stroke: #000;
 }
 
 .group\/arrow:hover .group-hover\/arrow\:text-lightDarkGrey{
