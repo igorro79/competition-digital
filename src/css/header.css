@@ -17,7 +17,7 @@ BEGIN: wrapper
   /* h-screen   igor remove*/
   .wrapper {
     @apply relative m-auto flex  max-w-full flex-col 
-      pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
+      pt-[var(--header-h)] lg:pt-[var(--header-h-xl)] xl:pt-[var(--header-h-xl)];
   }
 
   /*================================================ 

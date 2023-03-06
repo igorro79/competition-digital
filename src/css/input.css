@@ -43,8 +43,8 @@ BEGIN: html  scroll
 /* header height */
 :root {
   --header-h: 77px;
-  --header-h-md: 87px;
-  --header-h-lg: 90px;
+  --header-h-lg: 87px;
+  --header-h-xl: 90px;
 
   /* scrollbar colors firefox */
   --primary: #171717;
@@ -65,7 +65,7 @@ body {
 }
 
 .wrapper {
-  @apply relative m-auto flex  max-w-full flex-col  pt-[var(--header-h)] lg:pt-[var(--header-h-lg)] xl:pt-[var(--header-h-xl)];
+  @apply relative m-auto flex  max-w-full flex-col  pt-[var(--header-h)] lg:pt-[var(--header-h-xl)] xl:pt-[var(--header-h-xl)];
 }
 
 .lock-wrapper {
@@ -214,4 +214,16 @@ Styles borders  btn
 .next-case__title-right::after {
   @apply xl:absolute  xl:top-[-35px]
   xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
+}
+@layer components {
+  /*============== 404 page =============== */
+  .nopage__button:hover ~ div {
+    @apply text-main;
+  }
+  .nopage__button:hover + div {
+    @apply opacity-100;
+  }
+  .nopage__button:hover ~ div:last-child {
+    @apply opacity-0;
+  }
 }
