@@ -13,9 +13,6 @@ module.exports = {
       padding: "20px",
     },
     screens: {
-      // sm: "360px",
-      // //=> @media (min-width: 360px) { ... }
-
       sm: "570px",
       //=> @media (min-width: 360px) { ... }
 
@@ -58,9 +55,6 @@ module.exports = {
         "1/3": "33.33333%",
         "2/3": "66.66666%",
       },
-      // aspectRatio: {
-      //   '4/3': '4 / 3',
-      // },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
