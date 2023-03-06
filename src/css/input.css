@@ -12,9 +12,13 @@
 
 @import "./footer.css";
 
+/*==========================================
+BEGI: case-page
+==========================================*/
+
 /*@import "./cases.css";*/
 
-/*@import "./case-page.css";*/
+@import "./case-page.css";
 
 /*
 @import "./services-page.css";

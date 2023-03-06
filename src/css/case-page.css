@@ -8,14 +8,18 @@
 BEGIN: gradient-hero  
 ===================*/
 
+/*  before:top-[74px]
+   before:h-[212px]
+  before:w-[212px]  06.03.2023*/
 .red-gradient-hero {
   @apply relative overflow-hidden 
   to-transparent
   before:absolute
    before:right-0 
-   before:top-[74px]
-   before:h-[212px]
-  before:w-[212px] before:translate-x-[50%]
+   
+   before:top-[100px]
+   before:h-[180px]
+  before:w-[180px] before:translate-x-[50%]
   before:bg-gradient-radial
   before:from-main before:blur-[45px] before:content-['']
 
@@ -134,7 +138,7 @@ img-desc-
   ==================================*/
 
 .border__top {
-  @apply border-t-borderBottom border-t-[1px];
+  @apply border-t-[1px] border-t-middleGrey;
 }
 
 .border__left {
@@ -155,6 +159,6 @@ img-desc-
 }
 
 .border__error {
-  @apply border-borderBtn hover:border-borderBtn rounded-full
-    border-[1px];
+  @apply rounded-full border-[1px] border-main
+    hover:border-main;
 }
