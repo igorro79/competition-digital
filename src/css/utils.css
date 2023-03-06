@@ -9,15 +9,12 @@ BEGIN: html  scroll
   *::selection {
     @apply bg-main;
   }
+
   .header__contact-body::-webkit-scrollbar,
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar {
     @apply w-[10px]  bg-dark;
   }
-
-  /* {
-    @apply h-[80px]  rounded-[20px]  bg-main;
-  }  */
 
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar-thumb,
@@ -45,10 +42,7 @@ BEGIN: html  scroll
   @apply relative mx-auto;
 }
 
-/* .swiper {
-  width: 100%;
-  height: 100%;
-} */
+/* =================  SWIPER ================*/
 .blogSwiper .swiper-slide {
   @apply w-auto;
 }

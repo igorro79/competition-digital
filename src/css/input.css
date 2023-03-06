@@ -2,31 +2,19 @@
 
 @import "./header.css";
 @import "./hero.css";
-
 @import "./cases.css";
 @import "./services.css";
-
 @import "./faq.css";
-
 @import "./form.css";
-
 @import "./footer.css";
 
 /*@import "./cases.css";*/
-
 /*@import "./case-page.css";*/
-
-/*
-@import "./services-page.css";
-
+/*@import "./services-page.css";
 @import "./blog-page.css";
-
 @import "./about-page.css";
-
-
-
-
 @import "./contacts-page.css";*/
+
 @import "./footer.css";
 @import "./utils.css";
 
@@ -217,8 +205,6 @@ btn-hover-overlay-red
 google-review
 ====================================== */
 /*bg-bgColor*/
-
-
 
 /* ====================================
     |
