@@ -7114,6 +7114,10 @@ Styles borders  btn
     margin-bottom: 29px;
   }
 
+  .xl\:mb-\[20px\]{
+    margin-bottom: 20px;
+  }
+
   .xl\:mb-\[28px\]{
     margin-bottom: 28px;
   }
@@ -7148,10 +7152,6 @@ Styles borders  btn
 
   .xl\:mb-\[14px\]{
     margin-bottom: 14px;
-  }
-
-  .xl\:mb-\[20px\]{
-    margin-bottom: 20px;
   }
 
   .xl\:block{
@@ -7288,6 +7288,18 @@ Styles borders  btn
 
   .xl\:w-\[245px\]{
     width: 245px;
+  }
+
+  .xl\:w-\[350px\]{
+    width: 350px;
+  }
+
+  .xl\:w-\[305px\]{
+    width: 305px;
+  }
+
+  .xl\:w-\[252px\]{
+    width: 252px;
   }
 
   .xl\:min-w-\[23\%\]{
@@ -7635,20 +7647,24 @@ Styles borders  btn
     gap: 268px;
   }
 
-  .xl\:gap-\[319px\]{
-    gap: 319px;
+  .xl\:gap-\[9px\]{
+    gap: 9px;
   }
 
-  .xl\:gap-\[77px\]{
-    gap: 77px;
+  .xl\:gap-\[273px\]{
+    gap: 273px;
   }
 
-  .xl\:gap-\[88px\]{
-    gap: 88px;
+  .xl\:gap-\[51px\]{
+    gap: 51px;
   }
 
-  .xl\:gap-\[156px\]{
-    gap: 156px;
+  .xl\:gap-\[52px\]{
+    gap: 52px;
+  }
+
+  .xl\:gap-\[99px\]{
+    gap: 99px;
   }
 
   .xl\:gap-\[31px\]{
@@ -7669,26 +7685,6 @@ Styles borders  btn
 
   .xl\:gap-0{
     gap: 0px;
-  }
-
-  .xl\:gap-\[9px\]{
-    gap: 9px;
-  }
-
-  .xl\:gap-\[273px\]{
-    gap: 273px;
-  }
-
-  .xl\:gap-\[51px\]{
-    gap: 51px;
-  }
-
-  .xl\:gap-\[52px\]{
-    gap: 52px;
-  }
-
-  .xl\:gap-\[99px\]{
-    gap: 99px;
   }
 
   .xl\:gap-x-\[20px\]{
@@ -8091,8 +8087,8 @@ Styles borders  btn
     padding-top: 117px;
   }
 
-  .xl\:pb-\[47px\]{
-    padding-bottom: 47px;
+  .xl\:pb-\[139px\]{
+    padding-bottom: 139px;
   }
 
   .xl\:pb-\[57px\]{
@@ -8111,20 +8107,12 @@ Styles borders  btn
     padding-top: 5px;
   }
 
-  .xl\:pt-\[30px\]{
-    padding-top: 30px;
+  .xl\:pt-\[55px\]{
+    padding-top: 55px;
   }
 
-  .xl\:pt-\[135px\]{
-    padding-top: 135px;
-  }
-
-  .xl\:pt-\[26px\]{
-    padding-top: 26px;
-  }
-
-  .xl\:pt-\[15px\]{
-    padding-top: 15px;
+  .xl\:pt-\[18px\]{
+    padding-top: 18px;
   }
 
   .xl\:pb-\[133px\]{
@@ -8179,16 +8167,16 @@ Styles borders  btn
     padding-left: 22px;
   }
 
-  .xl\:pt-\[55px\]{
-    padding-top: 55px;
+  .xl\:pt-\[38px\]{
+    padding-top: 38px;
   }
 
-  .xl\:pt-\[18px\]{
-    padding-top: 18px;
+  .xl\:pt-\[0px\]{
+    padding-top: 0px;
   }
 
-  .xl\:pb-\[139px\]{
-    padding-bottom: 139px;
+  .xl\:pb-\[72px\]{
+    padding-bottom: 72px;
   }
 
   .xl\:indent-\[138px\]{
@@ -8307,16 +8295,12 @@ Styles borders  btn
     font-size: 60px;
   }
 
-  .xl\:text-\[120px\]{
-    font-size: 120px;
+  .xl\:text-\[90px\]{
+    font-size: 90px;
   }
 
   .xl\:text-\[24px\]{
     font-size: 24px;
-  }
-
-  .xl\:text-\[90px\]{
-    font-size: 90px;
   }
 
   .xl\:text-\[15px\]{
@@ -8601,6 +8585,10 @@ Styles borders  btn
     margin-bottom: 29px;
   }
 
+  .\32xl\:mb-\[28px\]{
+    margin-bottom: 28px;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -8643,6 +8631,14 @@ Styles borders  btn
 
   .\32xl\:w-\[99\%\]{
     width: 99%;
+  }
+
+  .\32xl\:w-\[432px\]{
+    width: 432px;
+  }
+
+  .\32xl\:w-\[245px\]{
+    width: 245px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -8722,12 +8718,16 @@ Styles borders  btn
     max-width: 380px;
   }
 
+  .\32xl\:max-w-\[60\%\]{
+    max-width: 60%;
+  }
+
   .\32xl\:max-w-\[1400px\]{
     max-width: 1400px;
   }
 
-  .\32xl\:max-w-\[60\%\]{
-    max-width: 60%;
+  .\32xl\:max-w-\[90\%\]{
+    max-width: 90%;
   }
 
   .\32xl\:basis-\[754px\]{
@@ -8817,6 +8817,11 @@ Styles borders  btn
   .\32xl\:gap-x-\[32px\]{
     -moz-column-gap: 32px;
          column-gap: 32px;
+  }
+
+  .\32xl\:gap-x-\[53px\]{
+    -moz-column-gap: 53px;
+         column-gap: 53px;
   }
 
   .\32xl\:border-b-0{
@@ -9058,16 +9063,16 @@ Styles borders  btn
     padding-top: 5px;
   }
 
-  .\32xl\:pb-\[268px\]{
-    padding-bottom: 268px;
-  }
-
   .\32xl\:pb-\[30px\]{
     padding-bottom: 30px;
   }
 
   .\32xl\:pt-\[30px\]{
     padding-top: 30px;
+  }
+
+  .\32xl\:pt-\[135px\]{
+    padding-top: 135px;
   }
 
   .\32xl\:pt-\[26px\]{
@@ -9078,12 +9083,28 @@ Styles borders  btn
     padding-top: 15px;
   }
 
-  .\32xl\:pt-\[55px\]{
-    padding-top: 55px;
+  .\32xl\:pb-\[268px\]{
+    padding-bottom: 268px;
   }
 
-  .\32xl\:pt-\[135px\]{
-    padding-top: 135px;
+  .\32xl\:pt-\[14px\]{
+    padding-top: 14px;
+  }
+
+  .\32xl\:pb-\[108px\]{
+    padding-bottom: 108px;
+  }
+
+  .\32xl\:pt-0{
+    padding-top: 0px;
+  }
+
+  .\32xl\:pt-\[233px\]{
+    padding-top: 233px;
+  }
+
+  .\32xl\:pb-\[133px\]{
+    padding-bottom: 133px;
   }
 
   .\32xl\:indent-\[23px\]{
