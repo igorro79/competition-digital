@@ -679,6 +679,16 @@ html{
   scroll-behavior: smooth;
 }
 
+*::-moz-selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
+*::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
 .header__contact-body::-webkit-scrollbar,
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar{
