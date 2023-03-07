@@ -1,17 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 @import "./header.css";
-@import "./hero.css";
-@import "./cases.css";
-@import "./services.css";
-@import "./faq.css";
-@import "./form.css";
-@import "./footer.css";
+
+@import "./index-page.css";
+/*@import "./hero.css";*/
+/*@import "./cases.css";*/
+/*@import "./services.css";*/
+/*@import "./faq.css";*/
+/*@import "./form.css";*/
+
 @import "./footer.css";
 
+/*==========================================
+BEGI: case-page
+==========================================*/
+
 /*@import "./cases.css";*/
-/*@import "./case-page.css";*/
-/*@import "./services-page.css";
+
+@import "./case-page.css";
+
+/*
+@import "./services-page.css";
+
+
 @import "./blog-page.css";
 @import "./about-page.css";
 @import "./contacts-page.css";*/
@@ -19,7 +30,7 @@
 @tailwind base;
 @layer base {
   *::selection {
-    @apply bg-main;
+    @apply bg-main text-white;
   }
 
   .header__contact-body::-webkit-scrollbar,
