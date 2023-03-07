@@ -17,17 +17,17 @@ BEGIN: gradient-hero
   /*  before:top-[74px]
    before:h-[212px]
   before:w-[212px]  06.03.2023*/
-  .red-gradient-hero {
+  .red-gradient__hero-service {
     @apply relative overflow-hidden 
   to-transparent
   before:absolute
    before:right-0 
    
-   before:top-[100px]
-   before:h-[180px]
-  before:w-[180px] before:translate-x-[50%]
+   before:top-[234px]
+   before:h-[253px]
+  before:w-[253px] before:translate-x-[50%]
   before:bg-gradient-radial
-  before:from-main before:blur-[45px] before:content-['']
+  before:from-main before:blur-[60px] before:content-['']
 
   lg:before:top-[24px]
   lg:before:h-[322px] lg:before:w-[322px]

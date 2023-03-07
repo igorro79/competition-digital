@@ -172,6 +172,12 @@ Styles borders  btn
         text-base font-bold uppercase  leading-5 text-white;
   }
 
+  .btn__red-service {
+    @apply flex flex-row items-center justify-center
+        gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-[13px] px-[28px]
+        text-sm font-bold uppercase  leading-[171%] text-white;
+  }
+
   /* ====================================
     |
     |      BEGIN:   CASES PAGE
