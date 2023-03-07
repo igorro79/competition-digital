@@ -6861,6 +6861,10 @@ Styles borders  btn
     left: 30px;
   }
 
+  .xl\:right-\[-28px\]{
+    right: -28px;
+  }
+
   .xl\:order-3{
     order: 3;
   }
@@ -8187,6 +8191,10 @@ Styles borders  btn
     padding-left: 22px;
   }
 
+  .xl\:pl-\[54px\]{
+    padding-left: 54px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -8677,6 +8685,10 @@ Styles borders  btn
     width: 432px;
   }
 
+  .\32xl\:w-\[395px\]{
+    width: 395px;
+  }
+
   .\32xl\:w-\[245px\]{
     width: 245px;
   }
@@ -8687,6 +8699,10 @@ Styles borders  btn
 
   .\32xl\:w-\[22px\]{
     width: 22px;
+  }
+
+  .\32xl\:w-\[377px\]{
+    width: 377px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -9237,6 +9253,10 @@ Styles borders  btn
 
   .\32xl\:pl-\[4px\]{
     padding-left: 4px;
+  }
+
+  .\32xl\:pl-\[54px\]{
+    padding-left: 54px;
   }
 
   .\32xl\:indent-\[23px\]{
