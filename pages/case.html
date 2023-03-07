@@ -2777,18 +2777,26 @@
 
       <!-- BEGIN: 19-section-next-case -->
       <section
-        class="next-case bg-light text-mainTextDark dark:bg-dark dark:text-white"
+        class="next-case bg-light text-mainTextDark dark:bg-dark dark:text-white
+        border__top pt-[20px] pb-[68px] 
+        lg:pt-[35px] lg:pb-[104px] 
+        xl:pb-[85px] xl:pt-[21px]
+        2xl:pb-[203px]  2xl:pt-[35px] 
+        "
       >
         <div
           class="next-case__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
         >
           <!-- wrapper -->
+          <!--   -->
           <div
-            class="next-case__items border__top flex flex-col pt-[20px] pb-[68px] lg:flex-row lg:flex-wrap lg:pt-[35px] lg:pb-[104px]
-            xl:flex-nowrap xl:justify-between xl:gap-[69px] xl:pb-[203px] xl:pt-[21px] 
-             2xl:flex-nowrap 2xl:justify-between 2xl:gap-[40px] 2xl:pb-[203px]  2xl:pt-[35px]"
+            class="next-case__items  flex flex-col  lg:flex-row lg:flex-wrap 
+            xl:flex-nowrap xl:justify-between  
+            xl:gap-[69px] 2xl:gap-[40px]
+             2xl:flex-nowrap 2xl:justify-between  "
           >
             <!-- block-01 -->
+            <!--  -->
             <div
               class="next-case__title mb-[30px] xl:relative xl:mb-0 xl:min-w-[23%]"
             >
@@ -2800,8 +2808,9 @@
             </div>
 
             <!-- block-02  wrapper-text -->
+            <!-- next-case__title-right -->
             <div
-              class="next-case__card next-case__title-right order-2 
+              class="next-case__card  next-case__title-right  order-2 
               lg:ml-auto lg:max-w-[500px] lg:flex-auto 
               xl:relative xl:m-0 xl:flex xl:flex-col xl:pt-[25px] xl:pl-[25px] xl:max-w-[375px]
               2xl:max-w-[500px]  2xl:pt-[29px] 2xl:pl-[4px]"
@@ -2809,9 +2818,39 @@
               <div
                 class="next-case__card-title mb-[25px] flex items-center justify-between xl:mb-[22px] 2xl:mb-[30px]"
               >
-                <a href="#"></a>
+
+              <!-- TEST: 02 -->
+            <a href="#" aria-label="cases card" class="  cards__link group/text group">
+              <h3 class="cards__title transition ease-in group-hover/text:text-main">
+                HR agency: full range of marketing services to get
+                international
+              </h3>
+            
+              <!-- svg -->
+            
+              <div
+                class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px]
+                 transition-all ease-in group-hover/text:bg-main 
+                 lg:mt-[-16px] lg:p-[23px] xl:relative xl:top-[-6px] xl:right-[-32px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8">
+                <svg
+                  class="h-[11px] w-[11px] fill-black 
+                  transition-all ease-in group-hover/text:fill-white dark:fill-white
+                   lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
+                  width="22" height="22" viewBox="0 0 22 22">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.8545 3.6H2.20003V0H22V19.8H18.4V6.14559L3.47283 21.0728L0.927246 18.5272L15.8545 3.6Z"></path>
+                </svg>
+              </div>
+            </a>
+            <!-- TEST: 02 -->
+
+                <a href="#" aria-label="cases card" class=" hidden cards__link group/text group">
                 <h3
-                  class="next-span-title text-[20px] font-bold leading-[130%] lg:text-[24px] lg:leading-[110%] xl:text-[21px] 2xl:text-[32px] xl:leading-[120%]"
+                  class="next-span-title text-[20px] font-bold leading-[130%] lg:text-[24px] lg:leading-[110%]
+                   xl:text-[21px]
+                    2xl:text-[32px] xl:leading-[120%]
+                    
+                    transition ease-in group-hover/text:text-main"
                 >
                   HR agency: full range of marketing services to get
                   international
@@ -2819,13 +2858,18 @@
 
                 <!-- svg -->
                 <div
-                  class="next-arrow mt-[-63px] lg:mt-[-34px] xl:mt-[-59px] xl:mr-[18px]
-                  2xl:mt-[-94px] 2xl:mr-[-35px]"
+                  class="next-arrow mt-[-63px] lg:mt-[-34px] xl:mt-[-59px] xl:mr-[-2px]
+                  2xl:mt-[-94px] 2xl:mr-[-35px]
+                  
+                  rounded-full p-[13.5px]
+                 transition-all ease-in group-hover/text:bg-main "
                 >
                   <svg
                     class="fill-dark h-[16px] w-[16px] dark:fill-white lg:h-[22px] lg:w-[22px]
                     xl:h-[16px] xl:w-[16px]
-                    2xl:h-[22px] 2xl:w-[22px]"
+                    2xl:h-[22px] 2xl:w-[22px]
+                    
+                     transition-all ease-in group-hover/text:fill-white "
                     width="22"
                     height="22"
                     viewBox="0 0 22 22"
@@ -2840,6 +2884,7 @@
                     />
                   </svg>
                 </div>
+                </a>
               </div>
 
               <p
