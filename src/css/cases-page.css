@@ -34,8 +34,11 @@ img-desc-
 
   /* gap-[16px] */
   .cases-page__img-desc {
-    @apply absolute top-0 flex flex-col
-    py-[23px] px-[26px];
+    @apply absolute top-0 z-[1] flex flex-col py-[23px]
+    px-[26px] transition-all;
+  }
+  .cases-page__img-desc:hover {
+    @apply text-main;
   }
 
   .cases-page__img-desc_wrap {

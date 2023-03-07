@@ -1040,9 +1040,11 @@
                     <!-- card title link -->
                     <a
                       href="#"
-                      class="group relative flex text-2xl font-bold leading-[1.2] lg:pt-0 lg:text-[28px] xl:text-[42px] xl:leading-[46px]"
+                      class="group relative flex w-full text-2xl font-bold leading-[1.2] lg:pt-0 lg:text-[28px] xl:text-[42px] xl:leading-[46px]"
                     >
-                      <h2 class="group-hover:text-main lg:w-11/12">
+                      <h2
+                        class="cases-page__active-title group-hover:text-main lg:w-11/12"
+                      >
                         Gambling vs. Marketing: when advertising boosts betting
                         revenue
                       </h2>
@@ -1075,63 +1077,68 @@
                       ></span>
                       <span>design</span>
                     </p>
-                    <div
-                      class="relative mb-7 overflow-hidden lg:row-span-2 lg:mb-0"
+
+                    <a
+                      href="#"
+                      class="group mb-7 w-full lg:row-span-2 lg:mb-0 lg:flex lg:basis-1/2 lg:flex-col xl:basis-[48%]"
+                      aria-label="cases card"
                     >
-                      <!-- text-above-image -->
-                      <div class="cases-page__img-desc">
-                        <div class="cases-page__img-desc_wrap">
-                          <div class="cases-page__wrap-text">
-                            <p class="cases-page__img-desc_big">7X</p>
-                            <div class="cases-page__wrap-text_inner">
-                              <p class="cases-page__img-desc_small">
-                                cost of attracting
-                              </p>
-                              <p class="cases-page__img-desc_small">
-                                a customer
-                              </p>
+                      <div class="relative overflow-hidden">
+                        <!-- text-above-image -->
+                        <div class="cases-page__img-desc group-hover:scale-105">
+                          <div class="cases-page__img-desc_wrap">
+                            <div class="cases-page__wrap-text">
+                              <p class="cases-page__img-desc_big">7X</p>
+                              <div class="cases-page__wrap-text_inner">
+                                <p class="cases-page__img-desc_small">
+                                  cost of attracting
+                                </p>
+                                <p class="cases-page__img-desc_small">
+                                  a customer
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="cases-page__wrap-text_gap">
-                          <p class="cases-page__img-desc_small">CR</p>
-                          <p class="cases-page__img-desc_big">30%</p>
+                          <div class="cases-page__wrap-text_gap">
+                            <p class="cases-page__img-desc_small">CR</p>
+                            <p class="cases-page__img-desc_big">30%</p>
+                          </div>
+                          <p class="cases-page__img-desc_small">audience</p>
                         </div>
-                        <p class="cases-page__img-desc_small">audience</p>
-                      </div>
-                      <!-- card img  -->
-                      <picture>
-                        <!-- <source
+                        <!-- card img  -->
+                        <picture>
+                          <!-- <source
                           media="(min-width: 1920px)"
                           srcset="
                             ../src/images/cases/cases-page-full-1@x.jpg,
                             ../src/images/cases/cases-page-full-2@x.jpg 2x
                           "
                         /> -->
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/cases/cases-page-full-1@x.jpg,
-                            ../src/images/cases/cases-page-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/cases/cases-page-tab-1@x.jpg,
-                            ../src/images/cases/cases-page-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 820px)"
+                            srcset="
+                              ../src/images/cases/cases-page-full-1@x.jpg,
+                              ../src/images/cases/cases-page-full-2@x.jpg 2x
+                            "
+                          />
+                          <source
+                            media="(min-width: 360px)"
+                            srcset="
+                              ../src/images/cases/cases-page-tab-1@x.jpg,
+                              ../src/images/cases/cases-page-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="duration-250 w-full object-cover transition ease-out hover:scale-105 hover:ease-in"
-                          loading="lazy"
-                          src="../src/images/cases/cases-page-full-1@x.jpg"
-                          alt="some card"
-                        />
-                      </picture>
-                    </div>
+                          <img
+                            class="duration-250 w-full object-cover transition ease-out hover:ease-in group-hover:scale-105"
+                            loading="lazy"
+                            src="../src/images/cases/cases-page-full-1@x.jpg"
+                            alt="some card"
+                          />
+                        </picture>
+                      </div>
+                    </a>
 
                     <p
                       class="text-sm leading-[1.4] lg:pl-[40px] lg:text-base lg:leading-[1.4]"
