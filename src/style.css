@@ -9259,6 +9259,10 @@ Styles borders  btn
     padding-left: 54px;
   }
 
+  .\32xl\:pt-\[72px\]{
+    padding-top: 72px;
+  }
+
   .\32xl\:indent-\[23px\]{
     text-indent: 23px;
   }
