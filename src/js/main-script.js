@@ -35,8 +35,6 @@ const logoOpacity = document.getElementById("logoOpacity");
 const submit = document.getElementById("submit");
 const btnClosePopupForms = document.getElementById("btnClosePopupForms");
 
-
-
 //=============== functions ===============
 
 function lockWrapper() {
@@ -158,7 +156,6 @@ window.addEventListener("resize", () => {
     hideMainHeader();
   }
 });
-
 
 closeMenuTablet.addEventListener("click", burgerClose);
 burger.addEventListener("click", () => {
