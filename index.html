@@ -11,17 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
+    <script src="./src/js/check-theme.js"></script>
 
     <title>Uwp digital</title>
   </head>
@@ -865,7 +855,8 @@
       <!--  END: 01-section-header -->
 
       <!--  BEGIN: Main -->
-      <main class="z-10 xl:pt-[var(--header-h-xl)]">
+      <!-- xl:pt-[var(--header-h-xl)] -->
+      <main class="z-10">
         <!--  BEGIN: 02-section-hero -->
         <section
           class="hero red-gradient-hero flex bg-dark pt-[46px] pb-[66px] lg:pt-[44px] lg:pb-[88px] xl:pt-[36px] xl:pb-[92px] 1xl:pt-[74px] 1xl:pb-[92px] 2xl:py-[115px] 3xl:py-[115px]"
@@ -6622,7 +6613,7 @@
         id="cookies"
       >
         <p
-          class="lg:mb-0; col-start-1 col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto"
+          class="col-start-1 col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto lg:mb-1 uppercase lg:max-w-[490px]"
         >
           THIS WEBSITE USES COOKIES.
         </p>
