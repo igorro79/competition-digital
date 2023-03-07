@@ -1,17 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 @import "./header.css";
-@import "./hero.css";
-@import "./cases.css";
-@import "./services.css";
-@import "./faq.css";
-@import "./form.css";
-@import "./footer.css";
+
+@import "./index-page.css";
+/*@import "./hero.css";*/
+/*@import "./cases.css";*/
+/*@import "./services.css";*/
+/*@import "./faq.css";*/
+/*@import "./form.css";*/
+
 @import "./footer.css";
 
+/*==========================================
+BEGI: case-page
+==========================================*/
+
 /*@import "./cases.css";*/
-/*@import "./case-page.css";*/
-/*@import "./services-page.css";
+
+@import "./case-page.css";
+
+/*
+@import "./services-page.css";
+
+
 @import "./blog-page.css";
 @import "./about-page.css";
 @import "./contacts-page.css";*/
@@ -19,7 +30,7 @@
 @tailwind base;
 @layer base {
   *::selection {
-    @apply bg-main;
+    @apply bg-main text-white;
   }
 
   .header__contact-body::-webkit-scrollbar,
@@ -159,59 +170,4 @@ Styles borders  btn
   @apply flex flex-row items-center justify-center
         gap-[10px] rounded-[70px] border-[1px] border-main bg-main py-4 px-9
         text-base font-bold uppercase  leading-5 text-white;
-}
-
-/* ====================================
-    |
-    |      BEGIN:   CASES PAGE
-    |    
-====================================== */
-
-/* .page {
-  position: relative;
-  z-index: 2; 
-  bottom: 10px;
-} */
-
-.bunner-img img {
-  @apply relative top-0 left-0 h-full w-full object-cover;
-}
-
-.contextual__item::after {
-  @apply absolute bottom-0 left-0 h-[1px]
-  w-full bg-middleGrey transition ease-in content-[''];
-}
-
-.count__item::after {
-  @apply absolute  top-[-10px]
-  right-0 h-[118px] w-[1px]  bg-middleGrey content-[''];
-}
-
-/* .cyberbet  .content__block::after{
-  @apply content-['']  absolute
-  w-[1px]  h-[100%] bg-middleGrey top-0 left-[-60px] ;
-} */
-
-.cyberbet .content__block::after {
-  @apply xl:absolute  xl:top-0
-  xl:left-[-152px] xl:h-[100%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-}
-
-/* 14-section-contextual*/
-
-.content__block::after {
-  @apply xl:absolute  xl:top-[-70px]
-  xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-}
-
-/*  14-section-contextual */
-
-.next-case__title::after {
-  @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-}
-
-.next-case__title-right::after {
-  @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
 }
