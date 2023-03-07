@@ -4288,12 +4288,24 @@ Styles borders  btn
   fill: #F8F8F8;
 }
 
+.fill-\[\#171717\]{
+  fill: #171717;
+}
+
 .stroke-white{
   stroke: #fff;
 }
 
 .stroke-current{
   stroke: currentColor;
+}
+
+.stroke-dark{
+  stroke: #171717;
+}
+
+.stroke-main{
+  stroke: #FF304D;
 }
 
 .object-cover{
@@ -5314,6 +5326,10 @@ BEGIN: html  scroll
   stroke: #000;
 }
 
+.group\/item:hover .group-hover\/item\:stroke-lightGrey{
+  stroke: #E0E0E0;
+}
+
 .group\/arrow:hover .group-hover\/arrow\:text-lightDarkGrey{
   --tw-text-opacity: 1;
   color: rgb(144 144 144 / var(--tw-text-opacity));
@@ -5400,6 +5416,10 @@ BEGIN: html  scroll
 
 .dark .dark\:fill-white{
   fill: #fff;
+}
+
+.dark .dark\:stroke-white{
+  stroke: #fff;
 }
 
 .dark .dark\:text-white{
