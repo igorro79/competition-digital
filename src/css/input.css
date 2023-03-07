@@ -30,7 +30,7 @@ BEGI: case-page
 @tailwind base;
 @layer base {
   *::selection {
-    @apply bg-main;
+    @apply bg-main text-white;
   }
 
   .header__contact-body::-webkit-scrollbar,

@@ -81,13 +81,34 @@ BEGIN: gradient-hero
 /*  14-section-contextual */
 
 .next-case__title::after {
-  @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  @apply xl:absolute  
+  xl:top-[-21px]
+  xl:right-[-48px] 
+  xl:h-[calc(100%+70px)] 
+  xl:w-[1px]  xl:bg-[#919191] 
+  xl:content-['']
+  
+  2xl:absolute 
+  2xl:top-[-35px] 
+   2xl:right-[-25px] 
+  2xl:h-[calc(100%+70px)]
+  2xl:w-[1px]
+  2xl:bg-[#919191] 
+  2xl:content-[''];
 }
 
 .next-case__title-right::after {
-  @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
+  @apply xl:absolute 
+   xl:top-[-21px]
+  xl:right-[-20px]
+   xl:h-[calc(100%+70px)]
+    xl:w-[1px]
+      xl:bg-[#919191]
+       xl:content-['']
+       
+       2xl:top-[-35px]
+  2xl:right-[-67px]
+   2xl:h-[calc(100%+70px)];
 }
 
 /* ========== 
