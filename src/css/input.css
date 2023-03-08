@@ -83,6 +83,20 @@ BEGIN: html  scroll
   .lock-wrapper {
     @apply h-screen overflow-hidden;
   }
+  /* =========== TOTAL WHITE HEADER ============ */
+
+  .header.white-header {
+    @apply bg-light text-dark dark:bg-dark dark:text-white;
+  }
+  .white-header #nav {
+    @apply text-dark dark:text-white;
+  }
+  .white-header .burger {
+    @apply text-dark dark:text-white;
+  }
+  .white-header .white-header-language {
+    @apply hover:bg-lightGrey dark:hover:bg-transparent;
+  }
 
   /* =========== BIG RED ROUND BUTTON ============ */
 

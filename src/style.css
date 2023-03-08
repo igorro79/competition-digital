@@ -919,27 +919,25 @@ BEGIN: burger
   position: relative;
   display: flex;
   background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .burger:hover .burger__inner{
-  --tw-bg-opacity: 1;
-  background-color: rgb(144 144 144 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(144 144 144 / var(--tw-text-opacity));
 }
 
-.burger:hover .burger__inner::before{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(144 144 144 / var(--tw-bg-opacity));
-}
+/* .burger:hover .burger__inner {
+    @apply before:bg-lightDarkGrey;
+  }
 
-.burger:hover .burger__inner::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(144 144 144 / var(--tw-bg-opacity));
-}
+  .burger:hover .burger__inner {
+    @apply after:bg-lightDarkGrey;
+  } */
 
 .burger__box{
   position: relative;
@@ -953,8 +951,7 @@ BEGIN: burger
   left: 0px;
   height: 3px;
   width: 31px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: currentColor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -966,8 +963,7 @@ BEGIN: burger
   display: block;
   height: 3px;
   width: 31px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: currentColor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -981,14 +977,21 @@ BEGIN: burger
   display: block;
   height: 3px;
   width: 31px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: currentColor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   --tw-content: '';
   content: var(--tw-content);
 }
+
+/* .burger__inner {
+    @apply ;
+  }
+
+  .burger__inner {
+    @apply ;
+  } */
 
 /* =========================== 
 BEGIN: burger-black
@@ -2362,6 +2365,9 @@ Form menu header
   display: flex;
   gap: 0.5rem;
   border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -2372,6 +2378,31 @@ Form menu header
   line-height: 1.25rem;
   text-transform: uppercase;
   line-height: 1.2;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.cases-page__filter-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.cases-page__filter-btn:active{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 48 77 / var(--tw-border-opacity));
+}
+
+.dark .cases-page__filter-btn{
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.dark .cases-page__filter-btn:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* .cases-page__card-heading {
@@ -3413,6 +3444,51 @@ body{
   overflow: hidden;
 }
 
+/* =========== TOTAL WHITE HEADER ============ */
+
+.header.white-header{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.dark .header.white-header{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.white-header #nav{
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.dark .white-header #nav{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.white-header .burger{
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.dark .white-header .burger{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.white-header .white-header-language:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
+}
+
+.dark .white-header .white-header-language:hover{
+  background-color: transparent;
+}
+
 /* =========== BIG RED ROUND BUTTON ============ */
 
 .big-red-btn{
@@ -4054,10 +4130,6 @@ Styles borders  btn
 
 .z-50{
   z-index: 50;
-}
-
-.z-\[-1\]{
-  z-index: -1;
 }
 
 .order-2{
@@ -5265,12 +5337,12 @@ Styles borders  btn
   fill: #171717;
 }
 
-.stroke-white{
-  stroke: #fff;
-}
-
 .stroke-current{
   stroke: currentColor;
+}
+
+.stroke-white{
+  stroke: #fff;
 }
 
 .stroke-dark{
@@ -6180,6 +6252,11 @@ BEGIN: html  scroll
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-lightGrey:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-grey:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
@@ -6342,16 +6419,16 @@ BEGIN: html  scroll
   fill: #fff;
 }
 
-.group\/item:hover .group-hover\/item\:stroke-lightDarkGrey{
-  stroke: #909090;
-}
-
 .group:hover .group-hover\:stroke-main{
   stroke: #FF304D;
 }
 
 .group:hover .group-hover\:stroke-middleGrey{
   stroke: #919191;
+}
+
+.group\/item:hover .group-hover\/item\:stroke-lightDarkGrey{
+  stroke: #909090;
 }
 
 .group:hover .group-hover\:stroke-black{
@@ -6367,12 +6444,12 @@ BEGIN: html  scroll
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-main{
+.group\/text:hover .group-hover\/text\:text-main{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
-.group\/text:hover .group-hover\/text\:text-main{
+.group:hover .group-hover\:text-main{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
@@ -6408,11 +6485,11 @@ BEGIN: html  scroll
   fill: #FF304D;
 }
 
-.group\/item:active .group-active\/item\:stroke-main{
+.group:active .group-active\:stroke-main{
   stroke: #FF304D;
 }
 
-.group:active .group-active\:stroke-main{
+.group\/item:active .group-active\/item\:stroke-main{
   stroke: #FF304D;
 }
 
@@ -6477,6 +6554,10 @@ BEGIN: html  scroll
 .dark .dark\:text-dark{
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:bg-none:hover{
+  background-image: none;
 }
 
 .dark .dark\:hover\:text-main:hover{
