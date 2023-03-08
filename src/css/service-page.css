@@ -1,38 +1,32 @@
 @layer components {
   /* ====================================
     |
-    |      BEGIN:   CASES PAGE
+    |      BEGIN:   SERVICE PAGE
     |    
 ====================================== */
-  /*
-.case{
-    @apply   relative overflow-hidden bg-dark pt-[9px] pb-[25px] text-white lg:pt-[8px] lg:pb-[100px] xl:pb-[73px]  ;
-} 
-*/
 
   /*===================
-BEGIN: gradient-hero  
+BEGIN: gradient-hero-service  
 ===================*/
 
-  .red-gradient__hero-case {
+  .red-gradient__hero-service {
     @apply relative overflow-hidden 
   to-transparent
-   before:absolute
+  before:absolute
   before:right-0
-   before:top-[91px] 
+   before:top-[103px] 
    
-   before:h-[212px]
-   before:w-[212px]
-  before:translate-x-[50%]
-   before:bg-gradient-radial
+   before:h-[253px]
+   before:w-[253px]
+  before:translate-x-[50%] 
+  before:bg-gradient-radial
   before:from-main
-  before:blur-[45px]
-   before:content-[''] 
+  before:blur-[60px] 
+  before:content-['']
   
 
   lg:before:top-[24px]
-  lg:before:h-[280px]
-   lg:before:w-[280px]
+  lg:before:h-[322px] lg:before:w-[322px]
   lg:before:blur-[60px]
 
 
@@ -41,42 +35,13 @@ BEGIN: gradient-hero
   xl:before:w-[302px]
   xl:before:blur-[60px]
      
-  2xl:before:top-[130px]
-2xl:before:h-[453px]
-2xl:before:w-[453px]
+  2xl:before:top-[0px]
+2xl:before:h-[591px]
+2xl:before:w-[591px]
   2xl:before:blur-[90px];
   }
 
   /*   */
-
-  .bunner-img img {
-    @apply relative top-0 left-0 h-full w-full object-cover;
-  }
-
-  /* .page {
-  position: relative;
-  z-index: 2; 
-  bottom: 10px;
-} */
-
-  /*.bunner-img img {
-    @apply relative top-0 left-0 h-full w-full object-cover;
-  }*/
-
-  /*.contextual__item::after {
-    @apply absolute bottom-0 left-0 h-[1px]
-  w-full bg-middleGrey transition ease-in content-[''];
-  }*/
-
-  /*.count__item::after {
-    @apply absolute  top-[-10px]
-  right-0 h-[118px] w-[1px]  bg-middleGrey content-[''];
-  }*/
-
-  /* .cyberbet  .content__block::after{
-  @apply content-['']  absolute
-  w-[1px]  h-[100%] bg-middleGrey top-0 left-[-60px] ;
-} */
 
   .cyberbet .content__block::after {
     @apply xl:absolute  
@@ -221,11 +186,32 @@ img-desc-
     2xl:text-xl 2xl:leading-[22px];
   }
 
+  /*==============================
+  btn effects 
+  =================================*/
+  .link-oside {
+    @apply relative overflow-hidden;
+  }
+
+  .link-oside::after {
+    @apply absolute left-0 top-full h-full w-full
+    rounded-[70px] bg-[#DC2D45] transition-all ease-in content-[''];
+  }
+
+  .link-oside:hover {
+    @apply scale-105;
+  }
+
+  .link-oside:hover::after {
+    @apply absolute left-0 top-0 -z-10 h-full w-full 
+    rounded-[70px] bg-[#DC2D45] content-[''];
+  }
+
   /* ================================
   Border position
   ==================================*/
 
-  .border__top {
+  /* .border__top {
     @apply border-t-[1px] border-t-middleGrey;
   }
 
@@ -244,7 +230,7 @@ img-desc-
   .border__rounded {
     @apply rounded-full border-[1px] border-middleGrey
     hover:border-white;
-  }
+  } */
 
   /* .border__error {
   @apply border-borderBtn hover:border-borderBtn rounded-full
