@@ -1,38 +1,31 @@
 @layer components {
   /* ====================================
     |
-    |      BEGIN:   CASES PAGE
+    |      BEGIN:   SERVICE PAGE
     |    
 ====================================== */
-  /*
-.case{
-    @apply   relative overflow-hidden bg-dark pt-[9px] pb-[25px] text-white lg:pt-[8px] lg:pb-[100px] xl:pb-[73px]  ;
-} 
-*/
 
   /*===================
 BEGIN: gradient-hero  
 ===================*/
 
-  .red-gradient__hero-case {
+  /*  before:top-[74px]
+   before:h-[212px]
+  before:w-[212px]  06.03.2023*/
+  .red-gradient__hero-service {
     @apply relative overflow-hidden 
   to-transparent
-   before:absolute
-  before:right-0
-   before:top-[91px] 
+  before:absolute
+   before:right-0 
    
-   before:h-[212px]
-   before:w-[212px]
-  before:translate-x-[50%]
-   before:bg-gradient-radial
-  before:from-main
-  before:blur-[45px]
-   before:content-[''] 
-  
+   before:top-[234px]
+   before:h-[253px]
+  before:w-[253px] before:translate-x-[50%]
+  before:bg-gradient-radial
+  before:from-main before:blur-[60px] before:content-['']
 
   lg:before:top-[24px]
-  lg:before:h-[280px]
-   lg:before:w-[280px]
+  lg:before:h-[322px] lg:before:w-[322px]
   lg:before:blur-[60px]
 
 
@@ -41,9 +34,9 @@ BEGIN: gradient-hero
   xl:before:w-[302px]
   xl:before:blur-[60px]
      
-  2xl:before:top-[130px]
-2xl:before:h-[453px]
-2xl:before:w-[453px]
+  2xl:before:top-[0px]
+2xl:before:h-[591px]
+2xl:before:w-[591px]
   2xl:before:blur-[90px];
   }
 
