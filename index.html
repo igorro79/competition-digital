@@ -11,7 +11,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
-    <script src="./src/js/check-theme.js"></script>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
 
     <title>Uwp digital</title>
   </head>
@@ -283,27 +293,21 @@
                     >
                       <!-- dropdown__wrapper -->
                       <div
-                        class="dropdown__wrapper flex min-w-max gap-[106px] rounded-[10px] bg-light px-6 py-[30px] text-dark shadow-2xl"
+                        class="dropdown__wrapper flex min-w-max cursor-default gap-[106px] rounded-[10px] bg-light px-6 py-[30px] text-dark shadow-2xl"
                       >
                         <!-- dropdown__list -->
                         <ul class="flex flex-col gap-[10px]">
                           <!-- dropdown__item-01 -->
-                          <li class="group/arrow">
-                            <!-- hover:text-main -->
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
-                              aria-label="All SERVICES"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                All SERVICES
-                              </p>
-
-                              <span class="pt-[6px] pl-[10px]">
-                                <svg
-                                  class="fill-dark transition-all ease-in group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                              <p class="text-base font-medium">all services</p>
+                              <span class="pt-[6px] pl-[10px]"
+                                ><svg
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -313,26 +317,22 @@
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </a>
+                                  ></path></svg></span
+                            ></a>
                           </li>
                           <!-- 02 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
-                              href="https://dev.uwp.digital/en/services/mobile-marketing"
-                              aria-label="MOBILE PROMOTION"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
+                              href="https://dev.uwp.digital/en"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                MOBILE PROMOTION
+                              <p class="text-base font-medium">
+                                mobile promotion
                               </p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -346,20 +346,18 @@
                             ></a>
                           </li>
                           <!-- 03 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
-                              href="https://dev.uwp.digital/en/services/digital-marketing"
-                              aria-label="DIGITAL MARKETING"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
+                              href="https://dev.uwp.digital/en"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                DIGITAL MARKETING
+                              <p class="text-base font-medium">
+                                digital marketing
                               </p>
-                              <span class="pt-[6px] pl-[10px]">
-                                <svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                              <span class="pt-[6px] pl-[10px]"
+                                ><svg
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -369,26 +367,20 @@
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </a>
+                                  ></path></svg></span
+                            ></a>
                           </li>
                           <!-- 04 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
-                              aria-label="seo"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                SEO
-                              </p>
+                              <p class="text-base font-medium">seo</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -402,20 +394,16 @@
                             ></a>
                           </li>
                           <!-- 05 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
-                              href="https://dev.uwp.digital/en/services/web-development"
-                              aria-label="WEB design"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
+                              href="https://dev.uwp.digital/en"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                WEB design
-                              </p>
+                              <p class="text-base font-medium">web design</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -433,21 +421,17 @@
 
                         <ul class="flex flex-col gap-[10px]">
                           <!-- dropdown__item 06 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
+                              class="dropdown__link _nav-item-activ translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
                               aria-label="ppc"
                             >
-                              <p
-                                class="_nav-item-activ text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                PPC
-                              </p>
+                              <p class="text-base font-medium">PPC</p>
                               <span class="p-2 pl-[10px]">
                                 <!-- fill-dark  -->
                                 <svg
-                                  class="fill-main transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -461,20 +445,16 @@
                             ></a>
                           </li>
                           <!-- 07 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
                               aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                SMM
-                              </p>
+                              <p class="text-base font-medium">SMM</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -488,20 +468,16 @@
                             ></a>
                           </li>
                           <!-- 08 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
-                              aria-label="tiktok"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                TikTok
-                              </p>
+                              <p class="text-base font-medium">tiktok</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -515,20 +491,16 @@
                             ></a>
                           </li>
                           <!-- 09 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
                               href="https://dev.uwp.digital/en"
-                              aria-label="VIDEO MOTION"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                VIDEO MOTION
-                              </p>
+                              <p class="text-base font-medium">video motion</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -542,20 +514,16 @@
                             ></a>
                           </li>
                           <!-- 10 -->
-                          <li class="group/arrow">
+                          <li>
                             <a
-                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all"
-                              href="https://dev.uwp.digital/en/services/branding"
-                              aria-label="BRANDING"
+                              class="dropdown__link translate-underline__hover-line__dark flex max-w-fit transition-all hover:text-lightDarkGrey active:text-main"
+                              href="https://dev.uwp.digital/en"
+                              aria-label="smm"
                             >
-                              <p
-                                class="text-base font-medium group-hover/arrow:text-lightDarkGrey group-active/arrow:text-main"
-                              >
-                                BRANDING
-                              </p>
+                              <p class="text-base font-medium">branding</p>
                               <span class="pt-[6px] pl-[10px]"
                                 ><svg
-                                  class="fill-dark transition-all ease-in group-hover/arrow:fill-lightDarkGrey group-active/arrow:fill-main"
+                                  fill="currentColor"
                                   width="11"
                                   height="11"
                                   viewBox="0 0 11 11"
@@ -6588,10 +6556,19 @@
       </div>
     </div>
 
-    <script src="./src/js/footer.js"></script>
+    <!-- main-script.js is First and is Required for all pages-->
     <script src="./src/js/main-script.js"></script>
+    <script src="./src/js/theme-switcher.js"></script>
+    <script src="./src/js/mobile-menu.js"></script>
     <script src="./src/js/main-page.js"></script>
-    <script src="./src/js/main-page-form.js"></script>
+
+    <!-- allFormHandler should be befor form script -->
+    <script src="./src/js/allFormHandler.js"></script>
+    <script src="./src/js/main-form.js"></script>
+    <script src="./src/js/dynamic-form.js"></script>
+
+    <script src="./src/js/footer.js"></script>
+    <script src="./src/js/cookie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {

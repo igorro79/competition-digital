@@ -11,7 +11,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
-    <script src="../src/js/check-theme.js"></script>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
 
     <title>Uwp digital</title>
   </head>
@@ -903,6 +913,9 @@
               <div class="ml-[26px] flex">
                 <div class="relative flex rotate-180">
                   <div
+                    class="h-[86px] w-[86px] overflow-hidden rounded-full border-[1px] border-lightGrey bg-light 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
+                  ></div>
+                  <!-- <div
                     class="ml-[-65px] h-[86px] w-[86px] overflow-hidden rounded-full border-[1px] border-lightGrey bg-light 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
                   ></div>
                   <div
@@ -910,7 +923,7 @@
                   ></div>
                   <div
                     class="ml-[-65px] h-[86px] w-[86px] overflow-hidden rounded-full border-[1px] border-lightGrey bg-light 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
-                  ></div>
+                  ></div> -->
                   <button
                     class="cases-page__videoshow-circle-btn relative ml-[-65px] flex h-[86px] w-[86px] rotate-180 items-center justify-center overflow-hidden rounded-full border-[1px] border-lightGrey bg-light bg-showreel bg-cover bg-center bg-no-repeat 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
                   >
@@ -1530,7 +1543,7 @@
       </main>
       <!--  BEGIN: 12-section-footer -->
       <footer
-        class="footer shrink-0 bg-light pt-[40px] pb-4 dark:bg-dark lg:pt-[32px] lg:pb-[21px] xl:pt-[34px] xl:pb-[28px]"
+        class="footer z-[-1] shrink-0 bg-dark pt-[40px] pb-4 dark:bg-dark lg:pt-[32px] lg:pb-[21px] xl:pt-[34px] xl:pb-[28px]"
       >
         <div
           class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -2947,7 +2960,38 @@
         </button>
       </div>
     </div>
+
+    <!-- main-script.js is First and is Required for all pages-->
     <script src="../src/js/main-script.js"></script>
+    <script src="../src/js/theme-switcher.js"></script>
+    <script src="../src/js/mobile-menu.js"></script>
+
+    <!-- allFormHandler should be befor form script -->
+    <script src="../src/js/allFormHandler.js"></script>
+
+    <script src="../src/js/dynamic-form.js"></script>
+
     <script src="../src/js/footer.js"></script>
+    <script src="../src/js/cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
