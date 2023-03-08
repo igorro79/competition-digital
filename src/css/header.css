@@ -312,8 +312,24 @@ translate-underline__hover-line
     transition-all content-[''];
   }
 
-  /*================================================
+  /*================================================*/
+  .link-oside {
+    @apply relative overflow-hidden;
+  }
 
+  .link-oside::after {
+    @apply absolute left-0 top-full h-full w-full
+    rounded-[70px] bg-[#DC2D45] transition-all ease-in content-[''];
+  }
+
+  .link-oside:hover {
+    @apply scale-105;
+  }
+
+  .link-oside:hover::after {
+    @apply absolute left-0 top-0 -z-10 h-full w-full 
+    rounded-[70px] bg-[#DC2D45] content-[''];
+  }
   /* ================================
   Border position
   ==================================*/
