@@ -35,15 +35,17 @@ BEGIN: PAGES
   }
 
   .header__contact-body::-webkit-scrollbar,
-  .form__header::-webkit-scrollbar-thumb,
-  html::-webkit-scrollbar {
+  .form__header::-webkit-scrollbar,
+  html::-webkit-scrollbar,
+  #popupForms::-webkit-scrollbar {
     @apply w-[10px]  bg-dark;
   }
-
+  /* popupForms */
   .form__header::-webkit-scrollbar-thumb,
   html::-webkit-scrollbar-thumb,
-  .header__contact-body::-webkit-scrollbar-thumb {
-    @apply h-[5px] rounded-full bg-main;
+  .header__contact-body::-webkit-scrollbar-thumb,
+  #popupForms::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-main;
   }
 }
 @tailwind components;
