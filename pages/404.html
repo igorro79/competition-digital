@@ -11,17 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
+    <script src="../src/js/check-theme.js"></script>
 
     <title>Uwp digital</title>
   </head>
@@ -1949,7 +1939,7 @@
         id="cookies"
       >
         <p
-          class="col-start-1 col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto lg:mb-0"
+          class="col-start-1 lg:max-w-[490px] col-end-3 mb-[15px] lg:col-start-auto lg:col-end-auto lg:mb-1 uppercase"
         >
           THIS WEBSITE USES COOKIES.
         </p>

@@ -15,7 +15,7 @@
 BEGIN: PAGES
 ==========================================*/
 
-/*@import "./cases.css";*/
+@import "./cases-page.css";
 
 @import "./case-page.css";
 @import "./service-page.css";
