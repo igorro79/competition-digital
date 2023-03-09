@@ -761,6 +761,10 @@ video {
   --tw-aspect-h: 10;
 }
 
+.aspect-h-9{
+  --tw-aspect-h: 9;
+}
+
 /* form */
 
 .header__contact-body{
@@ -4031,6 +4035,22 @@ Styles borders  btn
   top: -2.5rem;
 }
 
+.top-\[10vw\]{
+  top: 10vw;
+}
+
+.right-\[10vw\]{
+  right: 10vw;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -4774,6 +4794,10 @@ Styles borders  btn
   width: 62%;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
 .min-w-max{
   min-width: -moz-max-content;
   min-width: max-content;
@@ -5289,6 +5313,10 @@ Styles borders  btn
   fill: #171717;
 }
 
+.fill-current{
+  fill: currentColor;
+}
+
 .stroke-current{
   stroke: currentColor;
 }
@@ -5418,6 +5446,26 @@ Styles borders  btn
 .px-\[44px\]{
   padding-left: 44px;
   padding-right: 44px;
+}
+
+.px-\[10vw\]{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.py-\[10vw\]{
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.py-\[8px\]{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .pt-\[34px\]{

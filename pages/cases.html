@@ -927,7 +927,9 @@
                     class="ml-[-65px] h-[86px] w-[86px] overflow-hidden rounded-full border-[1px] border-lightGrey bg-light 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
                   ></div> -->
                   <button
-                    class="cases-page__videoshow-circle-btn relative ml-[-65px] flex h-[86px] w-[86px] rotate-180 items-center justify-center overflow-hidden rounded-full border-[1px] border-lightGrey bg-light bg-showreel bg-cover bg-center bg-no-repeat 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
+                    class="video-btn cases-page__videoshow-circle-btn relative ml-[-65px] flex h-[86px] w-[86px] rotate-180 items-center justify-center overflow-hidden rounded-full border-[1px] border-lightGrey bg-light bg-showreel bg-cover bg-center bg-no-repeat 2xl:ml-[-135px] 2xl:h-[179px] 2xl:w-[179px]"
+                    type="button"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0"
                   >
                     <svg
                       class="h-[18px] w-[18px] text-white 2xl:h-[36px] 2xl:w-[36px]"
@@ -3274,6 +3276,48 @@
           accept
         </button>
       </div>
+      <!-- Modal -->
+
+      <div
+        class="invisible fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark px-[10vw] py-[10vw] opacity-0"
+        role="modal"
+        id="videoModal"
+      >
+        <button
+          type="button"
+          class="modal-close-btn absolute top-10 right-10 ml-auto flex rounded-full py-[8px] px-[15px] text-white hover:bg-white hover:text-dark lg:px-[28px]"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <svg
+            class="fill-current"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z"
+            />
+            <path
+              d="M0.813965 21.1523L21.1517 0.814654L23.1854 2.84842L2.84773 23.1861L0.813965 21.1523Z"
+            />
+          </svg>
+        </button>
+        <div class="w-full">
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio aspect-w-16 aspect-h-9">
+            <!-- class="embed-responsive-item"  iframe -->
+            <iframe
+              src=""
+              id="video"
+              allowscriptaccess="always"
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- main-script.js is First and is Required for all pages-->
@@ -3286,6 +3330,7 @@
     <script src="../src/js/main-form.js"></script>
     <script src="../src/js/dynamic-form.js"></script>
 
+    <script src="../src/js/videoModal.js"></script>
     <script src="../src/js/footer.js"></script>
     <script src="../src/js/cookie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
