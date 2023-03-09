@@ -4650,8 +4650,8 @@ Styles borders  btn
   min-height: max-content;
 }
 
-.min-h-\[177px\]{
-  min-height: 177px;
+.min-h-\[250px\]{
+  min-height: 250px;
 }
 
 .min-h-\[650px\]{
@@ -4660,10 +4660,6 @@ Styles borders  btn
 
 .min-h-\[770px\]{
   min-height: 770px;
-}
-
-.min-h-\[250px\]{
-  min-height: 250px;
 }
 
 .w-\[103px\]{
@@ -6435,12 +6431,12 @@ BEGIN: html  scroll
   stroke: #FF304D;
 }
 
-.group:hover .group-hover\:stroke-middleGrey{
-  stroke: #919191;
-}
-
 .group\/item:hover .group-hover\/item\:stroke-lightDarkGrey{
   stroke: #909090;
+}
+
+.group:hover .group-hover\:stroke-middleGrey{
+  stroke: #919191;
 }
 
 .group:hover .group-hover\:stroke-black{
@@ -6497,11 +6493,11 @@ BEGIN: html  scroll
   fill: #FF304D;
 }
 
-.group:active .group-active\:stroke-main{
+.group\/item:active .group-active\/item\:stroke-main{
   stroke: #FF304D;
 }
 
-.group\/item:active .group-active\/item\:stroke-main{
+.group:active .group-active\:stroke-main{
   stroke: #FF304D;
 }
 
