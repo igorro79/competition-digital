@@ -6924,6 +6924,10 @@ BEGIN: html  scroll
     margin-right: 11%;
   }
 
+  .lg\:mb-\[86px\]{
+    margin-bottom: 86px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -10096,6 +10100,10 @@ BEGIN: html  scroll
 
   .\32xl\:ml-\[160px\]{
     margin-left: 160px;
+  }
+
+  .\32xl\:mt-\[50px\]{
+    margin-top: 50px;
   }
 
   .\32xl\:block{
