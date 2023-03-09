@@ -25,9 +25,10 @@ BEGIN: gradient-hero-service
   before:content-['']
   
 
-  lg:before:top-[24px]
-  lg:before:h-[322px] lg:before:w-[322px]
-  lg:before:blur-[60px]
+  lg:before:top-[50px]
+  lg:before:h-[255px]
+   lg:before:w-[255px]
+  lg:before:blur-[30px]
 
 
   xl:before:top-[77px]  
