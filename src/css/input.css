@@ -100,6 +100,19 @@ BEGIN: html  scroll
     @apply hover:bg-lightGrey dark:hover:bg-transparent;
   }
 
+  .burger-paint-header-dark.header.white-header {
+    @apply bg-dark text-white dark:bg-dark dark:text-white;
+  }
+  .burger-paint-header-dark.white-header #nav {
+    @apply text-white dark:text-white;
+  }
+  .burger-paint-header-dark.white-header .burger {
+    @apply text-white dark:text-white;
+  }
+  .burger-paint-header-dark.white-header .white-header-language {
+    @apply hover:bg-transparent dark:hover:bg-transparent;
+  }
+
   /* =========== BIG RED ROUND BUTTON ============ */
 
   .big-red-btn {
