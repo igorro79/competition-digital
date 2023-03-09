@@ -65,6 +65,7 @@ dynamicForm.addEventListener("submit", function (e) {
   const companyLengthValid = checkLength(company, 3, 30);
   const emailValid = checkEmail(email);
   const phoneValid = checkPhone(phone);
+  console.log("🚀 ~ file: dynamic-form.js:68 ~ phoneValid:", phoneValid);
 
   const formData = new FormData(e.target);
   console.log(Object.fromEntries(formData));

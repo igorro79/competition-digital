@@ -78,7 +78,7 @@ function burgerOpen() {
   burger.classList.toggle("is-active");
   if (window.innerWidth >= 820) hideMainHeader();
   lockWrapper();
-  closePopupSentMsg();
+  if (document.getElementById("popupForms")) closePopupSentMsg();
   openDynamicMenu();
 }
 
@@ -131,7 +131,7 @@ if (document.getElementById("btnContactTablet")) {
     menuServicesClose();
     lockWrapper();
     showMainHeader();
-    closePopupSentMsg();
+    if (document.getElementById("popupForms")) closePopupSentMsg();
     burger.classList.toggle("is-active");
 
     if (

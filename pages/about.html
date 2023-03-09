@@ -1421,11 +1421,11 @@
 
         <section class="about bg-dark text-light dark:bg-dark dark:text-light">
           <div
-            class="container max-w-full pb-[46px] lg:pb-[80px] xl:pb-[105px] 3xl:max-w-[1920px]"
+            class="container max-w-full lg:px-[30px] lg:pb-[80px] xl:pb-[105px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
             <!-- breadcrumds -->
             <div
-              class="mb-[40px] flex items-center gap-[4px] pt-[12px] text-[#919191] lg:pt-[6px] xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px] 3xl:mb-[65px]"
+              class="mb-[11px] hidden items-center gap-[4px] pt-[12px] text-[#919191] lg:pt-[6px] xl:mb-0 xl:flex xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
             >
               <a class="text-[8px] font-normal leading-[140%]" href="#">Main</a>
 
@@ -1448,15 +1448,22 @@
               </span>
 
               <a
-                class="text-[8px] font-normal leading-[140%] xl:text-[10px]"
+                class="text-[8px] font-normal leading-[1.4] xl:text-[10px]"
                 href="#"
                 >Case Studies
               </a>
             </div>
-            <div class="about-page__title-wrapper">
-              <h1 class="about-page__title pages__title">Our cases</h1>
-              <div class="about-page__videoshow">
+            <div
+              class="mb-10 flex flex-wrap items-center justify-between pt-8 lg:mb-[44px] lg:pt-8 xl:mb-[57px] xl:justify-start xl:pt-[20px]"
+            >
+              <h1
+                class="mb-7 text-4xl font-bold uppercase leading-[1.1] lg:mb-0 lg:text-[60px] xl:text-[min(7vw,120px)]"
+              >
+                About us
+              </h1>
+              <div class="about-page__videoshow xl:mx-auto">
                 <svg
+                  class="h-auto w-[273px] xl:w-[min(31vw,593px)]"
                   viewBox="0 0 593 245"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1470,295 +1477,314 @@
                 </svg>
               </div>
             </div>
-            <div class="about-page__content">
-              <h2 class="about-page__content-title">
+            <div class="border-t border-middleGrey xl:flex">
+              <h2
+                class="mb-7 border-middleGrey pt-5 font-bold uppercase leading-[1.4] lg:pt-5 xl:mb-0 xl:w-[21vw] xl:min-w-[21vw] xl:border-r xl:pt-[50px] xl:pr-[min(3vw,60px)] xl:text-[clamp(16px,1.3vw,24px)]"
+              >
                 We will transform your thoughts about digital marketing
               </h2>
-              <div class="about-page__content-wrapper">
-                <p class="about-page__content-text">
+
+              <div class="xl:pl-[min(8vw,153px)] xl:pb-[50px] xl:pt-[50px]">
+                <p
+                  class="mb-[26px] leading-[1.35] lg:mb-[24px] xl:mb-[48px] xl:text-[min(2.3vw,32px)] xl:leading-[1.4]"
+                >
                   We are Unity World Platform — an international company with
                   Ukrainian roots. Our team consists of the best marketers in
                   different parts of the world, who are united by one idea — the
                   development of marketing with the help of smart technologies.
+                </p>
+
+                <p
+                  class="mb-[26px] leading-[1.35] lg:mb-[30px] xl:mb-[48px] xl:text-[min(2.3vw,32px)] xl:leading-[1.4]"
+                >
                   We provide a full range of services to promote your business:
                   from web design to PR campaigns. Our mission is to observe the
                   partnership format of cooperation with each client. It means
                   that we share your values, and ideas and turn them into a
                   stable income. For the successful implementation of the
                   project, we analyze market changes, budgets, and your business
-                  goals. That’s why, UWP is your trusted digital partner in the
+                  goals.
+                </p>
+                <p
+                  class="mb-[62px] leading-[1.35] lg:mb-[30px] xl:mb-[108px] xl:text-[min(2.3vw,32px)] xl:leading-[1.4]"
+                >
+                  That’s why, UWP is your trusted digital partner in the
                   marketing world.
                 </p>
-                <ul class="about-page__results-grid">
-                  <li class="about-page__grid-item">
-                    <div class="about-page__grid-card">
-                      <p class="about-page__grid-label">projects</p>
-                      <p class="about-page__grid-number">300+</p>
-                    </div>
-                  </li>
-                  <li class="about-page__grid-item">
-                    <div class="about-page__grid-card">
-                      <p class="about-page__grid-label">years on the market</p>
-                      <p class="about-page__grid-number">7+</p>
-                    </div>
-                  </li>
-                  <li class="about-page__grid-item">
-                    <div class="about-page__grid-card">
-                      <p class="about-page__grid-label">employees</p>
-                      <p class="about-page__grid-number">50+</p>
-                    </div>
-                  </li>
-                  <li class="about-page__grid-item">
-                    <div class="about-page__grid-card">
-                      <p class="about-page__grid-label">countries</p>
-                      <p class="about-page__grid-number">4+</p>
-                    </div>
-                  </li>
-                </ul>
+                <!-- results wrapper -->
+                <div class="flex flex-col">
+                  <ul
+                    class="flex flex-row gap-[5vw] lg:w-[47.5%] lg:self-center xl:w-[62%] xl:self-start"
+                  >
+                    <li
+                      class="w-full border-t border-middleGrey pb-[55px] pt-[30px] lg:pt-9 lg:pb-[68px] xl:pt-[33px]"
+                    >
+                      <div class="about-page__grid-card">
+                        <p
+                          class="mb-[15px] text-sm leading-[1.4] xl:text-base xl:leading-[1.4]"
+                        >
+                          projects
+                        </p>
+                        <p
+                          class="text-4xl font-bold leading-[1.1] xl:text-[min(5vw,90px)]"
+                        >
+                          300+
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="w-full border-t border-middleGrey pb-[55px] pt-[30px] lg:pt-9 lg:pb-[68px] xl:pt-[33px]"
+                    >
+                      <div class="about-page__grid-card">
+                        <p
+                          class="mb-[15px] text-sm leading-[1.4] xl:text-base xl:leading-[1.4]"
+                        >
+                          employees
+                        </p>
+                        <p
+                          class="text-4xl font-bold leading-[1.1] xl:text-[min(5vw,90px)]"
+                        >
+                          50+
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul
+                    class="flex flex-row gap-[5vw] lg:w-[47.5%] lg:self-end xl:w-[62%]"
+                  >
+                    <li
+                      class="w-full border-t border-middleGrey pb-[55px] pt-[30px] lg:pt-9 lg:pb-[68px] xl:pt-[33px]"
+                    >
+                      <div class="about-page__grid-card">
+                        <p
+                          class="mb-[15px] text-sm leading-[1.4] xl:text-base xl:leading-[1.4]"
+                        >
+                          years on the market
+                        </p>
+                        <p
+                          class="text-4xl font-bold leading-[1.1] xl:text-[min(5vw,90px)]"
+                        >
+                          7+
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="w-full border-t border-middleGrey pb-[55px] pt-[30px] lg:pt-9 lg:pb-[68px] xl:pt-[33px]"
+                    >
+                      <div class="about-page__grid-card">
+                        <p
+                          class="mb-[15px] text-sm leading-[1.4] xl:text-base xl:leading-[1.4]"
+                        >
+                          countries
+                        </p>
+                        <p
+                          class="text-4xl font-bold leading-[1.1] xl:text-[min(5vw,90px)]"
+                        >
+                          4+
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
-
+        <!-- section OUR TEAM  -->
         <section class="about bg-dark text-light dark:bg-dark dark:text-light">
-          <div class="about-team__wrapper custom-container">
-            <h2 class="pages__title about-team__title">Our team</h2>
+          <div
+            class="container max-w-none pt-[36px] pb-[120px] lg:px-[30px] lg:pt-3 lg:pb-[60px] xl:pt-[24px] xl:pb-[213px] 3xl:max-w-[1920px] 3xl:px-[135px]"
+          >
+            <h2
+              class="mb-[29px] text-4xl font-bold uppercase leading-[1.1] lg:text-[60px] xl:text-[min(7vw,120px)]"
+            >
+              Our team
+            </h2>
 
-            <div class="about-team__content">
-              <div class="about-team__content-wrapper">
-                <p class="about-team__content-text">
+            <div class="border-t border-middleGrey xl:flex">
+              <div
+                class="pb-[64px] lg:pb-[50px] xl:w-[21vw] xl:min-w-[21vw] xl:border-r xl:border-middleGrey xl:pb-0 xl:pt-[68px] xl:pr-[min(3vw,60px)]"
+              >
+                <p
+                  class="mb-[40px] pt-[30px] leading-[1.35] lg:max-w-[500px] xl:mb-[55px] xl:border-t-0 xl:pt-0"
+                >
                   Our team has a versatile rich experience in digital marketing,
                   design, web development, motion design, and many other areas.
                 </p>
-                <button class="main-btn about-team__main-btn">
-                  <span>Become a Client</span
-                  ><svg
+                <button
+                  type="button"
+                  aria-label="become a client"
+                  id="btnDiscuss"
+                  class="btn ml-0 w-[320px] tracking-[0.16px] xl:w-full xl:max-w-[357px]"
+                >
+                  become a client
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    version="1"
+                    width="16"
+                    height="16"
                     viewBox="0 0 24 24"
                     enable-background="new 0 0 24 24"
                   >
                     <path
-                      fill="#fff"
+                      fill="currentColor"
                       d="M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z"
                     />
                   </svg>
                 </button>
               </div>
-              <div class="about-team__grid-wrapper">
-                <ul class="about-team__results-grid">
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+              <!-- team cards -->
+
+              <div>
+                <ul
+                  class="mb-[50px] grid grid-cols-2 lg:mb-8 lg:grid-cols-[auto,auto,auto] xl:mb-[42px] xl:pt-[68px] xl:pl-[min(5vw,60px)] 2xl:pl-[min(8vw,153px)]"
+                >
+                  <!-- card 1 -->
+                  <li class="border-t border-middleGrey xl:border-t-0">
+                    <div class="mt-5 border-r border-middleGrey">
+                      <div
+                        class="mb-5 pr-[clamp(9px,2vw,24px)] lg:pr-6 xl:mb-[50px] xl:pr-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
+                  <!-- card 2 -->
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+                  <li class="border-t border-middleGrey xl:border-t-0">
+                    <div class="mt-5 lg:border-r lg:border-middleGrey">
+                      <div
+                        class="mb-5 pl-[clamp(9px,2vw,24px)] lg:pl-6 lg:pr-[24px] xl:mb-[50px] xl:pr-[clamp(24px,2.8vw,55px)] xl:pl-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+                  <!-- card 3 -->
+
+                  <li class="border-t border-middleGrey xl:border-t-0">
+                    <div class="mt-5 border-r border-middleGrey lg:border-r-0">
+                      <div
+                        class="mb-5 pr-[clamp(9px,2vw,24px)] lg:pr-0 lg:pl-[24px] xl:mb-[50px] xl:pl-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
+                  <!-- card 4 -->
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+                  <li class="border-t border-middleGrey">
+                    <div
+                      class="mt-5 lg:border-r lg:border-middleGrey xl:mt-[50px]"
+                    >
+                      <div
+                        class="mb-5 pr-[clamp(9px,2vw,24px)] lg:pr-6 xl:pr-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
+                  <!-- card 5 -->
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+                  <li class="border-t border-middleGrey">
+                    <div class="mt-5 border-r border-middleGrey xl:mt-[50px]">
+                      <div
+                        class="mb-5 pl-[clamp(9px,2vw,24px)] lg:pl-6 lg:pr-[24px] xl:pr-[clamp(24px,2.8vw,55px)] xl:pl-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
-                  <li class="about-team__grid-item">
-                    <div class="about-team__grid-card">
-                      <picture class="about-team__grid-img">
-                        <source
-                          media="(min-width: 1920px)"
-                          srcset="
-                            ../src/images/team/team-full-1@x.jpg,
-                            ../src/images/team/team-full-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 820px)"
-                          srcset="
-                            ../src/images/team/team-tab-1@x.jpg,
-                            ../src/images/team/team-tab-2@x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 360px)"
-                          srcset="
-                            ../src/images/team/team-mob-1@x.jpg,
-                            ../src/images/team/team-mob-2@x.jpg 2x
-                          "
-                        />
+                  <!-- card 6 -->
 
-                        <img
-                          loading="lazy"
-                          src="./src/images/person/person1-mob-1@x.jpg"
-                          alt="person card"
-                        />
-                      </picture>
-                      <p class="about-team__grid-name">Daniel</p>
-                      <p class="about-team__grid-position">smm</p>
+                  <li class="border-t border-middleGrey">
+                    <div class="mt-5 xl:mt-[50px]">
+                      <div
+                        class="mb-5 pl-[clamp(9px,2vw,24px)] lg:pl-6 xl:pl-[clamp(24px,2.8vw,55px)]"
+                      >
+                        <div
+                          class="mb-5 h-[210px] w-full bg-middleGrey lg:h-[308px] xl:h-[389px]"
+                        ></div>
+                        <p
+                          class="mb-2 mt-5 font-bold uppercase leading-[1.4] xl:mt-4 xl:text-2xl"
+                        >
+                          Daniel
+                        </p>
+                        <p
+                          class="text-sm font-bold uppercase leading-[1.4] text-middleGrey xl:text-base"
+                        >
+                          smm
+                        </p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-                <p class="about-team__plus-text">
+                <p
+                  class="text-xl uppercase xl:pl-[min(8vw,153px)] xl:text-[32px] xl:leading-[1.5]"
+                >
                   Plus, we have a further 50+ digital experts to tackle any
                   business challenge.
                 </p>
