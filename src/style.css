@@ -4384,14 +4384,6 @@ Styles borders  btn
   margin-bottom: 32px;
 }
 
-.mb-\[-6px\]{
-  margin-bottom: -6px;
-}
-
-.mb-\[76px\]{
-  margin-bottom: 76px;
-}
-
 .block{
   display: block;
 }
@@ -4535,10 +4527,6 @@ Styles borders  btn
 
 .h-\[24px\]{
   height: 24px;
-}
-
-.h-\[300px\]{
-  height: 300px;
 }
 
 .min-h-\[var\(--header-h\)\]{
@@ -4748,6 +4736,10 @@ Styles borders  btn
 
 .w-\[24px\]{
   width: 24px;
+}
+
+.w-\[62\%\]{
+  width: 62%;
 }
 
 .min-w-max{
@@ -5209,11 +5201,6 @@ Styles borders  btn
 .bg-main{
   --tw-bg-opacity: 1;
   background-color: rgb(255 48 77 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -5805,24 +5792,20 @@ Styles borders  btn
   padding-top: 26px;
 }
 
-.pt-\[25px\]{
-  padding-top: 25px;
-}
-
 .pb-\[23px\]{
   padding-bottom: 23px;
-}
-
-.pt-\[37\]{
-  padding-top: 37;
 }
 
 .pt-\[37px\]{
   padding-top: 37px;
 }
 
-.pt-\[10px\]{
-  padding-top: 10px;
+.pt-\[45px\]{
+  padding-top: 45px;
+}
+
+.pt-\[42px\]{
+  padding-top: 42px;
 }
 
 .text-left{
@@ -6030,10 +6013,6 @@ Styles borders  btn
 
 .leading-\[1\2c 2\]{
   line-height: 1,2;
-}
-
-.leading-\[1\2c 4\]{
-  line-height: 1,4;
 }
 
 .tracking-\[1px\]{
@@ -10759,10 +10738,6 @@ BEGIN: html  scroll
 
   .\32xl\:pl-\[clamp\(7vw\2c 8vw\2c 9vw\)\]{
     padding-left: clamp(7vw,8vw,9vw);
-  }
-
-  .\32xl\:pl-\[54px\]{
-    padding-left: 54px;
   }
 
   .\32xl\:indent-\[23px\]{
