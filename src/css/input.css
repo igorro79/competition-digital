@@ -149,13 +149,13 @@ Styles borders  btn
   }
 
   /*flex*/
-  .btn__services {
+  /*.btn__services {
     @apply m-auto   w-full
          items-center justify-center gap-[10px] rounded-full bg-main py-[16px] 
 
          text-base font-bold uppercase text-white transition-all
         sm:max-w-[357px];
-  }
+  }*/
 
   .btn__transparent {
     @apply m-auto  flex 
