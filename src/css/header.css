@@ -85,36 +85,40 @@ BEGIN: burger
 =============== */
 
   .burger {
-    @apply relative flex  bg-transparent transition-all;
+    @apply relative flex bg-transparent  text-white transition-all;
   }
 
   .burger:hover .burger__inner {
-    @apply bg-lightDarkGrey;
+    @apply text-lightDarkGrey;
   }
 
-  .burger:hover .burger__inner {
+  /* .burger:hover .burger__inner {
     @apply before:bg-lightDarkGrey;
   }
 
   .burger:hover .burger__inner {
     @apply after:bg-lightDarkGrey;
-  }
+  } */
 
   .burger__box {
     @apply relative h-[28px] w-[31px];
   }
 
   .burger__inner {
-    @apply absolute top-0 left-0 h-[3px] w-[31px] bg-white transition-all;
+    @apply absolute top-0 left-0 h-[3px] w-[31px] bg-current transition-all before:absolute
+     before:top-3 before:block before:h-[3px] before:w-[31px] before:bg-current
+      before:transition-all before:content-[''] 
+     after:absolute after:top-[25px] after:block after:h-[3px] after:w-[31px] after:bg-current 
+     after:transition-all after:content-[''];
+  }
+
+  /* .burger__inner {
+    @apply ;
   }
 
   .burger__inner {
-    @apply before:absolute before:top-3 before:block before:h-[3px] before:w-[31px] before:bg-white before:transition-all before:content-[''];
-  }
-
-  .burger__inner {
-    @apply after:absolute after:top-[25px] after:block after:h-[3px] after:w-[31px] after:bg-white after:transition-all after:content-[''];
-  }
+    @apply ;
+  } */
 
   /* =========================== 
 BEGIN: burger-black
