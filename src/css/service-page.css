@@ -36,10 +36,11 @@ BEGIN: gradient-hero-service
   xl:before:w-[302px]
   xl:before:blur-[60px]
      
-  2xl:before:top-[0px]
-2xl:before:h-[591px]
-2xl:before:w-[591px]
-  2xl:before:blur-[90px];
+  2xl:before:top-[141px]
+  2xl:before:h-[400px] 
+2xl:before:w-[400px]
+2xl:before:translate-x-[25%]
+  2xl:before:blur-[60px];
   }
 
   /*   */
