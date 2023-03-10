@@ -4582,10 +4582,6 @@ Styles borders  btn
   height: 63px;
 }
 
-.h-\[210px\]{
-  height: 210px;
-}
-
 .h-\[233px\]{
   height: 233px;
 }
@@ -5334,11 +5330,6 @@ Styles borders  btn
 .bg-grey{
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
-}
-
-.bg-middleGrey{
-  --tw-bg-opacity: 1;
-  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
 }
 
 .bg-main{
@@ -7208,10 +7199,6 @@ BEGIN: html  scroll
     height: 82px;
   }
 
-  .lg\:h-\[308px\]{
-    height: 308px;
-  }
-
   .lg\:h-auto{
     height: auto;
   }
@@ -8711,16 +8698,20 @@ BEGIN: html  scroll
     margin-bottom: 57px;
   }
 
-  .xl\:mb-\[108px\]{
-    margin-bottom: 108px;
-  }
-
   .xl\:mb-\[48px\]{
     margin-bottom: 48px;
   }
 
+  .xl\:mb-\[108px\]{
+    margin-bottom: 108px;
+  }
+
   .xl\:mb-\[55px\]{
     margin-bottom: 55px;
+  }
+
+  .xl\:mb-\[42px\]{
+    margin-bottom: 42px;
   }
 
   .xl\:mt-\[-66px\]{
@@ -8835,10 +8826,6 @@ BEGIN: html  scroll
     margin-bottom: 2.5rem;
   }
 
-  .xl\:mb-\[42px\]{
-    margin-bottom: 42px;
-  }
-
   .xl\:block{
     display: block;
   }
@@ -8911,20 +8898,8 @@ BEGIN: html  scroll
     height: 177px;
   }
 
-  .xl\:h-\[389px\]{
-    height: 389px;
-  }
-
-  .xl\:h-full{
-    height: 100%;
-  }
-
   .xl\:max-h-\[369\.5px\]{
     max-height: 369.5px;
-  }
-
-  .xl\:max-h-\[389px\]{
-    max-height: 389px;
   }
 
   .xl\:w-\[121px\]{
@@ -8995,6 +8970,10 @@ BEGIN: html  scroll
     width: min(31vw,593px);
   }
 
+  .xl\:w-\[21vw\]{
+    width: 21vw;
+  }
+
   .xl\:w-\[62\%\]{
     width: 62%;
   }
@@ -9019,24 +8998,12 @@ BEGIN: html  scroll
     width: 16px;
   }
 
-  .xl\:w-\[21vw\]{
-    width: 21vw;
-  }
-
   .xl\:w-\[177px\]{
     width: 177px;
   }
 
   .xl\:w-\[75\.6vw\]{
     width: 75.6vw;
-  }
-
-  .xl\:w-auto{
-    width: auto;
-  }
-
-  .xl\:w-\[357px\]{
-    width: 357px;
   }
 
   .xl\:min-w-\[21vw\]{
@@ -9049,10 +9016,6 @@ BEGIN: html  scroll
 
   .xl\:min-w-0{
     min-width: 0px;
-  }
-
-  .xl\:min-w-\[357px\]{
-    min-width: 357px;
   }
 
   .xl\:max-w-\[287px\]{
@@ -9097,6 +9060,10 @@ BEGIN: html  scroll
 
   .xl\:max-w-\[72\.5\%\]{
     max-width: 72.5%;
+  }
+
+  .xl\:max-w-\[357px\]{
+    max-width: 357px;
   }
 
   .xl\:max-w-max{
@@ -9178,10 +9145,6 @@ BEGIN: html  scroll
 
   .xl\:max-w-\[375px\]{
     max-width: 375px;
-  }
-
-  .xl\:max-w-\[357px\]{
-    max-width: 357px;
   }
 
   .xl\:flex-auto{
@@ -9821,20 +9784,12 @@ BEGIN: html  scroll
     padding-top: 20px;
   }
 
-  .xl\:pr-\[clamp\(30px\2c 3vw\2c 60px\)\]{
-    padding-right: clamp(30px,3vw,60px);
+  .xl\:pr-\[min\(3vw\2c 60px\)\]{
+    padding-right: min(3vw,60px);
   }
 
-  .xl\:pl-\[min\(8vw\2c 153px\)\]{
-    padding-left: min(8vw,153px);
-  }
-
-  .xl\:pb-\[50px\]{
-    padding-bottom: 50px;
-  }
-
-  .xl\:pt-\[105px\]{
-    padding-top: 105px;
+  .xl\:pl-\[max\(5vw\2c 60px\)\]{
+    padding-left: max(5vw,60px);
   }
 
   .xl\:pb-\[213px\]{
@@ -9843,6 +9798,22 @@ BEGIN: html  scroll
 
   .xl\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .xl\:pt-\[68px\]{
+    padding-top: 68px;
+  }
+
+  .xl\:pr-\[clamp\(24px\2c 2\.8vw\2c 55px\)\]{
+    padding-right: clamp(24px,2.8vw,55px);
+  }
+
+  .xl\:pl-\[clamp\(24px\2c 2\.8vw\2c 55px\)\]{
+    padding-left: clamp(24px,2.8vw,55px);
+  }
+
+  .xl\:pl-\[min\(8vw\2c 153px\)\]{
+    padding-left: min(8vw,153px);
   }
 
   .xl\:pt-\[var\(--header-h-lg\)\]{
@@ -10019,42 +9990,6 @@ BEGIN: html  scroll
 
   .xl\:pl-\[clamp\(40px\2c 7vw\2c 125px\)\]{
     padding-left: clamp(40px,7vw,125px);
-  }
-
-  .xl\:pr-\[min\(3vw\2c 60px\)\]{
-    padding-right: min(3vw,60px);
-  }
-
-  .xl\:pt-\[68px\]{
-    padding-top: 68px;
-  }
-
-  .xl\:pr-\[clamp\(24px\2c 4vw\2c 55px\)\]{
-    padding-right: clamp(24px,4vw,55px);
-  }
-
-  .xl\:pr-\[clamp\(24px\2c 2\.8vw\2c 55px\)\]{
-    padding-right: clamp(24px,2.8vw,55px);
-  }
-
-  .xl\:pl-\[clamp\(24px\2c 2\.8vw\2c 55px\)\]{
-    padding-left: clamp(24px,2.8vw,55px);
-  }
-
-  .xl\:pt-\[64px\]{
-    padding-top: 64px;
-  }
-
-  .xl\:pl-\[min\(5vw\2c 80px\)\]{
-    padding-left: min(5vw,80px);
-  }
-
-  .xl\:pl-\[min\(5vw\2c 60px\)\]{
-    padding-left: min(5vw,60px);
-  }
-
-  .xl\:pl-\[max\(5vw\2c 60px\)\]{
-    padding-left: max(5vw,60px);
   }
 
   .xl\:indent-\[138px\]{
@@ -10989,6 +10924,10 @@ BEGIN: html  scroll
     padding-bottom: 7px;
   }
 
+  .\32xl\:pl-\[min\(8vw\2c 153px\)\]{
+    padding-left: min(8vw,153px);
+  }
+
   .\32xl\:pt-\[72px\]{
     padding-top: 72px;
   }
@@ -11177,10 +11116,6 @@ BEGIN: html  scroll
     padding-left: clamp(7vw,8vw,9vw);
   }
 
-  .\32xl\:pl-\[min\(8vw\2c 153px\)\]{
-    padding-left: min(8vw,153px);
-  }
-
   .\32xl\:indent-\[23px\]{
     text-indent: 23px;
   }
@@ -11357,10 +11292,6 @@ BEGIN: html  scroll
 
   .\33xl\:pl-\[153px\]{
     padding-left: 153px;
-  }
-
-  .\33xl\:pl-\[min\(8vw\2c 153px\)\]{
-    padding-left: min(8vw,153px);
   }
 
   .\33xl\:text-\[120px\]{
