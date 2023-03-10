@@ -2,36 +2,36 @@
   /* =========== services page ============== */
 
   .services-page__breadcrumbs {
-    @apply lg:mb-[62px] mb-[32px] text-middleGrey xl:mb-[70px];
+    @apply mb-[32px] text-middleGrey lg:mb-[62px] xl:mb-[70px];
   }
-  .services-page__main-content-wrapper {
+  /* .services-page__main-content-wrapper {
     @apply lg:pb-20 border-t border-middleGrey pb-14 xl:flex xl:pb-[196px];
-  }
+  } */
 
-  .services-page__service-image-wrapper {
+  /* .services-page__service-image-wrapper {
     @apply relative mx-auto hidden h-[629px] max-w-[629px] basis-1/2 rounded-full
      bg-darkGrey xl:mt-[90px] xl:block;
   }
   .services-page__service-image {
     @apply absolute top-1/2 left-1/2 h-[479px] w-[706px]
      translate-x-[-50%] translate-y-[-50%];
-  }
+  } */
 
-  .services-page__list {
+  /* .services-page__list {
     @apply xl:basis-1/2;
   }
   .services-page__list-item {
-    @apply border-b-[1px] border-middleGrey;
+    @apply border-b border-middleGrey;
   }
   .services-page__list-item-number {
-    @apply lg:mr-[70px] lg:block hidden text-middleGrey xl:text-2xl;
+    @apply hidden text-middleGrey lg:mr-[70px] lg:block xl:text-2xl;
   }
   .services-page__list-item-title {
-    @apply lg:text-4xl text-xl font-semibold uppercase xl:text-[42px];
+    @apply text-xl font-semibold uppercase lg:text-4xl xl:text-[42px];
   }
   .services-page__list-item-link {
-    @apply lg:py-10  flex items-center  py-7;
-  }
+    @apply flex  items-center py-7  lg:py-10;
+  } */
   .services-page__list-item-link .animated-arrow-wrapper {
     @apply ml-auto;
   }
@@ -52,23 +52,23 @@
     @apply border-t border-middleGrey pt-[30px] xl:pt-[74px];
   }
   .how__title {
-    @apply lg:text-[42px] mb-[30px] text-[28px] font-bold uppercase 
+    @apply mb-[30px] text-[28px] font-bold uppercase lg:text-[42px] 
     xl:mb-[63px] xl:text-[90px] xl:leading-[100px];
   }
   .how__content {
     @apply flex-row-reverse xl:flex;
   }
   .how__grid-wrapper {
-    @apply lg:mb-16 mb-8 xl:min-w-[1244px] xl:border-l
+    @apply mb-8 lg:mb-16 xl:min-w-[1244px] xl:border-l
      xl:border-middleGrey;
   }
   .how__intro-text {
-    @apply lg:ml-auto lg:mb-[68px] lg:max-w-[50%] lg:text-base
-     mb-[50px] text-xl xl:max-w-[810px] xl:text-[32px] xl:leading-[45px];
+    @apply mb-[50px] text-xl lg:ml-auto lg:mb-[68px]
+     lg:max-w-[50%] lg:text-base xl:max-w-[810px] xl:text-[32px] xl:leading-[45px];
   }
 
   .how__list {
-    @apply lg:grid-cols-2 lg:gap-0 grid gap-10;
+    @apply grid gap-10 lg:grid-cols-2 lg:gap-0;
   }
   .how__list-item {
     @apply lg:mt-[100px];
@@ -89,7 +89,7 @@
     @apply mb-[30px] text-2xl font-bold xl:mb-[42px] xl:text-[42px];
   }
   .how__card-list {
-    @apply lg:mb-10 border-b-[1px] border-middleGrey pb-10 xl:pb-[50px];
+    @apply border-b-[1px] border-middleGrey pb-10 lg:mb-10 xl:pb-[50px];
   }
   .how__card-list-item {
     @apply flex items-center;
@@ -109,19 +109,19 @@
 
   /* actuall cases  */
   .actual-cases__wrapper {
-    @apply lg:pb-[73px] pt-5 pb-20;
+    @apply pt-5 pb-20 lg:pb-[73px];
   }
   .actual-cases__heading-wrapper {
-    @apply lg:mb-10 mb-[36px] flex justify-between  xl:mb-[88px];
+    @apply mb-[36px] flex justify-between lg:mb-10  xl:mb-[88px];
   }
   .actual-cases__title {
-    @apply lg:max-w-none lg:text-[45px] lg:leading-[54px] max-w-[250px] text-4xl font-bold uppercase leading-[43px] xl:text-[90px] xl:leading-[108px];
+    @apply max-w-[250px] text-4xl font-bold uppercase leading-[43px] lg:max-w-none lg:text-[45px] lg:leading-[54px] xl:text-[90px] xl:leading-[108px];
   }
   .actual-cases__all-btn {
-    @apply lg:mb-0 mb-[10px]  flex items-center;
+    @apply mb-[10px] flex  items-center lg:mb-0;
   }
   .actual-cases__all-btn-text {
-    @apply lg:block mr-3 hidden font-bold;
+    @apply mr-3 hidden font-bold lg:block;
   }
   .actual-cases__all-btn-decor {
     @apply flex h-9 w-9 items-center justify-center  rounded-full 
@@ -135,8 +135,8 @@
     @apply flex flex-col xl:mb-0;
   }
   .actual-cases__card-image {
-    @apply lg:h-[293px] lg:w-[370px] mb-5 h-[165px] w-[270px] 
-     max-w-none xl:mb-[35px]  xl:h-[387px] xl:w-[530px];
+    @apply mb-5 h-[165px] w-[270px] max-w-none lg:h-[293px] 
+     lg:w-[370px] xl:mb-[35px]  xl:h-[387px] xl:w-[530px];
   }
 
   .actual-cases__card-title-wrapper {

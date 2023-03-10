@@ -4032,6 +4032,10 @@ Styles borders  btn
   right: 2.5rem;
 }
 
+.top-1\/2{
+  top: 50%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -4573,6 +4577,14 @@ Styles borders  btn
   height: 24px;
 }
 
+.h-\[629px\]{
+  height: 629px;
+}
+
+.h-\[479px\]{
+  height: 479px;
+}
+
 .min-h-\[var\(--header-h\)\]{
   min-height: var(--header-h);
 }
@@ -4815,6 +4827,10 @@ Styles borders  btn
   width: 65%;
 }
 
+.w-\[706px\]{
+  width: 706px;
+}
+
 .min-w-max{
   min-width: -moz-max-content;
   min-width: max-content;
@@ -4885,6 +4901,10 @@ Styles borders  btn
   max-width: 80%;
 }
 
+.max-w-\[629px\]{
+  max-width: 629px;
+}
+
 .flex-auto{
   flex: 1 1 auto;
 }
@@ -4895,6 +4915,10 @@ Styles borders  btn
 
 .grow{
   flex-grow: 1;
+}
+
+.basis-1\/2{
+  flex-basis: 50%;
 }
 
 .translate-x-full{
@@ -5914,6 +5938,10 @@ Styles borders  btn
 
 .pt-\[9px\]{
   padding-top: 9px;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
 }
 
 .text-left{
@@ -8388,6 +8416,10 @@ BEGIN: html  scroll
     padding-top: 135px;
   }
 
+  .lg\:pb-20{
+    padding-bottom: 5rem;
+  }
+
   .lg\:text-center{
     text-align: center;
   }
@@ -8934,6 +8966,10 @@ BEGIN: html  scroll
 
   .xl\:mb-10{
     margin-bottom: 2.5rem;
+  }
+
+  .xl\:mt-\[90px\]{
+    margin-top: 90px;
   }
 
   .xl\:block{
@@ -10100,6 +10136,10 @@ BEGIN: html  scroll
 
   .xl\:pl-\[clamp\(40px\2c 7vw\2c 125px\)\]{
     padding-left: clamp(40px,7vw,125px);
+  }
+
+  .xl\:pb-\[196px\]{
+    padding-bottom: 196px;
   }
 
   .xl\:indent-\[138px\]{
