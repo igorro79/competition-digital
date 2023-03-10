@@ -1,9 +1,9 @@
 @layer components {
   /* =========== services page ============== */
-
+  /* 
   .services-page__breadcrumbs {
     @apply mb-[32px] text-middleGrey lg:mb-[62px] xl:mb-[70px];
-  }
+  } */
   /* .services-page__main-content-wrapper {
     @apply lg:pb-20 border-t border-middleGrey pb-14 xl:flex xl:pb-[196px];
   } */
@@ -43,9 +43,29 @@
     @apply bg-gradient-to-t from-black to-black bg-[length:100%_100%]  bg-no-repeat;
   }
 
+  /*========= animate link arrows ============  */
+  .link-arrow-animation {
+    @apply relative h-[19px] w-[19px] overflow-hidden lg:h-[21px] lg:w-[21px];
+  }
+  .link-arrow-animation svg {
+    @apply absolute h-[19px] w-[19px] text-white transition-all duration-300 ease-in-out lg:h-[21px] lg:w-[21px];
+  }
+  .link-arrow-animation svg:first-child {
+    @apply top-0 right-0;
+  }
+  .animated-hover-container:hover svg:first-child {
+    @apply top-[-100%] right-[-100%];
+  }
+  .link-arrow-animation svg:last-child {
+    @apply top-[100%] right-[100%];
+  }
+  .animated-hover-container:hover svg:last-child {
+    @apply top-0 right-0;
+  }
+
   /* =============== how we work section (services page) ================  */
 
-  .how__container {
+  /* .how__container {
     @apply py-[70px];
   }
   .how__wrapper {
@@ -65,11 +85,11 @@
   .how__intro-text {
     @apply mb-[50px] text-xl lg:ml-auto lg:mb-[68px]
      lg:max-w-[50%] lg:text-base xl:max-w-[810px] xl:text-[32px] xl:leading-[45px];
-  }
+  } */
 
-  .how__list {
+  /* .how__list {
     @apply grid gap-10 lg:grid-cols-2 lg:gap-0;
-  }
+  } */
   .how__list-item {
     @apply lg:mt-[100px];
   }
@@ -82,12 +102,12 @@
   .how__list-item:nth-child(even) > * {
     @apply lg:pl-[75px] xl:pl-[50px];
   }
-  .how__card-number {
+  /* .how__card-number {
     @apply mb-[5px] font-bold text-middleGrey xl:mb-[14px] xl:text-2xl;
   }
   .how__card-title {
     @apply mb-[30px] text-2xl font-bold xl:mb-[42px] xl:text-[42px];
-  }
+  } */
   .how__card-list {
     @apply border-b-[1px] border-middleGrey pb-10 lg:mb-10 xl:pb-[50px];
   }
@@ -103,12 +123,12 @@
   .how__card-list-item-text {
     @apply uppercase xl:text-2xl;
   }
-  .main-btn.how__main-btn {
+  /* .main-btn.how__main-btn {
     @apply xl:ml-0;
-  }
+  } */
 
   /* actuall cases  */
-  .actual-cases__wrapper {
+  /* .actual-cases__wrapper {
     @apply pt-5 pb-20 lg:pb-[73px];
   }
   .actual-cases__heading-wrapper {
@@ -149,5 +169,5 @@
   .actual-cases__card-title {
     @apply text-[18px] font-bold leading-[22px] dark:text-white
      xl:text-2xl xl:leading-[28px];
-  }
+  } */
 }
