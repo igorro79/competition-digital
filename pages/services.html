@@ -2384,15 +2384,15 @@
           <!-- container -->
           <!-- 2xl:max-w-[1710px] -->
           <div
-            class="container sm:max-w-full lg:px-[30px] 2xl:px-[135px] 3xl:max-w-[1920px]"
+            class="container pt-12 sm:max-w-full lg:px-[30px] 2xl:px-[135px] 3xl:max-w-[1920px]"
           >
             <!--  -->
             <div class="mb-8 lg:mb-[43px] xl:mb-[58px]">
               <div class="relative">
                 <h2
-                  class="text-4xl font-bold uppercase leading-[43px] text-light lg:text-[45px] lg:leading-[54px] xl:mb-[18px] xl:text-[48px] xl:leading-[108px] 2xl:mb-[58px] 2xl:text-[90px] 2xl:leading-[108px]"
+                  class="w-4/5 text-4xl font-bold uppercase leading-[43px] text-light lg:text-[45px] lg:leading-[54px] xl:mb-[18px] xl:text-[48px] xl:leading-[108px] 2xl:mb-[58px] 2xl:text-[90px] 2xl:leading-[108px]"
                 >
-                  Our blog
+                  actual cases
                 </h2>
 
                 <a
@@ -2449,143 +2449,127 @@
                   <!-- Slides -->
                   <!-- card-blog-01 -->
                   <div class="swiper-slide">
-                    <div class="card-blog w-min">
-                      <div
-                        class="aspect-w-16 aspect-h-10 w-[270px] overflow-hidden lg:aspect-w-16 lg:aspect-h-11 lg:w-[305px] lg:rounded-none xl:mb-[0px] xl:w-[530px]"
-                      >
-                        <!-- img aspect-w-16 aspect-h-11-->
-                        <picture class="">
-                          <source
-                            media="(max-width:819px)"
-                            type="image/jpg"
-                            srcset="
-                              ../src/images/blog/Rectangle-01-270x180.jpg,
-                              ../src/images/blog/Rectangle-01-270x180@2x.jpg 2x
-                            "
-                          />
-                          <source
-                            media="(min-width:820px) and (max-width:1279px)"
-                            type="image/jpg"
-                            srcset="
-                              ../src/images/blog/Rectangle-22-305x213.jpg,
-                              ../src/images/blog/Rectangle-22-305x213@2x.jpg 2x
-                            "
-                          />
+                    <a class="card-blog w-min">
+                      <div class="relative w-[270px] overflow-hidden">
+                        <!-- gradient -->
+                        <div
+                          class="absolute left-0 top-0 z-[1] h-full w-[80%] bg-gradient-to-r from-[rgba(0,0,0,0.64)]"
+                        ></div>
 
+                        <!-- text-above-image -->
+                        <div class="services-page__img-desc">
+                          <div class="services-page__img-desc_wrap">
+                            <div class="services-page__wrap-text">
+                              <p class="services-page__img-desc_big">7X</p>
+                              <div class="services-page__wrap-text_inner">
+                                <p class="services-page__img-desc_small">
+                                  cost of attracting
+                                </p>
+                                <p class="services-page__img-desc_small">
+                                  a customer
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="services-page__wrap-text_gap">
+                            <p class="services-page__img-desc_small">CR</p>
+                            <p class="services-page__img-desc_big">30%</p>
+                          </div>
+                          <p class="services-page__img-desc_small">audience</p>
+                        </div>
+                        <!-- card img  -->
+                        <picture>
                           <source
-                            media="(min-width:1280px)"
-                            type="image/jpg"
+                            media="(min-width: 1280px)"
                             srcset="
-                              ../src/images/blog/Rectangle-22-530x350.jpg,
-                              ../src/images/blog/Rectangle-22-530x350@2x.jpg 2x
+                              ../src/images/cases/cases-page-full-1@x.jpg,
+                              ../src/images/cases/cases-page-full-2@x.jpg 2x
+                            "
+                          />
+                          <source
+                            media="(min-width: 360px)"
+                            srcset="
+                              ../src/images/cases/cases-page-tab-1@x.jpg,
+                              ../src/images/cases/cases-page-tab-2@x.jpg 2x
                             "
                           />
 
                           <img
-                            class="duration-250 w-full object-cover transition ease-out hover:scale-105 hover:ease-in"
-                            srcset="
-                              ../src/images/blog/Rectangle-01-270x180.jpg,
-                              ../src/images/blog/Rectangle-01-270x180@2x.jpg 2x
-                            "
-                            src="../src/images/blog/Rectangle-01-270x180.jpg"
-                            alt="Business card"
+                            class="duration-250 w-full object-cover transition ease-out hover:ease-in group-hover:scale-105"
                             loading="lazy"
+                            src="../src/images/cases/cases-page-full-1@x.jpg"
+                            alt="some card"
                           />
                         </picture>
-
-                        <!--  -->
                       </div>
 
-                      <div
-                        class="flex flex-row items-center gap-[10px] pt-[23px] xl:gap-[17px] xl:pt-[11px]"
-                      >
-                        <a
-                          href="#"
-                          aria-label="business"
-                          class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
-                        >
-                          Business
-                        </a>
-
-                        <p
-                          class="text-xs font-medium leading-[14px] text-middleGrey xl:text-sm xl:leading-[17px]"
-                        >
-                          24.08.2022
-                        </p>
-                      </div>
                       <!-- border-b-[1px] border-b-borderBottom  -->
                       <h4
                         class="mt-4 text-lg font-bold leading-[22px] tracking-tight text-light lg:max-w-[305px] xl:mt-4 xl:text-2xl xl:leading-[29px]"
                       >
-                        How to increase traffic to an online store
+                        INGRAD: Advertising campaign for mobile games
                       </h4>
-                    </div>
+                    </a>
                   </div>
 
                   <!-- card-blog-02 -->
                   <div class="swiper-slide">
                     <div class="card-blog w-min">
-                      <div
-                        class="aspect-w-16 aspect-h-10 w-[270px] overflow-hidden lg:aspect-w-16 lg:aspect-h-11 lg:max-h-[212px] lg:w-[305px] lg:rounded-none xl:mb-[0px] xl:max-h-[369.5px] xl:w-[530px]"
-                      >
-                        <!-- img aspect-w-16 aspect-h-11-->
-                        <picture class="">
+                      <div class="relative w-[270px] overflow-hidden">
+                        <!-- gradient -->
+                        <div
+                          class="absolute left-0 top-0 z-[1] h-full w-[80%] bg-gradient-to-r from-[rgba(0,0,0,0.64)]"
+                        ></div>
+
+                        <!-- text-above-image -->
+                        <div class="cases-page__img-desc">
+                          <div class="cases-page__img-desc_wrap">
+                            <div class="cases-page__wrap-text">
+                              <p class="cases-page__img-desc_big">7X</p>
+                              <div class="cases-page__wrap-text_inner">
+                                <p class="cases-page__img-desc_small">
+                                  cost of attracting
+                                </p>
+                                <p class="cases-page__img-desc_small">
+                                  a customer
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="cases-page__wrap-text_gap">
+                            <p class="cases-page__img-desc_small">CR</p>
+                            <p class="cases-page__img-desc_big">30%</p>
+                          </div>
+                          <p class="cases-page__img-desc_small">audience</p>
+                        </div>
+                        <!-- card img  -->
+                        <picture>
                           <source
-                            media="(max-width:819px)"
-                            type="image/jpg"
+                            media="(min-width: 1280px)"
                             srcset="
-                              ../src/images/blog/Rectangle-23-270x166.jpg,
-                              ../src/images/blog/Rectangle-23-270x166@2x.jpg 2x
+                              ../src/images/cases/cases-page-full-1@x.jpg,
+                              ../src/images/cases/cases-page-full-2@x.jpg 2x
                             "
                           />
                           <source
-                            media="(min-width:820px) and (max-width:1279px)"
-                            type="image/jpg"
+                            media="(min-width: 360px)"
                             srcset="
-                              ../src/images/blog/Rectangle-23-305x220.jpg,
-                              ../src/images/blog/Rectangle-23-305x220@2x.jpg 2x
+                              ../src/images/cases/cases-page-tab-1@x.jpg,
+                              ../src/images/cases/cases-page-tab-2@x.jpg 2x
                             "
                           />
 
-                          <source
-                            media="(min-width:1280px)"
-                            srcset="
-                              ../src/images/blog/Rectangle-23-530x350.jpg,
-                              ../src/images/blog/Rectangle-23-530x350@2x.jpg 2x
-                            "
-                          />
-
-                          <!--w-full lg:h-[350px] xl:h-[493px]-->
                           <img
-                            class="duration-250 w-full object-cover transition ease-out hover:scale-105 hover:ease-in lg:w-[305px] xl:w-[530px]"
-                            srcset="
-                              ../src/images/blog/Rectangle-23-270x166.jpg,
-                              ../src/images/blog/Rectangle-23-270x166@2x.jpg 2x
-                            "
-                            src="../src/images/blog/Rectangle-23-270x166.jpg"
-                            alt="Business card"
+                            class="duration-250 w-full object-cover transition ease-out hover:ease-in group-hover:scale-105"
                             loading="lazy"
+                            src="../src/images/cases/cases-page-full-1@x.jpg"
+                            alt="some card"
                           />
                         </picture>
                       </div>
 
-                      <div
-                        class="flex flex-row items-center gap-[10px] pt-[23px] xl:gap-[17px] xl:pt-[11px]"
-                      >
-                        <a
-                          href="#"
-                          aria-label="business"
-                          class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
-                        >
-                          Business
-                        </a>
-
-                        <p
-                          class="text-xs font-medium leading-[14px] text-middleGrey xl:text-sm xl:leading-[17px]"
-                        >
-                          24.08.2022
-                        </p>
-                      </div>
                       <!-- border-b-[1px] border-b-borderBottom  -->
                       <h4
                         class="mt-4 text-lg font-bold leading-[22px] tracking-tight text-light lg:max-w-[305px] xl:mt-4 xl:text-2xl xl:leading-[29px]"
@@ -2599,7 +2583,7 @@
                   <div class="swiper-slide">
                     <div class="card-blog w-min">
                       <div
-                        class="aspect-w-16 aspect-h-10 w-[270px] overflow-hidden lg:aspect-h-11 lg:w-[305px] lg:rounded-none xl:aspect-h-11 xl:mb-[0px] xl:max-h-[369.5px] xl:w-[530px]"
+                        class="w-[270px] overflow-hidden lg:aspect-h-11 lg:w-[305px] lg:rounded-none xl:aspect-h-11 xl:mb-[0px] xl:max-h-[369.5px] xl:w-[530px]"
                       >
                         <!-- img aspect-w-16 aspect-h-11-->
                         <picture class="">
@@ -2642,23 +2626,6 @@
                         </picture>
                       </div>
 
-                      <div
-                        class="flex flex-row items-center gap-[10px] pt-[23px] xl:gap-[17px] xl:pt-[11px]"
-                      >
-                        <a
-                          href="#"
-                          aria-label="business"
-                          class="rounded-[60px] bg-darkGrey py-2 px-4 text-xs font-medium uppercase leading-[14px] text-light lg:text-[14px] lg:leading-[120%] xl:px-[19px] xl:text-sm xl:leading-[17px]"
-                        >
-                          Business
-                        </a>
-
-                        <p
-                          class="text-xs font-medium leading-[14px] text-middleGrey xl:text-sm xl:leading-[17px]"
-                        >
-                          24.08.2022
-                        </p>
-                      </div>
                       <!-- border-b-[1px] border-b-borderBottom  -->
                       <h4
                         class="mt-4 text-lg font-bold leading-[22px] tracking-tight text-light lg:max-w-[305px] xl:mt-4 xl:text-2xl xl:leading-[29px]"
