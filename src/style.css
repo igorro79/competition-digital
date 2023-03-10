@@ -10053,6 +10053,10 @@ BEGIN: html  scroll
     padding-left: min(5vw,60px);
   }
 
+  .xl\:pl-\[max\(5vw\2c 60px\)\]{
+    padding-left: max(5vw,60px);
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -11353,6 +11357,10 @@ BEGIN: html  scroll
 
   .\33xl\:pl-\[153px\]{
     padding-left: 153px;
+  }
+
+  .\33xl\:pl-\[min\(8vw\2c 153px\)\]{
+    padding-left: min(8vw,153px);
   }
 
   .\33xl\:text-\[120px\]{
