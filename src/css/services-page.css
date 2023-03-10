@@ -1,37 +1,6 @@
 @layer components {
   /* =========== services page ============== */
 
-  .services-page__breadcrumbs {
-    @apply lg:mb-[62px] mb-[32px] text-middleGrey xl:mb-[70px];
-  }
-  .services-page__main-content-wrapper {
-    @apply lg:pb-20 border-t border-middleGrey pb-14 xl:flex xl:pb-[196px];
-  }
-
-  .services-page__service-image-wrapper {
-    @apply relative mx-auto hidden h-[629px] max-w-[629px] basis-1/2 rounded-full
-     bg-darkGrey xl:mt-[90px] xl:block;
-  }
-  .services-page__service-image {
-    @apply absolute top-1/2 left-1/2 h-[479px] w-[706px]
-     translate-x-[-50%] translate-y-[-50%];
-  }
-
-  .services-page__list {
-    @apply xl:basis-1/2;
-  }
-  .services-page__list-item {
-    @apply border-b-[1px] border-middleGrey;
-  }
-  .services-page__list-item-number {
-    @apply lg:mr-[70px] lg:block hidden text-middleGrey xl:text-2xl;
-  }
-  .services-page__list-item-title {
-    @apply lg:text-4xl text-xl font-semibold uppercase xl:text-[42px];
-  }
-  .services-page__list-item-link {
-    @apply lg:py-10  flex items-center  py-7;
-  }
   .services-page__list-item-link .animated-arrow-wrapper {
     @apply ml-auto;
   }
@@ -43,53 +12,43 @@
     @apply bg-gradient-to-t from-black to-black bg-[length:100%_100%]  bg-no-repeat;
   }
 
+  /*========= animate link arrows ============  */
+  .link-arrow-animation {
+    @apply relative h-[19px] w-[19px] overflow-hidden lg:h-[21px] lg:w-[21px];
+  }
+  .link-arrow-animation svg {
+    @apply absolute h-[19px] w-[19px] text-white transition-all duration-300 ease-in-out lg:h-[21px] lg:w-[21px];
+  }
+  .link-arrow-animation svg:first-child {
+    @apply top-0 right-0;
+  }
+  .animated-hover-container:hover svg:first-child {
+    @apply top-[-100%] right-[-100%];
+  }
+  .link-arrow-animation svg:last-child {
+    @apply top-[100%] right-[100%];
+  }
+  .animated-hover-container:hover svg:last-child {
+    @apply top-0 right-0;
+  }
+
   /* =============== how we work section (services page) ================  */
 
-  .how__container {
-    @apply py-[70px];
-  }
-  .how__wrapper {
-    @apply border-t border-middleGrey pt-[30px] xl:pt-[74px];
-  }
-  .how__title {
-    @apply lg:text-[42px] mb-[30px] text-[28px] font-bold uppercase 
-    xl:mb-[63px] xl:text-[90px] xl:leading-[100px];
-  }
-  .how__content {
-    @apply flex-row-reverse xl:flex;
-  }
-  .how__grid-wrapper {
-    @apply lg:mb-16 mb-8 xl:min-w-[1244px] xl:border-l
-     xl:border-middleGrey;
-  }
-  .how__intro-text {
-    @apply lg:ml-auto lg:mb-[68px] lg:max-w-[50%] lg:text-base
-     mb-[50px] text-xl xl:max-w-[810px] xl:text-[32px] xl:leading-[45px];
-  }
-
-  .how__list {
-    @apply lg:grid-cols-2 lg:gap-0 grid gap-10;
-  }
   .how__list-item {
     @apply lg:mt-[100px];
   }
   .how__list-item:nth-child(odd) {
     @apply lg:mt-0 lg:border-r lg:border-middleGrey;
   }
-  .how__list-item:nth-child(odd) > * {
+  /* .how__list-item:nth-child(odd) > * {
     @apply xl:ml-[154px];
-  }
+  } */
   .how__list-item:nth-child(even) > * {
     @apply lg:pl-[75px] xl:pl-[50px];
   }
-  .how__card-number {
-    @apply mb-[5px] font-bold text-middleGrey xl:mb-[14px] xl:text-2xl;
-  }
-  .how__card-title {
-    @apply mb-[30px] text-2xl font-bold xl:mb-[42px] xl:text-[42px];
-  }
+
   .how__card-list {
-    @apply lg:mb-10 border-b-[1px] border-middleGrey pb-10 xl:pb-[50px];
+    @apply border-b-[1px] border-middleGrey pb-10 lg:mb-10 xl:pb-[50px];
   }
   .how__card-list-item {
     @apply flex items-center;
@@ -98,56 +57,57 @@
     @apply mr-4 h-4 w-4;
   }
   .how__card-list-item:not(:last-child) {
-    @apply mb-8;
+    @apply mb-[26px];
   }
   .how__card-list-item-text {
     @apply uppercase xl:text-2xl;
   }
-  .main-btn.how__main-btn {
+  /* .main-btn.how__main-btn {
     @apply xl:ml-0;
+  } */
+
+  /* ========== 
+img-desc-
+========== */
+
+  /* gap-[16px] */
+  .services-page__img-desc {
+    @apply absolute top-0 z-[1] flex flex-col py-4
+    px-[17px] transition-all;
+  }
+  .services-page__img-desc:hover {
+    @apply text-main;
   }
 
-  /* actuall cases  */
-  .actual-cases__wrapper {
-    @apply lg:pb-[73px] pt-5 pb-20;
-  }
-  .actual-cases__heading-wrapper {
-    @apply lg:mb-10 mb-[36px] flex justify-between  xl:mb-[88px];
-  }
-  .actual-cases__title {
-    @apply lg:max-w-none lg:text-[45px] lg:leading-[54px] max-w-[250px] text-4xl font-bold uppercase leading-[43px] xl:text-[90px] xl:leading-[108px];
-  }
-  .actual-cases__all-btn {
-    @apply lg:mb-0 mb-[10px]  flex items-center;
-  }
-  .actual-cases__all-btn-text {
-    @apply lg:block mr-3 hidden font-bold;
-  }
-  .actual-cases__all-btn-decor {
-    @apply flex h-9 w-9 items-center justify-center  rounded-full 
-    border-[1px] border-light bg-dark text-4xl
-    hover:border-main hover:bg-main active:border-main active:bg-main;
-  }
-  .actual-cases__card-list {
-    @apply flex gap-5 overflow-auto xl:mb-[50px] xl:gap-[30px];
-  }
-  .actual-cases__card {
-    @apply flex flex-col xl:mb-0;
-  }
-  .actual-cases__card-image {
-    @apply lg:h-[293px] lg:w-[370px] mb-5 h-[165px] w-[270px] 
-     max-w-none xl:mb-[35px]  xl:h-[387px] xl:w-[530px];
+  .services-page__img-desc_wrap {
+    @apply mb-[20px] lg:mb-3
+    xl:mb-[22px]
+    2xl:mb-[30px];
   }
 
-  .actual-cases__card-title-wrapper {
-    @apply flex justify-between;
+  .services-page__wrap-text {
+    @apply flex items-center gap-[10px];
   }
-  .actual-cases__card-title-wrapper svg {
-    @apply ml-5 max-h-[15px] max-w-[15px] text-dark
-     dark:text-white xl:max-h-[21px] xl:max-w-[21px];
+
+  .services-page__img-desc_big {
+    @apply text-[30px] font-bold leading-[1.1]
+     text-white lg:text-[30px]
+    xl:text-[50px];
   }
-  .actual-cases__card-title {
-    @apply text-[18px] font-bold leading-[22px] dark:text-white
-     xl:text-2xl xl:leading-[28px];
+
+  .services-page__wrap-text_inner {
+    @apply flex flex-col;
+  }
+
+  .services-page__wrap-text_gap {
+    @apply mb-[5px] flex items-center gap-[5px]
+    lg:mb-[2px] lg:gap-[8px]
+    xl:mb-[20px];
+  }
+
+  .services-page__img-desc_small {
+    @apply text-[10px] font-medium leading-[1.1]  text-white
+     lg:text-[10px]  lg:leading-[1.1]
+    xl:text-base 2xl:leading-[1.1];
   }
 }

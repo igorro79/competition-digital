@@ -16,6 +16,7 @@ function showSucces(input) {
   formControl.classList.remove("error");
 }
 
+//check username is valid on blur
 function checkUsernameBlur(e) {
   if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
     showSucces(e.target);
@@ -27,6 +28,21 @@ function checkUsernameBlur(e) {
     showError(e.target, "Name length from 3 to 50 charackters");
   }
 }
+
+//check username is valid onClick
+function checkUsernameClick(e) {
+  if (e.target.parentElement.classList.contains("error")) {
+    if (
+      e.target.value.trim().length >= 3 &&
+      e.target.value.trim().length < 50
+    ) {
+      showSucces(e.target);
+    } else {
+      showError(e.target, "Name length from 3 to 50 charackters");
+    }
+  }
+}
+
 //check email is valid
 function checkEmail(input) {
   const re =
@@ -61,6 +77,20 @@ function checkEmailBlur(e) {
     showError(e.target, "Email is not valid");
   }
 }
+//check email is valid on Click
+
+function checkEmailClick(e) {
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (e.target.parentElement.classList.contains("error")) {
+    if (re.test(e.target.value.trim())) {
+      showSucces(e.target);
+      return;
+    } else {
+      showError(e.target, "Email is not valid");
+    }
+  }
+}
 
 function checkPhone(input) {
   if (input.value.trim().length >= 10 && input.value.trim().length < 15) {
@@ -76,6 +106,7 @@ function checkPhone(input) {
     return false;
   }
 }
+//check phone is valid on blur
 
 function checkPhoneBlur(e) {
   if (e.target.value.trim().length >= 10 && e.target.value.trim().length < 15) {
@@ -88,6 +119,21 @@ function checkPhoneBlur(e) {
     showError(e.target, "Phone number should be from 10 to 15 digits");
   }
 }
+//check phone is valid on Click
+
+function checkPhoneClick(e) {
+  if (e.target.parentElement.classList.contains("error")) {
+    if (
+      e.target.value.trim().length >= 10 &&
+      e.target.value.trim().length < 15
+    ) {
+      showSucces(e.target);
+      return;
+    } else {
+      showError(e.target, "Phone number should be from 10 to 15 digits");
+    }
+  }
+}
 
 function checkCompanyBlur(e) {
   if (e.target.value.trim().length >= 3 && e.target.value.trim().length < 50) {
@@ -98,6 +144,19 @@ function checkCompanyBlur(e) {
     showError(e.target, `Company name is required`);
   } else {
     showError(e.target, "Company name length from 2 to 50 charackters");
+  }
+}
+function checkCompanyClick(e) {
+  if (e.target.parentElement.classList.contains("error")) {
+    if (
+      e.target.value.trim().length >= 3 &&
+      e.target.value.trim().length < 50
+    ) {
+      showSucces(e.target);
+      return;
+    } else {
+      showError(e.target, "Company name length from 2 to 50 charackters");
+    }
   }
 }
 
@@ -116,8 +175,13 @@ function checkLength(input, min, max) {
   }
 }
 
-function toggleSpinner(button) {
-  button.toggleAttribute("disabled", "true");
-  button.firstElementChild.classList.toggle("hidden");
-  button.lastElementChild.classList.toggle("hidden");
+function showSpinner(button) {
+  button.setAttribute("disabled", "true");
+  button.firstElementChild.classList.add("hidden");
+  button.lastElementChild.classList.remove("hidden");
+}
+function hideSpinner(button) {
+  button.removeAttribute("disabled");
+  button.firstElementChild.classList.remove("hidden");
+  button.lastElementChild.classList.add("hidden");
 }

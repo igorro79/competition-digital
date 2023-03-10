@@ -11,12 +11,22 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
-    <script src="../src/js/check-theme.js"></script>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
 
     <title>Uwp digital</title>
   </head>
   <body class="bg-dark">
-    <div class="wrapper relative">
+    <div class="wrapper p-0">
       <!-- BEGIN: 01-section-header -->
       <header
         id="mainNav"
@@ -1934,39 +1944,18 @@
         </div>
       </div>
       <!--  END: form-menu -->
-      <div
-        class="fixed bottom-10 right-[3vw] z-50 grid w-[300px] grid-cols-[1fr_auto] items-center rounded-[20px] border-[1px] border-middleGrey bg-dark py-5 px-5 text-sm text-white lg:right-[7vw] lg:w-fit lg:rounded-[60px] lg:py-[17px] lg:pr-[17px] lg:pl-[38px] lg:text-base"
-        id="cookies"
-      >
-        <p
-          class="col-start-1 col-end-3 mb-[15px] uppercase lg:col-start-auto lg:col-end-auto lg:mb-1 lg:max-w-[490px]"
-        >
-          THIS WEBSITE USES COOKIES.
-        </p>
-        <a href="" class="font-bold uppercase transition-all hover:text-main"
-          >Learn more</a
-        >
-        <button
-          id="acceptBtn"
-          type="button"
-          aria-label="accept"
-          class="rounded-[50px] bg-grey py-[10px] px-[30px] uppercase text-white transition-all hover:bg-white hover:text-dark lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:ml-10 lg:py-4 lg:px-10"
-        >
-          accept
-        </button>
-      </div>
     </div>
     <!--  BEGIN: Main -->
-    <main class="z-10">
-      <div class="container">
+    <main>
+      <div class="container max-w-full xl:max-w-[1920px]">
         <!-- flex container -->
         <div
-          class="nopage__content relative left-0 top-0 flex h-[calc(100vh-var(--header-h)-63px)] w-full flex-col items-center justify-center border-b border-middleGrey text-white lg:h-[calc(100vh-var(--header-h-xl)-82px)] xl:h-[calc(100vh-var(--header-h-xl)-95px)]"
+          class="nopage__content relative flex h-[calc(100vh-64px)] min-h-[460px] w-full flex-col items-center justify-center border-b border-middleGrey text-white lg:h-[calc(100vh-88px)] lg:min-h-[540px] xl:h-[calc(100vh-95px)]"
         >
           <a
             aria-label="go homepage"
             href="../index.html"
-            class="nopage__button absolute top-[39%] left-1/2 z-[1] w-[clamp(144px,34vw,316px)] -translate-y-1/2 -translate-x-1/2 border border-light bg-dark px-[clamp(14px,5vw,37px)] py-[clamp(14px,4vw,32px)] uppercase shadow-[0px_4px_250px_rgba(0,0,0,0.25)] hover:border-main lg:w-[clamp(318px,39vw,369px)] lg:border-[2px] lg:py-[clamp(22px,2.9vw,38px)] lg:px-[clamp(32px,4vw,44px)] xl:border-[3px] 3xl:top-1/2"
+            class="nopage__button absolute top-[48%] left-1/2 z-[1] w-[clamp(144px,34vw,316px)] -translate-y-1/2 -translate-x-1/2 border border-light bg-dark px-[clamp(14px,5vw,37px)] py-[clamp(14px,4vw,32px)] uppercase shadow-[0px_4px_80px_60px_rgba(0,0,0,0.25)] hover:border-main lg:w-[clamp(318px,39vw,369px)] lg:border-[2px] lg:py-[clamp(22px,2.9vw,38px)] lg:px-[clamp(32px,4vw,44px)] xl:border-[3px] 3xl:top-1/2"
           >
             <svg
               width="100%"
@@ -2108,7 +2097,7 @@
             </svg>
           </a>
           <div
-            class="nopage__textBlock-one absolute top-[39%] left-1/2 flex w-full -translate-y-1/2 -translate-x-1/2 flex-col justify-center opacity-0 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
+            class="nopage__textBlock-one absolute top-[48%] left-1/2 flex w-full -translate-y-1/2 -translate-x-1/2 flex-col justify-center opacity-0 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
           >
             <p
               class="mb-[clamp(55px,15vw,80px)] text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:mb-[clamp(43px,14vw,114px)] sm:text-[clamp(58px,10vw,80px)] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
@@ -2123,7 +2112,7 @@
           </div>
 
           <div
-            class="nopage__textBlock-two absolute top-[39%] left-1/2 flex w-full -translate-y-1/2 -translate-x-1/2 flex-col justify-center 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
+            class="nopage__textBlock-two absolute top-[48%] left-1/2 flex w-full -translate-y-1/2 -translate-x-1/2 flex-col justify-center 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
           >
             <p
               class="mb-[clamp(55px,15vw,80px)] text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:mb-[clamp(43px,14vw,114px)] sm:text-[clamp(58px,10vw,80px)] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
@@ -2139,9 +2128,67 @@
         </div>
       </div>
     </main>
-    <footer
-      class="sticky bottom-0 left-0 right-0 h-[63px] lg:h-[82px] xl:h-[95px]"
-    ></footer>
+    <footer class="h-[63px] overflow-hidden lg:h-[82px] 2xl:h-[95px]">
+      <div class="relative flex text-white lg:text-xl 2xl:text-2xl">
+        <div
+          class="flex animate-marquee items-center whitespace-nowrap py-5 uppercase lg:py-[30px] 2xl:py-8"
+        >
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span
+          ><span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span
+          ><span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+        </div>
+
+        <div
+          class="absolute top-0 flex animate-marquee2 items-center whitespace-nowrap py-5 uppercase lg:py-[30px] 2xl:py-8"
+        >
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">404</span>
+          <span class="mx-2 h-2 w-2 rounded-full bg-white"></span>
+          <span class="mx-2">Page not found</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="../src/js/main-script.js"></script>
   </body>

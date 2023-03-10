@@ -14,6 +14,12 @@ email_02.addEventListener("blur", checkEmailBlur);
 phone_02.addEventListener("blur", checkPhoneBlur);
 company_02.addEventListener("blur", checkCompanyBlur);
 
+//check on click
+username_02.addEventListener("input", checkUsernameClick);
+email_02.addEventListener("input", checkEmailClick);
+phone_02.addEventListener("input", checkPhoneClick);
+company_02.addEventListener("input", checkCompanyClick);
+
 //Event Listeners mainForm
 mainForm.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -21,7 +27,6 @@ mainForm.addEventListener("submit", function (e) {
 
   const userLengthValid = checkLength(username_02, 3, 50);
   const companyLengthValid = checkLength(company_02, 3, 50);
-
   const emailValid = checkEmail(email_02);
   const phoneValid = checkPhone(phone_02);
 
@@ -29,13 +34,11 @@ mainForm.addEventListener("submit", function (e) {
   console.log(Object.fromEntries(formData));
 
   if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
-    toggleSpinner(submitBtn);
+    showSpinner(submitBtn);
 
     setTimeout(() => {
-      toggleSpinner(submitBtn);
-
-      // if AJAX response OK run below
-
+      //TODO  if AJAX response OK run below ELSE show Alert ERROR
+      hideSpinner(submitBtn);
       openPopupSentMsg();
       lockWrapper();
       e.target.reset();
