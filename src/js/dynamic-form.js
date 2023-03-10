@@ -56,6 +56,12 @@ email.addEventListener("blur", checkEmailBlur);
 phone.addEventListener("blur", checkPhoneBlur);
 company.addEventListener("blur", checkCompanyBlur);
 
+//check on click
+username.addEventListener("input", checkUsernameClick);
+email.addEventListener("input", checkEmailClick);
+phone.addEventListener("input", checkPhoneClick);
+company.addEventListener("input", checkCompanyClick);
+
 //Event Listeners dynamicForm
 dynamicForm.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -65,16 +71,16 @@ dynamicForm.addEventListener("submit", function (e) {
   const companyLengthValid = checkLength(company, 3, 30);
   const emailValid = checkEmail(email);
   const phoneValid = checkPhone(phone);
-  console.log("🚀 ~ file: dynamic-form.js:68 ~ phoneValid:", phoneValid);
 
   const formData = new FormData(e.target);
   console.log(Object.fromEntries(formData));
 
   if (userLengthValid && companyLengthValid && emailValid && phoneValid) {
-    toggleSpinner(submitBtn);
+    showSpinner(submitBtn);
     setTimeout(() => {
-      // if AJAX response OK run below
-      toggleSpinner(submitBtn);
+      //TODO  if AJAX response OK run below ELSE show Alert ERROR
+
+      hideSpinner(submitBtn);
       openPopupSentMsg();
       closeDynamicForm();
       e.target.reset();
