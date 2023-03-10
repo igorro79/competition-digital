@@ -6334,10 +6334,6 @@ BEGIN: html  scroll
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-white:hover{
-  fill: #fff;
-}
-
 .hover\:stroke-red-500:hover{
   stroke: #ef4444;
 }
@@ -6432,6 +6428,20 @@ BEGIN: html  scroll
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group\/arrow:hover .group-hover\/arrow\:text__hover-red{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.group\/card:hover .group\/arrow:hover .group-hover\/arrow\:text__hover-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -6462,6 +6472,11 @@ BEGIN: html  scroll
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
+.group\/arrow:hover .group-hover\/arrow\:bg-main{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:fill-dark{
   fill: #171717;
 }
@@ -6487,6 +6502,10 @@ BEGIN: html  scroll
 }
 
 .group:hover .group-hover\:fill-white{
+  fill: #fff;
+}
+
+.group\/arrow:hover .group-hover\/arrow\:fill-white{
   fill: #fff;
 }
 
@@ -8624,6 +8643,14 @@ BEGIN: html  scroll
     right: -28px;
   }
 
+  .xl\:top-\[71px\]{
+    top: 71px;
+  }
+
+  .xl\:left-\[72\%\]{
+    left: 72%;
+  }
+
   .xl\:order-3{
     order: 3;
   }
@@ -8958,16 +8985,32 @@ BEGIN: html  scroll
     margin-top: 72px;
   }
 
-  .xl\:mr-\[65px\]{
-    margin-right: 65px;
-  }
-
   .xl\:mt-\[70px\]{
     margin-top: 70px;
   }
 
   .xl\:mt-\[-14px\]{
     margin-top: -14px;
+  }
+
+  .xl\:mt-\[79px\]{
+    margin-top: 79px;
+  }
+
+  .xl\:mb-\[34px\]{
+    margin-bottom: 34px;
+  }
+
+  .xl\:mt-\[30px\]{
+    margin-top: 30px;
+  }
+
+  .xl\:mt-\[-441px\]{
+    margin-top: -441px;
+  }
+
+  .xl\:mt-\[-585px\]{
+    margin-top: -585px;
   }
 
   .xl\:block{
@@ -9329,6 +9372,10 @@ BEGIN: html  scroll
 
   .xl\:max-w-\[99\%\]{
     max-width: 99%;
+  }
+
+  .xl\:max-w-\[50\%\]{
+    max-width: 50%;
   }
 
   .xl\:flex-auto{
@@ -10264,6 +10311,10 @@ BEGIN: html  scroll
     padding-top: 1px;
   }
 
+  .xl\:pb-\[70px\]{
+    padding-bottom: 70px;
+  }
+
   .xl\:pl-\[155px\]{
     padding-left: 155px;
   }
@@ -10276,12 +10327,28 @@ BEGIN: html  scroll
     padding-left: 65px;
   }
 
-  .xl\:pb-\[70px\]{
-    padding-bottom: 70px;
+  .xl\:pt-\[146px\]{
+    padding-top: 146px;
   }
 
-  .xl\:pt-\[194px\]{
-    padding-top: 194px;
+  .xl\:pt-\[71px\]{
+    padding-top: 71px;
+  }
+
+  .xl\:pb-\[147px\]{
+    padding-bottom: 147px;
+  }
+
+  .xl\:pb-\[13px\]{
+    padding-bottom: 13px;
+  }
+
+  .xl\:pb-\[160px\]{
+    padding-bottom: 160px;
+  }
+
+  .xl\:pt-\[130px\]{
+    padding-top: 130px;
   }
 
   .xl\:indent-\[138px\]{
@@ -10434,6 +10501,10 @@ BEGIN: html  scroll
 
   .xl\:text-\[24px\]{
     font-size: 24px;
+  }
+
+  .xl\:text-\[42px\]{
+    font-size: 42px;
   }
 
   .xl\:font-semibold{
@@ -10629,6 +10700,14 @@ BEGIN: html  scroll
 
   .\32xl\:left-\[30px\]{
     left: 30px;
+  }
+
+  .\32xl\:top-\[71px\]{
+    top: 71px;
+  }
+
+  .\32xl\:top-\[-6px\]{
+    top: -6px;
   }
 
   .\32xl\:m-0{
@@ -11523,6 +11602,14 @@ BEGIN: html  scroll
 
   .\32xl\:pb-\[46px\]{
     padding-bottom: 46px;
+  }
+
+  .\32xl\:pb-\[146px\]{
+    padding-bottom: 146px;
+  }
+
+  .\32xl\:pb-\[160px\]{
+    padding-bottom: 160px;
   }
 
   .\32xl\:indent-\[23px\]{
