@@ -54,6 +54,15 @@ const toggleDynamicMenu = () => {
 
 // ----  Close a menu tablet. ---
 function burgerClose() {
+  if (
+    document
+      .querySelector("header")
+      .classList.contains("burger-paint-header-dark")
+  ) {
+    document
+      .querySelector("header")
+      .classList.remove("burger-paint-header-dark");
+  }
   burger.classList.toggle("is-active");
   menuServicesClose();
   showMainHeader();
@@ -63,10 +72,13 @@ function burgerClose() {
 
 // ----  Open a menu tablet. ---
 function burgerOpen() {
+  if (document.querySelector("header").classList.contains("white-header")) {
+    document.querySelector("header").classList.add("burger-paint-header-dark");
+  }
   burger.classList.toggle("is-active");
   if (window.innerWidth >= 820) hideMainHeader();
   lockWrapper();
-  closePopupSentMsg();
+  if (document.getElementById("popupForms")) closePopupSentMsg();
   openDynamicMenu();
 }
 
@@ -119,7 +131,7 @@ if (document.getElementById("btnContactTablet")) {
     menuServicesClose();
     lockWrapper();
     showMainHeader();
-    closePopupSentMsg();
+    if (document.getElementById("popupForms")) closePopupSentMsg();
     burger.classList.toggle("is-active");
 
     if (
