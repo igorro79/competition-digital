@@ -123,7 +123,7 @@ BEGIN: gradient-hero
     @apply xl:absolute  
   xl:top-[-16px]
   xl:right-[-48px] 
-  xl:h-[calc(100%+70px)] 
+  xl:h-[calc(100%+40px)] 
   xl:w-[1px]  xl:bg-[#919191] 
   xl:content-['']
   
@@ -137,7 +137,7 @@ BEGIN: gradient-hero
     @apply xl:absolute 
    xl:top-[-16px]
   xl:right-[-38px]
-   xl:h-[calc(100%+70px)]
+   xl:h-[calc(100%+40px)]
   xl:w-[1px]
 xl:bg-[#919191]
   xl:content-['']

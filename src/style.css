@@ -2732,7 +2732,7 @@ BEGIN: gradient-hero
     position: absolute;
     top: -16px;
     right: -48px;
-    height: calc(100% + 70px);
+    height: calc(100% + 40px);
     width: 1px;
     --tw-bg-opacity: 1;
     background-color: rgb(145 145 145 / var(--tw-bg-opacity));
@@ -2754,7 +2754,7 @@ BEGIN: gradient-hero
     position: absolute;
     top: -16px;
     right: -38px;
-    height: calc(100% + 70px);
+    height: calc(100% + 40px);
     width: 1px;
     --tw-bg-opacity: 1;
     background-color: rgb(145 145 145 / var(--tw-bg-opacity));
@@ -10682,6 +10682,10 @@ BEGIN: html  scroll
 
   .xl\:pt-\[105px\]{
     padding-top: 105px;
+  }
+
+  .xl\:pb-\[126px\]{
+    padding-bottom: 126px;
   }
 
   .xl\:indent-\[138px\]{
