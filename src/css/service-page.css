@@ -45,7 +45,7 @@ BEGIN: gradient-hero-service
 
   /*   */
 
-  .cyberbet .content__block::after {
+  /* .cyberbet .content__block::after {
     @apply xl:absolute  
   xl:top-0
   xl:left-[-102px] 
@@ -55,11 +55,11 @@ BEGIN: gradient-hero-service
   2xl:top-0
   2xl:left-[-152px]
    2xl:h-[100%];
-  }
+  } */
 
   /* 14-section-contextual*/
 
-  .content__block::after {
+  /* .content__block::after {
     @apply xl:absolute  
   xl:top-[-45px]
   xl:left-[-93px] 
@@ -70,17 +70,7 @@ BEGIN: gradient-hero-service
   2xl:left-[-140px];
   }
 
-  /*  14-section-contextual */
 
-  /*.next-case__title::after {
-    @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }*/
-
-  /*.next-case__title-right::after {
-    @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }*/
 
   .contextual__item::after {
     @apply absolute bottom-0 left-0 h-[1px]
@@ -92,10 +82,7 @@ BEGIN: gradient-hero-service
   right-0 h-[118px] w-[1px]  bg-[#919191] content-[''];
   }
 
-  /* .cyberbet  .content__block::after{
-  @apply content-['']  absolute
-  w-[1px]  h-[100%] bg-[#919191] top-0 left-[-60px] ;
-} */
+
 
   .cyberbet .content__block::after {
     @apply xl:absolute  xl:top-0
@@ -106,20 +93,20 @@ BEGIN: gradient-hero-service
   xl:content-[''] 
   
   2xl:left-[-152px];
-  }
+  } */
 
   /* 14-section-contextual*/
 
-  .content__block::after {
+  /* .content__block::after {
     @apply xl:absolute  xl:top-[-70px]
   xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-[#919191] xl:content-[''];
-  }
+  } */
 
   /*  19-section-contextual */
 
-  .next-case__title::after {
+  /* .next-case__title::after {
     @apply xl:absolute  
-  xl:top-[-21px]
+  xl:top-[-16px]
   xl:right-[-48px] 
   xl:h-[calc(100%+70px)] 
   xl:w-[1px]  xl:bg-[#919191] 
@@ -133,7 +120,7 @@ BEGIN: gradient-hero-service
 
   .next-case__title-right::after {
     @apply xl:absolute 
-   xl:top-[-21px]
+   xl:top-[-16px]
   xl:right-[-38px]
    xl:h-[calc(100%+70px)]
   xl:w-[1px]
@@ -143,7 +130,7 @@ xl:bg-[#919191]
     2xl:top-[-35px]
   2xl:right-[-67px]
    2xl:h-[calc(100%+70px)];
-  }
+  } */
 
   /* ================================== 
 BEGIN: 16-section-our-case img-desc-

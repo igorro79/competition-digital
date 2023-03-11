@@ -208,60 +208,6 @@ Styles borders  btn
         text-sm font-bold uppercase  leading-[171%] text-white;
   }
 
-  /* ====================================
-    |
-    |      BEGIN:   CASES PAGE
-    |    
-====================================== */
-
-  /* .page {
-  position: relative;
-  z-index: 2; 
-  bottom: 10px;
-} */
-
-  .bunner-img img {
-    @apply relative top-0 left-0 h-full w-full object-cover;
-  }
-
-  .contextual__item::after {
-    @apply absolute bottom-0 left-0 h-[1px]
-  w-full bg-middleGrey transition ease-in content-[''];
-  }
-
-  .count__item::after {
-    @apply absolute  top-[-10px]
-  right-0 h-[118px] w-[1px]  bg-middleGrey content-[''];
-  }
-
-  /* .cyberbet  .content__block::after{
-  @apply content-['']  absolute
-  w-[1px]  h-[100%] bg-middleGrey top-0 left-[-60px] ;
-} */
-
-  .cyberbet .content__block::after {
-    @apply xl:absolute  xl:top-0
-  xl:left-[-152px] xl:h-[100%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }
-
-  /* 14-section-contextual*/
-
-  .content__block::after {
-    @apply xl:absolute  xl:top-[-70px]
-  xl:left-[-140px] xl:h-[111%] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }
-
-  /*  14-section-contextual */
-
-  .next-case__title::after {
-    @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-25px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }
-
-  .next-case__title-right::after {
-    @apply xl:absolute  xl:top-[-35px]
-  xl:right-[-67px] xl:h-[calc(100%+70px)] xl:w-[1px]  xl:bg-middleGrey xl:content-[''];
-  }
   /*============== 404 page =============== */
   .nopage__button:hover ~ div {
     @apply text-main;

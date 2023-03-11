@@ -12,7 +12,7 @@
     />
     <title>Case</title>
   </head>
-  <body>
+  <body class="bg-light dark:bg-dark">
     <div class="wrapper">
       <!-- BEGIN: 01-section-header -->
       <header id="mainNav"
@@ -413,11 +413,15 @@
       <!--  END: 01-section-header -->
 
       <!--  BEGIN: Main -->
-      <!-- xl:pt-[var(--header-h-lg)] -->
-      <main class="page relative bottom-[10px] z-10">
+      <!-- xl:pt-[var(--header-h-lg)] page relative bottom-[10px] -->
+      <main class=" z-10">
         <!-- BEGIN: 02-section-cases  hero -->
         <section
-          class="case hero red-gradient-hero relative overflow-hidden bg-dark pt-[11px] pb-[25px] text-white lg:pt-[72px] lg:pb-[100px] xl:pt-[0px] xl:pb-[46px] 2xl:pt-[72px] 2xl:pb-[73px]"
+          class="case hero red-gradient__hero-case relative overflow-hidden
+           bg-dark pt-[12px] pb-[25px] text-white 
+           lg:pt-[6px]  lg:pb-[100px] 
+           xl:pt-[0px] xl:pb-[46px] 
+           2xl:pt-[10px] 2xl:pb-[72px]"
         >
           <div
             class="cases__container custom-container container relative z-10 mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -425,7 +429,7 @@
             <!-- block-01 -->
             <!-- text-[8px] font-normal leading-[140%] -->
             <div
-              class="points flex items-center gap-[4px] pt-[12px] pb-[24px] text-[#919191] lg:pb-[31px] xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
+              class="points flex items-center gap-[4px]  pb-[24px] text-middleGrey lg:pb-[31px] xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
             >
               <a class="point text-[8px] font-normal leading-[140%]" href="#"
                 >Main</a
@@ -482,7 +486,10 @@
 
             <!-- block-02 < BACK  -->
             <a
-              class="link-back-page group mb-[22px] flex items-center gap-[10px] lg:mb-0 xl:left-[30px] xl:gap-[15px] xl:pt-[32px] 2xl:left-[30px] 2xl:gap-[15px] 2xl:pt-[66px]"
+              class="link-back-page group mb-[22px] flex items-center gap-[10px] max-w-max
+               lg:mb-0 xl:left-[30px]
+                xl:gap-[15px] xl:mt-[32px] 
+              2xl:left-[30px] 2xl:gap-[15px] 2xl:mt-[63px]"
               href="index.html"
             >
               <span
@@ -573,7 +580,10 @@
 
               <!-- block-title -->
               <div
-                class="cases__block-title mb-[23px] w-full lg:order-2 lg:mb-0 lg:max-w-[483px] lg:pl-[70px] xl:ml-[18px] xl:mr-[0px] xl:mt-[0px] xl:max-w-max xl:pl-0 2xl:mr-[62px] 2xl:mt-[-51px] 2xl:max-w-max"
+                class="cases__block-title mb-[23px] w-full
+                 lg:order-2 lg:mb-0 lg:max-w-[483px] lg:pl-[70px] 
+                 xl:ml-[18px] xl:mr-[0px] xl:mt-[0px] xl:max-w-max xl:pl-0 
+                2xl:ml-0 2xl:mr-[62px] 2xl:mt-[-68px] 2xl:max-w-max"
               >
                 <h1
                   class="cases__title mb-[17px] flex flex-col text-[36px] font-bold uppercase leading-[120%] text-white lg:mb-[45px] lg:inline-block lg:text-[60px] lg:leading-[110%] xl:mb-[24px] xl:flex-col xl:text-[80px] xl:font-semibold xl:leading-[100%] 2xl:mb-[33px] 2xl:text-[120px]"
@@ -592,10 +602,15 @@
 
               <!--  block-num -->
               <div
-                class="cases__items order-3 flex flex-col lg:mb-[-86px] xl:mb-[25px] xl:pr-[73px] 2xl:mb-[8px] 2xl:mt-[-50px] 2xl:pr-[34px]"
+                class="cases__items order-3 flex flex-col lg:mb-[-86px] 
+                xl:mb-[25px] xl:pr-[73px]
+                 2xl:mb-[63px] 2xl:mt-[-50px] 2xl:pr-[2px]"
               >
                 <div
-                  class="cases__item-block border__bottom mb-[15px] flex flex-col gap-[7px] pb-[15px] lg:mb-[13px] lg:pb-[11px] xl:pb-[14px] 2xl:pb-[32px]"
+                  class="cases__item-block border__bottom mb-[15px] flex flex-col gap-[7px] pb-[15px] 
+                  lg:mb-[13px] lg:pb-[11px] 
+                  xl:pb-[14px] 
+                  2xl:pb-[21px] 2xl:mb-[24px] "
                 >
                   <div class="cases__item flex items-center gap-[15px]">
                     <div
@@ -604,7 +619,10 @@
                       7X
                     </div>
                     <div
-                      class="cases__item-text ml-auto pr-[32px] text-[10px] font-medium leading-[110%] text-[#919191] lg:pr-[11px] xl:text-[16px] 2xl:text-[24px]"
+                      class="cases__item-text ml-auto pr-[32px] text-[10px] font-medium leading-[110%]
+                       text-[#919191] lg:pr-[11px]
+                        xl:text-[16px]
+                       2xl:pr-[43px]  2xl:text-[24px]"
                     >
                       cost of <br />
                       attracting <br />a customer
@@ -688,7 +706,10 @@
 
         <!-- BEGIN: 04-section-increase -->
         <section
-          class="increase bg-light pt-[51px] pb-[50px] dark:bg-dark dark:text-white lg:pt-[71px] lg:pb-[86px] xl:pt-[61px] xl:pb-[85px] 2xl:pt-[89px] 2xl:pb-[125px]"
+          class="increase bg-light pt-[49px] pb-[50px] dark:bg-dark dark:text-white 
+          lg:pt-[71px] lg:pb-[86px]
+           xl:pt-[61px] xl:pb-[61px] 
+           2xl:pt-[89px] 2xl:pb-[125px]"
         >
           <div
             class="increase__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -704,7 +725,10 @@
                     class="content__items border__bottom flex flex-col gap-[30px] pb-[30px] lg:flex-row lg:gap-0 xl:pb-[23px] 2xl:pb-[40px]"
                   >
                     <p
-                      class="content__title text-[14px] font-medium uppercase leading-[110%] lg:max-w-[261px] lg:flex-auto lg:text-[16px] xl:max-w-[21%] xl:text-[11px] 2xl:max-w-[255px]"
+                      class="content__title text-[14px] font-medium uppercase leading-[110%] 
+                      lg:max-w-[261px] lg:flex-auto lg:text-[16px] 
+                      xl:max-w-[21%] xl:text-[11px]
+                       2xl:max-w-[255px] 2xl:text-[16px]"
                     >
                       The goal
                     </p>
@@ -723,7 +747,10 @@
                     class="content__items border__bottom flex flex-col gap-[29px] pt-[30px] pb-[29px] lg:flex-row lg:gap-0 lg:pb-[28px] xl:pt-[29px] xl:pb-[24px] 2xl:pt-[40px] 2xl:pb-[40px]"
                   >
                     <div
-                      class="content__title text-[14px] font-medium uppercase leading-[110%] lg:max-w-[261px] lg:flex-auto lg:text-[16px] xl:max-w-[21%] xl:text-[11px] 2xl:max-w-[255px]"
+                      class="content__title text-[14px] font-medium uppercase leading-[110%] 
+                      lg:max-w-[261px] lg:flex-auto lg:text-[16px]
+                       xl:max-w-[21%] xl:text-[11px] 
+                       2xl:max-w-[255px] 2xl:text-[16px]"
                     >
                       Tools:
                     </div>
@@ -770,7 +797,10 @@
                     class="content__items flex flex-col gap-[29px] pt-[31px] lg:flex-row lg:gap-0 xl:pt-[28px] xl:pb-[40px] 2xl:pt-[40px] 2xl:pb-[40px]"
                   >
                     <div
-                      class="content__title text-[14px] font-medium uppercase leading-[110%] lg:max-w-[261px] lg:flex-auto lg:text-[16px] xl:max-w-[21%] xl:text-[11px] 2xl:max-w-[255px]"
+                      class="content__title text-[14px] font-medium uppercase leading-[110%] 
+                      lg:max-w-[261px] lg:flex-auto lg:text-[16px] 
+                      xl:max-w-[21%] xl:text-[11px] 
+                      2xl:max-w-[255px] 2xl:text-[16px]"
                     >
                       Tasks:
                     </div>
@@ -843,10 +873,15 @@
               </div>
               <!--  block-num -->
               <div
-                class="cases__items  flex flex-col lg:mb-[86px] xl:mb-[25px] xl:pr-[73px] 2xl:mb-[8px] 2xl:mt-[50px] 2xl:pr-[34px]">
+                class="cases__items  flex flex-col
+                lg:ml-auto lg:max-w-[500px]
+                xl:mb-[25px]  xl:max-w-[787px]
+                2xl:mb-[0px] 2xl:max-w-[1091px]">
               
                 <div
-                  class="increase__block-items content flex gap-[79px] pt-[32px] lg:ml-auto lg:max-w-[800px] lg:gap-[130px] lg:pl-[261px] xl:max-w-[64.5%] xl:gap-[142px] xl:pl-0 xl:pt-[40px] 2xl:max-w-[1090px] 2xl:gap-[213px] 2xl:pl-0 2xl:pt-[60px]">
+                  class="increase__block-items content flex gap-[79px] pt-[32px] 
+                   lg:gap-[130px] 
+                     xl:gap-[142px] xl:pl-0 xl:pt-[40px] 2xl:max-w-[1090px] 2xl:gap-[213px] 2xl:pl-0 2xl:pt-[60px]">
                   <div class="content__big-items flex flex-col gap-[4px] xl:gap-[22px] 2xl:gap-[35px]">
                     <div
                       class="content__big-num text-[36px] font-bold leading-[110%] text-main lg:text-[60px] xl:text-[80px] 2xl:text-[120px]">
@@ -876,8 +911,6 @@
         </section>
         <!-- END: 04-section-increase -->
 
-
-    
 
         <!-- BEGIN: 05-section-bunner-img -->
         <section class="bunner-img bunner-img-case-two">
@@ -947,10 +980,16 @@
               <div class="content__items lg:flex">
                 <!-- col-01 -->
                 <div
-                  class="content__title mb-[27px] lg:min-w-[261px] lg:flex-auto lg:pt-[7px] xl:pl-[61px]"
+                  class="content__title mb-[27px]
+                   lg:min-w-[261px] lg:flex-auto lg:pt-[7px] 
+                   xl:pl-[61px]
+                   2xl:pl-0 2xl:mb-0"
                 >
                   <p
-                    class="text-[14px] font-normal uppercase leading-[111%] tracking-[-0.36px] lg:text-[16px] lg:tracking-[0px] xl:text-[11px] 2xl:text-[16px]"
+                    class="text-[14px] font-normal uppercase leading-[111%] tracking-[-0.36px] 
+                    lg:text-[16px] lg:tracking-[0px] 
+                    xl:text-[11px] 
+                    2xl:text-[16px]"
                   >
                     Solution
                   </p>
@@ -1108,7 +1147,10 @@
             <div class="cyberbet__content content">
               <!-- 01 -->
               <div
-                class="content__section border__top border__bottom pt-[31px] pb-[30px] lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px] xl:border-t-0 xl:pt-0 2xl:pb-[88px]"
+                class="content__section border__top border__bottom pt-[31px] pb-[30px]
+                 lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px] 
+                 xl:border-t-0 xl:pt-0 
+                 2xl:pb-[30px]"
               >
                 <!-- xl:border-t-borderBottom  xl:border-t-[1px] -->
                 <div
@@ -1152,17 +1194,23 @@
                   class="content__block-text lg:min-w-[260px] lg:max-w-[798px] lg:lg:flex-auto lg:pt-0 xl:pt-0"
                 >
                   <h2
-                    class="content__text mb-[30px] text-[20px] font-bold uppercase leading-[110%] lg:max-w-[143px] xl:max-w-max xl:pt-[53px] xl:text-[16px] xl:tracking-[0px] 2xl:max-w-max 2xl:pt-[73px] 2xl:text-[24px] 2xl:tracking-[3px]"
+                    class="content__text mb-[30px] text-[20px] font-bold uppercase leading-[110%]
+                     lg:max-w-[143px]
+                      xl:max-w-max xl:pt-[53px] xl:text-[16px] xl:tracking-[0px]
+                       2xl:pt-[73px] 2xl:text-[24px] "
                   >
                     What did we do?
                   </h2>
                 </div>
                 <!-- col-2 -->
-                <div class="content__block xl:relative xl:max-w-[64.5%]">
+                <div class="content__block xl:relative xl:max-w-[64.5%] 2xl:max-w-[66%]">
                   <!-- 01 -->
                   <!-- xl:max-w-[1090px] -->
                   <div
-                    class="content__block-text border__bottom pb-[50px] lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[47px] xl:pb-[29px] 2xl:pt-[73px] 2xl:pb-[50px]"
+                    class="content__block-text border__bottom pb-[50px] 
+                    lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[47px]
+                     xl:pb-[29px]
+                    2xl:max-w-max  2xl:pt-[73px] 2xl:pb-[50px]"
                   >
                     <div class="content__item">
                       <h3
@@ -1295,7 +1343,10 @@
 
         <!-- BEGIN: 10-section-cyberbet -->
         <section
-          class="cyberbet text-mainTextDark bg-light pt-[50px] pb-[50px] dark:bg-dark dark:text-white lg:pt-[50px] lg:pb-[80px] xl:pt-[57px] xl:pb-[26px] 2xl:pt-[90px] 2xl:pb-[94px]"
+          class="cyberbet text-mainTextDark bg-light pt-[50px] pb-[50px]
+           dark:bg-dark dark:text-white
+            lg:pt-[80px] lg:pb-[80px] xl:pt-[57px] xl:pb-[26px]
+             2xl:pt-[90px] 2xl:pb-[50px]"
         >
           <div
             class="cyberbet__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -1305,7 +1356,10 @@
             <div class="cyberbet__content content">
               <!-- 01 -->
               <div
-                class="content__section border__top border__bottom pt-[31px] pb-[30px] lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px] xl:border-t-0 xl:pt-0 2xl:pb-[88px]"
+                class="content__section border__top border__bottom pt-[30px] pb-[30px]
+                 lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px]
+                  xl:border-t-0 xl:pt-0 
+                  2xl:pb-[57px]"
               >
                 <div
                   class="content__block-text xl:border__top xl:border-t-borderBottom max-w-[261px] pt-0 lg:mb-0 lg:min-w-[260px] lg:flex-auto lg:pt-0 xl:max-w-[283px] xl:border-t-[1px] xl:pt-[50px] 2xl:min-w-[420px] 2xl:max-w-max 2xl:pt-[70px]"
@@ -1319,7 +1373,11 @@
 
                   <div class="content__item lg:max-w-[136px] xl:max-w-max">
                     <p
-                      class="content__span-min mb-[29px] text-[12px] font-medium uppercase leading-[140%] lg:mb-[46px] xl:text-[11px] 2xl:text-[16px]"
+                      class="content__span-min mb-[29px] text-[12px] 
+                      font-medium uppercase leading-[140%]
+                       lg:mb-[26px]
+                        xl:text-[11px] 
+                        2xl:text-[16px]"
                     >
                       Period: October 28, 2020 - November 29, 2020
                     </p>
@@ -1353,11 +1411,14 @@
                   </h2>
                 </div>
                 <!-- col-2 -->
-                <div class="content__block xl:relative xl:max-w-[64.5%]">
+                <div class="content__block xl:relative xl:max-w-[64.5%] 2xl:max-w-[66%]">
                   <!-- 01 -->
                   <!-- xl:max-w-[1090px] -->
                   <div
-                    class="content__block-text border__bottom pb-[50px] lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[53px] xl:pb-[29px] 2xl:pt-[73px] 2xl:pb-[50px]"
+                    class="content__block-text border__bottom pb-[50px] 
+                    lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 
+                    xl:pt-[53px] xl:pb-[29px] 
+                   2xl:max-w-max 2xl:pt-[73px] 2xl:pb-[50px]"
                   >
                     <div class="content__item">
                       <h3
@@ -1494,7 +1555,11 @@
 
         <!-- BEGIN: 12-section-cyberbet -->
         <section
-          class="cyberbet text-mainTextDark bg-light pt-[50px] pb-[50px] dark:bg-dark dark:text-white lg:pt-[50px] lg:pb-[80px] xl:pt-[57px] xl:pb-[86px] 2xl:pt-[90px] 2xl:pb-[94px]"
+          class="cyberbet text-mainTextDark bg-light pt-[50px] pb-[50px]
+           dark:bg-dark dark:text-white
+            lg:pt-[80px] lg:pb-[80px] 
+            xl:pt-[57px] xl:pb-[86px] 
+            2xl:pt-[90px] 2xl:pb-[137px]"
         >
           <div
             class="cyberbet__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -1504,7 +1569,10 @@
             <div class="cyberbet__content content">
               <!-- 01 -->
               <div
-                class="content__section border__top border__bottom pt-[31px] pb-[30px] lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px] xl:border-t-0 xl:pt-0 2xl:pb-[88px]"
+                class="content__section border__top border__bottom pt-[31px] pb-[30px]
+                 lg:flex lg:justify-between lg:pt-[37px] lg:pb-[0px]
+                  xl:border-t-0 xl:pt-0 
+                  2xl:pb-[35px]"
               >
                 <div
                   class="content__block-text xl:border__top xl:border-t-borderBottom max-w-[261px] pt-0 lg:mb-0 lg:min-w-[260px] lg:flex-auto lg:pt-0 xl:max-w-[261px] xl:border-t-[1px] xl:pt-[50px] 2xl:min-w-[420px] 2xl:max-w-max 2xl:pt-[70px]"
@@ -1528,10 +1596,16 @@
 
                 <!-- xl:border-t-borderBottom xl:border-t-[1px] -->
                 <div
-                  class="content__block-text xl:border__top pt-0 lg:max-w-[798px] xl:max-w-[64.5%] xl:pt-[50px] xl:pb-[56px] 2xl:max-w-[1090px] 2xl:pt-[73px]"
+                  class="content__block-text xl:border__top pt-0 
+                  lg:max-w-[798px]
+                   xl:max-w-[64.5%] xl:pt-[50px] xl:pb-[56px] 
+                   2xl:max-w-[66%] 2xl:pt-[73px]"
                 >
                   <p
-                    class="content__text w-[99%] text-[20px] font-medium leading-[140%] lg:text-[20px] xl:w-[92%] xl:text-[22px] xl:tracking-[-0.4px] 2xl:w-[99%] 2xl:text-[32px]"
+                    class="content__text w-[99%] text-[20px] font-medium leading-[140%] 
+                    lg:text-[20px] 
+                    xl:w-[92%] xl:text-[22px] xl:tracking-[-0.4px] 
+                    2xl:w-[99%] 2xl:text-[32px]"
                   >
                     On the website of Sport-Express, they placed a separate
                     landing page, to which with the help of advertising they led
@@ -1553,11 +1627,14 @@
                   </h2>
                 </div>
                 <!-- col-2 -->
-                <div class="content__block xl:relative xl:max-w-[64.5%]">
+                <div class="content__block xl:relative xl:max-w-[64.5%] 2xl:max-w-[66%]">
                   <!-- 01 -->
                   <!-- xl:max-w-[1090px] -->
                   <div
-                    class="content__block-text border__bottom pb-[50px] lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[50px] xl:pb-[29px] 2xl:pt-[73px] 2xl:pb-[50px]"
+                    class="content__block-text border__bottom pb-[50px]
+                     lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[50px]
+                      xl:pb-[29px]
+                    2xl:max-w-max   2xl:pt-[73px] 2xl:pb-[50px]"
                   >
                     <div class="content__item">
                       <h3
@@ -1906,8 +1983,9 @@
               </h3>
 
               <!-- col-02 -->
+              <!-- contextual__items -->
               <div
-                class="contextual__items content__block lg:max-w-[500px] xl:relative xl:max-w-[633px] 2xl:relative 2xl:max-w-[950px]"
+                class=" content__block-case lg:max-w-[500px] xl:relative xl:max-w-[633px] 2xl:relative 2xl:max-w-[950px]"
               >
                 <!-- Step 1: -->
                 <!-- contextual__item::after -->
@@ -2024,7 +2102,10 @@
 
             <!-- 04 num-red -->
             <div
-              class="contextual__num flex flex-col gap-[41px] pt-[30px] lg:flex-row lg:justify-between lg:pt-[34px] xl:justify-start xl:gap-[273px] xl:pt-[55px] 2xl:gap-[319px] 2xl:pt-[135px]"
+              class="contextual__num flex flex-col gap-[41px] pt-[30px]
+               lg:flex-row lg:justify-between lg:pt-[34px]
+                xl:justify-start xl:gap-[273px] xl:pt-[55px] 
+                2xl:gap-[319px] 2xl:pt-[105px]"
             >
               <!-- 01 -->
               <div class="contextual__num-item">
@@ -2103,7 +2184,9 @@
 
         <!-- BEGIN: 15-section-count -->
         <section
-          class="count text-mainTextDark bg-light pb-[89px] dark:bg-dark dark:text-white lg:pb-[43px] xl:pb-[72px] 2xl:pb-[133px]"
+          class="count text-mainTextDark bg-light pb-[89px]
+           dark:bg-dark dark:text-white 
+           lg:pb-[43px] xl:pb-[86px] 2xl:pb-[133px]"
         >
           <div
             class="count__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -2148,7 +2231,11 @@
               </div>
               <!-- 03 -->
               <div
-                class="count__item lg:border__right w-[150px] lg:order-2 lg:flex lg:min-h-max lg:w-[177px] lg:flex-col lg:border-r-[1px] lg:border-r-middleGrey lg:pt-[28px] xl:order-3 xl:w-[252px] xl:justify-start xl:pb-[48px] 2xl:w-[377px] 2xl:justify-start 2xl:pb-[108px]"
+                class="count__item lg:border__right w-[150px]
+                 lg:order-2 lg:flex lg:min-h-max lg:w-[177px] lg:flex-col lg:border-r-[1px] lg:border-r-middleGrey 
+                 lg:pt-[28px] xl:order-3 
+                 xl:w-[252px] xl:justify-start xl:pb-[48px] 
+               2xl:pt-[6px]  2xl:w-[377px] 2xl:justify-start 2xl:pb-[108px]"
               >
                 <div
                   class="count__item-num mb-[5px] text-[28px] font-bold leading-[110%] text-main lg:text-[36px] xl:mb-[20px] xl:pt-[0px] xl:text-[60px] 2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[90px]"
@@ -2285,7 +2372,10 @@
                   class="content__title-one mb-[30px] lg:min-w-[260px] lg:max-w-[175px] xl:max-w-[353px]"
                 >
                   <h3
-                    class="text-[20px] font-bold uppercase leading-[130%] lg:max-w-[150px] lg:text-[20px] xl:max-w-[350px] xl:text-[21px] 2xl:max-w-[350px] 2xl:text-[32px]"
+                    class="text-[20px] font-bold uppercase leading-[130%] 
+                    lg:max-w-[150px] lg:text-[20px]
+                     xl:max-w-[350px] xl:text-[21px] 
+                     2xl:max-w-[355px] 2xl:text-[32px]"
                   >
                     Media advertising launched
                   </h3>
@@ -2373,7 +2463,11 @@
 
         <!-- BEGIN: 18-section-brand -->
         <section
-          class="brand text-mainTextDark overflow-hidden bg-light pt-[40px] pb-[96px] dark:bg-dark dark:text-white lg:pt-[46px] lg:pb-[60px] xl:pt-[59px] xl:pb-[185px] 2xl:pt-[90px] 2xl:pb-[268px]"
+          class="brand text-mainTextDark overflow-hidden bg-light 
+          pt-[40px] pb-[50px] dark:bg-dark dark:text-white 
+          lg:pt-[46px] lg:pb-[40px]
+           xl:pt-[59px] xl:pb-[162px]
+           2xl:pt-[90px] 2xl:pb-[233px]"
         >
           <div
             class="brand__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -2513,23 +2607,33 @@
 
         <!-- BEGIN: 19-section-next-case -->
         <section
-          class="next-case text-mainTextDark border__top bg-light pt-[20px] pb-[68px] dark:bg-dark dark:text-white lg:pt-[35px] lg:pb-[104px] xl:pb-[85px] xl:pt-[21px] 2xl:pb-[203px] 2xl:pt-[35px]"
+          class="next-case text-mainTextDark  bg-light 
+          pt-[46px] pb-[68px] dark:bg-dark dark:text-white 
+          lg:pt-[23px] lg:pb-[104px] 
+          xl:pb-[85px] xl:pt-[21px] 
+          2xl:pb-[203px] 2xl:pt-[35px]"
         >
           <div
             class="next-case__container custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
-            <!-- wrapper -->
-            <!--   -->
+            <!-- wrapper -->           
             <div
-              class="next-case__items flex flex-col lg:flex-row lg:flex-wrap xl:flex-nowrap xl:justify-between xl:gap-[69px] 2xl:flex-nowrap 2xl:justify-between 2xl:gap-[40px]"
+              class="next-case__items  border__top flex flex-col 
+              lg:flex-row lg:flex-wrap lg:pt-[34px]
+              xl:flex-nowrap xl:justify-between xl:pt-[16px] xl:gap-[69px] 
+              2xl:flex-nowrap 2xl:justify-between 2xl:pt-[35px] 2xl:gap-[40px]"
             >
               <!-- block-01 -->
               <!--  -->
               <div
-                class="next-case__title mb-[30px] xl:relative xl:mb-0 xl:min-w-[23%]"
+                class="next-case__title pt-[19px] mb-[30px]
+                lg:pt-0
+                 xl:relative xl:mb-0 xl:min-w-[23%]"
               >
                 <p
-                  class="text-mainTextLightGrey text-[14px] font-bold uppercase leading-[140%] tracking-[1px] xl:text-[11px] 2xl:text-[16px]"
+                  class="text-mainTextLightGrey text-[14px] font-bold uppercase 
+                  leading-[140%] tracking-[1px]
+                  xl:pt-[7px] xl:text-[11px] 2xl:text-[16px]"
                 >
                   Look next case
                 </p>
@@ -2550,7 +2654,8 @@
                     class="cards__link group/text group"
                   >
                     <h3
-                      class="cards__title transition ease-in group-hover/text:text-main"
+                      class="font-bold text-[20px] leading-[1.3] transition ease-in group-hover/text:text-main
+                      2xl:text-[32px] 2xl:leading-[1.2]"
                     >
                       HR agency: full range of marketing services to get
                       international
@@ -2577,56 +2682,18 @@
                   </a>
                   <!-- TEST: 02 -->
 
-                  <!-- <a href="#" aria-label="cases card" class=" hidden cards__link group/text group">
-                <h3
-                  class="next-span-title text-[20px] font-bold leading-[130%] lg:text-[24px] lg:leading-[110%]
-                   xl:text-[21px]
-                    2xl:text-[32px] xl:leading-[120%]
-                    
-                    transition ease-in group-hover/text:text-main"
-                >
-                  HR agency: full range of marketing services to get
-                  international
-                </h3>
-
-                
-                <div
-                  class="next-arrow mt-[-63px] lg:mt-[-34px] xl:mt-[-59px] xl:mr-[-2px]
-                  2xl:mt-[-94px] 2xl:mr-[-35px]
-                  
-                  rounded-full p-[13.5px]
-                 transition-all ease-in group-hover/text:bg-main "
-                >
-                  <svg
-                    class="fill-dark h-[16px] w-[16px] dark:fill-white lg:h-[22px] lg:w-[22px]
-                    xl:h-[16px] xl:w-[16px]
-                    2xl:h-[22px] 2xl:w-[22px]
-                    
-                     transition-all ease-in group-hover/text:fill-white "
-                    width="22"
-                    height="22"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class=""
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M15.8545 4.06387H2.20003V0.463867H22V20.2639H18.4V6.60945L3.47283 21.5366L0.927246 18.9911L15.8545 4.06387Z"
-                    />
-                  </svg>
-                </div>
-                </a> -->
+                 
                 </div>
 
                 <p
-                  class="next-case__card-text mb-[54px] text-[14px] font-medium leading-[120%] lg:mb-[45px] xl:relative xl:flex-auto xl:text-[11px] xl:leading-[140%] 2xl:text-[16px]"
+                  class=" mb-[54px] text-[14px] font-medium leading-[120%]
+                   lg:mb-[45px] xl:relative xl:flex-auto xl:text-[11px] xl:leading-[140%]
+                    2xl:text-[16px]"
                 >
                   Establishing a Next-Level Geosocial Networking App
                 </p>
                 <p
-                  class="next-case__card-text-down text-[12px] font-medium uppercase leading-[140%] xl:text-[11px] xl:leading-[140%] 2xl:text-[16px]"
+                  class=" text-[12px] font-medium uppercase leading-[140%] xl:text-[11px] xl:leading-[140%] 2xl:text-[16px]"
                 >
                   marketing strategy, design
                 </p>
@@ -2644,7 +2711,7 @@
                   >
                     <!-- gradient-img -->
                     <div
-                      class="absolute left-0 top-0 h-full w-[80%] bg-gradient-to-r from-[rgba(0,0,0,0.64)]"
+                      class="absolute z-[1] left-0 top-0 h-full w-[80%] bg-gradient-to-r from-[rgba(0,0,0,0.64)]"
                     ></div>
 
                     <!-- img -->
