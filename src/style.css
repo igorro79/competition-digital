@@ -2554,9 +2554,9 @@ BEGIN: gradient-hero
 
 @media (min-width: 820px){
   .red-gradient__hero-case::before{
-    top: 24px;
-    height: 280px;
-    width: 280px;
+    top: 80px;
+    height: 200px;
+    width: 200px;
     content: var(--tw-content);
     --tw-blur: blur(60px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2565,9 +2565,9 @@ BEGIN: gradient-hero
 
 @media (min-width: 1280px){
   .red-gradient__hero-case::before{
-    top: 77px;
-    height: 302px;
-    width: 302px;
+    top: 75px;
+    height: 200px;
+    width: 200px;
     content: var(--tw-content);
     --tw-blur: blur(60px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2576,9 +2576,9 @@ BEGIN: gradient-hero
 
 @media (min-width: 1536px){
   .red-gradient__hero-case::before{
-    top: 130px;
-    height: 453px;
-    width: 453px;
+    top: 120px;
+    height: 330px;
+    width: 330px;
     content: var(--tw-content);
     --tw-blur: blur(90px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
