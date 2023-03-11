@@ -212,11 +212,11 @@ Styles borders  btn
   .nopage__button:hover ~ div {
     @apply text-main;
   }
-  .nopage__button:hover + div {
-    @apply opacity-100;
+  .nopage__button:hover ~ #back-home {
+    @apply visible opacity-100;
   }
-  .nopage__button:hover ~ div:last-child {
-    @apply opacity-0;
+  .nopage__button:hover ~ #not-found {
+    @apply invisible opacity-0;
   }
 
   /*=== submit button spunner === */

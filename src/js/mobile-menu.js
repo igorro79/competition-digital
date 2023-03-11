@@ -54,6 +54,7 @@ const toggleDynamicMenu = () => {
 
 // ----  Close a menu tablet. ---
 function burgerClose() {
+  //if header is total white then color it to black
   if (
     document
       .querySelector("header")
@@ -67,7 +68,7 @@ function burgerClose() {
   menuServicesClose();
   showMainHeader();
   unlockWrapper();
-  closeDynamicMenu();
+  if (document.getElementById("dynamicMenu")) closeDynamicMenu();
 }
 
 // ----  Open a menu tablet. ---
@@ -131,7 +132,10 @@ if (document.getElementById("btnContactTablet")) {
     menuServicesClose();
     lockWrapper();
     showMainHeader();
-    if (document.getElementById("popupForms")) closePopupSentMsg();
+
+    if (document.getElementById("popupForms")) {
+      closePopupSentMsg();
+    }
     burger.classList.toggle("is-active");
 
     if (
