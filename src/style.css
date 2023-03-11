@@ -1614,6 +1614,12 @@ BEGIN: 05-sections-our-cases    achievements
   cards wrapper 
   ============= */
 
+@media (min-width: 1536px){
+  .cards{
+    width: calc(100% - 2px);
+  }
+}
+
 /* gap-[29px] lg:gap-9*/
 
 /* .cards {

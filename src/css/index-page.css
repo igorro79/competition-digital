@@ -40,7 +40,9 @@ BEGIN: 05-sections-our-cases    achievements
   /* ============
   cards wrapper 
   ============= */
-
+  .cards {
+    @apply 2xl:w-[calc(100%-2px)];
+  }
   /* gap-[29px] lg:gap-9*/
   /* .cards {
     @apply flex flex-col  py-[30px] 
