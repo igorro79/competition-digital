@@ -3105,10 +3105,10 @@ BEGIN: 16-section-our-case img-desc-
 
 @media (min-width: 1280px){
   .img-desc_s{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 
@@ -3118,13 +3118,13 @@ BEGIN: 16-section-our-case img-desc-
 
 @media (min-width: 1280px){
   .img-desc__wrap_s{
-    margin-bottom: 31px;
+    margin-bottom: 21px;
   }
 }
 
 @media (min-width: 1536px){
   .img-desc__wrap_s{
-    margin-bottom: 60px;
+    margin-bottom: 21px;
   }
 }
 
@@ -3142,9 +3142,15 @@ BEGIN: 16-section-our-case img-desc-
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1280px){
+  .img-desc_big_s{
+    font-size: 50px;
+  }
+}
+
 @media (min-width: 1536px){
   .img-desc_big_s{
-    font-size: 64px;
+    font-size: 50px;
   }
 }
 
@@ -3169,7 +3175,7 @@ BEGIN: 16-section-our-case img-desc-
 
 @media (min-width: 1280px){
   .wrap-text__gap_s{
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
 }
 
@@ -3185,15 +3191,18 @@ BEGIN: 16-section-our-case img-desc-
   .img-desc_small_s{
     font-size: 1rem;
     line-height: 1.5rem;
-    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1280px){
+  .img-desc_small_s{
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1536px){
   .img-desc_small_s{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    line-height: 1.1;
+    font-size: 16px;
   }
 }
 
@@ -6191,6 +6200,10 @@ Styles borders  btn
   padding-top: 3rem;
 }
 
+.pt-\[11px\]{
+  padding-top: 11px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -6276,6 +6289,10 @@ Styles borders  btn
 
 .text-\[clamp\(36px\2c 8vw\2c 60px\)\]{
   font-size: clamp(36px,8vw,60px);
+}
+
+.text-\[32px\]{
+  font-size: 32px;
 }
 
 .text-\[18px\]{
@@ -7062,8 +7079,8 @@ BEGIN: html  scroll
     right: -18px;
   }
 
-  .lg\:left-\[34\%\]{
-    left: 34%;
+  .lg\:right-\[61\%\]{
+    right: 61%;
   }
 
   .lg\:order-5{
@@ -7601,6 +7618,10 @@ BEGIN: html  scroll
     width: 48%;
   }
 
+  .lg\:w-\[45\%\]{
+    width: 45%;
+  }
+
   .lg\:w-\[72\%\]{
     width: 72%;
   }
@@ -7735,14 +7756,6 @@ BEGIN: html  scroll
 
   .lg\:max-w-\[34\%\]{
     max-width: 34%;
-  }
-
-  .lg\:max-w-\[78\%\]{
-    max-width: 78%;
-  }
-
-  .lg\:max-w-\[63\%\]{
-    max-width: 63%;
   }
 
   .lg\:max-w-\[230px\]{
@@ -8692,6 +8705,10 @@ BEGIN: html  scroll
     padding-top: 135px;
   }
 
+  .lg\:pb-\[34px\]{
+    padding-bottom: 34px;
+  }
+
   .lg\:pb-20{
     padding-bottom: 5rem;
   }
@@ -8768,10 +8785,6 @@ BEGIN: html  scroll
 
   .lg\:text-\[28px\]{
     font-size: 28px;
-  }
-
-  .lg\:text-\[10px\]{
-    font-size: 10px;
   }
 
   .lg\:text-\[32px\]{
@@ -8930,8 +8943,8 @@ BEGIN: html  scroll
     top: 71px;
   }
 
-  .xl\:left-\[72\%\]{
-    left: 72%;
+  .xl\:right-\[0px\]{
+    right: 0px;
   }
 
   .xl\:order-3{
@@ -9288,6 +9301,22 @@ BEGIN: html  scroll
     margin-top: -585px;
   }
 
+  .xl\:mb-\[190px\]{
+    margin-bottom: 190px;
+  }
+
+  .xl\:mb-\[47px\]{
+    margin-bottom: 47px;
+  }
+
+  .xl\:mt-\[62px\]{
+    margin-top: 62px;
+  }
+
+  .xl\:mr-\[30px\]{
+    margin-right: 30px;
+  }
+
   .xl\:mt-\[90px\]{
     margin-top: 90px;
   }
@@ -9480,6 +9509,10 @@ BEGIN: html  scroll
     width: 20%;
   }
 
+  .xl\:w-\[365px\]{
+    width: 365px;
+  }
+
   .xl\:w-\[450px\]{
     width: 450px;
   }
@@ -9665,6 +9698,22 @@ BEGIN: html  scroll
     max-width: 50%;
   }
 
+  .xl\:max-w-\[24\.5\%\]{
+    max-width: 24.5%;
+  }
+
+  .xl\:max-w-\[41\%\]{
+    max-width: 41%;
+  }
+
+  .xl\:max-w-\[75\.5\%\]{
+    max-width: 75.5%;
+  }
+
+  .xl\:max-w-\[77\%\]{
+    max-width: 77%;
+  }
+
   .xl\:max-w-\[810px\]{
     max-width: 810px;
   }
@@ -9703,6 +9752,10 @@ BEGIN: html  scroll
 
   .xl\:basis-\[50\%\]{
     flex-basis: 50%;
+  }
+
+  .xl\:basis-full{
+    flex-basis: 100%;
   }
 
   .xl\:basis-1\/2{
@@ -9953,6 +10006,10 @@ BEGIN: html  scroll
     gap: 298px;
   }
 
+  .xl\:gap-\[523px\]{
+    gap: 523px;
+  }
+
   .xl\:gap-x-\[20px\]{
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -9966,6 +10023,11 @@ BEGIN: html  scroll
   .xl\:gap-x-\[53px\]{
     -moz-column-gap: 53px;
          column-gap: 53px;
+  }
+
+  .xl\:gap-x-\[105px\]{
+    -moz-column-gap: 105px;
+         column-gap: 105px;
   }
 
   .xl\:self-start{
@@ -10019,6 +10081,10 @@ BEGIN: html  scroll
 
   .xl\:border-r{
     border-right-width: 1px;
+  }
+
+  .xl\:border-r-0{
+    border-right-width: 0px;
   }
 
   .xl\:border-l{
@@ -10659,8 +10725,52 @@ BEGIN: html  scroll
     padding-top: 130px;
   }
 
+  .xl\:pt-\[75px\]{
+    padding-top: 75px;
+  }
+
+  .xl\:pt-\[87px\]{
+    padding-top: 87px;
+  }
+
+  .xl\:pb-\[140px\]{
+    padding-bottom: 140px;
+  }
+
+  .xl\:pr-\[30px\]{
+    padding-right: 30px;
+  }
+
+  .xl\:pl-\[157px\]{
+    padding-left: 157px;
+  }
+
+  .xl\:pt-\[22px\]{
+    padding-top: 22px;
+  }
+
+  .xl\:pb-\[38px\]{
+    padding-bottom: 38px;
+  }
+
   .xl\:pb-\[185px\]{
     padding-bottom: 185px;
+  }
+
+  .xl\:pt-\[62px\]{
+    padding-top: 62px;
+  }
+
+  .xl\:pt-\[191px\]{
+    padding-top: 191px;
+  }
+
+  .xl\:pt-\[140px\]{
+    padding-top: 140px;
+  }
+
+  .xl\:pb-\[104px\]{
+    padding-bottom: 104px;
   }
 
   .xl\:pb-\[205px\]{
@@ -10835,6 +10945,10 @@ BEGIN: html  scroll
     font-size: 42px;
   }
 
+  .xl\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .xl\:font-semibold{
     font-weight: 600;
   }
@@ -10941,6 +11055,10 @@ BEGIN: html  scroll
 
   .xl\:leading-\[1\.3\]{
     line-height: 1.3;
+  }
+
+  .xl\:leading-\[1\.2\]{
+    line-height: 1.2;
   }
 
   .xl\:leading-\[100px\]{
@@ -11585,6 +11703,11 @@ BEGIN: html  scroll
          column-gap: 53px;
   }
 
+  .\32xl\:gap-x-\[105px\]{
+    -moz-column-gap: 105px;
+         column-gap: 105px;
+  }
+
   .\32xl\:border-b-0{
     border-bottom-width: 0px;
   }
@@ -11985,8 +12108,20 @@ BEGIN: html  scroll
     padding-bottom: 160px;
   }
 
-  .\32xl\:pb-\[268px\]{
-    padding-bottom: 268px;
+  .\32xl\:pt-\[22px\]{
+    padding-top: 22px;
+  }
+
+  .\32xl\:pb-\[38px\]{
+    padding-bottom: 38px;
+  }
+
+  .\32xl\:pb-\[204px\]{
+    padding-bottom: 204px;
+  }
+
+  .\32xl\:pt-\[191px\]{
+    padding-top: 191px;
   }
 
   .\32xl\:indent-\[23px\]{
