@@ -835,24 +835,33 @@
               <div>
                 <!-- E-commerce-m -->
                 <h1
-                  class="mb-[27px] text-[36px] font-bold uppercase leading-[1.2] lg:mb-[45px] lg:text-[60px] lg:leading-[1.1] xl:mb-[24px] xl:flex-col xl:text-[80px] xl:font-semibold xl:leading-[1.0] 2xl:mb-[82px] 2xl:text-[120px] 2xl:font-bold 2xl:leading-[1.1]"
+                  class="mb-[27px] text-[36px] font-bold uppercase leading-[1.2] 
+                  lg:mb-[45px] lg:text-[60px] lg:leading-[1.1]
+                   xl:mb-[24px] xl:flex-col xl:text-[80px] xl:font-semibold xl:leading-[1.0] 
+                   2xl:mb-[82px] 2xl:text-[120px] 2xl:font-bold 2xl:leading-[1.1]"
                 >
                   BRANDING
                 </h1>
 
+              
+
                 <!-- btn-hero -->
                 <!-- max-w-[253px] lg:mx-0 -->
                 <div class="group mb-[80px]">
-                  <!-- id="submit_02" -->
+                  <!--  -->
+                  <!--  -->
                   <button
-                    type="submit"
+                 id="btnDiscuss"
+                    type="button"
                     aria-label="Discuss the project"
-                    class="btn__red-service link-oside__red w-full transition-all duration-300 ease-out group-hover:border-white group-hover:bg-white group-hover:text-black group-active:text-main lg:w-auto lg:pl-[55px] lg:pr-[55px]"
+                    class="btn__red-service link-oside  transition-all duration-300 ease-out
+                       group-active:text-main lg:w-auto lg:pl-[55px] lg:pr-[55px]"
                     value="Submit"
                   >
                     Discuss the project
+                    <!-- group-hover:fill-white -->
                     <svg
-                      class="fill-white transition-all group-hover:fill-black group-active:fill-main"
+                      class="fill-white transition-all  group-active:fill-main"
                       width="14"
                       height="16"
                       viewBox="0 0 14 16"
@@ -5032,7 +5041,7 @@
       </main>
       <!--  END: Main -->
 
-      <!--  BEGIN: 12-section-footer -->
+      <!--  BEGIN: 19-section-footer -->
       <footer
         class="footer shrink-0 bg-light pt-[40px] pb-4 dark:bg-dark lg:pt-[32px] lg:pb-[21px] xl:pt-[34px] xl:pb-[28px]"
       >
@@ -5357,7 +5366,7 @@
           </div>
         </div>
       </footer>
-      <!--  END: 12-section-footer -->
+      <!--  END: 19-section-footer -->
 
       <div
         id="menu"
@@ -6534,6 +6543,8 @@
 
     <!-- main-script.js is First and is Required for all pages-->
     <script src="../src/js/main-script.js"></script>
+    <script src="../src/js/discuss-btn.js"></script>
+
     <script src="../src/js/theme-switcher.js"></script>
     <script src="../src/js/mobile-menu.js"></script>
 
@@ -6549,6 +6560,7 @@
     <script src="../src/js/cookie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+
       const swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: { delay: 10000 },
@@ -6564,22 +6576,22 @@
           nextEl: ".swiper-next-slide",
         },
       });
-      // const swiperBlog = new Swiper(".blogSwiper", {
-      //   spaceBetween: 31,
-      //   breakpoints: {
-      //     820: {
-      //       spaceBetween: 20,
-      //     },
-      //     1280: {
-      //       spaceBetween: 30,
-      //     },
-      //   },
+       const swiperBlog = new Swiper(".blogSwiper", {
+         spaceBetween: 31,
+         breakpoints: {
+          820: {
+             spaceBetween: 20,
+           },
+           1280: {
+             spaceBetween: 30,
+           },
+         },
 
-      //   slidesPerView: "auto",
-      //   freeMode: true,
-      //   // TODO remove scrollbar settings
-      // });
-      // swiperBlog.setGrabCursor();
+         slidesPerView: "auto",
+         freeMode: true,
+         // TODO remove scrollbar settings
+       });
+       swiperBlog.setGrabCursor();
     </script>
   </body>
 </html>
