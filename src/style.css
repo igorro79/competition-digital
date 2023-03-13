@@ -3270,12 +3270,25 @@ BEGIN: 16-section-our-case img-desc-
 
   .border__bottom {
     @apply border-b-[1px] border-b-middleGrey;
-  }
+  }*/
 
-  .border__rounded {
-    @apply rounded-full border-[1px] border-middleGrey
-    hover:border-white;
-  } */
+.border__rounded_s{
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(144 144 144 / var(--tw-border-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.border__rounded_s:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 
 /* .border__error {
   @apply border-borderBtn hover:border-borderBtn rounded-full
@@ -5642,6 +5655,10 @@ Styles borders  btn
   padding: 20px;
 }
 
+.p-\[9px\]{
+  padding: 9px;
+}
+
 .py-\[19px\]{
   padding-top: 19px;
   padding-bottom: 19px;
@@ -6160,8 +6177,8 @@ Styles borders  btn
   padding-top: 26px;
 }
 
-.pb-\[23px\]{
-  padding-bottom: 23px;
+.pt-\[25px\]{
+  padding-top: 25px;
 }
 
 .pt-\[37px\]{
@@ -6182,10 +6199,6 @@ Styles borders  btn
 
 .pb-14{
   padding-bottom: 3.5rem;
-}
-
-.pt-\[25px\]{
-  padding-top: 25px;
 }
 
 .pt-\[35px\]{
@@ -6730,6 +6743,24 @@ BEGIN: html  scroll
 }
 
 .group:hover .group-hover\:border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.group\/arrow:hover .group-hover\/arrow\:border__rounded_s{
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(144 144 144 / var(--tw-border-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.group\/arrow:hover .group-hover\/arrow\:border__rounded_s:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
@@ -9714,6 +9745,18 @@ BEGIN: html  scroll
     max-width: 810px;
   }
 
+  .xl\:max-w-\[357px\]{
+    max-width: 357px;
+  }
+
+  .xl\:max-w-\[599px\]{
+    max-width: 599px;
+  }
+
+  .xl\:max-w-\[550px\]{
+    max-width: 550px;
+  }
+
   .xl\:flex-auto{
     flex: 1 1 auto;
   }
@@ -10004,6 +10047,10 @@ BEGIN: html  scroll
 
   .xl\:gap-\[523px\]{
     gap: 523px;
+  }
+
+  .xl\:gap-\[75px\]{
+    gap: 75px;
   }
 
   .xl\:gap-x-\[20px\]{
