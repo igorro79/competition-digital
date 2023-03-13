@@ -25,20 +25,20 @@ BEGIN: gradient-hero
    before:content-[''] 
   
 
-  lg:before:top-[24px]
-  lg:before:h-[280px]
-   lg:before:w-[280px]
+  lg:before:top-[80px]
+  lg:before:h-[200px]
+   lg:before:w-[200px]
   lg:before:blur-[60px]
 
 
-  xl:before:top-[77px]  
-  xl:before:h-[302px] 
-  xl:before:w-[302px]
+  xl:before:top-[75px]  
+  xl:before:h-[200px] 
+  xl:before:w-[200px]
   xl:before:blur-[60px]
      
-  2xl:before:top-[130px]
-2xl:before:h-[453px]
-2xl:before:w-[453px]
+  2xl:before:top-[120px]
+2xl:before:h-[330px]
+2xl:before:w-[330px]
   2xl:before:blur-[90px];
   }
 

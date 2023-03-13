@@ -12,7 +12,7 @@
     />
     <title>Service</title>
   </head>
-  <body>
+  <body class="bg-light dark:bg-dark">
     <div class="wrapper">
       <!-- BEGIN: 01-section-header -->
       <header
@@ -729,10 +729,11 @@
 
       <!--  BEGIN: Main -->
       <!-- xl:pt-[var(--header-h-lg)] -->
-      <main class="page relative bottom-[10px] z-10">
+      <!-- page relative bottom-[10px] -->
+      <main class=" z-10">
         <!-- BEGIN: 02-section-hero -->
         <section
-          class="case hero red-gradient__hero-service relative overflow-hidden bg-light pt-[21px] pb-[25px] text-dark dark:bg-dark dark:text-white lg:pt-[17px] lg:pb-[28px] xl:pt-[18px] xl:pb-[40px] 2xl:pt-[20px] 2xl:pb-[40px]"
+          class="case hero red-gradient__hero-service relative overflow-hidden bg-light pt-[11px] pb-[25px] text-dark dark:bg-dark dark:text-white lg:pt-[17px] lg:pb-[28px] xl:pt-[18px] xl:pb-[40px] 2xl:pt-[20px] 2xl:pb-[40px]"
         >
           <div
             class="cases__container custom-container container relative z-10 mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
@@ -740,11 +741,11 @@
             <!-- block-01  bread crumbs -->
             <!-- pt-[12px] -->
             <div
-              class="points mb-[10px] flex items-center gap-[4px] text-middleGrey xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
+              class="points  mb-[10px] flex items-center gap-[4px] text-middleGrey xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
             >
               <a
                 href="#"
-                class="point text-[8px] font-normal leading-[1.4] lg:text-[10px]"
+                class="point text-[8px] font-normal leading-[1.4] xl:text-[10px]"
                 >Main</a
               >
 
@@ -767,7 +768,7 @@
               </span>
 
               <a
-                class="point text-[8px] font-normal leading-[1.4] lg:text-[10px] xl:text-[10px]"
+                class="point text-[8px] font-normal leading-[1.4] xl:text-[10px]"
                 href="#"
                 >Services</a
               >
@@ -791,7 +792,7 @@
               </span>
 
               <a
-                class="point text-[8px] font-semibold uppercase leading-[1.4] lg:text-[10px] xl:text-[10px]"
+                class="point text-[8px] font-medium uppercase leading-[1.4] xl:font-semibold   xl:text-[10px]"
                 href="#"
                 >BRANDING</a
               >
@@ -799,8 +800,8 @@
 
             <!-- block-02 < BACK  -->
             <a
-              class="link-back-page group mb-[3px] flex items-center gap-[10px] lg:mb-[13px] xl:left-[30px] xl:gap-[15px] xl:pt-[32px] 2xl:left-[30px] 2xl:mb-[32px] 2xl:gap-[15px] 2xl:pt-[66px]"
-              href="index.html"
+              class="link-back-page max-w-max group mb-[3px] flex items-center gap-[10px] lg:mb-[13px] xl:left-[30px] xl:gap-[15px] xl:pt-[32px] 2xl:left-[30px] 2xl:mb-[32px] 2xl:gap-[15px] 2xl:pt-[66px]"
+              href="services.html"
             >
               <span
                 class="rounded-full border py-[6.5px] px-[9.5px] transition-all ease-in group-hover:bg-dark dark:group-hover:bg-white xl:py-[17px] xl:px-[21px]"
@@ -834,24 +835,33 @@
               <div>
                 <!-- E-commerce-m -->
                 <h1
-                  class="mb-[27px] text-[36px] font-bold uppercase leading-[1.2] lg:mb-[45px] lg:text-[60px] lg:leading-[1.1] xl:mb-[24px] xl:flex-col xl:text-[80px] xl:font-semibold xl:leading-[1.0] 2xl:mb-[82px] 2xl:text-[120px] 2xl:font-bold 2xl:leading-[1.1]"
+                  class="mb-[27px] text-[36px] font-bold uppercase leading-[1.2] 
+                  lg:mb-[45px] lg:text-[60px] lg:leading-[1.1]
+                   xl:mb-[24px] xl:flex-col xl:text-[80px] xl:font-semibold xl:leading-[1.0] 
+                   2xl:mb-[82px] 2xl:text-[120px] 2xl:font-bold 2xl:leading-[1.1]"
                 >
                   BRANDING
                 </h1>
 
+              
+
                 <!-- btn-hero -->
                 <!-- max-w-[253px] lg:mx-0 -->
                 <div class="group mb-[80px]">
-                  <!-- id="submit_02" -->
+                  <!--  -->
+                  <!--  -->
                   <button
-                    type="submit"
+                 id="btnDiscuss"
+                    type="button"
                     aria-label="Discuss the project"
-                    class="btn__red-service link-oside__red w-full transition-all duration-300 ease-out group-hover:border-white group-hover:bg-white group-hover:text-black group-active:text-main lg:w-auto lg:pl-[55px] lg:pr-[55px]"
+                    class="btn__red-service link-oside  transition-all duration-300 ease-out
+                       group-active:text-main lg:w-auto lg:pl-[55px] lg:pr-[55px]"
                     value="Submit"
                   >
                     Discuss the project
+                    <!-- group-hover:fill-white -->
                     <svg
-                      class="fill-white transition-all group-hover:fill-black group-active:fill-main"
+                      class="fill-white transition-all  group-active:fill-main"
                       width="14"
                       height="16"
                       viewBox="0 0 14 16"
@@ -1013,11 +1023,14 @@
             <div class="xl:border__top xl:flex xl:flex-row-reverse">
               <!-- col-02 -->
               <div
-                class="lg:pb-[25px] xl:pl-[152px] 2xl:max-w-[1244px] 2xl:pl-[152px]"
+                class="lg:pb-[25px] xl:pl-[152px]
+                 2xl:max-w-[1244px] 2xl:pl-[152px]"
               >
                 <!-- BEGIN: block-01 -->
                 <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[26px] lg:flex-row lg:gap-[41px] lg:pt-[38px] lg:pb-[39px] xl:gap-[54px] xl:pt-[70px] 2xl:gap-[54px] 2xl:pt-[70px]"
+                  class="border__bottom flex flex-col pt-[30px] pb-[26px]
+                   lg:flex-row lg:gap-[41px] lg:pt-[38px] lg:pb-[39px]
+                    xl:gap-[54px] xl:pt-[70px] 2xl:gap-[54px] 2xl:pt-[70px]"
                 >
                   <!---text-01 -->
                   <div>
@@ -1110,8 +1123,9 @@
                 <!-- END: block-03 -->
 
                 <!-- BEGIN: block-04 -->
+                <!-- border__bottom -->
                 <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[26px] lg:flex-row lg:gap-[41px] lg:pt-[38px] lg:pb-[39px] xl:gap-[54px] xl:pt-[70px] 2xl:gap-[54px] 2xl:pt-[70px]"
+                  class=" flex flex-col pt-[30px] pb-[26px] lg:flex-row lg:gap-[41px] lg:pt-[38px] lg:pb-[39px] xl:gap-[54px] xl:pt-[70px] 2xl:gap-[54px] 2xl:pt-[70px]"
                 >
                   <!---text-01 -->
                   <div>
@@ -1218,7 +1232,8 @@
           >
             <!-- border__bottom -->
             <h2
-              class="pb-[30px] text-[28px] font-bold uppercase leading-[1.2] lg:pb-[44px] lg:text-[45px] lg:leading-[1.1] xl:max-w-[66%] xl:text-[50px] 2xl:max-w-[66%] 2xl:text-[90px]"
+              class="pb-[30px] text-[28px] font-bold uppercase leading-[1.2]
+              lg:border__bottom lg:pb-[44px] lg:text-[45px] lg:leading-[1.1] xl:max-w-[66%] xl:text-[50px] 2xl:max-w-[66%] 2xl:text-[90px]"
             >
               What problems can we solve?
             </h2>
@@ -1244,7 +1259,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       Branding, and naming turnkey
                     </h3>
@@ -1261,7 +1276,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       We help to adapt foreign brands to the Swedish market
                     </h3>
@@ -1282,7 +1297,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       We strengthen the product, and bring new services to the
                       market
@@ -1300,7 +1315,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       We create a unified style of the company, and develop the
                       philosophy and brand story
@@ -1322,7 +1337,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[40px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       We build a system for working with the audience, develop a
                       communication strategy
@@ -1332,7 +1347,7 @@
 
                   <!-- BEGIN: branding__06 -->
                   <div
-                    class="lg:border__left pt-[27px] pb-[19px] lg:basis-[50%] lg:pl-[54px] lg:pt-[87px] lg:pb-[37px] xl:pb-[93px] 2xl:pb-[93px]"
+                    class="lg:border__left pt-[27px] pb-[40px] lg:basis-[50%] lg:pl-[54px] lg:pt-[87px] lg:pb-[37px] xl:pb-[93px] 2xl:pb-[93px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[24px] 2xl:text-[24px]"
@@ -1340,7 +1355,7 @@
                     >
 
                     <h3
-                      class="border__bottom pt-[8px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
+                      class="border__bottom pt-[8px] pb-[20px] text-[20px] font-bold leading-[1.3] lg:pb-[41px] xl:pb-[40px] xl:text-[32px] 2xl:text-[32px]"
                     >
                       We provide guidance and recommendations for brand
                       development
@@ -1420,7 +1435,9 @@
               <!-- 01 -->
               <!--  -->
               <div
-                class="flex w-[90%] flex-col gap-[10px] xl:w-[20%] xl:gap-[18px] 2xl:gap-[18px]"
+                class="flex w-[90%] flex-col gap-[10px]
+                lg:w-[45%]
+                xl:w-[20%] xl:gap-[18px] 2xl:gap-[18px]"
               >
                 <div
                   class="text-[28px] font-bold leading-[1.2] lg:text-[32px] xl:text-[64px] xl:text-main 2xl:text-[64px]"
@@ -1498,7 +1515,10 @@
                   class="flex max-w-fit flex-col gap-[15px] lg:gap-[11px] xl:gap-[18px] 2xl:gap-[18px]"
                 >
                   <div
-                    class="text-[28px] font-bold uppercase leading-[1.1] lg:text-[32px] xl:text-[40px] 2xl:text-[64px]"
+                    class="text-[28px] font-bold uppercase leading-[1.1] 
+                    lg:text-[32px]
+                     xl:text-[40px] xl:text-main
+                     2xl:text-[64px]"
                   >
                     3 times
                   </div>
@@ -1513,7 +1533,10 @@
                   class="flex flex-col gap-[15px] pt-[30px] lg:gap-[11px] lg:pt-0 xl:max-w-[33%] xl:gap-[18px] 2xl:gap-[18px]"
                 >
                   <div
-                    class="text-[28px] font-bold uppercase leading-[1.1] lg:text-[32px] xl:text-[40px] 2xl:text-[64px]"
+                    class="text-[28px] font-bold uppercase leading-[1.1] 
+                    lg:text-[32px] 
+                    xl:text-[40px] xl:text-main
+                     2xl:text-[64px]"
                   >
                     For 50%
                   </div>
@@ -1778,7 +1801,7 @@
               </div>
 
               <!-- TEST: 02 -->
-              <div class="xl:border__right xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
+              <div class=" hidden xl:block xl:border__right xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
                 <!-- btn-order-a-consultation-02-->
               
                 <a href="#" class="btn__transparent link-oside__red group dark:text-white
@@ -1855,13 +1878,13 @@
                     ANALYSIS AND STRATEGY
                   </h3>
 
-                  <!-- right-[0px] -->
+                  <!--  -->
                   <div
-                    class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                    class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                     transition-all ease-in group-hover/arrow:bg-main 
                     lg:top-0
-                     lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                     xl:top-[71px] xl:left-[72%] 
+                     lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                     xl:top-[71px] xl:right-[18%] 
                      2xl:top-[71px] "
                   >
                     <svg
@@ -1982,8 +2005,9 @@
             <div class="xl:mt-[-585px] xl:pb-[160px]">
 
                 <!-- block-02 -->
+                <!-- pb-[23px] -->
                 <div
-                  class="title border__bottom group/card pt-[26px] pb-[23px] 
+                  class="title border__bottom group/card pt-[26px]  
                   lg:pt-[27px] lg:pb-[22px]
                   xl:border-b-0 xl:pb-[13px]
                   xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]"
@@ -1999,11 +2023,11 @@
                     </h3>
                   
                     <!-- right-[0px] -->
-                    <div class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                    <div class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                                       transition-all ease-in group-hover/arrow:bg-main 
                                       lg:top-0
-                                      lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                                      xl:top-[-6px] xl:left-[72%] 
+                                      lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                                      xl:top-[-6px] xl:right-[18%] 
                                       2xl:top-[-6px] ">
                       <svg
                         class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/arrow:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -2016,7 +2040,7 @@
                 </div>
 
                 <!-- block-03 -->
-              <div class="title border__bottom group/card pt-[26px] pb-[23px] 
+              <div class="title border__bottom group/card pt-[26px] 
                             lg:pt-[27px] lg:pb-[22px]
                             xl:border-b-0 xl:pb-[13px]
                             xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
@@ -2030,11 +2054,11 @@
                   </h3>
               
                   <!-- right-[0px] -->
-                  <div class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                  <div class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                                                 transition-all ease-in group-hover/arrow:bg-main 
                                                 lg:top-0
-                                                lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                                                xl:top-[-6px] xl:left-[72%] 
+                                                lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                                                xl:top-[-6px] xl:right-[18%] 
                                                 2xl:top-[-6px] ">
                     <svg
                       class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/arrow:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -2046,7 +2070,7 @@
                 </a>
               </div>
                 <!-- block-04 -->
-              <div class="title border__bottom group/card pt-[26px] pb-[23px] 
+              <div class="title border__bottom group/card pt-[26px] 
                             lg:pt-[27px] lg:pb-[22px]
                             xl:border-b-0 xl:pb-[13px]
                             xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
@@ -2060,11 +2084,11 @@
                   </h3>
               
                   <!-- right-[0px] -->
-                  <div class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                  <div class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                                                 transition-all ease-in group-hover/arrow:bg-main 
                                                 lg:top-0
-                                                lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                                                xl:top-[-6px] xl:left-[72%] 
+                                                lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                                                xl:top-[-6px] xl:right-[18%] 
                                                 2xl:top-[-6px] ">
                     <svg
                       class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/arrow:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -2076,7 +2100,7 @@
                 </a>
               </div>
                 <!-- block-05 -->
-              <div class="title border__bottom group/card pt-[26px] pb-[23px] 
+              <div class="title border__bottom group/card pt-[26px] 
                             lg:pt-[27px] lg:pb-[22px]
                             xl:border-b-0 xl:pb-[13px]
                             xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
@@ -2090,11 +2114,11 @@
                   </h3>
               
                   <!-- right-[0px] -->
-                  <div class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                  <div class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                                                 transition-all ease-in group-hover/arrow:bg-main 
                                                 lg:top-0
-                                                lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                                                xl:top-[-6px] xl:left-[72%] 
+                                                lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                                                xl:top-[-6px] xl:right-[18%] 
                                                 2xl:top-[-6px] ">
                     <svg
                       class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/arrow:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -2106,7 +2130,7 @@
                 </a>
               </div>
                 <!-- block-06 -->
-              <div class="title border__bottom group/card pt-[26px] pb-[23px] 
+              <div class="title border__bottom group/card pt-[26px] 
                             lg:pt-[27px] lg:pb-[22px]
                             xl:border-b-0 xl:pb-[13px]
                             xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]">
@@ -2120,11 +2144,11 @@
                   </h3>
               
                   <!-- right-[0px] -->
-                  <div class="absolute top-[calc(50%-17px)] mt-[-14px] rounded-full p-[13.5px] 
+                  <div class="absolute top-[calc(50%-17px)] right-[0px] mt-[-14px] rounded-full p-[13.5px] 
                     transition-all ease-in group-hover/arrow:bg-main 
                     lg:top-0
-                    lg:left-[34%] lg:mt-[-7px] lg:p-[11px] 
-                    xl:top-[-6px] xl:left-[72%] 
+                    lg:right-[61%] lg:mt-[-7px] lg:p-[11px] 
+                    xl:top-[-6px] xl:right-[18%] 
                     2xl:top-[-6px] ">
                     <svg
                       class="h-[11px] w-[11px] fill-black transition-all ease-in group-hover/arrow:fill-white dark:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -2154,18 +2178,19 @@
             <h2
               class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2]
                lg:text-[45px] 
-               xl:text-[50px] xl:leading-[1.1] 
+             xl:pb-[72px]  xl:text-[50px] xl:leading-[1.1] 
                  2xl:text-[90px]"
             >
               WE SELECT THE SUITABLE INSTRUMENTS FOR YOUR PROMOTION
             </h2>
 
             <!-- BEGIN:  wrapper-block-01-desktop-3-col -->
-            <div class="lg:flex-col-2 lg:flex lg:justify-between lg:pt-[12px]">
+            <div class="lg:flex-col-2 lg:flex lg:justify-between lg:pt-[12px]
+            xl:justify-start xl:pt-0">
               <h3
                 class="border__bottom pt-[30px] pb-[30px] text-[24px] font-bold uppercase leading-[1.2] 
                 lg:max-w-[34%] lg:text-[24px] 
-                xl:text-[42px] 
+               xl:max-w-[24.5%] xl:text-[42px] xl:pt-[59px]
                  2xl:text-[42px]"
               >
                 By type of service
@@ -2173,21 +2198,29 @@
 
               <!-- wrapper-col-02-t -->
               <!-- xl:flex xl:flex-row-reverse xl:justify-between xl:gap-[29px] -->
+              
+              <!-- xl:border__top -->
               <div
-                class="xl:border__top lg:basis-[66%]  2xl:max-w-[1244px] 2xl:gap-[44px]"
+                class=" lg:basis-[66%] 
+                xl:border__left xl:pl-[155px] xl:basis-full xl:pt-[34px]
+                2xl:max-w-[1244px] 2xl:gap-[44px]"
               >
                 <!-- col-02 -->
 
                 <!-- BEGIN: block-01 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
+                <div class="border__bottom pt-[30px] pb-[30px]
+                xl:flex xl:gap-[54px] ">
                   <!---text-01 -->
-                  <div>
+                  <div >
                     <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
+                      class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                       xl:text-[24px]
+                        2xl:text-[24px]"
                       >01/</span
                     >
                     <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
+                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                     xl:w-[365px] xl:text-[32px] "
                     >
                       SEO-optimization of sites
                     </h3>
@@ -2195,7 +2228,8 @@
 
                   <!-- text-02 -->
 
-                  <p class="text-[16px] font-medium leading-[1.4]">
+                  <p class="text-[16px] font-medium leading-[1.4]
+                  xl:text-[24px] xl:pt-[40px]">
                     UWP.Digital is your personal SEO agency with a full range of
                     services for SEO Google discover. We will develop an
                     optimization strategy and bring your site to the top of the
@@ -2206,79 +2240,74 @@
                 <!-- END: block-01 -->
 
                 <!-- BEGIN: block-02 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
+                <div class="border__bottom pt-[30px] pb-[30px]
+                                xl:flex xl:pt-[75px] xl:gap-[54px] ">
                   <!---text-01 -->
                   <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3] lg:max-w-[78%]"
-                    >
+                    <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                       xl:text-[24px]
+                                        2xl:text-[24px]">02/</span>
+                    <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                     xl:w-[365px] xl:text-[32px] ">
                       Search audit and growth points
                     </h3>
                   </div>
-
+                
                   <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We develop a corporate style concept: corporate colors, a
-                    brand book, select a font and help to make your own logo. We
-                    package your brand with graphic design and illustration.
+                
+                  <p class="text-[16px] font-medium leading-[1.4]
+                                  xl:text-[24px] xl:pt-[40px]">
+                  We will show you how to improve your site in the eyes of customers and search engines. We will indicate growth points
+                  for promoting a business and a product.
                   </p>
                 </div>
                 <!-- END: block-02 -->
 
                 <!-- BEGIN: block-03 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
+                <div class="border__bottom pt-[30px] pb-[30px]
+                                                xl:flex xl:pt-[75px] xl:gap-[54px] ">
                   <!---text-01 -->
-
                   <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
+                    <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                       xl:text-[24px]
+                                                        2xl:text-[24px]">03/</span>
+                    <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                     xl:w-[365px] xl:text-[32px] ">
                       Information promotion
                     </h3>
                   </div>
-
+                
                   <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We write articles to optimize the corporate blog to attract
-                    more buyers to your website.
+                
+                  <p class="text-[16px] font-medium leading-[1.4]
+                                                  xl:text-[24px] xl:pt-[40px]">
+                    We write articles to optimize the corporate blog to attract more buyers to your website.
                   </p>
                 </div>
                 <!-- END: block-03 -->
 
                 <!-- BEGIN: block-04 -->
-                <div class="border__bottom pt-[30px] pb-[30px] lg:pb-[45px]">
-                  <!---text-01 -->
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
-                      Online store promotion
-                    </h3>
-                  </div>
-
-                  <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We will increase the number of your customers with the help
-                    of search engine optimization google. We work with each
-                    stage of the funnel: from the formation of a need to sales
-                    growth.
-                  </p>
+              <div class="border__bottom pt-[30px] pb-[30px]
+               xl:border-b-0  xl:flex xl:pt-[75px] xl:gap-[54px] ">
+                <!---text-01 -->
+                <div>
+                  <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                     xl:text-[24px]
+                                                      2xl:text-[24px]">04/</span>
+                  <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                   xl:w-[365px] xl:text-[32px] ">
+                  Online store promotion
+                  </h3>
                 </div>
+              
+                <!-- text-02 -->
+              
+                <p class="text-[16px] font-medium leading-[1.4]
+                                                xl:text-[24px] xl:pt-[40px]">
+                  We will increase the number of your customers with the help of search engine optimization google. We work with each
+                  stage of the funnel: from the formation of a need to sales growth.
+                </p>
+              </div>
                 <!-- END: block-04 -->
 
                 <!-- col-02 -->
@@ -2287,122 +2316,122 @@
             <!-- END:  wrapper-block-01-desktop-3-col -->
 
             <!-- BEGIN:  wrapper-block-02-desktop-3-col -->
-            <div class="lg:flex-col-2 lg:flex lg:justify-between">
+            <div class="lg:flex-col-2 lg:flex lg:justify-between
+            xl:justify-between">
               <h3
                 class="border__bottom pt-[30px] pb-[30px] text-[24px] font-bold uppercase leading-[1.2]
                  lg:max-w-[34%] lg:border-b-0 lg:text-[24px]
-                   xl:text-[42px] 
+                   xl:max-w-[24.5%] xl:text-[42px] xl:pt-[87px]
                   2xl:text-[42px]"
               >
                 By industry
               </h3>
 
               <!-- wrapper-col-02-t -->
+              <!-- xl:flex xl:flex-row-reverse xl:justify-between xl:gap-[29px] -->
               <div
-                class="xl:border__top lg:basis-[66%] xl:flex xl:flex-row-reverse xl:justify-between xl:gap-[29px] 2xl:max-w-[1244px] 2xl:gap-[44px]"
+                class=" lg:basis-[66%] 
+              xl:border__top  xl:border__left
+
+              xl:pl-[155px] xl:basis-full xl:pt-[10px]
+               2xl:max-w-[1244px] 2xl:gap-[44px]"
               >
                 <!-- col-02 -->
 
                 <!-- BEGIN: block-01 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
-                  <!---text-01 -->
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
-                      E-commerce
-                    </h3>
-                  </div>
-
-                  <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We work with online stores, catalogs, and product cards. We
-                    will help to make the client pay for the order and return it
-                    to you again.
-                  </p>
+              <div class="border__bottom pt-[30px] pb-[30px]
+                                              xl:flex xl:pt-[80px] xl:gap-[54px] ">
+                <!---text-01 -->
+                <div>
+                  <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                     xl:text-[24px]
+                                                      2xl:text-[24px]">01/</span>
+                  <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                   xl:w-[365px] xl:text-[32px] ">
+                    E-commerce
+                  </h3>
                 </div>
+              
+                <!-- text-02 -->
+              
+                <p class="text-[16px] font-medium leading-[1.4]
+                                                xl:text-[24px] xl:pt-[40px]">
+                  We work with online stores, catalogs, and product cards. We will help to make the client pay for the order and return it
+                  to you again.
+                </p>
+              </div>
                 <!-- END: block-01 -->
 
                 <!-- BEGIN: block-02 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
+                <div class="border__bottom pt-[30px] pb-[30px]
+                                                xl:flex xl:pt-[80px] xl:gap-[54px] ">
                   <!---text-01 -->
                   <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3] lg:max-w-[78%]"
-                    >
+                    <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                       xl:text-[24px]
+                                                        2xl:text-[24px]">02/</span>
+                    <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                     xl:w-[365px] xl:text-[32px] ">
                       Medicine
                     </h3>
                   </div>
-
+                
                   <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We increase the expertise of the site so that it ranks
-                    higher in search engines.
+                
+                  <p class="text-[16px] font-medium leading-[1.4]
+                                                  xl:text-[24px] xl:pt-[40px]">
+                  We increase the expertise of the site so that it ranks higher in search engines.
                   </p>
                 </div>
                 <!-- END: block-02 -->
 
                 <!-- BEGIN: block-03 -->
-                <div class="border__bottom pt-[30px] pb-[30px]">
-                  <!---text-01 -->
-
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
-                      Finance and insurance
-                    </h3>
-                  </div>
-
-                  <!-- text-02 -->
-
-                  <p
-                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[63%]"
-                  >
-                    Bank websites have many nuances for promotion. We will help
-                    improve the quality of the product and work out the scale of
-                    the site and business to take the top positions.
-                  </p>
+              <div class="border__bottom pt-[30px] pb-[30px]
+                                              xl:flex xl:pt-[80px] xl:gap-[54px] ">
+                <!---text-01 -->
+                <div>
+                  <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                     xl:text-[24px]
+                                                      2xl:text-[24px]">03/</span>
+                  <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                   xl:w-[365px] xl:text-[32px] ">
+                    Finance and insurance
+                  </h3>
                 </div>
+              
+                <!-- text-02 -->
+              
+                <p class="text-[16px] font-medium leading-[1.4]
+                                                xl:text-[24px] xl:pt-[40px]">
+                  Bank websites have many nuances for promotion. We will help improve the quality of the product and work out the scale of
+                  the site and business to take the top positions.
+                </p>
+              </div>
                 <!-- END: block-03 -->
 
                 <!-- BEGIN: block-04 -->
-                <div class="border__bottom pt-[30px] pb-[30px] lg:pb-[30px]">
-                  <!---text-01 -->
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
-                      Real estate
-                    </h3>
-                  </div>
-
-                  <!-- text-02 -->
-
-                  <p class="text-[16px] font-medium leading-[1.4]">
-                    We will conduct an effective promotion of a real estate
-                    website to attract customers from the search and convince
-                    them to call or leave a request.
-                  </p>
+                <!-- border__bottom -->
+              <div class="border__bottom pt-[30px] pb-[30px]
+                                              xl:flex xl:pt-[80px] xl:gap-[54px] ">
+                <!---text-01 -->
+                <div>
+                  <span class="text-[16px] font-bold leading-[1.4] text-middleGrey
+                                                     xl:text-[24px]
+                                                      2xl:text-[24px]">04/</span>
+                  <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                                   xl:w-[365px] xl:text-[32px] ">
+                  Real estate
+                  </h3>
                 </div>
+              
+                <!-- text-02 -->
+              
+                <p class="text-[16px] font-medium leading-[1.4]
+                                                xl:text-[24px] xl:pt-[40px]">
+                  We will conduct an effective promotion of a real estate website to attract customers from the search and convince them
+                  to call or leave a request.
+                </p>
+              </div>
                 <!-- END: block-04 -->
 
                 <!-- col-02 -->
@@ -2415,36 +2444,45 @@
 
         <!-- BEGIN: 12-section-stages-of-work -->
         <section
-          class="achievements bg-light pt-[37px] pb-[40px] dark:bg-dark dark:text-white lg:pt-[58px] lg:pb-[80px] xl:pb-[172px] xl:pt-10"
+          class="achievements bg-light pt-[37px] pb-[40px] dark:bg-dark dark:text-white
+           lg:pt-[58px] lg:pb-[80px] xl:pb-[140px] xl:pt-10"
         >
           <div
             class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
             <!-- BEGIN:  wrapper-block-01-desktop-3-col -->
             <h3
-              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] lg:text-[45px] lg:leading-[54px] xl:mb-[26px] xl:text-[50px] 2xl:mb-[73px] 2xl:text-[90px]"
+              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] 
+              lg:text-[45px] lg:leading-[54px] 
+               xl:text-[50px] xl:pb-[50px]
+               2xl:text-[90px]"
             >
               Stages of work
             </h3>
 
+            <!-- xl:border__top -->
             <div
-              class="xl:border__top xl:flex xl:flex-row-reverse xl:justify-between xl:gap-[29px] 2xl:gap-[44px]"
+              class=" xl:flex xl:flex-row-reverse xl:justify-between xl:gap-[29px] 2xl:gap-[44px]"
             >
               <!-- BEGIN: col-03 -->
-              <div class="2xl:max-w-[1244px]">
+              <!-- 2xl:max-w-[1244px] -->
+              <div class=" xl:mb-[190px]">
                 <!-- BEGIN: block-01 -->
                 <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row lg:justify-between lg:pt-[25px] lg:pb-[27px] xl:py-0"
+                  class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row 
+                  lg:justify-between lg:pt-[25px] lg:pb-[27px] 
+                  xl:py-0 xl:pt-[71px] xl:pb-[50px]"
                 >
                   <!---text-01 -->
 
-                  <div>
+                  <div class="xl:flex  xl:gap-[523px]">
                     <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
+                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[24px] 2xl:text-[24px]"
                       >01/</span
                     >
                     <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
+                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                    xl:pt-0 xl:mb-0 xl:text-[32px] xl:leading-[1.2]"
                     >
                       Analysis
                     </h3>
@@ -2453,7 +2491,8 @@
                   <!-- text-02 -->
 
                   <p
-                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]"
+                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]
+                    xl:text-[24px] xl:max-w-[41%] xl:pt-0"
                   >
                     We analyze the market, competitors, target audience, and
                     previous advertising campaigns. We compose the semantic core
@@ -2465,97 +2504,76 @@
                 <!-- END: block-01 -->
 
                 <!-- BEGIN: block-02 -->
-                <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row lg:justify-between lg:pt-[25px] lg:pb-[27px] xl:py-0"
-                >
+                <div class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row 
+                                  lg:justify-between lg:pt-[25px] lg:pb-[27px] 
+                                  xl:py-0 xl:pt-[71px] xl:pb-[50px]">
                   <!---text-01 -->
-
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
+                
+                  <div class="xl:flex  xl:gap-[523px]">
+                    <span class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[24px] 2xl:text-[24px]">02/</span>
+                    <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                    xl:pt-0 xl:mb-0 xl:text-[32px] xl:leading-[1.2]">
                       Launch of an advertising campaign
                     </h3>
                   </div>
-
+                
                   <!-- text-02 -->
-
-                  <p
-                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]"
-                  >
-                    We develop advertising creatives and offers for clients
-                    based on the marketing strategy. We draw up a budget and
-                    prepare several options for testing. We create and configure
-                    advertising cabinets. After careful preparation, we launch
-                    an advertising campaign for a specific target audience.
+                
+                  <p class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]
+                                    xl:text-[24px] xl:max-w-[41%] xl:pt-0">
+                    We develop advertising creatives and offers for clients based on the marketing strategy. We draw up a budget and prepare
+                    several options for testing. We create and configure advertising cabinets. After careful preparation, we launch an
+                    advertising campaign for a specific target audience.
                   </p>
                 </div>
                 <!-- END: block-02 -->
 
                 <!-- BEGIN: block-03 -->
-                <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row lg:justify-between lg:pt-[25px] lg:pb-[27px] xl:py-0"
-                >
+                <div class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row 
+                                  lg:justify-between lg:pt-[25px] lg:pb-[27px] 
+                                  xl:py-0 xl:pt-[71px] xl:pb-[50px]">
                   <!---text-01 -->
-
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
+                
+                  <div class="xl:flex  xl:gap-[523px]">
+                    <span class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[24px] 2xl:text-[24px]">03/</span>
+                    <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                    xl:pt-0 xl:mb-0 xl:text-[32px] xl:leading-[1.2]">
                       Advertising campaign optimization
                     </h3>
                   </div>
-
+                
                   <!-- text-02 -->
-
-                  <p
-                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]"
-                  >
-                    After the launch, we analyze the statistics, determine which
-                    creatives worked better, improve the conversion and
-                    strengthen the offer. We correct negative keywords,
-                    keywords, optimize bids, and budget.
+                
+                  <p class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]
+                                    xl:text-[24px] xl:max-w-[41%] xl:pt-0">
+                    After the launch, we analyze the statistics, determine which creatives worked better, improve the conversion and
+                    strengthen the offer. We correct negative keywords, keywords, optimize bids, and budget.
                   </p>
                 </div>
                 <!-- END: block-03 -->
 
                 <!-- BEGIN: block-04 -->
-                <div
-                  class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row lg:justify-between lg:pt-[25px] lg:pb-[27px] xl:py-0"
-                >
-                  <!---text-01 -->
-
-                  <div>
-                    <span
-                      class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[21px] 2xl:text-[32px]"
-                      >01/</span
-                    >
-                    <h3
-                      class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]"
-                    >
-                      Reporting and campaign management
-                    </h3>
-                  </div>
-
-                  <!-- text-02 -->
-
-                  <p
-                    class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]"
-                  >
-                    We provide a monthly report on the effectiveness of the
-                    advertising campaign. We develop a plan and recommendations
-                    for the next month. We work out a strategy and paint each
-                    next stage.
-                  </p>
+              <div class="border__bottom flex flex-col pt-[30px] pb-[30px] lg:flex-row 
+                                lg:justify-between lg:pt-[25px] lg:pb-[27px] 
+                                xl:py-0 xl:pt-[71px] xl:pb-[50px]">
+                <!---text-01 -->
+              
+                <div class="xl:flex  xl:gap-[523px]">
+                  <span class="text-[16px] font-bold leading-[1.4] text-middleGrey xl:text-[24px] 2xl:text-[24px]">04/</span>
+                  <h3 class="mb-[30px] pt-[6px] text-[20px] font-bold uppercase leading-[1.3]
+                                  xl:pt-0 xl:mb-0 xl:text-[32px] xl:leading-[1.2]">
+                    Reporting and campaign management
+                  </h3>
                 </div>
+              
+                <!-- text-02 -->
+              
+                <p class="text-[16px] font-medium leading-[1.4] lg:max-w-[66%] lg:pt-[31px]
+                                  xl:text-[24px] xl:max-w-[41%] xl:pt-0">
+                We provide a monthly report on the effectiveness of the advertising campaign. We develop a plan and recommendations for
+                the next month. We work out a strategy and paint each next stage.
+                </p>
+              </div>
                 <!-- END: block-04 -->
               </div>
               <!-- END: col-03 -->
@@ -2563,19 +2581,39 @@
             <!-- END:  wrapper-block-01-desktop-3-col -->
 
             <!-- BEGIN:  wrapper-block-02-desktop-3-col -->
-            <div class="pt-[51px] lg:pt-[117px] xl:pt-0">
+            <!-- xl:max-w-max xl:pt-[53px] xl:text-[16px] xl:tracking-[0px] 2xl:max-w-max 2xl:pt-[73px] 2xl:text-[24px] 2xl:tracking-[3px] -->
+            <div class="pt-[51px] 
+            lg:pt-[117px] 
+          xl:flex xl:justify-between  xl:border__top xl:pt-0 ">
               <h2
-                class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] xl:max-w-max xl:pt-[53px] xl:text-[16px] xl:tracking-[0px] 2xl:max-w-max 2xl:pt-[73px] 2xl:text-[24px] 2xl:tracking-[3px]"
+                class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] 
+               lg:border-b-0 
+               xl:hidden"
               >
                 Contextual advertising helps you to become a leader
               </h2>
 
+              <h2 class=" text-[32px] font-bold uppercase leading-[1.3] 
+              xl:block xl:max-w-[24.5%] xl:pr-[30px] xl:pt-[50px]
+                             ">
+                WEBSITE PROMOTION in the entire search space
+              </h2>
+
+             
+
+              <!-- wrapper-block-desktop -->
+              <div class=" xl:max-w-[75.5%] xl:border__left xl:pl-[157px]">
+
+             
               <!-- col-2 -->
-              <div class="lg:ml-auto lg:max-w-[66%] lg:pt-[27px]">
-                <!-- 01 -->
+              <div class="lg:ml-auto lg:max-w-[66%] lg:pt-[27px] 
+             xl:max-w-max  xl:ml-0">
+                <!-- 01 text -->
 
                 <div
-                  class="pt-[30px] lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0 xl:pt-[53px] xl:pb-[29px] 2xl:pt-[73px] 2xl:pb-[50px]"
+                  class="pt-[30px] lg:min-w-[260px] lg:max-w-[798px] lg:pb-[40px] lg:pt-0
+                   xl:pt-[22px] xl:pb-[29px] xl:max-w-max 
+                    2xl:pt-[22px] 2xl:pb-[50px]"
                 >
                   <p
                     class="w-[99%] text-[20px] font-medium leading-[140%] xl:text-[22px] 2xl:text-[32px]"
@@ -2605,59 +2643,83 @@
               <!-- lg:gap-y-[46px]  -->
 
               <div
-                class="gap-y-[46px] gap-x-[19px] pt-[31px] lg:flex lg:gap-x-[53px] lg:pt-[14px] xl:gap-x-[53px] xl:pl-[54px] xl:pt-[38px] 2xl:gap-x-[53px] 2xl:pl-[0px] 2xl:pt-[233px]"
+                class="gap-y-[46px] gap-x-[19px] pt-[31px] 
+                lg:flex lg:gap-x-[53px] lg:pt-[14px] 
+                xl:gap-x-[105px] xl:pl-[54px] xl:pt-[38px]
+                2xl:gap-x-[105px] 2xl:pl-[0px] 2xl:pt-[233px]"
               >
                 <!-- 01 -->
 
                 <!--  lg:min-h-max -->
                 <div
-                  class="border__bottom lg:border__right pb-[30px] lg:flex lg:max-w-[230px] lg:flex-col lg:border-b-0 lg:pt-[10px] lg:pb-[8px] xl:w-[252px] xl:justify-start xl:pb-[48px] 2xl:w-[432px] 2xl:justify-start 2xl:pb-[108px]"
+                  class="border__bottom lg:border__right pb-[30px] lg:flex lg:max-w-[230px] lg:flex-col lg:border-b-0 lg:pt-[10px] lg:pb-[8px]
+                   xl:w-[252px] xl:justify-start xl:pb-[48px] 
+                   2xl:w-[432px] 2xl:justify-start 2xl:pb-[108px]"
                 >
                   <div
-                    class="mb-[10px] text-[28px] font-bold leading-[1.2] text-main lg:text-[36px] xl:mb-[20px] xl:pt-[14px] xl:text-[60px] 2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[90px]"
+                    class="mb-[10px] text-[28px] font-bold leading-[1.2] text-main lg:text-[36px]
+                     xl:mb-[20px] xl:pt-[14px] xl:text-[60px]
+                      2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[64px]"
                   >
                     4+
                   </div>
 
                   <p
-                    class="w-[62%] text-[16px] font-medium leading-[1.4] lg:w-[72%]"
+                    class="w-[62%] text-[16px] font-medium leading-[1.4] lg:w-[72%]
+                    xl:text-[18px]"
                   >
                     years experience in web development
                   </p>
                 </div>
                 <!-- 02 -->
                 <div
-                  class="border__bottom lg:border__right pt-[30px] pb-[30px] lg:flex lg:min-h-max lg:max-w-[250px] lg:flex-col lg:border-b-0 lg:border-r-[1px] lg:border-r-middleGrey lg:pt-[10px] lg:pb-[8px] xl:order-2 xl:w-[252px] xl:justify-start xl:pb-[48px] 2xl:w-[432px] 2xl:justify-start 2xl:pb-[108px]"
+                  class="border__bottom lg:border__right pt-[30px] pb-[30px]
+                   lg:flex lg:min-h-max lg:max-w-[250px] lg:flex-col lg:border-b-0 lg:border__right lg:pt-[10px] lg:pb-[8px] 
+                xl:border-r-0   xl:order-2 xl:w-[252px] xl:justify-start xl:pb-[48px]
+                    2xl:w-[432px] 2xl:justify-start 2xl:pb-[108px]"
                 >
                   <div
-                    class="mb-[10px] text-[28px] font-bold leading-[1.2] text-main lg:text-[36px] xl:mb-[20px] xl:pt-[14px] xl:text-[60px] 2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[90px]"
+                    class="mb-[10px] text-[28px] font-bold leading-[1.2] text-main
+                     lg:text-[36px] 
+                     xl:mb-[20px] xl:pt-[14px] xl:text-[60px]
+                      2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[64px]"
                   >
                     100+
                   </div>
 
                   <p
-                    class="w-[62%] text-[16px] font-medium leading-[1.4] lg:w-[75%]"
+                    class="w-[62%] text-[16px] font-medium leading-[1.4] lg:w-[75%]
+                    xl:text-[18px]"
                   >
                     valid direct contracts with media platforms
                   </p>
                 </div>
                 <!-- 03 -->
+                <!-- lg:border__right -->
                 <div
-                  class="border__bottom lg:border__right pt-[30px] pb-[30px] lg:flex lg:min-h-max lg:w-[177px] lg:flex-col lg:border-b-0 lg:pt-[24px] xl:w-[252px] xl:justify-start xl:pb-[48px] 2xl:w-[377px] 2xl:justify-start 2xl:pb-[108px]"
+                  class="border__bottom  pt-[30px] pb-[30px]
+                   lg:flex lg:min-h-max lg:w-[177px] lg:flex-col lg:border-b-0 lg:pt-[24px]
+                 xl:border__right   xl:w-[252px] xl:justify-start xl:pb-[48px]
+                     2xl:w-[377px] 2xl:justify-start 2xl:pb-[108px]"
                 >
                   <div
-                    class="mb-[10px] w-[62%] text-[28px] font-bold leading-[1.2] text-main lg:text-[36px] xl:mb-[20px] xl:pt-[0px] xl:text-[60px] 2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[90px]"
+                    class="mb-[10px] w-[62%] text-[28px] font-bold leading-[1.2] text-main
+                     lg:text-[36px]
+                      xl:mb-[20px] xl:pt-[0px] xl:text-[60px] 
+                      2xl:mb-[28px] 2xl:pt-[14px] 2xl:text-[64px]"
                   >
                     300+
                   </div>
 
-                  <p class="text-[16px] font-medium leading-[1.4]">
+                  <p class="text-[16px] font-medium leading-[1.4]
+                  xl:text-[18px]">
                     successful projects
                   </p>
                 </div>
               </div>
               <!-- 03 text -->
-              <div class="lg:ml-auto lg:max-w-[66%] lg:pt-[14px]">
+              <div class="lg:ml-auto lg:max-w-[66%] lg:pt-[14px]
+              xl:max-w-max xl:ml-0">
                 <div
                   class="pt-[27px] xl:pt-[31px] xl:pb-[28px] 2xl:pt-[50px] 2xl:pb-[40px]"
                 >
@@ -2671,6 +2733,9 @@
                   </p>
                 </div>
               </div>
+
+              </div>
+
             </div>
             <!-- END:  wrapper-block-02-desktop-3-col -->
           </div>
@@ -2679,95 +2744,114 @@
 
         <!-- BEGIN: 13-section-ppc-marketing -->
         <section
-          class="bg-light pt-[42px] pb-[50px] dark:bg-dark dark:text-white lg:pt-[70px] lg:pb-[50px] xl:pt-[90px] xl:pb-[90px] 2xl:pt-[90px] 2xl:pb-[150px]"
+          class="bg-light pt-[42px] pb-[50px] dark:bg-dark dark:text-white 
+          lg:pt-[70px] lg:pb-[50px] 
+          xl:pt-[90px] xl:pb-[38px] 
+          2xl:pt-[90px] 2xl:pb-[38px]"
         >
           <div
             class="custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
             <!-- title -->
             <h2
-              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] lg:text-[45px] xl:mb-[81px] xl:text-[60px] 2xl:mb-[123px] 2xl:text-[90px]"
+              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] 
+              lg:text-[45px] 
+               xl:text-[60px] xl:leading-[1.1]
+               2xl:text-[90px] "
             >
               PPC marketing services from UWP.Digital:
             </h2>
             <!-- wrapper-blocks -->
 
             <!-- block-01 -->
+            <!-- xl:border__bottom  -->
             <div
-              class="xl:border__bottom lg:flex xl:gap-[173px] xl:pb-[68px] 2xl:gap-0 2xl:pb-[102px]"
+              class="lg:flex xl:gap-[173px] xl:pb-[68px] 2xl:gap-0 2xl:pb-[102px]"
             >
               <!-- block-text -->
               <div class="lg:ml-auto lg:max-w-[66%] xl:max-w-[1090px]">
                 <!-- col-02 -->
+                <!--gap-[20px] xl:gap-[21px] 2xl:gap-[30px] -->
                 <ul
-                  class="gap-[20px] pt-[30px] lg:gap-[30px] xl:gap-[21px] 2xl:gap-[30px]"
+                  class=" pt-[30px] lg:gap-[30px] xl:pt-[20px] "
                 >
                   <!-- 01 -->
+                  <!-- xl:gap-[21px]   2xl:gap-[31px] -->
                   <li
-                    class="border__bottom gap-[20px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pb-[30px] 
+                    lg:gap-[24px]
+                  xl:flex  xl:pt-[50px] xl:pb-[50px] "
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >01.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Individual PPC strategy development
                     </p>
                   </li>
                   <!-- 02 -->
                   <li
-                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pt-[28px] pb-[30px]
+                     lg:gap-[24px] 
+                     xl:flex  xl:pt-[50px] xl:pb-[50px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >02.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Selection of keywords
                     </p>
                   </li>
                   <!-- 03 -->
                   <li
-                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] 
+                    lg:gap-[24px] 
+                   xl:flex  xl:pt-[50px] xl:pb-[50px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >03.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Developing advertising with Google Ads
                     </p>
                   </li>
                   <!-- 04 -->
                   <li
-                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pt-[28px] pb-[30px]
+                     lg:gap-[24px]
+                    xl:flex  xl:pt-[50px] xl:pb-[50px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >04.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Advanced Google Ads Analytics
                     </p>
                   </li>
                   <!-- 05 -->
                   <li
-                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pt-[28px] pb-[30px]
+                     lg:gap-[24px]
+                    xl:flex  xl:pt-[50px] xl:pb-[50px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >05.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Optimizing Google advertising campaigns and increasing
                       conversions
@@ -2775,14 +2859,16 @@
                   </li>
                   <!-- 06 -->
                   <li
-                    class="border__bottom gap-[20px] pt-[28px] pb-[30px] lg:gap-[24px] xl:gap-[21px] 2xl:gap-[31px]"
+                    class="border__bottom gap-[20px] pt-[28px] pb-[30px]
+                     lg:gap-[24px]
+                     xl:flex  xl:pt-[50px] xl:pb-[50px]"
                   >
                     <span
                       class="text-[16px] font-bold leading-[1.4] xl:text-[21px] 2xl:text-[32px]"
                       >06.</span
                     >
                     <p
-                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] 2xl:text-[32px]"
+                      class="pt-[9px] text-[20px] font-bold uppercase leading-[1.3] xl:text-[21px] xl:pt-0 2xl:text-[32px]"
                     >
                       Setting up remarketing google ads
                     </p>
@@ -2797,14 +2883,20 @@
 
         <!-- BEGIN: 14-section-web-development -->
         <section
-          class="overflow-hidden bg-light pt-[50px] pb-[96px] dark:bg-dark dark:text-white lg:pt-[46px] lg:pb-[60px] xl:pt-[59px] xl:pb-[185px] 2xl:pt-[90px] 2xl:pb-[268px]"
+          class="overflow-hidden bg-light pt-[50px] pb-[96px] dark:bg-dark dark:text-white 
+          lg:pt-[46px] lg:pb-[60px] 
+          xl:pt-[59px] xl:pb-[185px]
+           2xl:pt-[90px] 2xl:pb-[204px]"
         >
           <div
             class="custom-container container mx-auto sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]"
           >
             <!-- block-01 -->
             <h2
-              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2] lg:text-[45px] lg:leading-[1.1] xl:text-[60px] 2xl:text-[90px]"
+              class="border__bottom pb-[30px] text-[28px] font-bold uppercase leading-[1.2]
+               lg:text-[45px] lg:leading-[1.1]
+                xl:text-[60px] xl:max-w-[77%] xl:pb-[50px]
+                2xl:text-[90px]"
             >
               Web development from UWP.Digital
             </h2>
@@ -2817,11 +2909,17 @@
               <div class="2xl:max-w-[1244px]">
                 <!-- BEGIN: block-01 -->
 
+                <!-- xl:indent-[28px] -->
                 <div
-                  class="pt-[30px] pb-[40px] lg:ml-auto lg:max-w-[66%] lg:pb-[46px] xl:max-w-[1090px] xl:gap-[32px] xl:pb-0 2xl:max-w-[1090px] 2xl:gap-[46px] 2xl:pb-0"
+                  class="pt-[30px] pb-[40px]
+                   lg:ml-auto lg:max-w-[66%] lg:pb-[46px]
+                  xl:pt-[62px]  xl:max-w-[1090px] xl:gap-[32px] xl:pb-0
+                     2xl:max-w-[1090px] 2xl:gap-[46px] 2xl:pb-0"
                 >
                   <p
-                    class="mb-[30px] text-[20px] font-medium leading-[140%] xl:indent-[28px] xl:text-[21px] 2xl:text-[32px]"
+                    class="mb-[30px] text-[20px] font-medium leading-[140%] 
+                     xl:text-[21px] xl:mb-[47px]
+                     2xl:text-[32px]"
                   >
                     There is no second chance to make a good impression on the
                     user in the digital world. Therefore, the quality of the
@@ -2829,8 +2927,9 @@
                     design, write a selling text and think over the structure so
                     you will be remembered.
                   </p>
+                  <!-- xl:indent-[28px] -->
                   <p
-                    class="text-[20px] font-medium leading-[140%] xl:indent-[28px] xl:text-[21px] 2xl:text-[32px]"
+                    class="text-[20px] font-medium leading-[140%]  xl:text-[21px] 2xl:text-[32px]"
                   >
                     You will receive a working tool that can attract and
                     increase the flow of customers.
@@ -2841,15 +2940,18 @@
               <!-- col-02 -->
 
               <!-- col-01 -->
+              <!-- xl:max-w-[317px] -->
               <div
-                class="xl:border__right lg:ml-auto lg:max-w-[66%] xl:max-w-[317px] xl:basis-[43.3%] xl:pr-[28px] 2xl:max-w-[407px] 2xl:pr-[50px]"
+                class="xl:border__right lg:ml-auto lg:max-w-[66%] 
+                 xl:basis-[43.3%] xl:pr-[28px] xl:ml-0
+                 2xl:max-w-[407px] 2xl:pr-[50px]"
               >
                 <!-- btn-order-a-consultation-02-->
                 <a
                   href="#"
-                  class="link-oside btn lg:ml-0 xl:sticky xl:top-[100px] xl:mt-12"
+                  class="link-oside btn lg:ml-0 xl:sticky xl:top-[100px] xl:mt-[62px]"
                 >
-                  Order a consultation
+                  Discuss the project
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                     <path
                       fill-rule="evenodd"
@@ -2864,15 +2966,22 @@
             </div>
 
             <!-- block-02 -->
+            <!-- xl:mt-0 xl:gap-[173px] 2xl:gap-[0px] -->
             <div
-              class="mt-[50px] pt-[50px] lg:mt-0 lg:flex lg:border-t-0 lg:pt-[135px] xl:mt-0 xl:gap-[173px] xl:pt-[53px] 2xl:gap-[0px] 2xl:pt-[81px]"
+              class="mt-[50px] pt-[50px] 
+              lg:mt-0 lg:flex lg:border-t-0 lg:pt-[135px] 
+               xl:pt-[191px]
+                2xl:pt-[191px]"
             >
               <!-- col-01 -->
               <div
                 class="content__title-one mb-[30px] lg:min-w-[260px] lg:max-w-[175px] xl:max-w-[353px]"
               >
                 <h3
-                  class="text-[20px] font-bold uppercase leading-[1.2] lg:max-w-[150px] lg:text-[20px] xl:max-w-[350px] xl:text-[21px] 2xl:max-w-[350px] 2xl:text-[32px]"
+                  class="text-[20px] font-bold uppercase leading-[1.2] 
+                  lg:max-w-[150px] lg:text-[20px] 
+                  xl:max-w-[350px] xl:text-[21px] 
+                  2xl:max-w-[350px] 2xl:text-[32px]"
                 >
                   UWP.Digital
                 </h3>
@@ -2882,8 +2991,9 @@
               <div
                 class="w-[96%] lg:ml-auto lg:max-w-[800px] lg:pb-[40px] xl:max-w-[1090px] xl:gap-[32px] xl:pb-0 2xl:max-w-[1090px] 2xl:gap-[46px] 2xl:pb-0"
               >
+              <!-- xl:indent-[28px] -->
                 <p
-                  class="text-[20px] font-medium leading-[1.4] xl:indent-[28px] xl:text-[21px] 2xl:text-[32px]"
+                  class="text-[20px] font-medium leading-[1.4]  xl:text-[21px] 2xl:text-[32px]"
                 >
                   <b> UWP.Digital</b> is a digital marketing agency that helps
                   accelerate the achievement of your goals through detailed
@@ -3754,8 +3864,9 @@
         <!--  END: 15-section-discuss -->
 
         <!-- BEGIN: 16-section-our-cases -->
+        <!-- pb-[80px] -->
         <section
-          class="blog bg-dark pt-[2px] pb-[80px] lg:pb-[101px] xl:pb-[170px]"
+          class="blog bg-dark pt-[2px]  lg:pb-[34px] xl:pt-[140px] xl:pb-[104px]"
         >
           <!-- container -->
           <!-- 2xl:max-w-[1710px] -->
@@ -3829,14 +3940,14 @@
                   <!-- Slides -->
                   <!-- card-blog-01 -->
                   <div
-                    class="swiper-slide swiper-slide-active"
+                    class="swiper-slide swiper-slide-active xl:mr-[30px]"
                     role="group"
                     aria-label="1 / 3"
                     style="margin-right: 20px"
                   >
                     <!-- BEGIN: CARD-01  -->
                     <!-- w-min 10.03.2023 ?? -->
-                    <div class="card-blog max-w-[253px] lg:max-w-[368px]">
+                    <div class="card-blog max-w-[253px] lg:max-w-[368px] xl:max-w-[530px]">
                       <!-- wrapper-img-01 -->
                       <a
                         href="#"
@@ -3845,7 +3956,7 @@
                       >
                         <!-- aspect-w-13 aspect-h-11 -->
                         <div
-                          class="relative mb-[19px] overflow-hidden lg:mb-0 xl:my-[50px] xl:ml-[50px]"
+                          class="relative mb-[19px] overflow-hidden lg:mb-0 "
                         >
                           <!-- gradient-img -->
                           <div
@@ -3922,7 +4033,7 @@
                       <a
                         href="#"
                         aria-label="cases card"
-                        class="cards__link group/text group lg:pt-[44px]"
+                        class="cards__link group/text group lg:pt-[44px] xl:pt-[34px]"
                       >
                         <h3
                           class="2xl:leading-[120%]; mb-[25px] text-[18px] font-bold leading-[1.3] text-white transition ease-in group-hover/text:text-main 2xl:mb-[30px] 2xl:text-[32px]"
@@ -3930,9 +4041,13 @@
                           INGRAD: Advertising campaign for mobile games
                         </h3>
 
-                        <!-- svg -->
+                        <!-- svg-01 -->
+                        <!-- xl:right-[-32px] -->
                         <div
-                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main lg:mt-[-16px] lg:p-[23px] xl:relative xl:top-[-6px] xl:right-[-32px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8"
+                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main 
+                          lg:mt-[-16px] lg:p-[23px] 
+                          xl:relative xl:top-[-6px] xl:right-[0px] xl:p-[26px]
+                           2xl:top-[-8px] 2xl:p-8"
                         >
                           <svg
                             class="h-[11px] w-[11px] fill-white transition-all ease-in group-hover/text:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -3955,13 +4070,13 @@
 
                   <!-- card-blog-02 -->
                   <div
-                    class="swiper-slide swiper-slide-next"
+                    class="swiper-slide swiper-slide-next xl:mr-[30px]"
                     role="group"
                     aria-label="2 / 3"
                     style="margin-right: 20px"
                   >
                     <!-- BEGIN: CARD-02  -->
-                    <div class="card-blog max-w-[253px] lg:max-w-[368px]">
+                    <div class="card-blog max-w-[253px] lg:max-w-[368px] xl:max-w-[530px]">
                       <!-- wrapper-img-01 -->
                       <a
                         href="#"
@@ -3970,7 +4085,7 @@
                       >
                         <!-- aspect-w-13 aspect-h-11 -->
                         <div
-                          class="relative mb-[19px] overflow-hidden lg:mb-0 xl:my-[50px] xl:ml-[50px]"
+                          class="relative mb-[19px] overflow-hidden lg:mb-0 "
                         >
                           <!-- gradient-img -->
                           <div
@@ -4047,7 +4162,7 @@
                       <a
                         href="#"
                         aria-label="cases card"
-                        class="cards__link group/text group lg:pt-[44px]"
+                        class="cards__link group/text group lg:pt-[44px] xl:pt-[34px]"
                       >
                         <h3
                           class="2xl:leading-[120%]; mb-[25px] text-[18px] font-bold leading-[1.3] text-white transition ease-in group-hover/text:text-main 2xl:mb-[30px] 2xl:text-[32px]"
@@ -4055,9 +4170,12 @@
                           INGRAD: Advertising campaign for mobile games
                         </h3>
 
-                        <!-- svg -->
+                        <!-- svg-02 -->
                         <div
-                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main lg:mt-[-16px] lg:p-[23px] xl:relative xl:top-[-6px] xl:right-[-32px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8"
+                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main 
+                          lg:mt-[-16px] lg:p-[23px]
+                           xl:relative xl:top-[-6px] xl:right-[0px] xl:p-[26px] 
+                           2xl:top-[-8px] 2xl:p-8"
                         >
                           <svg
                             class="h-[11px] w-[11px] fill-white transition-all ease-in group-hover/text:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -4086,7 +4204,7 @@
                     style="margin-right: 20px"
                   >
                     <!-- BEGIN: CARD-03  -->
-                    <div class="card-blog max-w-[253px] lg:max-w-[368px]">
+                    <div class="card-blog max-w-[253px] lg:max-w-[368px] xl:max-w-[530px]">
                       <!-- wrapper-img-01 -->
                       <a
                         href="#"
@@ -4095,7 +4213,7 @@
                       >
                         <!-- aspect-w-13 aspect-h-11 -->
                         <div
-                          class="relative mb-[19px] overflow-hidden lg:mb-0 xl:my-[50px] xl:ml-[50px]"
+                          class="relative mb-[19px] overflow-hidden lg:mb-0 "
                         >
                           <!-- gradient-img -->
                           <div
@@ -4172,7 +4290,7 @@
                       <a
                         href="#"
                         aria-label="cases card"
-                        class="cards__link group/text group lg:pt-[44px]"
+                        class="cards__link group/text group lg:pt-[44px] xl:pt-[34px]"
                       >
                         <h3
                           class="2xl:leading-[120%]; mb-[25px] text-[18px] font-bold leading-[1.3] text-white transition ease-in group-hover/text:text-main 2xl:mb-[30px] 2xl:text-[32px]"
@@ -4180,9 +4298,12 @@
                           INGRAD: Advertising campaign for mobile games
                         </h3>
 
-                        <!-- svg -->
+                        <!-- svg-03 -->
                         <div
-                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main lg:mt-[-16px] lg:p-[23px] xl:relative xl:top-[-6px] xl:right-[-32px] xl:p-[26px] 2xl:top-[-8px] 2xl:p-8"
+                          class="cards__btn top-[32px] right-[23px] mt-[-7px] rounded-full p-[13.5px] transition-all ease-in group-hover/text:bg-main 
+                          lg:mt-[-16px] lg:p-[23px]
+                           xl:relative xl:top-[-6px] xl:right-[0px] xl:p-[26px]
+                            2xl:top-[-8px] 2xl:p-8"
                         >
                           <svg
                             class="h-[11px] w-[11px] fill-white transition-all ease-in group-hover/text:fill-white lg:h-[16px] lg:w-[16px] xl:h-[22px] xl:w-[22px]"
@@ -4920,7 +5041,7 @@
       </main>
       <!--  END: Main -->
 
-      <!--  BEGIN: 12-section-footer -->
+      <!--  BEGIN: 19-section-footer -->
       <footer
         class="footer shrink-0 bg-light pt-[40px] pb-4 dark:bg-dark lg:pt-[32px] lg:pb-[21px] xl:pt-[34px] xl:pb-[28px]"
       >
@@ -5245,7 +5366,7 @@
           </div>
         </div>
       </footer>
-      <!--  END: 12-section-footer -->
+      <!--  END: 19-section-footer -->
 
       <div
         id="menu"
@@ -6422,6 +6543,8 @@
 
     <!-- main-script.js is First and is Required for all pages-->
     <script src="../src/js/main-script.js"></script>
+    <script src="../src/js/discuss-btn.js"></script>
+
     <script src="../src/js/theme-switcher.js"></script>
     <script src="../src/js/mobile-menu.js"></script>
 
@@ -6437,6 +6560,7 @@
     <script src="../src/js/cookie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+
       const swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: { delay: 10000 },
@@ -6452,22 +6576,22 @@
           nextEl: ".swiper-next-slide",
         },
       });
-      // const swiperBlog = new Swiper(".blogSwiper", {
-      //   spaceBetween: 31,
-      //   breakpoints: {
-      //     820: {
-      //       spaceBetween: 20,
-      //     },
-      //     1280: {
-      //       spaceBetween: 30,
-      //     },
-      //   },
+       const swiperBlog = new Swiper(".blogSwiper", {
+         spaceBetween: 31,
+         breakpoints: {
+          820: {
+             spaceBetween: 20,
+           },
+           1280: {
+             spaceBetween: 30,
+           },
+         },
 
-      //   slidesPerView: "auto",
-      //   freeMode: true,
-      //   // TODO remove scrollbar settings
-      // });
-      // swiperBlog.setGrabCursor();
+         slidesPerView: "auto",
+         freeMode: true,
+         // TODO remove scrollbar settings
+       });
+       swiperBlog.setGrabCursor();
     </script>
   </body>
 </html>
