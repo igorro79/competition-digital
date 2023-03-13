@@ -3257,14 +3257,27 @@ BEGIN: 16-section-our-case img-desc-
 
 /* 09-section */
 
-/* .border__vertical_s-09::after {
-    @apply xl:absolute  
-    xl:top-[-10px]
-  xl:right-0 xl:h-[118px]
-   xl:w-[1px]
-     xl:bg-[#919191] 
-     xl:content-[''];
-  } */
+@media (min-width: 1280px){
+  .border__vertical_s-09::after{
+    position: absolute;
+    top: 47px;
+    left: 765px;
+    height: 448px;
+    width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+}
+
+@media (min-width: 1536px){
+  .border__vertical_s-09::after{
+    top: 67px;
+    left: 1098px;
+    height: 616px;
+  }
+}
 
 /* xl:absolute  */
 
@@ -10278,6 +10291,10 @@ BEGIN: html  scroll
     max-width: 75.5%;
   }
 
+  .xl\:max-w-\[252px\]{
+    max-width: 252px;
+  }
+
   .xl\:max-w-\[800px\]{
     max-width: 800px;
   }
@@ -10288,10 +10305,6 @@ BEGIN: html  scroll
 
   .xl\:max-w-\[810px\]{
     max-width: 810px;
-  }
-
-  .xl\:max-w-\[252px\]{
-    max-width: 252px;
   }
 
   .xl\:flex-auto{
@@ -11990,16 +12003,16 @@ BEGIN: html  scroll
     margin-bottom: 190px;
   }
 
+  .\32xl\:mb-\[18px\]{
+    margin-bottom: 18px;
+  }
+
   .\32xl\:mb-\[47px\]{
     margin-bottom: 47px;
   }
 
   .\32xl\:mt-\[62px\]{
     margin-top: 62px;
-  }
-
-  .\32xl\:mb-\[18px\]{
-    margin-bottom: 18px;
   }
 
   .\32xl\:block{
@@ -12094,20 +12107,16 @@ BEGIN: html  scroll
     width: 47%;
   }
 
-  .\32xl\:w-\[530px\]{
-    width: 530px;
-  }
-
-  .\32xl\:w-\[315px\]{
-    width: 315px;
-  }
-
   .\32xl\:w-\[100\%\]{
     width: 100%;
   }
 
   .\32xl\:w-\[345px\]{
     width: 345px;
+  }
+
+  .\32xl\:w-\[530px\]{
+    width: 530px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -12239,12 +12248,12 @@ BEGIN: html  scroll
     max-width: 550px;
   }
 
-  .\32xl\:max-w-\[77\%\]{
-    max-width: 77%;
-  }
-
   .\32xl\:max-w-\[341px\]{
     max-width: 341px;
+  }
+
+  .\32xl\:max-w-\[77\%\]{
+    max-width: 77%;
   }
 
   .\32xl\:basis-\[754px\]{
@@ -12400,16 +12409,6 @@ BEGIN: html  scroll
   .\32xl\:gap-x-\[53px\]{
     -moz-column-gap: 53px;
          column-gap: 53px;
-  }
-
-  .\32xl\:gap-x-\[105px\]{
-    -moz-column-gap: 105px;
-         column-gap: 105px;
-  }
-
-  .\32xl\:gap-x-\[58px\]{
-    -moz-column-gap: 58px;
-         column-gap: 58px;
   }
 
   .\32xl\:gap-x-\[62px\]{
