@@ -9833,16 +9833,12 @@ BEGIN: html  scroll
     margin-bottom: 34px;
   }
 
-  .xl\:mb-\[190px\]{
-    margin-bottom: 190px;
+  .xl\:mb-\[140px\]{
+    margin-bottom: 140px;
   }
 
-  .xl\:mb-\[47px\]{
-    margin-bottom: 47px;
-  }
-
-  .xl\:mt-\[62px\]{
-    margin-top: 62px;
+  .xl\:mt-\[45px\]{
+    margin-top: 45px;
   }
 
   .xl\:mr-\[30px\]{
@@ -9863,18 +9859,6 @@ BEGIN: html  scroll
 
   .xl\:mb-\[88px\]{
     margin-bottom: 88px;
-  }
-
-  .xl\:mb-\[140px\]{
-    margin-bottom: 140px;
-  }
-
-  .xl\:mt-\[25px\]{
-    margin-top: 25px;
-  }
-
-  .xl\:mt-\[45px\]{
-    margin-top: 45px;
   }
 
   .xl\:block{
@@ -10294,24 +10278,20 @@ BEGIN: html  scroll
     max-width: 75.5%;
   }
 
-  .xl\:max-w-\[858px\]{
-    max-width: 858px;
-  }
-
-  .xl\:max-w-\[77\%\]{
-    max-width: 77%;
-  }
-
-  .xl\:max-w-\[810px\]{
-    max-width: 810px;
-  }
-
   .xl\:max-w-\[800px\]{
     max-width: 800px;
   }
 
   .xl\:max-w-\[69\%\]{
     max-width: 69%;
+  }
+
+  .xl\:max-w-\[810px\]{
+    max-width: 810px;
+  }
+
+  .xl\:max-w-\[252px\]{
+    max-width: 252px;
   }
 
   .xl\:flex-auto{
@@ -11351,76 +11331,16 @@ BEGIN: html  scroll
     padding-top: 10px;
   }
 
-  .xl\:pt-\[80px\]{
-    padding-top: 80px;
-  }
-
-  .xl\:pb-\[140px\]{
-    padding-bottom: 140px;
-  }
-
-  .xl\:pt-\[71px\]{
-    padding-top: 71px;
-  }
-
   .xl\:pr-\[30px\]{
     padding-right: 30px;
   }
 
-  .xl\:pt-\[22px\]{
-    padding-top: 22px;
-  }
-
-  .xl\:pb-\[38px\]{
-    padding-bottom: 38px;
-  }
-
-  .xl\:pb-\[185px\]{
-    padding-bottom: 185px;
-  }
-
-  .xl\:pt-\[62px\]{
-    padding-top: 62px;
-  }
-
-  .xl\:pt-\[191px\]{
-    padding-top: 191px;
-  }
-
-  .xl\:pt-\[140px\]{
-    padding-top: 140px;
-  }
-
-  .xl\:pb-\[104px\]{
-    padding-bottom: 104px;
-  }
-
-  .xl\:pb-\[205px\]{
-    padding-bottom: 205px;
-  }
-
-  .xl\:pt-\[100px\]{
-    padding-top: 100px;
-  }
-
-  .xl\:pt-\[74px\]{
-    padding-top: 74px;
-  }
-
-  .xl\:pb-\[106px\]{
-    padding-bottom: 106px;
-  }
-
-  .xl\:pt-\[105px\]{
-    padding-top: 105px;
-  }
-
-  .xl\:pt-\[75px\]{
-    padding-top: 75px;
-  }
-
   .xl\:pt-\[35px\]{
     padding-top: 35px;
+  }
+
+  .xl\:pt-\[22px\]{
+    padding-top: 22px;
   }
 
   .xl\:pl-\[0px\]{
@@ -11431,8 +11351,16 @@ BEGIN: html  scroll
     padding-top: 2px;
   }
 
+  .xl\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
   .xl\:pb-\[60px\]{
     padding-bottom: 60px;
+  }
+
+  .xl\:pb-\[140px\]{
+    padding-bottom: 140px;
   }
 
   .xl\:pb-\[35px\]{
@@ -11445,6 +11373,26 @@ BEGIN: html  scroll
 
   .xl\:pt-\[127px\]{
     padding-top: 127px;
+  }
+
+  .xl\:pb-\[104px\]{
+    padding-bottom: 104px;
+  }
+
+  .xl\:pb-\[205px\]{
+    padding-bottom: 205px;
+  }
+
+  .xl\:pt-\[74px\]{
+    padding-top: 74px;
+  }
+
+  .xl\:pb-\[106px\]{
+    padding-bottom: 106px;
+  }
+
+  .xl\:pt-\[105px\]{
+    padding-top: 105px;
   }
 
   .xl\:indent-\[138px\]{
@@ -12042,12 +11990,16 @@ BEGIN: html  scroll
     margin-bottom: 190px;
   }
 
+  .\32xl\:mb-\[47px\]{
+    margin-bottom: 47px;
+  }
+
   .\32xl\:mt-\[62px\]{
     margin-top: 62px;
   }
 
-  .\32xl\:mb-\[47px\]{
-    margin-bottom: 47px;
+  .\32xl\:mb-\[18px\]{
+    margin-bottom: 18px;
   }
 
   .\32xl\:block{
@@ -12144,6 +12096,18 @@ BEGIN: html  scroll
 
   .\32xl\:w-\[530px\]{
     width: 530px;
+  }
+
+  .\32xl\:w-\[315px\]{
+    width: 315px;
+  }
+
+  .\32xl\:w-\[100\%\]{
+    width: 100%;
+  }
+
+  .\32xl\:w-\[345px\]{
+    width: 345px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -12277,6 +12241,10 @@ BEGIN: html  scroll
 
   .\32xl\:max-w-\[77\%\]{
     max-width: 77%;
+  }
+
+  .\32xl\:max-w-\[341px\]{
+    max-width: 341px;
   }
 
   .\32xl\:basis-\[754px\]{
@@ -12437,6 +12405,16 @@ BEGIN: html  scroll
   .\32xl\:gap-x-\[105px\]{
     -moz-column-gap: 105px;
          column-gap: 105px;
+  }
+
+  .\32xl\:gap-x-\[58px\]{
+    -moz-column-gap: 58px;
+         column-gap: 58px;
+  }
+
+  .\32xl\:gap-x-\[62px\]{
+    -moz-column-gap: 62px;
+         column-gap: 62px;
   }
 
   .\32xl\:border-b-0{
@@ -12891,8 +12869,24 @@ BEGIN: html  scroll
     padding-top: 87px;
   }
 
+  .\32xl\:pb-\[140px\]{
+    padding-bottom: 140px;
+  }
+
+  .\32xl\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .\32xl\:pt-\[71px\]{
+    padding-top: 71px;
+  }
+
   .\32xl\:pl-\[157px\]{
     padding-left: 157px;
+  }
+
+  .\32xl\:pt-\[27px\]{
+    padding-top: 27px;
   }
 
   .\32xl\:pt-\[22px\]{
@@ -12909,22 +12903,6 @@ BEGIN: html  scroll
 
   .\32xl\:pt-\[191px\]{
     padding-top: 191px;
-  }
-
-  .\32xl\:pb-\[140px\]{
-    padding-bottom: 140px;
-  }
-
-  .\32xl\:pt-10{
-    padding-top: 2.5rem;
-  }
-
-  .\32xl\:pt-\[71px\]{
-    padding-top: 71px;
-  }
-
-  .\32xl\:pt-\[27px\]{
-    padding-top: 27px;
   }
 
   .\32xl\:pt-\[140px\]{
