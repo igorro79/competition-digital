@@ -1562,7 +1562,7 @@
               class="mb-5 flex items-center gap-1 pt-3 text-[#919191] lg:mb-[35px] lg:pt-[6px] xl:mb-[25px] xl:gap-[6px] xl:pb-[7px] xl:text-[4px] 2xl:gap-[8px] 2xl:pb-[7px] 2xl:text-[10px]"
             >
               <a
-                class="text-[8px] font-normal hover:text-main leading-[140%] xl:text-[10px]"
+                class="text-[8px] font-normal leading-[140%] hover:text-main xl:text-[10px]"
                 href="#"
                 >Main</a
               >
@@ -1585,16 +1585,18 @@
                 </svg>
               </span>
 
-              <a class="text-[8px] leading-[140%] hover:text-main xl:text-[10px]" href="#"
+              <a
+                class="text-[8px] leading-[140%] hover:text-main xl:text-[10px]"
+                href="#"
                 >Case Studies
               </a>
             </div>
             <!-- end breadcrumds -->
 
             <div
-              class="mb-[50px] border-t-[4px] border-dark pt-5 lg:mb-[70px] lg:pt-[30px] xl:mb-[100px] xl:flex xl:justify-between xl:pt-[45px]"
+              class="mb-[50px] border-t-[4px] border-dark pt-5 lg:mb-[70px] lg:pt-[30px] xl:mb-[100px] xl:flex xl:items-start xl:justify-between xl:pt-[45px]"
             >
-              <div class="lg:mb-[50px] lg:flex">
+              <div class="lg:mb-[50px] lg:flex xl:mb-0">
                 <h1
                   class="text-4xl font-bold uppercase leading-[1.1] lg:text-[60px] lg:leading-[1.1] 1xl:text-[120px] 1xl:leading-[1.1]"
                 >
@@ -1610,7 +1612,8 @@
               </div>
               <button
                 type="button"
-                class="btn mx-auto py-[18px] text-sm lg:ml-0 lg:max-w-[305px] lg:py-[13px] xl:mr-0 xl:text-base"
+                id="subscribeBtn"
+                class="btn link-oside mx-auto py-[18px] text-sm lg:ml-0 lg:max-w-[305px] lg:py-[13px] xl:my-0 xl:mr-0 xl:max-w-[357px] xl:py-[18px] xl:text-base"
               >
                 <span>Subscribe to Our News</span>
                 <svg
@@ -1631,7 +1634,7 @@
             </div>
 
             <ul
-              class="mx-auto mb-[30px] flex flex-col flex-wrap gap-2 sm:flex-row lg:mx-0 lg:mb-10 lg:gap-5 xl:mb-[30px]"
+              class="mx-auto mb-[30px] flex flex-col flex-wrap gap-2 sm:flex-row lg:mx-0 lg:mb-10 lg:gap-5 xl:mb-[34px]"
             >
               <li class="blog-page__chapter-item">
                 <button
@@ -1681,15 +1684,17 @@
             </ul>
             <div class="h-[5px] min-w-full bg-main"></div>
 
-            <div class="pt-[30px] pb-[95px] lg:pt-10 lg:pb-[130px] xl:pt-9">
+            <div
+              class="pt-[30px] pb-[95px] lg:pt-10 lg:pb-[130px] xl:pt-[50px]"
+            >
               <div
-                class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[85px] xl:grid-cols-[1fr_700px_1fr]"
+                class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
               >
                 <div class="flex">
                   <img
                     loading="lazy"
                     src="../src/images/blog-page/user-photo.jpg"
-                    class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px]"
+                    class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
                     alt=""
                   />
                   <div>
@@ -1702,7 +1707,7 @@
                   </div>
                 </div>
                 <h2
-                  class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[50px] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[60px]"
+                  class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
                 >
                   UPW Digital keeps 5-star streak on Clutch: Experience-based
                   story
@@ -1711,7 +1716,7 @@
                   class="ml-auto flex gap-[10px] lg:gap-[15px] xl:gap-[25px]"
                 >
                   <button
-                    class="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent"
+                    class="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
                   >
                     <svg
                       width="13"
@@ -1728,7 +1733,7 @@
                     </svg>
                   </button>
                   <button
-                    class="flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent"
+                    class="flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
                   >
                     <svg
                       width="13"
@@ -1748,21 +1753,23 @@
               </div>
 
               <div class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]">
-                <div class="lg:flex lg:items-center lg:justify-between">
+                <div
+                  class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                >
                   <p class="blog-page__main-post-info-name">new /1</p>
 
                   <p
                     href="#"
                     aria-label="business"
-                    class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
+                    class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
                   >
                     Business
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                  class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
                 >
-                  <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
+                  <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
                     10 min red
                   </p>
                   <p class="blog-page__main-post-info-date">October 21, 2023</p>
@@ -1786,7 +1793,7 @@
                 />
 
                 <img
-                  class="w-full xl:w-auto"
+                  class="w-full"
                   loading="lazy"
                   src="../src/images/blog-page/main-post-full-1@x.jpg"
                   alt="post "
@@ -1798,13 +1805,18 @@
               <ul
                 class="mb-10 grid gap-12 lg:mb-[64px] lg:gap-[84px] xl:mb-20 xl:grid-cols-3 xl:gap-[130px_30px]"
               >
+                <!-- post 1 -->
+
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -1818,72 +1830,77 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-full xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/post2-full.jpg,
+                              ../src/images/blog-page/post2-full-@2x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          class="w-full"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full transition-all group-hover:scale-105"
+                            class="w-full"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
+                <!-- post 2 -->
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -1897,71 +1914,77 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-full xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/post3-full.jpg,
+                              ../src/images/blog-page/post3-full-@2x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full transition-all group-hover:scale-105"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
+                <!-- post 3 -->
+
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -1975,71 +1998,77 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-full xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/posts-full-1@x.jpg,
+                              ../src/images/blog-page/posts-full-2@x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full transition-all group-hover:scale-105"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
+                <!-- post 4 -->
+
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -2053,71 +2082,77 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-full xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/post2-full.jpg,
+                              ../src/images/blog-page/post2-full-@2x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full transition-all group-hover:scale-105"
+                            class="w-full"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
+                <!-- post 5 -->
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -2131,71 +2166,77 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-full xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/post3-full.jpg,
+                              ../src/images/blog-page/post3-full-@2x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full transition-all group-hover:scale-105"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
+                <!-- post 6 -->
+
                 <li class="border-t border-middleGrey pt-[30px]">
-                  <a href="" class="blog-page__post-wrapper">
-                    <div class="flex lg:mb-[35px]">
+                  <a
+                    href=""
+                    class="group xl:grid xl:h-full xl:grid-rows-[auto_auto_1fr]"
+                  >
+                    <div class="flex lg:mb-[35px] xl:mb-[45px]">
                       <img
                         loading="lazy"
                         src="../src/images/blog-page/user-photo.jpg"
-                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px]"
+                        class="mr-4 h-12 w-12 rounded-full lg:h-[50px] lg:w-[50px] xl:h-[58px] xl:w-[58px]"
                         alt=""
                       />
                       <div class="mb-0">
@@ -2209,66 +2250,70 @@
                     </div>
 
                     <h2
-                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mt-0 xl:w-auto xl:text-[54px] xl:leading-[60px]"
+                      class="mb-12 mt-10 text-2xl font-bold leading-[1.3] group-hover:text-main lg:mb-10 lg:mt-0 lg:w-[52vw] lg:text-2xl lg:leading-[1.3] xl:col-auto xl:row-auto xl:mb-[100px] xl:mt-0 xl:w-auto xl:text-2xl xl:leading-[1.4]"
                     >
                       UPW Digital keeps 5-star streak on Clutch:
                       Experience-based story
                     </h2>
-
-                    <div
-                      class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
-                    >
-                      <div class="lg:flex lg:justify-between">
-                        <p
-                          href="#"
-                          aria-label="business"
-                          class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:text-white"
-                        >
-                          Business
-                        </p>
-                      </div>
+                    <div class="self-end">
                       <div
-                        class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:text-base"
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-10"
                       >
-                        <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-[400px]">
-                          10 min red
-                        </p>
-                        <p class="blog-page__main-post-info-date">
-                          October 21, 2023
-                        </p>
+                        <div class="lg:flex lg:justify-between">
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-3/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="blog-page__posts-image">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ../src/images/blog-page/posts-full-1@x.jpg,
-                            ../src/images/blog-page/posts-full-2@x.jpg 2x
-                          "
-                        />
+                      <div class="w-full overflow-hidden">
+                        <picture>
+                          <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                              ../src/images/blog-page/posts-full-1@x.jpg,
+                              ../src/images/blog-page/posts-full-2@x.jpg 2x
+                            "
+                          />
 
-                        <source
-                          media="(min-width: 320px)"
-                          srcset="
-                            ../src/images/blog-page/posts-tab-1@x.jpg,
-                            ../src/images/blog-page/posts-tab-2@x.jpg 2x
-                          "
-                        />
+                          <source
+                            media="(min-width: 320px)"
+                            srcset="
+                              ../src/images/blog-page/posts-tab-1@x.jpg,
+                              ../src/images/blog-page/posts-tab-2@x.jpg 2x
+                            "
+                          />
 
-                        <img
-                          class="w-full xl:w-auto"
-                          loading="lazy"
-                          src="../src/images/blog-page/posts-full-1@x.jpg"
-                          alt="post "
-                        />
-                      </picture>
+                          <img
+                            class="w-full max-w-none transition-all group-hover:scale-105"
+                            loading="lazy"
+                            src="../src/images/blog-page/posts-full-1@x.jpg"
+                            alt="post "
+                          />
+                        </picture>
+                      </div>
                     </div>
                   </a>
                 </li>
               </ul>
-              <button type="button" class="btn py-[13px] lg:py-[18px]">
+              <button
+                type="button"
+                class="btn link-oside py-[13px] lg:py-[18px]"
+              >
                 <span>Download more</span
                 ><svg
                   width="14"
@@ -2300,7 +2345,7 @@
               >
                 <button
                   type="button"
-                  class="flex h-[35px] w-[10px] items-center justify-center rounded-full transition-all hover:text-main"
+                  class="flex h-[35px] w-[20px] items-center justify-center rounded-full transition-all hover:text-main"
                 >
                   <svg
                     width="7"
@@ -2367,7 +2412,7 @@
 
                 <button
                   type="button"
-                  class="flex h-[35px] w-[10px] rotate-180 items-center justify-center rounded-full transition-all hover:text-main"
+                  class="flex h-[35px] w-[20px] rotate-180 items-center justify-center rounded-full transition-all hover:text-main"
                 >
                   <svg
                     width="7"
@@ -2378,7 +2423,7 @@
                   >
                     <path
                       d="M6 0.5L1 5.5L6 10.5"
-                      stroke="black"
+                      stroke="currentColor"
                       stroke-width="1.3"
                       stroke-linejoin="round"
                     />
@@ -3422,42 +3467,70 @@
       <!-- Modal -->
 
       <div
-        class="invisible fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark px-[10vw] py-[10vw] opacity-0"
+        class="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark/90 py-[10vw] opacity-100 backdrop-blur-xl"
         role="modal"
-        id="videoModal"
+        id="modal"
       >
-        <button
-          type="button"
-          class="modal-close-btn absolute top-10 right-10 ml-auto flex rounded-full py-[8px] px-[15px] text-white hover:bg-white hover:text-dark lg:px-[28px]"
-          data-bs-dismiss="modal"
-          aria-label="Close"
+        <div
+          class="container relative w-full bg-dark py-[30px] text-white lg:p-10 xl:w-[530px] xl:p-[50px]"
         >
-          <svg
-            class="fill-current"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z"
+          <div class="mb-10 flex w-full xl:w-[430px]">
+            <svg
+              class="mr-5"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.2416 16.2924L18.2416 1.38919L22 1.38919L22 23L1.32878 23L1.32878 19.0708L15.584 19.0708L1.7859e-06 2.77839L2.65757 -8.45485e-07L18.2416 16.2924Z"
+                fill="white"
+              />
+            </svg>
+            <p class="leading-1.2 w-[170px] text-2xl font-bold">
+              Subscribe to our News
+            </p>
+            <button
+              type="button"
+              class="modal-close-btn ml-auto hover:text-main xl:absolute xl:top-6 xl:right-6"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                class="fill-current"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z"
+                />
+                <path
+                  d="M0.813965 21.1523L21.1517 0.814654L23.1854 2.84842L2.84773 23.1861L0.813965 21.1523Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full lg:flex xl:w-[430px]">
+            <input
+              type="text"
+              id="subscribe"
+              class="w-full border border-middleGrey bg-transparent py-5 px-6 outline-none"
+              placeholder="Enter Your Email address"
             />
-            <path
-              d="M0.813965 21.1523L21.1517 0.814654L23.1854 2.84842L2.84773 23.1861L0.813965 21.1523Z"
-            />
-          </svg>
-        </button>
-        <div class="w-full">
-          <!-- 16:9 aspect ratio -->
-          <div class="ratio aspect-w-16 aspect-h-9">
-            <!-- class="embed-responsive-item"  iframe -->
-            <iframe
-              src=""
-              id="video"
-              allowscriptaccess="always"
-              allow="autoplay"
-            ></iframe>
+            <button
+              class="flex w-full items-center justify-center bg-main py-5 text-sm font-bold text-white transition-all hover:bg-activeRed lg:max-w-[220px] xl:max-w-[158px]"
+              type="button"
+              id="subscribeBtn"
+              aria-label="send email"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

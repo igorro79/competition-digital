@@ -236,6 +236,6 @@ Styles borders  btn
      transition-all hover:bg-dark hover:text-white active:border-main dark:text-dark dark:hover:text-white;
   }
   .category__filter-btn--active {
-    @apply bg-dark text-white;
+    @apply bg-dark text-white dark:text-white;
   }
 }
