@@ -228,12 +228,14 @@ BEGIN: 16-section-our-case img-desc-
 
   .border__bottom {
     @apply border-b-[1px] border-b-middleGrey;
-  }
+  }*/
 
-  .border__rounded {
+  .border__rounded_s {
     @apply rounded-full border-[1px] border-middleGrey
+   transition ease-in
+   
     hover:border-white;
-  } */
+  }
 
   /* .border__error {
   @apply border-borderBtn hover:border-borderBtn rounded-full

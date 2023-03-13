@@ -3270,12 +3270,25 @@ BEGIN: 16-section-our-case img-desc-
 
   .border__bottom {
     @apply border-b-[1px] border-b-middleGrey;
-  }
+  }*/
 
-  .border__rounded {
-    @apply rounded-full border-[1px] border-middleGrey
-    hover:border-white;
-  } */
+.border__rounded_s{
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(144 144 144 / var(--tw-border-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.border__rounded_s:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 
 /* .border__error {
   @apply border-borderBtn hover:border-borderBtn rounded-full
@@ -5642,6 +5655,10 @@ Styles borders  btn
   padding: 20px;
 }
 
+.p-\[9px\]{
+  padding: 9px;
+}
+
 .py-\[19px\]{
   padding-top: 19px;
   padding-bottom: 19px;
@@ -6160,8 +6177,8 @@ Styles borders  btn
   padding-top: 26px;
 }
 
-.pb-\[23px\]{
-  padding-bottom: 23px;
+.pt-\[25px\]{
+  padding-top: 25px;
 }
 
 .pt-\[37px\]{
@@ -6182,10 +6199,6 @@ Styles borders  btn
 
 .pb-14{
   padding-bottom: 3.5rem;
-}
-
-.pt-\[25px\]{
-  padding-top: 25px;
 }
 
 .pt-\[35px\]{
@@ -9293,10 +9306,6 @@ BEGIN: html  scroll
     margin-top: 30px;
   }
 
-  .xl\:mt-\[-585px\]{
-    margin-top: -585px;
-  }
-
   .xl\:mb-\[190px\]{
     margin-bottom: 190px;
   }
@@ -9335,6 +9344,10 @@ BEGIN: html  scroll
 
   .xl\:flex{
     display: flex;
+  }
+
+  .xl\:grid{
+    display: grid;
   }
 
   .xl\:hidden{
@@ -9690,6 +9703,10 @@ BEGIN: html  scroll
     max-width: 99%;
   }
 
+  .xl\:max-w-\[550px\]{
+    max-width: 550px;
+  }
+
   .xl\:max-w-\[50\%\]{
     max-width: 50%;
   }
@@ -9824,6 +9841,10 @@ BEGIN: html  scroll
 
   .xl\:grid-cols-\[1fr_1fr\]{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:flex-row-reverse{
@@ -10000,6 +10021,10 @@ BEGIN: html  scroll
 
   .xl\:gap-\[298px\]{
     gap: 298px;
+  }
+
+  .xl\:gap-\[75px\]{
+    gap: 75px;
   }
 
   .xl\:gap-\[523px\]{
@@ -10705,18 +10730,6 @@ BEGIN: html  scroll
     padding-bottom: 160px;
   }
 
-  .xl\:pt-\[71px\]{
-    padding-top: 71px;
-  }
-
-  .xl\:pb-\[147px\]{
-    padding-bottom: 147px;
-  }
-
-  .xl\:pb-\[13px\]{
-    padding-bottom: 13px;
-  }
-
   .xl\:pt-\[130px\]{
     padding-top: 130px;
   }
@@ -10731,6 +10744,10 @@ BEGIN: html  scroll
 
   .xl\:pb-\[140px\]{
     padding-bottom: 140px;
+  }
+
+  .xl\:pt-\[71px\]{
+    padding-top: 71px;
   }
 
   .xl\:pr-\[30px\]{
@@ -11150,10 +11167,6 @@ BEGIN: html  scroll
 
   .\32xl\:top-\[71px\]{
     top: 71px;
-  }
-
-  .\32xl\:top-\[-6px\]{
-    top: -6px;
   }
 
   .\32xl\:m-0{
