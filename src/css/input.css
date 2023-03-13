@@ -21,10 +21,10 @@ BEGIN: PAGES
 @import "./service-page.css";
 
 @import "./services-page.css";
+@import "./blog-page.css";
 /*
 
 
-@import "./blog-page.css";
 @import "./about-page.css";
 @import "./contacts-page.css";*/
 
@@ -228,5 +228,14 @@ Styles borders  btn
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  /*------ filter button ----- */
+  .category__filter-btn {
+    @apply flex gap-2 rounded-[40px] border border-lightGrey bg-lightGrey px-4 py-[11px] text-sm uppercase leading-[1.2]
+     transition-all hover:bg-dark hover:text-white active:border-main dark:text-dark dark:hover:text-white;
+  }
+  .category__filter-btn--active {
+    @apply bg-dark text-white;
   }
 }
