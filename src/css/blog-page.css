@@ -10,4 +10,23 @@
     -webkit-text-stroke-color: black;
     @apply mb-5 text-[46px] font-bold uppercase leading-[50px] lg:mr-20 lg:mb-0 xl:mr-0 xl:text-[64px] xl:leading-[70px];
   }
+  .swiperNews .swiper-scrollbar {
+    @apply !top-0 !h-[5px] bg-scrollBar;
+  }
+  .swiperNews .swiper-scrollbar-drag {
+    @apply !bg-main;
+    /* @apply animate-[gradient_5s_linear_infinite]  !bg-gradient-to-r from-main to-main bg-[length:0%_100%] bg-no-repeat transition-all; */
+  }
+
+  @keyframes gradient {
+    0% {
+      background-size: 0% 100%;
+    }
+    50% {
+      background-size: 50% 100%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
 }

@@ -82,7 +82,7 @@ module.exports = {
         formBgDark: "#202020",
         dynamicBg: "#FF304DB2",
         langBg: "#262626",
-
+        scrollBar: "#F9D4D9",
         bgColorBtnForm: "#535353",
         mainTextBlue: "#6355ff",
       },

@@ -1,6 +1,6 @@
 //================FORM =================
-
-// const upload = document.getElementById("upload");
+const emailRegex =
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 //Show input error messages
 function showError(input, message) {
@@ -45,10 +45,7 @@ function checkUsernameClick(e) {
 
 //check email is valid
 function checkEmail(input) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  if (re.test(input.value.trim())) {
+  if (emailRegex.test(input.value.trim())) {
     showSucces(input);
     return true;
   }
@@ -63,10 +60,7 @@ function checkEmail(input) {
 //check email is valid on blur
 
 function checkEmailBlur(e) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  if (re.test(e.target.value.trim())) {
+  if (emailRegex.test(e.target.value.trim())) {
     showSucces(e.target);
     return;
   }
@@ -80,10 +74,8 @@ function checkEmailBlur(e) {
 //check email is valid on Click
 
 function checkEmailClick(e) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (e.target.parentElement.classList.contains("error")) {
-    if (re.test(e.target.value.trim())) {
+    if (emailRegex.test(e.target.value.trim())) {
       showSucces(e.target);
       return;
     } else {

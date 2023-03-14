@@ -1682,41 +1682,441 @@
                 </button>
               </li>
             </ul>
-            <div class="h-[5px] min-w-full bg-main"></div>
 
             <div
-              class="pt-[30px] pb-[95px] lg:pt-10 lg:pb-[130px] xl:pt-[50px]"
+              class="relative overflow-hidden pt-[30px] pb-[95px] lg:pt-10 lg:pb-[130px] xl:pt-[50px]"
             >
-              <div
-                class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
-              >
-                <div class="flex">
-                  <img
-                    loading="lazy"
-                    src="../src/images/blog-page/user-photo.jpg"
-                    class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
-                    alt=""
-                  />
-                  <div>
-                    <p class="mb-1 text-sm font-semibold xl:text-base">
-                      Andrii Koval
-                    </p>
-                    <p class="text-sm font-normal xl:text-base">
-                      Head of Marketing
-                    </p>
+              <div class="swiperNews">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <!-- main slide 1 -->
+                    <div>
+                      <div
+                        class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
+                      >
+                        <div class="flex">
+                          <img
+                            loading="lazy"
+                            src="../src/images/blog-page/user-photo.jpg"
+                            class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
+                            alt=""
+                          />
+                          <div>
+                            <p class="mb-1 text-sm font-semibold xl:text-base">
+                              Andrii Koval
+                            </p>
+                            <p class="text-sm font-normal xl:text-base">
+                              Head of Marketing
+                            </p>
+                          </div>
+                        </div>
+                        <h2
+                          class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
+                        >
+                          UPW Digital keeps 5-star streak on Clutch:
+                          Experience-based story
+                        </h2>
+                      </div>
+
+                      <div
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
+                      >
+                        <div
+                          class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                        >
+                          <p class="blog-page__main-post-info-name">new /1</p>
+
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
+                      </div>
+
+                      <picture class="blog-page__main-post-image">
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-full-1@x.jpg,
+                            ../src/images/blog-page/main-post-full-2@x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-tab-1@x.jpg,
+                            ../src/images/blog-page/main-post-tab-2@x.jpg 2x
+                          "
+                        />
+
+                        <img
+                          class="w-full"
+                          loading="lazy"
+                          src="../src/images/blog-page/main-post-full-1@x.jpg"
+                          alt="post "
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- main slide 2 -->
+
+                    <div>
+                      <div
+                        class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
+                      >
+                        <div class="flex">
+                          <img
+                            loading="lazy"
+                            src="../src/images/blog-page/user-photo.jpg"
+                            class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
+                            alt=""
+                          />
+                          <div>
+                            <p class="mb-1 text-sm font-semibold xl:text-base">
+                              Andrii Koval
+                            </p>
+                            <p class="text-sm font-normal xl:text-base">
+                              Head of Marketing
+                            </p>
+                          </div>
+                        </div>
+                        <h2
+                          class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
+                        >
+                          UPW Digital keeps 5-star streak on Clutch:
+                          Experience-based story
+                        </h2>
+                      </div>
+
+                      <div
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
+                      >
+                        <div
+                          class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                        >
+                          <p class="blog-page__main-post-info-name">new /2</p>
+
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
+                      </div>
+
+                      <picture class="blog-page__main-post-image">
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-full-1@x.jpg,
+                            ../src/images/blog-page/main-post-full-2@x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-tab-1@x.jpg,
+                            ../src/images/blog-page/main-post-tab-2@x.jpg 2x
+                          "
+                        />
+
+                        <img
+                          class="w-full"
+                          loading="lazy"
+                          src="../src/images/blog-page/main-post-full-1@x.jpg"
+                          alt="post "
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- main slide 3 -->
+
+                    <div>
+                      <div
+                        class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
+                      >
+                        <div class="flex">
+                          <img
+                            loading="lazy"
+                            src="../src/images/blog-page/user-photo.jpg"
+                            class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
+                            alt=""
+                          />
+                          <div>
+                            <p class="mb-1 text-sm font-semibold xl:text-base">
+                              Andrii Koval
+                            </p>
+                            <p class="text-sm font-normal xl:text-base">
+                              Head of Marketing
+                            </p>
+                          </div>
+                        </div>
+                        <h2
+                          class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
+                        >
+                          UPW Digital keeps 5-star streak on Clutch:
+                          Experience-based story
+                        </h2>
+                      </div>
+
+                      <div
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
+                      >
+                        <div
+                          class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                        >
+                          <p class="blog-page__main-post-info-name">new /3</p>
+
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
+                      </div>
+
+                      <picture class="blog-page__main-post-image">
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-full-1@x.jpg,
+                            ../src/images/blog-page/main-post-full-2@x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-tab-1@x.jpg,
+                            ../src/images/blog-page/main-post-tab-2@x.jpg 2x
+                          "
+                        />
+
+                        <img
+                          class="w-full"
+                          loading="lazy"
+                          src="../src/images/blog-page/main-post-full-1@x.jpg"
+                          alt="post "
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- main slide 3 -->
+
+                    <div>
+                      <div
+                        class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
+                      >
+                        <div class="flex">
+                          <img
+                            loading="lazy"
+                            src="../src/images/blog-page/user-photo.jpg"
+                            class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
+                            alt=""
+                          />
+                          <div>
+                            <p class="mb-1 text-sm font-semibold xl:text-base">
+                              Andrii Koval
+                            </p>
+                            <p class="text-sm font-normal xl:text-base">
+                              Head of Marketing
+                            </p>
+                          </div>
+                        </div>
+                        <h2
+                          class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
+                        >
+                          UPW Digital keeps 5-star streak on Clutch:
+                          Experience-based story
+                        </h2>
+                      </div>
+
+                      <div
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
+                      >
+                        <div
+                          class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                        >
+                          <p class="blog-page__main-post-info-name">new /3</p>
+
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
+                      </div>
+
+                      <picture class="blog-page__main-post-image">
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-full-1@x.jpg,
+                            ../src/images/blog-page/main-post-full-2@x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-tab-1@x.jpg,
+                            ../src/images/blog-page/main-post-tab-2@x.jpg 2x
+                          "
+                        />
+
+                        <img
+                          class="w-full"
+                          loading="lazy"
+                          src="../src/images/blog-page/main-post-full-1@x.jpg"
+                          alt="post "
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- main slide 3 -->
+
+                    <div>
+                      <div
+                        class="mb-[50px] grid grid-cols-[auto_1fr] lg:mb-[60px] xl:mb-[58px] xl:grid-cols-[29vw_700px_1fr]"
+                      >
+                        <div class="flex">
+                          <img
+                            loading="lazy"
+                            src="../src/images/blog-page/user-photo.jpg"
+                            class="mr-4 h-12 w-12 rounded-full lg:h-[55px] lg:w-[55px] xl:h-[58px] xl:w-[58px]"
+                            alt=""
+                          />
+                          <div>
+                            <p class="mb-1 text-sm font-semibold xl:text-base">
+                              Andrii Koval
+                            </p>
+                            <p class="text-sm font-normal xl:text-base">
+                              Head of Marketing
+                            </p>
+                          </div>
+                        </div>
+                        <h2
+                          class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
+                        >
+                          UPW Digital keeps 5-star streak on Clutch:
+                          Experience-based story
+                        </h2>
+                      </div>
+
+                      <div
+                        class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]"
+                      >
+                        <div
+                          class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
+                        >
+                          <p class="blog-page__main-post-info-name">new /3</p>
+
+                          <p
+                            href="#"
+                            aria-label="business"
+                            class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
+                          >
+                            Business
+                          </p>
+                        </div>
+                        <div
+                          class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
+                        >
+                          <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
+                            10 min red
+                          </p>
+                          <p class="blog-page__main-post-info-date">
+                            October 21, 2023
+                          </p>
+                        </div>
+                      </div>
+
+                      <picture class="blog-page__main-post-image">
+                        <source
+                          media="(min-width: 1280px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-full-1@x.jpg,
+                            ../src/images/blog-page/main-post-full-2@x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 320px)"
+                          srcset="
+                            ../src/images/blog-page/main-post-tab-1@x.jpg,
+                            ../src/images/blog-page/main-post-tab-2@x.jpg 2x
+                          "
+                        />
+
+                        <img
+                          class="w-full"
+                          loading="lazy"
+                          src="../src/images/blog-page/main-post-full-1@x.jpg"
+                          alt="post "
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
-                <h2
-                  class="col-start-1 col-end-3 row-start-2 mt-10 text-[32px] font-bold leading-[35px] lg:mt-[50px] lg:text-[42px] lg:leading-[1.1] xl:col-auto xl:row-auto xl:mt-0 xl:text-[54px] xl:leading-[1.1]"
-                >
-                  UPW Digital keeps 5-star streak on Clutch: Experience-based
-                  story
-                </h2>
+
+                <!-- If we need navigation buttons -->
                 <div
-                  class="ml-auto flex gap-[10px] lg:gap-[15px] xl:gap-[25px]"
+                  class="absolute right-0 top-[30px] z-10 flex gap-[10px] lg:top-10 lg:gap-[15px] xl:top-[50px] xl:gap-[25px]"
                 >
                   <button
-                    class="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
+                    class="swiper-prev-new-slide flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
                   >
                     <svg
                       width="13"
@@ -1733,7 +2133,7 @@
                     </svg>
                   </button>
                   <button
-                    class="flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
+                    class="swiper-next-new-slide flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-full bg-lightGrey transition-all hover:bg-main hover:text-white dark:border-[1px] dark:border-lightGrey dark:bg-transparent dark:hover:border-main dark:hover:bg-main"
                   >
                     <svg
                       width="13"
@@ -1750,55 +2150,10 @@
                     </svg>
                   </button>
                 </div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
               </div>
-
-              <div class="mb-7 flex justify-between lg:mb-[30px] xl:mb-[25px]">
-                <div
-                  class="lg:flex lg:items-center lg:justify-between xl:w-[41%]"
-                >
-                  <p class="blog-page__main-post-info-name">new /1</p>
-
-                  <p
-                    href="#"
-                    aria-label="business"
-                    class="w-fit rounded-[60px] bg-lightGrey py-[10px] px-5 text-sm font-medium uppercase leading-[1.4] dark:bg-darkGrey dark:text-white xl:text-base xl:leading-[1.4]"
-                  >
-                    Business
-                  </p>
-                </div>
-                <div
-                  class="flex flex-col items-end justify-end text-sm lg:flex-row lg:items-center lg:justify-between xl:w-2/5 xl:text-base"
-                >
-                  <p class="mb-[5px] lg:mb-0 lg:mr-[60px] xl:mr-0">
-                    10 min red
-                  </p>
-                  <p class="blog-page__main-post-info-date">October 21, 2023</p>
-                </div>
-              </div>
-
-              <picture class="blog-page__main-post-image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ../src/images/blog-page/main-post-full-1@x.jpg,
-                    ../src/images/blog-page/main-post-full-2@x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ../src/images/blog-page/main-post-tab-1@x.jpg,
-                    ../src/images/blog-page/main-post-tab-2@x.jpg 2x
-                  "
-                />
-
-                <img
-                  class="w-full"
-                  loading="lazy"
-                  src="../src/images/blog-page/main-post-full-1@x.jpg"
-                  alt="post "
-                />
-              </picture>
             </div>
 
             <div class="blog-page__posts-wrapper">
@@ -3139,7 +3494,7 @@
             <!-- wrapper-form  dynamic -->
 
             <form id="dynamicForm" class="pb-20 2xl:mr-[78px]">
-          <!--  BEGIN: checkbox-form-menu -->
+              <!--  BEGIN: checkbox-form-menu -->
               <!-- TODO 2 blocks was joined into 1 div -->
               <div class="mb-6 flex lg:mb-0 lg:mt-0 lg:gap-[11px]">
                 <div class="flex flex-wrap gap-[11px_11px]">
@@ -3469,12 +3824,71 @@
       <!-- Modal -->
 
       <div
-        class="invisible fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark/90 py-[10vw] opacity-0 backdrop-blur-xl"
+        class="invisible fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark/90 py-[10vw] opacity-0 backdrop-blur-xl transition-all"
         role="modal"
         id="modal"
       >
         <div
-          class="container relative w-full bg-dark py-[30px] text-white lg:p-10 xl:w-[530px] xl:p-[50px]"
+          id="subscribeSuccessContainer"
+          class="container invisible absolute w-full bg-dark py-[30px] text-white opacity-0 transition-all lg:p-10 xl:w-[530px] xl:p-[50px]"
+        >
+          <div class="w-full xl:w-[430px]">
+            <div class="mb-9 flex">
+              <div
+                class="flex h-[34px] w-[34px] items-center justify-center rounded-full border border-main"
+              >
+                <svg
+                  width="19"
+                  height="15"
+                  viewBox="0 0 19 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.11902 7.35409L6.46512 12.6666L17.7143 1.33325"
+                    stroke="#FF304D"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <p
+                class="leading-1.2 mr-auto ml-[11px] text-2xl font-bold text-main"
+              >
+                Done
+              </p>
+              <button
+                type="button"
+                class="modal-close-btn ml-auto hover:text-main xl:absolute xl:top-6 xl:right-6"
+                aria-label="Close"
+              >
+                <svg
+                  class="fill-current"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z"
+                  />
+                  <path
+                    d="M0.813965 21.1523L21.1517 0.814654L23.1854 2.84842L2.84773 23.1861L0.813965 21.1523Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex">
+              <p class="mr-5 w-1/2 text-[38px] font-bold leading-[1.2]">
+                Thanks for subscribing
+              </p>
+              <img src="../src/images/blog-page/hand.png" alt="hand" />
+            </div>
+          </div>
+        </div>
+        <div
+          id="subscribeFormContainer"
+          class="container relative w-full bg-dark py-[30px] text-white transition-all lg:p-10 xl:w-[530px] xl:p-[50px]"
         >
           <div class="mb-10 flex w-full xl:w-[430px]">
             <svg
@@ -3496,9 +3910,8 @@
               Subscribe to our News
             </p>
             <button
-              id="handleSubscribe"
               type="button"
-              class="modal-close-btn ml-auto hover:text-main xl:absolute xl:top-6 xl:right-6"
+              class="modal-close-btn2 ml-auto hover:text-main xl:absolute xl:top-6 xl:right-6"
               aria-label="Close"
             >
               <svg
@@ -3518,22 +3931,42 @@
               </svg>
             </button>
           </div>
-          <div class="w-full lg:flex xl:w-[430px]">
-            <input
-              type="text"
-              id="subscribeInput"
-              class="w-full border border-middleGrey bg-transparent py-5 px-6 outline-none"
-              placeholder="Enter Your Email address"
-            />
+          <form id="subscribeForm" class="w-full lg:flex xl:w-[430px]">
+            <label class="w-full">
+              <input
+                type="email"
+                id="subscribeInput"
+                title="example@example.com"
+                class="w-full border border-middleGrey bg-transparent py-5 px-6 outline-none"
+                placeholder="Enter Your Email address"
+            /></label>
+
             <button
-              class="flex w-full items-center justify-center bg-main py-5 text-sm font-bold text-white transition-all hover:bg-activeRed lg:max-w-[220px] xl:max-w-[158px]"
-              type="button"
+              class="flex w-full items-center justify-center bg-main py-5 text-sm font-bold text-white transition-all hover:bg-activeRed disabled:bg-darkGrey disabled:hover:bg-darkGrey lg:max-w-[220px] xl:max-w-[158px]"
+              type="submit"
               id="handleSubscribeBtn"
               aria-label="send email"
+              disabled
             >
               Subscribe
+              <svg
+                width="24"
+                class="ml-3 hidden fill-white transition-all group-hover:fill-black"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+                  opacity=".25"
+                />
+                <path
+                  d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+                  class="spinner_ajPY"
+                />
+              </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -3550,23 +3983,24 @@
     <script src="../src/js/subscribe.js"></script>
 
     <script src="../src/js/footer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+      const swiper = new Swiper(".swiperNews", {
+        loop: true,
+        autoplay: { delay: 5000 },
+        slidesPerView: 1,
+        centeredSlides: false,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
         },
-        pagination: {
-          el: ".swiper-pagination",
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+        navigation: {
+          nextEl: ".swiper-next-new-slide",
+          prevEl: ".swiper-prev-new-slide",
         },
       });
     </script>
