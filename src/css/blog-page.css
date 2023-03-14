@@ -10,6 +10,11 @@
     -webkit-text-stroke-color: black;
     @apply mb-5 text-[46px] font-bold uppercase leading-[50px] lg:mr-20 lg:mb-0 xl:mr-0 xl:text-[64px] xl:leading-[70px];
   }
+
+  .blog__pagination-active {
+    @apply bg-dark text-white dark:bg-light dark:text-dark;
+  }
+
   .swiperNews .swiper-scrollbar {
     @apply !top-0 !h-[5px] bg-scrollBar;
   }
