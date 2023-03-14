@@ -5578,6 +5578,10 @@ Styles borders  btn
   gap: 2rem;
 }
 
+.gap-\[11px_11px\]{
+  gap: 11px 11px;
+}
+
 .gap-x-\[28px\]{
   -moz-column-gap: 28px;
        column-gap: 28px;

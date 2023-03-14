@@ -34,6 +34,7 @@ function openSubscribe() {
 }
 
 function handleSubscribe() {
+  console.log(checkEmail(subscribeInput));
   if (checkEmail(subscribeInput)) {
     console.log(subscribeInput.value);
   } else {
