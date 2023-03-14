@@ -4387,6 +4387,11 @@ Styles borders  btn
   margin-right: 5px;
 }
 
+.mx-\[35px\]{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .ml-\[33px\]{
   margin-left: 33px;
 }
@@ -5260,10 +5265,6 @@ Styles borders  btn
 
 .max-w-\[62vw\]{
   max-width: 62vw;
-}
-
-.max-w-\[80\%\]{
-  max-width: 80%;
 }
 
 .flex-auto{
@@ -6410,6 +6411,10 @@ Styles borders  btn
   padding-top: 25px;
 }
 
+.pt-\[100px\]{
+  padding-top: 100px;
+}
+
 .pt-\[37px\]{
   padding-top: 37px;
 }
@@ -6986,6 +6991,28 @@ BEGIN: html  scroll
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text__hover-red{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.group\/card:hover .group:hover .group-hover\:text__hover-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:border-0{
+  border-width: 0px;
+}
+
+.group:hover .group-hover\:border-none{
+  border-style: none;
+}
+
 .group:hover .group-hover\:border-main{
   --tw-border-opacity: 1;
   border-color: rgb(255 48 77 / var(--tw-border-opacity));
@@ -6994,6 +7021,15 @@ BEGIN: html  scroll
 .group:hover .group-hover\:border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-transparent{
+  border-color: transparent;
+}
+
+.group:hover .group-hover\:border-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
 }
 
 .group\/text:hover .group-hover\/text\:bg-main{
@@ -7235,6 +7271,11 @@ BEGIN: html  scroll
 .dark .dark\:hover\:text-main:hover{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .dark .group:hover .dark\:group-hover\:bg-white{
@@ -7786,6 +7827,10 @@ BEGIN: html  scroll
     height: 54px;
   }
 
+  .lg\:h-\[305px\]{
+    height: 305px;
+  }
+
   .lg\:min-h-\[var\(--header-h-xl\)\]{
     min-height: var(--header-h-xl);
   }
@@ -7972,6 +8017,10 @@ BEGIN: html  scroll
     width: 22%;
   }
 
+  .lg\:w-\[305px\]{
+    width: 305px;
+  }
+
   .lg\:w-\[72\%\]{
     width: 72%;
   }
@@ -8102,10 +8151,6 @@ BEGIN: html  scroll
 
   .lg\:max-w-\[140px\]{
     max-width: 140px;
-  }
-
-  .lg\:max-w-\[41\%\]{
-    max-width: 41%;
   }
 
   .lg\:max-w-\[34\%\]{
@@ -9858,6 +9903,10 @@ BEGIN: html  scroll
     height: 177px;
   }
 
+  .xl\:h-\[261px\]{
+    height: 261px;
+  }
+
   .xl\:w-\[121px\]{
     width: 121px;
   }
@@ -9988,6 +10037,10 @@ BEGIN: html  scroll
 
   .xl\:w-\[20\%\]{
     width: 20%;
+  }
+
+  .xl\:w-\[261px\]{
+    width: 261px;
   }
 
   .xl\:w-\[250px\]{
@@ -10207,16 +10260,8 @@ BEGIN: html  scroll
     max-width: 400px;
   }
 
-  .xl\:max-w-\[37\%\]{
-    max-width: 37%;
-  }
-
   .xl\:max-w-\[550px\]{
     max-width: 550px;
-  }
-
-  .xl\:max-w-\[50\%\]{
-    max-width: 50%;
   }
 
   .xl\:max-w-\[24\.5\%\]{
