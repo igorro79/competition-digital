@@ -9827,6 +9827,18 @@ BEGIN: html  scroll
     margin-bottom: 88px;
   }
 
+  .xl\:mt-\[-74px\]{
+    margin-top: -74px;
+  }
+
+  .xl\:mt-\[21px\]{
+    margin-top: 21px;
+  }
+
+  .xl\:mt-\[-64px\]{
+    margin-top: -64px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -10296,6 +10308,10 @@ BEGIN: html  scroll
     max-width: 810px;
   }
 
+  .xl\:max-w-\[572px\]{
+    max-width: 572px;
+  }
+
   .xl\:flex-auto{
     flex: 1 1 auto;
   }
@@ -10350,6 +10366,10 @@ BEGIN: html  scroll
 
   .xl\:basis-1\/2{
     flex-basis: 50%;
+  }
+
+  .xl\:basis-\[31\%\]{
+    flex-basis: 31%;
   }
 
   .xl\:translate-x-\[-14\%\]{
@@ -12274,6 +12294,10 @@ BEGIN: html  scroll
 
   .\32xl\:max-w-\[77\%\]{
     max-width: 77%;
+  }
+
+  .\32xl\:max-w-\[865px\]{
+    max-width: 865px;
   }
 
   .\32xl\:basis-\[754px\]{
