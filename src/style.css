@@ -7144,6 +7144,11 @@ BEGIN: html  scroll
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group\/arrow:hover .group-hover\/arrow\:text-main{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
 .group\/item:hover .group-hover\/item\:opacity-100{
   opacity: 1;
 }
@@ -9412,6 +9417,38 @@ BEGIN: html  scroll
     right: 0px;
   }
 
+  .xl\:top-0{
+    top: 0px;
+  }
+
+  .xl\:left-\[25\.3\%\]{
+    left: 25.3%;
+  }
+
+  .xl\:top-\[-50px\]{
+    top: -50px;
+  }
+
+  .xl\:top-\[50px\]{
+    top: 50px;
+  }
+
+  .xl\:right-\[-6\%\]{
+    right: -6%;
+  }
+
+  .xl\:top-\[150px\]{
+    top: 150px;
+  }
+
+  .xl\:top-\[200px\]{
+    top: 200px;
+  }
+
+  .xl\:top-\[250px\]{
+    top: 250px;
+  }
+
   .xl\:order-3{
     order: 3;
   }
@@ -9839,6 +9876,14 @@ BEGIN: html  scroll
     margin-top: -64px;
   }
 
+  .xl\:ml-\[103px\]{
+    margin-left: 103px;
+  }
+
+  .xl\:mt-\[-200px\]{
+    margin-top: -200px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -9917,6 +9962,10 @@ BEGIN: html  scroll
 
   .xl\:h-\[261px\]{
     height: 261px;
+  }
+
+  .xl\:h-\[6px\]{
+    height: 6px;
   }
 
   .xl\:w-\[121px\]{
@@ -10061,6 +10110,10 @@ BEGIN: html  scroll
 
   .xl\:w-\[450px\]{
     width: 450px;
+  }
+
+  .xl\:w-\[6px\]{
+    width: 6px;
   }
 
   .xl\:min-w-\[21vw\]{
@@ -10782,6 +10835,10 @@ BEGIN: html  scroll
     padding: 26px;
   }
 
+  .xl\:p-\[6px\]{
+    padding: 6px;
+  }
+
   .xl\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -11452,6 +11509,10 @@ BEGIN: html  scroll
     padding-top: 105px;
   }
 
+  .xl\:pl-\[100px\]{
+    padding-left: 100px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -12055,6 +12116,10 @@ BEGIN: html  scroll
     margin-top: 62px;
   }
 
+  .\32xl\:mb-\[34px\]{
+    margin-bottom: 34px;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -12085,6 +12150,10 @@ BEGIN: html  scroll
 
   .\32xl\:h-\[36px\]{
     height: 36px;
+  }
+
+  .\32xl\:h-\[16px\]{
+    height: 16px;
   }
 
   .\32xl\:w-\[123px\]{
@@ -12157,6 +12226,10 @@ BEGIN: html  scroll
 
   .\32xl\:w-\[530px\]{
     width: 530px;
+  }
+
+  .\32xl\:w-\[16px\]{
+    width: 16px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -12462,6 +12535,10 @@ BEGIN: html  scroll
 
   .\32xl\:p-8{
     padding: 2rem;
+  }
+
+  .\32xl\:p-\[11px\]{
+    padding: 11px;
   }
 
   .\32xl\:py-\[21px\]{
