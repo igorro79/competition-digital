@@ -1609,9 +1609,10 @@
             <!-- wrapper-form  dynamic -->
 
             <form id="dynamicForm" class="pb-20 2xl:mr-[78px]">
-              <!--  BEGIN: checkbox-form-menu -->
-              <div class="lg:flex lg:gap-[11px]">
-                <div class="flex gap-[11px]">
+            <!--  BEGIN: checkbox-form-menu -->
+              <!-- TODO 2 blocks was joined into 1 div -->
+              <div class="mb-6 flex lg:mb-0 lg:mt-0 lg:gap-[11px]">
+                <div class="flex flex-wrap gap-[11px_11px]">
                   <!-- 01-BRANDING -->
 
                   <div class=" ">
@@ -1623,7 +1624,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden whitespace-nowrap pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="branding"
                       >BRANDING</label
                     >
@@ -1642,15 +1643,12 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[11px] pr-[11px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden whitespace-nowrap pt-[6px] pb-[6px] pl-[11px] pr-[11px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="digitalMarketing"
                       >DIGITAL MARKETING</label
                     >
                   </div>
                   <!-- checkbox-02-DIGITAL MARKETING -->
-                </div>
-
-                <div class="mt-[16px] mb-6 flex gap-[11px] lg:mb-0 lg:mt-0">
                   <!-- 03-WEB design -->
 
                   <div class=" ">
@@ -1662,7 +1660,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[8px] pr-[8px] text-xs font-medium uppercase text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden whitespace-nowrap pt-[6px] pb-[6px] pl-[8px] pr-[8px] text-xs font-medium uppercase text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="webDesign"
                       >WEB design</label
                     >
@@ -1680,7 +1678,7 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[13px] pr-[13px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden whitespace-nowrap pt-[6px] pb-[6px] pl-[13px] pr-[13px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="smm"
                       >SMM</label
                     >
@@ -1697,13 +1695,15 @@
                       value="newsletter"
                     />
                     <label
-                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
+                      class="btn-hover__white border__rounded btn-hover__white relative cursor-pointer overflow-hidden whitespace-nowrap pt-[6px] pb-[6px] pl-[15px] pr-[15px] text-xs font-medium text-white peer-checked:border-white peer-checked:bg-white peer-checked:text-black lg:text-[14px] lg:leading-[18px]"
                       for="seo"
                       >SEO</label
                     >
                   </div>
                   <!-- 05-SEO -->
                 </div>
+
+               
               </div>
 
               <!--  BEGIN:  -->
@@ -1946,16 +1946,20 @@
       <!--  END: form-menu -->
       <!--  BEGIN: Main -->
       <main>
-        <div class="container relative max-w-full xl:max-w-[1920px]">
+        <div
+          class="container relative top-[95px] bottom-[95px] left-0 right-0 h-[calc(100vh-190px)] max-w-full xl:max-w-[1920px]"
+        >
           <!-- flex container -->
+          <!-- class="nopage__content relative top-[90px] flex h-[clamp(200px,43vw,400px)] w-full flex-col items-center justify-center text-white sm:h-[clamp(400px,43vw,400px)]" -->
+
           <div
-            class="nopage__content relative top-[90px] flex h-[clamp(200px,43vw,400px)] w-full flex-col items-center justify-center text-white sm:h-[clamp(400px,43vw,400px)]"
+            class="nopage__content flex min-h-full w-full items-center justify-center text-white"
           >
-            <div class="relative py-[100px]">
+            <div class="relative pb-[70px] lg:pb-[90px]">
               <a
                 aria-label="go homepage"
                 href="../index.html"
-                class="nopage__button absolute left-1/2 top-[45%] z-[2] block w-[clamp(144px,34vw,316px)] -translate-x-1/2 -translate-y-1/2 border border-light bg-dark px-[clamp(14px,5vw,37px)] py-[clamp(14px,4vw,32px)] uppercase shadow-[0px_4px_80px_60px_rgba(0,0,0,0.25)] hover:border-main lg:w-[clamp(318px,39vw,369px)] lg:border-[2px] lg:py-[clamp(22px,2.9vw,38px)] lg:px-[clamp(32px,4vw,44px)] xl:top-1/2 xl:border-[3px]"
+                class="nopage__button absolute left-1/2 top-[14%] z-[2] block w-[144px] -translate-x-1/2 border border-light bg-dark px-[14px] py-[14px] uppercase shadow-[0px_4px_80px_60px_rgba(0,0,0,0.25)] hover:border-main lg:top-[22%] lg:w-[318px] lg:border-[2px] lg:py-[22px] lg:px-[32px] xl:top-[24%] xl:border-[3px] 3xl:top-[-2%] 3xl:-translate-x-[30%]"
               >
                 <svg
                   width="100%"
@@ -2098,15 +2102,15 @@
               </a>
               <div
                 id="back-home"
-                class="nopage__textBlock-one absolute left-1/2 top-[45%] flex w-full -translate-x-1/2 -translate-y-[42%] flex-col justify-center opacity-0 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
+                class="nopage__textBlock-one absolute left-1/2  flex w-full -translate-x-1/2 flex-col justify-center opacity-0 3xl:left-[46%] 3xl:-translate-x-[46%] 3xl:flex-row"
               >
                 <p
-                  class="mb-[clamp(55px,15vw,80px)] text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:mb-[clamp(43px,14vw,114px)] sm:text-[clamp(58px,10vw,80px)] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
+                  class="mb-[55px] text-center text-[58px] font-bold uppercase leading-[1.1] transition-all lg:mb-[100px] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
                 >
                   back to
                 </p>
                 <p
-                  class="text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:text-[clamp(58px,10vw,80px)] lg:text-[120px]"
+                  class="text-center text-[58px] font-bold uppercase leading-[1.1] transition-all lg:text-[120px]"
                 >
                   home
                 </p>
@@ -2114,15 +2118,15 @@
 
               <div
                 id="not-found"
-                class="nopage__textBlock-two flex w-full flex-col justify-center 3xl:left-[46%] 3xl:top-1/2 3xl:flex-row"
+                class="nopage__textBlock-two flex w-full flex-col justify-center 3xl:left-[46%] 3xl:flex-row"
               >
                 <p
-                  class="mb-[clamp(55px,15vw,80px)] text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:mb-[clamp(43px,14vw,114px)] sm:text-[clamp(58px,10vw,80px)] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
+                  class="mb-[55px] text-center text-[58px] font-bold uppercase leading-[1.1] transition-all lg:mb-[100px] lg:text-[120px] 3xl:mb-0 3xl:pr-[20rem]"
                 >
                   page not
                 </p>
                 <p
-                  class="text-center text-[clamp(48px,15vw,56px)] font-bold uppercase leading-[1.1] transition-all sm:text-[clamp(58px,10vw,80px)] lg:text-[120px]"
+                  class="text-center text-[58px] font-bold uppercase leading-[1.1] transition-all lg:text-[120px]"
                 >
                   found
                 </p>

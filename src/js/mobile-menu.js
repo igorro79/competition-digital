@@ -52,8 +52,13 @@ const toggleDynamicMenu = () => {
   dynamicMenu.classList.toggle("translate-x-full");
 };
 
+function closeMenuEsc(e) {
+  if (e.key === "Escape") burgerClose();
+}
 // ----  Close a menu tablet. ---
 function burgerClose() {
+  document.removeEventListener("keydown", closeMenuEsc);
+
   //if header is total white then color it to black
   if (
     document
@@ -73,6 +78,8 @@ function burgerClose() {
 
 // ----  Open a menu tablet. ---
 function burgerOpen() {
+  document.addEventListener("keydown", closeMenuEsc);
+
   if (document.querySelector("header").classList.contains("white-header")) {
     document.querySelector("header").classList.add("burger-paint-header-dark");
   }
