@@ -11513,6 +11513,14 @@ BEGIN: html  scroll
     padding-left: 100px;
   }
 
+  .xl\:pb-\[0px\]{
+    padding-bottom: 0px;
+  }
+
+  .xl\:pr-\[40px\]{
+    padding-right: 40px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -11679,6 +11687,10 @@ BEGIN: html  scroll
 
   .xl\:text-\[42px\]{
     font-size: 42px;
+  }
+
+  .xl\:text-\[14px\]{
+    font-size: 14px;
   }
 
   .xl\:font-semibold{
@@ -13031,6 +13043,10 @@ BEGIN: html  scroll
 
   .\32xl\:pb-\[104px\]{
     padding-bottom: 104px;
+  }
+
+  .\32xl\:pb-\[0px\]{
+    padding-bottom: 0px;
   }
 
   .\32xl\:indent-\[23px\]{
