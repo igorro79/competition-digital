@@ -245,7 +245,7 @@ BEGIN: 16-section-our-case img-desc-
 
   /* 09-section */
 
-  .border__vertical_s-09::after {
+  /* .border__vertical_s-09::after {
     @apply xl:absolute  
     xl:top-[47px]
   xl:left-[765px]
@@ -257,6 +257,20 @@ BEGIN: 16-section-our-case img-desc-
       2xl:top-[67px]
   2xl:left-[1098px]
   2xl:h-[616px];
+  } */
+
+  .border__vertical_s-09::before {
+    @apply xl:absolute  
+    xl:top-[-12px]
+  xl:left-[-41px]
+  xl:h-[471px]
+   xl:w-[1px]
+     xl:bg-[#919191] 
+     xl:content-['']
+     
+      2xl:top-[-12px]
+  2xl:left-[-57px]
+  2xl:h-[661px];
   }
 
   /* xl:absolute  */
