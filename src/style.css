@@ -4418,6 +4418,11 @@ Styles borders  btn
   margin-right: 5px;
 }
 
+.mx-\[35px\]{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .ml-\[33px\]{
   margin-left: 33px;
 }
@@ -5307,10 +5312,6 @@ Styles borders  btn
 
 .max-w-\[62vw\]{
   max-width: 62vw;
-}
-
-.max-w-\[80\%\]{
-  max-width: 80%;
 }
 
 .flex-auto{
@@ -6462,6 +6463,10 @@ Styles borders  btn
   padding-top: 25px;
 }
 
+.pt-\[100px\]{
+  padding-top: 100px;
+}
+
 .pt-\[37px\]{
   padding-top: 37px;
 }
@@ -7052,6 +7057,28 @@ BEGIN: html  scroll
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text__hover-red{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.group\/card:hover .group:hover .group-hover\:text__hover-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:border-0{
+  border-width: 0px;
+}
+
+.group:hover .group-hover\:border-none{
+  border-style: none;
+}
+
 .group:hover .group-hover\:border-main{
   --tw-border-opacity: 1;
   border-color: rgb(255 48 77 / var(--tw-border-opacity));
@@ -7060,6 +7087,15 @@ BEGIN: html  scroll
 .group:hover .group-hover\:border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-transparent{
+  border-color: transparent;
+}
+
+.group:hover .group-hover\:border-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
 }
 
 .group\/text:hover .group-hover\/text\:bg-main{
@@ -7172,6 +7208,11 @@ BEGIN: html  scroll
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group\/arrow:hover .group-hover\/arrow\:text-main{
+  --tw-text-opacity: 1;
+  color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
 .group\/item:hover .group-hover\/item\:opacity-100{
@@ -7301,6 +7342,11 @@ BEGIN: html  scroll
 .dark .dark\:hover\:text-main:hover{
   --tw-text-opacity: 1;
   color: rgb(255 48 77 / var(--tw-text-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .dark .group:hover .dark\:group-hover\:bg-white{
@@ -7860,6 +7906,10 @@ BEGIN: html  scroll
     height: 54px;
   }
 
+  .lg\:h-\[305px\]{
+    height: 305px;
+  }
+
   .lg\:min-h-\[var\(--header-h-xl\)\]{
     min-height: var(--header-h-xl);
   }
@@ -8046,6 +8096,10 @@ BEGIN: html  scroll
     width: 22%;
   }
 
+  .lg\:w-\[305px\]{
+    width: 305px;
+  }
+
   .lg\:w-\[72\%\]{
     width: 72%;
   }
@@ -8176,10 +8230,6 @@ BEGIN: html  scroll
 
   .lg\:max-w-\[140px\]{
     max-width: 140px;
-  }
-
-  .lg\:max-w-\[41\%\]{
-    max-width: 41%;
   }
 
   .lg\:max-w-\[34\%\]{
@@ -9445,6 +9495,38 @@ BEGIN: html  scroll
     right: 0px;
   }
 
+  .xl\:top-0{
+    top: 0px;
+  }
+
+  .xl\:left-\[25\.3\%\]{
+    left: 25.3%;
+  }
+
+  .xl\:top-\[-50px\]{
+    top: -50px;
+  }
+
+  .xl\:top-\[50px\]{
+    top: 50px;
+  }
+
+  .xl\:right-\[-6\%\]{
+    right: -6%;
+  }
+
+  .xl\:top-\[150px\]{
+    top: 150px;
+  }
+
+  .xl\:top-\[200px\]{
+    top: 200px;
+  }
+
+  .xl\:top-\[250px\]{
+    top: 250px;
+  }
+
   .xl\:order-3{
     order: 3;
   }
@@ -9860,6 +9942,26 @@ BEGIN: html  scroll
     margin-bottom: 88px;
   }
 
+  .xl\:mt-\[-74px\]{
+    margin-top: -74px;
+  }
+
+  .xl\:mt-\[21px\]{
+    margin-top: 21px;
+  }
+
+  .xl\:mt-\[-64px\]{
+    margin-top: -64px;
+  }
+
+  .xl\:ml-\[103px\]{
+    margin-left: 103px;
+  }
+
+  .xl\:mt-\[-200px\]{
+    margin-top: -200px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -9934,6 +10036,14 @@ BEGIN: html  scroll
 
   .xl\:h-\[177px\]{
     height: 177px;
+  }
+
+  .xl\:h-\[261px\]{
+    height: 261px;
+  }
+
+  .xl\:h-\[6px\]{
+    height: 6px;
   }
 
   .xl\:w-\[121px\]{
@@ -10068,12 +10178,20 @@ BEGIN: html  scroll
     width: 20%;
   }
 
+  .xl\:w-\[261px\]{
+    width: 261px;
+  }
+
   .xl\:w-\[250px\]{
     width: 250px;
   }
 
   .xl\:w-\[450px\]{
     width: 450px;
+  }
+
+  .xl\:w-\[6px\]{
+    width: 6px;
   }
 
   .xl\:min-w-\[21vw\]{
@@ -10285,16 +10403,8 @@ BEGIN: html  scroll
     max-width: 400px;
   }
 
-  .xl\:max-w-\[37\%\]{
-    max-width: 37%;
-  }
-
   .xl\:max-w-\[550px\]{
     max-width: 550px;
-  }
-
-  .xl\:max-w-\[50\%\]{
-    max-width: 50%;
   }
 
   .xl\:max-w-\[24\.5\%\]{
@@ -10327,6 +10437,10 @@ BEGIN: html  scroll
 
   .xl\:max-w-\[810px\]{
     max-width: 810px;
+  }
+
+  .xl\:max-w-\[572px\]{
+    max-width: 572px;
   }
 
   .xl\:flex-auto{
@@ -10383,6 +10497,10 @@ BEGIN: html  scroll
 
   .xl\:basis-1\/2{
     flex-basis: 50%;
+  }
+
+  .xl\:basis-\[31\%\]{
+    flex-basis: 31%;
   }
 
   .xl\:translate-x-\[-14\%\]{
@@ -10793,6 +10911,10 @@ BEGIN: html  scroll
 
   .xl\:p-\[26px\]{
     padding: 26px;
+  }
+
+  .xl\:p-\[6px\]{
+    padding: 6px;
   }
 
   .xl\:py-0{
@@ -11465,6 +11587,18 @@ BEGIN: html  scroll
     padding-top: 105px;
   }
 
+  .xl\:pl-\[100px\]{
+    padding-left: 100px;
+  }
+
+  .xl\:pb-\[0px\]{
+    padding-bottom: 0px;
+  }
+
+  .xl\:pr-\[40px\]{
+    padding-right: 40px;
+  }
+
   .xl\:indent-\[138px\]{
     text-indent: 138px;
   }
@@ -11631,6 +11765,10 @@ BEGIN: html  scroll
 
   .xl\:text-\[42px\]{
     font-size: 42px;
+  }
+
+  .xl\:text-\[14px\]{
+    font-size: 14px;
   }
 
   .xl\:font-semibold{
@@ -12068,6 +12206,10 @@ BEGIN: html  scroll
     margin-top: 62px;
   }
 
+  .\32xl\:mb-\[34px\]{
+    margin-bottom: 34px;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -12098,6 +12240,10 @@ BEGIN: html  scroll
 
   .\32xl\:h-\[36px\]{
     height: 36px;
+  }
+
+  .\32xl\:h-\[16px\]{
+    height: 16px;
   }
 
   .\32xl\:w-\[123px\]{
@@ -12170,6 +12316,10 @@ BEGIN: html  scroll
 
   .\32xl\:w-\[530px\]{
     width: 530px;
+  }
+
+  .\32xl\:w-\[16px\]{
+    width: 16px;
   }
 
   .\32xl\:min-w-\[420px\]{
@@ -12307,6 +12457,10 @@ BEGIN: html  scroll
 
   .\32xl\:max-w-\[77\%\]{
     max-width: 77%;
+  }
+
+  .\32xl\:max-w-\[865px\]{
+    max-width: 865px;
   }
 
   .\32xl\:basis-\[754px\]{
@@ -12471,6 +12625,10 @@ BEGIN: html  scroll
 
   .\32xl\:p-8{
     padding: 2rem;
+  }
+
+  .\32xl\:p-\[11px\]{
+    padding: 11px;
   }
 
   .\32xl\:py-\[21px\]{
@@ -12963,6 +13121,10 @@ BEGIN: html  scroll
 
   .\32xl\:pb-\[104px\]{
     padding-bottom: 104px;
+  }
+
+  .\32xl\:pb-\[0px\]{
+    padding-bottom: 0px;
   }
 
   .\32xl\:indent-\[23px\]{
