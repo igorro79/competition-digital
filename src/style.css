@@ -5486,6 +5486,10 @@ Styles borders  btn
   gap: 1.5rem;
 }
 
+.gap-\[11px_11px\]{
+  gap: 11px 11px;
+}
+
 .gap-\[11px\]{
   gap: 11px;
 }
@@ -5568,10 +5572,6 @@ Styles borders  btn
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-\[11px_11px\]{
-  gap: 11px 11px;
 }
 
 .gap-x-\[28px\]{
@@ -7968,6 +7968,10 @@ BEGIN: html  scroll
     width: 45%;
   }
 
+  .lg\:w-\[22\%\]{
+    width: 22%;
+  }
+
   .lg\:w-\[72\%\]{
     width: 72%;
   }
@@ -7978,10 +7982,6 @@ BEGIN: html  scroll
 
   .lg\:w-\[370px\]{
     width: 370px;
-  }
-
-  .lg\:w-\[22\%\]{
-    width: 22%;
   }
 
   .lg\:min-w-\[36px\]{
@@ -8112,6 +8112,10 @@ BEGIN: html  scroll
     max-width: 34%;
   }
 
+  .lg\:max-w-\[265px\]{
+    max-width: 265px;
+  }
+
   .lg\:max-w-\[230px\]{
     max-width: 230px;
   }
@@ -8126,14 +8130,6 @@ BEGIN: html  scroll
 
   .lg\:max-w-\[50\%\]{
     max-width: 50%;
-  }
-
-  .lg\:max-w-\[290px\]{
-    max-width: 290px;
-  }
-
-  .lg\:max-w-\[265px\]{
-    max-width: 265px;
   }
 
   .lg\:flex-auto{
@@ -9998,10 +9994,6 @@ BEGIN: html  scroll
     width: 250px;
   }
 
-  .xl\:w-\[65\%\]{
-    width: 65%;
-  }
-
   .xl\:w-\[450px\]{
     width: 450px;
   }
@@ -10231,8 +10223,8 @@ BEGIN: html  scroll
     max-width: 24.5%;
   }
 
-  .xl\:max-w-\[41\%\]{
-    max-width: 41%;
+  .xl\:max-w-\[44\%\]{
+    max-width: 44%;
   }
 
   .xl\:max-w-\[75\.5\%\]{
@@ -10247,24 +10239,16 @@ BEGIN: html  scroll
     max-width: 800px;
   }
 
+  .xl\:max-w-\[65\%\]{
+    max-width: 65%;
+  }
+
   .xl\:max-w-\[69\%\]{
     max-width: 69%;
   }
 
   .xl\:max-w-\[810px\]{
     max-width: 810px;
-  }
-
-  .xl\:max-w-\[44\%\]{
-    max-width: 44%;
-  }
-
-  .xl\:max-w-\[65\%\]{
-    max-width: 65%;
-  }
-
-  .xl\:max-w-\[407px\]{
-    max-width: 407px;
   }
 
   .xl\:flex-auto{
@@ -12251,10 +12235,6 @@ BEGIN: html  scroll
     flex-basis: 754px;
   }
 
-  .\32xl\:basis-\[29\.5\%\]{
-    flex-basis: 29.5%;
-  }
-
   .\32xl\:translate-x-\[-14\%\]{
     --tw-translate-x: -14%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -12386,10 +12366,6 @@ BEGIN: html  scroll
 
   .\32xl\:gap-\[38px\]{
     gap: 38px;
-  }
-
-  .\32xl\:gap-\[523px\]{
-    gap: 523px;
   }
 
   .\32xl\:gap-\[334px\]{
@@ -12835,6 +12811,10 @@ BEGIN: html  scroll
     padding-left: 155px;
   }
 
+  .\32xl\:pb-\[62px\]{
+    padding-bottom: 62px;
+  }
+
   .\32xl\:pt-\[146px\]{
     padding-top: 146px;
   }
@@ -12905,10 +12885,6 @@ BEGIN: html  scroll
 
   .\32xl\:pb-\[104px\]{
     padding-bottom: 104px;
-  }
-
-  .\32xl\:pb-\[62px\]{
-    padding-bottom: 62px;
   }
 
   .\32xl\:indent-\[23px\]{
