@@ -3467,7 +3467,7 @@
       <!-- Modal -->
 
       <div
-        class="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark/90 py-[10vw] opacity-100 backdrop-blur-xl"
+        class="invisible fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-dark/90 py-[10vw] opacity-0 backdrop-blur-xl"
         role="modal"
         id="modal"
       >
@@ -3494,9 +3494,9 @@
               Subscribe to our News
             </p>
             <button
+              id="handleSubscribe"
               type="button"
               class="modal-close-btn ml-auto hover:text-main xl:absolute xl:top-6 xl:right-6"
-              data-bs-dismiss="modal"
               aria-label="Close"
             >
               <svg
@@ -3519,14 +3519,14 @@
           <div class="w-full lg:flex xl:w-[430px]">
             <input
               type="text"
-              id="subscribe"
+              id="subscribeInput"
               class="w-full border border-middleGrey bg-transparent py-5 px-6 outline-none"
               placeholder="Enter Your Email address"
             />
             <button
               class="flex w-full items-center justify-center bg-main py-5 text-sm font-bold text-white transition-all hover:bg-activeRed lg:max-w-[220px] xl:max-w-[158px]"
               type="button"
-              id="subscribeBtn"
+              id="handleSubscribeBtn"
               aria-label="send email"
             >
               Subscribe
@@ -3545,6 +3545,7 @@
     <script src="../src/js/allFormHandler.js"></script>
     <script src="../src/js/main-form.js"></script>
     <script src="../src/js/dynamic-form.js"></script>
+    <script src="../src/js/subscribe.js"></script>
 
     <script src="../src/js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
